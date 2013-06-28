@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class Learning_Objective(models.Model):
 
 	learning_objective = models.CharField(max_length=255)
@@ -45,34 +44,28 @@ class Code_Dependencies(models.Model):
 
 class Analytic(models.Model):
 	name = models.CharField(max_length=255)
-  
-	def __unicode__(self):
-		return self.name
-
-	class Meta:
-		ordering = ('name',)
-
-class Analytic_Value(models.Model):
-	name = models.ForeignKey(Analytic)
 	value = models.FloatField(blank=True)
-	def __unicode__(self):
-		return unicode(self.name) + ' = ' + unicode(self.value)
-
-
-class Custom_Text(models.Model):
-	name = models.CharField(max_length=255)
   
 	def __unicode__(self):
-		return self.name
+		return unicode(self.name) + ' = ' + unicode(self.value)
 
 	class Meta:
 		ordering = ('name',)
 
-class Custom_Text_Value(models.Model):
-	name = models.ForeignKey(Custom_Text)
-	value = models.CharField(max_length=255)
-	def __unicode__(self):
-		return unicode(self.name) + ' = ' + unicode(self.value)
+# class Custom_Text(models.Model):
+# 	name = models.CharField(max_length=255)
+# 	value = models.CharField(max_length=255,blank=True)
+# 
+# 	def __unicode__(self):
+# 		return unicode(self.name) + ' = ' + unicode(self.value)
+# 
+# 	class Meta:
+# 		ordering = ('name',)
+#
+# class Custom_Text_Value(models.Model):
+# 	name = models.ForeignKey(Custom_Text)
+# 	def __unicode__(self):
+# 		return unicode(self.name) + ' = ' + unicode(self.value)
 
 
 
@@ -101,9 +94,8 @@ class Resource(models.Model):
 	keyword = models.ManyToManyField(Keyword, blank=True)
 	topic = models.ManyToManyField(Topic, blank=True)
 
-	custom_text = models.ManyToManyField(Custom_Text, blank=True, null=True)
-	custom_text_value = models.ForeignKey(Custom_Text_Value, blank=True, null=True)
-
+	custom_text = models.CharField(max_length=255, blank=True)
+	custom_text_value = models.CharField(max_length=255, blank=True)
 	
 	resource_file = models.FileField(upload_to=".", blank=True)
 
@@ -148,8 +140,8 @@ class Resource(models.Model):
 
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
-	analytic = models.ManyToManyField(Analytic, blank=True, null=True)
-	analytic_value = models.ForeignKey(Analytic_Value, blank=True, null=True)
+	
+	analytic = models.OneToOneField(Analytic, blank=True, null=True)
 	
 #	file_size = models.IntegerField(blank=True) # measure in Unix standard - bytes? yes?
 #												# Should include uploaded file and text, but not other data

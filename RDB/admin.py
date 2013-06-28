@@ -5,9 +5,7 @@ from RDB.models import Topic
 from RDB.models import Keyword
 from RDB.models import Code_Dependencies
 from RDB.models import Analytic
-from RDB.models import Analytic_Value
-from RDB.models import Custom_Text
-from RDB.models import Custom_Text_Value
+# from RDB.models import Custom_Text
 
 class Resource_Admin(admin.ModelAdmin):
 	list_filter = ['creation_date','grade_level']
@@ -21,7 +19,7 @@ class Resource_Admin(admin.ModelAdmin):
         ('For Problems',			{'fields': ['problem_type'], 'classes': ['collapse']}),
         ('For Applications',		{'fields': ['code_dependencies'], 'classes': ['collapse']}),
         ('Custom Text',				{'fields': ['custom_text','custom_text_value'], 'classes': ['collapse']}),
-        ('Automatically Generated',	{'fields': ['analytic','analytic_value','creation_date'], 'classes': ['collapse']}),        
+        ('Automatically Generated',	{'fields': ['analytic','creation_date'], 'classes': ['collapse']}),        
     ]
 	
 
@@ -31,6 +29,4 @@ admin.site.register(Keyword)
 admin.site.register(Topic)
 admin.site.register(Code_Dependencies)
 admin.site.register(Analytic)
-admin.site.register(Analytic_Value)
-admin.site.register(Custom_Text)
-admin.site.register(Custom_Text_Value)
+# admin.site.register(Custom_Text)
