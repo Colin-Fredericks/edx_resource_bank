@@ -1,4 +1,6 @@
 from django.db import models
+from django import forms
+from fieldmaker.forms import ExpandableForm, ExpandableModelForm
 
 
 class Learning_Objective(models.Model):
@@ -42,16 +44,16 @@ class Code_Dependencies(models.Model):
 		ordering = ('codebase',)
 
 
-class Analytic(models.Model):
-	name = models.CharField(max_length=255)
-	value = models.FloatField(blank=True)
-  
-	def __unicode__(self):
-		return unicode(self.name) + ' = ' + unicode(self.value)
-
-	class Meta:
-		ordering = ('name',)
-
+# class Analytic(models.Model):
+# 	name = models.CharField(max_length=255)
+# 	value = models.FloatField(blank=True)
+#   
+# 	def __unicode__(self):
+# 		return unicode(self.name) + ' = ' + unicode(self.value)
+# 
+# 	class Meta:
+# 		ordering = ('name',)
+# 
 # class Custom_Text(models.Model):
 # 	name = models.CharField(max_length=255)
 # 	value = models.CharField(max_length=255,blank=True)
@@ -90,9 +92,9 @@ class Resource(models.Model):
 
 
 	# Items very likely to be in use
-	text = models.TextField(blank=True)	# This is where problems store edXML and most other things store nothing
-	keyword = models.ManyToManyField(Keyword, blank=True)
-	topic = models.ManyToManyField(Topic, blank=True)
+ 	text = models.TextField(blank=True)	# This is where problems store edXML and most other things store nothing
+ 	keyword = models.ManyToManyField(Keyword, blank=True)
+ 	topic = models.ManyToManyField(Topic, blank=True)
 
 	custom_text = models.CharField(max_length=255, blank=True)
 	custom_text_value = models.CharField(max_length=255, blank=True)
@@ -122,50 +124,50 @@ class Resource(models.Model):
 		('other', 'other'),
 		), blank=True
 	)
-
+#
 # 	needed_resources = # For embedded images and such. Not sure how to do this. Should be extensible.
 # 	related_resources = # For other related stuff. Not sure how to do this. Should be extensible.
 # 						# How can we have teachers add suggested related items?
 
 
 	# License and Origin
-	license = models.CharField(max_length=255, blank=True)
-	license_link = models.URLField(blank=True)
-	license_other_notes = models.TextField(blank=True)
-	source = models.CharField(max_length=255, blank=True)
-	author = models.CharField(max_length=255, blank=True)
-	comments = models.TextField(blank=True)
+ 	license = models.CharField(max_length=255, blank=True)
+ 	license_link = models.URLField(blank=True)
+ 	license_other_notes = models.TextField(blank=True)
+ 	source = models.CharField(max_length=255, blank=True)
+ 	author = models.CharField(max_length=255, blank=True)
+ 	comments = models.TextField(blank=True)
 	
 	
 
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
 	
-	analytic = models.OneToOneField(Analytic, blank=True, null=True)
-	
+#	analytic = models.OneToOneField(Analytic, blank=True, null=True)
+#	
 #	file_size = models.IntegerField(blank=True) # measure in Unix standard - bytes? yes?
 #												# Should include uploaded file and text, but not other data
 #	used_in_courses = same way
 
 	
-#	# Specifically for problems
+	# Specifically for problems
 #	wrong_answer_responses = # I feel like I need to point to a table for this one.		Check out one-to-many
-	problem_type = models.CharField(max_length=16, choices=(
-		('multiple_choice', 'multiple_choice'), 
-		('select_all', 'select_all'), 
-		('free_response', 'free_response'),
-		('numerical', 'numerical'),
-		('formula', 'formula'), 
-		('image', 'image'),
-		('vector', 'vector'),
-		('custom', 'custom'),
-		('not_a_problem', 'not_a_problem'),
-		), default='not_a_problem'
-	)
-
+ 	problem_type = models.CharField(max_length=16, choices=(
+ 		('multiple_choice', 'multiple_choice'), 
+ 		('select_all', 'select_all'), 
+ 		('free_response', 'free_response'),
+ 		('numerical', 'numerical'),
+ 		('formula', 'formula'), 
+ 		('image', 'image'),
+ 		('vector', 'vector'),
+ 		('custom', 'custom'),
+ 		('not_a_problem', 'not_a_problem'),
+ 		), default='not_a_problem'
+ 	)
+ 
 #	# Specifically for videos and animations
 #	video_length = models.IntegerField(blank=True)	# should be a time, but not a "time of day" kind of time. Like a "4 minutes and 30 seconds" time.
-													# Maybe store in seconds, display in hh:mm:ss?
+#													# Maybe store in seconds, display in hh:mm:ss?
 	
 	# Specifically for applications, simulations, etc.
 	# Many problems will need this as well, I suppose.
@@ -174,6 +176,17 @@ class Resource(models.Model):
 	def __unicode__(self):
 		return self.name
 
+
+class MyForm(ExpandableForm):
+    title = forms.CharField()
+
+    class Meta:
+        form_key = 'myform'
+
+class MyModelForm(ExpandableModelForm):
+    class Meta:
+        model = Resource
+        form_key = 'resource'
 
 
 class Collection(models.Model):
