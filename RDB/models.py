@@ -69,7 +69,14 @@ class Code_Dependencies(models.Model):
 # 	def __unicode__(self):
 # 		return unicode(self.name) + ' = ' + unicode(self.value)
 
+class Analytic(models.Model):
+	name = models.CharField(max_length=255)
+  
+	def __unicode__(self):
+		return self.name
 
+	class Meta:
+		ordering = ('name',)
 
 class Resource(models.Model):
 
@@ -96,8 +103,12 @@ class Resource(models.Model):
  	keyword = models.ManyToManyField(Keyword, blank=True)
  	topic = models.ManyToManyField(Topic, blank=True)
 
+
 	custom_text = models.CharField(max_length=255, blank=True)
 	custom_text_value = models.CharField(max_length=255, blank=True)
+	# This is the worst, least extensible way to do custom entries.
+	# Even as a last resort it would not be worth doing.
+
 	
 	resource_file = models.FileField(upload_to=".", blank=True)
 
@@ -143,7 +154,14 @@ class Resource(models.Model):
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
 	
-#	analytic = models.OneToOneField(Analytic, blank=True, null=True)
+	analytic = models.ManyToManyField(Analytic, blank=True, null=True)
+	# This version stores the data correctly, exactly how I want it. 
+	# People can define new analytics, 
+	# There is a value out there associated with both the model and the particular analytic in question.
+	# Unfortunately, it's very difficult to edit.
+	
+	
+	
 #	
 #	file_size = models.IntegerField(blank=True) # measure in Unix standard - bytes? yes?
 #												# Should include uploaded file and text, but not other data
@@ -176,14 +194,24 @@ class Resource(models.Model):
 	def __unicode__(self):
 		return self.name
 
+class Analytic_Value(models.Model):
+	analytic = models.ForeignKey(Analytic)
+	resource = models.ForeignKey(Resource)
+	value = models.FloatField(blank=True)
+  
+	def __unicode__(self):
+		return unicode(self.analytic) + ' = ' + unicode(self.value)
+
 
 class MyForm(ExpandableForm):
-    title = forms.CharField()
+	# This maybe allows the creation of new custom entries.
+	title = forms.CharField()
 
-    class Meta:
-        form_key = 'myform'
+	class Meta:
+		form_key = 'myform'
 
 class MyModelForm(ExpandableModelForm):
+	# This... I have no idea. I think it associates my custom stuff with the Resource model?
     class Meta:
         model = Resource
         form_key = 'resource'
