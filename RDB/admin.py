@@ -20,7 +20,7 @@ class Resource_Admin(admin.ModelAdmin):
         ('For Files',				{'fields': ['resource_file'], 'classes': ['collapse']}),
         ('For Problems',			{'fields': ['problem_type'], 'classes': ['collapse']}),
         ('For Applications',		{'fields': ['code_dependencies'], 'classes': ['collapse']}),
-        ('Custom Text',				{'fields': ['custom_text'], 'classes': ['collapse']}),
+        ('Custom Text',				{'fields': ['custom_text','custom_text_value'], 'classes': ['collapse']}),
         ('Automatically Generated',	{'fields': ['analytic','analytic_value','creation_date'], 'classes': ['collapse']}),        
     ]
 	

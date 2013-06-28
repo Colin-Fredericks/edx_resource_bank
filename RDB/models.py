@@ -33,6 +33,16 @@ class Keyword(models.Model):
 		ordering = ('keyword',)
 
 
+class Code_Dependencies(models.Model):
+	codebase = models.CharField(max_length=255)
+  
+	def __unicode__(self):
+		return self.codebase
+
+	class Meta:
+		ordering = ('codebase',)
+
+
 class Analytic(models.Model):
 	name = models.CharField(max_length=255)
   
@@ -45,6 +55,8 @@ class Analytic(models.Model):
 class Analytic_Value(models.Model):
 	name = models.ForeignKey(Analytic)
 	value = models.FloatField(blank=True)
+	def __unicode__(self):
+		return unicode(self.name) + ' = ' + unicode(self.value)
 
 
 class Custom_Text(models.Model):
@@ -56,15 +68,12 @@ class Custom_Text(models.Model):
 	class Meta:
 		ordering = ('name',)
 
-
-class Code_Dependencies(models.Model):
-	codebase = models.CharField(max_length=255)
-  
+class Custom_Text_Value(models.Model):
+	name = models.ForeignKey(Custom_Text)
+	value = models.CharField(max_length=255)
 	def __unicode__(self):
-		return self.codebase
+		return unicode(self.name) + ' = ' + unicode(self.value)
 
-	class Meta:
-		ordering = ('codebase',)
 
 
 class Resource(models.Model):
@@ -92,7 +101,8 @@ class Resource(models.Model):
 	keyword = models.ManyToManyField(Keyword, blank=True)
 	topic = models.ManyToManyField(Topic, blank=True)
 
-	custom_text = models.ManyToManyField(Custom_Text, blank=True)
+	custom_text = models.ManyToManyField(Custom_Text, blank=True, null=True)
+	custom_text_value = models.ForeignKey(Custom_Text_Value, blank=True, null=True)
 
 	
 	resource_file = models.FileField(upload_to=".", blank=True)
@@ -138,8 +148,8 @@ class Resource(models.Model):
 
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
-	analytic = models.ManyToManyField(Analytic, blank=True)
-	analytic_value = models.ForeignKey(Analytic_Value)
+	analytic = models.ManyToManyField(Analytic, blank=True, null=True)
+	analytic_value = models.ForeignKey(Analytic_Value, blank=True, null=True)
 	
 #	file_size = models.IntegerField(blank=True) # measure in Unix standard - bytes? yes?
 #												# Should include uploaded file and text, but not other data
@@ -172,12 +182,6 @@ class Resource(models.Model):
 	def __unicode__(self):
 		return self.name
 
-
-
-class Custom_Text_Value(models.Model):
-	name = models.ForeignKey(Custom_Text)
-	resource = models.ForeignKey(Resource)
-	value = models.CharField(max_length=255)
 
 
 class Collection(models.Model):
