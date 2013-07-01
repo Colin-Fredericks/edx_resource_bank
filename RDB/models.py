@@ -44,31 +44,6 @@ class Code_Dependencies(models.Model):
 		ordering = ('codebase',)
 
 
-# class Analytic(models.Model):
-# 	name = models.CharField(max_length=255)
-# 	value = models.FloatField(blank=True)
-#   
-# 	def __unicode__(self):
-# 		return unicode(self.name) + ' = ' + unicode(self.value)
-# 
-# 	class Meta:
-# 		ordering = ('name',)
-# 
-# class Custom_Text(models.Model):
-# 	name = models.CharField(max_length=255)
-# 	value = models.CharField(max_length=255,blank=True)
-# 
-# 	def __unicode__(self):
-# 		return unicode(self.name) + ' = ' + unicode(self.value)
-# 
-# 	class Meta:
-# 		ordering = ('name',)
-#
-# class Custom_Text_Value(models.Model):
-# 	name = models.ForeignKey(Custom_Text)
-# 	def __unicode__(self):
-# 		return unicode(self.name) + ' = ' + unicode(self.value)
-
 class Analytic(models.Model):
 	name = models.CharField(max_length=255)
   
@@ -102,13 +77,6 @@ class Resource(models.Model):
  	text = models.TextField(blank=True)	# This is where problems store edXML and most other things store nothing
  	keyword = models.ManyToManyField(Keyword, blank=True)
  	topic = models.ManyToManyField(Topic, blank=True)
-
-
-	custom_text = models.CharField(max_length=255, blank=True)
-	custom_text_value = models.CharField(max_length=255, blank=True)
-	# This is the worst, least extensible way to do custom entries.
-	# Even as a last resort it would not be worth doing.
-
 	
 	resource_file = models.FileField(upload_to=".", blank=True)
 
@@ -202,6 +170,18 @@ class Analytic_Value(models.Model):
   
 	def __unicode__(self):
 		return unicode(self.analytic) + ' = ' + unicode(self.value)
+
+
+class Custom_Text(models.Model):
+	resource = models.ForeignKey(Resource)
+	name = models.CharField(max_length=255)
+	value = models.CharField(max_length=255,blank=True)
+
+	def __unicode__(self):
+		return unicode(self.name) + ' = ' + unicode(self.value)
+
+	class Meta:
+		ordering = ('name',)
 
 
 class MyForm(ExpandableForm):

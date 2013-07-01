@@ -3,7 +3,7 @@
 
 from django.http import Http404
 from django.shortcuts import render
-from RDB.models import Resource, Analytic_Value
+from RDB.models import Resource, Analytic_Value, Custom_Text
 
 # def index(request):
 #	 latest_resource_list = Resource.objects.order_by('-creation_date')[:5]
@@ -28,7 +28,8 @@ def detail(request, resource_id):
 	except Resource.DoesNotExist:
 		raise Http404
 	analytic_values = Analytic_Value.objects.filter(resource=res)
-	return render(request, 'RDB/detail.html', {'resource': res, 'analytic_values': analytic_values,})
+	custom_text = Custom_Text.objects.filter(resource=res)
+	return render(request, 'RDB/detail.html', {'resource': res, 'analytic_values': analytic_values, 'custom_text': custom_text,})
 
 
 def results(request, resource_id):

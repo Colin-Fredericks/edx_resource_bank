@@ -114,7 +114,18 @@
 	<td><b>Creation Date</b></td>
 	<td>{{resource.creation_date}}</td>
 </tr>
+{% for CT in custom_text.all %}
+<tr>
+	<td><b>{{CT.name}}</b></td>
+	<td>{{CT.value}}</td>
+</tr>
+{% endfor %}
 </table>
+
+<h3>Item Text</h3>
+<table><tr><td>
+{{resource.text}}
+</td></tr></table>
 
 </body>
 </html>
