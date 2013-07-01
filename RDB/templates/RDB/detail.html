@@ -1,24 +1,33 @@
+{% load staticfiles %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "RDB/style.css" %}" />
+</head>
+
+<body>
+
 <h1>Resource #{{resource.id}}: {{ resource.name }}</h1>
 
 <h3>Required Fields</h3>
 
 <table border="1">
 <tr>
-	<td><b>Field</b></td> <td><b>Value</b></td>
+	<td><b>Name</b></td>
+	<td>{{resource.name}}</td>
 </tr>
 <tr>
-	<td>Name</td> <td>{{resource.name}}</td>
+	<td><b>Resource Type</b></td>
+	<td>{{resource.resource_type}}</td>
 </tr>
 <tr>
-	<td>Resource Type</td> <td>{{resource.resource_type}}</td>
-</tr>
-<tr>
-	<td>Hide Info from Students?</td> <td>{{resource.hide_info}}</td>
+	<td><b>Hide Info from Students?</b></td>
+	<td>{{resource.hide_info}}</td>
 </tr>
 
 {% for LO in resource.learning_objective.all %}
 <tr>
-	<td>Learning Objective #{{forloop.counter}}</td> <td>{{LO.short_name}} ({{LO.learning_objective}})</td>
+	<td><b>Learning Objective #{{forloop.counter}}</b></td>
+	<td>{{LO.short_name}} ({{LO.learning_objective}})</td>
 </tr>
 {% endfor %}
 
@@ -29,29 +38,31 @@
 
 <table border="1">
 <tr>
-	<td><b>Field</b></td> <td><b>Value</b></td>
+	<td><b>Grade Level</b></td>
+	<td>{{resource.grade_level}}</td>
 </tr>
 <tr>
-	<td>Grade Level</td> <td>{{resource.grade_level}}</td>
-</tr>
-<tr>
-	<td>Intended Use</td> <td>{{resource.intended_use}}</td>
+	<td><b>Intended Use</b></td>
+	<td>{{resource.intended_use}}</td>
 </tr>
 
 {% for KW in resource.keyword.all %}
 <tr>
-	<td>Keyword</td> <td>{{KW.keyword}}</td>
+	<td><b>Keyword</b></td>
+	<td>{{KW.keyword}}</td>
 </tr>
 {% endfor %}
 
 {% for KW in resource.topic.all %}
 <tr>
-	<td>Topic</td> <td>{{KW.topic}}</td>
+	<td><b>Topic</b></td>
+	<td>{{KW.topic}}</td>
 </tr>
 {% endfor %}
 
 <tr>
-	<td>Problem Type</td> <td>{{resource.problem_type}}</td>
+	<td><b>Problem Type</b></td>
+	<td>{{resource.problem_type}}</td>
 </tr>
 </table>
 
@@ -60,22 +71,24 @@
 
 <table border="1">
 <tr>
-	<td><b>Field</b></td> <td><b>Value</b></td>
+	<td><b>License</b></td>
+	<td><a href="{{resource.license_link}}">{{resource.license}}</a></td>
 </tr>
 <tr>
-	<td>License</td> <td><a href="{{resource.license_link}}">{{resource.license}}</a></td>
+	<td><b>Licensing Notes</b></td>
+	<td>{{resource.license_other_notes}}</td>
 </tr>
 <tr>
-	<td>Licensing Notes</td> <td>{{resource.license_other_notes}}</td>
+	<td><b>Source</b></td>
+	<td>{{resource.source}}</td>
 </tr>
 <tr>
-	<td>Source</td> <td>{{resource.source}}</td>
+	<td><b>Author</b></td>
+	<td>{{resource.author}}</td>
 </tr>
 <tr>
-	<td>Author</td> <td>{{resource.author}}</td>
-</tr>
-<tr>
-	<td>Source Comments</td> <td>{{resource.comments}}</td>
+	<td><b>Source Comments</b></td>
+	<td>{{resource.comments}}</td>
 </tr>
 </table>
 
@@ -83,13 +96,11 @@
 <h3>Analytics Results</h3>
 
 <table border="1">
-<tr>
-	<td><b>Field</b></td> <td><b>Value</b></td>
-</tr>
 
-{% for ANA in resource.keyword.all %}
+{% for AV in analytic_values.all %}
 <tr>
-	<td>{{ANA.analytic}}</td> <td>{{ANA.analytic.value}}</td>
+	<td><b>{{AV.analytic.name}}</b></td>
+	<td>{{AV.value}}</td>
 </tr>
 {% endfor %}
 
@@ -100,11 +111,10 @@
 
 <table border="1">
 <tr>
-	<td><b>Field</b></td> <td><b>Value</b></td>
-</tr>
-<tr>
-	<td>Creation Date</td> <td>{{resource.creation_date}}</td>
+	<td><b>Creation Date</b></td>
+	<td>{{resource.creation_date}}</td>
 </tr>
 </table>
 
-
+</body>
+</html>

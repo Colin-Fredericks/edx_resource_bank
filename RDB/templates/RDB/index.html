@@ -1,3 +1,6 @@
+<table style="float:right" width="250" border="1">
+<tr><td>
+<h3>Recent Resources</h3>
 <p>Here is a list of recent resources in creation-date order:</p>
 
 {% if latest_resource_list %}
@@ -9,3 +12,10 @@
 {% else %}
     <p>No resources are available.</p>
 {% endif %}
+</td></tr>
+</table>
+
+<h3>Complete List of Resources</h3>
+{% for resource in resource_list %}
+	<p><a href="/RDB/{{ resource.id }}/">{{resource.id}}. {{ resource.name }}</a></p>
+{% endfor %}
