@@ -194,6 +194,7 @@ class Resource(models.Model):
 	def __unicode__(self):
 		return self.name
 
+
 class Analytic_Value(models.Model):
 	analytic = models.ForeignKey(Analytic)
 	resource = models.ForeignKey(Resource)

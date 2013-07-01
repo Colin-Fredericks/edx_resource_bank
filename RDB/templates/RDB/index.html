@@ -1,0 +1,11 @@
+<p>Here is a list of recent resources in creation-date order:</p>
+
+{% if latest_resource_list %}
+    <ul>
+    {% for resource in latest_resource_list %}
+        <li><a href="/RDB/{{ resource.id }}/">{{ resource.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No resources are available.</p>
+{% endif %}

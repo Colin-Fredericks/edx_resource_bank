@@ -28,7 +28,6 @@ class Resource_Admin(ExpandableModelAdmin):
 	]
 	pass
 
-
 admin.site.register(Resource, Resource_Admin)
 admin.site.register(Learning_Objective)
 admin.site.register(Keyword)
