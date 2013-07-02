@@ -28,7 +28,7 @@ Still fiddling around.
 
 Getting the interface working properly is a big priority. Right now some things are going to be completely unusable once we have 1000 different problems in here.
 
-Importing data via script, without having to type it all into the admin interface.
+Importing data via script, without having to type it all into the admin interface, will be an absolute necessity.
 
 Oddities and details
 --------------------
