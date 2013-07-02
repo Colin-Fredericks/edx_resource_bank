@@ -109,8 +109,8 @@ class Resource(models.Model):
 # 	needed_resources = # For embedded images and such. Not sure how to do this. Should be extensible.
 # 	related_resources = # For other related stuff. Not sure how to do this. Should be extensible.
 # 						# How can we have teachers add suggested related items?
-
-
+	
+	
 	# License and Origin
  	license = models.CharField(max_length=255, blank=True)
  	license_link = models.URLField(blank=True)
@@ -119,8 +119,6 @@ class Resource(models.Model):
  	author = models.CharField(max_length=255, blank=True)
  	comments = models.TextField(blank=True)
 	
-	
-
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
 	
@@ -152,7 +150,7 @@ class Resource(models.Model):
  		('not_a_problem', 'not_a_problem'),
  		), default='not_a_problem'
  	)
- 
+	
 #	# Specifically for videos and animations
 #	video_length = models.IntegerField(blank=True)	# should be a time, but not a "time of day" kind of time. Like a "4 minutes and 30 seconds" time.
 #													# Maybe store in seconds, display in hh:mm:ss?

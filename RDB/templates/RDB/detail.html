@@ -8,6 +8,13 @@
 
 <h1>Resource #{{resource.id}}: {{ resource.name }}</h1>
 
+{% if resource.resource_type == 'image' %}
+<a href="{% static 'RDB/uploads/' %}{{resource.resource_file}}">
+<img src="{% static 'RDB/uploads/' %}{{resource.resource_file}}" style="float:right" width="300"/>
+</a>
+{%endif%}
+
+
 <h3>Required Fields</h3>
 
 <table border="1">
@@ -141,6 +148,7 @@
 </table>
 
 <h3>Item Text</h3>
+
 <table><tr><td>
 {{resource.text}}
 </td></tr></table>
