@@ -1,4 +1,5 @@
 {% load staticfiles %}
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="{% static "RDB/style.css" %}" />
@@ -16,7 +17,7 @@
 
 <h3>Required Fields</h3>
 
-<table border="1">
+<table>
 <tr>
 	<td><b>Name</b></td>
 	<td>{{resource.name}}</td>
@@ -59,7 +60,7 @@
 
 <h3>Common Fields</h3>
 
-<table border="1">
+<table>
 <tr>
 	<td><b>Grade Level</b></td>
 	<td>{{resource.grade_level}}</td>
@@ -92,7 +93,7 @@
 
 <h3>License and Origin</h3>
 
-<table border="1">
+<table>
 <tr>
 	<td><b>License</b></td>
 	<td><a href="{{resource.license_link}}">{{resource.license}}</a></td>
@@ -122,7 +123,7 @@
 
 <h3>Analytics Results</h3>
 
-<table border="1">
+<table>
 
 {% for AV in analytic_values.all %}
 <tr>
@@ -136,7 +137,7 @@
 
 <h3>Collections</h3>
 
-<table border="1">
+<table>
 
 {% for COL in collections.all %}
 <tr>
@@ -150,7 +151,7 @@
 
 <h3>Misc. Info</h3>
 
-<table border="1">
+<table>
 <tr>
 	<td><b>Creation Date</b></td>
 	<td>{{resource.creation_date}}</td>

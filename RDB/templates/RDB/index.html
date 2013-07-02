@@ -1,3 +1,12 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "RDB/style.css" %}" />
+</head>
+
+<body>
+
 <table style="float:right" width="250" border="1">
 <tr><td>
 <h3>Recent Resources</h3>
@@ -15,7 +24,7 @@
 </td></tr>
 </table>
 
-<h3>Complete List of Resources</h3>
+<h1>Complete List of Resources</h1>
 
 <table border="0">
 {% for resource in resource_list %}
@@ -27,3 +36,6 @@
 </tr>
 {% endfor %}
 </table>
+
+</body>
+</html>
