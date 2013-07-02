@@ -53,6 +53,7 @@ class Analytic(models.Model):
 	class Meta:
 		ordering = ('name',)
 
+
 class Resource(models.Model):
 
 	# Required items
@@ -198,38 +199,52 @@ class MyModelForm(ExpandableModelForm):
         form_key = 'resource'
 
 
+class Learning_Objective_Broad(models.Model):
+
+	learning_objective = models.CharField(max_length=255)
+	short_name = models.CharField(max_length=16)
+	def __unicode__(self):
+		return self.short_name
+	
+	class Meta:
+		ordering = ('learning_objective',)
+
+
 class Collection(models.Model):
 	# used to collect multiple items, such as a video followed by a problem, or a whole module
 	# Should inherit all learning objectives from its members, and also have its own LOs.
 
 	# Required
 	name = models.CharField(max_length=255)
-	collection_level = models.CharField(max_length=16, choices=(
+	collection_type = models.CharField(max_length=16, choices=(
 		('page', 'page'), 
 		('module', 'module'), 
 		('chapter', 'chapter'),
+		('related items', 'related items'),
+		('versions', 'versions'),
 		)
 	)
-#	included_resources = 	# Should be several links to Resources or sub-Collections, in order		many-to-many
-#							# How do I support randomization? 
+
+	included_resources = models.ManyToManyField(Resource)
 	is_sequential = models.BooleanField(default=True)
 
-#	learning_objectives_overall = # larger-scale, overarching LOs that apply to the collection but are not necessarily obvious from its parts
+	learning_objectives_broad = models.ManyToManyField(Learning_Objective_Broad)
+	# larger-scale, overarching LOs that apply to the collection but are not necessarily obvious from its parts
+
+
+#	# How do I support randomization? 
+
 
 	# Optional
-#	code_dependecies =  # Should be several strings
-
+	code_dependencies = models.ManyToManyField(Code_Dependencies, blank=True)
+	
 	# Should be automatically generated
-#	creation_date = models.DateField()
+	creation_date = models.DateField(auto_now_add=True)
+
 #	file_size = models.IntegerField() # summed from size of included resources
-#	learning_objectives = # should be automatically generated from included resources
-#	topics = # should be automatically generated from included resources
-#	keywords = # should be automatically generated from included resources
 #	used_in_courses = 	# should be a list of every course where this resource has been used... 
 						# or do we want to have a "courses" item and draw from that when generating such a list?
 						# Need course title, year, and section (if one exists).
-#	used_in_collections = # same deal
-#	analytics = # Yeah, *really* not sure how to do this one.
 	
 	def __unicode__(self):
 		return self.name

@@ -107,6 +107,20 @@
 </table>
 
 
+<h3>Collections</h3>
+
+<table border="1">
+
+{% for COL in collections.all %}
+<tr>
+	<td><b>{{COL.collection_type}}</b></td>
+	<td>{{COL.name}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+
 <h3>Misc. Info</h3>
 
 <table border="1">

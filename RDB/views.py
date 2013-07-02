@@ -3,7 +3,7 @@
 
 from django.http import Http404
 from django.shortcuts import render
-from RDB.models import Resource, Analytic_Value, Custom_Text
+from RDB.models import Resource, Analytic_Value, Custom_Text, Collection
 
 # def index(request):
 #	 latest_resource_list = Resource.objects.order_by('-creation_date')[:5]
@@ -29,11 +29,21 @@ def detail(request, resource_id):
 		raise Http404
 	analytic_values = Analytic_Value.objects.filter(resource=res)
 	custom_text = Custom_Text.objects.filter(resource=res)
-	return render(request, 'RDB/detail.html', {'resource': res, 'analytic_values': analytic_values, 'custom_text': custom_text,})
+	collections = Collection.objects.filter(included_resources=res)
+	return render(request, 'RDB/detail.html', {'resource': res, 'analytic_values': analytic_values, 'custom_text': custom_text, 'collections': collections})
 
 
-def results(request, resource_id):
-	return HttpResponse("You're seeing changes of results in resource #%s." % resource_id)
+def collection(request, collection_id):
+	try:
+		collection = Collection.objects.get(pk=collection_id)
+	except Collection.DoesNotExist:
+		raise Http404
+	return render(request, 'RDB/collection.html', {'collection': collection})
+	
 
-def vote(request, resource_id):
-	return HttpResponse("You're changing resource #%s." % resource_id)
+
+# def results(request, resource_id):
+# 	return HttpResponse("You're seeing changes of results in resource #%s." % resource_id)
+# 
+# def vote(request, resource_id):
+# 	return HttpResponse("You're changing resource #%s." % resource_id)

@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "RDB/style.css" %}" />
+</head>
+
+<body>
+
+<h1>Collection #{{collection.id}}: {{ collection.name }}</h1>
+
+<h3>Required Fields</h3>
+
+<table border="1">
+<tr>
+	<td><b>Name</b></td>
+	<td>{{collection.name}}</td>
+</tr>
+<tr>
+	<td><b>Collection Type</b></td>
+	<td>{{collection.collection_type}}</td>
+</tr>
+<tr>
+	<td><b>Sequential?</b></td>
+	<td>{{collection.is_sequential}}</td>
+</tr>
+
+{% for LO in collection.learning_objective_broad.all %}
+<tr>
+	<td><b>Learning Objective #{{forloop.counter}}</b></td>
+	<td>{{LO.short_name}} ({{LO.learning_objective}})</td>
+</tr>
+{% endfor %}
+
+</table>
+
+
+<h3>Included Resources</h3>
+
+<table>
+{% for RES in collection.included_resources.all %}
+<tr>
+	<td><b>Resource #{{forloop.counter}}</b></td>
+	<td><a href="../../{{RES.id}}">{{RES.name}}</a></td>
+	<td>{{RES.resource_type}}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
