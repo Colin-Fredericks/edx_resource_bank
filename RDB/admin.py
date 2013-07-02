@@ -23,11 +23,11 @@ class Resource_Admin(ExpandableModelAdmin):
 #	fields = ('name', 'resource_type', 'learning_objective', 'hide_info')
 
 	fieldsets = [
-		('Required',				{'fields': ['name','resource_type','learning_objective','hide_info','is_deprecated']}),
+		('Required',				{'fields': ['name','description','resource_type','learning_objective','hide_info','is_deprecated']}),
 		('Common Items',			{'fields': ['text','topic','keyword','intended_use'], 'classes': ['collapse']}),
 		('License and Origin', 		{'fields': ['license','license_link','license_other_notes','source','author','comments'], 'classes': ['collapse']}),
 		('For Files',				{'fields': ['resource_file'], 'classes': ['collapse']}),
-		('For Problems',			{'fields': ['problem_type'], 'classes': ['collapse']}),
+		('For Problems',			{'fields': ['problem_type','solutions_hints_etc'], 'classes': ['collapse']}),
 		('For Applications',		{'fields': ['code_dependencies'], 'classes': ['collapse']}),
 		('Custom Text',				{'fields': ['analytic'], 'classes': ['collapse']}),
 		('Automatically Generated',	{'fields': ['creation_date'], 'classes': ['collapse']}),        

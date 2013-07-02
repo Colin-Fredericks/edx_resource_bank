@@ -14,13 +14,16 @@
 </a>
 {%endif%}
 
-
 <h3>Required Fields</h3>
 
 <table border="1">
 <tr>
 	<td><b>Name</b></td>
 	<td>{{resource.name}}</td>
+</tr>
+<tr>
+	<td><b>Description</b></td>
+	<td>{{resource.description}}</td>
 </tr>
 <tr>
 	<td><b>Resource Type</b></td>
@@ -41,6 +44,15 @@
 	<td>{{LO.short_name}} ({{LO.learning_objective}})</td>
 </tr>
 {% endfor %}
+
+{% if resource.resource_file %}
+<tr>
+	<td colspan="2">
+		<a href="{% static 'RDB/uploads/' %}{{resource.resource_file}}">Link to uploaded file</a>
+	</td>
+</tr>
+{% endif %}
+
 
 </table>
 
@@ -94,6 +106,10 @@
 	<td>{{resource.source}}</td>
 </tr>
 <tr>
+	<td><b>Language</b></td>
+	<td>{{resource.language}}</td>
+</tr>
+<tr>
 	<td><b>Author</b></td>
 	<td>{{resource.author}}</td>
 </tr>
@@ -125,7 +141,7 @@
 {% for COL in collections.all %}
 <tr>
 	<td><b>{{COL.collection_type}}</b></td>
-	<td>{{COL.name}}</td>
+	<td><a href="../collection/{{COL.id}}">{{COL.name}}</a></td>
 </tr>
 {% endfor %}
 
@@ -151,6 +167,9 @@
 
 <table><tr><td>
 {{resource.text}}
+</td></tr>
+<tr><td>
+{{resource.solutions_hints_etc}}
 </td></tr></table>
 
 </body>

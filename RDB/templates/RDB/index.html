@@ -16,6 +16,14 @@
 </table>
 
 <h3>Complete List of Resources</h3>
+
+<table border="0">
 {% for resource in resource_list %}
-	<p><a href="/RDB/{{ resource.id }}/">{{resource.id}}. {{ resource.name }}</a></p>
+<tr>
+<td>{{resource.id}}</td>
+<td><a href="/RDB/{{ resource.id }}/">{{ resource.name }}</a></td>
+<td>{{resource.resource_type}}</td>
+<td>{{resource.description}}</td>
+</tr>
 {% endfor %}
+</table>

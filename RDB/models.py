@@ -71,14 +71,17 @@ class Resource(models.Model):
 	)
 	hide_info = models.BooleanField('Hide info from students?', default=False)
 	is_deprecated = models.BooleanField('Is this resource deprecated?', default=False)
+#	replace_with = models.IntegerField('Replace with Resource #', blank=True)
+#	Replace deprecated resources with a different one by default. Should this point to the resource?
 
 	learning_objective = models.ManyToManyField(Learning_Objective)
+	description = models.CharField(max_length=255)
 
 
 	# Items very likely to be in use
- 	text = models.TextField(blank=True)	# This is where problems store edXML and most other things store nothing
- 	keyword = models.ManyToManyField(Keyword, blank=True)
- 	topic = models.ManyToManyField(Topic, blank=True)
+	text = models.TextField(blank=True)	# This is where problems store edXML and most other things store nothing
+	keyword = models.ManyToManyField(Keyword, blank=True)
+	topic = models.ManyToManyField(Topic, blank=True)
 	
 	resource_file = models.FileField(upload_to=".", blank=True)
 
@@ -94,30 +97,31 @@ class Resource(models.Model):
 	)
 
 	intended_use = models.CharField(max_length=16, choices=(
-		('exploration', 'exploration'),
 		('class_activity', 'class_activity'), 
 		('clicker', 'clicker'),
 		('checkpoint', 'checkpoint'),
-		('homework', 'homework'), 
-		('test', 'test'),
-		('reference', 'reference'), 
 		('exam', 'exam'),
+		('exploration', 'exploration'),
+		('homework', 'homework'), 
+		('reference', 'reference'), 
+		('test', 'test'),
 		('other', 'other'),
 		), blank=True
 	)
 #
-# 	needed_resources = # For embedded images and such. Not sure how to do this. Should be extensible.
-# 	related_resources = # For other related stuff. Not sure how to do this. Should be extensible.
-# 						# How can we have teachers add suggested related items?
+#	needed_resources = # For embedded images and such. Not sure how to do this. Should be extensible.
+#	related_resources = # For other related stuff. Not sure how to do this. Should be extensible.
+#						# How can we have teachers add suggested related items?
 	
 	
 	# License and Origin
- 	license = models.CharField(max_length=255, blank=True)
- 	license_link = models.URLField(blank=True)
- 	license_other_notes = models.TextField(blank=True)
- 	source = models.CharField(max_length=255, blank=True)
- 	author = models.CharField(max_length=255, blank=True)
- 	comments = models.TextField(blank=True)
+	license = models.CharField(max_length=255, blank=True)
+	license_link = models.URLField(blank=True)
+	license_other_notes = models.TextField(blank=True)
+	source = models.CharField(max_length=255, blank=True)
+	language = models.CharField(max_length=255, blank=True, default='English')
+	author = models.CharField(max_length=255, blank=True)
+	comments = models.TextField(blank=True)
 	
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
@@ -138,18 +142,20 @@ class Resource(models.Model):
 	
 	# Specifically for problems
 #	wrong_answer_responses = # I feel like I need to point to a table for this one.		Check out one-to-many
- 	problem_type = models.CharField(max_length=16, choices=(
- 		('multiple_choice', 'multiple_choice'), 
- 		('select_all', 'select_all'), 
- 		('free_response', 'free_response'),
- 		('numerical', 'numerical'),
- 		('formula', 'formula'), 
- 		('image', 'image'),
- 		('vector', 'vector'),
- 		('custom', 'custom'),
- 		('not_a_problem', 'not_a_problem'),
- 		), default='not_a_problem'
- 	)
+	problem_type = models.CharField(max_length=16, choices=(
+		('multiple_choice', 'multiple_choice'), 
+		('select_all', 'select_all'), 
+		('free_response', 'free_response'),
+		('numerical', 'numerical'),
+		('formula', 'formula'), 
+		('image', 'image'),
+		('vector', 'vector'),
+		('custom', 'custom'),
+		('not_a_problem', 'not_a_problem'),
+		), default='not_a_problem'
+	)
+	solutions_hints_etc = models.TextField(blank=True)
+	
 	
 #	# Specifically for videos and animations
 #	video_length = models.IntegerField(blank=True)	# should be a time, but not a "time of day" kind of time. Like a "4 minutes and 30 seconds" time.
@@ -242,7 +248,7 @@ class Collection(models.Model):
 	creation_date = models.DateField(auto_now_add=True)
 
 #	file_size = models.IntegerField() # summed from size of included resources
-#	used_in_courses = 	# should be a list of every course where this resource has been used... 
+#	used_in_courses =	# should be a list of every course where this resource has been used... 
 						# or do we want to have a "courses" item and draw from that when generating such a list?
 						# Need course title, year, and section (if one exists).
 	
