@@ -70,6 +70,7 @@ class Resource(models.Model):
 		)
 	)
 	hide_info = models.BooleanField('Hide info from students?', default=False)
+	is_deprecated = models.BooleanField('Is this resource deprecated?', default=False)
 
 	learning_objective = models.ManyToManyField(Learning_Objective)
 
@@ -227,6 +228,7 @@ class Collection(models.Model):
 
 	included_resources = models.ManyToManyField(Resource)
 	is_sequential = models.BooleanField(default=True)
+	is_deprecated = models.BooleanField('Is this resource deprecated?', default=False)
 
 	learning_objectives_broad = models.ManyToManyField(Learning_Objective_Broad)
 	# larger-scale, overarching LOs that apply to the collection but are not necessarily obvious from its parts

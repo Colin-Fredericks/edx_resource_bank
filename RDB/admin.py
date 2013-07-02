@@ -23,7 +23,7 @@ class Resource_Admin(ExpandableModelAdmin):
 #	fields = ('name', 'resource_type', 'learning_objective', 'hide_info')
 
 	fieldsets = [
-		('Required',				{'fields': ['name','resource_type','learning_objective','hide_info']}),
+		('Required',				{'fields': ['name','resource_type','learning_objective','hide_info','is_deprecated']}),
 		('Common Items',			{'fields': ['text','topic','keyword','intended_use'], 'classes': ['collapse']}),
 		('License and Origin', 		{'fields': ['license','license_link','license_other_notes','source','author','comments'], 'classes': ['collapse']}),
 		('For Files',				{'fields': ['resource_file'], 'classes': ['collapse']}),
@@ -40,7 +40,7 @@ class Collection_Admin(admin.ModelAdmin):
 	readonly_fields = ('creation_date',)
 	
 	fieldsets = [
-		('Required', 				{'fields': ['name','collection_type','included_resources','is_sequential','learning_objectives_broad','code_dependencies']}),
+		('Required', 				{'fields': ['name','collection_type','included_resources','is_sequential','is_deprecated','learning_objectives_broad','code_dependencies']}),
 		('Automatically Generated',	{'fields': ['creation_date'], 'classes': ['collapse']}),        
 	]
 	pass
