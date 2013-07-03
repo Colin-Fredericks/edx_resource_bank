@@ -1,8 +1,12 @@
-table {
+table{
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px;
 	border-color: grey;
 	border-collapse: collapse;
+}
+
+table.item {
+	width: 60%;
 }
 
 td {
@@ -12,7 +16,18 @@ td {
 	padding: 2px;
 }
 
+h1 {
+	width: 60%;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #666;
+	margin: 0px;
+}
+
 h3 {
+	width: 60%;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #333;
 	margin-bottom: 0px;
-	padding-bottom: 0px;
 }
