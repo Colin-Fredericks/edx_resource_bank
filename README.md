@@ -17,6 +17,8 @@ Dependencies
 
 You'll have to create the mySQL database yourself. Check out resource_bank/settings.py to see/change names and passwords for that database.
 
+You'll need the [python mySQL](http://sourceforge.net/projects/mysql-python/) package. You'll also need the python CSV package, but that seems to be built into most distributions.
+
 We may end up using [Fieldmaker](https://django-fieldmaker.readthedocs.org/en/latest/index.html), or we may not. It's still included in various files, so you'll need that if you want to run this.
 
 I'd like to get [South](http://south.aeracode.org/) working, but damned if I can figure it out right now.
@@ -24,11 +26,9 @@ I'd like to get [South](http://south.aeracode.org/) working, but damned if I can
 Status
 --------
 
-Still fiddling around.
+Working on a script to import data from CSV files.
 
 Getting the interface working properly is a big priority. Right now some things are going to be completely unusable once we have 1000 different problems in here.
-
-Importing data via script, without having to type it all into the admin interface, will be an absolute necessity.
 
 Oddities and details
 --------------------

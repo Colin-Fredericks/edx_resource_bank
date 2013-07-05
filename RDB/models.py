@@ -67,6 +67,7 @@ class Resource(models.Model):
 		('audio', 'audio'),
 		('image', 'image'),
 		('application', 'application'),
+		('other', 'other'),
 		)
 	)
 	hide_info = models.BooleanField('Hide info from students?', default=False)
