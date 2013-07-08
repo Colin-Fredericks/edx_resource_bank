@@ -1,0 +1,140 @@
+Learning Objective,Code,Notes,Corresponding formulas
+,,,
+NEWTON'S LAWS,,,
+Recognize when Newton's First Law applies,N1Lrec,Unit 1,
+Recognize inertial and non-inertial reference frames,N1Linertial,Unit 1,
+Explain the difference between Fnet and ma,N2LFnetvsma,Unit 1,F_net = ma
+Recognize objects in equilibrium,N2Lequil,Unit 1,F_net = 0
+Apply Newton's 2nd Law to calculate the acceleration or the force,N2Lapply,Unit 1,F_net = ma
+Verify that the net force on the FBD and the acceleration are consistent,N2Lfbdconsistent,Unit 1,F_net = ma
+Draw or identify FBD showing the two opposite forces that come from the mutual interaction,N3Lfbd,Unit 1,F_12 = F_21
+,,,
+,,,
+FORCES,,,
+Represent the common forces in a FBD,FNLfbd,Unit 2,
+Relate weight and mg,FNLweight,Unit 2,F_g = mg
+Apply expression for universal gravity,FNLug,Unit 2,F= Gm_1 * m_2/R^2
+Calculate the elastic restoring force,FNLHooke,Unit 2,F = - kx
+Calculate the tension,FNLTension,Unit 2,
+Calculate the normal force,FNLNormal,Unit 2,
+Calculate the kinetic friction force,FNLkinfric,Unit 2,F_k = mu_k*N
+Calculate the static friction force,FNLstatfric,Unit 2,F_s <= mu_s*N
+Identify when F_s = \mu_s * N,FNLF=us*N,Unit 2,
+,,,
+,,,
+NEWTON's LAWS WITH CONSTRAINTS,,,
+Identify the system and the internal/external forces and interactions,FNL3system&forces,Unit 3,
+"Calculate constraint forces (normal force, tension and static friction) given constrained acceleration(s)",FNLForceFromConstraint,Unit 3,
+"Represent constraint conditions mathematically (pulleys, contact, string, inclines, etc.)",FNLconstraint,Unit 3,"T_1 = T_2, a_1 = a_2"
+,,,
+,,,
+KINEMATICS - DEFINITIONS,,,
+"Define the coordinate system, the position and the displacement vectors",K1pos,Unit 4,
+"Calculate the average velocity, the instantaneous velocity and speed",K1vel,Unit 4,"v_inst=dx/dt, v_avg = Delta x/Delta t"
+Calculate v and a for different scenarios,K1v&a,Unit 4,
+"Interrelate displacement, velocity and acceleration in multiple representations (graphical, diagrammatic, mathematical)",K1graph,Unit 4,
+,,,
+,,,
+1-D KINEMATICS,,,
+Solve problems that feature 1D motion with v=const,K1cvm,Unit 5,x=x_0 + v (t-t_0)
+Solve problems that feature 1D motion with a=const.,K1cam,Unit 5,all kinematics equations
+"Calculate x(t), v(t) and a(t) by differentiating and integrating",K1a(t),Unit 6,
+Graph changing motion,K1graph,Unit 6,
+,,,
+2-D KINEMATICS,,,
+Apply the constant velocity and the constant acceleration model to solve projectile motion problems,K2proj,Unit 6,
+Solve problems in which an object has different motions in consecutive time intervals,K1consec,Unit 6,
+,,,
+Solve problems that deal with the motion of more than one object,K1twobody,Unit 6,
+"Draw the tangential velocity, centripetal acc and net force for an object undergoing circular motion",K2ucmgraph,Unit 6,
+"Calculate the tangential velocity, centripetal acc and net force for an object undergoing uniform circular motion",K2ucma&v,Unit 6,
+Relate the tangential acceleration and angular acceleration,K2nucm,Unit 6,
+Find the direction of the acc graphically,K2a&vgraph,Unit 6,
+,,,
+,,,
+LINEAR MOMENTUM,,,
+Calculate momentum for a system of particles (analytically and graphically),Mmo,Unit 7,Psystem = \Sum m_i v_i
+Calculate the impulse from a time-varying force,Mci,Unit 7,I = \int F(t) dt
+Calculate Impulse from average force,Mfavg,Unit 7,I = Favg * \Delta t
+Relate momentum and impulse,Mpi,Unit 7,p_f = p_i + I
+Identify situations in which we can apply conservation of momentum,Mmc,Unit 7,
+Calculate the CM position for multi-body system,Mrcm,Unit 7,Rcm = m1 r1 + m2 r2 .../M
+Determine the Motion of Center of Mass,Mmcm,Unit 7,Vcm=Psystem/M and/or Acm= Fext/M
+Apply dp/dt = Fext,Mdp,Unit 7,dPsystem/dt = \Sum Fext
+Obtain differential equation by applying momentum and impulse at t and t + \Delta t,Mde,Unit 7,
+Mass flow,Maf,Unit 7,
+Compare and Contrast Agent of change for Momentum and Energy,,Unit Later,J = \int F(t)dt vs W = \int F^{nc} dr
+,,,
+,,,
+MECHANICAL ENERGY,,,
+Calculate work from constant vector force,EwFconst,Unit 8,W = Fs
+Calculate power due to a force acting on objbect with a given velocity,Epower,Unit 8,P= Fv
+Calculate the work using the integral,EwF(x),Unit 8,W= \int F(s) ds
+Find potential energy from work,EfindPE,Unit 8,Uf-Ui=-W
+Calculate the  potential energy for uniform gravity,EuniformGravPE,Unit 8,U=mgh
+Calculate the elastic potential energy,EspringPE,Unit 8,U=1/2 kx^2
+Calculate the potential energy for universal gravity,EuniversalGravPE,Unit 8,U=-GMm/r
+Identify situations where ME is constant,Emeconstant,Unit 8,E=constant
+Apply the conservation of mechanical energy,EapplyMEconstant,Unit 8,E1=E2
+Relate Mechanical Energy and Non-conservative Work,ErelateMEandWnc,Unit 8,Ei+Wnc=Ef
+Represent the mechanical energy in bar diagrams and graphs,EGraphical,Unit 8,
+Calculate the force from potential energy,EforceFromU(x),Unit 8,F=-dU/dx
+Use potential energy diagrams to identify equilibrium positions,Eequilibria,Unit 8,dU/dx=0
+,,,
+,,,
+ROTATIONAL KINEMATICS,,,
+Represent  the sign/direction and magnitude of omega and alpha for different rotations,change to K2Rsign/direction2D,Unit 9,
+"Interrelate angular position, velocity, and acceleration",K2RotationalKinematics,Unit 9,
+Vector Representation of Angular Motion including a not parallel to \omega,K3Rvector3D,,
+Velocity of points on rotating translating rigid body,K2RvelocityRigidBodyPoints,,
+"Calculate the constraint equations involving rolling constraints: conveyer belt, yoyos, rolling objects",K2RrollingConstranits,Unit 10,
+,,,
+ROTATIONAL DYNAMICS,,,
+,,,
+Find the magnitude and direction of the torque when object and force lie in a plane,FARtorque2D,Unit 9,
+Find the magnitude and direction of the torque about a point due to any force,FARtorque3D,Unit 9,
+Apply tau=I alpha,FARrelateTau&alpha,Unit 9,
+Calculate moment of inertia from mass distribution,FARMomentFromMass,Unit 9,
+Apply the Parallel Axis Theorem,FARparallelAxisTheorem,Unit 9,
+Rotational and Translational Equilibrium,FARstatics,Unit 9,
+,,,
+,,,
+KINETIC ENERGY OF ROTATION,,,
+Calculate the kinetic energy of rotating rigid bodies,Ek_rot,Unit 10,
+"Find the kinetic energy of a rotating, translating rigid body",Ek_rot&trans,Unit 10,
+,,,
+,,,
+ANGULAR MOMENTUM,,,
+Calculate the magnitude and the direction of the angular momentum vector of a point particle in 2-D,AMparticleAxis2D,Unit 11,
+Calculate the angular momentum of a rigid object rotating about a fixed axis in 2-D,AMrigidBody2D,Unit 11,
+Calculate angular momentum of a rigid object rotating in 3-D,AMrigidBody3D,,
+Calculate the angular momentum of a rigid object that translates and rotates,AMrotatingTranslating,Unit 11,
+Relate angular impulse and overall change in angular momentum,AMandImpulse,Unit 11,
+Recognize situation and identify axis about which angular momentum is constant,AMconstantAxis,Unit 11,
+,,,
+,,,
+ORBITS,,,
+"Use the Newton's law of gravity to find g at different locations relative to the surface of the planet and to predict the change in force caused by the change in distance, etc.",FNLug,Unit 12,
+"Apply Kepler's 3 laws, know definitions",OkeplerLaws,Unit 12,
+Calculate angular momenta of orbiting bodies and apply angular momentum constant,Oenergy,Unit 12,
+,,,
+,,,
+HARMONIC MOTION,,,
+Identify the physical significance of the terms in the general expression for x(t),HMgeneralSolution,Unit 13,
+Obtain and Identify Differential eqn leading to SHM,HMdifferentialEquation,Unit 13,
+Relate the parameters in general x(t) and the intial conditions,HMfitInitialCconditions,,
+Decide when the conservation of energy should be applied to solve a problem,EapplyMEconstant,Unit 13,
+"Calculate the KE, PE, E for a SHM at different moments in time","Espring PE, Eke",Unit 13,
+Calculate the period of the pendulum,HMpendulum,Unit 13,
+"Apply SHM to compound pendula, torsional pendula, etc.",HMgeneralSituations,Unit 13,
+Identify the correct equation of motion for a damped oscillator,HMdamped,Unit 13,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

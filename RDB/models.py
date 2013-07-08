@@ -6,7 +6,7 @@ from fieldmaker.forms import ExpandableForm, ExpandableModelForm
 class Learning_Objective(models.Model):
 
 	learning_objective = models.CharField(max_length=255)
-	short_name = models.CharField(max_length=16)
+	short_name = models.CharField(max_length=32)
 	def __unicode__(self):
 		return self.short_name
 	
