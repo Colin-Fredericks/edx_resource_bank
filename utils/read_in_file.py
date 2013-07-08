@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import csv
-import re # Regular Expressions, so I can escape things that would go into SQL
-import MySQLdb
+import csv			# routines for for Comma Separated Value files
+import re			# regular expressions, so I can escape text that would go into SQL
+import MySQLdb		# python-to-mySQL translator
 
 
 # Function that converts things
