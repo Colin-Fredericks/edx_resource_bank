@@ -1,7 +1,5 @@
 from django.db import models
 from django import forms
-from fieldmaker.forms import ExpandableForm, ExpandableModelForm
-
 
 class Learning_Objective(models.Model):
 
@@ -189,21 +187,6 @@ class Custom_Text(models.Model):
 
 	class Meta:
 		ordering = ('name',)
-
-
-class MyForm(ExpandableForm):
-	# This maybe allows the creation of new custom entries.
-	title = forms.CharField()
-
-	class Meta:
-		form_key = 'myform'
-
-class MyModelForm(ExpandableModelForm):
-	# This... I have no idea. I think it associates my custom stuff with the Resource model?
-    class Meta:
-        model = Resource
-        form_key = 'resource'
-
 
 class Learning_Objective_Broad(models.Model):
 

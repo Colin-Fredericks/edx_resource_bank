@@ -9,18 +9,15 @@ from RDB.models import Analytic_Value
 from RDB.models import Custom_Text
 from RDB.models import Code_Dependencies
 from RDB.models import Collection
-from fieldmaker.admin import ExpandableModelAdmin
 
 class Custom_Text_Admin(admin.TabularInline):
 	model = Custom_Text
 	pass
 
-class Resource_Admin(ExpandableModelAdmin):
+class Resource_Admin(admin.ModelAdmin):
 	list_filter = ['creation_date','grade_level']
 	search_fields = ['name','text']
 	readonly_fields = ('creation_date',)
-
-#	fields = ('name', 'resource_type', 'learning_objective', 'hide_info')
 
 	fieldsets = [
 		('Required',				{'fields': ['name','description','resource_type','learning_objective','hide_info','is_deprecated']}),

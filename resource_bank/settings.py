@@ -126,7 +126,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'RDB',
     # 'south',
-    'fieldmaker',
+    # 'fieldmaker',
 )
 
 # A sample logging configuration. The only tangible logging
