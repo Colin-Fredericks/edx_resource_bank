@@ -228,6 +228,7 @@ class Collection(models.Model):
 		('chapter', 'chapter'),
 		('related items', 'related items'),
 		('versions', 'versions'),
+		('other', 'other'),
 		)
 	)
 

@@ -2,21 +2,8 @@
 
 import sys
 import csv
-import re
-import itertools
+import re # Regular Expressions, so I can escape things that would go into SQL
 import MySQLdb
-
-""" Example of SQL stuff
-		
-		cur.execute("SELECT * FROM YOUR_TABLE_NAME")
-
-		# print all the first cell of all the rows
-		for row in cur.fetchall() :
-		print row[0]
-
-"""
-
-
 
 
 # Function that converts things
@@ -56,6 +43,8 @@ def main(argv):
 	
 
 			# Set all the variables that we're going to insert via SQL.
+			# The second column is the name of the collection. Unit 1, Homework 6, etc.
+			collection = row[1]
 			# Put the third column into the "name" field.
 			name = row[2]
 			# If the fourth column has the word "problem", mark resource_type = problem. Otherwise, call it "other" for now.
@@ -70,11 +59,6 @@ def main(argv):
 			hide_info = '0'
 			is_deprecated = '0'
 			
-			# Take the second column and make a Collection out of it, if one doesn't already exist. 
-			# Add this resource to the collection from column 2.
-			# if 
-			# 	collection = row[1]
-			# cur.execute("INSERT INTO RDB_resource (collection) VALUES (%s)", row[1])
 			#
 			# Skip column five
 			# Check to see if Columns 6, 7, 8 already exist as learning objectives.
@@ -83,6 +67,8 @@ def main(argv):
 			#
 			# Put column 10 in as a custom text field named "LC SYMB"
 			#
+
+
 			# Run one big "INSERT" command to put it all in.
 			sql_query = "INSERT RDB_resource "
 			
@@ -129,7 +115,48 @@ def main(argv):
 			sql_query += ""  + "')" # solutions_hints_etc
 
 			cur.execute(sql_query)
-			print (sql_query)
+
+			# Get the ID of the resource I just created
+			resource_id = cur.lastrowid
+
+
+			# Check to see if a collection with this name already exists. 
+			collection_id = cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
+			# If not, create the collection.
+			if not collection_id:
+
+				# A big INSERT command to create the collection.
+				collection_query = "INSERT INTO RDB_collection "
+			
+				collection_query += "(name, "
+				collection_query += "collection_type, "
+				collection_query += "is_sequential, "
+				collection_query += "is_deprecated, "
+				collection_query += "creation_date) "
+
+				collection_query += "VALUES ('"
+			
+				collection_query += re.escape(collection) + "', '" 
+				collection_query += "other" + "', '" 
+				collection_query += "0"  + "', '" # is_sequential
+				collection_query += "0"  + "', '" # is_deprecated
+				collection_query += "2001-01-01" + "')" # creation_date
+
+				cur.execute(collection_query)
+				
+				# Get the ID of the collection I just created.
+				collection_id = cur.lastrowid
+				
+			# Add this resource to the collection.
+			resource_insert_query = "INSERT INTO RDB_collection_included_resources "
+			resource_insert_query += "(collection_id, "
+			resource_insert_query += "resource_id) "
+			resource_insert_query += "VALUES ('"
+			resource_insert_query += str(collection_id) + "', '"
+			resource_insert_query += str(resource_id) + "')"
+
+			cur.execute(resource_insert_query)
+
 			
 			# next line in file -- handled automatically by the "for reader in row" statement.
 			# Next entry in database -- handled automatically by the fact that we're INSERTing whole rows at a time.
@@ -137,10 +164,7 @@ def main(argv):
 		# End loopy-loo
 
 	# Close the file -- done automatically via the "with" command
-	# Clean up the database stuff
-	
-	print cur.execute("SELECT * FROM RDB_resource")
-
+	# Clean up the database stuff: Commit all changes, close cursor and database.
 	db.commit()
 	cur.close()
 	db.close()
