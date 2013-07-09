@@ -56,29 +56,42 @@ def main(argv):
 	
 
 			# Set all the variables that we're going to insert via SQL.
-			# The second column is the name of the collection. Unit 1, Homework 6, etc.
-			collection = row[1]
-			# Put the third column into the "name" field.
-			name = row[2]
-			# If the fourth column has the word "problem", mark resource_type = problem. Otherwise, call it "other" for now.
+			# This should eventually be done by reading the headers.
+
+			name = row[0]
+			# If the second column has the word "problem", mark resource_type = problem. Otherwise, call it "other" for now.
 			# More sophisticated parsing later.
-			if row[3].find("problem") == -1:
+			if row[1].find("problem") == -1:
 				resource_type = 'other'
 			else:
 				resource_type = 'problem'
-			# Get the learning objectives from columns 6,7,8 in the file
-			learning_objectives = [row[5], row[6], row[7]]
-			# Put column 9 into the "description" field.
-			description = row[8]
-			# Set some required fields automatically.
-			hide_info = '0'
-			is_deprecated = '0'
-			
-			#
-			# Skip column five
-			#
-			# Put column 10 in as a custom text field named "LC SYMB"
-			#
+			description = row[2]
+			learning_objectives = [row[3], row[4], row[5]]
+			if row[6]:
+				is_deprecated = row[6]
+			else:
+				is_deprecated = '0'
+			if row[7]:
+				hide_info = row[7]
+			else:
+				hide_info = '0'
+			text = str(row[8]) # Eventually we want to read this from a separate file rather than from a CVS cell
+			resource_file = row[9]
+			grade_level = row[10]
+			intended_use = row[11]
+			license = row[12]
+			license_link = row[13]
+			license_other_notes = row[14]
+			source = row[15]
+			language = row[16]
+			author = row[17]
+			comments = row[18]
+			creation_date = row[19]
+			problem_type = row[20]
+			solutions_hints_etc = str(row[21])
+			collection = row[22]
+
+			# custom stuff needs some work.			
 
 
 			# Run one big "INSERT" command to put it all in.
