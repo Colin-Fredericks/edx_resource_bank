@@ -107,10 +107,11 @@ class Resource(models.Model):
 		('other', 'other'),
 		), blank=True
 	)
-#
+
 #	needed_resources = # For embedded images and such. Not sure how to do this. Should be extensible.
 #	related_resources = # For other related stuff. Not sure how to do this. Should be extensible.
 #						# How can we have teachers add suggested related items?
+#	All this might be better done using Collections.
 	
 	
 	# License and Origin
@@ -125,13 +126,7 @@ class Resource(models.Model):
 	# Should be automatically generated
 	creation_date = models.DateField(auto_now_add=True)
 	
-	analytic = models.ManyToManyField(Analytic, blank=True, null=True)
-	# This version stores the data correctly, exactly how I want it. 
-	# People can define new analytics, 
-	# There is a value out there associated with both the model and the particular analytic in question.
-	# Unfortunately, it's very difficult to edit.
-	
-	
+	analytic = models.ManyToManyField(Analytic, blank=True, null=True)	
 	
 #	
 #	file_size = models.IntegerField(blank=True) # measure in Unix standard - bytes? yes?
@@ -141,7 +136,7 @@ class Resource(models.Model):
 	
 	# Specifically for problems
 #	wrong_answer_responses = # I feel like I need to point to a table for this one.		Check out one-to-many
-	problem_type = models.CharField(max_length=16, choices=(
+	problem_type = models.CharField(max_length=32, choices=(
 		('multiple_choice', 'multiple_choice'), 
 		('select_all', 'select_all'), 
 		('free_response', 'free_response'),
@@ -150,6 +145,7 @@ class Resource(models.Model):
 		('image', 'image'),
 		('vector', 'vector'),
 		('custom', 'custom'),
+		('other', 'other'),
 		('not_a_problem', 'not_a_problem'),
 		), default='not_a_problem'
 	)

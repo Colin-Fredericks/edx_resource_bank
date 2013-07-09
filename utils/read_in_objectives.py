@@ -60,11 +60,11 @@ def main(argv):
 			
 				# ignore any other columns.
 				
-				# If the learning objective already exists, skip to the end.
+				# If the learning objective already exists, skip to the next line.
 				LO_id = cur.execute("SELECT id FROM RDB_learning_objective WHERE learning_objective = %s", learning_objective)
 				if not LO_id:
 
-					# Run one big "INSERT" command to put it all in.
+					# Run an"INSERT" command add the learning objective
 					sql_query = "INSERT RDB_learning_objective "
 			
 					sql_query += "(short_name, "
@@ -76,7 +76,7 @@ def main(argv):
 					cur.execute(sql_query)
 					added_objectives += 1
 			
-			# next line in file -- handled automatically by the "for reader in row" statement.
+			# next line in file -- handled automatically by the "for row in spreadsheet" statement.
 			# Next entry in database -- handled automatically by the fact that we're INSERTing whole rows at a time.
 
 		# End loopy-loo
