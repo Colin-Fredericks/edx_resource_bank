@@ -136,8 +136,9 @@ def main(argv):
 			# custom text rows need some work.			
 
 			# Check to see if there's a duplicate entry in the database already
-			# If so, skip this row and go back to the top of the "for" loop.
-			# If not, insert this one.
+			# If so, check for new Learning Objectives and match them up if necesasry. 
+			# Then skip this row and go back to the top of the "for" loop.
+			# If there's no duplicate, insert this resource.
 
 			sql_start = "SELECT * FROM RDB_resource  WHERE"
 			
@@ -187,13 +188,40 @@ def main(argv):
 
 			if cur.execute(sql_query):
 				print "Skipping duplicate entry " + name
+
+				"""
+				This section is not currently working properly, but it's fairly close.
+				I'd like to insert *only new or different* learning objective links.
+				
+				# Check to see if this duplicate has the same learning objectives as the new item.
+				# If so, add them. If not, continue skipping.
+				resource_id = cur.fetchone()[0]
+				cur.execute("SELECT learning_objective_id FROM RDB_resource_learning_objective WHERE resource_id = %s", resource_id)
+				old_objective_ids = cur.fetchall()
+				print 'old_objective_ids = ' + str(old_objective_ids)
+				if old_objective_ids is not None:
+					old_LO_list = []
+					for idnum in old_objective_ids:
+						cur.execute("SELECT short_name FROM RDB_learning_objective WHERE id = %s", idnum)
+						old_LO_list += cur.fetchone()
+				# Pad out the old list, because the new list may have blanks.
+				old_LO_list += ( [''] * (len(learning_objectives) - len(old_LO_list)))
+				print str(len(old_LO_list)) + str(old_LO_list)
+				print str(len(learning_objectives)) + str(learning_objectives)
+				if learning_objectives == old_LO_list:
+					print "Skipping duplicate entry " + name
+				else:
+					linked_objectives += Associate_Learning_Objectives(learning_objectives, cur, resource_id)
+				"""
+
 			else:
 
+				# Since it's not a duplicate entry...
 				# Run an "INSERT" command to put in this resource
 				sql_start = "INSERT RDB_resource "
 				sql_middle = "VALUES ('" 
 
-				sql_query = sql_start + sql_left + sql_middle + sql_left
+				sql_query = sql_start + sql_left + sql_middle + sql_right
 				cur.execute(sql_query)
 				added_resources += 1
 
