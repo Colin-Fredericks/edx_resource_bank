@@ -211,6 +211,7 @@ def main(argv):
 				if learning_objectives == old_LO_list:
 					print "Skipping duplicate entry " + name
 				else:
+					print "Found near-duplicate entry with new LOs. Linking."
 					linked_objectives += Associate_Learning_Objectives(learning_objectives, cur, resource_id)
 				"""
 
