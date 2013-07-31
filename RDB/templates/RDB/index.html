@@ -7,6 +7,8 @@
 
 <body>
 
+<h1>Complete List of Resources</h1>
+
 <table style="float:right" width="250">
 <tr><td>
 <h3>Recent Resources</h3>
@@ -24,12 +26,10 @@
 </td></tr>
 </table>
 
-<h1>Complete List of Resources</h1>
-
 <table>
 {% for resource in resource_list %}
 <tr>
-<td>{{resource.id}}</td>
+<td class="number">{{resource.id}}</td>
 <td><a href="/RDB/{{ resource.id }}/">{{ resource.name }}</a></td>
 <td>{{resource.resource_type}}</td>
 <td>{{resource.description}}</td>
