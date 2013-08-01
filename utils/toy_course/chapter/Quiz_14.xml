@@ -1,8 +1,0 @@
-<chapter display_name="Optional: Quiz 14">
-	<sequential display_name="Quiz 14" url_name="Quiz_14">
-        <problem display_name="Quiz 14, Problem 1" filename="MIT/rayyan/Physics801/Symbolic/Spool.problem" attempts="3"/>
-        <problem display_name="Quiz 14, Problem 2" filename="problems/S13/quiz/14-1.problem" attempts="3"/>
-        <problem display_name="Quiz 14, Problem 3" filename="MIT/boriskor/Multiconcept Problems/Bullet strikes the midpoint of a pivoted vertical bar.problem" attempts="2"/>
-        <problem display_name="Quiz 14, Problem 4" filename="MIT/rayyan/Physics801/Symbolic/Bowling.problem" attempts="3"/>
-	</sequential>
-</chapter>

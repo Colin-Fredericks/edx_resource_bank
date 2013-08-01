@@ -1,9 +1,0 @@
-<chapter display_name="Quiz 8">
-	<sequential display_name="Quiz 8" url_name="Quiz_8">
-        <problem display_name="Quiz 8, Problem 1" filename="problems/S13/quiz/8-1.problem" attempts="3"/>
-        <problem display_name="Quiz 8, Problem 2" filename="MIT/GWUproblems/HTW_exams/exam1_con12.problem" attempts="2"/>
-        <problem display_name="Quiz 8, Problem 3" filename="problems/S13/quiz/8-2.problem" attempts="2"/>
-        <problem display_name="Quiz 8, Problem 4" filename="MIT/rayyan/check_points/BK/BK74.problem" attempts="3"/>
-        <problem display_name="Quiz 8, Problem 5" filename="MIT/boriskor/Multiconcept Problems/A two-block swing.problem" attempts="3"/>
-	</sequential>
-</chapter>

@@ -23,45 +23,4 @@
 	<chapter url_name="HWK_7"/>
 	<chapter url_name="OfficeHours_7"/>
 	<chapter url_name="Quiz_7"/>
-	<chapter url_name="Unit_8"/>
-	<chapter url_name="HWK_8"/>
-	<chapter url_name="OfficeHours_8"/>
-	<chapter url_name="Quiz_8"/>
-	<chapter url_name="Unit_9"/>
-	<chapter url_name="HWK_9"/>
-	<chapter url_name="OfficeHours_9"/>
-	<chapter url_name="Unit_10"/>
-	<chapter url_name="HWK_10"/>
-	<chapter url_name="OfficeHours_10"/>
-	<chapter url_name="Quiz_9_10"/>
-	<chapter url_name="Unit_11"/>
-	<chapter url_name="HWK_11"/>
-	<chapter url_name="OfficeHours_11"/>
-	<chapter url_name="Quiz_11"/>
-	<chapter url_name="RELATE_exit_survey"/>
-	<chapter url_name="Unit_12"/>
-	<chapter url_name="HWK_12"/>
-	<chapter url_name="Quiz_12"/>
-	<chapter url_name="Unit_13"/>
-	<chapter url_name="HWK_13"/>
-	<chapter url_name="Quiz_13"/>
-	<chapter url_name="Unit_14"/>
-	<chapter url_name="HWK_14"/>
-	<chapter url_name="Quiz_14"/>
-	<chapter url_name="For_801"/>
-
-<!-- PSets and other materials from the ESG course -->
-<!-- These are intentionally commented out. -->
-
-<!--
-	<chapter url_name="ESG_Psets"/>
-	<chapter url_name="Solutions"/>
-
-	<chapter url_name="Rev_Examples"/>
-	<chapter url_name="Rev_Problems"/>
-
-	<chapter url_name="MRI"/>
-	<chapter url_name="RQ"/> 
--->
-
 </course>
