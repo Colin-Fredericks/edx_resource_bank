@@ -13,9 +13,10 @@
 import sys
 import re			# regular expressions for searching and escaping
 import MySQLdb		# python-to-mySQL translator
-# May need to import some sort of XML parser? What I'm doing is fairly simple...
+# May need to import some sort of XML parser? 
+# What I'm doing is fairly simple, so perhaps not.
 
-# Function that converts things
+# Main takes in arguments, connects to the database, and runs BigLoop.
 def main(argv):
 
 	# Check for correct usage
@@ -29,6 +30,7 @@ def main(argv):
 	# Take in a filename from the command line
 	filename = str(sys.argv[1])
 
+	"""   Leaving out database for now.
 	# Connect to the database
 	db = MySQLdb.connect(host="localhost",
 		user="resource_mangler",
@@ -37,6 +39,10 @@ def main(argv):
 
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
+	
+	# Delete the line below when we're ready to use the database.
+	"""
+	cur = ""
 		
 	BigLoop(filename, "", "", 0, cur)
 
