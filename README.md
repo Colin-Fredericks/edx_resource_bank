@@ -15,6 +15,7 @@ Folders
 * *uploads* is where uploaded files go by default. Nothing there at the moment.
 
 * *utils* is where the import-from-csv scripts are, as well as sample files.
+ * Within *utils* is *toy_course*, which has a bare-bones framework of Mechanics ReView and a script to read it in.
 
 Dependencies
 --------------
@@ -28,9 +29,11 @@ You'll need the [python mySQL](http://sourceforge.net/projects/mysql-python/) pa
 Status
 --------
 
+The script to import an entire edX course from the XML files is just getting started.
+
 The import scripts are working fairly well. They even check for (and rejects) duplicate entries now! There are separate scripts to read in resources and learning objectives.
 
-Getting the interface working properly is a big priority. Right now some things are going to be completely unusable once we have 1000 different problems in here.
+Getting the interface working properly (i.e. usable with 1000 entries) is not as big a priority as it used to be. Starting to rethink this as more of a back-end system.
 
 Oddities and details
 --------------------
