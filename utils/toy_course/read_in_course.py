@@ -69,6 +69,8 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 			for line in xmlfile:
 			
 				"""		Skipping this in early testing.
+						I'm also concerned that we're only keeping one collection.
+						Resources should belong to multiple collections, and I think this only adds it to the last one found.
 				# If this line has a <chapter> or <sequential> or <vertical> tag...
 				if re.search('<chapter', line) or re.search('<sequential', line) or re.search('<vertical', line):
 
@@ -131,14 +133,49 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 				# Move to next line (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
+			else:
+
 				# We're going to INSERT a new resource into the database.
 				# Take the current display_name, escape it, and dump it into the "name" field.
+				name = re.escape(display_name)
+
 				# Take the entire text of this file, escape it, and dump it into the "text" field.
+				text = re.escape(xmlfile.read())
+
 				# Set hide_info and is_deprecated both = False by default
-				# Use the tag type to set the resource type to html or problem.
+				hide_info = False
+				is_deprecated = False
+
+				# Use the tag type to set the resource_type to html or problem.
+				if tag_type = 'html':
+					resource_type = 'html'
+				elif tag_type = 'problem'
+					resource_type = 'problem'
+				else
+					resource_type = 'other'
 					# (What to do with videos?)
+
 				# If the resource type is problem:
+				if resource_type = 'problem':
+					
 					# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
+					if re.search('<multiplechoice',text):
+						problem_type = "multiple_choice"
+					elif re.search('<numericalresponse',text):
+						problem_type = 'numerical'
+					elif re.search('<formularesponse', text):
+						problem_type = 'formula'
+					elif re.search('<symbolicresponse', text):
+						problem_type = 'formula'
+					elif re.search('<choiceresponse', text):
+						problem_type = 'select_all'
+					elif re.search('<custom', text):
+						problem_type = 'custom'
+					else:
+						problem type = 'other'
+				else 
+					problem_type = 'not_a_problem'
+
 					# If no problem_type found, go back and set the resource_type to "other"
 				# Other required items that we will also need:
 					# Learning Objectives!!
