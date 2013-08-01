@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: reworking of unit 9, checkpoint 10 -->
+
+<problem>
+  <title> CheckPoint: Ranking Moments of Inertia </title>
+    <p>Several objects, numbered 1-4, are made of small massive balls attached to light rigid rods. The masses of the balls and the lengths of the rods are shown in the diagram. Rank the rotational inertia of the objects with respect to the axis passing through the midpoint of each rod as shown.</p>
+    <br/>
+	<img src="/static/problems/MIT/rayyan/check_points/BK/BK78.png" alt="BK78"/>
+    <br/>
+
+	<customresponse>	
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="1" label="1" can_reuse="false"/>
+      <draggable id="2" label="2" can_reuse="false"/>
+      <draggable id="3" label="3" can_reuse="false"/>
+      <draggable id="4" label="4" can_reuse="false"/>
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <target id="sign3" x="250" y="25" w="45" h="35"/>
+	  <target id="item4" x="300" y="25" w="45" h="35"/>
+    </drag_and_drop_input>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['4'],'targets': ['item1'],'rule':'unordered_equal'},
+	{'draggables': ['2'],'targets': ['item2'],'rule':'unordered_equal'},
+	{'draggables': ['1'],'targets': ['item3'],'rule':'unordered_equal'},	
+	{'draggables': ['3'],'targets': ['item4'],'rule':'unordered_equal'},
+	{'draggables': ['eq'],'targets': ['sign3'],'rule':'unordered_equal'},
+	{'draggables': ['gt'],'targets': ['sign1','sign2'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

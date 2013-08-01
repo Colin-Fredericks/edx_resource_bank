@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>Example: What's the Point?</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Example: What's the Axis Point? Moving Along a Straight Line.</h3>
+
+<p>The angular momentum vector depends on the position vector of the point particle, 
+therefore it depends on the point from which the particle's position is measured. This is 
+illustrated in the following example where we find that the angular momentum 
+ has a different magnitude and
+direction depending on the point from which it is calculated. </p>
+
+<table border="1">
+<tr>
+<th width="400"><b>Example 1. A particle moving along a straight line.</b>
+</th></tr>
+<tr>
+<td>A particle of mass <i><b>m</b></i> and speed <i><b>v</b></i> is moving along the <b>+x</b> axis. Consider the points <i><b>Q</b></i> and <i><b>S</b></i> placed at a distance <i><b>d</b></i> and <i><b>h</b></i> with respect to the horizontal line as shown in the figure below.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/MovingAlongStarightLine2.png"/>
+</p>
+</td></tr></table>
+
+<p>Find the direction and the magnitude of the angular momentum vector with respect to points <i><b>Q</b></i> and to <i><b>S</b></i>: </p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answers:</b>
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<br/>
+<td><font color="blue"><b><u>Question 1:</u></b></font> <b>What are the direction and the magnitude of the particle's angular momentum about point <i>Q</i>?</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Check your answer:</b>
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td>Direction: <b>into the screen</b>, Magnitude: <i><b>L<sub>Q</sub> = mdv</b></i>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution:</b>
+ [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+<tr style="display:none" id="ht12">
+<td><p>Consider the particle's position vector \(\vec{r}_Q\)  measured from point <i><b>Q</b></i> as shown in the figure below.</p>
+<p><b>Direction:</b> Following the right hand rule, the direction of the angular momentum is along the <b>-z</b> -axis (<b>into the screen</b>). This corresponds to a clockwise circulation about point <i><b>Q</b></i> as viewed from above the xy - plane.
+</p><p><b>Magnitude:</b> At the instant shown in the figure, the magnitude of the angular momentum vector is given by:
+</p><p>\[|\vec{L}_Q| = mr_Qv\sin\theta\]
+</p><p>where <i>&#952;</i> is the angle between the velocity and position vectors. We will consider the supplementary angle <i>&#946;</i> (<i>&#952;</i> + <i>&#946;</i> = 180<sup>o</sup>) as shown in the figure: 
+</p><p><br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/ParticleMovingStraightLineAnswera.png"/>
+</p><p><br/>
+<b>Note:</b>
+</p>
+<ul style="list-style:disc outside none"><li> The magnitude of the angular momentum depends 
+on <i><b>d</b></i>, therefore it will have different values about different points in space. It depends on the specified point. 
+</li></ul>
+<ul style="list-style:disc outside none"><li> The distance <i><b>d</b></i> is the perpendicular distance: \( d = r_{\perp}\)
+</li></ul>
+<ul style="list-style:disc outside none"><li> Because you know the perpendicular distance 
+you do not need to know the  angle <i><b>&#952;</b></i> or the magnitude of 
+the position vector \(\vec{r}_Q\). The product of these two quantities 
+is given:  <i><b>r<sub>Q</sub></b></i> <b>sin</b> <i><b>&#952; = d</b></i>. This is the moment arm method 
+to find the magnitude of a cross product.
+</li></ul>
+<ul style="list-style:disc outside none"><li> Also, <i><b>&#952;</b></i> and <i><b>r<sub>Q</sub></b></i> depend on time but their product <i><b>r<sub>Q</sub></b></i> <b>sin</b> <i><b>&#952; = d</b></i> is constant. 
+</li></ul>
+</td></tr></table>
+</td></tr></table>
+<p><font color="blue"><b><u>Question 2: </u></b></font><b>What are the direction and 
+the magnitude of the particle's angular momentum about point <i>S</i>?</b>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Check your answer:</b>
+ [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+<tr style="display:none" id="ht13">
+<td>Direction: <b>out of the screen</b>, Magnitude: <i><b>L<sub>S</sub> = mhv</b></i>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution:</b>
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td>
+<p>Consider the particle's position vector \(\vec{r}_S\)  measured from point 
+<i><b>S</b></i> as shown in the figure below.
+</p>
+<p><b>Direction:</b> Following the right hand rule, the direction of the angular momentum is along the <b>+z</b> -axis (<b>out of the screen</b>). This corresponds to a counterclockwise circulation of the particle about point <i><b>S</b></i> as viewed from above the xy - plane.
+</p><p><b>Magnitude:</b> At the instant shown in the figure, the magnitude of the angular momentum vector is given by:
+</p><p>\[|\vec{L}_S| = mr_Sv\sin\theta\]
+</p><p>where <i>&#952;</i> is the angle between the velocity and position vectors as indicated in the figure below:
+</p><p><br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/ParticleMovingStraightLineAnswer_2.png"/>
+</p><p><b>Note:</b>
+</p>
+<ul style="list-style:disc outside none"><li> The distance <i><b>h</b></i> is the perpendicular distance: \( h = r_{\perp}\)
+</li></ul>
+<ul style="list-style:disc outside none"><li> As before, neither the angle <i><b>&#952;</b></i> nor the magnitude of the position vector, 
+\(\vec{r}_S\) , are known but the product <i><b>r<sub>S</sub></b></i> <b>sin</b> <i><b>&#952; = h</b></i> is given. 
+</li></ul>
+<ul style="list-style:disc outside none"><li> Also, <i><b>&#952;</b></i> and <i><b>r<sub>S</sub></b></i> depend on time but their product <i><b>r<sub>S</sub></b></i> <b>sin</b> <i><b>&#952; = h</b></i> is constant. 
+</li></ul>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+
+
+</body>
+</html>
+

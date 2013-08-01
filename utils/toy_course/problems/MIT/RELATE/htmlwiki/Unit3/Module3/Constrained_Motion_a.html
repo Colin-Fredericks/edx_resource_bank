@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Constrained Motion and Constraint Forces</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+Constrained Motion and Constraint Forces</h2>
+<p>
+<b>Constrained motion</b> results when an object is forced to move in a restricted way, for example a roller coaster car moving along a curved track, two boxes connected by an unstretchable rope which passes over a pulley, etc.</p>
+<p>
+			We use the term<b>&#160;constraint force</b>&#160;for any force whose value is determined by known motion constraints. Conversely, we say that constraint forces are responsible for the constrained motion. In the examples described above, the constraint forces are the normal force exerted on the roller coaster car by the track and the force of tension exerted on the boxes by the rope. Constraint forces do not however represent a new type of interaction; they arise from the same fundamental interactions that lead to contact forces.</p>
+<p>
+			In this module and in the next one, we will consider multi-object systems where the constraint forces will make the objects in the system to move with the <b>same acceleration in magnitude and direction.</b></p>
+<h3>
+Learning Goals</h3>
+<p>
+			After completing this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Determine the accelerations caused by constraining interactions</li>
+<li>
+				Give a procedure for determining the associated constraint forces</li>
+</ul>
+</body>
+</html>
+

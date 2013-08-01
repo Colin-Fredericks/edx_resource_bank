@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Course Outline</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Dynamics_and_Net_For').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Dynamics_and_Net_For.html'); 
+$('#Momentum_and_Externa').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Momentum_and_Externa.html');
+$('#Angular_Momentum_and').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Angular_Momentum_and.html'); 
+$('#Mechanical_Energy__E').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Mechanical_Energy__E.html');
+$('#Hierarchy_of_Models_1').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Hierarchy_of_Models_1.html'); 
+$('#Interactions_Studied').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Interactions_Studied.html');
+$('#Contact_interaction').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Contact_interaction.html'); 
+$('#Gravitational_intera').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Gravitational_intera.html');
+$('#Tension_interaction').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Tension_interaction.html'); 
+$('#Elastic_restoring_in').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Mechanics: The Study of Motion</h3>
+<p>Newtonian Mechanics is the study of motion and how forces change motion.  This course presents the material covered in any college-level introductory mechanics class using the Modeling Applied to Problem Solving (MAPS) pedagogical approach.  
+</p>
+<h4> Two Basic Types of Motion</h4>
+<p>Mechanics is the study of motion and how forces change it. This course will teach you to describe two types of motion mathematically:
+</p>
+<ul style="list-style:disc outside none"><li> Translational (Linear) Motion - the movement of a particle (or the center of mass) from one place to another.
+</li><li> Rotational Motion - the rotation of a rigid body about some point.
+</li></ul>
+<h4> Three Basic Descriptions of Motion</h4>
+<p>Each of the two basic types of motion can be described using any one of three mathematical approaches:
+</p>
+<ul style="list-style:disc outside none"><li> <!--<a id="go" rel="leanModal" href="#Dynamics_and_Net_For" name="Dynamics_and_Net_For" onclick="domath()">-->Velocity<!--</a>--> (or <!--<a href="Rotational_Dynamics">-->Angular Velocity<!--</a>--> for Rotational Motion)
+</li><li> <!--<a id="go" rel="leanModal" href="#Momentum_and_Externa" name="Momentum_and_Externa" onclick="domath()">-->Momentum<!--</a>--> (or <!--<a id="go" rel="leanModal" href="#Angular_Momentum_and" name="Angular_Momentum_and" onclick="domath()">-->Angular Momentum<!--</a>--> for Rotational Motion)
+</li><li> <!--<a id="go" rel="leanModal" href="#Mechanical_Energy__E" name="Mechanical_Energy__E" onclick="domath()">-->Mechanical Energy<!--</a>-->
+</li></ul>
+<p>These basic descriptions are fundamental organizing principles of mechanics, and they underlie the <!--<a id="go" rel="leanModal" href="#Hierarchy_of_Models_1" name="Hierarchy_of_Models_1" onclick="domath()">-->Hierarchy of Models<!--</a>--> used in the MAPS approach to mechanics.  
+</p>
+<h4> Four Common Types of Interaction</h4>
+<p>The motion of a system will remain constant under any of these descriptions (constant velocity, constant momentum, or constant mechanical energy) unless the system experiences <!--<a id="go" rel="leanModal" href="#Interactions_Studied" name="Interactions_Studied" onclick="domath()">-->interactions<!--</a>-->.  Introductory mechanics is principally concerned with four common types of interaction:
+</p>
+<ul style="list-style:disc outside none"><li> <!--<a id="go" rel="leanModal" href="#Contact_interaction" name="Contact_interaction" onclick="domath()">-->Contact<!--</a>-->
+</li><li> <!--<a id="go" rel="leanModal" href="#Gravitational_intera" name="Gravitational_intera" onclick="domath()">-->Gravitational<!--</a>-->
+</li><li> <!--<a id="go" rel="leanModal" href="#Tension_interaction" name="Tension_interaction" onclick="domath()">-->Tension<!--</a>-->
+</li><li> <!--<a id="go" rel="leanModal" href="#Elastic_restoring_in" name="Elastic_restoring_in" onclick="domath()">-->Elastic Restoring<!--</a>-->
+</li></ul>
+<h4> Describing Interactions:  The Essence of Modeling</h4>
+<p>The most difficult part of learning to solve mechanics problems is determining which description of the motion (velocity, momentum or mechanical energy) to employ.  In this course, we will refer to this decision making process as "choosing a Model" or "modeling the situation".  Choosing one <!--<a id="go" rel="leanModal" href="#Hierarchy_of_Models_1" name="Hierarchy_of_Models_1" onclick="domath()">-->Model<!--</a>--> over others is difficult because the preference for one Model over another is a consequence of the <b><!--<a id="go" rel="leanModal" href="#Interactions_Studied" name="Interactions_Studied" onclick="domath()">-->interactions<!--</a>--></b> that are present, not a consequence of the motion.  
+</p><p>Each of the three basic quantities that describe motion (velocity, momentum, and mechanical energy) invites a <i><b>qualitatively</b></i> different description of the interactions.  A given set of interactions is often greatly simplified if one of these descriptions is chosen over another.  Gaining the <i>strategic insight</i> to recognize the advantage of a specific Model for describing the interactions present in a problem is an important step along the road to expertise in physics problem solving.
+</p><p>The details of describing interactions in mechanics will occupy most of the course.  Thus, it is impossible to succinctly summarize them here.  Instead, we present a concept map that previews the basic structure of the course.  Each unit of the course will begin by highlighting the portion of this concept map that is covered in that unit.
+</p><p><br/>
+<img width="1000" src="/static/problems/MIT/RELATE/htmlwiki/reference/files/ConceptMap.png"/>
+</p>
+<div id="Dynamics_and_Net_For" class="popup"></div>
+<div id="Momentum_and_Externa" class="popup"></div>
+<div id="Angular_Momentum_and" class="popup"></div>
+<div id="Mechanical_Energy__E" class="popup"></div>
+<div id="Hierarchy_of_Models_1" class="popup"></div>
+<div id="Interactions_Studied" class="popup"></div>
+<div id="Contact_interaction" class="popup"></div>
+<div id="Gravitational_intera" class="popup"></div>
+<div id="Tension_interaction" class="popup"></div>
+<div id="Elastic_restoring_in" class="popup"></div>
+
+</body>
+</html>
+

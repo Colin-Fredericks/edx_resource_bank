@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 150, MIT-level -->
+<problem>
+
+	<p>If m<sub>1</sub> = 12 kg, m<sub>2</sub> = 6 kg and m<sub>3</sub> = 6 kg, what is the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Zero</choice>
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="false">g/2</choice>
+			<choice location="random" correct="false">3g/4</choice>
+			<choice location="bottom" correct="false">None of the above </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

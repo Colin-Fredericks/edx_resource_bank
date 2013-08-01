@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Adding Components</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+			Adding Force Vectors by Decomposing into Components</h3>
+
+<p>
+Recall that Newton's Second Law is expressed as a vector equation: \( \vec{F}_{net} = m\vec{a}\) . Using vector decomposition in the Cartesian (x-y-z) coordinate system, we can rewrite the vector equation as three scalar equations, one for each component (each direction in space):</p>
+<p>
+			&#160;</p>
+
+<ul style="list-style:disc outside none">
+<li>
+\( F_{net,x} = \sum F_{x} = ma_{x} \)</li>
+</ul>
+<p><b>and</b></p>
+<ul style="list-style:disc outside none">
+<li>
+\( F_{net,y} = \sum F_{y} = ma_{y} \)</li>
+</ul>
+<p><b>and</b></p>
+<ul style="list-style:disc outside none">
+<li>
+\( F_{net,z} = \sum F_{z} = ma_{z} \)</li>
+</ul>
+<p>
+			Note that all three equations have the same form. If all of our vectors lie in a plane (i.e., are two dimensional), we would only need the first two equations.</p>
+<p>
+			To add vectors using components: first, <b>decompose</b>&#160;each vector into scalar components,&#160;<b>add</b>&#160;the components<i>, </i>and finally <strong>reassemble</strong> the resultant vector from the summed components.</p>
+<table class="wikitable callapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Vector decomposition</b>: Break each vector up into its components in this particular coordinate system.</th>
+</tr>
+<tr>
+<td>
+						Choose a <i>convenient</i> coordinate system to use to analyze all the vectors in one FBD. Draw it in your diagram so you/others can refer to it.
+						<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Convenient criteria for adding two vectors [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/2_F_vectors_and_3_reasonable_coord_systems.png"/>
+<p>
+<b>A.</b> is the <i>least convenient</i> coordinate system to use when adding the two force vectors in the sketch. Choosing this traditional coordinate system results in 4 components, none of which are zero in value. Rotating the axis may simplify the system of scalar equations you are able to create when adding the components. Remember, <i>convenience</i> is in the eye of the problem solver, so here are some criteria to consider that simplify the component equations</p>
+<ol style="list-style-type:decimal">
+<li>
+												align one axis with the direction of the <b>acceleration</b>, IF you know the acceleration direction. This generates at least one or two equations that equal zero, since the acceleration in one or both of the other directions must be zero with this choice.</li>
+<li>
+												align the <b>most forces</b> with coordinate directions. For example, if there are three forces aligned with one or more of the coordinate directions and less than three in any other directions, then a coordinate system aligned with those three forces creates force components equal to zero for all of those forces.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type:decimal">
+<li>
+				Sum the corresponding components, paying careful attention to the direction (sign) of each component.</li>
+<li>
+				Use the resultant mutually perpendicular <i>component</i> sums to form the resultant vector.</li>
+<li>
+				Use those perpendicular <i>components</i> to draw the resultant vector.</li>
+</ol>
+<p>
+			To re-express a vector that is given by components in terms of magnitude and angle&#160;</p>
+<ul style="list-style:disc outside none">
+<li>
+				Use the Pythagorean theorem to determine the magnitude of the resultant vector and&#160;trigonometry to determine the direction with respect to the chosen coordinate system.</li>
+</ul>
+
+</body>
+</html>
+

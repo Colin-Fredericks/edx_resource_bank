@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/elevator_2.png" alt="elevator_2" height="200"/>
+
+      <p><br/>
+Starting from rest, an elevator accelerates uniformly between the 1st and 2nd floors, and decelerates uniformly between the 5th and 6th floors, coming to a stop at the 6th floor. Between the 2nd and 5th floors, the elevator covers the 6 meter distance between each two adjacent floors in 1 second.  Inside, Liz (who is about to graduate) is standing on a scale that reads 800 N when the elevator isn't moving. What was her minimum scale reading during the trip? Use g = 10 m/s^2.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              800N          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              420N          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              560N          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              380N          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              640N          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              240N          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

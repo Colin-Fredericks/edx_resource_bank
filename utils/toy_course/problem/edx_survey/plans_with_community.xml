@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>Would you like to make use of the on-line community around this course?</p>
+	<multiplechoiceresponse direction="horizontal" >
+  	<choicegroup type="MultipleChoice">
+      <choice correct="true" name="work_closely">
+        <text>I would like to work closely with my fellow students and form a community. </text>
+      </choice>
+      <choice correct="true" name="q_and_a">
+        <text>I like having a question and answer forum and some interactions when I need help, but no deeper connections.</text>
+      </choice>
+      <choice correct="true" name="not_planning_to_use_forum">
+        <text>I am not planning on using the on-line discussion board. </text>
+      </choice>
+   	</choicegroup>
+ 	</multiplechoiceresponse>
+</problem>

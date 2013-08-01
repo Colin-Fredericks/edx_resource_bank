@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+<!-- circular orbits: velocities and periods -->
+<problem>
+
+<h2>Solution</h2>
+
+<p>Planets closer-in to their stars orbit with higher velocities and shorter periods. Those with the same orbital radius will have the same velocities and periods, regardless of their mass.</p>
+<p>Thus the ranking for the velocity is: C = D > A = B = E.</p>
+<p>The ranking for the period is the opposite: A = B = E > C = D.</p>
+
+</problem>
+</html>

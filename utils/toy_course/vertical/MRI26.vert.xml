@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI26-1.problem" display_name="Cylinder Moment of Inertia 3" attempts="2" weight="1.5"/>
+	<problem filename="F12/MRI/MRI26-2.problem" display_name="Cylinder Moment of Inertia 3, Part 2" attempts="2" weight="1.5"/>
+	<discussion for="Cylinder Moment of Inertia 3" id="MReV_Summer2013_MRI26" discussion_category="Torque and Rotation about a Fixed Axis" />
+</vertical>

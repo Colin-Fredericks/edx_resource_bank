@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+n=random.randrange(2,5,1)
+a1=1
+a2= math.sqrt( n)
+a3= n
+a4= n+1
+a5= n* n
+a6= n* n+1
+
+</script>
+    <img src="/static/problems/MIT/rayyan/osu/images/block.png" alt="block" height="150"/>
+
+      <p><br/>
+A block of mass m is at rest at the top of a ramp of vertical height h.  The block starts to slide down the frictionless ramp and reaches a speed v at the bottom. If the same block were to reach a speed $n v at the bottom, it would need to have slid down a frictionless ramp of vertical height _____.
+</p>
+
+    <br/>
+    <multiplechoiceresponse max="5" direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              h          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              $a2 h          
+        </choice>
+        <choice name="foil13" correct="false">
+
+              $a3 h          
+        </choice>
+        <choice name="foil1\4" correct="false">
+
+              $a4 h          
+        </choice>
+        <choice name="foil5" correct="true">
+
+              $a5 h          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              $a6 h          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

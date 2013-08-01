@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Torque </title>
+
+      <p>A square plate ABCD with a side d is acted upon by several forces of equal magnitude F as shown. Point E is the center of the square, G is the midpoint of BC, K is the midpoint of CD, and L is the midpoint of AD.</p>
+      <br/>
+
+    <img width="654" alt="BK77" src="/static/problems/MIT/rayyan/check_points/Pictures/BK77.png"/>
+        <br/>
+
+      <p>Part 1. Find the magnitude of the net torque acting on the plate with respect to the axis passing through point A perpendicular to the page.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                \(Fd/2 + Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                \(3Fd/2\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                \(Fd/2 - Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+				\(Fd/2\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+				\(2Fd\)
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+				\(3Fd/2\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+				\(5Fd/2\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 2. Find the magnitude of the net torque acting on the plate with respect to the axis passing through point K perpendicular to the page.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                \(Fd\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                \(5Fd/2\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                \(Fd/2\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                \(3Fd/2 + Fd\sqrt {2}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                \(3Fd/2 - Fd\sqrt {2}\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				\(3Fd/2\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+        <p>Part 3. Find the magnitude of the net torque acting on the plate with respect to the axis passing through point E perpendicular to the page.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                \(Fd + Fd\frac{1}{2\sqrt {2}}\) 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                \(Fd/2 + Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                \(Fd - Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                \(Fd/2 - Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                \(2Fd + Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				\(2Fd - Fd\frac{1}{\sqrt {2}}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+        <p>Part 4. Find the magnitude of the net torque acting on the plate with respect to the axis passing through point L perpendicular to the page.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                \(Fd/2\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                \(Fd/2 + Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                \(Fd/2 - Fd\frac{1}{2\sqrt {2}}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                \(Fd\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                \(3Fd/2\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 5. Consider the net torques acting on the plate with respect to the axes passing through A, K, E and L (see parts 1-4). Their directions, respectively, are:</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                counterclockwise; counterclockwise; counterclockwise; counterclockwise 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                clockwise; clockwise; clockwise; clockwise
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                counterclockwise; clockwise; counterclockwise; clockwise
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                counterclockwise; counterclockwise; clockwise; clockwise
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                counterclockwise; clockwise; counterclockwise; counterclockwise
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				counterclockwise; clockwise; clockwise; counterclockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    </problem>
+</html>

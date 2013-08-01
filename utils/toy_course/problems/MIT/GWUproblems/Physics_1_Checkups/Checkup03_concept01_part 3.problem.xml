@@ -1,0 +1,14 @@
+<html>
+<problem>
+
+	<optionresponse texlayout="horizontal" randomize="yes">
+		<p>The sum of KE + PE increases as the ball falls</p>
+		<optioninput location="random" name="ThreeA" correct="False" options="('True','False')"/>
+		<p>The sum of KE + PE decreases as the ball falls</p>
+		<optioninput location="random" name="ThreeB" correct="False" options="('True','False')"/>
+		<p>The sum of KE + PE stays the same as the ball falls</p>
+		<optioninput location="random" name="" correct="True" options="('True','False')"/>
+	</optionresponse>
+
+</problem>
+</html>

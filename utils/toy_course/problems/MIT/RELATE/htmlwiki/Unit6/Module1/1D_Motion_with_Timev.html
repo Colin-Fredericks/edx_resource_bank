@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>1-D Motion with Time-varying Net Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h2>Introduction to General 1-D Motion with Arbitrary Net Force</h2>
+
+<p>The most general model applicable to a single particle moving in one dimension occurs when the driving force along this coordinate is an arbitrary function of time. This model forms the top of the 1-D motion hierarchy of models; 1-D motion with constant acceleration with constant force is a special case, and 1-D motion with constant velocity and zero net force is a special case of that. (These three models were presented to you in reverse order for ease of learning).</p>
+
+<p>This one-dimensional model is a subset of a larger, three-dimensional model: <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a>. The 3-D model is more general, being able to handle objects moving in circular paths, parabolic arcs, helixes, or even more complicated trajectories. A strong understanding of this 1-D model will help you build a strong understanding of the 3-D model later.</p>
+
+<h3>Learning Goals</h3>
+
+<ul style="list-style:disc outside none">
+	<li>Recognize when a motion diagram or a graph or equation of position or velocity vs. time, represents an object moving with non-constant (arbitrary) acceleration.</li>
+	<li>Describe whether the object represented in these ways has positive or negative acceleration and velocity..</li>
+	<li>Know how to create a graph or equation of any one of the three kinematic variables (position, velocity, acceleration) from a graph or equation of any other one (and possibly some initial conditions).</li>
+</ul>
+
+<h2>Model: Arbitrary Net Force in One Dimension</h2>
+
+<h3>Applicable Systems</h3>
+<p>A point particle or the center of mass of a rigid body.</p>
+
+<h3>Relevant Interactions</h3>
+<p>Time-varying net force must be present to cause motion with variable acceleration along that one coordinate.</p>
+
+<h3>Laws of Change</h3>
+<p>For motion with arbitrary acceleration \(a(t)\).</p>
+
+<h4>Differential Form</h4>
+<p>Aligning the one dimension of motion with the x-coordinate, the differential forms of the Laws of Change are:</p>
+<p>\(a_x(t)=\frac{dv_x}{dt}=\frac{1}{m}F_x(t)\) and \(v_x(t)=\frac{dx}{dt}\)</p>
+
+<h4>Integral Form</h4>
+
+<p>Integrating requires initial conditions for the velocity and position, denoted by \(v_i=v(t_i)\) and \(x_i=x(t_i)\):</p>
+<p>\[v_x(t) = v_{i}+ \int_{t_i}^{t}a_x(\tau)d\tau \]</p>
+<p>\[x(t) = x_{i}+ \int_{t_i}^{t}v_x(\tau)d\tau \]</p>
+
+<h3>Cues</h3>
+
+<ul style="list-style:disc outside none">
+	<li>If any of the kinematic variables (position, velocity, acceleration) has a given analytic expression, for example if \(v(t)=\alpha+\beta t+\gamma t^2\).</li>
+	<li>If a graph of any of the kinematic variables is given, graphical methods for integration and differentiation can be used to find the others.</li>
+</ul>
+</body>
+</html>
+

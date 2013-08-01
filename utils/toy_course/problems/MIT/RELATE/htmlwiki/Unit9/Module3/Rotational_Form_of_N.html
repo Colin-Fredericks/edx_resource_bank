@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Rotational Form of Newton's Second Law and the Moment of Inertia</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="13" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h2>Rotational Dynamics and Net Torque Model with Moment of Inertia</h2>
+<h3>Learning goals</h3>
+<p>After working through this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+	<li>Apply the Rotational Dynamics and Net Torque model in simple problems.</li>
+	<li>Find the moment of inertia of an object</li>
+	<li>Compare the moment of inertia of two objects</li>
+</ul>
+
+<h3>Rotational Dynamics and Net Torque &mdash; Model</h3>
+<p>The Rotational Dynamics and Net Torque is one of the core models of Mechanics. It is summarized here:</p>
+
+<table border="1" cellspacing="0"><tbody><tr><td>
+<h4>Angular Dynamics and Net Torque</h4>
+<p>Prerequisite Knowledge</p>
+<ul>
+	<li>Concepts: Fixed Axis, Torque, Moment of Inertia, Angular acceleration</li>
+	<li>Procedures for finding torque, moment of inertia, parallel axis theorem</li>
+</ul>
+<p><b>System:</b></p>
+<ul>
+	<li><b>Objects:</b> Single Rigid Bodies Rotating about Fixed Axis A</li>
+	<li><b>State Variables:</b> \(\theta(t), \omega(t), I_A\)</li>
+	<li><b>Motion Variable:</b> \(\omega(t)\)</li>
+</ul>
+<p>Relevant <b>Interactions</b></p>
+<ul><li>Real External Forces that generate torques about axis A</li></ul>
+<p><b>Law of Change</b></p>
+<p>\(\sum \tau_A = I_A \frac{d \omega}{dt} \equiv I_A \alpha\)</p>
+<p>\(I_A \omega_{A,f} = I_A \omega_{A,f} + \int \tau_A^{net}(t)dt\)</p>
+<p>Note: This relation is restricted to problems where a body rotates about a fixed z-axis. If the body is asymmetric, the axis must provide x and y forces on the object.</p>
+</td></tr></tbody></table>
+
+<h3>Analogy of Rotational Dynamics with Linear Dynamics (Newton's Second Law)</h3>
+<p>By analogy to the manner in which force changes velocity</p>
+<p>\(\sum\vec{F}^{external}=m \frac{d \vec{v}}{dt} =m\vec{a} \)</p>
+<p>the angular dynamics and net torque model has a similar equation of change, but for rotational velocity around a fixed axis. If we apply a non zero torque on an object (e.g. push or pull on a door handle), it will result in a change of rotational motion &mdash; e.g. the door will start to rotate faster or slower about its (fixed) hinges.</p>
+<p>By analogy (see rigorous derivation presented later), the angular velocity of an object rotating about an axis that passes through a point Q, is changed by the net torque on the object measured about point Q:</p>
+<p>\[\sum\vec{\tau}_Q^{external} = I_Q \frac{d \omega}{dt} = I_Q \vec{\alpha} \]</p>
+<p>Where \(\alpha\) is the <strong>angular acceleration</strong>: the rate of change of the angular speed \(\omega\), and \(\displaystyle I_Q\) is the <strong>moment of inertia</strong> about point Q, a quantity that is analogous to the inertial mass in \( \sum\vec{F}^{external}=m\vec{a} \).</p>
+<p>The Linear Dynamics and Net Force model and the Angular Dynamics and Net Torque model both deal with the <i>dynamics</i> &mdash; the rate of change of the velocity variable. Because they both deal with a single object, the velocities can be integrated (given the initial position and velocity) to give the fullest possible account of the motion &mdash; the position vs. time.</p>
+<p>Although the mathematical forms of the equations of change are quite similar, rotational dynamics differs from linear dynamics in important respects. Firstly, it applies to systems consisting of a single rotating object (rather than a point particle). Secondly, the motion variable is rotational velocity rather than translational velocity. Thirdly, the agent of change is the net torque (not the net force). Perhaps most importantly: the angular dynamics and net torque model makes <b><i>no sense</i></b> unless an axis of rotation is specified in advance.</p>
+
+<h3>Moment of Inertia</h3>
+<p>The Moment of inertia quantifies the inertia of an object for rotational motion and depends on how the mass is distributed with respect to the axis of rotation.</p>
+
+<h4>Moment of Inertia of a Point Particle</h4>
+<p>Consider a point particle of mass <i>M</i> moving in a circle of radius <i>R</i>, the moment of inertia of the point particle measured with respect to the center of the circle is given by \( I_Q=  M R^2 \), where <b><i>Q</i></b> is the point at the center of the circle.</p>
+<p>The moment of inertia of a system of more than one point particle can be obtained by adding the moment of inertia of the individual particles. The moment of inertia of N point particles rotating about an axis passing through point Q is given by:</p>
+<p>\(I_Q=\sum_{i=1}^{i=N}m_ir_i^2\)</p>
+<p>where <i>m<sub>i</sub></i> is the mass of particle <i>i</i> and <i>r<sub>i</sub></i> is the distance between the particle <i>i</i> and the axis passing through point <i>Q</i>.</p>
+
+<h2>Finding the moment of inertia of an extended object requires an integral.</h2>
+<p>To find the moment of inertia of a rigid object, we essentially consider the object as a collection of tiny masses. Then we figure out how far the masses are from the axis of rotation and perform a sum over the masses.</p>
+<p>\( I= \text{sum of: lumps of mass} \times (\text{the distance from the axis of rotation})^2 \)</p>
+<p>In the infinitesimal limit, the sum process over all the masses becomes an integration, and the expression for the moment of inertia becomes:</p>
+<p>\( I_Q =\int r_{\bot}^{2}\; dm \)</p>
+
+<p>Most of the time you do not need to perform the actual integration. However if you do need to do that, you should notice that:</p>
+<ul style="list-style:disc outside none">
+	<li><i>dm</i> represents the small lump of mass. In practicality, the mass of the small lump is its volume 
+	multiplied by the density, so it is usually expressed in term of \(\rho dx dy dz\) or \(\rho r dr d\theta dz\) or \(\rho r^2 sin(\theta) dr d\theta d\varphi\). The choice of which one to use depends on the coordinate system for your integral.</li>
+	<li>\(r_{\bot}\) is the perpendicular distance of that \(dm\) from the axis, in terms of the coordinate system that you pick.</li>
+	<li>This is a definite integral: you are summing over the object, and the limits are usually the boundaries of the object.</li>
+	<li>Often the object can be considered in one or two dimensions (e.g. a thin rod or a thin disk), which will simplify the integral.</li>
+</ul>
+
+</body>
+</html>
+

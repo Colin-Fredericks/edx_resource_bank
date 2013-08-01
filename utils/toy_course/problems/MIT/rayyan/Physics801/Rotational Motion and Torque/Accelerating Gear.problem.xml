@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="350" alt="Gear Acceleration" height="325" src="/static/problems/MIT/rayyan/Physics801/Figures/Gears.png"/>
+
+    <hr/>
+
+<p>Gear 1 of radius R is attached to a motor that can provide a constant torque regardless of angular velocity. Gear 2 of mass m and radius r is set at rest upon Gear 1 so that a line segment from the center of gear 1 to the center of gear 2 makes a positive angle B with the horizontal. If the gears have small groves that prevent any slipping, what must be the magnitude of the angular acceleration \( \alpha \) of gear 1 so that gear 2 will stay in the same position? (Concerning rotational inertia, treat the gears as uniform cylinders that do not slip with respect to each other.)<br/></p>
+
+    <formularesponse answer="2*g*cos(B)/R" samples="g,B,R,r,m@9.8,1,1,1,1:9.8,10,10,10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

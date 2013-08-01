@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+<!--A BALL-ROD COLLISION-->
+<problem>
+
+<h3>Solution</h3>
+
+<p>The center of mass of the system of rod and particle is given by the expression.</p>
+<p>\(\vec{R}_{cm}(t)\) = \({m_{1} \vec{r}_{1}(t) + m_{2} \vec{r}_{2}(t)  \over m_{1} + m_{2}}\) </p>
+<p>where \(\vec{r}_{1}(t)\) is the position of the center of mass of the rod and \(\vec{r}_{2}(t)\) is the position of the particle.</p>
+<p>The center of mass of the rod for t \(\le\) 0 is given by the expression</p>
+<p>\(\vec{r}_{1}(t)\) = \({L \over 2}\)\(\vec{j}\); t \(\le\)  0. </p>
+<p> For time t \(\le\) 0, the position of the particle is</p>
+<p>\(\vec{r}_{2}(t)\) = V<sub>o</sub>t \(\vec{i}\); t \(\le\) 0. </p>
+<p>So the center of mass of the system at time t \(\le\) 0 is</p>
+<p>\(\vec{R}_{cm}(t \le 0)\) = \({{MV_{o}t \hat{i} + M(L/2) \hat{j}} \over {2M}}\) = \({V_{o} \over 2} \vec{i}\) + \({L \over 4} \vec{j}\)</p>
+<p>The velocity of the center of mass is given by</p>
+<p>\(\vec{V}_{cm}(t)\) = \({{m_{1} \vec{v}_{1}(t) + m_{2} \vec{v}_{2}(t)} \over {m_{1} + m_{2}}}\) </p>
+<p>The rod is at rest for t \(\le\) 0 and so \(\vec{v}_{1}\)(t \(\le\) 0)) = \(\vec{0}\). For time t \(\le\) 0, the particle is moving in the positive x-direction and the velocity is given by \(\vec{v}_{2}\) = V<sub>o</sub>\(\vec{i}\). So the velocity of the center of mass of the system at time t \(\le\) 0 is given by</p>
+<p>\(\vec{V}_{cm}(t)\) = \({{MV_{o}t \hat{i}} \over {2M}}\) = \({V_{o} / 2}\)\(\hat{i}\) ; \(t \le 0\).</p>
+<p>For t > 0, because there are no external forces acting on the system, the veocity of the center of mass of the system is constant and the position of the center of mass of the system moves according to </p>
+<p>\(\vec{R}_{cm}(t)\) = \(\vec{R}_{cm}(t=0)\) + \(\vec{V}_{cm}(t)\) = \({L \over 4} \hat{j} \) + \({V_{o} \over i} t \hat{i} \); t > 0</p>
+<p>\(\vec{V}_{cm}(t)\) =\({{MV_{o} \hat{i}} \over {2M}}\) = \({V_{o} \over 2} \vec{i}\); t > 0.</p>
+<p></p>
+
+</problem>
+
+</html>

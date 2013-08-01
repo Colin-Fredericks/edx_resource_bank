@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 6 -->
+
+<problem>
+
+	<p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 5 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI6.png" />
+
+	<h3>Part 1</h3>
+	<p>A block of mass M is initially at rest on a spring of spring constant k that has been compressed a distance x from its equilibrium length. The spring is released, and shoots the block to a height h above the uncompressed position of the top of the spring. The goal of this problem is to determine the height h in terms of the other quantities and gravity. What is the most appropriate way to decompose the problem? </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">One problem: intervals 1-5</choice>
+			<choice location="random" correct="false">Two sub-problems: intervals 1-2 and 2-5</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-2, 2, and 2-5</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-2, 2-5, and 5</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

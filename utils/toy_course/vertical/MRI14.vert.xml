@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI14-1.problem" display_name="Spring-Loaded 1" attempts="2" weight="1"/>
+	<problem filename="F12/MRI/MRI14-2.problem" display_name="Spring-Loaded 1, Part 2" attempts="2" weight="1"/>
+	<discussion for="Spring-Loaded 1" id="MReV_Summer2013_MRI14" discussion_category="Mechanical Energy and Work" />
+</vertical>

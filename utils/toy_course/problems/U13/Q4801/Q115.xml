@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="245" alt="Spinning Rod" height="250" src="/static/problems/MIT/rayyan/Physics801/Figures/Spinning rod.png"/>
+    <script type="loncapa/python">
+
+
+</script>
+    <hr/>
+
+      <p>
+A small circular block of mass M traveling with a speed v on a frictionless table collides and sticks to the end of a thin rod of with length L and mass M.  The picture shows a top down view of the block and rod on the frictionless table. What is the rod's angular velocity after the collision?  Express your answer in some combination of M, v, and L.
+</p>
+
+    <br/>
+    <formularesponse answer="6/5*v/L" samples="v,L,M@1,1,1:30,30,30#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+
+          <p> Hint: consider where should you put your axis.</p>
+
+      </hintgroup>
+    </formularesponse>
+      </problem>
+</html>

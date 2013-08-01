@@ -1,0 +1,6 @@
+<vertical>
+	<problem filename="F12/RQ/wheel-1.problem" display_name="Skidding vs Slipping" attempts="1" weight="0.33"/>
+	<problem filename="F12/RQ/wheel-2.problem" display_name="Skidding vs Slipping, Part 2" attempts="1" weight="0.33"/>
+	<problem filename="F12/RQ/wheel-3.problem" display_name="Skidding vs Slipping, Part 3" attempts="1" weight="0.34"/>
+	<discussion for="Skidding vs Slipping" id="MReV_Summer2013_wheel" discussion_category="Describing Rotational and Translational Motion" />
+</vertical>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 149 -->
+<problem>
+
+	<p>Suppose m<sub>1</sub> and m<sub>2</sub> are not equal. If the pulley is accelerated vertically upward in the laboratory frame of reference, which of the following statements about the accelerations of the blocks in the lab frame of reference <i>must</i> be true?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">They have the same magnitude and the same direction.</choice>
+			<choice location="random" correct="false">They have different magnitude and the same direction. </choice>
+			<choice location="random" correct="false">They have the same magnitude and different direction. </choice>
+			<choice location="random" correct="false">They have different magnitude and different direction. </choice>
+			<choice location="bottom" correct="true">None of the above must be true </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

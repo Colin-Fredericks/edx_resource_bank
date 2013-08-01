@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Impulse and Average Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Impulse and Average Force</h2>
+<p>Collision forces are difficult to measure precisely, because they occur over such extremely short intervals and they can have a complicated dependence on the structure of the colliding objects (as we saw in the photos showing the impact of the tennis ball on wood, objects deform significantly during violent collisions). Thus, it is often valuable to <i>estimate</i> the size of the collision forces by using the more easily measured change in momentum of one of the colliding objects.
+</p>
+<h3> Learning Goals</h3>
+<ul style="list-style:disc outside none"><li> Define time-averaged force in terms of impulse. 
+</li><li> Estimate the size of the collision force given information about the change in momentum of a participant in the collision.
+</li><li> Define the time-averaged force applied by a steady stream of water or other fluid.
+</li></ul>
+<h3> Time-Averaged Force</h3>
+<p>To find a time average of the force exerted in a collision, we can simply assume that the force has a constant average size that acts only over the time interval of the collision. We will denote this size with the symbol \(\langle F \rangle\). The angle brackets indicate that we are averaging. By substituting this average value into our equation for the change in momentum:
+</p><p>\(\vec{p}_{f} = \vec{p}_{i} + \int_{t_{i}}^{t_{f}} \langle \vec{F}\rangle\; dt \)
+</p><p>and remembering that we are assuming the average force is a constant, we can write:
+</p><p>\(\vec{p}_{f} - \vec{p}_{i} = \langle \vec{F} \rangle \;(t_{f}-t_{i})\)
+</p><p>giving:
+</p><p>\( \langle \vec{F} \rangle = \frac{\vec{p}_{f} - \vec{p}_{i}}{t_{f}-t_{i}}\).
+</p><p>Thus, if we know the change in momentum of an object during a collision, and we also know the approximate duration of the collision, we can define an average value for the collision force.
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> The Definition of "Average"
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> By considering what we have done above, we can construct a definition of what it means to "take a time average".  The true definition of impulse is:
+<p>\(\vec{p}_{f} - \vec{p}_{i} = \int_{t_{i}}^{t_{f}} \vec{F}\; dt \)
+</p><p>Comparing this to the expression involving average force, we can see that:
+</p><p>\( \langle \vec{F} \rangle = \frac{\int_{t_{i}}^{t_{f}} \vec{F} \;dt}{t_{f} - t_{i}}\)
+</p><p>You can check that this expression makes sense for some special cases like a constant force or a force that varies linearly with time.  
+</p>
+</td></tr></table>
+</body>
+</html>
+

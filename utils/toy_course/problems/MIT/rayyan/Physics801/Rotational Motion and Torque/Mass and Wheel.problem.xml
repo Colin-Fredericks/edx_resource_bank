@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="230"  height="275" alt="Mass and Wheel" src="/static/problems/MIT/rayyan/Physics801/Figures/Mass and Wheel.png"/>
+    <hr/>
+    <script type="loncapa/python">
+
+
+</script>
+
+<p>An engineer is in a competition to launch a pumpkin as high as possible using a launching device that
+ must be kept within a certain height. Because of the height restriction, the engineer wants to 
+ accelerate the pumpkin to a large speed before releasing it.</p>
+<p>The engineer decides a good way to get the pumpkin moving fast is to attach the pumpkin to the edge 
+of a vertical wheel turned by a motor. When the wheel is turning as fast as possible at its 
+constant rate w, the pumpkin is released so that it goes straight upwards (see figure). </p>
+<p>If during the 
+competition the pumpkin reaches a maximum height H from where it was released, what was the angular 
+velocity w of the wheel? Use g, H, and R in your answer.<br/></p>
+
+    <formularesponse answer="sqrt(2*g*H)/R" samples="g,H,R@9.8,10,1:9.8,100,5#4">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

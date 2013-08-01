@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem show_answer="never" attempts="0">
+
+<!-- This is currently provided by a video tag.
+	<table border="1">
+	<tr><td><b>Calculating Angular Momentum</b></td></tr>
+	<tr><td><iframe height="400" width="560" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/gAyf2Z7RiiA?rel=0"/></td></tr>
+	</table>
+-->
+
+	<p>Did you find this video useful?</p>
+
+      <multiplechoiceresponse type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+      <choicegroup type="MultipleChoice">
+        <choice location="1" name="foil1" correct="true">
+			<text>Very useful</text>
+        </choice>
+        <choice location="2" name="foil2" correct="true">
+			<text>Somewhat useful</text>
+        </choice>
+        <choice location="3" name="foil3" correct="true">
+			<text>Not useful</text>
+        </choice>
+        <choice location="4" name="foil4" correct="true">
+			<text>Confusing</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

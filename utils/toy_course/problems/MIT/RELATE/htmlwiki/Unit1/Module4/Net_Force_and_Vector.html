@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Net Force and Vector Addition</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+
+</style>
+
+</head>
+<body>
+<h2>Net Force and Vector Addition</h2>
+<p>It is very common for objects to experience multiple interactions simultaneously. To find the combined effect of multiple forces, we cannot simply add the magnitudes of the forces. The reason is that forces are vectors, not just numbers. Vector quantities have&#160;both a size (called 'magnitude') and a&#160;<i>direction</i> associated with them.</p>
+<p>Addition and subtraction of vectors are critical operations in applying Newton's Laws of Motion. Though we recap the basics over the following few pages, consider reviewing <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vect.html"> basic vector operations </a> if this is unfamiliar territory for you.</p>
+<p>&#160;</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Physical Vector vs. Scalar Quantities</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<p>Both net force and acceleration in Newton's Second Law are vector quantities; the magnitude of acceleration is the rate of change of velocity, and the direction tells you which direction the velocity vector is going to turn. For example, a dropped rock accelerates in the direction of the ground at about 9.8 m/s<sup>2</sup>. A rock that is thrown forward will also, once released, accelerate straight down at about 9.8 m/s<sup>2</sup> because that is the direction of the net force on it. Velocity, displacement, position, momentum, angular momentum, impulse and torque are other physical vector quantities encountered in the study of mechanics. These quantities are also vectors and have similar mathematical behavior, as we shall see later on.</p>
+<p>We distinguish physical <b>vectors</b> from physical <b>scalar</b> quantities which have no direction associated with them. Scalar quantities of significance in the study of mechanics are mass, speed, energy, work, moment of inertia and distance.</p>
+<h4>				Avoid Confusion</h4>
+<p>Because the magnitude of a vector is a scalar, there is room for confusion when we talk about vector quantities. It is important to indicate clearly whether you are referring to the (scalar) magnitude of a vector or to the complete vector quantity. Some vector quantities are so much a part of everyday experience that the vector part of the language is not explicit. Common pitfalls when reading, speaking or working in physics are when the common-language usages of the terms <i>speed</i>, <i>acceleration</i> and <i>force</i> are used interchangeably with the more rigorous vector language.</p>
+<p>"Speed" is the magnitude of the velocity. "g"= 9.8 m/s<sup>2</sup> (often casually called "gravity") is the magnitude of the free fall acceleration due to gravity, straight down to the center of the Earth. "Weight" is the magnitude of the gravitational force on an object by the entire Earth, directed straight down to the center of the Earth. As you can see, the language is long and difficult; so to the extent that you shorten up your expressions, be sure you are crystal clear on whether you are referring to a scalar OR just a part of the associated vector OR the vector. Usually you cannot assume your audience knows exactly what you mean. In writing, it is good practice to indicate vectors with a little dagger arrow over the symbol. The scalar magnitude of the vector quantity is written without the dagger.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>
+Learning Goals</h3>
+<p>After completing this module you should be able to:</p>
+<ul style="list-style-type:disc ">
+<li>	Find x and y components of a vector given as a magnitude and direction, and vice-versa.</li>
+<li>	Add vectors.</li>
+<li>	Define the net force acting on an object in terms of the individual forces acting on it.</li>
+</ul>
+<p>&#160;</p>
+<h3>
+Forces are Vectors</h3>
+<p>In the figure below, two people are pushing a box. We will ignore friction between the floor and the box, so that the only forces on the box are those shown. One person pushes with a force of 40 <a href="http://en.wikipedia.org/wiki/Newtons" class="extiw" title="wikipedia:Newtons">Newtons</a> (in the <a href="http://en.wikipedia.org/wiki/SI" class="extiw" title="wikipedia:SI">International System of Units</a>, forces are measured in Newtons, which is abbreviated by the symbol N). The other person pushes with a force of 30 N. It may be intuitively clear that if the two people push in the same direction, the magnitude of the total (or <i>net</i>) force on the crate is 70 N, whereas if they push in opposite directions, the magnitude of the total force is only 10 N. If, however, the people push at right angles to one another (or at any general angle), the net force is found by constructing a vector triangle. The net force is given by the (vector) sum of the force vectors. In the case of right angles, the magnitude is given by the hypotenuse of the triangle: 50 N. This is more than the magnitude of either force alone but less than the sum of their magnitudes.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Example.png"/></p>
+</body>
+</html>
+

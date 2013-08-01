@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/friction.png" alt="friction" height="119"/>
+
+    <p>Two vehicles, one of mass M and the other of mass 2M, are moving in the same direction on a highway. Both drivers apply their brakes at the same time and both vehicles begin sliding. If the coefficient of kinetic friction \(\mu_{k}\) is the same for both vehicles, how do their accelerations a<sub>1</sub> and a<sub>2</sub> compare?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			<text>a<sub>1</sub> is twice as great as a<sub>2</sub></text>
+        </choice>
+        <choice name="foil2" correct="true">
+			<text>a<sub>1</sub> is the same as a<sub>2</sub></text>
+        </choice>
+        <choice name="foil3" correct="false">
+			<text>a<sub>1</sub> is half as great as a<sub>2</sub></text>
+        </choice>
+        <choice name="foil5" correct="false">
+			<text>Not enough information to determine</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

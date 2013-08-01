@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<html>
+
+
+  <problem>
+    <img width="300" alt="ramp_problem" encrypturl="no" src="/static/problems/MIT/analiab/Figures/ramp.png"/>
+    <br/>
+      <p>
+A person wants to move a file cabinet of mass m up an incline of angle \(\alpha\) with respect to the horizontal. There is 
+friction between the cabinet and the surface (\(\mu_s\), \(\mu_k\)).  
+</p><br/>
+<b>Part a.</b> When the person applies a force parallel to the incline surface of magnitude F , the box does not move. Which of 
+the following statements are correct?
+
+      <br/>
+      <multiplechoiceresponse  direction="vertical" randomize="yes"  type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="1" correct="false">
+
+                The force of static friction is pointing down the incline
+            
+          </choice>
+          <choice location="random" name="2" correct="false">
+
+                The force of static friction is pointing up the incline
+            
+          </choice>
+          <choice location="random" name="3" correct="false">
+
+                The force of static friction is zero
+            
+          </choice>
+          <choice location="bottom" name="4" correct="true">
+
+                Depending on the value of F, one of the statements shown above  is correct.
+            
+          </choice>
+        </choicegroup>
+    </multiplechoiceresponse>    
+            
+              
+            <br/>
+  <solution>  
+   <div class="detailed-solution">       
+<p> 
+<b>Feedback:</b><br/>               
+The force of static friction will depend on the magnitude of the applied force, <i><b>F</b></i>, and on the component of 
+the cabinet's weight along the surface, <i>mgsin&#945;</i>. The force of static friction is a <b>constraint force</b> as it keeps
+ the cabinet at rest by changing its magnitude and direction according to Newton's second law (<b>&#931;<i>F</i> = 0</b>).
+<ul><li> If <i><b>F</b> &gt; mgsin&#945;</i>, the force of static friction must be directed downhill, otherwise the cabinet 
+will move up.</li><li> If <i><b>F</b> = mgsin&#945;</i>, no force of friction is needed to keep the cabinet at rest.</li><li> 
+If <i><b>F</b> &lt; mgsin&#945;</i>, the force of friction must be pointed uphill, otherwise the cabinet will slide down.
+</li></ul>
+</div>
+</solution>
+  </p>
+          
+  </problem>
+
+ 
+
+    </html>
+ 

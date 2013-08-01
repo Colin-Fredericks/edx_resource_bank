@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+<p>A small solid sphere of mass m and radius r is rolling without slipping on a horizontal surface and then rolls up an inclined plane. Assume that the sphere makes a smooth transition to rolling up the incline. The inclined plane makes angle \(\theta\) with the horizontal. The sphere stops when it reaches the vertical height h.  
+</p>
+<br/>
+<img width="1035" alt="BK146" src="/static/problems/MIT/rayyan/check_points/Pictures/BK146.png"/>
+
+<br/>
+<p>Part 1. Consider the sphere rolling up an incline without slipping. Which force diagram correctly shows the forces acting on the sphere?</p>
+
+      <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK1462.png" alt="BK1462"/>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+                  Diagram A
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                  Diagram B
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  Diagram C
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+				  Diagram D
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+<p>Part 2. Consider the sphere rolling up an incline. With respect to the axis passing through the center of the sphere, what force(s) create(s) non-zero torque(s) acting on the sphere?</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+                  force of friction only 
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                  force of gravity and normal force only
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  normal force only
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                  force of gravity only
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+                  force of friction and normal force only
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				  force of gravity and force of friction only
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+				  none of the forces create a non-zero torque with respect to the described axis
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+<p>Part 3. Consider the sphere rolling up an incline. With respect to the axis passing through the contact point between the sphere and the inclined plane, what force(s) create(s) non-zero torque(s) acting on the sphere?</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                  force of friction only 
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                  force of gravity and normal force only
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  normal force only
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+                  force of gravity only
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+				  force of friction and normal force only
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				  force of gravity and force of friction only
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+				  none of the forces create a non-zero torque with respect to the described axis
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+<p>Part 4. What are the best concepts to use in order to find the initial speed of the sphere at the bottom of the incline?</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                  Kinematics of rotational motion and conservation of energy 
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                  Kinematics of rotational motion and conservation of momentum
+            </choice>
+            <choice location="random" name="foil3" correct="true">
+                  Conservation of energy only
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                  Conservation of momentum only
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+                  Conservation of energy and conservation of momentum
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				  Newton's 2nd law for rotation and conservation of energy
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+				  Newton's 2nd law for rotation and conservation of momentum
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+<p>Part 5. What expression for the total kinetic energy of the sphere at the bottom of the inclined plane is correct? The angular speed of the sphere is \(\omega\).</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                  \(0.2mr^{2} \omega ^{2}\) 
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                 \( 0.4mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  \(0.5mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+                  \(0.7mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+				  \(1/3mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				  \(2/3mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+				  \(5/6mr^{2} \omega ^{2}\)
+            </choice>
+            <choice location="random" name="foil8" correct="false">
+				  \(7/6mr^{2} \omega ^{2}\)
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+<p>Part 6. Now let us assume that there is no friction between the inclined plane and the sphere. If the sphere approaches the inclined plane with the same initial speed, how would the maximum vertical height reached by the sphere change, compared to the original statement of the problem?</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                  The height would increase 
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+                  The height would decrease
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  The height would not change
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+				  The height may either increase or decrease, depending on the angle of the incline
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+    
+  </problem>
+</html>

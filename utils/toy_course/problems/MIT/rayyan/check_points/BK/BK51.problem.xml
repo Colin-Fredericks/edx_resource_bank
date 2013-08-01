@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Collision </title>
+    <script type="loncapa/python">
+
+ma=random.choice([50,60,70])
+va=random.choice([2.0,3.0,4.0])
+mb=random.choice([30,40,50])
+vb=random.choice([0.4,0.8,1.2])
+v=(- mb* vb+ ma*( va+2.0))/ mb
+
+</script>
+    <img width="420" alt="BK51" src="/static/problems/MIT/rayyan/check_points/Pictures/BK51.png"/>
+    <p>Two skaters, Alan and Betsy, move toward each other on a very smooth skating rink. Their masses and speeds are respectively: $ma kg; $va m/s and $mb kg; $vb m/s. After the skaters collide and use their hands to push each other away, Alan is moving backwards at 2.0 m/s. Taking the direction of Alan's initial velocity as positive, find Betsy's velocity \(v_f\) after the collision.</p>
+
+		<p>\(v_f=\)</p>
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

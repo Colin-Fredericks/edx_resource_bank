@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 34 -->
+
+<problem>
+
+    <img src="/static/problems/F12/MRI/images/MRI34b.png" /><br/>
+	<p>Two projectiles are launched simultaneously from the same point. The initial speeds of the projectiles are the same.
+	 Each projectile’s velocity makes the same angle with the horizontal. However, projectile A is launched <b>a</b>bove the horizontal and projectile 
+	 B is <b>b</b>elow the horizontal. </p>
+
+	<h3>Part 1</h3>
+	<p>At any given moment while <i><b>both</b> projectiles are still in the air,</i> state which of the two projectiles has greater: </p>	
+	<p>
+		Horizontal component of the velocity
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="same"/></optionresponse>
+	</p>
+	<p>
+		Vertical component of the velocity
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="same"/></optionresponse>
+	</p>
+	<p>
+		Speed
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="same"/></optionresponse>
+	</p>
+	<p>
+		Height above the ground
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Horizontal displacement
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="same"/></optionresponse>
+	</p>
+	<p>
+		Rate of change in velocity
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="same"/></optionresponse>
+	</p>
+
+	<h3>Part 2</h3>
+	<p>At the instant right before landing, state which of the two projectiles has greater </p>
+	<p>
+		Total time in the air 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Horizontal range 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Landing velocity  
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Angle between the velocity and the horizontal is larger for 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+
+</problem>
+</html>

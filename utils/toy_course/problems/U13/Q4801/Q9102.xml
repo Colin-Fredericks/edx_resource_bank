@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Torque and Angular Acceleration</title>
+
+      <p>A uniform solid disc of mass m and radius r is acted upon by three forces of given magnitudes (see the diagram). 
+</p>
+      <br/>
+
+    <img width="449" alt="BK80" src="/static/problems/MIT/rayyan/check_points/Pictures/BK80.png"/>
+        <br/>
+
+      <p>
+Part 1. 
+Find the angular acceleration of the disc if it rotates about the axis passing through the center of the disc, perpendicular to the page.
+</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                \(\alpha = 2F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                \(\alpha =  2F/mr\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha =  4F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha =  4F/mr\); clockwise
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha =  6F/mr\); counterclockwise
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha =  6F/mr\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+Find the angular acceleration of the disc if it rotates about the axis passing through the point of application of force 3F, perpendicular to the page.
+</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                \(\alpha =  2F/mr\); counterclockwise 
+
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+
+                \(\alpha =  2F/mr\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha =  4F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha =  4F/mr\); clockwise
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha =  6F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha = 6F/mr\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 3. 
+Find the angular acceleration of the disc if it rotates about the axis passing through the point of application of force 2F, perpendicular to the page.
+</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                \(\alpha =  8F/3mr\); counterclockwise 
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                \(\alpha =  8F/3mr\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha =  4F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha =  4F/mr\); clockwise
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha =  2F/mr\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha = 2F/mr\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

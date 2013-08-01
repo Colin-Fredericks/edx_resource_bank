@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p>
+</p><br/> 
+The diagram shows a moving particle and several points, labeled A-F. Find the direction of the angular momentum of the particle relative to axes passing through these points.
+
+    <br/>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/Bk99.PNG" alt="BK99" texwrap="none"/>
+    <br/>
+
+      <p>Part 1. 
+The direction of the angular momentum of the particle is out of the page with respect to the following axes of rotation: </p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>A</p>
+
+            <optioninput name="Foil1" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+      <p>Part 2. 
+The direction of the angular momentum of the particle is into the page with respect to the following axes of rotation:
+</p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>A</p>
+
+            <optioninput name="Foil1" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+      <p>Part 3. 
+The angular momentum of the particle is zero with respect to the following axes of rotation:
+</p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>A</p>
+
+            <optioninput name="Foil1" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+      </problem>
+</html>

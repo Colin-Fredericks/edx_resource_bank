@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+<!-- Checkpoint 20 -->
+<problem>
+
+	<h2>Checkpoint 20</h2>
+	<p>A uniform solid disc of mass <i>m</i> and radius <i>r</i> is free to rotate on a horizontal frictionless axle passing through the center of the disc. A long light string is wrapped around the disc; a block of mass <i>M</i> is suspended on the string as shown. The system is released from rest, and the block begins to descend.</p>
+	<script type="loncapa/python">
+alpha = "2*g/(3*r)"
+	</script>
+
+		<br/>
+		Find the angular acceleration \(\alpha\) of the disk in terms of some or all of the given variables: M, I, r, and g.
+		<br/>
+
+	<formularesponse samples="g,r@1,2:3,5#10" answer="$alpha">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

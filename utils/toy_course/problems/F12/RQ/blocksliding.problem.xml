@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<problem>
+
+<p>A small cube of mass \(m_1\)  slides down a circular track of radius \(R\) cut into a large block of mass \(m_2\) as shown in the figure below. The large block rests on a frictionless table and there is no friction between the block and the cube. Both objects are initially at rest, and the cube starts from the top of the track as shown in the figure. Find the velocity  of the cube as it leaves the block.</p>
+
+<p><img src="/static/problems/F12/RQ/images/blocksliding.png" width="350"/></p>
+
+<p>What is the best strategy to solve the problem?</p>
+
+<p>
+<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">Only use momentum and impulse. There is no net external impulse, so momentum of the cube+block system is constant.</choice>
+		<choice location="random" correct="false" name="2">Only use Mechanical Energy and Work. There is no non-conservative work, so final Kinetic Energy of the cube can be found from its loss of potential energy.</choice>
+		<choice location="random" correct="true" name="3">The mechanical energy of the cube+block+Earth system and the momentum along the horizontal direction of the cube+block system are constant. Apply both principles to solve for the velocity of the cube </choice>
+		<choice location="bottom" correct="false" name="4">None of the above, there is not enough information to solve the problem.</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+</p>
+
+</problem>

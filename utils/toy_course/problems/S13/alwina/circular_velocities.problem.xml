@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: velocities in circular orbits-->
+
+<problem>
+  <customresponse>
+
+	<img src="/static/problems/S13/alwina/images/circular_orbit_rank.png"/>
+
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="A" label="A" can_reuse="false"/>
+      <draggable id="B" label="B" can_reuse="false"/>
+      <draggable id="C" label="C" can_reuse="false"/>
+      <draggable id="D" label="D" can_reuse="false"/>
+      <draggable id="E" label="E" can_reuse="false"/>
+	  <draggable id="1" label="Reason 1" can_reuse="false"/>
+	  <draggable id="2" label="Reason 2" can_reuse="false"/>
+	  <draggable id="3" label="Reason 3" can_reuse="false"/>
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <target id="sign3" x="250" y="25" w="45" h="35"/>
+	  <target id="item4" x="300" y="25" w="45" h="35"/>
+	  <target id="sign4" x="350" y="25" w="45" h="35"/>
+	  <target id="item5" x="400" y="25" w="45" h="35"/>
+	  <br/>
+	  <target id="norank" x="150" y="70" w="145" h="35"/>
+    </drag_and_drop_input>
+    <text>
+	  <h4>Rank the <b>speeds</b> with which the planets orbit the central star shown above from greatest to least. Their relative masses are given in red.</h4>
+	  <br/>
+	  <p>To rank them: use the letters A-E and the symbols = and >. For example, A = B > C means "A and B have the same speeds, and they both have a greater speed than C." If you believe that they cannot all be ranked, select from one of the reasons below and put the corresponding reason number into the bottom row (be sure to leave the top row blank).</p>
+
+      <p><b>Reason 1:</b> There is not enough information available to calculate the speeds.
+	  <br/><b>Reason 2:</b> The speed changes depending on where along the orbit the planet is, so the rankings will not be possible.
+	  <br/><b>Reason 3:</b> The mechanical energy of the planet-star system is constant. The value of the constant depends on the radius of the orbit,  making the ranking not possible when comparing planets in the different orbits.
+	  </p>
+    </text>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['C','D'],'targets': ['item1','item2'],'rule':'unordered_equal'},
+	{'draggables': ['A','B','E'],'targets': ['item3','item4','item5'],'rule':'unordered_equal'},
+	{'draggables': ['eq'],'targets': ['sign1','sign3','sign4'],'rule':'unordered_equal'},
+	{'draggables': ['gt'],'targets': ['sign2'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

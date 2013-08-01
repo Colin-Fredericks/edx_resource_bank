@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>Mechanical Energy and Work</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h2>Total Energy</h2>
+
+<p>This unit is focused on the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/energy/">Mechanical Energy and Work</a> core model.</p>
+
+<h3>Learning Goals</h3>
+
+<ul style="list-style:disc outside none">
+	<li>To identify different forms of energy: mechanical, thermal, chemical, etc.</li>
+	<li>To explain the difference between Mechanical Energy and the Total Energy.</li>
+	<li>To define the types of energy contributing to the Mechanical Energy.</li>
+</ul>
+
+<h3>Various Types of Energy Depend on Related State Variables</h3>
+
+<p>The energy of a system is a function of its current condition only. Thus it depends on the current values of its various "state variables": physical quantities that describe the state of a system at a specific moment in time. Examples of state variables are velocity, position and temperature. It does not depend on the prior history of the system.</p>
+
+<p>In Mechanics, we will be concerned exclusively with Mechanical Energy. In fact, we will often use just "energy" to refer to Mechanical Energy.</p>
+
+<p>Given the state variables of a system, one can compute the various contributions to mechanical energy, which are listed to the right of the arrows:</p>
+
+<table class="wikitable">
+<tbody>
+<tr>
+<th>State Variables and Related Components of Mechanical Energy</th>
+</tr>
+<tr>
+<td>
+<b>Velocity</b> &#8594; <b>Translational Kinetic Energy</b></td>
+</tr>
+<tr>
+<td>
+<b>Positions</b> (internal separations)&#8594; <b>Spring or Gravitational Potential Energy</b></td>
+</tr>
+<tr>
+<td>
+<b>Angular Velocity</b>&#8594;<b>Rotational Kinetic Energy</b></td>
+</tr>
+</tbody>
+</table>
+
+<p>The following state variables determine forms of energy that contribute to Total Energy but <i>do not contribute</i> to the Mechanical Energy:</p>
+
+<ul style="list-style:disc outside none">
+	<li>temperature&#8594;internal energy</li>
+	<li>amount of various chemicals&#8594; chemical energy</li>
+	<li>amount of various nuclear isotopes&#8594; nuclear energy</li>
+</ul>
+
+<p>The <b>systems</b> we consider in this text consist of mechanical bodies, each of which has kinetic energy due to both translation (of its center of mass) and rotation (about its center of mass). The potential energy of a system will be due to gravity and elastic deformation (as in springs or flexible levers).</p>
+
+<h3>Total Energy of a system</h3>
+
+<p>The total energy of a system is the sum of the various kinds of energy it contains:</p>
+
+<p>\(\displaystyle E^{tot} = E^{kinetic} + U^{potential} + U^{internal}+U^{chemical} + U^{nuclear}&#160; + \dots \) </p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Where does <i>E</i> = <i>m</i><i>c</i><sup>2</sup> fit in? </b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<p>You may wonder why we haven't listed the mass as contributing to the total energy via <i>E</i> = <i>m</i><i>c</i><sup>2</sup>. At a fundamental level, <i>E</i> = <i>m</i><i>c</i><sup>2</sup> says that the mass reflects the total energy. Consequently, the various forms of energy listed above all contribute to the mass. For example, the mass of a body increases slightly if it is heated, two hydrogen atoms combining have more mass (by a part per billion) than the <i>H</i><sub>2</sub> molecule they combine to form. In the non-relativistic limit of classical mechanics, mass is taken to be constant and unchanging, and other forms of energy are considered separately (and in detail).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Change of Total Energy</h3>
+<p>For an isolated system the total energy is constant (conserved) - it can only change from one type of energy to another. For example, friction may reduce kinetic energy and increase internal (thermal) energy; a chemical reaction might heat the entire system, increasing its internal energy; an explosion might convert chemical energy into kinetic energy of the fragments. If the system contains a heat engine, some thermal energy might be turned back into mechanical energy, etc..</p>
+<p>To change the total energy of a system, one must pass energy through the boundaries of the system. Historically nuclear energy was unknown, and chemical energy and radiative energy were generally changed into heat. Also, the transformation of mechanical energy into heat was in processes where mechanical energy is "lost" due to friction and drag.</p>
+<p>In the early 19th century, Thermodynamics was developed to quantify the transfer of mechanical energy into/from heat. The conservation of total energy involving mechanical energy, work, and heat became the First Law of Thermodynamics. We now present the vocabulary and the model for "Total Energy", even though it won't be used in Introductory Mechanics until we consider statistical mechanics and thermodynamics of ideal gasses.</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>			(Advanced Material) Model: First Law of Thermodynamics [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<p>The first law applies to systems containing many massive bodies and gasses. The internal energy (mechanical plus thermal) of these systems can be changed by external work done or by added heat.</p>
+<p>
+<br/>
+\[E_{f} = E_{i} + Q_{f,i}+ W_{f,i} \]</p>
+<p>This equation is called the First Law of Thermodynamics. Note that the subscript on the energy before and after is a single letter - this stresses that energy is a property of the system that depends only on its state at a given time; f and i are the final and initial states of the system. Heat and Work, on the other hand, are <i>processes</i> and therefore depend on the details of the path taken to the final state from the initial state. This is designated here by the notation f,i for their subscripts.</p>
+<p>Traditionally this law is written,</p>
+<p>
+\[dU= \delta Q-\delta W\]</p>
+<p>where dU is the internal energy (really just the mechanical energy if you consider gasses and solids to be made up of atoms that can have kinetic and potential energy). The sign of \(\delta W\) is negative because historically the developers of steam engines were interested in the work done &#8216;&#8217;by the engine&#8217;&#8217; on the world (whereas in mechanics, we consider the work to be done &#8216;&#8217;by the environment&#8217;&#8217; on the system).</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>							Concept Question [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+<p>If a system is taken from a given initial set of conditions to a given final set of conditions,</p>
+<ol style="list-style-type:decimal">
+<li>The amount of heat added is independent of the path</li>
+<li>The amount of work needed is independent of the path</li>
+<li>The sum of the heat energy added and the amount of work added is independent of the path</li>
+<li>Both the amount of heat added and the amount of work needed are independent of the path</li>
+</ol>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>Answer [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+<p>3. The sum of the heat and the work is equal to the change in the Energy, and that is independent from the path taken</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>The Energy Crisis</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+<p>The world is awaking to the "energy crisis". Sometimes this is attributed to the fact that total energy is conserved &#8211; so the world has a finite supply of energy. This is not true because the sun adds radiant energy to the earth constantly. The solar constant is about 1.36 kilowatt per square meter, which translates to about 10,000 kilowatts per person after allowing for losses due to atmospheric absorption and reflection by clouds. Since even Americans use only about 3kW/person (night and day), there&#8217;s plenty of energy available. But it is diffuse. To run an electric car with 28 horsepower (21kW) would require ~100 square meters of solar cells held perpendicular to the sun &mdash; rather impractical! What is in limited supply is easily usable, concentrated, energy that you can easily convert to useful mechanical or electrical energy. Chemical energy stored in fuels or batteries is a prime example of concentrated energy. You have to pay for such energy.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Why energy is a difficult topic</b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+<p>Because people did not understand that heat was a form of energy until the 19th century (they thought it was a sort of fluid called Phlogisten), they didn't understand that total energy is conserved, and didn't know how to tell if a particular mechanical system would conserve mechanical energy. Once heat was recognized as energy, the failure of attempts to convert it efficiently to mechanical energy was ultimately recognized to be a consequence of natural laws and not poor engineering. This then led to Thermodynamics, which gave an unexpected theoretical limit to the efficiency of converting heat into mechanical energy (the Carnot efficiency).</p>
+<p>In part because of the difficulty of the concepts of heat and thermal energy, energy is conceptually difficult, as reflected in the fact that momentum was understood in <i>Principia</i>, published in 1684, whereas energy was not understood until ~150 years later. Don&#8217;t feel bad if you&#8217;re confused when you are asked to learn these two subjects in less than a month!</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+

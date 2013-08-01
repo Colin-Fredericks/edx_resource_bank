@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 34 -->
+
+<problem>
+
+	<p>At the instant right before landing, state which of the two projectiles has greater </p>
+	<p>
+		Total time in the air 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Horizontal range 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Landing velocity  
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+	<p>
+		Angle between the velocity and the horizontal is larger for 
+		<optionresponse><optioninput inline="1" options="('A','B','same')" correct="A"/></optionresponse>
+	</p>
+
+</problem>
+</html>

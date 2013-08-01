@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <title> Work </title>
+
+      <p>
+A block is pulled along a horizontal surface by a constant force of magnitude F. After moving a total distance d, the work done by force F is found to be W=-0.6Fd. 
+One can conclude that the angle between vectors F and the displacement vector is
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              zero          
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+
+                \( \cos^{-1} \left(-0.6\right)\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \( \cos^{-1} \left(0.6\right)\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \( \sin^{-1} \left(-0.6\right)\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \( \sin^{-1} \left(0.6\right)\)
+
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+                \( \cos^{-1} \left(-10/6\right)\)
+
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+
+                \( \sin^{-1} \left(-10/6\right)\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

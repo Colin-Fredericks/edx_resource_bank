@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<problem>
+
+	<p>Now consider a situation where the cylinder is <b>rolling up</b> the incline without slipping, the friction is pointing in the direction of:</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">(a)</choice>
+			<choice correct="false">(b)</choice>
+			<choice correct="false">(c)</choice>
+			<choice correct="false">(d)</choice> 
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>

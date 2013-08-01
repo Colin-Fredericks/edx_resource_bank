@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A potential energy \(U(x)\) of a particle of mass m has a minimum at \(x_0\). The particle has a total mechanical energy close to the minimum potential energy \(U(x_0)\), and is undergoing small oscillations. 
+<br/>
+The angular frequency of the small oscillations is:
+  </p>
+
+<p>
+
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">\(\omega_0= \displaystyle\sqrt{\frac{U(x_0)}{m }}\)</choice>
+<choice location="random" correct="false" name="2">\(\omega_0= \displaystyle\sqrt{\frac{1}{m}\frac{dU}{dx}(x_0)}\)</choice>
+<choice location="random" correct="true" name="3">\(\omega_0= \displaystyle\sqrt{\frac{1}{m}\frac{d^2U}{dx^2}(x_0)}\)</choice>
+<choice location="random" correct="false" name="4">\(\omega_0= \displaystyle\sqrt{\frac{x_0}{m }}\)</choice>
+<choice location="random" correct="false" name="5">\(\omega_0= \displaystyle\sqrt{\frac{d^2U}{dx^2}(x_0)}\)</choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

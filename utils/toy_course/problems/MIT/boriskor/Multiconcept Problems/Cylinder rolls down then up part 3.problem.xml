@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+    <p><b>Will the cylinder reach the top of the second inclined plane? If yes, what would be its speed \(v_{top}\) at the top of the incline? If not, what is the maximum vertical height \(h_{max}\) that will be reached?</b></p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+			<text>No; \(h_{max}=2h/3\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+			<text>No; \(h_{max}=3h/4\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+			<text>No; \(h_{max}=h/2\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+			<text>Yes; \(v_{top}=\sqrt{gh/3}\)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+			<text>Yes; \(v_{top}=\sqrt{gh/4}\)</text>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+			<text>Yes; \(v_{top}=\sqrt{gh/6}\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+</problem>
+</html>

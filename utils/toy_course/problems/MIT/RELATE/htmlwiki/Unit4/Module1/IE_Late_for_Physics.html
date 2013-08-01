@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Example: Late for Physics</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+border:1px #aaa solid;
+padding:.2em;
+
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+border:1px #aaa solid;
+padding:.2em;
+font-weight:700;
+font-size:11pt;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable td,.prettytable th,.prettytable td,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+font-size:10pt;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+<h3>
+Illustrative Example: Late for Physics</h3>
+<p>Consider the following example emphasizing the relationship between position and velocity:</p>
+<p>
+<i>A student rushes from her dorm room to the physics building in 2 minutes. After spending 4 minutes turning in her homework, the student hurries to the cafeteria in 2 minutes. The student eats lunch for 12 minutes, then walks to the library in 6 minutes.</i></p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Defining Position</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht2">
+<td>
+<p>				Before we can determine the velocity of the student at each stage of the motion, we must assign positions to each of the various buildings visited by the student. For simplicity, imagine a school where all these buildings are on the same street. The street runs east to west. Suppose that the physics building is two blocks east of the dorm, the cafeteria is one block west of the dorm, and the library is three blocks east of the dorm. A simple way to convey this information is to construct a one-dimensional position axis such as the one shown below.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module1/files/Campus_1a.png"/></p>
+<p>				This position axis conveys all the information given in the problem about the relative locations of the buildings. The process of constructing this axis is called <i>choosing a coordinate system</i>. In this coordinate system, the vector representing the position of the physics building is a right pointing arrow of size 2 blocks, whereas the vector representing the position of the cafeteria points to the left and has a size of 1 block. Note that for position vectors, there is an implied relation to the origin of the coordinate system; this is why all the position vectors originate there (i.e. have their tails at the origin). In our simple east-west map, these two vectors only have an x-component:</p>
+<p>
+\( \mathcal{}r_{Physics,x} = 2 \mbox{ blocks}\)</p>
+<p>
+\(\mathcal{}r_{Cafeteria,x} = -1 \mbox{ block}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Calculating Displacement</b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht3">
+<td>
+<p>				By using the position axis we defined above, we can find the displacement between any two locations. The displacement between two locations is the change in position and is calculated as the difference between the final and the initial position. For example, starting in the cafeteria the student walks to the physics building, the displacement vector between these two positions is the difference between the position of the physics building and the position of the cafeteria:</p>
+<p>
+\(\Delta\vec{r} = \vec{r}_{Physics} - \vec{r}_{Cafeteria}\)</p>
+<p>				which gives a displacement of (+2 blocks)  &#8722;  ( &#8722; 1 block) = +3 blocks. Note, however, that reversing this process (taking the position of the cafeteria and subtracting the position of the physics building) gives ( &#8722; 1 block)  &#8722;  (+2 blocks) =  &#8722; 3 blocks. The sign of these results has meaning, because displacement is a vector. The sign of the displacement indicates the direction. For the coordinate system we have defined the positive x direction points east and the negative x direction points west. Thus, the displacement required to go from the cafeteria to the physics building is +3 blocks because it is an eastward movement. On the other hand, the displacement required to go from the physics building to the cafeteria is  &#8722; 3 blocks because the movement to go from the physics building to the cafeteria is westward.</p>
+<p>				We now summarize two important points about position and displacement:</p>
+<ul style="list-style:disc outside none">
+<li>					Position itself is a vector and its mathematical representation will depend on the coordinate system chosen to describe the motion.</li>
+</ul>
+<ul style="list-style:disc outside none">
+<li>					The origin of the coordinate system and the positive direction are arbitrary choices. The displacement between any two locations on the axis will be independent of the choice of the origin and of the choice of the positive direction (provided that the direction assignment is clearly stated).</li>
+</ul>
+<p>				To illustrate the second point, consider the following two alternate coordinate systems for the example situation described above.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module1/files/Campus_2a.png"/></p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module1/files/Campus_3a.png"/></p>
+<p>				If you calculate the displacements between any two locations in any of the two coordinate systems, you will find the same answer <i>provided</i> that you are consistent about the signs: the negative x direction points <i>east</i> in the final coordinate system.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Distance versus Displacement</b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht4">
+<td>
+<p>				It is important to separate the concept of distance from that of displacement. Both quantities are measured in units of length. But it should be clear from common usage that distance is not a vector. Consider the first two legs of the trip described in the example at the top of this Module. In the first leg (dorm room to physics building) the student has a displacement of +2 blocks in our initial coordinate system, or 2 blocks <b>east</b>. We would simply say that the student moved a distance of 2 blocks. No direction is needed when specifying distance. In the second leg of the trip (physics building to cafeteria) the displacement was  &#8722; 3 blocks, or 3 blocks <b>west</b>. But we would simply say the distance traveled was 3 blocks.</p>
+<p>				From this discussion, it may be tempting to say that the distance is just the magnitude of the displacement, but there is an important limitation to this view. Consider the student's movement from another perspective: put the first two legs together into one trip. For the student's trip from the dorm to the physics building and then to the cafeteria, the initial position was <i>x</i><sub><i>i</i></sub> = 0 blocks (the dorm) and the final position was <i>x</i><sub><i>f</i></sub> = &#8722; 1 block (the cafeteria). The total change in position for this trip was:</p>
+<p>
+\( \mathcal{}\Delta x = x_{f} - x_{i} = -1 \mbox{ block } - 0 \mbox{ blocks } = -1 \mbox{ block } = 1 \mbox{ block west}\)</p>
+<p>				In other words, the student ended the trip one block west of where she started (the cafeteria is one block west of the dorm). Tracing the complete trip on the map, however, makes it clear that the <i>distance</i> traveled by the student was actually 5 blocks (2 blocks to get to the physics building plus 3 blocks to get to the cafeteria). Clearly the size of the displacement is not equal to the distance. The distance measures the total length of the trip, while displacement measures the net effect of the trip. The student moved 5 blocks total, but because she <i>turned around</i> during the trip, two of the three blocks moved in the second leg (from the physics building to the cafeteria) were used to "undo" the first leg (by returning to the dorm). Thus, she ended up only 1 block from where she started.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module1/files/Campus_trip.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Generalizing to more than One Dimension</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht5">
+<td>
+<p>				Position and displacement can be generalized to more than one dimension by using the rules of vector addition and subtraction. Suppose that we re-imagine the campus of the example we have been using. Suppose that the distance from the dorm to the physics building is still 2 blocks and the distance from the physics building to the cafeteria is still 3 blocks, but suppose that the cafeteria is now 3 blocks <i>south</i> of the physics building rather than 3 blocks <i>west</i> of the physics building. If we choose a coordinate system with the physics building at the origin, we can represent this situation as shown in the left picture below. Note that we have been forced to define a y-axis as well as an x-axis, because the campus map is now <i>two-dimensional</i>.</p>
+<p>				The net displacement achieved by the student in this trip is now determined using the Pythagorean theorem to be about 3.61 blocks. The direction of this displacement is usually reported as an angle. The angle shown in the figure (56.3&#176;) was determined using trigonometry from the sides of the triangle formed by the green and red arrows. It is <i>not</i>, however, appropriate to simply state that the displacement of the student was 3.61 blocks at 56.3&#176;. The angle that is reported must be referenced to the coordinate system chosen. The usual technique is to measure angles <i>counter-clockwise from the positive x-axis</i>, so that in this case the appropriate angle to report is 303.7&#176;. It is also fairly common to call this angle  &#8722; 56.3&#176;.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module1/files/Campus_4a.png"/></p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Calculating a Multi-Dimensional Displacement Vector</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht1">
+<td>							Now we have to do the difference between two vectors in 2 - dimensions, therefore we will do the subtraction by components.							<p>								Using the coordinate system shown in the figure, the x and y components of the initial position vector are:</p>
+<p>
+\(\mathcal{}r_{intial,x} = -2 \mbox{, } r_{initial,y} = 0\)</p>
+<p>								and the components of the final position vector are:</p>
+<p>
+\(\mathcal{}r_{final,x} = 0 \mbox{, }r_{final,y} = -3\)</p>
+<p>
+<br/>								Therefore, the x and y components of the displacement vector are:</p>
+<p>
+\(\mathcal{}\Delta r_{x} = r_{final,x} - r_{initial,x} = \mbox{ 0 blocks - (-2) blocks = 2 blocks}\)</p>
+<p>
+\(\mathcal{}\Delta r_{y} = r_{final,y} - r_{initial,y} = \mbox{-3 blocks - 0 blocks = -3 blocks}\)</p>
+<p>								The magnitude of the displacement vector is given by:</p>
+<p>
+\(\mathcal{} \Delta r = \sqrt{ \Delta r_{x}^{2} + \Delta r_{y}^{2}} = \sqrt{4 + 9} = 3.61 \mbox{ blocks}\)</p>
+<p>								and the angle &#945; between the displacement vector and the x - axis is obtained from:</p>
+<p>
+\(\mathcal{} \tan \alpha = \frac{\Delta r_{y}}{\Delta r_{x}} = \frac{-3}{-2} \mbox{, } \alpha = 56.3^o\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

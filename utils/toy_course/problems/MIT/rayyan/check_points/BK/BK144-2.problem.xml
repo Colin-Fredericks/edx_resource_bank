@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <p>
+Part 2. 
+What condition is necessary in order to apply the concepts in part A? Check all that apply.
+</p>
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="true"><text>The surface must be frictionless</text></choice>
+<choice correct="true"><text>The surface must be horizontal</text></choice>
+<choice correct="true"><text>The spring must obey Hooke's law</text></choice>
+<choice correct="false"><text>The masses of the blocks must be different from each other</text></choice>
+<choice correct="false"><text>The forces exerted on the blocks by the spring must be proportional to their masses</text></choice>
+<choice correct="false"><text>The accelerations of the blocks must be equal</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+    
+  </problem>
+</html>

@@ -1,0 +1,106 @@
+<chapter display_name="10: Describing Rotational and Translational Motion">
+	<sequential display_name="Mini Survey 10 - Physics Opinions" filename="mini_survey_10" />
+	<sequential display_name="Describing Rotational and Translational Motion" url_name="Describing_Rotational_and_Translational_Motion">
+		<vertical display_name="Describing Rotational and Translational Motion">
+			<html display_name="Describing Rotational and Translational Motion" filename="problems/MIT/RELATE/htmlwiki/Unit10/Describing_Rotationa_new.html"/>
+			<discussion for="Describing Rotational and Translational Motion" id="MReV_Summer2013_Describing_Rotationa_new" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Applying Newton's Second Law in General Rotations" url_name="Applying_Newtons_Second_Law_in_General_Rotations">
+		<vertical display_name="Independence of Translation and Rotation - Example">
+			<html display_name="Independence of Translation and Rotation - Example" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/independence_of_translation_and_rotation.html"/>
+			<discussion for="Independence of Translation and Rotation - Example" id="MReV_Summer2013_independence_of_translation_and_rotation" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Example: Pulling a YoYo">
+			<html display_name="Example: Pulling a YoYo" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/IE_Pulling_YoYo.html"/>
+			<discussion for="Example: Pulling a YoYo" id="MReV_Summer2013_IE_Pulling_YoYo" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Rolling Constraints" url_name="Rolling_Constraints">
+		<vertical display_name="Video: Rotation and Translation Resultants">
+			<html display_name="Video: Rotation and Translation Resultants" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/Rotation_and_Translation_Resultants.html" />
+			<discussion for="Video: Rotation and Translation Resultants" id="MReV_Summer2013_youtube_1.0_adHN5a1LER0" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Rolling Constraints">
+			<html display_name="Rolling Constraints" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module2/Rolling_Constraints.html"/>
+			<discussion for="Rolling Constraints" id="MReV_Summer2013_Rolling_Constraints" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+<!--
+		<vertical display_name="Example: Disk Rolling Down a Ramp">
+			<html display_name="Example: Disk Rolling Down a Ramp" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/IE_Disk_Down_Ramp.html"/>
+			<discussion for="Example: Disk Rolling Down a Ramp" id="MReV_Summer2013_IE_Disk_Down_Ramp" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+-->
+		<vertical display_name="Example: Ball Rolling Down a Ramp">
+			<html display_name="Example: Ball Rolling Down a Ramp" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/IE_Ball_Down_Ramp.html"/>
+			<discussion for="Example: Ball Rolling Down a Ramp" id="MReV_Summer2013_IE_Ball_Down_Ramp" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Video: Solid Cylinder Rolling Without Slipping Down an Incline">
+			<html display_name="Video: Solid Cylinder Rolling Without Slipping Down an Incline" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/Cylinder_Rolling_Without_Slipping_Down_Incline.html" />
+			<discussion for="Video: Solid Cylinder Rolling Without Slipping Down an Incline" id="MReV_Summer2013_youtube_1.0_7abmkvIpfE8" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Video: Objects rolling down">
+			<html display_name="Video: Object Rolling Down Incline Demonstration" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/IE_Objects_Rolling_Down.html" />
+			<discussion for="Video: Objects rolling down" id="MReV_Summer2013_youtube_1.0_grMGhHFz4Bs" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Video: The Yo-yo problem">
+		    <html display_name="Video: Yo-yo Dynamics" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/Yoyo_Dynamics.html" />
+			<discussion for="Video: The Yo-yo problem" id="MReV_Summer2013_youtube_1.0_k4h-lkcnRWI" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+	    <vertical display_name="Checkpoint 2: Another Yo-Yo" filename="BK89.vert" /> 
+	    <vertical display_name="Checkpoint 3: and another Yo-Yo" filename="BK90.vert" /> 
+
+ 
+</sequential>
+
+	<sequential display_name="Rotational Energy" url_name="Rotational_Energy">
+
+		<vertical display_name="Rotational Kinetic Energy">
+			<html display_name="Rotational Kinetic Energy" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module4/Rotational_KE.html"/>
+			<discussion for="Rotational Kinetic Energy" id="MReV_Summer2013_Rotational_Kinetic_Energy" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+
+         <vertical display_name="Example: A pivoted rod">
+         	<html display_name="A pivoted rod" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module4/IE_Pivoted_Rod_KE.html"/>
+			<discussion for="A pivoted rod" id="MReV_Summer2013_IE_Pivoted_Rod_KE" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+   
+         
+		<vertical display_name="CheckPoint 4: Rolling Down an Incline">
+			<problem display_name="CheckPoint 4: Rolling Down an Incline" filename="MIT/rayyan/check_points/BK/BK95.problem" attempts="4"/>
+			<discussion for="CheckPoint 4: Rolling Down an Incline" id="MReV_Summer2013_BK95" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Swinging Rod">
+			<problem display_name="CheckPoint 5: Swinging Rod" filename="MIT/rayyan/check_points/BK/BK96.problem" attempts="3"/>
+			<discussion for="CheckPoint 5: Swinging Rod" id="MReV_Summer2013_BK96" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Falling Plate">
+			<problem display_name="CheckPoint 6: Falling Plate" filename="MIT/rayyan/check_points/BK/BK97.problem" attempts="4"/>
+			<discussion for="CheckPoint 6: Falling Plate" id="MReV_Summer2013_BK97" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+<!--	This is in the homework. 
+		<vertical display_name="Checkpoint 7: Pivoted bar swinging top to bottom">
+			<problem display_name="Checkpoint 7: Pivoted bar swinging top to bottom" filename="MIT/boriskor/Rotation/Bar swinging top to bottom multipart.problem" attempts="10"/> 
+			<discussion for="Checkpoint 7: Pivoted bar swinging top to bottom" id="MReV_Summer2013_Bar_swinging_top_to_bottom_multipart" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+-->
+		<vertical display_name="CheckPoint 8: Yo-Yo">
+			<problem display_name="CheckPoint 8: Yo-Yo" filename="MIT/rayyan/check_points/BK/BK98.problem" attempts="4"/>
+			<discussion for="CheckPoint 8: Yo-Yo" id="MReV_Summer2013_BK98" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+<!-- This is also in the homework.
+		<vertical display_name="Checkpoint 9: Disc rolls without slipping down an incline while an attached pulley rotates">
+			<problem display_name="Checkpoint 9: Disc rolls without slipping down an incline while an attached pulley rotates" filename="MIT/boriskor/Multiconcept Problems/Rolling disc rotating pulley.problem" attempts="2"/>
+			<discussion for="Checkpoint 9: Disc rolls without slipping down an incline while an attached pulley rotates" id="MReV_Summer2013_Rolling_disc_rotating_pulley" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+-->
+		<vertical display_name="Video: Flywheel Analysis">
+			<html display_name="Video: Application to Flywheels" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/Application_Flywheel_Analysis.html" />
+			<discussion for="Video: Flywheels" id="MReV_Summer2013_youtube_1.0_aaLoa6YfL_o" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+		<vertical display_name="Video: Rotation and Translation">
+			<html display_name="Video: Translation and Rotation in PowerPoint" filename="problems/MIT/RELATE/htmlwiki/Unit10/Module1/Translation_and_Rotation_PowerPoint_Application.html" />
+			<discussion for="Video: Rotation and Translation" id="MReV_Summer2013_youtube_1.0_5424gNu-BL8" discussion_category="Describing Rotational and Translational Motion" />
+		</vertical>
+	</sequential>
+</chapter>

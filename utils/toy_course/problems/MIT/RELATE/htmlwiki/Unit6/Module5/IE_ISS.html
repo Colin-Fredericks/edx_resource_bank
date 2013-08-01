@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Example: International Space Station</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example:  The International Space Station</h3>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/Spacestation.gif"/>
+</p><p>By navigating to the site <a href="http://spaceflight.nasa.gov/realdata/tracking/" class="external free" rel="nofollow">http://spaceflight.nasa.gov/realdata/tracking/</a> you can obtain tracking information giving the altitude and speed of the International Space Station (ISS). Suppose that the information displayed on the site was as shown in the screen capture above. By making the assumption that the space station's orbit is a circle with its center at the center of the Earth, find the approximate magnitude of the acceleration experienced by the space station as a result of the gravitational pull of the Earth.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Solution</b>
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td> <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1">The ISS will be treated as a point particle.</div><br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2"> The only relevant interaction is the gravitational interaction between the Earth and the ISS (gravity).  Note that this is <i>not</i> near-Earth freefall, because the ISS is a significant distance from the Earth surface.</div><br/>
+<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l">[show Model]</a><div style="display:none;" id="toggledisplay3">Uniform Circular Motion (Centripetal Acceleration).</div><br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4">
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Choose a Coordinate System and Understand the Givens
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td> In order to use the appropriate radius in our equations, we must recognize that the ISS has the center of its orbit at the center of the Earth.  The altitude of 346450 m is not the full radius of the orbit, it is only the height of the ISS above the surface of the Earth. To find the full orbital radius, we must add on the Earth radius. The Earth's radius can be found on the web or in a number of books to be R<sub>e</sub> = 6,380,000 m. Thus, the orbital radius is r = 6,730,000 m.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td> We are asked to find the acceleration of the ISS.  Because the only interaction experienced by the ISS is the pull of Earth's gravity, the acceleration of the ISS is equivalent to the gravitational acceleration at its location.  Thus, if we find the acceleration of the ISS, we will also have computed the "free fall" acceleration due to gravity (which suggests a check on our calculation). For now, according to our Model of Uniform Circular Motion, the acceleration of the space station must be:
+<p>\(a = \frac{v^{2}}{r} \)
+</p><p>Using the information recovered from the figure above, we find:
+</p><p>\( a = \frac{(\mbox{7699.59 m/s})^{2}}{\mbox{6730000 m}} = \mbox{8.81 m/s$^2$}\)
+</p>
+<h4>A quick check on the answer can be made using the Uniform Law of Gravity</h4>
+<p>We know that the force of gravity decreases as the inverse square of the distance from the center of the Earth, and that the gravity at the orbit is the only force accelerating the satellite.  Thus 
+</p><p>\( a = g_{orb} = g_{surface}(\frac{r_{surface}}{r_{orbit}})^2= 9.81  (\frac{6380000}{6730000})^2 \mbox{m/s$^2$}= \mbox{8.81 m/s$^2$}\) which agrees!
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Evaluate Your Answer.
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td> We have found that Earth's gravity is <i>not</i> insignificant at level of the ISS's orbit. This might at first appear to conflict with our notion of "weightlessness" in orbit, but from another perspective it is very sensible: if there were no gravity in orbit, the ISS would just fly off into space, since it would not be held to the Earth!  The "weightlessness" experienced in orbit is a consequence of astronauts <i>and their surroundings</i> being in simultaneous freefall.  The same "weightlessness" can be experienced (briefly) by riding in NASA's <a href="http://jsc-aircraft-ops.jsc.nasa.gov/Reduced_Gravity/index.html" class="external text" rel="nofollow">"vomit comet" C-9B aircraft</a> at a much lower altitude.
+</td></tr></table>
+</div>
+</td></tr></table>
+<p>
+</p>
+</body>
+</html>
+

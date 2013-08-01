@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Collision </title>
+
+	<p>A rod of mass M and length 2D rests on a horizontal frictionless surface contained in the (x,y) plane. A small block of mass M is attached to one of the ends of the rod. Another small block, also of mass M, slides along the surface at velocity v directed perpendicular to the rod. The sliding rod strikes the end of the rod as shown and remains attached to it. As a result, the rod with the attached blocks begins to move along the horizontal surface. The figure shows a top view of the described situation at the instants before and after the moving block is attached to the rod. (Gravity is into the screen).</p>
+
+	<p><img width="604" alt="BK111" src="/static/problems/MIT/rayyan/check_points/Pictures/BK111_b.png"/></p>
+
+	<p>Part A. Find the speed u of the center of the midpoint of the rod after the collision.</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                <text>v</text>
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                <text>v/3</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                <text>v/2</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+				<text>v/4</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+				<text>v/8</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part B. Find the angular speed of rotation of the rod about its midpoint after the collision.</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                <text>\(\omega = 3v/7D\) </text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                <text>\(\omega = 2v/5D\) </text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                <text>\(\omega = v/4D\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                <text>\(\omega = 5v/12D\)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                <text>\(\omega = v/3D\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

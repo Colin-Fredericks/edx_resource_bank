@@ -1,0 +1,90 @@
+<chapter display_name="Homework for Unit 8: Mechanical Energy and Work">
+	<sequential display_name="Mechanical Energy and Work Homework" url_name="Mechanical_Energy_and_Work_Homework">
+
+<!-- Level 1 -->
+
+<!--		<vertical display_name="Car Crash Investigation" filename="MRI30.vert" /> -->
+<!-- Moved to checkpoint
+		<vertical display_name="block_1">
+			<problem display_name="block_1" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/Block on Ramp/block_1.problem" attempts="2" weight="1"/>
+			<discussion for="block_1" id="MReV_Summer2013_block_1" discussion_category="Mechanical Energy and Work" />
+		</vertical> 
+-->
+		<vertical display_name="block_2">
+			<problem display_name="block_2" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/Block on Ramp/block_2.problem" attempts="2" weight="1"/>
+			<discussion for="block_2" id="MReV_Summer2013_block_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Block Falls on Spring" filename="MRI6.vert" />
+		<vertical display_name="Rocket Launch" filename="MRI7.vert" />
+		<vertical display_name="PE_spring_1">
+			<problem display_name="PE_spring_1" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/PE_spring/PE_spring_1.problem" attempts="2" weight="1"/>
+			<discussion for="PE_spring_1" id="MReV_Summer2013_PE_spring_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="PE_spring_2">
+			<problem display_name="PE_spring_2" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/PE_spring/PE_spring_2.problem" attempts="2" weight="1"/>
+			<discussion for="PE_spring_2" id="MReV_Summer2013_PE_spring_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Energy Diagrams 2">
+			<problem display_name="Energy Diagrams 2" filename="F12/RQ/energydiagrams2.problem" attempts="2" weight="1"/>
+			<discussion for="Energy Diagrams 2" id="MReV_Summer2013_energydiagrams2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Energy Diagrams 3">
+			<problem display_name="Energy Diagrams 3" filename="F12/RQ/energydiagrams5.problem" attempts="2" weight="1"/>
+			<discussion for="Energy Diagrams 3" id="MReV_Summer2013_energydiagrams5" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Sliding Block">
+			<problem display_name="Sliding Block" filename="F12/RQ/blocksliding.problem" attempts="2" weight="1"/>
+			<discussion for="Sliding Block" id="MReV_Summer2013_blocksliding" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+<!--		<vertical display_name="Dropping the ball" filename="Checkup03_concept01.vert"/>   Commented out to reduce # of points in unit 8. -->
+		<vertical display_name="The Crawling Astronaut" filename="MRI2.vert" />
+		<vertical display_name="Block on Wedge 1" filename="MRI10.vert" />
+		<vertical display_name="Block on Wedge 3" filename="MRI12.vert" />
+		<vertical display_name="Disc Drop Energy" filename="MRI18.vert" />
+		<vertical display_name="Projectile Momentum and Energy" filename="MRI20.vert" />
+
+<!-- Level 2 -->
+
+		<vertical display_name="Compressing a Spring">
+			<problem display_name="Compressing a Spring" filename="MIT/rayyan/check_points/BK/BK68.problem" attempts="10" weight="2"/>
+			<discussion for="Compressing a Spring" id="MReV_Summer2013_BK68" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Compressing a Spring 2">
+			<problem display_name="Compressing a Spring 2" filename="MIT/rayyan/check_points/BK/BK69.problem" attempts="10" weight="2"/>
+			<discussion for="Compressing a Spring 2" id="MReV_Summer2013_BK69" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+<!--		<vertical display_name="Vertical Spring">
+			<problem display_name="Vertical Spring" filename="MIT/rayyan/check_points/BK/BK71.problem" attempts="3" weight="2"/>
+			<discussion for="Vertical Spring" id="MReV_Summer2013_BK71" discussion_category="Mechanical Energy and Work" />
+		</vertical> -->
+		<vertical display_name="Block and Spring with Friction" filename="MRI8.vert" />
+<!--		<vertical display_name="Pendulum Collision with Friction" filename="MRI9.vert" /> -->
+		<vertical display_name="Cut the String" filename="MRI1.vert" />
+		<vertical display_name="Spring-Loaded 1" filename="MRI14.vert" />
+		<vertical display_name="Brick Slide 1" filename="MRI28.vert" />
+
+<!-- Level 3 -->
+
+<!--		<vertical display_name="Spring and Mass">
+			<problem display_name="Spring and Mass" filename="MIT/rayyan/Physics801/Symbolic/Spring and mass.problem" attempts="10" weight="3"/>
+			<discussion for="Spring and Mass" id="MReV_Summer2013_Spring_and_mass" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+-->
+		<vertical display_name="Trampoline">
+			<problem display_name="Trampoline" filename="MIT/rayyan/Physics801/Energy/Trampoline.problem" attempts="10" weight="3"/>
+			<discussion for="Trampoline" id="MReV_Summer2013_Trampoline" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Lennard-Jones Potential">
+			<problem display_name="Lennard-Jones Potential" filename="MIT/rayyan/Physics801/Energy/Lennard-Jones Potential.problem" attempts="10" weight="3"/>
+			<discussion for="Lennard-Jones Potential" id="MReV_Summer2013_Lennard_Jones_Potential" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Block swings downward and makes another block slide">
+			<problem display_name="Block swings downward and makes another block slide" filename="MIT/boriskor/Multiconcept Problems/Block swings down making other block move.problem" attempts="2" weight="3"/>
+			<discussion for="Block swings downward and makes another block slide" id="MReV_Summer2013_Block_swings_down_making_other_block_move" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Block on a spring collides with another block.problem">
+			<problem display_name="Block on a spring collides with another block.problem" filename="MIT/boriskor/Multiconcept Problems/Block on a spring collides with another block.problem" attempts="3" weight="3"/>
+			<discussion for="Block on a spring collides with another block.problem" id="MReV_Summer2013_Block_on_a_spring_collides_with_another_block" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+</chapter>

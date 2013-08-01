@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <p>
+        <br/>
+Part 4. 
+If the speed of the ball at the lowest position is v and the magnitude of the force of tension in the string is T, 
+which equation is correct?
+</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                    \(mv^{2} /l = mg \)
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(mv^{2} /l = T\)
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                    \(mv^{2} /l = mg + T\)
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                    \(mv^{2} /l = mg - T\)
+
+            </choice>
+            <choice location="random" name="foil5" correct="true">
+
+                    \(mv^{2} /l = -mg + T\)
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>    
+  </problem>
+</html>

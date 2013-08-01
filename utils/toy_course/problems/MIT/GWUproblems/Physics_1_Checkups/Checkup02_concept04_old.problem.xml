@@ -1,0 +1,128 @@
+<html>
+  <problem>
+
+      <p>A block of mass M is sliding down an inclined plane and is accelerating.  Which of the following statements are true?</p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <conceptgroup concept="One">
+          <optioninput location="random" name="OneA" correct="False" options="('True','False')"></optioninput>
+
+                The frictional force must be zero
+
+              <br/>
+
+          <optioninput location="random" name="OneB" correct="True" options="('True','False')"></optioninput>
+
+                The frictional force must be less than the component of Mg down the plane
+
+              <br/>
+
+          <optioninput location="random" name="OneC" correct="False" options="('True','False')"></optioninput>
+
+                The frictional force must be greater than the component of Mg down the plane
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Two">
+          <optioninput location="random" name="TwoA" correct="True" options="('True','False')"></optioninput>
+
+                The acceleration of the block must be less than g
+
+              <br/>
+
+          <optioninput location="random" name="TwoB" correct="True" options="('True','False')"></optioninput>
+
+                The acceleration of the block is dependent upon the angle of the inclined plane
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Three">
+          <optioninput location="random" name="ThreeA" correct="False" options="('True','False')"></optioninput>
+
+                The normal force of the plane is equal to the weight of the block
+
+              <br/>
+
+          <optioninput location="random" name="ThreeB" correct="True" options="('True','False')"></optioninput>
+
+                The normal force of the plane is less than the weight of the block
+
+              <br/>
+
+          <optioninput location="random" name="ThreeC" correct="False" options="('True','False')"></optioninput>
+
+The normal force of the plane is greater than the weight of the block
+
+              <br/>
+
+          <optioninput location="random" name="ThreeD" correct="True" options="('True','False')"></optioninput>
+
+The normal force of the plane is equal to the component of Mg perpendicular to the plane
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Four">
+          <optioninput location="random" name="FourA" correct="False" options="('True','False')"></optioninput>
+
+                The surface must be frictionless because the block is accelerating
+
+              <br/>
+
+          <optioninput location="random" name="FourB" correct="False" options="('True','False')"></optioninput>
+
+                The surface must have some friction because the block is accelerating
+
+              <br/>
+
+          <optioninput location="random" name="FourC" correct="False" options="('True','False')"></optioninput>
+
+The surface cannot have any friction because the block is accelerating
+
+              <br/>
+
+          <optioninput location="random" name="FourD" correct="True" options="('True','False')"></optioninput>
+
+The surface may or may not have friction, even though the block is accelerating
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="">
+          <optioninput location="random" name="FiveA" correct="False" options="('True','False')"></optioninput>
+
+If the block's mass were doubled, its acceleration would be doubled
+
+              <br/>
+
+          <optioninput location="random" name="FiveB" correct="False" options="('True','False')"></optioninput>
+
+If the block's mass were doubled, its acceleration would be halved
+
+              <br/>
+
+          <optioninput location="random" name="FiveC" correct="True" options="('True','False')"></optioninput>
+
+If the block's mass were doubled, its acceleration would not change
+
+              <br/>
+
+          <optioninput location="random" name="FiveD" correct="True" options="('True','False')"></optioninput>
+
+If the block's mass were halved, its acceleration would not change
+
+              <br/>
+
+        </conceptgroup>
+      </ul>
+      <hintgroup showoncorrect="no">
+
+          <p>Add hint text here.</p>
+
+      </hintgroup>
+    </optionresponse>
+  </problem>
+</html>

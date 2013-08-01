@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Hierarchy of Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+
+<h2>Hierarchy of Particular Models: Special Cases of Core Models</h2>
+<p>The five core models differ in their applicable systems, in the physical quantities that change, and in the types of forces that cause the change. For several of these core models, it is worth developing specialized models for particular cases. The case in which the agent of change is absent or zero is an especially important one for core models involving the fundamental physical quantities momentum, angular momentum, and mechanical energy because in this case the physical quantity remains constant (or "conserved").</p>
+
+<p>You should recognize several special cases of Dynamics & Net Force: No force, constant force, central force, and linear restoring force (that produces simple harmonic motion - the subject of a later unit).</p>
+
+<p><b>Dynamics and Net Force (3-D)</b></p>
+	<p style="text-indent: 2.5em;">2-D Circular Motion with \(F_r = m\omega^2 R=mv_t^2/R\) and arbitrary <i>F</i><sub><i>t</i><i>a</i><i>n</i><i>g</i><i>e</i><i>n</i><i>t</i><i>i</i><i>a</i><i>l</i></sub>(<i>t</i>)</p>
+		<p style="text-indent: 5em;">2-D Uniform Circular Motion with \(F_r =m \omega^2 R=mv_t^2/R\) and <i>F</i><sub><i>t</i><i>a</i><i>n</i><i>g</i><i>e</i><i>n</i><i>t</i><i>i</i><i>a</i><i>l</i></sub>(<i>t</i>) = 0</p>
+	<p style="text-indent: 2.5em;">1-D Motion with arbitrary <i>F</i><sub><i>x</i></sub>(<i>t</i>)</p>
+		<p style="text-indent: 5em;">1D Motion with Constant Acceleration (<i>F</i><sub><i>x</i></sub> = <i>c</i><i>o</i><i>n</i><i>s</i><i>t</i><i>a</i><i>n</i><i>t</i>)</p>
+			<p style="text-indent: 7.5em;">1D Motion with Constant Velocity (<i>F</i><sub><i>x</i></sub> = 0)</p>
+		<p style="text-indent: 5em;">1D Harmonic Motion (<i>F</i><sub><i>x</i></sub>(<i>x</i>) = &#8722; <i>k</i><i>x</i>)</p>
+
+<p><b>Momentum and External Impulse</b></p>
+
+<p><b>Rotational Dynamics about a Fixed Axis and Net Torque</b></p>
+	<p style="text-indent: 2.5em;">Rigid Body Translation and Rotation with non-zero \(F^{net}\) and \(\tau_{cm}^{net}\) (the subject of a later unit)</p>
+
+<p><b>Angular Momentum and Angular Impulse</b></p>
+	<p style="text-indent: 2.5em;">Motion in x-y Plane: Only \(L_z\) is non-zero</p>
+
+<p><b>Mechanical Energy and Non-Conservative Work</b></p>
+	<p style="text-indent: 2.5em;">Mechanical Energy Conserved (<i>W</i><sup><i>n</i><i>c</i></sup> = 0)</p>
+	<p style="text-indent: 2.5em;">Work-Energy Theorem (<i>U</i> = 0)</p>
+
+</body>
+</html>
+

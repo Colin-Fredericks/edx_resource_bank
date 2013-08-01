@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p>
+After a quick push, a block is sliding up a frictionless incline as shown.
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3a.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+Which force diagram correctly represents the forces on the block?
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3b.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3c.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3d.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3e.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+                      </problem>
+</html>

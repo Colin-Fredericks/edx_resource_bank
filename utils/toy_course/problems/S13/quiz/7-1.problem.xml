@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Quiz problem on center of mass, for Momentum and Impulse unit -->
+
+<problem>
+
+<p>Each grid below contains objects with identical uniform density. Click on the grid box that contains the center of mass for all of the objects in that grid.</p>
+
+    <imageresponse>
+    <imageinput src="/static/problems/S13/quiz/images/7-1a.png" width="208" height="208" rectangle="(80,80)-(125,125)" />
+    </imageresponse> 
+
+    <imageresponse>
+    <imageinput src="/static/problems/S13/quiz/images/7-1b.png" width="208" height="208" rectangle="(41,123)-(85,167)" />
+    </imageresponse> 
+
+    <imageresponse>
+    <imageinput src="/static/problems/S13/quiz/images/7-1c.png" width="208" height="208" rectangle="(80,80)-(125,125)" />
+    </imageresponse> 
+
+    <imageresponse>
+    <imageinput src="/static/problems/S13/quiz/images/7-1d.png" width="208" height="208" rectangle="(80,122)-(123,165)" />
+    </imageresponse> 
+
+    <imageresponse>
+    <imageinput src="/static/problems/S13/quiz/images/7-1e.png" width="208" height="208" rectangle="(80,80)-(125,125)" />
+    </imageresponse> 
+
+</problem>
+
+</html>

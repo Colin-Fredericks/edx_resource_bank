@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <title> CheckPoint: Spring Potential Energy </title>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK70.PNG" alt="BK70"/>
+
+      <p>An applied force F holds a spring, stretched a distance x, in place. That is, the end of the spring is not moving. What is the potential energy stored in the spring?
+
+</p>
+
+
+ <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \(- F x\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( F x\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\frac{ - F x }{2}\)
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                  \(\frac{  F x }{2}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(2 F x\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(- 2 F x\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

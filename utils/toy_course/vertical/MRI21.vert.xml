@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI21-1.problem" display_name="Grocery Cart" attempts="1" weight="0.5"/>
+	<problem filename="F12/MRI/MRI21-2.problem" display_name="Grocery Cart, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Grocery Cart" id="MReV_Summer2013_MRI21" discussion_category="Core Models and Planar Dynamics" />
+</vertical>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Adding Geometrically</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+			Adding Force Vectors Geometrically</h3>
+<p>
+			Think of vectors as arrows that can be moved around freely but not rotated (remember: both size and direction matter for vector quantities). Add two vectors by putting the tail-end of one vector on the arrow-end (called the head) of the other as is shown in the two diagrams. It does not matter which vector's tail is placed on the arrow of the other - the sum is the same (called the <a href="http://en.wikipedia.org/wiki/commutative_property" class="extiw" title="wikipedia:commutative property">commutative property</a>).&#160;</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Add_2_forces_graphically.png"/></p>
+<p>
+			In fact we can keep adding more and more vectors using this head-to-tail method. Geometric addition is very helpful in sketching out preliminary predictions in problems, for example the direction of <b>F<sub>net</sub></b>&#160;(a vector sum of forces) will always point in the same direction as the <b>acceleration</b> vector. You can draw any vector anywhere on the page, pointed in the correct direction and scaled appropriately, so that the length drawn on&#160;your paper corresponds to the magnitude.</p>
+<ol style="list-style-type:decimal">
+<li>
+				Choose an appropriate scale for length.</li>
+<li>
+				Draw one of the vectors in the sum to scale, in the correct direction.</li>
+<li>
+				Draw the next vector in the sum with the tail of 2 at the head of the first.</li>
+<li>
+				Keep drawing in new vectors with their tails at the head of the preceding vector until all the vectors in the sum are drawn.</li>
+<li>
+				Finally, draw the vector that starts at the first tail and ends on the final head, put an arrow on it and measure its length according to the scale.&#160;This is called the resultant vector (or "net vector of the sum").</li>
+</ol>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/binary_stars_1.png" alt="binary_stars_1" height="250"/>
+
+      <p>Assume the mass of star 2 is 4 times the mass of star 1 and that they are orbiting each other. Compare the radius measured with respect to their common center of rotation of the orbit of star 1 to that of star 2.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+              R1:R2=1:4          
+        </choice>
+        <choice name="foil2" correct="false">
+              R1:R2=1:2          
+        </choice>
+        <choice name="foil3" correct="false">
+              R1:R2=2:1          
+        </choice>
+        <choice name="foil4" correct="true">
+              R1:R2=4:1          
+        </choice>
+        <choice name="foil5" correct="false">
+              R1:R2=16:1          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

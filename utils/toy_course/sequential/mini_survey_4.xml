@@ -1,0 +1,10 @@
+<sequential display_name="Mini Survey 4 - Activity" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 4 - Activity">
+			<h2>Week 4 Survey - Activity</h2>
+			<p>This week we are asking about your activity in the course and how things are going.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit4_active"/>
+		<problem url_name="RELATE_survey:unit4_persist"/>
+	</vertical>
+</sequential>

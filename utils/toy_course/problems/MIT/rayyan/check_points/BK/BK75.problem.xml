@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Angular Speed </title>
+        
+<p>A disc is spinning clockwise at a constant rate about an axis passing through its center perpendicular to the page. In 5.0 s, the disc completes 10 full rotations.</p>
+<p>What are the magnitude and the direction of the angular velocity of the disc?</p>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK75.png" alt="BK75"/>
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              2 rad/s; into the page          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              2\(\pi\) rad/s; into the page          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+              \(\pi\) rad/s; into the page          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+              4\(\pi\) rad/s; into the page          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              2 rad/s; out of the page          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+				2\(\pi\) rad/s; out of the page          
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+              \(\pi\) rad/s; out of the page          
+        </choice>
+        <choice location="random" name="foil8" correct="false">
+				4\(\pi\) rad/s; out of the page          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

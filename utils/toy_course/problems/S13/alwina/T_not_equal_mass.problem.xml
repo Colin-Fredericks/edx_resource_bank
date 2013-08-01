@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: moments of inertia for T shape, unequal mass-->
+
+<problem>
+  <text>
+  Suppose you have a pickaxe like the one shown below. The head and the handle do <b>not</b> have the same mass. Instead, the mass of the head is greater than the mass of the handle, but within each, the mass is evenly distributed. Otherwise, treat it just aas a simple T shape. In each figure, an axis of rotation is given. For the purposes of this problem, you may assume the following:
+  <ul>
+	<li>The length of the head is equal to the length of the handle</li>
+	<li>The width of the head and handle can be ignored</li>
+	<li>The axis given is either at the end or in the exact center of either the head or the handle</li>
+  </ul>
+  </text>
+
+  <img src="/static/problems/S13/alwina/images/pickaxes_moment_of_inertia.png"/>
+
+  <customresponse>
+
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="A" label="A" can_reuse="false"/>
+      <draggable id="B" label="B" can_reuse="false"/>
+      <draggable id="C" label="C" can_reuse="false"/>
+      <draggable id="D" label="D" can_reuse="false"/>
+      <draggable id="E" label="E" can_reuse="false"/>
+	  <draggable id="1" label="Reason 1" can_reuse="false"/>
+	  <draggable id="2" label="Reason 2" can_reuse="false"/>
+	  <draggable id="3" label="Reason 3" can_reuse="false"/>
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <target id="sign3" x="250" y="25" w="45" h="35"/>
+	  <target id="item4" x="300" y="25" w="45" h="35"/>
+	  <target id="sign4" x="350" y="25" w="45" h="35"/>
+	  <target id="item5" x="400" y="25" w="45" h="35"/>
+	  <br/>
+	  <target id="norank" x="150" y="70" w="145" h="35"/>
+    </drag_and_drop_input>
+
+    <text>
+	  <h4>Rank the <b>moment of inertia</b> of the pickaxe about the given axis in each figure from greatest to least.</h4>
+	  <br/>
+	  <p>To rank them: use the letters A-E and the symbols = and >. For example, A = B > C means "A and B have the same moment of inertia about their given axes, and they both have a greater moment of inertia about the given axis than C." If you believe that they cannot all be ranked, select from one of the reasons below and put the corresponding reason number into the bottom row (be sure to leave the top row blank).</p>
+
+      <p>Reason 1: More information about the mass is needed.
+	  <br/>Reason 2: More information about the lengths is needed.
+	  <br/>Reason 3: It is impossible to calculate the moment of inertia of a T shape.
+	</p>
+    </text>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['1'],'targets': ['norank'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

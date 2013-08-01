@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 152 -->
+<problem>
+
+	<p>A solid disc of radius 4R is placed on an axle of radius R; the cross-sectional view of the assembly is shown. The assembly is rolling without 
+	slipping on two parallel horizontal rails as shown. Diameter AB is vertical and diameter CD is horizontal. The instantaneous speed of point A is v.</p>
+	<p>Top-down view:</p>
+	<img src="/static/problems/F12/boris/images/BK152_spindle_top.png" width="272" />
+	<p>Side view:</p>
+	<img src="/static/problems/F12/boris/images/BK152_spindle_side.png" width="343" />
+
+	<p>Find the instantaneous speed of the center of the disc.</p>
+	<formularesponse answer="v/5" samples="v,R@1,1:10,10#10">
+		<responseparam default="0.00001" type="tolerance"/>
+		<textline size="25" math="1" />
+	</formularesponse>
+
+</problem>
+</html>

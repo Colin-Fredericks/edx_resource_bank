@@ -1,0 +1,276 @@
+<html>
+<head>
+<title>Example: Trunk on a Board</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Pulling a board with a trunk on top.</h3>
+
+<p>In the figure below, a board of mass m<sub>b</sub> is being pulled by an ideal rope along a smooth and horizontal surface. The force of tension exerted by the rope on the board is horizontal and its magnitude is known (F<sub>br</sub>). On the board is a trunk of mass m<sub>t</sub> that remains at rest with respect to the board. The goal of the problem is to calculate the board's acceleration.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/BoardTrunk.png"/></p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>1. Questions</b> [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht22">
+<td>
+
+	<table class="subsubtable collapsible collapsed">
+	<tbody>
+	<tr>
+	<th>
+	<b>Question 1: What is the constraint force between the trunk and the board that restricts both objects to move together?</b> [<a href="javascript:toggleDisplay('ht23','hide','answer')" id="ht23l">answer</a>]</th>
+	</tr>
+	<tr style="display:none" id="ht23">
+	<td>In this problem the force of static friction between the board and the trunk is the constraint force that restricts both objects to move together with the same acceleration. The force of friction is static because there is no relative motion between the board and trunk.</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<table class="subsubtable collapsible collapsed">
+	<tbody>
+	<tr>
+	<th>
+	<b>Question 2: What is the direction of the constraint force exerted on the trunk? and on the board?</b> [<a href="javascript:toggleDisplay('ht24','hide','answer')" id="ht24l">answer</a>]</th>
+	</tr>
+	<tr style="display:none" id="ht24">
+	<td>
+	<b><u>On the trunk</u>:</b> The force of static friction exerted on the trunk by the board is <font size="3"><b>to the right.</b></font>
+	<p>The trunk interacts with the Earth and the board. As a result of these interactions, the forces exerted on the trunk are the gravitational force vertically down, <b>F<sub>tE</sub></b>, and the contact force between the trunk's and board's surfaces which has two components. The normal force, <b>N<sub>tb</sub></b>, perpendicular to the trunk's surface and pointing up, and the force of static friction, <b>f<sup>s</sup><sub>tb</sub></b>, parallel to the trunk surface and pointing to the right as shown in the free body diagram below.</p>
+	<p>
+	<br/>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/FBDtrunk.png"/></p>
+	<p>There is no motion along the vertical direction, therefore the <i>vertical component</i> of the net force is zero implying that the normal force has the same magnitude as the weight. As a result, <b>the net force on the trunk is the force of friction</b>. From Newton's 2<sup>nd</sup> law the force of friction must have the <b> same direction as the trunk's acceleration</b> which is to the right.</p>
+	<p>If there is no friction the trunk will stay in the same position relative to the ground while the board is being pulled (it will eventually fall). The force of static friction constrains the trunk and the board to move together to the right with the same acceleration.</p>
+	<p>
+	<b><u>On the board</u>:</b> The force of static friction exerted on the board by the trunk is <font size="3"><b> to the left</b></font>.</p>
+	<p>This force is the Newton's 3<sup>rd</sup> law pair of <b>f<sup>s</sup><sub>tb</sub></b>.</p>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>2. Calculate the acceleration of the trunk and the board.</b> [<a href="javascript:toggleDisplay('ht25','hide','show')" id="ht25l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht25">
+<td>
+<p>We will obtain the acceleration by considering first the combined trunk + board system and then the two separate systems: the trunk and the board ('the standard approach').</p>
+
+		<table class="subsubtable collapsible collapsed">
+		<tbody>
+		<tr>
+		<th width="400">
+		<b>Combined system&#160;:</b> [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="ht10">
+		<td>
+		<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemCombinedFriction.png"/>
+		<p>&#160;</p>
+		<p>&#160;</p>
+		<p>&#160;</p>
+		<p>
+		<br/>
+		<b>System</b>: trunk + board treated as a point particle of mass m<sub>t</sub>+m<sub>b</sub>.</p>
+		<p>&#160;</p>
+		<p>
+		<b>Interactions:</b></p>
+		<p>The system interacts with the Earth, the rope and the surface. As a result of these interactions the forces acting on the system are:</p>
+		<ul style="list-style:disc outside none">
+			<li>the gravitational force, F<sub>(t+b)E</sub>,</li>
+			<li>the force of tension of the rope attached to the board, F<sub>br</sub>,</li>
+			<li>the contact force that the surface exerts on the board, N<sub>bS</sub>. Because the surface is smooth, the contact force has only a component perpendicular to the board's surface, the normal force.</li>
+		</ul>
+		<p>These forces are shown in the free body diagram above. The equation below the FBD is the horizontal component of Newton's second law written consistent with a coordinate system with the x - axis positive to the right. Because there is no motion along the vertical direction, (a<sub>y</sub> = 0), the vertical component of the net force is zero.</p>
+		<p>&#160;</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+
+		<table class="subsubtable collapsible collapsed">
+		<tbody>
+		<tr>
+		<th width="400">
+		<b>Two Separate systems&#160;:</b> [<a href="javascript:toggleDisplay('ht27','hide','show')" id="ht27l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="ht27">
+		<td>
+		<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemSeparateFrictiona.png"/>
+		<p>
+		<b>System 1:</b> board assumed to be a point particle of mass m<sub>b</sub>.</p>
+		<p>
+		<b>System 2:</b> trunk treated as a point particle of mass m<sub>t</sub>.</p>
+		<p>
+		<br/>
+		<b>Interactions:</b></p>
+		<p>The trunk interacts with the Earth and the board. As a result, the forces exerted on the trunk are:</p>
+		<ul style="list-style:disc outside none">
+			<li>the gravitational force, F<sub>tE</sub>,</li>
+			<li>the contact force between the trunk's and board's surfaces. Because there is friction, this contact force has two components. The normal force, N<sub>tb</sub>, perpendicular to the trunk's surface, and the force of static friction, f<sup>s</sup><sub>tb</sub>, parallel to the trunk surface and directed to the right.</li>
+		</ul>
+		<p>The board interacts with the Earth, the rope, the surface and the trunk. The resulting forces on the board are:</p>
+		<ul style="list-style:disc outside none">
+			<li>the gravitational force, F<sub>bE</sub>,</li>
+			<li>the normal force exerted by the surface, N<sub>bS</sub>,</li>
+			<li>the force of tension due to the attached rope, F<sub>br</sub>,</li>
+			<li>the contact force exerted on the board by the trunk which has two components, the normal force, N<sub>bt</sub>, perpendicular to the board's surface, and the force of friction, f<sup>s</sup><sub>bt</sub>, parallel to the board's surface and directed to the left.</li>
+		</ul>
+		<p>The equation below each FBD is the horizontal component of Newton's Second Law written consistent with a coordinate system with the x-axis positive to the right. There is no motion along the vertical direction.</p>
+		<p>To obtain the acceleration, add equations (1) and (2) and consider:</p>
+		<ul style="list-style:disc outside none">
+			<li><b>Newton's third law constraint</b> applied to the interaction between the trunk and the board. As a result, the forces of static friction have the same magnitude f<sup>s</sup><sub>tb</sub> = f<sup>s</sup><sub>bt</sub>. Their directions are already considered in the signs of the terms in equations (1) and (2).</li>
+			<li><b>Related accelerations constraint</b>: the trunk and the board must move together a<sub>t,x</sub> = a<sub>b,x</sub> = a, the acceleration of the system.</li>
+		</ul>
+		<p>
+		<br/>
+		<b>Exercise:</b> There are in principle 5 unknowns in this problem, list them and list the 5 equations you used to obtain these unknowns.</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>3. Will the trunk stay at rest relative to the board for <i>all</i> possible values of the pulling force F<sub>br</sub>?</b> [<a href="javascript:toggleDisplay('ht28','hide','answer')" id="ht28l">answer</a>]</th>
+</tr>
+<tr style="display:none" id="ht28">
+<td>
+<font size="3"><b>NO!!!!</b></font>
+<p>The trunk will stay at the top of the board as long as the force of static friction is able to provide the proper acceleration to the trunk for it to move together with the board. The forces acting on the trunk are shown again in the force diagram below.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/FBDtrunk.png"/></p>
+<p>After applying Newton's second law on the trunk along the horizontal direction we obtain that the force of friction acting on it is:</p>
+<blockquote>
+<font size="3">f<sup>s</sup><sub>tb</sub> = m<sub>t</sub>a &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(eq. 1)</font></blockquote>
+<p>where a is the acceleration of the trunk which must be equal to the board's acceleration. By applying Newton's second law to the combined trunk+board system we obtain an expression of the pulling force of tension in terms of the acceleration:</p>
+<blockquote>
+<font size="3">F<sub>br</sub> = (m<sub>t</sub> + m<sub>b</sub>) a &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(eq. 2) </font></blockquote>
+<p>From (eq. 2) we see that the larger the pulling force F<sub>br</sub> the larger is the acceleration, and from (eq. 1), the larger is the force of static friction f<sup>s</sup><sub>tb</sub>. The force of static friction can take any value according to (eq. 1) to prevent both objects to slide with respect to each other <b>as long</b> as its magnitude is not larger than a limit value:</p>
+<blockquote>
+<font size="3">f<sup>s</sup><sub>tb</sub> &lt; &#956;<sub>s</sub>N<sub>tb</sub>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(eq. 3)</font></blockquote>
+<p>where &#956;<sub>s</sub> is the coefficient of static friction, and N<sub>tb</sub> is the normal force exerted on the trunk by the board. Equation 3 imposes a condition on the acceleration through (eq. 1) or on the pulling force through (eq. 2).</p>
+<p>
+<br/>Combining (eq. 1) and (eq. 3) we obtain:</p>
+<blockquote>
+<font size="3">m<sub>t</sub> a &lt; &#956;<sub>s</sub>N<sub>tb</sub>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(eq. 4)</font></blockquote>
+<p>Applying Newton's second law on the trunk along the vertical direction we obtain N<sub>tb</sub> - F<sub>tE</sub> = 0, therefore N<sub>tb</sub> = F<sub>tE</sub> = m<sub>t</sub>g. Replacing this value of the normal force in (eq. 4) we obtain a condition for the acceleration:</p>
+<blockquote>
+<font size="3">m<sub>t</sub> a &lt; &#956;<sub>s</sub>m<sub>t</sub>g</font> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;===&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font size="3"> a &lt; &#956;<sub>s</sub>g</font></blockquote>
+<p>As long as the acceleration is smaller than &#956;<sub>s</sub>g the trunk will remain at the top of the board. Or, in terms of the pulling force:</p>
+<blockquote>
+<font size="3">F<sub>br</sub>/(m<sub>t</sub>+m<sub>b</sub>) &lt; &#956;<sub>s</sub>g</font>&#160;&#160;&#160;&#160;&#160;&#160;&#160; ===&gt; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font size="3"> F<sub>br</sub> &lt; &#956;<sub>s</sub>(m<sub>t</sub>+m<sub>b</sub>)g</font></blockquote>
+<p>We conclude:</p>
+<ul style="list-style:disc outside none">
+	<li>Any value of the pulling force F<sub>br</sub> smaller than &#956;<sub>s</sub>(m<sub>t</sub>+m<sub>b</sub>)g will keep the trunk on top of the board.</li>
+	<li>The trunk will be <b>at the verge of slipping</b> when F<sub>br</sub> = &#956;<sub>s</sub>(m<sub>t</sub>+m<sub>b</sub>)g.</li>
+	<li>For larger values of &#956;<sub>s</sub>(m<sub>t</sub>+m<sub>b</sub>)g, the trunk will move relative to the board and the force of friction between both objects becomes kinetic friction.</li>
+</ul>
+<p>This conclusion can be summarize by saying that the <b>maximum value</b> for the force of tension that can be applied so that the trunk stays at the top of the board is: F<sup>max</sup><sub>br</sub> = &#956;<sub>s</sub>(m<sub>t</sub>+m<sub>b</sub>)g.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/RELATE/Unit_1_SIM_Problems/TwoBlocks.png" alt="TwoBlocks.png"/>
+
+      <p><br/>The two blocks shown here are in contact on a frictionless surface.  Suppose that someone comes along and begins pushing on the left side of block 1, causing both blocks to begin to slide to the right. <b>Assuming you will study the system composed of <i>both blocks</i> treated as a single point particle</b>, determine which of the following interactions are internal to the system and which are external.<br/></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <conceptgroup concept="">
+          <choice location="random" name="earth1" correct="external">
+
+                The gravitational interaction between the earth and block 1.
+
+              <optioninput location="random" name="earth1" options="('internal','external','not relevant to this system','not a valid interaction')" correct="external">
+</optioninput>
+              <br/>
+
+          </choice>
+          <choice location="random" name="surf1" correct="external">
+
+The contact interaction between the frictionless surface and block 1.
+
+              <optioninput location="random" name="surf1" options="('internal','external','not relevant to this system','not a valid interaction')" correct="external">
+</optioninput>
+              <br/>
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="">
+          <choice location="random" name="earth2" correct="external">
+
+                The gravitational interaction between the earth and block 2.
+
+              <optioninput location="random" name="earth2" options="('internal','external','not relevant to this system','not a valid interaction')" correct="external">
+</optioninput>
+              <br/>
+
+          </choice>
+          <choice location="random" name="surf2" correct="external">
+
+The contact interaction between the frictionless surface and block 2.
+
+              <optioninput location="random" name="surf2" options="('internal','external','not relevant to this system','not a valid interaction')" correct="external">
+</optioninput>
+              <br/>
+
+          </choice>
+        </conceptgroup>
+        <li>
+
+            <p>
+The contact interaction between block 1 and block 2.
+</p>
+
+          <optioninput location="random" name="bl1bl2" options="('internal','external','not relevant to this system','not a valid interaction')" correct="internal">
+</optioninput>
+        </li>
+        <li>
+
+            <p>
+The contact interaction between the person pushing the blocks and block 1.
+</p>
+
+          <optioninput location="random" name="person1" options="('internal','external','not relevant to this system','not a valid interaction')" correct="external">
+</optioninput>
+        </li>
+        <li>
+
+            <p>
+The contact interaction between the person pushing the blocks and block 2.
+</p>
+
+          <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'person2=not%20a%20valid%20interaction') == -1">
+
+              <p>&#xA0;&#xA0;<font color="red">The person is pushing on block 1.  He or she does not make contact with block 2.  There is no interaction between the person and block 2.</font> </p>
+
+          </block>
+          <optioninput location="random" name="person2" options="('internal','external','not relevant to this system','not a valid interaction')" correct="not a valid interaction">
+</optioninput>
+        </li>
+      </ul>
+      <script type="loncapa/python">
+##
+
+#@findints=split(/internal/, EXT('user.resource.resource.0.11.submission'))
+#numints= @findints
+
+</script>
+<!--
+      <block condition="numints &gt; 1">
+
+          <p>
+            <br/>
+            <font color="red">Any object that is not block 1 or block 2 is external to the chosen system.  External objects that interact with part of the system produce external interactions.</font>
+</p>
+
+      </block>
+-->
+    </optionresponse>
+                  </problem>
+</html>

@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Example: Moment of Inertia of a Sphere</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Moment of Inertia of a Sphere</h3>
+Calculate the moment of inertia of a solid sphere of radius R and uniform density \(\rho\) rotated about an axis passing through its center.
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Answer:
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td>
+<table class="subtable collapsible collapsed">
+
+<p>We will have to perform an integral over the volume of the sphere to calculate the moment of inertia.  The integral is best 
+performed in cylindrical coordinates with the z-axis chosen to lie along the axis of rotation, since it takes the form:</p>
+\[ I =\int\int\int r^{2}\; \rho \; r\; dr \;d \theta\; dz \]
+<p>We could do this integral in spherical coordinates, which would simplify the limits of the integrals. However, this approach is complicated by the fact that the radial coordinate measures deviation from the center point instead of from the axis of rotation.</p>
+<p>The best way to do this integral is to integrate over angle first, then radius, and finally the z-coordinate. The sphere is continuous so the limits on \(\theta\) are always zero to \(2 \pi\), and the sphere is axially symmetric so the integrand has no dependence on \(\theta\).  Thus, we can simply perform this integral to obtain:</p>
+<p>\( I = 2\pi \int \int r^{3}\; \rho\; dr\; dz \)</p>
+<p>It is simplest to next perform the integral over <i>r</i>. Here we have some trouble, however, since the limits on <i>r</i> will be a function of <i>z</i>. Basically, we are cutting the sphere up into a stack of disks perpendicular to the z-axis. If we move through the stack from bottom to top, the disks first grow larger (as we near the center) and then reduce in size again until their radius disappears at the "north pole" (the top of the sphere). From the definition of a spherical boundary in rectangular coordinates:</p>
+<p><i>x</i><sup>2</sup> + <i>y</i><sup>2</sup> + <i>z</i><sup>2</sup> = <i>R</i><sup>2</sup></p>
+<p>and using the relationship between cylindrical coordinates and rectangular coordinates: </p>
+<p><i>r</i><sup>2</sup> = <i>x</i><sup>2</sup> + <i>y</i><sup>2</sup></p>
+<p>we can see that the radius of the circle perpendicular to the z-axis at a given z-value will be:</p>
+<p>\[r_{max} = \sqrt{R^{2} - z^{2}}  \]</p>
+<p>Thus, we can set up the limits of our integral as:</p>
+<p>\[ I = 2\pi \int_{-R}^{R} \int_{0}^{\sqrt{R^{2}-z^{2}}} \; r^{3} \; \rho \; dr \; dz  \]</p>
+<p>The integration over <i>r</i> gives:</p>
+<p>\[ I = 2\pi \int_{-R}^{R} \;\frac{1}{4}(R^{2} - z^{2})^{2} \; \rho\; dz = \]</p>
+<p>\[I = 2\pi \int_{-R}^{R} \;\frac{1}{4}(R^{4} - 2R^{2}z^{2} + z^{4}) \; \rho\; dz  \]</p>
+<p>and finishing with the <i>z</i> integral:</p>
+<p>\[ I = \pi \rho (R^{5} - \frac{2}{3} R^{5} + \frac{1}{5} R^{5}) = \frac{8}{15}\pi \rho R^{5}  \]</p>
+<p>The answer can be put in terms of the mass of the sphere by noting that for a uniform sphere:</p>
+\[ M = \frac{4\pi}{3} \rho R^{3} \]
+<p>so:</p>
+\[ I = \frac{2}{5} MR^{2} \]
+<tr style="display:none" id="ht10"><td/></tr></table>
+</td></tr></table>
+</body>
+</html>
+

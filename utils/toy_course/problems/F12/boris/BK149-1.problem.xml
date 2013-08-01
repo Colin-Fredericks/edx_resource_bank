@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 149 -->
+<problem>
+
+	<p>A common Atwood machine looks like this: two blocks, connected by a string that passes over a pulley, suspended from a rigid support. If the masses of the blocks are known, it is relatively easy to find the accelerations of the blocks and the tension of the string that connects them. (Usual assumptions are: the string is massless and un-stretchable and the pulley is massless and frictionless.) However, you are not expected to solve the general case in order to answer the questions below. </p>
+	<img src="/static/problems/F12/boris/images/BK149_atwood.png" width="330" />
+
+	<h3>Part 1</h3>
+	<p>What is the tension of the string connecting the blocks in the case where the mass of each block is equal to m?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="true">mg</choice>
+			<choice location="random" correct="false">2mg</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

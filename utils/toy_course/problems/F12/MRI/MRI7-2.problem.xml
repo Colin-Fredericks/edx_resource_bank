@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 7 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">a. The rocket has constant acceleration throughout the motion.</choice>
+			<choice location="random" correct="false">b. The work done by the engine is easily calculated.</choice>
+			<choice location="random" correct="true">c. It is necessary to calculate the height at which the fuel runs out.</choice>
+			<choice location="random" correct="false">d. The acceleration drops to zero at the top.</choice>
+			<choice location="random" correct="false">e. Statements c and d are both needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

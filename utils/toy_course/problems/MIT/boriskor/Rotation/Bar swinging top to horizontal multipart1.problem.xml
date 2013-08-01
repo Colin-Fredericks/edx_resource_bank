@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/pivoted_bar_swinging_top_bottom.png" alt="Pivoted bar swinging downard from the top position"/>
+
+    <p>A uniform bar of mass \(m\) and length \(L\) is pivoted at one end and is held vertically as shown. 
+    After the bar is released, it swings downward with no friction in the pivot.</p>
+	<p>At the instant the bar is <b>horizontal</b>, find the <b><i> magnitudes </i></b> of the following 
+	quantities (use \(g\) for the acceleration of gravity):</p>
+
+        <p>The angular speed of the bar \(\omega=\)</p>
+
+      <formularesponse answer="sqrt(3*g/L)" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+
+
+        <p>The angular acceleration of the bar \(\alpha=\)</p>
+
+      <formularesponse answer="(3*g)/(2*L)" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+
+
+
+      </problem>
+</html>
+

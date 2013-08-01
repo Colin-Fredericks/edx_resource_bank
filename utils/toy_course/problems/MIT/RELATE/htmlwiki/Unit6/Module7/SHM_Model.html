@@ -1,0 +1,127 @@
+<html><html>
+<head>
+<title>Simple Harmonic Motion Model</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+<h3>Simple Harmonic Motion: Matching Initial Position and Velocity</h3>
+<p>Simple harmonic motion is general sinusoidal motion and can be represented by the sum of a sine function and a cosine function, provided that we choose our coordinates such that the origin is located at the equilibrium position \((\sum F = 0)\).</p>
+<p>\[x(t) = A\cos(\omega_{\rm osc} t) + B\sin(\omega_{\rm osc} t) \]</p>
+<p>where <i>A</i>, <i>B</i>, and &#969;<sub>osc</sub> are constants: &#969;<sub>osc</sub> is determined by the force and dynamics of the particle, and <i>A</i>, <i>B</i> depend on details of the particular motion (e.g. the amplitude of oscillation, the instant when the displacement is zero, the value of the initial velocity). </p>
+			 
+<h4>The Angular Frequency of the Motion</h4>
+<p>Like any periodic motion, simple harmonic motion is characterized by a period (<i>T</i>) and a frequency (<i>f</i>). The period is the amount of time it takes to complete one full cycle of the motion; that is, to return to the same position with the same velocity. The frequency is the number of cycles that are completed per second. From these definitions, you can surmise that:</p>
+<p>\[f = \frac{1}{T}\]</p>
+<p>The constant &#969;<sub>osc</sub> in our equation for position is called the <i>angular frequency</i> of the motion and is the "natural" descriptor of the periodic motion. It is related to the above quantities:</p>
+<p>\[\omega_{\rm osc} = 2\pi f = \frac{2\pi}{T}\]</p>
+<p>A full cycle of the motion corresponds to 2&#960; radians of motion, hence the angular frequency is the number of radians per second covered by the object's motion. This angular measure is suggested by the fact that we are using sine and cosine functions, which take angles as their arguments (thus, they repeat when their arguments increment by 2&#960;).</p>
+
+<h4>The Position at t = 0 </h4>
+<p>The constant <i>A</i> in our equation for the position is equal to the position of the oscillating object when <i>t</i> = 0. You can see this by substituting <i>t</i> = 0 into our equation for the position:</p>
+<p>\[x(0) = x_o = A \cos(0) + B \sin(0) = A\]</p>
+
+<h4>The Velocity at t = 0 </h4>
+<p>The constant <i>B</i> in our equation for the position is determined by (but <i>not</i> equal to) the velocity of the oscillating object when <i>t</i> = 0. You can see this (if you know calculus) by taking the derivative of the position:</p>
+<p>\[v_{x}(t) = \frac{dx}{dt} =  -\omega_{\rm osc} A \sin(\omega_{\rm osc} t) + \omega_{\rm osc} B \cos(\omega_{\rm osc} t) \]</p>
+<p>so that at <i>t</i> = 0:</p>
+<p>\[ v_{x}(0) = v_o= -\omega_{\rm osc} A \sin(0) + \omega_{\rm osc} B \cos(0) = \omega_{\rm osc} B\]</p>
+<p>Thus:</p>
+<p>\[ B = \frac{v_o}{\omega_{\rm osc}}\]</p>
+
+<h3>SHM with particular initial position and velocity, x<sub>o</sub> and v<sub>o</sub></h3>
+<p>As a result, the position as a function of time is given by:<br/>
+\[ x(t) = x_o \cos(\omega_{osc}t) + \frac{v_o}{\omega_{\rm osc}} \sin(\omega_{\rm osc}t)\]</p>
+<p>This discussion shows the importance of including <i>both</i> a sine and cosine term in our equation for position. If we had only a cosine term, then we would only be able to describe motions that are at their maximum position at <i>t</i> = 0. If we had only a sine term, then we would only be able to describe motions that are exactly at their midpoint at <i>t</i> = 0. By including both we can allow for an arbitrary initial position and velocity.</p>
+
+<h3>Linear Restoring Acceleration</h3>
+<p>With the velocity in hand, we can perform one more derivative to find the acceleration experienced by an object executing simple harmonic motion:</p>
+<p>\[ a_{x}(t) = -\omega_{\rm osc}^{2} A \cos(\omega_{\rm osc} t) - \omega_{\rm osc}^{2} B \sin(\omega_{\rm osc} t)\]</p>
+<p>This acceleration has a very important property. Looking closely at the form of the acceleration and comparing it to the form of the position we defined originally, we can see:</p>
+<p>\[a_{x}(t) = -\omega_{\rm osc}^{2} x(t)\]</p>
+<p><b>The acceleration is proportional to the position and points toward the origin.</b> This type of acceleration is called a <i>linear restoring acceleration</i>, because the acceleration is always pointing back toward the midpoint of the motion (trying to restore the object to its "natural" position) and the size of the acceleration grows linearly with the distance of the object from the midpoint. Because the acceleration is always trying to bring the object back to the midpoint, we call the midpoint a position of <i>stable equilibrium</i>.</p>
+
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

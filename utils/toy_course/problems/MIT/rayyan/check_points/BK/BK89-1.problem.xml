@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 1</title>
+
+<p>A yo-yo has mass <i>m</i> and a moment of inertia \(I\) measured with respect
+to an axis perpendicular to the screen and passing through its center of mass. A light 
+thin string is wrapped around the central part of the yo-yo that has radius \(r\). The 
+string is attached to the ceiling as shown. The yo-yo is released from rest and begins to 
+descend as the string unwraps. The coordinate system used is shown in the diagram.</p>
+<br/>
+<img  src="/static/problems/MIT/rayyan/check_points/Pictures/BK89.PNG" alt="BK89"/>
+<br/>
+
+<p>If the force of tension in the string has a magnitude <i> T</i>, and the acceleration
+of the center of mass has a magnitude <i>a</i>, what is the correct 
+expression that results from applying Newton's 2nd law on the motion of the center of mass
+ of the yo-yo? </p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( mg-T= ma  \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( T - mg = ma \)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  Zero
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( mg - Tr = ma \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( mg + Tr = ma \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( Tr - mg = ma \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 149 -->
+<problem>
+
+	<p>What is the approximate tension of the string connecting the blocks when \( m_1 \gg m_2 \) such that \(m_2\) is negligible?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\( m_1 g \)</choice>
+			<choice location="random" correct="false">\( m_2 g \)</choice>
+			<choice location="random" correct="false">\( m_1 g + m_2 g \)</choice>
+			<choice location="random" correct="false">\( m_1 g - m_2 g \)</choice>
+			<choice location="random" correct="false">\( 0.5 \left( m_1 g - m_2 g \right) \)</choice>
+			<choice location="random" correct="false">\( 0.5 \left( m_1 g + m_2 g \right) \)</choice>
+			<choice location="random" correct="true">\( Zero \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

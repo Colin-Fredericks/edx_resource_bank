@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="600" alt="Projectile Angle" height="250" src="/static/problems/MIT/rayyan/Figures/Projectile Motion_new.png"/>
+    <br/>
+
+      <p>
+</p>
+      <p>
+	A projectile is launched so it will travel the furthest up an incline. If the incline makes an angle <b>b</b> with the horizontal, 
+	what is 
+	the angle \(\theta\) <b>above the horizontal</b> for which the projectile should be launched. Express your answer in terms of the 
+	angle <b>b</b>
+	and using <b>degrees</b>, not radians. Hint: use an online computer algebra system to simplify the trigonometry 
+	(such as <a href="http://www.wolframalpha.com/">Wolfram Alpha</a>)</p>
+
+    <br/>
+    <formularesponse answer="b/2+45" samples="b,g@1,8:89,10#4">
+      <responseparam default="0.1" type="tolerance"/>
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+        <customhint name="radians">
+          <answer type="loncapa/perl">b/2*%Pi/4</answer>
+        </customhint>
+        <hintpart on="radians">
+
+            <p>Remember to put your answer in degrees, not radians.</p>
+
+        </hintpart>
+      </hintgroup>
+    </formularesponse>
+      </problem>
+</html>

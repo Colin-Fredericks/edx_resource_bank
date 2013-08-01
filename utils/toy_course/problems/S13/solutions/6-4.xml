@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<html>
+<!-- a collision and up the loop -->
+<problem>
+
+<h3>Solution</h3>
+
+<img src="/static/problems/S13/ESG/images/6-4.png" />
+
+<h3>First Stage</h3>
+<p>Is the process of block 1 moving down. It starts at the instant when block 1 is released from rest from a height H (point A in the figure) and ends at the instant right before hitting block 2, at the bottom. In this stage I will consider:</p>
+<p><b>System</b>: block 1 + Earth</p>
+<p><b>External Interactions</b>: the block and the string resulting in a force of tension <i>T</i></p>
+<p><b>Internal Interactions</b>: block 1 and Earth, the work done by this force is treated as a potential energy</p>
+<p><b>Physical Principle</b>: Mechanical Energy and Work</p>
+
+<p><i>E<sub>B</sub> = E<sub>A</sub> + W<sup>ext</sup><sub>A,B</sub> + W<sup>int, non-cons</sup><sub>A,B</sub></i></p>
+
+<p>The external force of tension does not do work because it is perpendicular to the displacement and there are not internal and non-conservative forces then mechanical energy is constant. Let’s define the zero of potential energy at the ground then E<sub>B</sub> = E<sub>A</sub> implies:</p>
+
+<p><i>m<sub>1</sub>gH = \({1\over 2}\) m<sub>1</sub>v<sub>1</sub><sup>2</sup></i></p>
+
+<p><i>H = \({1 \over 2}\)\({v_{1}^{2}\over g}\)</i></p>
+
+<h3>Second Stage</h3> 
+
+<p>Is the collision process between blocks 1 and 2 at point B. It starts at the instant
+￼right before block 1 hits block 2. At this instant, block 1 is moving with speed v<sub>1</sub> and block 2 is at rest. The process ends at the instant right after the collision when block 1 is at rest and block 2 is moving with speed v<sub>2</sub>. During the process I will consider:</p>
+<p><b>System</b>: block1 and block 2.</p>
+<p><b>Internal Interaction</b>: the collision forces</p>
+<p><b>External interactions</b>: the blocks with the Earth and with the surface. There is no friction, therefore the net external force is zero.</p>
+<p><b>Physical principle</b>: Momentum and Impulse</p>
+
+<p>\(\int_{t_{i}}^{t_{f}} \! \sum \vec{F}^{ext} \, \mathrm{d} t\)</p>
+
+<p>Because the net force is zero , there is no external impulse and the momentum is constant during the collision, therefore:</p>
+
+<p><i>m<sub>1</sub>v<sub>1</sub> = m<sub>2</sub>v<sub>2</sub></i></p>
+
+<p><i>v<sub>1</sub> = \({m_{2}\over m_{1}}\)v<sub>2</sub></i></p>
+
+<h3>Third Stage</h3>
+
+<p>Block 2 sliding along the track between points B and C.</p>
+<p>At point B, block 2 is moving with speed <i>v<sub>2</sub></i></p>
+<p>At point C, block 2 is moving with speed <i>v<sub>3</sub></i> and it is at a height <i>R + R cos\(\theta\)</i>.</p>
+<p>During the sliding process I will consider:</p>
+
+<p><b>System</b>: block2 + Earth</p>
+<p><b>External Interactions</b>: block 2 and the track. Assuming no friction, the resulting force is a normal force <b>N</b>.</p>
+<p><b>Internal Interactions</b>: block 2 and the Earth. This interaction is represented by the gravitational potential energy.</p>
+<p><b>Physical principle</b>: Energy and work</p>
+
+<p><i>E<sub>B</sub> = E<sub>A</sub> + W<sup>ext</sup><sub>A,B</sub> + W<sup>int,non-cons</sup><sub>A,B</sub></i></p>
+
+<p>There are not internal and non-conservative forces and because the external force, N, is normal to the displacement its work is zero, then the mechanical energy is constant, E<sub>C</sub> = E<sub>B</sub> implies:</p>
+
+<p><i>m<sub>2</sub>g(R+Rcos\(\theta\))+\(1\over 2\)m<sub>2</sub>v<sub>3</sub><sup>2</sup> = \({1\over 2}\)m<sub>2</sub>v<sub>2</sub><sup>2</sup></i></p>
+
+<p>We have 3 equations (1-3) and 4 unknowns: H, v<sub>1</sub>, v<sub>2</sub> and v<sub>3</sub>. The other equation is obtained with the constraint that block 2 looses contact with the tract at the angle \(\theta\). At point C, the forces acting on block 2 are the normal force and the weight. They are shown in the free body diagram below:</p>
+
+<!--insert image-->
+
+<p>Then, Newton’s 2<sup>nd</sup> law along the radial component implies:</p>
+
+<p>r-direction: <i>-N-m<sub>2</sub>gcos\(\theta\) = -m<sub>2</sub>\({v_{3}^{2}\over R}\)</i></p>
+
+<p>Because the block looses contact with the track the normal force is zero:</p>
+
+<p><i>N = 0</i></p>
+
+<p>Combining the equations, we obtain:</p>
+
+<p><i>H = \({1\over 2}\) \({m_{2}\over m_{1}^{2}}\) R(3cos\(\theta\) + 2)</i></p>
+
+</problem>
+</html>

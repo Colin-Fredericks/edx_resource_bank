@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Question Week 4 Day 1</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">Write your name, section, table number, and group on the upper right hand corner of your answer and hand it in at the start of class that day.</b>
+  </p>
+  <p>
+    <b class="bfseries">Sept 26/27 W04D1 Circular Motion (Polar Coordinates)</b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman 3.4, 5.4-5.5; </p>
+  <p>
+Course Notes: Circular Motion Kinematics<a>link text</a><p>
+http://web.mit.edu/8.01t/www/materials/modules/CircularH_MotionH_Kinematics.pdf </p><em>http://web.mit.edu/8.01t/www/materials/modules/Circular_Motion_Kinematics.pdf</em>ENDHREF </p>
+  <p>
+    <b class="bfseries">Reading Questions </b>
+  </p>
+  <p><b class="bfseries">(1) </b>For an object moving in a circle of radius \(R\) at constant speed \(v\) , explain why the derivative of the velocity vector points towards the center of the circle and has magnitude \(v^{2} /R\) . </p>
+  <p><b class="bfseries">(2) </b>In order to answer this question please read the Course Notes: Circular Motion Kinematics. In a polar coordinate system, consider a point-like object traveling in a circle in the \(z=0\) plane centered about the origin. (a) Do the unit vectors \(\hat{\mathbf{r}}\) and point in the same direction at every point on the circular path? (b) Write down a vector description for it's position, velocity, and acceleration in polar coordinates. </p>
+</problem>

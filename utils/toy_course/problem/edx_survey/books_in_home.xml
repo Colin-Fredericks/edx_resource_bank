@@ -1,0 +1,14 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How many books were there in your home? Please choose one box.</p>
+  <p>(There are usually about 40 books per meter of shelving. Do not include magazines, newspapers, or schoolbooks in your estimate.)</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="0-10"><text>0-10 books</text></choice>
+      <choice correct="true" name="11-25"><text>11-25 books</text></choice>
+      <choice correct="true" name="26-100"><text>26-100 books</text></choice>
+      <choice correct="true" name="101-200"><text>101-200 books</text></choice>
+      <choice correct="true" name="201-500"><text>201-500 books</text></choice>
+      <choice correct="true" name="more than 500"><text>More than 500 books</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

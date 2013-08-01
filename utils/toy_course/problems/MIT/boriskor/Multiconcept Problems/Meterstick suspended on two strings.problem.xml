@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/52-rod suspended on two strings not at ends.png" alt="A horizontal rod suspended on two vertical strings attached asymmetrically"/>
+        <br/>
+
+      <p>A meter stick of mass \(m\) is suspended horizontally by two vertical rubber bands, attached to the 10-cm and 60-cm marks on the meter stick. Then the band attached to the 10-cm mark is quickly cut. What is the acceleration of the midpoint of the meter stick <i>immediately</i> after that?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                a=0.2g          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                a=0.4g          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                a=0.6g          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                a=0.5g          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                a=g          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                a=0.8g          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

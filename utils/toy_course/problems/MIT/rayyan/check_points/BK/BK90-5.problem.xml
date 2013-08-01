@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 5</title>
+
+<p>What is the linear acceleration of the yo-yo?</p>
+
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="20" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( a = FR(r + R)/(I + mr^2)\)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \( a = FR(r + R)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( a = Fr(r + R)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( a = Fr(r + R)/(I + mr^2)\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( a = FR2/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( a = FRr/(I + mR^2)\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    
+  </problem>
+</html>

@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Example: Rolling Ball 2</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Ball Rolling on a Horizontal Surface: Angular Momentum about Two Points</h3>
+A uniform ball of mass <i>m</i> and radius <i>R</i> is rolling on a horizontal surface as shown. The ball translates with a speed <i>v<sub>cm</sub></i> and rotates with an angular speed <i>&#969;</i> about an axis passing through its center of mass parallel to the z-axis. The angular speed is large enough to make the ball slip with respect to the surface. Consider a point <i><b>Q</b></i> on the surface and a point <i><b>S</b></i> along the straight line followed by the ball's center of mass.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/Ball_torque.png"/>
+</p><p><b>Question 1.</b> Does the angular momentum of the ball about point <i><b>Q</b></i> remain constant during the ball's motion if the surface has friction?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td><b>Yes</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<td><u><b>System:</b></u> ball treated as a rigid object.
+<p><u><b>Interactions:</b></u>
+</p><p><b>Ball \(\Leftrightarrow\) Earth.</b> The resulting force is the weight along the -y-axis, applied at the center of mass. Its position about point <i><b>Q</b></i> is the vector \(\vec{r}_2\) in the figure.
+</p><p><b>Ball \(\Leftrightarrow\)Surface.</b> The resulting force is the contact force applied at the point of contact between the two surface. Its position about point <i><b>Q</b></i> is the vector \(\vec{r}_1\) in the figure. The contact force has two components, the normal  in the  +y-direction and friction, in the -x-direction. <b>Note:</b> Because the ball is sliding relative to the surface, the type of friction is kinetic friction.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module4/files/Ball_torque_Q.png"/>
+</p><p>The sum of the torques due to the three forces on the ball about point <i><b>Q</b></i> is zero, then the angular momentum of the ball about that point is constant.</p>
+<p>Note: Even though friction may accelerate the moving ball, the angular momentum about fixed point Q is constant.</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>Question 2.</b> Does the angular momentum of the ball about point <i><b>S</b></i> remain constant during the ball's motion if there is friction?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td><b>No</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+<tr style="display:none" id="ht12">
+<td><u><b>System:</b></u> ball treated as a rigid object.
+<p><u><b>Interactions:</b></u>
+</p><p><b>Ball \(\Leftrightarrow\) Earth.</b> The resulting force is the weight along the -y-axis, applied at the center of mass. Its position about point <i><b>S</b></i> is the vector \(\vec{r}_4\) in the figure.
+</p><p><b>Ball \(\Leftrightarrow\)Surface.</b> The resulting force is the contact force applied at the point of contact between the two surface. Its position about point <i><b>S</b></i> is the vector \(\vec{r}_3\) in the figure. The contact force has two components, the normal  in the  +y-direction and friction, in the -x-direction. <b>Note:</b> Because the ball is sliding relative to the surface, there is kinetic friction.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/Ball_torque_S.png"/>
+</p><p>The sum of the torques due to the three forces on the ball about point <i><b>S</b></i> is <b>NOT zero</b> (due to the friction force), hence the angular momentum of the ball about that point is <b>not constant</b>.
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

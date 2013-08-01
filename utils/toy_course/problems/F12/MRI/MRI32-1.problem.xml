@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 32 -->
+
+<problem>
+
+	<p>A projectile is launched at an angle from the ground level over a flat terrain. The horizontal range of the projectile is five times the maximum height of the flight.</p>
+
+	<h3>Part 1</h3>
+	<p>Consider the angle \(\theta\) that the initial velocity vector makes with the ground. What statement about angle \(\theta\) is correct?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\(\theta = 45\deg \)</choice>
+			<choice location="random" correct="false"><text>\(\theta &gt; 45\deg \)</text></choice>
+			<choice location="random" correct="true"><text>\(\theta &lt; 45\deg \)</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

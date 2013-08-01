@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Kinetic Energy </title>
+
+      <p>
+An object of mass m starts moving from rest at a constant acceleration. After t seconds, a distance d is covered. What is the kinetic energy of the object at that moment?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+                \(m\left( \frac{d}{t} \right)^{2}\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(0.25m\left( \frac{d}{t} \right)^{2}\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(0.5m\left( \frac{d}{t} \right)^{2}\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+
+                \(2m\left( \frac{d}{t} \right)^{2}\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(4m\left( \frac{d}{t} \right)^{2}\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

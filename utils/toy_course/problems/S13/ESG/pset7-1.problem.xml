@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<html>
+<!--An asteroid and a star-->
+<problem>
+
+	<script type="loncapa/python"> 
+W = "G*M*m*((1/rB)-(1/rA))"
+	</script>
+
+<h2>An asteroid and a star</h2>
+
+<p>An asteroid of mass m is approaching a far away star of mass M following
+an elliptic orbit. Points A and B in the orbit are at a distance r<sub>A</sub> and r<sub>B</sub>
+from the star. Assume that the mass of the asteroid is small compared to that
+of the star (m much smaller than M). Neglect the influence of other celestial objects on the
+asteroid and on the star.</p>
+<p>To answer the following questions, type "rA" for r<sub>A</sub>, "rB" for r<sub>B</sub>, and "G" for the gravitational constant.</p>
+
+<img src="/static/problems/S13/ESG/images/7-1.png" />
+
+<p><b><font color="blue">Part 1.</font></b>  Consider the system to be the asteroid:</p>
+
+<p><b><font color="blue">a.</font></b> Calculate the work done by all the external forces acting on the asteroid between points A and B. </p>
+
+	<formularesponse type="cs" samples="G,M,m,rA,rB@100,100,100,100,100:500,500,500,500,500#10" answer="$W">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>W<sub>AB</sub> =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+<p></p>
+<p><b><font color="blue">b.</font></b> What is the change of kinetic energy of the asteroid between points A and B?</p>
+
+	<formularesponse type="cs" samples="G,M,m,rA,rB@100,100,100,100,100:500,500,500,500,500#10" answer="$W">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>\(\Delta\) K<sub>asteroid</sub> =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+<p></p>
+<p><b><font color="blue">c</font></b>. If r<sub>A</sub>>r<sub>B</sub>, the work is: </p>
+	<optionresponse direction="vertical" randomize="no">
+			<optioninput inline="1" options="('Positive','Negative','Zero')" correct="Positive"/>
+	</optionresponse>
+
+<p><b><font color="blue">d. </font></b> My answer in part c. makes sense because: </p>
+			<p>
+			<ol>
+			<li>as the asteroid is getting closer to the star the kinetic energy increases.</li>
+			<li>as the asteroid is getting closer to the star the potential energy increases.</li>
+			<li>as the asteroid is getting away from the star the gravitational force is negligible. </li>
+			<li>the gravitational work is the only external work on the asteroid. </li>
+			<li>the result is consistent with the work kinetic energy theorem. </li>
+			</ol>
+			</p>
+	<optionresponse direction="vertical" randomize="no">
+			<optioninput options="('1 only','2 only','3 only','4 only','5 only','1 and 3', '2 and 3', '3 and 4', '1, 4 and  5')" correct="1, 4 and  5"/>
+	</optionresponse>
+
+<p><b><font color="blue">Part 2.</font></b>  Consider the system to be the star and the asteroid. What is the change of the kinetic energy of the system between points A and B?</p>
+
+	<formularesponse type="cs" samples="G,M,m,rA,rB@100,100,100,100,100:500,500,500,500,500#10" answer="$W">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+
+		<p>\(\Delta\) K<sub>system</sub> =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

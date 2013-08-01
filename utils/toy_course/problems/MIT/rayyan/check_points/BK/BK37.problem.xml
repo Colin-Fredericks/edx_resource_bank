@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Reading Graphs - velocity </title>
+
+      <p>The graphs v (t) below represent the motion of two ladybugs, Kyle (K) (solid graph) and Lea (L) (dotted graph), moving along the same straight line.</p>
+
+    <p><img width="320" alt="BK37" src="/static/problems/MIT/rayyan/check_points/Pictures/BK37.png"/></p>
+
+      <p>Part 1. The initial distance between K and L is</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                4 m
+          </choice>
+          <choice name="foil2" correct="false">
+                5 m
+          </choice>
+          <choice name="foil3" correct="false">
+                9 m
+          </choice>
+          <choice name="foil4" correct="true">
+                Not enough information to answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 2. At t = 2.5 s, K has a speed of</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                Zero
+          </choice>
+          <choice name="foil2" correct="true">
+                4 m/s
+          </choice>
+          <choice name="foil3" correct="false">
+                10 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                Not enough information to answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 3. What is the instantaneous velocity of L at t = 1.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                -3 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                3 m/s
+          </choice>
+          <choice name="foil3" correct="true">
+                -4 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                4 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 4. Which of the following is most nearly the instantaneous acceleration of K at t = 6.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                0.75 m/s<sup>2</sup>
+          </choice>
+          <choice name="foil2" correct="false">
+                -0.75 m/s<sup>2</sup>
+          </choice>
+          <choice name="foil3" correct="true">
+                -1.33 m/s<sup>2</sup>
+          </choice>
+          <choice name="foil4" correct="false">
+                Zero
+          </choice>
+          <choice name="foil5" correct="false">
+                1.33 m/s<sup>2</sup>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 5. What is the instantaneous acceleration of L at t = 6.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                <text>0.33 m/s<sup>2</sup></text>
+          </choice>
+          <choice name="foil2" correct="false">
+                <text>-0.33 m/s<sup>2</sup></text>
+          </choice>
+          <choice name="foil3" correct="false">
+                <text>-3.0 m/s<sup>2</sup></text>
+          </choice>
+          <choice name="foil4" correct="true">
+                <text>Zero</text>
+          </choice>
+          <choice name="foil5" correct="false">
+                <text>3.0 m/s<sup>2</sup></text>
+          </choice>
+          <choice name="foil6" correct="false">
+                <text>-2 m/s<sup>2</sup></text>
+          </choice>
+          <choice name="foil7" correct="false">
+                <text>2 m/s<sup>2</sup></text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 6. What is the average velocity of K between t = 0 and t = 6 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                1 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                0.167 m/s
+          </choice>
+          <choice name="foil3" correct="false">
+                6 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                Zero
+          </choice>
+          <choice name="foil5" correct="true">
+                3 m/s
+          </choice>
+          <choice name="foil6" correct="false">
+                18 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 7. What is the displacement of K between t = 0 s and t = 10 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                24 m
+          </choice>
+          <choice name="foil2" correct="false">
+                -24 m
+          </choice>
+          <choice name="foil3" correct="false">
+                -12 m
+          </choice>
+          <choice name="foil4" correct="true">
+                12 m
+          </choice>
+          <choice name="foil5" correct="false">
+                4 m
+          </choice>
+          <choice name="foil6" correct="false">
+                -4 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 8. What is the distance covered by K between t = 0.0 s and t = 10.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                24 m
+          </choice>
+          <choice name="foil2" correct="false">
+                -24 m
+          </choice>
+          <choice name="foil3" correct="false">
+                -12 m
+          </choice>
+          <choice name="foil4" correct="false">
+                12 m
+          </choice>
+          <choice name="foil5" correct="false">
+                4 m
+          </choice>
+          <choice name="foil6" correct="false">
+                -4 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 9. How can the acceleration and the velocity of K be described at the moment that L changes the direction of motion? </p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                  <text>\(a_k &lt; 0; v_k &lt; 0\)</text>
+          </choice>
+          <choice name="foil2" correct="false">
+                  <text>\(a_k &lt; 0; v_k &gt; 0\)</text>
+          </choice>
+          <choice name="foil3" correct="true">
+                  <text>\(a_k &gt; 0; v_k &lt; 0\)</text>
+          </choice>
+          <choice name="foil4" correct="false">
+                  <text>\(a_k &gt; 0; v_k &gt; 0\)</text>
+          </choice>
+          <choice name="foil5" correct="false">
+                  <text>\(a_k &lt; 0; v_k = 0\)</text>
+          </choice>
+          <choice name="foil6" correct="false">
+                  <text>\(a_k &gt; 0; v_k = 0\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 10. What is the relative speed of K and L at t = 0?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                1 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                zero
+          </choice>
+          <choice name="foil3" correct="false">
+                5 m/s
+          </choice>
+          <choice name="foil4" correct="true">
+                9 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 11. During which time interval do K and L move in the same direction continuously?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                \(1s \leq t \leq 2s\)
+          </choice>
+          <choice name="foil2" correct="false">
+                \(9s \leq t \leq 10s\)
+          </choice>
+          <choice name="foil3" correct="true">
+                \(7s \leq t \leq 8s\)
+          </choice>
+          <choice name="foil4" correct="false">
+                \(4s \leq t \leq 5s\)
+          </choice>
+          <choice name="foil5" correct="false">
+                \(6s \leq t \leq 7s\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

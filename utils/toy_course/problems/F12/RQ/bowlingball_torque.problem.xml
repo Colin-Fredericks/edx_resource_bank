@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A time \(t_0\) a bowling ball of mass \(m\) and radius \(R\) is  thrown down an alley with an initial speed \(v_0\) and no spin. At a given instant of time \(t_f\)
+the ball starts to roll without slipping.  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/bowlingBallNew.png"/>
+    </p>
+<p>
+During the time interval \(t_0 \le t \le t_f\), while the ball is slipping and rolling :</p>
+<p>
+
+<b>A.</b> The net torque about the center of mass of the ball is zero. </p>
+<p><b>B.</b> The net torque about point Q on the surface is zero. (Point Q is on the straight line described by the point of contact between the ball and the surface).</p>
+<p><b>C.</b> The magnitude of the acceleration of the center of mass, \(a_{cm}\) and the magnitude of the angular acceleration \(\alpha\) are such that \(a_{cm}=\alpha R\).</p> 
+<p><b>D.</b> The velocity of the center of mass of the ball is constant.</p>
+<p><b>E.</b> The acceleration of the center of mass of the ball is constant.
+
+</p>
+<optionresponse direction="vertical" randomize="no">
+<p>Which of the statements listed above are correct?
+<optioninput options="('A','B','C','D','E', 'A and C', 'A and D', 'B and C', 'B and E' )" correct="B and E"/></p>
+</optionresponse>
+
+
+</problem>
+
+
+    

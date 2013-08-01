@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+
+<p>At the instant the bar is <b>horizontal</b>, find the 
+the following quantities (use \(g\) for the acceleration of gravity):</p>
+	
+	
+	        <p>The linear speed of the free end of the bar \(v_e=\)</p>
+
+      <formularesponse answer="sqrt(3*g*L)" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <p>The <b>magnitude</b> of the horizontal component of the acceleration of the free end of the bar? \(a_{xe}=\)</p>
+
+      <formularesponse answer="3*g" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+        <p>The <b>magnitude</b> of the vertical component of the acceleration of the free end of the bar \(a_{ye}=\)</p>
+
+      <formularesponse answer="3*g/2" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+
+      </problem>
+</html>
+

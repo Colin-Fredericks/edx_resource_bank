@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT801/MIT/rayyan/Physics801/Symbolic/figures/objects on a ring.png" align="top" texwrap="none" height="378" width="654" alt="objects on a ring"/>
+    <br/>
+    <script type="loncapa/python">
+
+
+mass="4*k*R/g"
+
+</script>
+
+      <p>
+Two objects slide without friction on a circular ring of radius R oriented in a vertical plane.
+The heavier object (of mass 3m) is attached to a spring with an unstretched length of zero
+(admittedly an unphysical assumption) and spring constant k. The fixed end of the spring
+is attached to a point a horizontal distance 2R from the center of the circle. The lighter
+object (of mass m) is initially at rest at the bottom of the ring.
+The heavier object is released from rest at the top of the ring, then collides with and sticks
+to the lighter object. Find the value for m that will allow the combined object (of mass 4m)
+to just reach the point A on the ring, but go no higher. Express your answer using
+some or all of the quantities k, R, and the acceleration of gravity g.
+
+<br/>
+\(m =\)
+</p>
+
+    <formularesponse answer="$mass" samples="k,R,g@1,1,1:8,8,8#4">
+	<responseparam type="tolerance" default="1%"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

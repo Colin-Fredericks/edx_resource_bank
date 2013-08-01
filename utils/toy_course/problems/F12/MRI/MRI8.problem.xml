@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 8 -->
+
+<problem>
+
+	<p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 7 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI8.png" />
+
+	<h3>Part 1</h3>
+	<p>A block of mass M has an initial speed v (as shown above). It slides a distance d along a rough surface with coefficient of kinetic friction \( \mu \). The block then collides with a massless spring of spring constant k. The block compresses the spring a distance x along the surface (which is still rough) before coming to rest. The goal of this problem is to determine the speed v in terms of the other quantities. What is the most appropriate way to decompose the problem? </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">a. One problem: intervals 1-7</choice>
+			<choice location="random" correct="false">b. Two sub-problems: intervals 1-5 and 5-7</choice>
+			<choice location="random" correct="false">c. Three sub-problems: intervals 1-5, 5, and 5-7</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">a. The work done by all non-conservative forces on the block is easily calculated.</choice>
+			<choice location="random" correct="false">b. There is a collision between the block and the spring.</choice>
+			<choice location="random" correct="false">c. It is necessary to find the force of the block as it hits the spring.</choice>
+			<choice location="random" correct="false">d. The forces on the block are different when the block is in contact with the spring.</choice>
+			<choice location="random" correct="false">e. Statements b, c and d are all needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Potential Energy Curves</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Potential Energy Curves </h3>
+<h4>Near-Earth Gravitational Potential Energy Curve</h4>
+A plot of the gravitational potential energy of a mass near the earth's surface versus height has the shape of a straight line:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/NEGravPot.png"/>
+</p>
+<h4>Elastic Potential Energy Curve</h4>
+Plotting elastic potential energy as a function of <i>x</i> and representing the energy in the system as bars of kinetic and potential can be a useful technique.  Elastic potential energy is a quadratic function of x, giving a parabolic potential energy curve.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/ElasPot.png"/>
+</p>
+</body>
+</html>
+

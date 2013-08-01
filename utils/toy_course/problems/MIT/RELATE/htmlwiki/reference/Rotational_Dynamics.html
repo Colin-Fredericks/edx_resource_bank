@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Rotational Dynamics about a Fixed Axis and Net Torque</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Rigid_body').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rigid_body.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<h2> Compatible Systems</h2>
+<p>This Model can only describe the rotational motion of a single <!--<a id="go" rel="leanModal" href="#Rigid_body" name="Rigid_body" onclick="domath()">-->rigid body<!--</a>--> executing pure rotation about a single axis of rotation.  The axis of rotation must either be fixed in an inertial frame of reference or else must pass through the center of mass of the rigid body.
+</p>
+<h2> Relevant Interactions</h2>
+<p>The angular equivalent of Newton's Second Law combined with the cancellation of internal torques by Newton's Third Law implies that the angular acceleration of the system is equal to the net external torque divided by the moment of inertia of the rigid body about the axis of rotation. Thus, only external torques need be considered.
+</p>
+<h2> Definitions</h2>
+<h4> Angular Acceleration about Axis <i>a</i> (Angular Equivalent of Newton's Second Law)</h4>
+<p><m>$\alpha_{a} = \frac{1}{I_{a}} \sum_{ext} \tau_{a} $</m>
+</p>
+<h2> Mathematical Representation</h2>
+<h4> Differential Form</h4>
+<p><m>$\frac{d\omega_{a}}{dt} = \alpha_{a}(t)$</m>
+</p><p><m>$\frac{d\theta_{a}}{dt} = \omega_{a}(t)$</m>
+</p>
+<h4> Integral Form</h4>
+<p><m>$\omega_{f,a} = \omega_{i,a} + \int_{t_{i}}^{t_{f}} \alpha_{a}(t) dt$</m>
+</p><p><m>$\theta_{f,a} = \theta_{i,a} + \int_{t_{i}}^{t_{f}} \omega_{a}(t) dt$</m>
+</p>
+<div id="Rigid_body" class="popup"></div>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Conservation of Momentum and Initial State-Final State Diagrams</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Conservation of Momentum and Initial-State Final-State Diagrams</h2>
+<p>In this module, we will illustrate the utility of momentum as a description of motion in the case that there is no net external force acting on a multi-body system.
+</p>
+<h3> Learning Goals</h3>
+<p>After working through this module, you should be able to:
+</p>
+<ul style="list-style:disc outside none"><li> Define conservation as it is used in physics.
+</li><li> Use initial state-final state diagrams to follow the evolution of the momentum of a system.
+</li></ul>
+<h2> Conservation of Momentum in a Multi-Body System</h2>
+<h4> Zero Net External Force implies Constant System Momentum</h4>
+<p> The momentum of a system subject to no net external force does not change with time. In other words, it remains constant in magnitude and direction.  This follows from the law for momentum change developed in the <b>Momentum and Impulse Model.</b> 
+</p>
+<h4> Constant System Momentum does not mean Constant Constituent Momentum</h4>
+<p>Our discussion so far seems to imply that the case of no net external force is uninteresting:  the momentum of the system stays constant, so there is nothing to calculate.  This is not true, however, because of the important fact that we will generally use momentum to describe the motion of multi-body systems.  The total momentum of a multi-body system is equal to the sum of the constituent momenta.  Thus, the momenta of the individual system constituents <i>can</i> change in the absence of net external force (due to internal forces), provided that their new momenta still add up to the same total value.  In other words, internal forces <i>can</i> change the motion of the system constituents even though they cannot change the total momentum of the system.
+</p>
+<h4> Conservation means Constant Sum</h4>
+<p>The situation we have described (component momenta can change while leaving the total momentum of the system constant) is generally given the special name of momentum <i>conservation</i>.  Conservation is meant to imply that the momentum of the system can be <i>redistributed</i> among the parts <i>without changing the total value</i>.  Under these circumstances many physicists will say that &#8220;momentum is conserved&#8221;, when they mean it&#8217;s constant for this particular system only.  Watch out - this can be confusing.
+
+</p>
+<h2> The Constant Momentum Model</h2>
+<p>We are now ready to introduce a special case of the <b>Momentum and External Impulse Model</b> that occurs when the impulse is zero (i.e. the momentum of the system is constant): the <b>Constant Momentum (Zero External Impulse)</b> Model. When written mathematically, the model is extremely simple:
+</p><p>\[\vec{p}_{f} = \vec{p}_{i}\]
+</p><p>It is important to remember, however, that, in practice, we will apply this model to multi-body systems. The total momentum of a multi-body system is equal to the sum of its constituent parts. Thus, it is better to think of the Model as:
+</p><p>\[\sum_{\rm constituents} \vec{p}_{f} = \sum_{\rm constituents} \vec{p}_{i}\]
+</p><p>which serves as a reminder that although the total momentum is constant, the parts of the sum can change.  Also, don't forget that this is a vector equation, which must usually be written in components.
+</p>
+<h2> Initial State-Final State Diagrams</h2>
+<p>Because the Constant Momentum Model centers on the equality of the system's momentum at two particular instants of time, it is a very easy but also extremely important problem solving tool to represent the momentum pictorially at the initial and final instants.  This picture should also sketch a coordinate system, though only the direction of the axes matters (the exact placement of the origin is not important because we will not be working with position).  This diagram can then be translated directly into the equation of momentum conservation.  Drawing a picture will help you remember vital details like the vector nature of momentum.  The use of initial state-final state diagrams is illustrated in the example on the next page.
+</p>
+</body>
+</html>
+

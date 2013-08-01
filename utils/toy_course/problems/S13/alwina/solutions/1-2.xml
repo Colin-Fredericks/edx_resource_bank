@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<html>
+<!-- 1-2: two blocks, a pulley, and a table -->
+<problem>
+
+<h2>Solution</h2>
+<p>The systems, the interactions with the environment, and the resulting forces are summarized below.</p>
+
+<!--may also want to put free body diagrams somewhere-->
+
+<table border="1">
+	<tr>
+		<th colspan="2"><h4>System: Block A</h4></th>
+		<td rowspan="5"><img src="/static/problems/S13/alwina/images/1-2sol-a.png" /></td>
+	</tr>
+	<tr>
+		<td><b>Interactions:</b></td>
+		<td><b>Resulting Forces:</b></td>
+	</tr>
+	<tr>
+		<td>Block A \(\leftrightarrow\) Earth</td>
+		<td>\(\vec{F}_{AE}\): gravitational force of magnitude \(M_A g\)</td>
+	</tr>
+	<tr>
+		<td>Block A \(\leftrightarrow\) rope</td>
+		<td>\(\vec{T}_A\): tension force exerted by A on the rope</td>
+	</tr>
+	<tr>
+		<td>Block A \(\leftrightarrow\) Block B</td>
+		<td>\(\vec{N}_{AB}\) and \(\vec{f}_{AB}\): normal and kinetic friction exerted on A by B</td>
+	</tr>
+</table>
+
+	<br/>
+
+<table border="1">
+	<tr>
+		<th colspan="2"><h4>System: Block B</h4></th>
+		<td rowspan="7"><img src="/static/problems/S13/alwina/images/1-2sol-b.png" /></td>
+	</tr>
+	<tr>
+		<td><b>Interactions:</b></td>
+		<td><b>Resulting Forces:</b></td>
+	</tr>
+	<tr>
+		<td>Block B \(\leftrightarrow\) Earth</td>
+		<td>\(\vec{F}_{BE}\): gravitational force of magnitude \(M_B g\)</td>
+	</tr>
+	<tr>
+		<td>Block B \(\leftrightarrow\) rope</td>
+		<td>\(\vec{T}_B\): tension force exerted by B on the rope</td>
+	</tr>
+	<tr>
+		<td>Block B \(\leftrightarrow\) table</td>
+		<td>\(\vec{N}_{Bt}\) and \(\vec{f}_{Bt}\): normal force and kinetic friction exerted on B by the table</td>
+	</tr>
+	<tr>
+		<td>Block B \(\leftrightarrow\) Block A</td>
+		<td>\(\vec{N}_{BA}\) and \(\vec{f}_{BA}\): normal force and kinetic friction exerted on B by A</td>
+	</tr>
+	<tr>
+		<td>Block B \(\leftrightarrow\) external agent</td>
+		<td>\(\vec{F}\): external force applied</td>
+	</tr>
+</table>
+
+<p><b>Assumptions and consequences:</b></p>
+<ul>
+	<li>Ideal pulley \(\Rightarrow\) Same tension on either side of the pulley</li>
+	<li>Rope is massless \(\Rightarrow\) Same tension at all points on the rope</li>
+	<li>Rope is taut and does not stretch \(\Rightarrow\) the magnitude of the velocity is the same for both blocks</li>
+</ul>
+
+<p>Because the applied force is such that block B is moving at constant speed, the block A is also moving at a constant speed. Therefore the net force on both blocks must be zero. Using the coordinate system with the +x-axis to the right and +y-axis upwards (see figure above), then net force equal to zero on block A implies:</p>
+<table>
+	<tr>
+		<td>x-component: \(T_A - f_{AB} = 0\)</td>
+		<td><p>(eq. 1)</p></td>
+	</tr>
+	<tr>
+		<td>y-component: \(N_{AB} - M_A g = 0\)</td>
+		<td><p>(eq. 2)</p></td>
+	</tr>
+	<tr><td colspan="2"><p>and zero net force on block B is written as:</p></td></tr>
+	<tr>
+		<td>x-component: \(-F + T_B + f_{BA} + f_{Bt} = 0\)</td>
+		<td><p>(eq. 3)</p></td>
+	</tr>
+	<tr>
+		<td>y-component: \(N_{Bt} - N_{BA} - M_B g = 0\)</td>
+		<td><p>(eq. 4)</p></td>
+	</tr>
+	<tr><td colspan="2">The contact forces resulting from the interactions between blocks A and B are Newton's 3rd law pairs:</td></tr>
+	<tr><td colspan="2"><ul><li>The forces of kinetic friction on each surface are \(\vec{f}_{AB}\) (pointing to the left) and \(\vec{f}_{BA}\) (pointing to the right). Because they have the same magnitude, we define:</li></ul></td></tr>
+	<tr>
+		<td>\(f = |\vec{f}_{BA}| = |\vec{f}_{AB}|\)</td>
+		<td><p>(eq. 5)</p></td>
+	</tr>
+	<tr><td colspan="2"><ul><li>The normal forces on each of the block surfaces are \(\vec{N}_{AB}\) (upwards) and \(\vec{N}_{BA}\) {downwards). Because they have the same magnitude, we define:</li></ul></td></tr>
+	<tr>
+		<td>\(N = |\vec{N}_{BA}| = |\vec{N}_{AB}|\)</td>
+		<td><p>(eq. 6)</p></td>
+	</tr>
+	<tr><td colspan="2"><p>Using the expression for the force of kinetic friction, we have that the force of friction between both blocks is \(f = \mu_k N_{AB}\) and using (eq. 2) we obtain:</p></td></tr>
+	<tr>
+		<td>\(f = \mu_k M_A g\)</td>
+		<td><p>(eq. 7)</p></td>
+	</tr>
+	<tr><td colspan="2"><p>The magnitude of the force of friction on block B exerted by the table is \(f_{Bt} = m N_{Bt}\). Using (eq. 2) and (eq. 6) in (eq. 4), we have \(N_{Bt} = N_{BA} + M_B g = (M_A + M_B) g\). Therefore,</p></td></tr>
+	<tr>
+		<td>\(f = \mu_k (M_A + M_B) g\)</td>
+		<td><p>(eq. 8)</p></td>
+	</tr>
+	<tr><td colspan="2"><p>With our assumption that the force of tension at any point in the rope is the same:</p></td></tr>
+	<tr>
+		<td>\(T = |\vec{T}_A| = |\vec{T}_B|\)</td>
+		<td><p>(eq. 9)</p></td>
+	</tr>
+</table>
+
+<p>Using (eq. 7), (eq. 8), and (eq. 9) in (eq. 1) and (eq. 3):</p>
+<p>\(T - \mu_k M_A g = 0\)</p>
+<p>\(-F + T + \mu_k M_A g + \mu_k (M_A + M_B) g = 0\)</p>
+
+<p>From these two equations, we obtain:</p>
+<p>\(F = \mu_k g (M_B + 3 M_A)\)</p>
+<!--highlight answer?-->
+
+<h4>Checks:</h4>
+<ol>
+	<li>Dimensions</li>
+	<li>If \(\mu_k = 0\) and the blocks were moving at constant velocity, no force is needed to the left to drag block B.</li>
+	<li>If \(M_A = 0\), it means that the only force that opposes the dragging force \(F\) is the frictional force exerted by the ground on B, so \(F\) must be \(\mu_k N = \mu_k M_B g\)</li>
+</ol>
+
+</problem>
+</html>

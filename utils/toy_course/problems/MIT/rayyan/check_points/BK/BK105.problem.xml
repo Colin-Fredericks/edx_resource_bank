@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Spinning Sphere </title>
+    <script type="loncapa/python">
+
+
+A="0.4*m*v*r"
+B="1.4*m*v*r"
+
+</script>
+
+<p>A solid sphere of mass m and radius r rolls down a hill without slipping. At the instant 
+when the speed of the center of the sphere is v, find the magnitude of the
+angular momentum of the sphere relative to:</p>
+<br/>
+
+<p>Part A. The horizontal axis passing through the center of mass of the sphere.</p>
+
+        \(L=\)
+
+      <formularesponse answer="$A" samples="m,v,r@-3,-3,-3:3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+
+<p>Part B. The horizontal axis passing through the contact point between the sphere and the hill.</p>
+
+        \(L=\)
+
+      <formularesponse answer="$B" samples="m,v,r@-3,-3,-3:3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+  </problem>
+</html>

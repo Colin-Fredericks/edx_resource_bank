@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Collision in 2D </title>
+    <script type="loncapa/python">
+
+m1=random.choice([0.5,2,5])
+v1=random.choice([0.4,1.2,2.5])
+m2=random.choice([0.5,2,5])
+v2=random.choice([0.4,1.2,2.5])
+v=math.sqrt(( m1* v1)*( m1* v1)+( m2* v2)*( m2* v2))/( m1+ m2)
+
+</script>
+<p><img width="400" alt="BK50" src="/static/problems/MIT/rayyan/check_points/Pictures/BK50.png"/></p>
+
+<p>Two spheres move in perpendicular directions on a horizontal frictionless table. Their masses and velocities are: $m1 kg; $v1 m/s and $m2 kg; $v2 m/s. The spheres collide inelastically (they stick to each other) and slide together on the table after the collision. </p>
+
+<p>Part 1. Consider the system to be both spheres. Is the momentum of the system conserved during the collision? Choose the best answer.</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                <text>Yes</text>
+          </choice>
+          <choice name="foil2" correct="false">
+                <text>No, because the collision is not elastic</text>
+          </choice>
+          <choice name="foil3" correct="false">
+                <text>No, because the spheres interact with the table</text>
+          </choice>
+          <choice name="foil4" correct="false">
+                <text>No, because the spheres interact with the Earth</text>
+          </choice>
+          <choice name="foil5" correct="false">
+                <text>No, because the spheres move in different directions before the collision</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 2. During the collision, which of the spheres experiences a greater impulse?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                <text>Neither; each sphere experiences zero impulse</text>
+          </choice>
+          <choice name="foil2" correct="true">
+                <text>Neither: each sphere experiences a non-zero impulse of the same magnitude</text>
+          </choice>
+          <choice name="foil3" correct="false">
+                <text>The sphere with the greater mass</text>
+          </choice>
+          <choice name="foil4" correct="false">
+                <text>The sphere with the greater initial speed</text>
+          </choice>
+          <choice name="foil5" correct="false">
+                <text>The sphere with the greater initial momentum</text>
+          </choice>
+          <choice name="foil6" correct="false">
+                <text>The sphere with the smaller mass</text>
+          </choice>
+          <choice name="foil7" correct="false">
+                <text>The sphere with the smaller initial speed</text>
+          </choice>
+          <choice name="foil8" correct="false">
+                <text>The sphere with the smaller initial momentum</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 3. What is the speed of the spheres after the collision?</p>
+
+<p>\(v=\)</p>
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+  </problem>
+</html>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Newton's 2nd Law 2</title>
+
+      <p><h3>Check Your Understanding of Newton's Second Law</h3>
+Suppose an object is initially sliding due east at constant speed on very slippery ground (obeying Newton's First Law) when it is suddenly acted on by a force that acts due north.  What is the direction of the object's acceleration?<br/> </p>
+
+    <br/>
+    <multiplechoiceresponse texlayout="horizontal" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="Foil1" correct="true">
+
+              The object will accelerate due north.
+
+            <block>
+              <solved>
+                <br/>
+                <font color="green" size="-1">
+                  <i>
+Correct.  Since the object was experiencing zero total force before the application of the new force, this new force will equal the net force.  Thus, the object will accelerate along the direction of the force.
+</i>
+                </font>
+              </solved>
+            </block>
+            <br/>          
+        </choice>
+        <choice location="random" name="Foil2" correct="false">
+
+              The object will accelerate due east.
+
+            <block>
+              <solved>
+                <br/>
+                <font color="red" size="-1">
+                  <i>
+Incorrect.  Newton's 2nd Law says that the acceleration of the object will be in the direction of the total <b>force</b>, not necessarily the direction of the <b>motion</b>.  If an object could only accelerate along the direction of motion, then objects could only speed up, never slow down or turn.  Also, how would an object at rest start moving?
+</i>
+                </font>
+              </solved>
+            </block>
+            <br/>          
+        </choice>
+        <choice location="random" name="Foil3" correct="false">
+			<p>The object will accelerate north of east, but closer to north than east (&gt; 45&#xB0; N of E).
+
+            <block>
+              <solved>
+                <br/>
+                <font color="red" size="-1">
+                  <i>
+Incorrect. The motion of the object is <b>not</b> a force, and therefore does not affect the acceleration.
+</i>
+                </font>
+              </solved>
+            </block>
+            <br/>          
+        </choice>
+        <choice location="random" name="Foil4" correct="false">
+			<p>The object will accelerate north of east, but closer to east than north (&lt; 45&#xB0; N of E).
+
+            <block>
+              <solved>
+                <br/>
+                <font color="red" size="-1">
+                  <i>
+Incorrect. The motion of the object is <b>not</b> a force, and therefore does not affect the acceleration.
+</i>
+                </font>
+              </solved>
+            </block>
+            <br/>          
+        </choice>
+        <choice location="random" name="Foil5" correct="false">
+			<p>The object will accelerate exactly north-east (exactly 45&#xB0; N of E).
+
+            <block>
+              <solved>
+                <br/>
+                <font color="red" size="-1">
+                  <i>
+Incorrect. The motion of the object is <b>not</b> a force, and therefore does not affect the acceleration.
+</i>
+                </font>
+              </solved>
+            </block>
+            <br/>          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Escape Speed </title>
+    <script type="loncapa/python">
+	
+v=random.choice([4700,6200,8500])
+
+ve= v* math.sqrt(2)
+
+</script>
+
+      <p>
+A satellite orbits a planet at a constant speed of $v m/s. What is the escape speed from the orbit of the satellite?
+</p>
+      <br/>
+      \(v_{escape}=\)
+
+    <numericalresponse answer="$ve" unit="m/s">
+      <responseparam default="5%" type="tolerance"/>
+      <textline math="1"/>
+    </numericalresponse>
+  </problem>
+</html>

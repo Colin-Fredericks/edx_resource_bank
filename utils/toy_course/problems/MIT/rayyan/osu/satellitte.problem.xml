@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/satellite_energy.png" alt="satellite_energy" height="250"/>
+
+      <p>Which satellite orbits at a higher speed v around earth?  Assume that the orbits are circular and both satellites have the same mass.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<text>\(V_A &lt; V_B\)</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>\(V_A &gt; V_B\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<text>\(V_A = V_B\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+            <text>Cannot be calculated</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

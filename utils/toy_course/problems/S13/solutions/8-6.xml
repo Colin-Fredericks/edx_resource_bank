@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<!-- Problem 2 -->
+<problem>
+
+<h3>Solution</h3>
+
+<img src="/static/problems/S13/solutions/images/8-6.png" />
+
+<p>Since the pivot B is free, the only pivot force is the vertical normal force.</p>
+<p><i>\(\vec{F}\)<sub>total</sub> = m<sub>total</sub>\(\vec{a}\)<sub>cm</sub></i></p>
+<p><i>-N + mg = ma</i></p>
+<p><i>\(\vec{\tau}_{B}\) = I<sub>B</sub>\(\vec{\alpha}\)</i></p>
+<p><i>\({l\over 2}\)mg = \({1\over 3}\)ml<sup>2</sup>\(\alpha\)</i></p>
+<p><i>\(\alpha\) = \({3\over 2}\)\({g\over l}\)</i></p>
+
+<p>The angular acceleration and vertical accelerations are related by:</p>
+<p>a = \({l\over 2}\)\(\alpha\)</p>
+<p>a = \({3\over 4}\)g</p>
+<p><i>N = mg - ma = \({1\over 4}\)mg</i></p>
+
+</problem>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Massive Pulley </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.5,1.2,2.5])
+r=random.choice([0.15,0.20,0.24])
+M=random.choice([0.8,1.4,1.9])
+
+ans=(2* M/( m + 2* M))*(9.8/ r)
+
+</script>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK83.png" alt="BK83"/>
+    <p>A uniform solid disc of mass $m kg and radius $r m  is free to rotate on a horizontal frictionless axle passing through the center of the disc. A long light string is wrapped around the disc; a block of mass $M kg is suspended on the stringas shown. The system is released from rest, and the block begins to descend. Find the magnitude of the angular acceleration \(\alpha\) of the disc. Enter your answer in rad/s<sup>2</sup> and use g = 9.8 m/s<sup>2</sup>.</p>
+
+<p>\(\alpha=\)</p>
+
+      <numericalresponse answer="$ans" unit="rad/s^2">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

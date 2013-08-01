@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 30 in post-test -->
+
+<problem>
+
+	<p>You are a policeman investigating a car crash. Car #1 crashed into a stationary car #2. There is no indication that the driver of car #1 applied the 
+	brakes before the collision. After the collision, the two cars stuck together and slid until they came to rest. </p>
+
+	<h3>Part 1</h3>
+	<br/>
+	<p>Your goal is to determine whether car #1 was speeding before the collision. Consider the following steps for determining the speed of car #1.</p>
+	<p>
+
+	<ol>
+		<li> Measure the length (d) of the skid marks for the cars to determine how far they slid after the crash.</li>
+		<li> Look up the coefficient of kinetic friction ( \( \mu \) ) between the car tires and the ground.</li>
+		<li> Look up the masses of the two cars (m<sub>1</sub>, m<sub>2</sub>).</li>
+		<li> Find the amount of work done by friction as the cars slide, using the definition of work:
+		 \( Work = \int{\vec{F} \cdot d\vec{x}} = -\mu \left( m_1 + m_2 \right) g d \).</li>
+    	<li> Use conservation of energy to determine the speed of the cars just after the crash, \(v_f\), via the equation 
+    	\( \frac{1}{2} ( m_1 + m_2) v_f^2 = \mu ( m_1 + m_2 ) g d \).</li>
+		<li> Use conservation of energy to determine the initial velocity of the first car, \(v_1\), via the equation 
+		\( \frac{1}{2} m_1 v_1^2  = \frac{1}{2} (m_1 + m_2) v_f^2 \).</li>
+		<li> Compare \(v_1\) to the speed limit to see whether the car was speeding.</li>
+	</ol>
+
+	</p>
+	<p>That solution has an error. At what step does this error appear? (Enter a number from 1 to 7). </p>
+
+	<numericalresponse answer="6">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+	</numericalresponse>
+
+</problem>
+
+</html>

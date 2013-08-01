@@ -1,0 +1,67 @@
+<chapter display_name="Homework for Unit 6: Applying SIM to Problems in Planar Dynamics">
+	<sequential display_name="Applying SIM to Problems in Planar Dynamics Homework" url_name="Applying_SIM_to_Problems_in_Planar_Dynamics_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Projectile Launch Angle" filename="MRI32.vert" />
+		<vertical display_name="Special Projectile">
+			<problem display_name="Special Projectile" filename="MIT/rayyan/check_points/BK/BK35.problem" attempts="4" weight="1"/>
+			<discussion for="Special Projectile" id="MReV_Summer2013_BK35" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Projectile on a distant planet 2">
+			<problem display_name="Projectile on a distant planet 2" filename="MIT/rayyan/check_points/BK/BK40.problem" attempts="20" weight="1"/>
+			<discussion for="Projectile on a distant planet 2" id="MReV_Summer2013_BK40" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Pendulum" filename="MRI13.vert" />
+		<vertical display_name="Projectile Landing Angle" filename="MRI31.vert" />
+		<vertical display_name="Projectile">
+			<problem display_name="Projectile" filename="MIT/rayyan/check_points/BK/BK34.problem" attempts="4" weight="1"/>
+			<discussion for="Projectile" id="MReV_Summer2013_BK34" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Dual Projectiles 1" filename="MRI33.vert" />
+		<vertical display_name="Dual Projectiles 2" filename="MRI34.vert" />
+
+<!-- Level 2 -->
+
+		<vertical display_name="Bugs on a Wheel" filename="MRI35.vert" />
+
+<!-- Level 3 -->
+
+		<vertical display_name="Central Force Motion">
+			<problem display_name="Central Force Motion" filename="MIT/rayyan/Physics801/Symbolic/Central Field Motion.problem" attempts="10" weight="3"/>
+			<discussion for="Central Force Motion" id="MReV_Summer2013_Central_Field_Motion" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="One Person Catch">
+			<problem display_name="One Person Catch" filename="MIT/rayyan/Physics801/Symbolic/One Person Catch.problem" attempts="10" weight="3"/>
+			<discussion for="One Person Catch" id="MReV_Summer2013_One_Person_Catch" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Skier">
+			<problem display_name="Skier" filename="MIT/rayyan/Physics801/Symbolic/Skier.problem" attempts="10" weight="3"/>
+			<discussion for="Skier" id="MReV_Summer2013_Skier" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Projectile Angle">
+			<problem display_name="Projectile Angle" filename="MIT/rayyan/Physics801/Symbolic/Projectile Angle.problem" attempts="10" weight="3"/>
+			<discussion for="Projectile Angle" id="MReV_Summer2013_Projectile_Angle" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Drag race conundrum">
+			<problem display_name="Drag race conundrum" filename="MIT/boriskor/Multiconcept Problems/Drag race conundrum.problem" attempts="10" weight="3"/>
+			<discussion for="Drag race conundrum" id="MReV_Summer2013_Drag_race_conundrum" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Car speeding up from rest around a circular track">
+			<problem display_name="Car speeding up from rest around a circular track" filename="MIT/boriskor/Multiconcept Problems/Car speeding up on a circular track.problem" attempts="10" weight="3"/>
+			<discussion for="Car speeding up from rest around a circular track" id="MReV_Summer2013_Car_speeding_up_on_a_circular_track" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="The reading of a bathroom scale at the equator of a mystery planet">
+			<problem display_name="The reading of a bathroom scale at the equator of a mystery planet" filename="MIT/boriskor/Multiconcept Problems/Bathroom scale reading on a mystery planet.problem" attempts="2" weight="3"/>
+			<discussion for="The reading of a bathroom scale at the equator of a mystery planet" id="MReV_Summer2013_Bathroom_scale_reading_on_a_mystery_planet" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Finding the period of a satellite using the value of g">
+			<problem display_name="Finding the period of a satellite using the value of g" filename="MIT/boriskor/Multiconcept Problems/Finding the period of a satellite.problem" attempts="2" weight="3"/>
+			<discussion for="Finding the period of a satellite using the value of g" id="MReV_Summer2013_Finding_the_period_of_a_satellite" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="U-control airplane">
+			<problem display_name="U-control airplane" filename="MIT/rayyan/problemset/hw2/U2_problem2.problem" attempts="10" weight="3"/>
+			<discussion for="U-control airplane" id="MReV_Summer2013_U2_problem2" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+</chapter>

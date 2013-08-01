@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/hanging_2.png" alt="hanging_2" height="200"/>
+
+      <p><br/>
+If you cut the rope between Man A and the roof,  what is the tension, \(T_B\), in the bottom rope? Assume the ropes are massless and use g = 10 \(m/s^2\). Ignore any oscillations resulting from cutting the rope.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+
+              0N          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              200N          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              700N          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              900N          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              1600N          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              None of the Above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

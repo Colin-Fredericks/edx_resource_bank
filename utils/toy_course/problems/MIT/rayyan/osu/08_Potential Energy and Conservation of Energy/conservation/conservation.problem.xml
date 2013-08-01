@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/conservation.png" alt="conservation" height="150"/>
+
+      <p>A child starting from rest slides down each of the four frictionless slides A to D. Each has the same vertical height. Rank, from largest to smallest, her speeds \(v_A\) to \(v_D\) at the bottom.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+            <text>\(v_A=v_B=v_C=v_D\)</text>
+        </choice>
+        <choice name="foil2" correct="false">
+			<text>\(v_D&gt;v_A=v_B&gt;v_C\)</text>
+        </choice>
+        <choice name="foil13" correct="false">
+			<text>\(v_D&gt;v_A&gt;v_B&gt;v_C\)</text>
+        </choice>
+        <choice name="foil1\4" correct="false">
+			<text>\(v_C&gt;v_A=v_B&gt;v_D\)</text>
+        </choice>
+        <choice name="foil5" correct="false">
+			<text>\(v_A&gt;v_B&gt;v_C&gt;v_D\)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

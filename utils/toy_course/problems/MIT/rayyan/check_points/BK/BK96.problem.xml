@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Swinging Rod </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.80,1.20,3.0])
+l=random.choice([0.80,1.20,1.8])
+
+I=7* m* l* l/48
+
+o1= math.sqrt(24/ l*9.8/7)
+o2= math.sqrt(48/ l*9.8/7)
+v= math.sqrt(27* l*9.8/14)
+w=1/2*I*o1*o1
+
+</script>
+
+<p>A uniform rod of mass $m kg and length $l m is pivoted in the horizontal position as shown (black point). The rod is at rest and then released. The acceleration due to gravity is g = 9.8 m/s<sup>2</sup>.</p>
+<br/><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK96.PNG" alt="BK95"/>
+
+<br/>
+<p>Part 1. Find the rotational inertia of the rod relative to the axis perpendicular to the screen 
+and passing through the pivot point (in kg m<sup>2</sup>, but do not include units).</p>
+
+\(I =\)
+
+      <numericalresponse answer="$I" unit="kg*m^2">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Part 2. As the rod swings downward, its angular speed velocity and the magnitude of its angular acceleration, respectively:</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                increases; stays constant
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                decreases stays constant
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                increases; increases
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                decreases; increases
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                increases; decreases 
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                decreases; decreases
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 3. What is the angular speed (in rad/s, but do not include units) of the rod as it passes through the vertical position (when end marked B is at the bottom)?</p>
+
+\(\omega =\)
+
+      <numericalresponse answer="$o1" unit="rad/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 4. What is the linear speed of the bottom end of the rod (marked B) when it passes the vertical position?(in m/s, but do not include units)</p>
+
+\(v=\)
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<!--
+<p>Part 5. What is the rotational work done by gravity during the trip?(in J, but do not include units)</p>
+
+\(W=\)
+
+      <numericalresponse answer="$w" unit="rad/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+-->
+</problem>
+</html>

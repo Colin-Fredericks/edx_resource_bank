@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Example: Car on a Barge</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Example 2: Unloading a car from a barge</h3>
+A barge of mass <i>M</i> is at rest and tied to a pier by a cable. A car of mass <i>m</i> is at rest at the left end of the barge as shown in the figure. A workman of negligible mass drives the car with a constant acceleration from the left to the right end. The car attains a speed <i>v<sub>c</sub></i> in a time <i>T</i>  when it reaches the right end of the barge. Assume that the barge does not move while the car is moving from left to right.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmCarBoat.png"/>
+</p><p>a) Is the velocity of the center of mass of the car + barge system constant?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht40','hide','show')" id="ht40l">show</a>]</th></tr>
+<tr style="display:none" id="ht40">
+<td><b>No</b>. The sum of the external forces on the system is equal to the force exerted on the barge by the cable, then the acceleration of the center of mass is <b>not zero</b> and the velocity of the center of mass is not constant.
+</td></tr></table>
+<p>b) What is the magnitude and direction of the force exerted on the barge by the cable while the car is moving from left to right?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht41','hide','show')" id="ht41l">show</a>]</th></tr>
+<tr style="display:none" id="ht41">
+<td><b>magnitude: <i>m</i><i>v</i><sub><i>c</i></sub> / <i>T</i></b>
+<p><b>direction:</b> towards the pier, along the +x axis.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Derivation:</b>
+ [<a href="javascript:toggleDisplay('ht42','hide','show')" id="ht42l">show</a>]</th></tr>
+<tr style="display:none" id="ht42">
+<td>There are several ways to approach the problem. We will use the concept of center of mass.
+<p>We will consider the time interval during which the car moves with a constant acceleration from left to right.
+</p><p><u><b>System:</b></u> Car + barge treated as point particles belonging to a single system
+</p><p><u><b>Interactions:</b></u>
+</p>
+<ul style="list-style:disc outside none"><li><b>External:</b>
+<ul style="list-style:disc outside none"><li>Car and barge with Earth. 
+</li><li> The barge and surrounding water. The barge does not move relative to the water, then we can neglect friction and the resulting force exerted by the water on the barge is the buoyancy force vertically up. 
+</li><li> The barge and the cable. The resulting force is the unknown force of magnitude <b>f</b>.
+</li></ul>
+</li><li><b>Internal:</b>
+<ul style="list-style:disc outside none"><li> Car and barge. The resulting contact forces are the normal and friction forces. These are Newton's 3rd law pairs that will not change the motion of the center of mass of the cart-barge system.
+</li></ul>
+</li></ul>
+<p>The net external force on the system is the force exerted by the cable on the barge:
+\(\sum \vec{F}^{ext}=\vec{f}\)
+</p><p>In terms of the acceleration of the center of mass:
+</p><p>\(\vec{f}=(M+m)\vec{a}_{cm}\)
+</p><p><br/>
+If the accelerations of the car and the barge are \( \vec{a}_c\) and \(\vec{a}_b\), respectively, then the acceleration of the center of mass is:
+</p><p>\(\vec{a}_{cm}=\frac{m\vec{a}_c+M\vec{a}_b}{m+M}\)
+</p><p>If the barge remains at rest while the car is moving, then:
+\(\vec{a}_b = 0\). 
+</p><p>The car's acceleration is assumed to be constant, therefore
+\(\vec{a}_c=v_c/T\;\hat{i}\). 
+</p><p>Replacing these values in the above expression we have:
+</p><p>\(\vec{a}_{cm}=\frac{m v_c/T\hat{i} + M\;0}{m+M} =\frac{m }{m+M}\frac{v_c}{T}\hat{i}\)
+</p><p>and the force exerted on the barge by the cable is:
+</p><p>\(\vec{f} = (m+M)\vec{a}_{cm}=m v_c/T\;\hat{i}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Example: Pulling 2 Boxes</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example Revisited: Pulling two boxes connected by a rope</h3>
+
+<p>In this unit we will justify, based on Newton's 3<sup>rd</sup> law, that a system consisting of multiple objects can also be treated as a point particle. For this purpose we will consider the example of pulling two boxes connected by a rope that we used in the previous module.</p>
+
+<p>Two boxes of masses m<sub>1</sub> and m<sub>2</sub> are connected by an ideal rope (Rope A in the figure). A second ideal rope, Rope B, is attached to m<sub>2</sub>. A person, with non-skid shoes, is pulling Rope B with a horizontal force of magnitude F along a horizontal surface with no friction with the blocks.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/PullingTwoBoxesIntro.png"/></p>
+
+<p><b>System:</b> We will consider the system to be both boxes and rope A.</p>
+
+<p><b>Interactions:</b> As before, we identify the internal and external interactions:</p>
+
+<p>&#160;</p>
+
+<ul style="list-style:disc outside none">
+	<li><b>Box 1</b>&#160;interacts with the Earth, the surface and Rope A.</li>
+	<li><b>Rope A</b> interacts only with both boxes, it does not interact with the Earth because is assumed to be massless.</li>
+	<li><b>Box 2</b> interacts with the Earth, the surface, Rope A and Rope B.</li>
+</ul>
+
+<p>The forces resulting from these interactions are listed in the following tables for each element of the system. We include the force diagram of each of the objects.</p>
+
+<p>&#160;</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module2/files/FBDBox12RopeAc.png"/></p>
+
+<p>&#160;</p>
+
+<p>For the system of both boxes, we now find the net force.</p>
+
+<p>Looking at the summary of interactions above, we can come to one fundamental conclusion that can be stated in two equivalent ways:</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Internal forces come in opposing pairs and cancel.</b> [<a href="javascript:toggleDisplay('ht0','hide','show')" id="ht0l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht0">
+<td>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>1. Internal Forces come in opposing pairs:</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<p>								When multiple objects inside the system interact with each other, there are <b>internal forces</b>. This is illustrated in the above example where there are three objects and two pairs of them have interaction. For each pair of interacting objects there is a pair of Newton's 3<sup>rd</sup> Law forces.</p>
+<ul style="list-style:disc outside none">
+<li>The interaction between Box 1 and Rope A results in the following pair of internal forces:</li>
+</ul>
+<dl>
+<dd>
+\(\vec{F}_{1A}\), tension force exerted on Box 1 by Rope A</dd>
+</dl>
+<dl>
+<dd>
+\(\vec{F}_{A1}\), tension force exerted on Rope A by Box 1</dd>
+</dl>
+<dl>
+<dd>These two forces are a Newton's 3rd Law pair: \(\vec{F}_{1A} = -\vec{F}_{A1}\)</dd>
+</dl>
+<p>								&#160;</p>
+<ul style="list-style:disc outside none">
+<li>The interaction between Box 2 and Rope A results in the following internal forces:</li>
+</ul>
+<dl>
+<dd>
+\(\vec{F}_{2A}\), tension force exerted on Box 2 by Rope A</dd>
+</dl>
+<dl>
+<dd>
+\(\vec{F}_{A2}\), tension force exerted on Rope A by Box 2</dd>
+</dl>
+<dl>
+<dd>These two forces are a Newton's 3rd Law pair: \(\vec{F}_{2A} = -\vec{F}_{A2}\)</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>2. The internal forces cancel.</b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+<p>
+We will now calculate the net force on the whole system. This is the sum of the net force on Box 1, the net force on Rope A, and the net force on Box 2:</p>
+<p>
+\(\vec{F}_{net}=\sum{\vec{F}_{box 1}} + \sum{\vec{F}_{rope A}}+\sum{\vec{F}_{box 2}}\)</p>
+<p>
+<br/>
+Applying Newton's 2<sup>nd</sup> Law to each element of the system:</p>
+<p>								&#160;</p>
+<table>
+<tbody>
+
+<tr>
+<td>
+\(\sum{\vec{F}_{box 1}}\)</td>
+<td>
+\( = \vec{F}_{1E}+\vec{F}_{1S}+\vec{F}_{1A}\)</td>
+<td>
+\(=m_{1}\vec{a}_{1}\)</td>
+<td>		&#160;&#160; (eq. 1)</td>
+</tr>
+<tr>
+<td>
+\(\sum{\vec{F}_{rope A}}\)</td>
+<td>
+\(= \vec{F}_{A1}+\vec{F}_{A2}\)</td>
+<td>
+\( = m_{A}\vec{a}_{A}\)</td>
+<td>		&#160;&#160; (eq. 2)</td>
+</tr>
+<tr>
+<td>
+\(\sum{\vec{F}_{box 2}}\)</td>
+<td>
+\( = \vec{F}_{2E}+\vec{F}_{2S}+\vec{F}_{2A} + \vec{F}_{2B}\)</td>
+<td>
+\( = m_{2}\vec{a}_{2} \)</td>
+<td>		&#160;&#160; (eq. 3)</td>
+</tr>
+</tbody>
+</table>
+<p>
+<br/>
+Because there is no vertical acceleration, the sum of the vertical forces must be zero:</p>
+<p>
+\(\vec{F}_{1E}+\vec{F}_{1S} = 0 \) and \( \vec{F}_{2E}+\vec{F}_{2S} = 0\).</p>
+<p>
+<br/>
+Adding the left hand side of (eqs. 1, 2 and 3) the net force on the system is given by:</p>
+<p>
+\(\vec{F}_{net}=\vec{F}_{1A}+\vec{F}_{A1}+\vec{F}_{A2}+\vec{F}_{2A}+\vec{F}_{2B}\)</p>
+<p>
+<br/>
+and because the <b>internal forces come in opposing pairs</b>:</p>
+<p>
+\(\vec{F}_{1A} = -\vec{F}_{A1}\) and \(\vec{F}_{2A} = -\vec{F}_{A2}\)</p>
+<p>
+<br/>
+the <b>internal forces will cancel from the net force</b> acting on the system:</p>
+<p>
+<br/>
+\(\vec{F}_{net}= \vec{F}_{2B}\)</p>
+<p>
+<br/>
+Note that the force exerted on Box 2 by Rope B is the net external force acting on the system. We can generalize this result and say that in any multi-body system <i>the internal forces come in opposing pairs and cancel when we calculate the net force acting on a system</i>. Therefore, the net force acting on the system is equal to the sum of the external forces:</p>
+<blockquote>
+\(\vec{F}_{net} = \sum \vec{F}^{ext}\)</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>or, equivalently,</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Only external forces are relevant to the system's acceleration.</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<p>We conclude from the previous discussion that when we add all the forces acting on and within the "Box 1- Rope A - Box 2" system, the internal forces cancel in pairs and <i> only the external forces contribute to the net force</i>. Now we focus our attention on the acceleration of the system. In this particular example, the boxes are connected by the ideal Rope A which constrains the boxes to move together. Since the rope does not stretch or become slack, when Box 2 moves 1 m to the right, Box 1 also moves the same distance to the right. As a result, the boxes always have the same velocity and acceleration (same magnitude and direction):</p>
+<p>
+\( \vec{a}_{1} = \vec{a}_{A} = \vec{a}_{2} = \vec{a}_{system}\)</p>
+<p>When adding (eq. 1, 2 and 3) we obtain:</p>
+<p>
+<br/>
+\(\vec{F}_{2B} = (m_{1} + m_{A} + m_{2})\vec{a}_{system}\)&#160;&#160;&#160;&#160;&#160;&#160; (eq. 4)</p>
+<p>where  <i>m<sub>1</sub></i> + <i>m<sub>A</sub></i> + <i>m<sub>2</sub></i> is the total mass of the system,<i> m<sub>total</sub></i>. Because the rope is ideal its mass is zero, so the total mass becomes <i>m<sub>total</sub> = m<sub>1</sub></i> + <i>m<sub>2</sub></i>. The acceleration of the system points to the right (the same direction as the pulling force) and has a magnitude of <i>a<sub>system</sub> = F<sub>2B</sub></i>/(<i>m<sub>1</sub> </i>+ <i>m<sub>2</sub></i>).</p>
+<p>The left hand side of (eq. 4) is the net external force acting on the system, therefore we conclude that <i> only external forces are relevant to the system's acceleration</i>. Newton's Second Law for a multi-body system where all the objects are moving with the same acceleration becomes:</p>
+<p>
+\(\sum \vec{F}^{ext} = m_{total}\vec{a}_{system}\) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(eq. 5)</p>
+<p>where the tag "ext" indicates that only external forces need to be summed, <i>m<sub>total</sub></i> implies that the total mass of the system should be used, and the tag "system" implies that the resulting acceleration is the acceleration of the system (which is equal to the acceleration of each object in the system).</p>
+<p>In the above example, both boxes have the same acceleration in magnitude and direction because the boxes are constrained to move together by the connecting rope. The multi-body system examples that you will see in the next two modules involve internal forces (e.g ropes, contact forces) that impose the same type of <b>constraint in the motion:</b> the objects in the system move with the same velocity and acceleration. In such cases, the multi-body system can be treated as a point particle of total mass <i>m<sub>total</sub></i> moving under the action of the external forces. For the Box 1 - Rope A - Box 2 system above, the free body diagram of the system is shown in the following figure with only external forces:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module2/files/2boxRopeASystem2.png"/></p>
+<p>where only the external forces appear.</p>
+<p>This approach of considering a multi-object system where the internal forces cancel will be extended via the concept of the center of mass of a system. This concept will become relevant in the more complex multi-body systems discussed in the unit of Momentum and Impulse . The constituents of those systems can each have different accelerations. Newton's second law for those systems is expressed as in (eq. 5) where the acceleration of the system is the acceleration of the center of mass of the system.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+

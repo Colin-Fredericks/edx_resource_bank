@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI20-1.problem" display_name="Projectile Momentum and Energy" attempts="1" weight="0.5"/>
+	<problem filename="F12/MRI/MRI20-2.problem" display_name="Projectile Momentum and Energy, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Projectile Momentum and Energy" id="MReV_Summer2013_MRI20" discussion_category="Mechanical Energy and Work" />
+</vertical>

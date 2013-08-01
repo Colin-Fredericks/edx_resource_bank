@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Example: Tug of War</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Examples: Tug-of-War</h3>
+How does the tension in a rope affect the participants in a tug-of-war?  Conversely, how do the participants affect the tension?  Consider the following two cases.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Case 1: Rope Held at Both Ends</b>
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td>A massless rope held at both ends will exert a force of the same size (size <i>T</i> in the FBD's drawn here) on the object at each end.  The forces will point directly along the rope as shown in the free body diagrams of the two people pulling the rope in the example below:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module3/files/Unit1Mod6Rope2c.png"/>
+</p><p><br/>
+</p>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Case 2: Multiple Contact Points</b>
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td>A massless rope held at a point in the middle of its length will be treated as if it were divided into two ropes at that midpoint.  Thus, the two situations drawn below are equivalent <i>for the purposes of analyzing the <b>motion</b> of the people involved</i> and will <i>each</i> produce the FBD's shown below.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module3/files/Unit1Mod6Rope345d.png"/>
+</p>
+</td></tr></table>
+</body>
+</html>
+

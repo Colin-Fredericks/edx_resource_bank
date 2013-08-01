@@ -1,0 +1,9 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>Did you receive any scholarship or financial assistance to attend secondary school?</p>
+	<multiplechoiceresponse>
+		<choicegroup direction="vertical">
+			<choice correct="true" name="yes"><text>Yes</text></choice>
+			<choice correct="true" name="no"><text>No</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+</problem>

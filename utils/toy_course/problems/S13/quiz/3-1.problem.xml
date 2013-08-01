@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Comparing tesnsions in a chain of objects -->
+
+<problem>
+
+<img src="/static/problems/S13/quiz/images/3-1.png" />
+
+<p>Four blocks (M1 through M4) are roped together; all slide on a flat surface with the same coefficient of friction. Blocks 1, 2, and 4 have the same mass, but block 3 is lighter. Tensions in the ropes between them are T<sub>A</sub>, T<sub>B</sub>, and T<sub>C</sub> as shown. An outside force, F, pulls M1 to the left.</p>
+
+<p>Compare the situation shown above with one where blocks 2 and 3 have been switched, as shown below.</p>
+
+<img src="/static/problems/S13/quiz/images/3-1a.png" />
+
+<p>In this new situation...</p>
+
+<p>T<sub>A</sub> is:</p>
+<optionresponse>
+	<optioninput
+	options="('lower','higher','the same')"
+	correct="the same"/>
+</optionresponse>
+
+<p>T<sub>B</sub> is:</p>
+<optionresponse>
+	<optioninput
+	options="('lower','higher','the same')"
+	correct="higher"/>
+</optionresponse>
+
+<p>T<sub>C</sub> is:</p>
+<optionresponse>
+	<optioninput
+	options="('lower','higher','the same')"
+	correct="the same"/>
+</optionresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Question Week 13 Day 2</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">For each day's reading question, write your name, section, table, and group number on the upper right hand corner of your answer and hand it in at the start of class that day</b>
+  </p>
+  <p>
+    <b class="bfseries">Nov 30/Dec 1 W13D2</b>
+    <b class="bfseries">Angular Harmonic Oscillator, Simple and Physical Pendulum</b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman: Chapter 14.4-14.6 </p>
+  <p>
+    <b class="bfseries">Reading Question </b>
+  </p>
+  <p>
+(1) In Young and Freedman section 14.5, the angle \(\theta\) is introduced to describe the motion of the simple pendulum and we have already used the symbol \(\omega\) for angular speed \(\omega =d\theta /dt\) . The symbol \(\omega\) is also used to describe the angular frequency \(\omega =2\pi /T\) . Explain the difference between angular speed and angular frequency for the simple pendulum for motion in which the angle \(\theta\) is small. </p>
+  <p>
+(2) Explain how a mechanical watch based on a spring keeps time. Is a small angle approximation used in this case? (b) Explain how you can measure the moment of inertia of a complicated shaped object by treating it as a physical pendulum. </p>
+</problem>

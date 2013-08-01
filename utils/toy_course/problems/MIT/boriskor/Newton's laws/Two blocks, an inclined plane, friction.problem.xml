@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+    <script type="loncapa/python">
+M_2_min="M_1 *sin(theta)- mu_s*M_1*cos(theta)"
+M_2_max="M_1 *sin(theta)+ mu_s*M_1*cos(theta)"
+</script>
+
+    <img src="/static/problems/MIT/boriskor/BKimages/prob75_fricpullplane.gif" alt="Two blocks with a pulley and an incline"/>
+
+	<p>In the diagram, \(M_1\) and \(\theta\) are given. The coefficient of static friction between \(M_1\) and the incline is \(\mu_s\).</p>
+	<p>You can type \(M_1\), \(\theta\), and \(\mu_s\) as M_1, theta, and mu_s respectively.</p>
+
+	<p>Find the minimum value of \(M_2\) that would keep the system in equilibrium.</p>
+
+	<p>\[M_{2}_{min}=\]</p>
+
+	<formularesponse answer="$M_2_min" samples="M_1,theta,mu_s@4,5,2:10,60,4#2">
+		<responseparam default="1%" type="tolerance"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+
+    <hr/>
+
+	<p>Find the maximum value of \(M_2\) that would keep the system in equilibrium.</p>
+
+	<p>\(M_2_{max}=\)</p>
+
+	<formularesponse answer="$M_2_max" samples="M_1,theta,mu_s@4,5,2:10,60,4#2">
+		<responseparam default="1%" type="tolerance"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

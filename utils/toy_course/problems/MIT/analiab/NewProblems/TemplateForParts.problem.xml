@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+a= "(m*v^2)/L-m*g*sin(theta)"
+b= "arcsin(v^2/(L*g))"
+c= "sqrt(L*g)"
+
+</script>
+    <img src="/static/analiab/NewProblems/files/AnObjectInCircularMotion.png" alt="p1a" texwrap="none" align="top"/>
+    <br/>
+
+    <p>
+Intro
+
+</p>
+
+Part a
+    <br/>
+
+      <formularesponse answer="$a" samples="g,theta,m,v,L@1,1,1,1,1:10,10,10,10,10#4">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>
+Part b
+</p>
+
+      <formularesponse answer="$b" samples="v,L,g@.1,1,1:.9,10,10#4">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>
+Part c
+
+</p>
+
+      <formularesponse answer="$c" samples="L,g@1,1:10,10#3">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+  </problem>
+</html>

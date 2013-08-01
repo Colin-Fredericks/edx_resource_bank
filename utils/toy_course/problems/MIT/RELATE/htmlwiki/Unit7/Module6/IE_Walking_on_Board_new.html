@@ -1,0 +1,301 @@
+<html>
+<head>
+<title>Example: Walking on a Board</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Walking and running along a slab.</h3>
+<p><b>Walking along a slab</b></p>
+<p>A child of mass <i>m</i> is standing at the left end of a thin and uniform slab of wood of length <i>L</i> and mass <i>M</i>. The slab lies on a horizontal and frictionless icy surface of a lake. Starting with both the child and slab at rest, the child walks towards the right end of the slab. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmChildSlab.png"/>
+</p><p><b>a)</b> How far and in what direction did the center of mass of the child-slab system move when the child has reached the right end of the slab?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht27','hide','show')" id="ht27l">show</a>]</th></tr>
+<tr style="display:none" id="ht27">
+<td>The center of mass <b>does not move</b> while the child is walking along the slab. It remains where it was when the child was at the left end of the slab.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht28','hide','show')" id="ht28l">show</a>]</th></tr>
+<tr style="display:none" id="ht28">
+<td>The time interval of interest is the one it takes the child to walk along the slab from one end to the other. It starts at the instant <i>t<sub>i</sub></i> when the child is at the left end of the slab ready to move towards the right end. At this instant both the slab and the child are at rest. The interval ends at the instant <i>t<sub>f</sub></i> when the child has reached the right end of the slab and stops walking relative to the slab.
+<p><u><b>System:</b></u> child and slab treated as point particles.
+</p><p><u><b>Interactions:</b></u>
+</p>
+<ul style="list-style:disc outside none"><li><b>External:</b> If we neglect friction between the surface and the slab, then the external forces on the system are all vertical: gravity on the child, gravity on the slab and the normal exerted by the surface on the slab. These forces cancel each other and the <i><b>net external force on the system is zero</b></i>.
+</li></ul>
+<ul style="list-style:disc outside none"><li><b>Internal:</b>The contact force between the child and slab. The internal interactions do not affect the motion of the center of mass of the system but they affect the motion of the system constituents. The motion of the child and slab are due to the horizontal components of the internal forces <i><b>F<sub>CS</sub></b></i> and <i><b>F<sub>SC</sub></b></i>.
+</li></ul>
+<table>
+<tr>
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/ChildSlabPicture1.png"/>
+</td></tr>
+<tr>
+<td>The horizontal component of the internal force exerted on the child by the slab, <i><b>F<sub>CS</sub></b></i>, is the action reaction pair of the horizontal force exerted on the slab by the child, <i><b>F<sub>SC</sub></b></i>.
+</td></tr></table>
+<p>As a result of the existing internal forces, the child moves to the right and the slab moves to the left in such a way that the center of mass of the system remains stationary as explained in 1., 2, and 3. below.
+</p><p><font color="purple"><b>1. Net External Force = 0 &#8658;<i>A<sub>cm</sub></i> = 0 &#8658; <i>V<sub>cm</sub></i>= <i>constant</i>.</b>
+</font>
+</p><p>While the child is walking along the slab the net external force is zero, then the acceleration of the center of mass is zero and the linear momentum of the system and the velocity of the center of mass are constant.
+</p><p><font color="purple"><b>2. <i>V<sub>cm</sub> = 0</i> for <i>t<sub>i</sub></i> &lt; <i>t</i> &lt; <i>t<sub>f</sub></i>.</b>
+</font>
+</p><p>While the child is walking along the slab, the velocity of the center of mass is constant. The value of the constant is determined by the <b>initial conditions</b> of the problem:
+</p><p><i>the child and the slab are at rest before the child starts walking towards the right end</i>
+</p><p>then,
+</p>
+<center>\(\vec{v}_1(t_i)=\vec{v}_2(t_i)=0\)
+</center>
+<p>As a result the initial velocity of the center of mass is:
+</p><p><br/>
+\(\vec{V}_{cm}(t_i)=\frac{m\vec{v}_1(t_i)+M\vec{v}_2(t_i)}{m+M} = 0\)
+</p><p>and it will be zero at any instant of time during the time interval under consideration <i>t<sub>i</sub></i> &lt; <i>t</i> &lt; <i>t<sub>f</sub></i>.
+</p><p><font color="purple"><b>3. <i>X<sub>cm</sub> = constant</i></b></font>
+</p><p>From the definition of velocity,
+</p><p>\(\vec{V}_{cm}=\frac{d}{dt}(\vec{R}_{cm}) = 0\)
+</p><p>then the position of the center of mass does not change with time and is equal to the value it has at time <i>t = t<sub>i</sub></i> as calculated in the "Illustrative Example: A system of two extended objects", in the previous module.
+</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>b)</b> Where is the left end of the slab with respect to its initial position when the child has reached the right end?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer: </b>
+ [<a href="javascript:toggleDisplay('ht29','hide','show')" id="ht29l">show</a>]</th></tr>
+<tr style="display:none" id="ht29">
+<td>The left end has moved towards the left a distance \(L\frac{m}{m+M}\) with respect to its original 
+position.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht30','hide','show')" id="ht30l">show</a>]</th></tr>
+<tr style="display:none" id="ht30">
+<td>At the instant of time <i>t<sub>i</sub></i> , when the child is at the left end of the slab ready to start
+ walking towards the right, the left end of the slab coincides with the origin of the coordinate system \( x=0\) shown in 
+ the top figure below.
+<p>While the child is walking towards the right end, the contact force exerted 
+by the child on the slab makes the slab to move to the left in such a way 
+that the center of mass of the child-slab system does not move. When the 
+child reaches the right end of the slab, the left end of the slab is shifted 
+towards the negative x-axis, at a position \(x_{left}\) 
+as shown in the bottom figure. 
+</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmChildSlabPicture2_shorter_new2.png"/>
+</p>
+
+<p>Let's consider \(X_{cm}(t_i)\) to be the position of the center of mass at the initial
+time when the child is standing on the left end of the slab. By definition of the center of
+mass we have:</p>
+<p>\(X_{cm}(t_i)= \frac{(L/2)M}{m+M} \;\;\;\;   \mbox{    (eq. 1)}\)
+<p>Because the center of mass is at rest during the time interval the child
+walks along the slab, then: </p>
+<p>\(X_{cm}(t_i)= X_{cm}(t_f)    \;\;\;\;      \mbox{    (eq. 2)}\)</p>
+<p>where, \(X_{cm}(t_f)\) is the position of the center of mass at the instant \(t = t_f\) measured from \(x=0\), when the child
+is on the right end of the slab. </p>
+<p>Realize that the distance between the child and the center of mass at time 
+<i>t = t</i><sub>f</sub>, indicated by <i>d</i> in the figure, is equal to the 
+distance between the child and the center of mass of the system at time 
+<i>t = t</i><sub>i</sub>, which coincides with \(X_{cm}(t_i)\):   
+
+</p>
+<p>\(d = X_{cm}(t_i) \;\;\;\;\;\;\;\; \mbox{    (eq. 3)}\)</p>
+<p> The total length of the slab can be expressed as:</p>
+<p>\(L = - x_{left}+X_{cm}(t_f)+d\)</p>
+<p> Note that the minus in front of \(x_{left}\) is needed because the position of the left end is
+negative (it has moved to the left of \(x=0\) ). Using (eq 1), (eq. 2) and (eq. 3) in the above expression we obtain:</p>
+<p> \(L = -x_{left} + 2X_{cm}(t_i) = -x_{left} + 2\frac{L}{2}\frac{M}{m+M}\) </p>
+<p>Then, </p>
+<p> \(x_{left}=L\frac{M}{m+M} - L = - L\frac{m}{m+M}\)</p>
+<P>When the child is standing on the right end of the slab, the left end is at a distance \(|x_{left}| = L\frac{m}{m+M}\) measured
+ from x = 0. </p>
+
+</td></tr></table>
+</td></tr></table>
+<p><b>c)</b> What is the speed of the slab when the child stops walking on the slab?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht33','hide','show')" id="ht33l">show</a>]</th></tr>
+<tr style="display:none" id="ht33">
+<td><b>The speed of the slab is zero</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht34','hide','show')" id="ht34l">show</a>]</th></tr>
+<tr style="display:none" id="ht34">
+<td>Let's consider \(\vec{v}_1(t)\) and \(\vec{v}_2(t)\) to be the child's and slab's velocity at a given instant of time <i>t</i><sub>i</sub> <u>&lt;</u> <i>t</i> <u>&lt;</u> <i>t</i><sub>f</sub>, then the velocity of the center of mass is:
+<p><br/>
+\(\vec{V}_{cm}(t)=\frac{m\vec{v}_1(t)+M\vec{v}_2(t)}{m+M}\)
+</p><p><br/>
+As shown in part a), during the time interval of consideration the velocity of the center of mass is constant and equal to zero, therefore the above equation becomes:
+</p><p><br/>
+\(m\vec{v}_1(t)+M\vec{v}_2(t) = 0\)
+</p><p><br/>
+Then the velocity of the slab during the time interval <i>t</i><sub>i</sub> <u>&lt;</u> <i>t</i> <u>&lt;</u> <i>t</i><sub>f</sub> is given by:
+</p><p><br/>
+\(\vec{v}_2(t)=-\vec{v}_1(t)\frac{m}{M}\)
+</p><p><br/>
+When the child stops, then the slab will stop.
+</p><p>To answer this part you can also use the total momentum of the system.
+</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>Running along the slab</b>
+</p><p>Now the child wants to run along the slab. Starting from rest at the left end, he runs with a constant acceleration of magnitude <i>a</i>. When he reaches the right end, the child steps off the slab and lands in the ice.
+</p><p>The following questions refer to the situation just described about the boy running along the slab.
+</p><p><b>d)</b> At the instant right when the child has reached the right end and is about to step off the slab, the distance of the left end of the slab measured with respect to its initial position
+</p>
+<ul style="list-style:disc outside none"><li>is larger 
+</li><li>is the same   
+</li><li>is smaller
+</li></ul>
+<p>than the distance obtained in part b) when the child walks instead of running?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht35','hide','show')" id="ht35l">show</a>]</th></tr>
+<tr style="display:none" id="ht35">
+<td>The distance <b>is the same</b>.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht36','hide','show')" id="ht36l">show</a>]</th></tr>
+<tr style="display:none" id="ht36">
+<td>As in the case of the child walking, the net external force on the child+slab system is zero. In addition, the child and the slab are initially at rest, then the velocity of the center of mass is zero and the position of the center of mass remains unchanged.  The only difference between the situation of the child running with respect to the one of the child walking is the way the child and slab interact. Because the internal forces do not affect the motion of the center of mass, then the answer will be the same as in part b).
+</td></tr></table>
+</td></tr></table>
+<p><b>e)</b> What is the child's speed and the slab's speed at the instant right when the child has reached the right end of the slab?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht37','hide','show')" id="ht37l">show</a>]</th></tr>
+<tr style="display:none" id="ht37">
+<td>
+<ul style="list-style:disc outside none"><li> The child's speed is:
+</li></ul>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\(\sqrt{2aL\frac{M}{m+M}}\)
+</p>
+<ul style="list-style:disc outside none"><li>The slab's speed is:
+</li></ul>
+<p>\( -\frac{m}{M} \sqrt{2aL\frac{M}{m+M}}\)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht38','hide','show')" id="ht38l">show</a>]</th></tr>
+<tr style="display:none" id="ht38">
+<td>We will consider the time interval that start at the instant, <i>t<sub>i</sub></i> , when the child is at the left end ready to run, and ends at the instant, <i>t<sub>f</sub></i> , when the child has reached the left end of the slab. As done in part b), we will choose a coordinate system such that at the instant <i>t<sub>i</sub></i> its origin  coincides with the left end of the slab. As shown in the bottom figure, a the instant <i>t<sub>f</sub></i> , when the child is at the right end, his position is <font size="3" face="times new roman"><i>x</i><sub>1</sub>(<i>t<sub>f</sub></i> )</font> and his speed is <font size="3" face="times new roman"><i>v</i><sub>1</sub>(<i>t<sub>f</sub></i> )</font>, and the position of the slab's center of mass is <font size="3" face="times new roman"><i>x</i><sub>2</sub>(<i>t<sub>f</sub></i> )</font>  and the slab's center of mass speed is <font size="3" face="times new roman"><i>v</i><sub>2</sub>(<i>t<sub>f</sub></i> )</font>.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmChildSlabPicture3.png"/>
+
+</p><p><br/>
+If the net external force on the slab+child system is zero, then the acceleration of the center of mass is zero and the velocity of the center of mass is constant. Because initially both, the child and the slab are at rest, then the velocity of the center of mass is zero and it will remain zero while the child is running along the slab, <i>t<sub>i</sub> <u>&lt;</u> </i>t<i> <u> &lt; </u> </i>t<sub> f</sub><i>:</i>
+</p><p><br/>
+\(\vec{V}_{cm} = \frac{m\vec{v}_1(t)+M\vec{v}_2(t)}{m+M}=0 \)
+</p><p><br/>
+As a result:
+</p><p><br/>
+\(m\vec{v}_1(t)= -M\vec{v}_2(t)\)
+</p><p><br/>
+(Note: This result is also obtained if we apply the Momentum and External Impulse Model to the slab+child system.)
+</p><p>From the above equation, if we calculate the speed of one of the objects in the system we will know the speed of the other one. As shown in the bottom figure, the child is at distance <font size="3" face="times new roman"><i>x</i><sub>1</sub>(<i>t<sub>f</sub></i> ) </font> when he is at the right end of the slab. As calculated in part b) of this problem:
+</p><p><font size="3" face="times new roman"><i>x</i><sub>1</sub>(<i>t<sub>f</sub></i> )= 2<i> X<sub>cm</sub></i>= <i>LM</i>/(<i>m</i>+ <i>M</i>)</font>. 
+</p><p>We also know the child's acceleration. Now we consider a new system formed by only the child treated as a point particle acted upon external forces that produce the child to move with constant acceleration, <i>a</i><sub>1</sub>. We can use the law of change of the constant acceleration with constant net force model that relates speed and position:
+</p><p>\(v_1^2(t_f) = v_1^2(ti) +2ax_1(t_f)\)
+</p><p>Using the value of <font size="3" face="times new roman"><i>x</i><sub>1</sub>(<i>t<sub>f</sub></i>)</font> and the fact that the child starts from rest then the above expression becomes:
+</p><p>\(v_1(t_f) = \sqrt{2aL\frac{M}{m+M}}\)
+</p><p>and the slab's speed:
+</p><p>\(v_2(t_f) = -\frac{m}{M}v_1(t_f) =-\frac{m}{M} \sqrt{2aL\frac{M}{m+M}}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

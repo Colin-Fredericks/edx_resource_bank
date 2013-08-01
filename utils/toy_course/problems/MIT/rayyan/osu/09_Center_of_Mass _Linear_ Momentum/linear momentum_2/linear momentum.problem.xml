@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/linear_3.png" alt="linear_3" height="250"/>
+
+      <p><br/>
+Two cars are approaching each other and about to have a head on collision. One of the cars is of mass M and is moving to the right, the other car is of mass 2M and moving to the left.  Both cars have a speed of 10 m/s. They collide and stick together.  What is the final velocity of the two car system? (assume right to be positive)
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              0 m/s          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              +3.3 m/s          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              -3.3 m/s          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              +5.0 m/s          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              -5.0 m/s          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              +10.0 m/s          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              -10.0 m/s          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

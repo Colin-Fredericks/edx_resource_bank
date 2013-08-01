@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 11 -->
+
+<problem>
+	<p>A small block of mass m slides on a long horizontal table when it encounters a wedge of mass 2m and height h (see the diagram).</p>
+	<img src="/static/problems/F12/MRI/images/MRI10b.png" />
+	<p>The wedge can also slide along the table. The mass slides up the wedge all the way to the top and then slides back down, never getting over the top. All surfaces are frictionless.</p>
+	<p>Consider three moments in time: 
+	<ul>
+		<li>\( t_1 \) – when the block is on the table, before sliding up the wedge; </li>
+		<li>\( t_2 \) – when the block is at the top of the wedge;</li>
+		<li>\( t_3 \) – when the block is on the table, after sliding down the wedge.</li>
+	</ul>
+	</p>
+
+	<h3>Part 1</h3>
+	<p>The speed of the wedge is: </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The greatest at \( t_3 \)</choice>
+			<choice location="random" correct="false">Zero at both \( t_1 \) and \( t_3 \)</choice>
+			<choice location="random" correct="false">The same but not zero at both \( t_1 \) and \( t_3 \)</choice>
+			<choice location="random" correct="false">Zero at \( t_2 \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

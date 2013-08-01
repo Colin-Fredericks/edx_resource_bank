@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Center of Mass</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>Center of Mass.</h2>
+<p>The center of mass of a system is a useful way to describe the average position of the system.</p>
+
+<h4> Learning Goals</h4>
+<p>After you finish this module you should be able to:
+</p>
+<ul style="list-style:disc outside none">
+	<li>Calculate the center of mass of a system of several point particles.</li>
+	<li>Explain how to calculate the center of mass of a rigid object.</li>
+	<li>Calculate the center of mass of a system of several extended objects.</li>
+</ul>
+
+<h3> Center of Mass: Introduction</h3>
+
+<p>When describing the translational motion of an extended object or system of objects, we can represent the object as a point particle, as if all its mass were concentrated at one point. This point, located at the average location of the distributed mass, is called the center of mass. For example, a uniform rod has its center of mass right at its middle. In this module we will learn how to calculate the center of mass of an object or a group of objects.</p>
+<p><b>Definition of Center of Mass Position:</b> The position of the center of mass of a system of point particles is the mass-weighted average of their positions:</p>
+<p>\(\vec{R}_{CM} = \frac{m_1 \vec{r}_1 + m_2 \vec{r}_2 + m_3 \vec{r}_3 + ...}{m_1 + m_2 + m_3 + ...} = \frac{\sum m_i \vec{r}_i}{\sum m_i}\)</p>
+<p>Moreover, we will show that the overall translational motion of a system can be described in terms of the <b>center of mass of the system</b>. The system under consideration can be a group of particles, such as the molecules of a gas in a container, or a group of extended objects such as the boy and the girl playing on the icy lake from the previous unit.</p>
+<p>An athlete is an excellent example of a non-rigid extended object. The motion of all the different parts of an athlete's body can be complicated, but the motion of the athlete's center of mass is the same as the motion of a point particle with a mass equal to the athlete's mass. You can download a great animation of that from <a href="http://www.animations.physics.unsw.edu.au/zipped/centre_hurdler2.zip">here, at UNSW's website</a> (Flash is required), or you can look at the images below. The two dashed lines represent the paths of other parts of the extended object (the head and right foot). While the athlete is in the air, the external force acting on the athlete is gravity. As a result, his center of mass follows the parabola familiar from projectile motion.</p>
+
+<!--
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="http://scripts.mit.edu/~srayyan/PERwiki/images/5/55/Centre_hurdler_2.swf" width="500" height="365" ALIGN="">
+	<PARAM name=movie VALUE="http://scripts.mit.edu/~srayyan/PERwiki/images/5/55/Centre_hurdler_2.swf" width="500" height="365"> 
+	<PARAM name=quality VALUE=high>
+	<EMBED src="http://scripts.mit.edu/~srayyan/PERwiki/images/5/55/Centre_hurdler_2.swf" quality=high  width="500" height="365" name="http://scripts.mit.edu/~srayyan/PERwiki/images/5/55/Centre_hurdler_2.swf" width="500" height="365" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+</OBJECT> 
+-->
+
+<p><img src="/static/html/Unit7/hurdler.jpg" width="400" height="924"/></p>
+
+
+<p>We will see that the location of the center of mass can be either fixed relative to an object, as in the 
+example of the athlete, or it can be a point in space (e.g. a discrete distribution of masses as in the
+examples below or those in the next page).</p>
+
+<h3> The center of mass of a system of 2 point particles </h3>
+<p>Consider a system formed by two point particles of masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> located at positions 
+\(\vec{r}_1\) and \(\vec{r}_2\) measured with respect to point <i>Q</i> as shown in the figure below. The position of the center of mass with respect to the coordinate system with origin at point <i>Q</i> is obtained as:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/Cm2Particlesc_small.png"/>
+</p><p><br/>
+The center of mass, <i>cm</i> in the figure, represents the mean location of the mass of the system.  It is located along a line between the particles and closer to the more massive particle. In the example above <i>m<sub>1</sub></i> &gt; <i>m<sub>2</sub></i>. 
+</p>
+</body>
+</html>
+

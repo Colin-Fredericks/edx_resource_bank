@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+omega="sqrt((g*d)/(d^2+0.5*a^2))"
+</script>
+    <p><b>Physical Pendulum and Collision</b></p>
+        <img src="/static/problems/MIT/analiab/NewProblems/files/PhysicalPendulumCollisionPendulum.png"/>
+        <br/>
+<p>A physical pendulum consists of a disc of radius \(a\) and mass \(M\)  fixed at the end of a rod of length \(d\) and negligible mass.  
+The other end of the rod is pivoted about point Q as shown.  Initially the bob is released from rest from a small angle \(\theta_o\) with respect
+ to the vertical. At the bottom of the bob’s trajectory, it collides with another  disc of radius \(a\)  and mass \(m\), \(M > m\), initially at rest.
+The lighter disc sticks to the larger one forming a new pendulum. (Note that the centre of the discs coincide).
+</p><br/>
+<p> What angle does the new pendulum rise to when it first comes to rest?
+</p>
+<br/>
+<p>1. \(\theta = acos(1-\frac{M}{M+m}(1-\cos\theta_o)) \)</p><br/>
+<p>2. \(\theta = acos(1-\frac{M^2}{(M+m)^2}(1-\cos\theta_o)) \)</p><br/>
+<p>3. \(\theta = acos(1-\frac{Md^2}{Md^2+ma^2}(1-\cos\theta_o)) \)</p><br/>
+<p>4. \(\theta = acos(1-\frac{M+m}{M}(1-\cos\theta_o)) \)</p><br/>
+
+<optionresponse>
+      <optioninput options="('1','2','3','4')" correct="2"/>
+    </optionresponse>
+
+<p><b>Part b:</b> What is the frequency of oscillation of the pendulum before the collisions?</p>
+
+    <br/>
+    \(\omega\)=<formularesponse answer="$omega" samples="g,d,a@1,1,1:10,10,10#4"><textline size="25" math="1">
+</textline></formularesponse>
+
+<p><b>Part c: </b> The angular frequency of oscillation of the new pendulum (after the collision) is:</p><br/>
+
+<p> 1. larger than the one calculated in part b. </p><br/>
+<p> 2. equal  to the one calculated in part b. </p><br/>
+<p> 3. smaller than the one calculated in part b. </p><br/>
+
+<optionresponse>
+      <optioninput options="('1','2','3','4')" correct="2"/>
+    </optionresponse>
+
+  </problem>
+</html>

@@ -1,0 +1,6 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>When working on the homework, what did you do when you were stuck, frustrated, or had a question?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

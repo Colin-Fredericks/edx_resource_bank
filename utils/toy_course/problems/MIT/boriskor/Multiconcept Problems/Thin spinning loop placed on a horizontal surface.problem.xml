@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/28-spinning sphere lowered on horizontal surface.png" alt="Spinning sphere (disc, cylinder) is lowered on a a horizontal surface"/>
+    <br/>
+
+<p>A thin hoop of mass \(m\) and radius \(r\) is given the angular speed \(\omega_0\) and is then dropped vertically on a horizontal surface as shown. After an initial period of slipping, the hoop begins to roll without slipping at a constant velocity.</p>
+
+<p>What is the best description of the motion of the hoop <i>before</i> slipping ends?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="false">The translational speed increases while rotational speed increases</choice>
+		<choice location="random" name="foil2" correct="false">The translational speed decreases while rotational speed increases</choice>
+		<choice location="random" name="foil3" correct="true">The translational speed increases while rotational speed decreases</choice>
+		<choice location="random" name="foil4" correct="false">The translational speed decreases while rotational speed decreases</choice>
+		</choicegroup>
+    </multiplechoiceresponse>
+
+
+<p>Find the speed \(v\) of the hoop after slipping stops.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="true">\(v=\omega_0r/2\)</choice>
+		<choice location="random" name="foil2" correct="false">\(v=\omega_0r/3\)</choice>
+		<choice location="random" name="foil3" correct="false">\(v=2\omega_0r/3\)</choice>
+		<choice location="random" name="foil4" correct="false">\(v=\omega_0r/5\)</choice>
+		<choice location="random" name="foil5" correct="false">\(v=3\omega_0r/5\)</choice>
+		</choicegroup>
+    </multiplechoiceresponse>
+
+<p>Find the amount of heat \(Q\) generated before the slipping of the hoop stops. Note: <i>the amount of heat</i> can be found as the difference between the initial and the final kinetic energy of the hoop. </p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="true">\(Q=m(\omega_0r)^2/4\)</choice>
+		<choice location="random" name="foil2" correct="false">\(Q=m(\omega_0r)^2/3\)</choice>
+		<choice location="random" name="foil3" correct="false">\(Q=m(\omega_0r)^2/2\)</choice>
+		<choice location="random" name="foil4" correct="false">\(Q=2m(\omega_0r)^2/3\)</choice>
+		<choice location="random" name="foil5" correct="false">\(Q=m(\omega_0r)^2/8\)</choice>
+		</choicegroup>
+    </multiplechoiceresponse>
+
+      </problem>
+</html>

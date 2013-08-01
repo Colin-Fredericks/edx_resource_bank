@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<p>The diagram shows a moving particle and several axes of rotation, labeled A-F. The axis is perpendicular to the screen and passes through the screen at the indicated location.</p>
+
+    <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/Bk99.PNG" alt="BK99" /></p>
+
+      <p>Check every axis for which the direction of the angular momentum of the particle is <i>out of the page.</i></p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="true"><text>A</text></choice>
+		<choice correct="true"><text>B</text></choice>
+		<choice correct="false"><text>C</text></choice>
+		<choice correct="false"><text>D</text></choice>
+		<choice correct="false"><text>E</text></choice>
+		<choice correct="false"><text>F</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+
+      </problem>
+</html>

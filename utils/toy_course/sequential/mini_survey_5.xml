@@ -1,0 +1,9 @@
+<sequential display_name="Mini Survey 5 - Favorite Resources" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 5 - Favorite Resources">
+			<h2>Mini Survey 5 - Favorite Resources</h2>
+			<p>This week we are asking about your favorite physics resources <b>outside</b> of our course.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit5_resources"/>
+	</vertical>
+</sequential>

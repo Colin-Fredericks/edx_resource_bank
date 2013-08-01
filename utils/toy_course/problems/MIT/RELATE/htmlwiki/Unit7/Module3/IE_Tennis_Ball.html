@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Example: Tennis Ball Dropped onto Wood</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Visualize a Collision Using High-Speed Camera Photos</h3>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>High-Speed Camera Stills</b><br/>
+<p>Photos taken with a high-speed camera showing the impact of a tennis ball dropped from a height of 100 inches onto wood.<br/>The images shown are spaced by approximately 1 ms.
+</p>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> <img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball03.jpg"/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball04.jpg"/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball05.jpg"/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball06.jpg"/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball07.jpg"/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/Ball08.jpg"/>
+</td></tr>
+<tr>
+<td> Special thanks to James Bales at the <a href="http://web.mit.edu/edgerton" class="external text" rel="nofollow">MIT Edgerton Center</a> for helping Andrew Pawl to capture the image.<br/>For footage of tennis ball impacts at <b>much</b> higher speeds see the <a href="http://www.itftennis.com/technical/" class="external text" rel="nofollow">ITF website</a>.
+</td></tr></table>
+<h3> Only the contact forces produce significant impulse <i>during</i> a collision.</h3>
+<p>Objects undergoing a collision can experience extremely large shifts in their momentum during the extremely brief interval of contact.  For example, the tennis ball shown in the pictures above arrived at the platform surface moving downward at about 7 m/s and left moving upward with a speed of about 6 m/s.  Given that a tennis ball has a mass of about 0.057 kg, this implies a momentum change of (taking upward to be positive in our coordinates):
+</p><p>\(\mathcal{} p_{f} - p_{i} = (\mbox{0.057 kg})(\mbox{+6 m/s}) - (\mbox{0.057 kg})(-\mbox{7 m/s}) = \mbox{0.7 kg m/s}\)
+</p><p>in the upward direction.  This may not sound like much, but if you calculate the impulse delivered by gravity to the tennis ball during a 5 millisecond (0.005 second) interval, it is only equal to:
+</p><p>\( -\int_{t_{i}}^{t_{f}} mg\; dt = -mg(t_{f}-t_{i}) = - (\mbox{0.057 kg})(\mbox{9.8 m/s}^{2})(\mbox{0.005 s}) = - \mbox{0.003 kg m/s} \)
+</p><p>We can see, then, that even a strong non-collisional force like gravity has nowhere near enough impulse when integrated over the extremely short collision time to give the relatively large change in momentum that is observed.  Essentially all the change in the momentum during the collision is due to the contact forces of the collision.  During the brief interval of contact, these forces can become extremely large (hundreds of times greater than the object's weight).  For this reason, when we look at the motion <i>during</i> a standard collision, we can essentially neglect all forces except the contact forces of the collision itself.  Of course, it is not reasonable to ignore external forces in the much longer time intervals before or after the period of the collision.  In the example shown above, the tennis ball's motion is clearly dominated by gravity until it hits the platform, and is again dominated by gravity after it leaves the platform.  The collision only overwhelms gravity during the 5 milliseconds of contact.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Comparative analysis</b> A back of the envelope justification for this conclusion?.
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td>
+<p>Since the contact force must vary during the interaction time, a reasonable approach is to compare the average force on the tennis ball by the table during the collision to the weight. Since &#916;<i>p</i> = 0.7<i>k</i><i>g</i> * <i>m</i> / <i>s</i> over the duration of &#916;<i>t</i> = 0.005<i>s</i>; the average net force on the tennis ball is given by Newton's second law  &lt; <i>F</i><sub><i>n</i><i>e</i><i>t</i></sub> &gt;  = &#916;<i>p</i> / &#916;<i>t</i> = 0.7 / 0.005 = 140<i>N</i>. Comparing this to the 0.6<i>N</i> weight of the tennis ball, clearly  the average force changing the ball's momentum is more than 200 times the weight!  
+</p>
+</td></tr></table>
+<h3> Neglecting non-collisional impulse means constant momentum if the right system is chosen.</h3>
+<p>The back-of-the-envelope calculation above explains why it is common practice to assume that only the collision forces themselves are significant during the collision interval.  Thus, if it is possible to choose our system to consist of <b>all</b> the objects that participate in the collision, the only important forces are internal (the collision forces will be contact forces between objects that are part of the system).  In that case, the total momentum of the system is conserved during the collision (though remember that the momentum of the parts of the system will not be constant).  Note that when making the approximation to neglect forces during a collision, the momentum of the system will generally <b>not</b> be conserved before or after the collision.  If we know that important external forces like gravity or friction are present but we are ignoring them as small compared to the collision forces, we can only legitimately apply momentum conservation during the extremely short interval of the collision.
+</p>
+</body>
+</html>
+

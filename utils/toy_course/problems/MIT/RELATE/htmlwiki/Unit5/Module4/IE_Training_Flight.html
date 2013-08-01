@@ -1,0 +1,458 @@
+<html>
+<head>
+<title>Example: Training Flight</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Training Flight</h3>
+<p>Note: this example makes use of the System-Interaction-Model (SIM) approach which will be explained in the next unit. If you have not read about SIM yet, do not worry too much about the formal notation for now. The words "system", "interactions" and "model" are used in the same way we have been using them throughout.</p>
+<div class="thumb tleft">
+<div style="width: 450px;" class="thumbinner">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/Tomahawk_CraigKinzer.jpg"/>
+<div class="thumbcaption">Photo by Craig Kinzer courtesy <a href="http://commons.wikimedia.org/wiki/File:Tomahawk_38-79A1108.jpg" class="extiw" title="commons:File:Tomahawk 38-79A1108.jpg">wikimedia commons</a></div>
+</div>
+</div>
+<p>The Piper Tomahawk (shown above) is widely used for flying lessons. It has a liftoff speed of about 55 knots and a landing speed of about 46 knots. The listed ground-roll for takeoff is 820 feet, and for landing is 635 feet.</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th><b>Part A:</b> Assuming constant acceleration, what is the Tomahawk's acceleration during the takeoff run? [<a href="javascript:toggleDisplay('ht1','hide','solution')" id="ht1l">solution</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht1">
+	<td>
+		<b>System:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show system]&quot; )" id="toggledisplay1l" show="">[show system]</a>
+		<div style="display: none;" id="toggledisplay1">We will treat the Tomahawk as a point particle.</div>
+		<br/>
+		<b>Interactions:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l" show="">[show interactions]</a>
+		<div style="display: none;" id="toggledisplay2">The assumption of constant acceleration required in the problem statement suggests that the thrust of the air on the plane's propeller, the air resistance on the plane, the rolling friction of the wheels, and any other influences add to give a constant forward net force, and hence a constant forward acceleration.</div>
+		<br/>
+		<b>Model:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l" show="">[show Model]</a>
+		<div style="display: none;" id="toggledisplay3">"One-Dimensional Motion with Constant Acceleration"</div>
+		<br/>
+		<b>Quantitative Approach:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l" show="">[show approach]</a>
+		<div style="display: none;" id="toggledisplay4"><br/>
+		<p>Once we have determined that we are using the 1-D Motion with Constant Acceleration Model, we have essentially reduced the problem to math. The Constant Acceleration Model is somewhat unique, however, in the fact that there are a large number of equations to choose from when applying the Model. In order to select the appropriate equation, we have to clearly understand the information presented in the problem (called the <i>givens</i>) and also what we are trying to find (the <i>unknowns</i>).</p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 1: Develop a Coordinate System [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht2">
+	<td>To understand the givens and unknowns, it is a good idea to first develop a coordinate system. By drawing out the runway and marking where the plane starts its takeoff run (x = 0 in the picture) and where it lifts off the ground (820 feet in the picture) we can see that the 820 feet given in the problem statement is a <i>distance</i> not a position. The difference between the plane's liftoff position and the starting point is 820 feet. Thus, in terms of equations, we have <b>both</b> the final value of x (820 feet in our coordinates) and the initial value of x (0 feet in our coordinates).
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/Runway1.png"/></p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 2: Summarize the Givens [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht3">
+	<td>In this part we are focused only on the takeoff run. Thus, the initial speed is assumed to be 0 (takeoff from rest) and the final speed is 55 knots. We ignore the 46 knots and the 635 feet, as these describe the landing roll, not the takeoff run. Thus, for the takeoff run, we have:
+
+<table class="subsubtable">
+<tbody>
+  <tr>
+	<th>Part A Givens</th>
+  </tr>
+  <tr>
+	<td>\( x_{i} = 0 \mbox{ feet} \qquad x_{f} = 820 \mbox{ feet} \qquad v_{i,x} = 0 \mbox{ knots} \qquad v_{f,x} = 55 \mbox{ knots}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Before proceeding, however, we should really convert these givens to a consistent set of units. It is always safest when solving a physics problem to convert to <a href="http://en.wikipedia.org/wiki/SI" class="extiw" title="wikipedia:SI">SI units</a>. The appropriate conversions in this case are: 3.281 feet = 1 meter  and 1 knot = 0.514 m/s. After conversions, the givens are:</p>
+
+<table class="subsubtable">
+<tbody>
+  <tr>
+	<th>Converted Part A Givens</th>
+  </tr>
+  <tr>
+	<td>\( x_{i} = 0 \mbox{ m} \qquad x_{f} = 250 \mbox{ m} \qquad v_{i,x} = 0 \mbox{ m/s} \qquad v_{f,x} = 28.3 \mbox{ m/s}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Note that we have retained three <a href="http://en.wikipedia.org/wiki/significant_figures" class="extiw" title="wikipedia:significant figures">significant figures</a> for the final velocity (and also for the position, though it is not obvious) even though the original given, 55 knots, contained only 2 significant figures. This is not a mistake. When performing conversions, you should treat them as intermediate steps, not final answers. Retain extra digits through all intermediate steps and round appropriately only at the end.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 3: Determine the Unknown [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht4">
+	<td>We are asked to find the plane's acceleration during the takeoff run, thus, the unknown for this problem is <i>a</i><sub><i>x</i></sub>.</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 4: Select an Equation [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht5">
+	<td>The equation which is a representation of our chosen Model that involves all the givens and also the unknown for Part A is:
+		<p>\(v_{f,x}^{2} = v_{i,x}^{2} + 2a_{x}(x_{f}-x_{i}) \)</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 5: Symbolic Algebra [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht6">
+	<td>Now that we have the givens, unknown and equation, we rearrange algebraically to isolate the unknown. It is good practice to solve algebraically with variables <i>before</i> substituting the numbers. The only exception is that you are encouraged to substitute any zeros before doing the algebra. Substituting zeros will greatly simplify the expression in many cases. In this case, because the initial position and velocity are each zero, we can write:
+		<p>\(v_{f,x}^{2} = 2a_{x}x_{f}\) and solving for the acceleration gives: \(a_{x} = \frac{v_{f,x}^{2}}{2x_{f}}\)</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 6: Make Sense of the Expression [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht7">
+	<td>At this stage, it is good to check your algebra by considering some simple limits. Look at the expression found for the acceleration. If the final velocity is zero, then the acceleration will also be zero. Does this make sense? If the final position goes to zero, the acceleration approaches infinity. Does this make sense?</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 7: Substitute Numbers [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht8">
+	<td>Only after essentially finishing the problem should numbers be substituted. In our case, we find:
+		<p>\( a = \frac{(\mbox{28.3 m/s})^{2}}{2(250 m)} = \mbox{1.6 m/s$^2$}\)</p>
+		<p>Remember that, like velocity and position, acceleration is a vector. Thus, technically we should report a direction with our numerical answer. In this case, reporting a direction is tricky since we do not know which way the plane is moving. The best we can do is to say that the answer is 1.6 m/s<sup>2</sup> <i>in the direction of the plane's motion</i>. Note also that when substituting numbers the units behave like variables: we have canceled one factor of "meters" in the numerator with the "meters" in the denominator, leaving units of meters per second squared. This cancellation highlights the importance of converting to a consistent set of units. Imagine if we had left our quantities in units of knots and feet. We would have ended with knots squared per foot -- a very unwieldy unit!</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Step 8: Estimation of Numerical Value [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht9">
+	<td>Now that we have the numerical answer, it pays to check the size of the answer against your intuition. Right now, you probably have very little intuition about these numbers, but as you work through the course you will develop some. A good baseline for acceleration values is to compare them with the gravitational acceleration of 9.8 m/s<sup>2</sup>. "Safe" accelerations should be less than this value, but not too much less or the acceleration is unnoticeable. A value of 1.6 m/s<sup>2</sup> is reasonable for a plane: large enough to be noticeable, but smaller than the gravitational acceleration.</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th><b>Part B:</b> Again assuming constant acceleration, what is the elapsed time from the instant the Tomahawk begins its takeoff run until the instant it leaves the ground? [<a href="javascript:toggleDisplay('ht10','hide','solution')" id="ht10l">solution</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht10">
+	<td>
+		<b>System, Interactions and Model:</b> Same as Part A.<br/>
+		<b>Quantitative Approach:</b><a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay5l" show="">[show approach]</a>
+		<div style="display: none;" id="toggledisplay5">
+		<br/>
+		<p>At the conclusion of Part A, we have the givens:</p>
+
+<table class="subtable">
+<tbody>
+  <tr>
+	<th>Part B Givens</th>
+  </tr>
+  <tr>
+	<td>\(x_{i} = \mbox{0 m} \qquad x_{f} = \mbox{250 m} \qquad v_{i,x} = \mbox{0 m/s} \qquad v_{f,x} = \mbox{28.3 m/s}\qquad a_{x} = \mbox{1.6 m/s$^2$}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Note that we have included the acceleration found in Part A as a given for Part B. This extra given makes an enormous difference in the next step of the problem. Instead of one path to the solution, we can now find at least three different equations that are mathematical representations of the chosen Model and that will give us the answer we seek. This kind of redundancy is common in the 1-D Motion with Constant Acceleration Model. To illustrate, we will solve the problem using different methods.</p>
+<p>For simplicity, we will <b>choose</b> our time coordinates such that t<sub>i</sub> = 0.</p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Method 1: Average velocity. [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht11">
+	<td>Suppose you were unable to solve Part A. It is possible to solve Part B without knowing that the acceleration is 1.6 m/s<sup>2</sup>. The equation
+		<p>\( x_{f} = x_{i} + \frac{1}{2}(v_{f,x}+v_{i,x})(t_{f} - t_{i})\)</p>
+		<p>becomes, after using the zeros:</p>
+		<p>\( x_{f} = \frac{1}{2}v_{f,x}t_{f}\)</p>
+		<p>which is solved to give:</p>
+		<p>\( t_{f} = \frac{2x_{f}}{v_{f,x}} = \mbox{18 s}\)</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Method 2: Velocity as a function of time. [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht12">
+	<td>If you did solve Part A first, you can use the simplest of the mathematical representations of the Model to obtain an answer to Part B:
+		<p><i>v</i><sub><i>x</i></sub>(<i>t</i>) = <i>v</i><sub><i>i</i>,<i>x</i></sub> + <i>a</i><sub><i>x</i></sub>(<i>t</i><sub><i>f</i></sub> &#8722; <i>t</i><sub><i>i</i></sub>)</p>
+		<p>After using the zeros and substituting t = t<sub>f</sub>, we have:</p>
+		<p><i>v</i><sub><i>f</i>,<i>x</i></sub> = <i>a</i><sub><i>x</i></sub><i>t</i><sub><i>f</i></sub></p>
+		<p>which gives:</p>
+		<p>\( t_{f} = \frac{v_{f,x}}{a_{x}} = \mbox{18 s}\)</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Method 3: Position as a function of time. [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht13">
+	<td>A more complicated method that relies on knowing the acceleration is to use:
+		<p>\( x(t) = x_{i} + v_{i,x}(t-t_{i}) + \frac{1}{2}a_{x}(t-t_{i})^{2}\)</p>
+		<p>After substituting the appropriate zeros and also t = t<sub>f</sub>, we have:</p>
+		<p>\( x_{f} = \frac{1}{2}a_{x}t_{f}^{2}\)</p>
+		<p>which is solved to give:</p>
+		<p>\( t_{f} = \pm \sqrt{\frac{2 x_{f}}{a_{x}}} = \pm \mbox{18 s} \)</p>
+		<p>We select the plus sign since the plane began its run at t<sub>i</sub> = 0. It cannot possibly take off before it began to move! In fact, our Model is not applicable (with the given acceleration) before t = 0, since the plane experiences a change in its interactions at that time.</p>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th><b>Part C:</b> How far does the plane travel in the first 9.0 seconds of the takeoff run? [<a href="javascript:toggleDisplay('ht14','hide','solution')" id="ht14l">solution</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht14">
+	<td>
+		<b>System, Interactions and Model:</b> Same as previous parts.<br/>
+		<b>Quantitative Approach:</b><a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay6&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay6l" show="">[show approach]</a>
+		<div style="display: none;" id="toggledisplay6">
+		<br/>
+		<p>	Based upon the results of Part B, we know that the plane has not reached its takeoff speed within 9.0 seconds, and therefore it has also not traveled the full takeoff distance. Thus, we are left the givens:</p>
+
+<table class="subtable">
+<tbody>
+  <tr>
+	<th>Part C Givens</th>
+  </tr>
+  <tr>
+	<td>\(x_{i} = \mbox{0 m} \qquad v_{i,x}=\mbox{0 m/s} \qquad t_{i} = \mbox{0 s} \qquad \mbox{t = 9.0 s} \qquad a_{x} = \mbox{1.6 m/s$^2$}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>The unknown that we seek is x(t=9.0 s), the location at t = 9.0 s. The most direct approach is to use:</p>
+<p>\(x(t) = x_{i} + v_{i,x}(t-t_{i}) + \frac{1}{2}a_{x}(t-t_{i})^{2}\)</p>
+<p>No algebra is necessary, since x is already isolated. We simply substitute to find:</p>
+<p>\(\mathcal{} x(\mbox{9.0 s}) = \mbox{65 m}\)</p>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>
+<b>Part D:</b> What is the acceleration (assumed constant) during landing? [<a href="javascript:toggleDisplay('ht15','hide','solution')" id="ht15l">solution</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht15">
+	<td>
+		<b>System:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay7&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show system]&quot; )" id="toggledisplay7l" show="">[show system]</a>
+		<div style="display: none;" id="toggledisplay7">We will treat the Tomahawk as a point particle.</div>
+		<br/>
+		<b>Interactions:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay8&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show interactions]&quot; )" id="toggledisplay8l" show="">[show interactions]</a>
+		<div style="display: none;" id="toggledisplay8">The assumption of constant acceleration required in the problem statement suggests that the thrust of the air on the plane's propeller, the air resistance on the plane, the rolling friction of the wheels, and any other influences add to give a constant <i>backward</i> net force, and hence a constant <i>backward</i> acceleration.</div>
+		<br/>
+		<b>Model:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay9&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show Model]&quot; )" id="toggledisplay9l" show="">[show Model]</a>
+		<div style="display: none;" id="toggledisplay9">"One-Dimensional Motion with Constant Acceleration"</div>
+		<br/>
+		<b>Quantitative Approach:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay10&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay10l" show="">[show approach]</a>
+		<div style="display: none;" id="toggledisplay10">
+		<br/>
+		<p>This problem is essentially identical in structure to Part A, except that when landing the plane's <i>initial</i> speed is nonzero and its <i>final</i> speed <i>is</i> zero. Thus, we work the problem just as we did Part A. We first define a coordinate system</p>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/Runway2.png"/></p>
+		<p>and then summarize the givens (don't forget to convert to <a href="http://en.wikipedia.org/wiki/SI" class="extiw" title="wikipedia:SI">SI units</a>)</p>
+		
+<table class="subtable">
+<tbody>
+  <tr>
+	<th>Converted Part D Givens</th>
+  </tr>
+  <tr>
+	<td>\(x_{i} = \mbox{0 m} \qquad x_{f} = \mbox{194 m} \qquad v_{i,x} = \mbox{23.6 m/s} \qquad v_{f,x} = \mbox{0 m/s}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Just as in Part A, the simplest equation to use is:</p>
+<p>\( v_{f,x}^{2} = v_{i,x}^{2} + 2 a_{x} (x_{f} - x_{i})\)</p>
+<p>After substituting zeros, this becomes:</p>
+<p>\( 0 = v_{i,x}^{2} + 2a_{x} x_{f}\)</p>
+<p>which can be rearranged to give:</p>
+<p>\(a = \frac{-v_{i,x}^{2}}{2x_{f}} = -\mbox{1.4 m/s$^2$}\)</p>
+<p>The magnitude of this acceleration is simply 1.4 m/s<sup>2</sup> To report it as a vector, the best approach is probably to say the acceleration is 1.4 m/s<sup>2</sup> in the direction opposite the plane's motion.</p>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th><b>Part E:</b> How far does the plane travel in the first 9.0 s after landing? [<a href="javascript:toggleDisplay('ht16','hide','solution')" id="ht16l">solution</a>]</th>
+  </tr>
+  <tr style="display: none;" id="ht16">
+	<td>
+		<b>System, Interactions and Model:</b> As in Part D.<br/>
+		<b>Quantitative Approach:</b> <a style="font-size: smaller;" href="javascript:toggleDisplay( &quot;toggledisplay11&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay11l" show="">[show approach]</a>
+		<div style="display: none;" id="toggledisplay11">
+		<br/>
+		<p>This problem is similar to Part C. Again, 9.0 seconds is not the full duration of the plane's acceleration, so we cannot assume the final speed is zero or the final position is 194 m. The givens that we do have, including the result of Part D, are:</p>
+		
+<table class="subtable">
+<tbody>
+  <tr>
+	<th>Converted Part E Givens</th>
+  </tr>
+  <tr>
+	<td>\(x_{i} = \mbox{0 m} \qquad v_{i,x} = \mbox{23.6 m/s} \qquad a_{x} = -\mbox{1.4 m/s$^2$}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>As in Part C, we will choose our time coordinates such that t<sub>i</sub> = 0, and we again employ the equation:</p>
+<p>\( x(t) = x_{i} + v_{i,x}(t-t_{i}) + \frac{1}{2}a_{x}(t-t_{i})^{2}\)</p>
+<p>after substituting zeros, this becomes:</p>
+<p>\( x(t) = v_{i,x}t + \frac{1}{2}a_{x} t^{2}\)</p>
+<p>Note that the initial velocity is not zero for a landing plane, and so cannot be canceled.</p>
+<p>We can now substitute t= 9.0 s to find:</p>
+<p>\( x = (\mbox{23.6 m/s})(\mbox{9.0 s}) + \frac{1}{2}(-\mbox{1.4 m/s$^2$})(\mbox{9.0 s})^{2} = \mbox{156 m}\)</p>
+<p>Putting in the numbers shows the importance of the negative sign associated with the acceleration (we found the acceleration to be negative in Part D). If you were to input a positive acceleration, the plane would cover more distance in the 9.0 s than it would simply coasting at the initial landing speed!</p>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

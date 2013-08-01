@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/spinning_the_ball.png" align="top" texwrap="none" height="107" width="174" texheight="55" texwidth="60" alt="Picture for spinning the ball problem"/>
+    <br/>
+	
+      <p>
+A solid spherical bowling ball of radius R is sliding along a surface and rotating the "wrong" way. (It has backspin). There is friction between the ball and the surface. What is the minimum initial value of \(\omega\) in terms of the initial speed of the ball's center of mass v in order to ensure that the ball ends up moving to the left in the picture above?<br/>
+<br/>
+\(\omega =\)
+</p>
+
+    <formularesponse answer="5*v/(2*R)" samples="v,R@3,3:6,6#4">
+	<responseparam type="tolerance" default="1%"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

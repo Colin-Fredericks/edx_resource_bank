@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Vertical Spring</title>
+
+      <p>A light spring with a force constant k is suspended from the ceiling as shown. A block of mass m is attached to it. Initially, the block is held so that the spring is not stretched. The block is then released. The acceleration due to gravity is g. 
+
+</p>
+      <br/>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK71.PNG" alt="BK71.PNG"/>
+        <br/>
+
+      <p>
+Part 1. 
+What is the maximum elongation of the spring in the subsequent motion of the block?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                  \(\frac{k}{mg}\)
+          </choice>
+          <choice name="foil2" correct="false">
+                  \( \frac{2k}{mg}\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \( \frac{k}{2mg}\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(\frac{mg}{k}\)
+          </choice>
+          <choice name="foil5" correct="true">
+                  \(\frac{2mg}{k}\)
+          </choice>
+          <choice name="foil6" correct="false">
+                  \(\frac{mg}{2k}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+Eventually, after multiple up-and-down cycles, the block comes to rest. How much heat is generated during the motion of the block?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                  Zero
+          </choice>
+          <choice name="foil2" correct="true">
+                  \( \frac{(mg)^2}{2k}\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \( \frac{2(mg)^2}{k}\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(\frac{(mg)^2}{4k}\)
+          </choice>
+          <choice name="foil5" correct="false">
+                  \(\frac{3(mg)^2}{4k}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

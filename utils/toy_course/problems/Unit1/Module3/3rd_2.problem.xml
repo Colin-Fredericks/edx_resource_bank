@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/3rd.png" alt="3rd" height="200"/>
+
+    <p>A metal ball is dropped, hits the ground, and eventually comes to a stop. What is the relationship between the magnitude of the force \(F_{BG}\) exerted on the ball by the ground and the magnitude of the force \(F_{GB}\) exerted on the ground by the ball?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+             <text> \(F_{BG}\)  &gt; \(F_{GB}\)</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+             <text> \(F_{BG}\)  &lt; \(F_{GB}\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+             <text> \(F_{BG}\)  = \(F_{GB}\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+             <text> Can't tell from the information given.</text>      
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+</problem>
+</html>

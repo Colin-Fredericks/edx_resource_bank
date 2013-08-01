@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Impulse</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Newton's Second Law: Momentum Version</h3>
+<p>Newton's Second Law sheds light on how interactions change motion. This law can be recast using the momentum description as follows:
+</p><p>\( \sum \vec{F}^{ext} = \frac{d\vec{p}}{dt}\)
+</p><p>You can show that this form of Newton's Second Law reduces to the regular <i>F</i> = <i>ma</i> for the case of a single object with constant mass if you substitute in the definition of momentum in terms of velocity.  
+</p><p>It is very important to notice the qualifier "external" on the sum of forces in this law.  The internal forces cancel out and have no <i>net</i> effect on the <i>overall</i> motion of a multi-body system (though as we shall see, it is important to remember that the motion of the <i>pieces</i> of a multi-body system <i>are</i> affected by internal forces).  Only external forces can have a net influence on the motion of the system.  This property is central to the utility of the momentum model, as we shall see in the following modules.
+</p>
+<h3> Impulse</h3>
+<p>To find an expression for the change in momentum as a result of the action of external forces, we have to integrate Newton's Second Law, giving:
+</p><p>\( \vec{p}_{f} = \vec{p}_{i} + \int_{t_{i}}^{t_{f}} \sum \vec{F}^{ext}\;dt \)
+</p><p>The time integral of the force is generally given the name impulse (denoted by the symbol <i>J</i>):
+</p><p>\( \vec{J}_{fi} = \int_{t_{i}}^{t_{f}} \sum \vec{F}^{ext} \; dt\)
+</p><p>so:
+</p><p>\( \vec{p}_{f} = \vec{p}_{i} + \vec{J}_{fi}\)
+</p>
+</body>
+</html>
+

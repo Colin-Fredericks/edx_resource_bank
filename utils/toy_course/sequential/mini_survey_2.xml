@@ -1,0 +1,11 @@
+<sequential display_name="Mini Survey 2 - Teachers" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 2 - Teachers">
+			<h2>Mini Survey 2 - Teachers</h2>
+			<p>This week's questions are specifically for teachers or professors who are taking this course. If you do not teach at any level, you can move on to begin Unit 2.</p>
+		</html>
+		<problem url_name="RELATE_survey:teach_subject"/>
+		<problem url_name="RELATE_survey:teach_level"/>
+		<problem url_name="RELATE_survey:certificate"/>
+	</vertical>
+</sequential>

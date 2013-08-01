@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI10-1.problem" display_name="Block on Wedge 1" attempts="2" weight="0.5"/>
+	<problem filename="F12/MRI/MRI10-2.problem" display_name="Block on Wedge 1, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Block on Wedge 1" id="MReV_Summer2013_MRI10" discussion_category="Mechanical Energy and Work" />
+</vertical>

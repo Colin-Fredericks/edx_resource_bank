@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p><img src="/static/problems/S13/quiz/images/11-1.png" /><br/></p>
+
+<p>A uniform disc of radius <i>R</i> and mass <i>m1</i> is rotating with an angular speed \(\omega_o\) about an axis passing 
+through its center and perpendicular to the disc's plane. A small box of mass <i>m2</i>, initially at the center of 
+the disc,moves away from the center and stops moving relative to the disc when it is at a distance <i>R</i>/2 from the
+disc's center. </p>
+
+<p>What is the angular speed of the disc - block system at the instant when the block stops moving relative to 
+the disc? Express your answer in terms of all or some of the variables <i>R</i>, <i>m1</i>, <i>m2</i> and \(\omega_o\).
+ In your answer enter omega_o for \(\omega_o\).</p>
+
+<p>
+<formularesponse type="cs" samples="m1,m2,R,omega_o@1,1,1,1:10,10,10,10#10" answer="m1/(m1+0.5*m2)*omega_o">
+      <responseparam type="tolerance" default="0.00001"/>
+      <textline size="40" math="1"/>
+    </formularesponse>
+
+</p>
+
+</problem>
+
+</html>

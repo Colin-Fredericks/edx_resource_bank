@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+v="(-2*b*vo+r^2*wo)/(37*r^2)"
+
+</script>
+    <img src="/static/problems/MIT/analiab/NewProblems/files/2CylindersCollision.fw.png"/> 
+    <br/>
+
+      <p>
+
+A thin disk of mass m and radius r is sliding at velocity \(v_o\) and rotating with angular velocity \(\omega_o\) as shown.  It strikes and sticks to the edge 
+of a uniform disk of mass M and radius R that is free to rotate about its center axle. The large disk is initially at rest.  If R = 3r and M = 2m, find the
+final angular velocity of the big 
+disk. Express your answer in terms of r, b, \(v_o\) and \(\omega_o\). Type wo for \(\omega_o \) and vo for \(v_o\). 
+<br/>
+\(\omega_{big}=\)
+</p>
+
+    <formularesponse answer="$v" samples="b,vo,wo,r@1,1,1,1:10,10,10,10#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

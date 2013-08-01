@@ -1,0 +1,134 @@
+<html>
+  <problem>
+
+      <p>Ball A is dropped from the top of a building.  One second later, ball B is dropped from the same building. Consider the balls while they are both in flight.  You may ignore air resistance.  Which statements are true about this situation?</p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <conceptgroup concept="One">
+          <optioninput location="random" name="OneA" correct="True" options="('True','False')"></optioninput>
+
+                Both have the same vertical acceleration
+
+              <br/>
+
+          <optioninput location="random" name="OneB" correct="True" options="('True','False')"></optioninput>
+
+                Both have a horizontal acceleration of zero
+
+              <br/>
+
+          <optioninput location="random" name="OneC" correct="True" options="('True','False')"></optioninput>
+
+                Both are under the influence of gravity only
+
+              <br/>
+
+          <optioninput location="random" name="OneD" correct="True" options="('True','False')"></optioninput>
+
+Both are in free fall
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Two">
+          <optioninput location="random" name="TwoA" correct="True" options="('True','False')"></optioninput>
+
+                As time progresses, the distance between them increases
+
+              <br/>
+
+          <optioninput location="random" name="TwoB" correct="False" options="('True','False')"></optioninput>
+
+                As time progresses, the distance between them stays constant
+
+              <br/>
+
+          <optioninput location="random" name="TwoC" correct="False" options="('True','False')"></optioninput>
+
+As time progresses, the distance between them decreases
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Three">
+          <optioninput location="random" name="ThreeA" correct="False" options="('True','False')"></optioninput>
+
+                As time progresses, the difference between their velocities increases
+
+              <br/>
+
+          <optioninput location="random" name="ThreeB" correct="False" options="('True','False')"></optioninput>
+
+                As time progresses, the difference between their velocities decreases
+
+              <br/>
+
+          <optioninput location="random" name="ThreeC" correct="True" options="('True','False')"></optioninput>
+
+As time progresses, the difference between their velocities stays the same
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="Four">
+          <optioninput location="random" name="FourA" correct="False" options="('True','False')"></optioninput>
+
+                As time progresses, the difference between their accelerations increases
+
+              <br/>
+
+          <optioninput location="random" name="FourB" correct="False" options="('True','False')"></optioninput>
+
+                As time progresses, the difference between their accelerations decreases
+
+              <br/>
+
+          <optioninput location="random" name="FourC" correct="True" options="('True','False')"></optioninput>
+
+As time progresses, the difference between their accelerations stays the same
+
+              <br/>
+
+          <optioninput location="random" name="FourD" correct="True" options="('True','False')"></optioninput>
+
+The difference between their accelerations is always zero
+
+              <br/>
+
+        </conceptgroup>
+        <conceptgroup concept="">
+          <optioninput location="random" name="FiveA" correct="True" options="('True','False')"></optioninput>
+
+Ball A will hit the ground before ball B
+
+              <br/>
+
+          <optioninput location="random" name="FiveB" correct="True" options="('True','False')"></optioninput>
+
+Ball B will hit the ground after ball A
+
+              <br/>
+
+          <optioninput location="random" name="FiveC" correct="True" options="('True','False')"></optioninput>
+
+Both balls will hit the ground with the same speed
+
+              <br/>
+
+          <optioninput location="random" name="FiveD" correct="False" options="('True','False')"></optioninput>
+
+Both balls will hit the ground simultaneously
+
+              <br/>
+
+        </conceptgroup>
+      </ul>
+      <hintgroup showoncorrect="no">
+
+          <p>Add hint text here.</p>
+
+      </hintgroup>
+    </optionresponse>
+  </problem>
+</html>

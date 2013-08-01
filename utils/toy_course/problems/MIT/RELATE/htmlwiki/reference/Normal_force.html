@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Normal force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+
+<script type="text/javascript"> 
+$('#Mechanical_Energy__E').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Mechanical_Energy__E.html');
+$('#Gravitational_intera').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Gravitational_intera.html');
+$('#Elastic_restoring_in').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>An object in contact with a surface will always be subject to a contact force that has a component perpendicular to the surface which guarantees that the object will not pass through the surface. The name is derived from the mathematical meaning of normal (perpendicular).
+</p>
+<h2> Normal Force as Constraint</h2>
+<p>The normal force does not have an associated force law like <!--<a id="go" rel="leanModal" href="#Gravitational_intera.html" name="Gravitational_intera.html" onclick="domath()">-->gravitational<!--</a>--> or <!--<a id="go" rel="leanModal" href="#Elastic_restoring_in.html" name="Elastic_restoring_in.html" onclick="domath()">-->elastic restoring<!--</a>--> forces do.  Instead, the normal force acts as a constraint.  It will take on whatever value is necessary to prevent penetration of one object by another.  
+</p>
+<h2> Normal Force and Energy</h2>
+<p>When using the <!--<a id="go" rel="leanModal" href="#Mechanical_Energy__E.html" name="Mechanical_Energy__E.html" onclick="domath()">-->Mechanical Energy<!--</a>--> description of motion, the normal force can play a number of roles.  The normal force is non-conservative, and therefore has no associated potential energy.  The type of work done by the normal force, however, will depend upon the specific situation:
+</p>
+<ul><li> Internal or external normal forces acting on objects that are sliding smoothly along the surface that gives rise to the normal force perform no work, since the motion will always be parallel to the surface and hence perpendicular to the normal force.
+</li><li> Internal normal forces acting on a pair of system constituents moving (and possibly accelerating) together do no net work, since they perform equal and opposite work on the two objects.
+</li><li> Internal normal forces functioning as collision forces can sometimes perform work and other times not, depending upon the deformation that occurs in the collision.  Substantial deformation is a signal that the normal force has done measurable negative work (dissipating mechanical energy) on the system.  
+</li><li> Internal normal forces can perform significant positive work (adding mechanical energy) during an explosion as the constituents involved in the explosion push off of one another.
+</li></ul>
+
+<div id="Mechanical_Energy__E" class="popup"></div>
+
+<div id="Gravitational_intera" class="popup"></div>
+
+<div id="Elastic_restoring_in" class="popup"></div>
+</body>
+</html>
+

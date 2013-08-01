@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Hot Air Baloon -->
+<problem>
+
+	<h2>A Hot Air Balloon</h2>
+	<p>A hot air balloon of mass M1 is stationary (with respect to the ground) in mid-air. A passenger of mass m2 climbs out and slides down a rope with constant velocity <i>v</i> with respect to the balloon. </p>
+	<h3> Part 1 </h3>
+	<p>As the man slides down the rope, the center of mass of the balloon-man system will:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false" name="accelerate upward">Accelerate upward</choice>
+			<choice location="random" correct="false" name="accelerate downward">Accelerate Downward</choice>
+			<choice location="random" correct="false" name="move upward at a constant velocity">Move upward at a constant velocity</choice>
+			<choice location="random" correct="false" name="move downward at a constant velocity">Move downward at a constant velocity</choice>
+			<choice location="random" correct="true" name="remain stationary">Remain Stationary</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+	<h3>Part 2</h3>
+	<p>As the man slides down the rope, the velocity of the balloon will be:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true" name="rightup">v*m/(m+M), upward</choice>
+			<choice location="random" correct="flase" name="rightdown">v*m/(m+M), downward</choice>
+			<choice location="random" correct="false" name="wrongup">v*M/(m+M), upward</choice>
+			<choice location="random" correct="false" name="wrongdown">v*M/(m+M), downward</choice>
+			<choice location="random" correct="false" name="zero">0</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+	<h3>Part 3</h3>
+	<p>If the man stops moving, the balloon will:</p> 
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false" name="accelerate upward">Accelerate upward</choice>
+			<choice location="random" correct="false" name="accelerate downward">Accelerate Downward</choice>
+			<choice location="random" correct="false" name="move upward at a constant velocity">Move upward at a constant velocity</choice>
+			<choice location="random" correct="false" name="move downward at a constant velocity">Move downward at a constant velocity</choice>
+			<choice location="random" correct="true" name="remain stationary">Remain Stationary</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

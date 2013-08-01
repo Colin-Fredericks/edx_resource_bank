@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Video Tutorial: a Block on an inclined plane </title>
+    <script type="loncapa/python">
+
+
+a="m*g*sin(alpha)"
+b="m*g*cos(alpha)"
+c="acot(mus)"
+d="g*(cos(alpha)-muk*sin(alpha))"
+
+</script>
+    <p><img src="/static/problems/MIT/analiab/Figures/Block_at_rest_incline.png" alt="Block at rest on an incline" texwrap="none" align="top"/></p>
+    <p><b><u>Part 1:</u> A block is at rest...</b></p>
+
+<p>A block of mass <i>m</i> is at rest on an incline plane of angle <i>\(\alpha\)</i> with respect to the <i>vertical</i>.  There is friction 
+between the block and the incline surface (<i>\(\mu\)</i>k and <i>\(\mu\)</i>s).</p>
+
+<p>a) What is the value of the normal force exerted by the incline on the block? Express your answer in terms of some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.</p>
+
+      <formularesponse answer="$a" samples="mus,muk,m,g,alpha@1,1,1,1,1:10,10,10,10,89#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+    <br/>
+
+<p>b) What is the value of the force of friction exerted by the surface on the block? Express your answer in terms of some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.<br/></p>
+
+      <formularesponse answer="$b" samples="mus,muk,m,g,alpha@1,1,1,1,1:10,10,10,10,89#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>c) If you were able to change the angle of the incline plane, at what angle will the block start to slide? </p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \(\tan^{-1} \mu_s\)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \(\cot^{-1} \mu_s\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\sin^{-1} \mu_s\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(\cos^{-1} \mu_s\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+    <p><b><u>Part 2:</u> A block is moving...</b></p><br/>
+
+<p>For an angle smaller than the one calculated in part c), a steeper slope, the block will slide down. What is the block's acceleration?  Express your answer in some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.</p>
+
+      <formularesponse answer="$d" samples="g,muk,alpha@1,0.1,.1:10,0.9,.9#4">
+        <responseparam default="0.00000000001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <h3> Helpful Resource: Professor Walter Lewin solving a similar problem </h3>
+    <table border="1">
+      <tr>
+        <td>
+          <b>Measure Coefficient of Static Friction</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/rF-FNJnT7G4?rel=0"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+<p>This is part of Prof. Lewin's <a href="http://ocw.mit.edu/courses/physics/8-01-physics-i-classical-mechanics-fall-1999/video-lectures/lecture-8/">Lecture #8</a> 
+, MIT Open Course Ware.</p>
+
+<p>Lewin, Walter. 8.01 Physics I: Classical Mechanics, Fall 1999. (Massachusetts Institute of Technology: MIT OpenCourseWare), http://ocw.mit.edu (Accessed 22 Feb, 2012). License: Creative Commons BY-NC-SA</p>
+</td>
+      </tr>
+    </table>
+    
+    <p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Lewin_Measure_Static_Friction.mp4">Click here to download this video.</a></p>
+      </problem>
+</html>

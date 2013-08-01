@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<problem>
+
+<!-- Taken from 8.01rq -->
+
+	<p>The Frequency \(f=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">\(1 \) </choice>
+		<choice location="random" correct="false" name="2">\( \pi \) </choice>
+		<choice location="random" correct="false" name="3">\( 2\pi \) </choice>
+		<choice location="random" correct="true" name="4">\( \frac{1}{\pi} \) </choice>
+		<choice location="random" correct="false" name="5">\( \frac{1}{2\pi} \) </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+</problem>

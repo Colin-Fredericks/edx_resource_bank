@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+The shapes below represent objects that each have the same mass. The black outlined shapes have all of their mass concentrated evenly around
+their perimeter. The gray shaded shapes have their mass evenly distributed.<br/>
+
+Which of the eight shapes shown has the second greatest moment of inertia about an axis "out of the screen" that goes through the center of mass
+ of the shape?
+</p>
+
+      <img src="/static/problems/MIT/rayyan/Physics801/Figures/Moments_of_Inertia_new.jpg"/>
+
+<optionresponse>
+      <optioninput options="('1','2','3','4','5','6','7','8')" correct="5"/>
+    </optionresponse>
+
+  </problem>
+</html>

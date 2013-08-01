@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 22 -->
+
+<problem>
+
+	<p>An object moves in a straight line. </p>
+	<img src="/static/problems/F12/MRI/images/MRI22.png" />
+
+	<h3>Part 1</h3>
+	<p>At the instant shown in the picture, compare the magnitude of its angular momentum about axes A through D.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The angular momentum is zero about axes A through D.</choice>
+			<choice location="random" correct="false">The angular momentum is the same non-zero value for axes A through D.</choice>
+			<choice location="random" correct="true">The angular momentum is greatest for D, and smallest for A.</choice>
+			<choice location="random" correct="false">The angular momentum is greatest for A, and smallest for D.</choice>
+			<choice location="random" correct="false">More information is needed.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The object is only translating and not rotating.</choice>
+			<choice location="random" correct="false">An observer in the x-y plane near axis A will see the object as moving more quickly than one near D.</choice>
+			<choice location="random" correct="true">An observer in the x-y plane near axis D will be farther from the object than one at A.</choice>
+			<choice location="random" correct="false">Angular momentum is conserved.</choice>
+			<choice location="random" correct="false">The axes shown are not in line with the center of the object.</choice>
+			<choice location="random" correct="false">The x component of the distance from the object to the axes is the same for all axes.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

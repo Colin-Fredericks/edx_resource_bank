@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+M1=random.randrange(50,100,5)
+M2=random.randrange(30,60,5)
+D=random.randrange(1,3,1)
+G=6.67e-11
+Re=6.38E6
+Me=5.97E24
+formula1= G* M1* M2/( D* D)
+formula2= G* M2/( D* D)
+formula3= G* Me* M1/( Re* Re)
+formula4= Me* D* D/( M2* Re* Re)
+
+</script>
+
+<p>In this problem you will compare the gravitational force between two small masses and the gravitational force between the 
+Earth and an object of small mass. </p>
+<p><b> Gravitational force between small masses</b></p>
+<p>Two blocks of mass M1= $M1 kg  and M2= $M2 kg  are placed on a horizontal surface. The blocks are  separated by a distance D = $D m.</p>
+
+<p>a) What is the magnitude of the gravitational force exerted by block 2 on block 1, \(F_{12}\) ?  Enter your answer in Newtons (N).</p>
+
+<p>\(F_{12}\) = </p>
+
+     <numericalresponse answer="$formula1" unit="N">  
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam default="3,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+        <textline math="1"/>
+      </numericalresponse> 
+
+<p>b)  If there is no friction between block 1 and the surface, what is the acceleration of block 1, \(a_{1}\)?. Enter your answer in m/s<sup>2</sup></p>
+<p>\(a_{1}\) = </p>
+
+      <numericalresponse answer="$formula2" unit="m/s^2">
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam default="3,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>c) What is the magnitude of the gravitational force exerted by the Earth (Me =$Me kg) on block 1, \(F_{1E}\). Assume that the horizontal surface is at a distance Re with respect to the center of the Earth, where Re = $Re m is the Earth's radius. Enter your answer in Newtons (N).</p>
+
+<p>\(F_{1E}\) = </p>
+
+      <numericalresponse answer="$formula3" unit="N">
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam default="3,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+          <p>
+            <hr/>
+</p>
+          <p>
+
+<b>Reflect on your answer:</b> </p>
+
+<p><b>1.</b> Your results in parts a) and b) justify neglecting the force of gravitation <b>between objects of small masses</b> in 
+our everyday life problems.</p>
+<p>
+<b>2.</b> In part c), the gravitational force exerted by the Earth on block 1 is much larger than the gravitational force 
+between the two blocks, \(F_{1E}\) &gt;&gt; \(F_{12}\). This is due to the fact that the mass of the Earth is large enough to 
+have a considerable effect on small masses.
+</p>
+          <p>Use the following applet to calculate the value of the force exerted by block 2 on block 1 for different values of the masses and distances.  Note that the values of the masses are of the order of the mass of any object you encounter in every - day life.
+</p>
+          <br/>
+          <table border="1">
+            <tbody>
+              <tr>
+                <td>
+                  <b>Gravitational Force between two small masses</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="position: relative; width: 300px; height: 226px;">
+                    <a style="text-decoration: none;" href="http://phet.colorado.edu/sims/force-law-lab/gravity-force-lab_en.jnlp">
+                      <img src="http://phet.colorado.edu/sims/force-law-lab/gravity-force-lab-screenshot.png" style="border: none;" height="226" width="300" alt="Gravity Force Lab"/>
+                      <div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 73px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"/>
+                      <table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 73px;">
+                        <tr>
+                          <td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;">Click to Run</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="http://phet.colorado.edu/">Phet</a> Interactive simulation of the University of Colorado
+</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+  </problem>
+</html>

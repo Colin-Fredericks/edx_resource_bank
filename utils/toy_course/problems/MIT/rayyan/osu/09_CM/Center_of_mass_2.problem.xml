@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/center_of_mass_1.png" alt="center_of_mass_1" height="200"/>
+
+      <p><br/>
+Three tiny balls of equal mass are placed on a horizontal frictionless surface at the corners of an equilateral triangle (all of the sides are 2 m and all of the angles are 60&#176;). What are the x and y coordinates of the center of mass of the system formed by the three balls? (The y-axis passed through the top ball and the x-axis passed through the bottom balls.)
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              x=0 m;	y=0 m          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              x=0 m;	y=1 m          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              x=0 m;	y=0.58 m          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              x=0 m;	y=0.87 m          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              x=0.67 m;	y=0.67 m          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              x=0 m;	y=0.67 m          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

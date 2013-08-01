@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Gravitational Potential Energy</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Gravitational Potential Energy </h3>
+<table border="1">
+<tr>
+<td>
+<table>
+<tr>
+<td><b>Potential Energy of the Near Earth Gravity</b>
+</td></tr>
+<tr>
+<td>\(U^{g}(y) = mgy\)
+</td></tr></table>
+</td></tr></table>
+<p>where \(y\) is the height of the object of mass m.
+</p>
+<table border="2">
+<tr>
+<td>
+<table>
+<tr>
+<td><b>Potential Energy of Universal Gravity</b>
+</td></tr>
+<tr>
+<td>\(U^g(r) = -G\frac{m_1 m_2}{r} \)
+<p>where \(r\) is the distance between the two masses \(m_1\) and \(m_2\) and \(G = 6.67 \times 10^-11 N \cdot m^2/kg^2\) is the gravitational constant.</p>
+</td></tr></table>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Calculate the potential energy due to gravity</b>
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Near Earth Gravity</b>
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td>
+	<p>The work done by the near Earth gravitational force on an object of mass <i>m</i> was calculated in the previous module. Assuming a positive axis pointing up and gravity pointing down, then the work is given by: \(W_{f,i}=-mg(y_f-y_i)\) where \(y_f\), \(y_i\) are the final and initial height of the object. The change in potential energy of the object is obtained as:</p>
+	<p>\(U(y_f)=U(y_i)-W_{f,i}\)</p>
+	<p>or</p>
+	<p>\(U(y_f) = U(y_i) + mg(y_f - y_i)\;\)</p>
+	<p><b>Setting up a reference for the potential energy</b></p>
+	<p>Above we have defined the <i>change of potential energy</i>. We can also define the <i>potential energy</i> of an object if we set a reference value for the  potential energy. In this case, we can set the potential energy to be zero at the surface, <i>U(y = 0) = 0</i>, then the potential energy becomes:</p>
+	<p>\(U(y)=mgy\)</p>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Universal Gravity from Earth</b>
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td>The work done by the gravitational force on an object of mass <i>m</i> far from the Earth's surface was obtained in
+ the previous module:
+	<p>\(W_{f,i} = G m_E m(\frac{1}{r_f}-\frac{1}{r_i})\)</p>
+	<p>where \(r_f\),\(r_i\) are the final and initial distance between the object and the center of the Earth. The change in potential energy of the object is:</p>
+	<p>\(U(r_f)=U(r_i)-W_{f,i}\)</p>
+	<p>or</p>
+	<p>\(U(r_f) = U(r_i) - Gm_Em(\frac{1}{r_f} - \frac{1}{r_i})\)</p>
+	<p><br/><b>Note:</b></p>
+	<p>When an object is moving away from the Earth, \(r_f > r_i\) and \(W_{f,i} < 0\), so the kinetic energy decreases. By the same account, the potential energy increases. The result of the work is a change of kinetic energy into potential energy.</p>
+	<p><b>Conventional reference for zero of gravitational potential energy</b></p>
+	<p>Above we have defined the <i>change of potential energy</i>. If we set the initial position to be a reference point (like the origin of a coordinate system), then we can define the <i>potential energy</i> of an object relative to this point. In the case of far-Earth gravitation, we choose to set the potential energy to be zero at infinity: \(U(r_i)= 0\). If the final position is given by the radial distance \(r\),  then the expression above reduces to:</p>
+	<p>\( U(r) = -G\frac{m_E m}{r}\)</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

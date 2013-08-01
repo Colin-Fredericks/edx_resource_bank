@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/car_1.png" alt="car_1" height="200"/>
+
+      <p><br/>
+A car rounds a circle while maintaining a constant speed.  Which arrow represents the direction of the net force on the car as it rounds the curve at the instant shown above?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              1          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              2          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              3          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              4          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              5          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              6          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              7          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              8          
+        </choice>
+        <choice name="foil9" correct="false">
+
+              9          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

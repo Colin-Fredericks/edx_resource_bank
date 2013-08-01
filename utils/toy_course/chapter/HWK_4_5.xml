@@ -1,0 +1,73 @@
+<chapter display_name="Homework for Units 4 and 5: Describing Motion and Core Models and Planar Dynamics">
+	<sequential display_name="Describing Motion and Core Models and Planar Dynamics Homework" url_name="Describing_Motion_Core_Models_and_Planar_Dynamics_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Average Velocity 1">
+			<problem display_name="Average Velocity 1" filename="F12/boris/BK157.problem" attempts="2" weight="1"/>
+			<discussion for="Average Velocity 1" id="MReV_Summer2013_BK157" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity 2">
+			<problem display_name="Average Velocity 2" filename="F12/boris/BK158.problem" attempts="2" weight="1"/>
+			<discussion for="Average Velocity 2" id="MReV_Summer2013_BK158" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity 3">
+			<problem display_name="Average Velocity 3" filename="F12/boris/BK159.problem" attempts="2" weight="1"/>
+			<discussion for="Average Velocity 3" id="MReV_Summer2013_BK159" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="fall fall fall">
+			<problem display_name="fall fall fall" filename="MIT/GWUproblems/HTW_exams/exam1_num01.problem" attempts="2" weight="1"/>
+			<discussion for="fall fall fall" id="MReV_Summer2013_exam1_num01" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Grocery Cart" filename="MRI21.vert" />
+		<vertical display_name="Systems: Three Blocks 1">
+			<problem display_name="Systems: Three Blocks 1" filename="S13/colin/Systems5.problem" attempts="2" weight="1"/> <!-- added to course -->
+			<discussion for="Systems: Three Blocks 1" id="MReV_Summer2013_Systems5" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Systems: Three Blocks 2">
+			<problem display_name="Systems: Three Blocks 2" filename="S13/colin/Systems6.problem" attempts="2" weight="1" /> <!-- added to course -->
+			<discussion for="Systems: Three Blocks 2" id="MReV_Summer2013_Systems6" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Systems: Three Blocks 3">
+			<problem display_name="Systems: Three Blocks 3" filename="S13/colin/Systems7.problem" attempts="2" weight="1" /> <!-- added to course -->
+			<discussion for="Systems: Three Blocks 3" id="MReV_Summer2013_Systems7" discussion_category="Describing Motion" />
+		</vertical>
+
+<!-- Level 2 -->
+
+		<vertical display_name="Brick Slide 2" filename="MRI29.vert" />
+		<vertical display_name="Average Velocity 4">
+			<problem display_name="Average Velocity 4" filename="F12/boris/BK160.problem" attempts="2" weight="2"/>
+			<discussion for="Average Velocity 4" id="MReV_Summer2013_BK160" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity 5">
+			<problem display_name="Average Velocity 5" filename="F12/boris/BK161.problem" attempts="2" weight="2"/>
+			<discussion for="Average Velocity 5" id="MReV_Summer2013_BK161" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity 6" filename="BK162.vert" />
+
+		<vertical display_name="Systems: Two Blocks">
+			<problem display_name="Systems: Two Blocks" filename="S13/colin/Systems1.problem" attempts="2" weight="2"/>
+			<discussion for="Systems: Two Blocks" id="MReV_Summer2013_Systems1" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Systems: Finding Contact Force">
+			<problem display_name="Systems: Finding Contact Force" filename="S13/colin/Systems4.problem" attempts="2" weight="2"/>
+			<discussion for="Systems: Finding Contact Force" id="MReV_Summer2013_Systems4" discussion_category="Describing Motion" />
+		</vertical>
+
+<!-- Level 3 -->
+
+		<vertical display_name="Stoplight">
+			<problem display_name="Stoplight" filename="MIT/rayyan/Physics801/Symbolic/Stoplight.problem" attempts="10" weight="3"/>
+			<discussion for="Stoplight" id="MReV_Summer2013_Stoplight" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="cat_1">
+			<problem display_name="cat_1" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/cat/cat_1.problem" attempts="2" weight="3"/>
+			<discussion for="cat_1" id="MReV_Summer2013_cat_1" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="cat_2">
+			<problem display_name="cat_2" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/cat/cat_2.problem" attempts="2" weight="3"/>
+			<discussion for="cat_2" id="MReV_Summer2013_cat_2" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+</chapter>

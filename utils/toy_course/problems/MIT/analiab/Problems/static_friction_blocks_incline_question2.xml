@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+a. Two blocks with the same mass <i>m</i> are both at rest on an a surface at an angle <i><m>$\alpha$</m></i> with respect to the horizontal as shown. One is made of plastic and the other is made of rubber. The coefficient of static friction of the rubber is larger than the one of plastic. When the angle of the incline increases, which of the objects will move first?
+<optionresponse direction="vertical" randomize="yes">
+
+<optioninput inline="1" options="('the rubber block','the plastic box','both move at the same time')" correct="the plastic box">
+</optioninput>
+
+b. The two blocks are now made of the same plastic material but one has twice the mass than the other.  When the angle increases which of the blocks move first? 
+<optioninput inline="1" options="('block of mass 2<i>m</i>','block of mass <i>m</i>','both move at the same time')" correct="both move at the same time">
+</optioninput>
+c. c) The blocks are identical, same mass and same material, but they are placed on the incline in such a way that one has a smaller surface area in contact with than the other. When the angle is increased which one moves first? 
+
+<optioninput inline="1" options="('the one having a smaller surface area in contact','the one having a larger surface area in contact','both move at the same time')" correct="the plastic box">
+</optioninput>
+
+</optionresponse>
+
+</problem>
+</html>
+

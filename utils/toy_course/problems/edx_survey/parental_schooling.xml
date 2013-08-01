@@ -1,0 +1,17 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What is the highest level of schooling completed by any of your parents or guardians?  Please choose the answer you think fits best.</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="PhD"><text>PhD/doctoral degree or equivalent</text></choice>
+      <choice correct="true" name="masters"><text>Professional degree, master’s degree or equivalent</text></choice>
+      <choice correct="true" name="bachelors"><text>Bachelor's degree, first university cycle, or equivalent</text></choice>
+      <choice correct="true" name="associates"><text>Higher technical/vocational education, associate's degree, or equivalent</text></choice>
+      <choice correct="true" name="technicians"><text>Technician's diploma, basic technical/vocational </text></choice>training, or equivalent
+      <choice correct="true" name="high_school"><text>High school, upper secondary school, or equivalent</text></choice>
+      <choice correct="true" name="junior_high"><text>Junior high, middle school, lower secondary school, </text></choice>or equivalent
+      <choice correct="true" name="elementary"><text>Elementary, primary school, or equivalent</text></choice>
+      <choice correct="true" name="primary"><text>Some primary schooling</text></choice>
+      <choice correct="true" name="did_not_attend"><text>Did not attend school</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 9 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">a. Mechanical energy is conserved throughout.</choice>
+			<choice location="random" correct="false">b. The collision is elastic.</choice>
+			<choice location="random" correct="false">c. The collision must be analyzed to find the force of the pendulum as it hits the box.</choice>
+			<choice location="random" correct="true">d. The collision must be analyzed to determine the energy transferred from the pendulum to the block.</choice>
+			<choice location="random" correct="false">e. Statements a and c are both needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Describing Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+
+<h2>Describing Translational Motion: Position, Velocity, and Acceleration</h2>
+
+<p>Newton's Laws constitute the first and most basic description of the effects of interactions on motion. In particular, Newton's Second Law describes how net force changes velocity. This is one of the five core physical models, the one from which we derive the others. This course is concerned with these five similar descriptions, which we will call Core Models.</p>
+
+<p>The core models are very general, and it is useful to think through their consequences in more detail, and to collect together in our minds the related phenomena and their relationships. The first such Model we present is a description of the motion of a single point particle through the specification of its position, velocity, and acceleration as functions of time, given that it is subject to a time-varying force. The key point is that what we see and measure is the position at a particular time; the velocity is computed (perhaps in the brain), and the change in velocity is less perceptible (even though that is what the forces control). Thus to relate what we see to the underlying causative forces it is helpful to already have in mind how the physical variables position, velocity, and acceleration are related - essentially through calculus. This Model is given the name <i>Dynamics and Net Force</i> and is simply Newton's Second Law coupled with the calculus of motion.</p>
+
+<h3>Each Core Model has a Hierarchy of Special Case Models</h3>
+
+<p>This unit is focused on a particular <i>subset</i> of the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> core model.</p>
+
+<p>In this unit we also introduce the idea that each core model possesses a hierarchy of Models, each a useful special case of a more general model. We apply this approach to the motion of a point particle by considering the Core Model <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> in certain special cases. For instance, it is often useful to assume an object is experiencing constant acceleration (due to constant net force like gravity). Therefore, it is also useful to be familiar with the consequences of this assumption. In one sense, Motion with Constant Acceleration is a Model just as Dynamics and Net Force is a Model, but in another sense, Dynamics and Net Force is more general -- it includes Motion with Constant Acceleration as a special case. For this reason, in this course we present a "Hierarchy of Models for Mechanics" that emphasizes which commonly encountered Models are special cases of other Models.</p>
+
+<p>The portion of the course outline covered in this unit is displayed below.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/files/concept_map3_unit4.PNG"/></p>
+
+</body>
+</html>
+

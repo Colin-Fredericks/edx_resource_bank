@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 20 -->
+
+<problem>
+
+	<p>A ball is launched from the origin, and undergoes projectile motion without rotating. Ignore air resistance. </p>
+	<img src="/static/problems/F12/MRI/images/MRI19.png" width="302" />
+
+	<h3>Part 1</h3>
+	<p>While the ball is in flight, which of the following statements are true?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The energy of the ball-Earth system is conserved</choice>
+			<choice location="random" correct="false">The linear momentum of the ball is conserved</choice>
+			<choice location="random" correct="false">Neither energy nor momentum is conserved</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

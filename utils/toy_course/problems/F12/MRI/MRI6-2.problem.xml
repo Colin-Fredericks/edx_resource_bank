@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 6 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">a. Mechanical energy is conserved throughout.</choice>
+			<choice location="random" correct="false">b. It is necessary to find the speed of the block as it leaves the spring.</choice>
+			<choice location="random" correct="false">c. The forces change when the block leaves the spring.</choice>
+			<choice location="random" correct="false">d. The acceleration drops to zero at the top.</choice>
+			<choice location="random" correct="false">e. Statements b, c and d are all needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

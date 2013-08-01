@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/conservation_1.png" alt="Conservation_1" height="150"/>
+
+      <p>Two identical balls with different initial speeds slide down two frictionless tracks of the same height but different angles, and then reach the bottom. Which of the following quantities is (are) equal for these two processes?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+            <text>The change in the balls' potential energies</text>
+        </choice>
+        <choice name="foil2" correct="false">
+            <text>The change in the balls' kinetic energies</text>
+        </choice>
+        <choice name="foil13" correct="false">
+            <text>The change in the balls' speeds</text>
+        </choice>
+        <choice name="foil1\4" correct="false">
+			<text>The change in the balls' kinetic energies &amp; the change in the balls' speeds</text>
+        </choice>
+        <choice name="foil5" correct="true">
+			<text>The change in the balls' kinetic energies &amp; the change in their potential energies</text>
+        </choice>
+        <choice name="foil6" correct="false">
+			<text>The change in the balls' speeds &amp; the change in their potential energies</text>
+        </choice>
+        <choice name="foil7" correct="false">
+            <text>All three are the same</text>
+        </choice>
+        <choice name="foil8" correct="false">
+            <text>None of the above</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

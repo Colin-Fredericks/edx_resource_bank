@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 12 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">There is some transfer of the horizontal momentum of the block to the wedge.</choice>
+			<choice location="random" correct="false">There is no friction between the wedge and the block.</choice>
+			<choice location="random" correct="false">The wedge has a greater mass than the block.</choice>
+			<choice location="random" correct="false">The increase in the potential energy of the block is equal to the decrease in the kinetic energy of the block.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

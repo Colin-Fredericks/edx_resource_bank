@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4b -->
+
+<problem>
+
+	<p>Consider the situation shown in the picture below: a person is trying to move a very heavy safe by pushing it along the ground. The force applied by the person to the safe is perfectly horizontal. Neither the person nor the safe is moving. </p>
+
+	<img src="/static/problems/F12/MRI/images/MRI4.png" />
+
+	<h3>Part 1</h3>
+	<p>The force applied by the person to the safe and the force applied by the safe to the person are:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Equal in size.</choice>
+			<choice location="random" correct="false">Not equal in size.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Otherwise the safe would break or dent.</choice>
+			<choice location="random" correct="false">The safe is much heavier than the person.</choice>
+			<choice location="random" correct="true">Every action has an equal and opposite reaction.</choice>
+			<choice location="random" correct="false">The system composed of the person and safe is not accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

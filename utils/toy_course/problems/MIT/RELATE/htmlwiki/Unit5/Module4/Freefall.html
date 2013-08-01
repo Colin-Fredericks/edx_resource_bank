@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Freefall</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+</head>
+<body>
+<h3>
+Example of Motion with Constant Acceleration: Freefall</h3>
+<p>
+			Weight is a force acting on every object near the Earth's surface.&#160;An object which is moving under the influence of&#160;<b>only</b>&#160;its weight (no other interactions are significant) is said to be in&#160;<b>freefall</b>.</p>
+<h3>
+The Acceleration of Gravity</h3>
+<p>
+			For an object near the Earth subject only to the force of gravity, Newton's Second Law takes an extremely simple form:</p>
+<p>
+\(mg = F_{net} = ma\)</p>
+<p>
+			implying that the size of the acceleration will be:</p>
+<p>
+\(a = g = \mbox{9.8 m/s}^{2}\)</p>
+<p>
+			and the acceleration will be directed <b>downward</b>. Freefall near the Earth's surface is an example of motion with constant acceleration and an excellent approximation to the motion of heavy objects thrown or dropped in everyday contexts. Understanding freefall was a very important step in the history of mechanics. The applicability to freefall motion is one reason for the central place of&#160;"One-Dimensional Motion with Constant Acceleration" as a mechanics model.</p>
+</body>
+</html>
+

@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: 2 Coordinate Systems </title>
+
+      <p>Consider two coordinate systems: 1 and 2. Coordinate system 1 is the one with the axes shown in solid lines; coordinate system 2 is the one with the axes shown as dashed lines. The origins of the coordinate systems are marked as O1 and O2, respectively. The scale on all axes is the same. A particle is moving from point A to point B. 
+All numbers marked in the diagram represent the coordinate of the corresponding points in coordinate system 1.
+
+</p>
+      <p>
+</p>
+
+    <img width="500" alt="BK31" src="/static/problems/MIT/rayyan/check_points/Pictures/BK31.png"/>
+
+      <br/>
+      <p>
+</p>
+
+
+        <p>
+Part 1. 
+What is the correct notation for the vector of the initial position of the particle in the coordinate system 1?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                (6; 10)
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                (10; 6)
+
+          </choice>
+          <choice name="foil3" correct="true">
+
+                (-2; 10)
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                (10; -2)
+
+          </choice>
+          <choice name="foil5" correct="false">
+
+                (-6; 7)
+
+          </choice>
+          <choice name="foil6" correct="false">
+
+(7; -6)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Part 2. 
+What is the correct notation for the vector of the initial position of the particle in the coordinate system 2?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                (6; 10)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                (10; 6)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                (-2; 10)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                (10; -2)
+
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+
+                (-6; 7)
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+(7; -6)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Part 3. 
+What is the correct notation for the vector of the final position of the particle in the coordinate system 2?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                (6; 3)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                (3; 6)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                (-3; 6)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                (6; -3)
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                (-6; 3)
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+(3; -6)
+          </choice>
+          <choice location="random" name="foil7" correct="true">
+
+(-3; -6)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+
+(-6; -3)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Part 4. 
+What is the correct notation for the vector of the displacement of the particle in the coordinate system 1?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                (-3; 13)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                (13; -3)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                (-3; -13)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                (-13; -3)
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                (3; 13)
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+(13; 3)
+          </choice>
+          <choice location="random" name="foil7" correct="true">
+
+(3; -13)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+
+(-13; 3)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Part 5. 
+What is the correct notation for the vector of the displacement of the particle in the coordinate system 2?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                (-3; 13)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                (13; -3)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                (-3; -13)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                (-13; -3)
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                (3; 13)
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+(13; 3)
+          </choice>
+          <choice location="random" name="foil7" correct="true">
+
+(3; -13)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+
+(-13; 3)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Part 6. 
+If the units on the axes represent meters and it takes the particle 5 seconds to travel from A to B, what is the average velocity of the particle as measured in coordinate system 2?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                2.53 m/s
+
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+
+                2.67 m/s
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                32.0 m/s
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                35.6 m/s
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<!-- Rocket Problem -->
+<problem>
+
+	<h2>Rocket Problem</h2>
+	<p>Not checked. We are not covering this topic</p>
+	<p>A rocket ascends from rest in a uniform gravitational field by ejecting exhaust at constant speed <i>u</i> relative to the rocket. Assume that the rate at which mass is expelled is give by:</p>
+
+	<p> \( \frac{dm_f}{dt} = \gamma m_r \) </p>
+
+	<!-- <img src="/static/problems/S13/ESG/images/6-6.png" /> -->
+
+	<p>where <i>m<sub>r</sub></i> is the instantaneous mass of the rocket and \(\gamma\) is a positive constant. The rocket is retarded by air resistance with a force <i>F = bm<sub>r</sub>v<sub>r</sub></i> proportional to the instantaneous momentum of the rocket where <i>b</i> is a positive constant and <i>v<sub>r</sub></i> is the speed of the rocket.</p>
+
+	<script type="loncapa/python">
+v = "(gamma*u-g)/b*(1-e^(b*t))"
+	</script>
+
+	 <p>Find the speed of the rocket as a function of time.</p>
+
+	<formularesponse samples="gamma,g,u,b,e,t@1,1,1,1,1,1:5,5,5,5,5,5#10" answer="$v">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>v(t) =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Let's define the parameters for the problem. Timeintervals are for how many seconds does the elevator have constant acceleration.
+timeinterval1=random.randrange(1,2,1)
+timeinterval2=random.randrange(2,8,1)
+timeinterval3=3- timeinterval1
+
+#Let's relate the final acceleration to the initial acceleration.
+multiple= timeinterval1/ timeinterval3
+
+totaltime= timeinterval1+ timeinterval2+ timeinterval3
+
+#Just to make the problem more interesting (and realistic).
+totalnumofstories= totaltime*2+random.randrange(-3,3,1)
+
+#The correct answer for this problem is: h/( timeinterval1* timeinterval2+1/2*( timeinterval1)*( timeinterval1+ timeinterval3).
+#You can easily get this by adding the displacements using the average velocity over each interval
+
+#Let's make the graph. We will set  x_max to  multipleoftime + 2 to
+#account for the initial and final bits of acceleration
+x_min = -1
+x_max =  totaltime+1
+
+#Label initial points
+push(@X,0);push(@Y,0)
+push(@X,0);push(@Y,1/ timeinterval1)
+push(@X, timeinterval1);push(@Y,1/ timeinterval1)
+push(@X, timeinterval1);push(@Y,0)
+push(@X, timeinterval1+ timeinterval2);push(@Y,0)
+push(@X, timeinterval1+ timeinterval2);push(@Y,-1/ timeinterval3)
+push(@X, timeinterval1+ timeinterval2+ timeinterval3);push(@Y,-1/ timeinterval3)
+push(@X, timeinterval1+ timeinterval2+ timeinterval3);push(@Y,0)
+
+</script>
+    <gnuplot major_ticscale="0" bgcolor="xffffff" align="middle" height="200" width="400" transparent="off" grid="off" alttag="Elevator Acceleration" samples="100" minor_ticscale="0" font="9" border="on" fgcolor="x000000" gridlayer="on" plottype="Cartesian">
+      <axis ymin="-1.5" ymax="1.5" color="x000000" xzero="dotted" xmax="$x_max" xmin="$x_min" yzero="off" yformat="off"/>
+      <title>Elevator Acceleration</title>
+      <xlabel>Units of Time t</xlabel>
+      <ylabel>Acceleration a</ylabel>
+      <curve pointtype="3" name="My Plot" color="x000000" linetype="solid" linewidth="2" linestyle="lines">
+        <data>@X</data>
+        <data>@Y</data>
+      </curve>
+    </gnuplot>
+    <br/>
+
+      <p>
+A student walks into an elevator at rest on the bottom floor of a building with $totalnumofstories stories. The elevator then accelerates upward with an unknown constant acceleration a for &#x394;t1 = $timeinterval1 seconds, moves at a constant velocity for &#x394;t2 = $timeinterval2 seconds, and then decelerates at the magnitude of $multiple<b/>a for &#x394;t3 = $timeinterval3 seconds. If the elevator rises a total of h meters, what is the magnitude of the acceleration a during the first time interval &#x394;t1?
+</p>
+
+    <br/>
+    <formularesponse answer="h/($timeinterval1*$timeinterval2+1/2*($timeinterval1)*($timeinterval1+$timeinterval3))" samples="h@1:10#2">
+      <responseparam default="3%" type="tolerance"/>
+
+        <p> a = </p>
+
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+
+          <p>Hint: Break the problem up into three parts. What is the elevator's displacement for each part?
+1.) The elevator accelerates upward.
+2.) The elevator has constant velocity.
+3.) The elevator decelerates until it stops.</p>
+
+      </hintgroup>
+    </formularesponse>
+  </problem>
+</html>

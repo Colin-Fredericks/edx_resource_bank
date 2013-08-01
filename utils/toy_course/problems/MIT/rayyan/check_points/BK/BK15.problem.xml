@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK15.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+The diagrams show four boxes placed on a frictionless surface, along with the magnitudes of the horizontal forces applied to them. Which of the boxes is moving at a constant velocity?
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              Box A only          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              Box B only          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+              Box C only          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+              Boxes D only          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              Boxes A and B only          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+              Boxes B and C only          
+        </choice>
+        <choice location="random" name="foil7" correct="true">
+              Boxes B and D only          
+        </choice>
+        <choice location="random" name="foil8" correct="false">
+              None of the boxes is moving at a constant velocity          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

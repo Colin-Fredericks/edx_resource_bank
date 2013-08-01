@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Example: Pushing 2 Blocks</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Pushing two boxes on a horizontal surface.</h3>
+<p>A person is pushing two massive boxes of masses m<sub>1</sub> and m<sub>2</sub> along a horizontal floor by applying a purely horizontal force of magnitude <b>F</b>. We will ignore friction between the boxes and the floor, but the person is able to avoid slipping while pushing. Because the boxes are solid they are constrained to move together with the same acceleration. The goal of the problem is to calculate the acceleration of the system.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPush3.png"/></p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>1. Calculate the acceleration of the two blocks</b> [<a href="javascript:toggleDisplay('ht12','hide','answer')" id="ht12l">answer</a>]</th>
+</tr>
+<tr style="display:none" id="ht12">
+<td>
+<p>The problem can be solved in two ways as shown below. The first one is by considering the system formed by both boxes, the second one is to consider two separate systems ('the standard approach').</p>
+
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th width="400">
+<b>Combined system&#160;:</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPush1a.png"/>
+<p>
+															&#160;</p>
+<ul style="list-style:disc outside none">
+	<li>The <b>combined system</b> is formed by the two boxes considered to be a point particle of mass m<sub>1</sub>+m<sub>2</sub>.</li>
+</ul>
+<ul style="list-style:disc outside none">
+	<li><b>Interactions:</b>The particle in the system interacts with the person, the surface and the Earth. The resulting forces of these interactions are shown in the free body diagram above, where the subscript (1+2) is used to indicate the point particle of mass m<sub>1</sub>+m<sub>2</sub>.</li>
+</ul>
+<ul style="list-style:disc outside none">
+	<li>The equation below the FBD is the horizontal component of Newton's second law (the vertical component of the net force is zero). The signs in the terms are consistent with a coordinate system with the positive x - axis to the right. Note that the acceleration depends only on the external force F.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th width="400">
+<b>Two Separate systems&#160;:</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPush2a.png"/>
+<p>&#160;</p>
+<ul style="list-style:disc outside none">
+<li>Each <b>system</b> is formed by one box, box 1 and box 2, considered as point particles of masses m<sub>1</sub> and mass m<sub>2</sub>.</li>
+</ul>
+<ul style="list-style:disc outside none">
+<li>
+<b>Interactions:</b> Box 1 interacts with box 2, the person, the surface and the Earth. Box 2 interacts with box 1, the surface and the Earth. The resulting forces of these interactions are shown in the free body diagram above.</li>
+</ul>
+<ul style="list-style:disc outside none">
+<li>The equations below the FBD's are the x - component of Newton's Second Law for each of the systems (the vertical component of the net force on each of the systems is zero). Note that we have in principle four unknowns and two equations. However, the normal forces between boxes are Newton's third law pairs therefore their magnitudes are equal (one equation more). In addition the normal forces constrained the boxes' motion to have equal accelerations (the last equation).</li>
+</ul>
+<p>In summary, to obtain the acceleration, add equations (1) and (2) and consider:</p>
+<ul style="list-style:disc outside none">
+<li>
+<b>Netwon's Third Law constraint</b>: the contact forces that one box exerts on the other have the same magnitude, N<sub>12</sub> = N<sub>21</sub>. Their directions are considered in the signs of the terms of the x - component of the net force (equations (1) and (2)).</li>
+<li>
+<b>Related accelerations constraint</b>: the boxes must move together when pushed: a<sub>1,x</sub> = a<sub>2,x</sub>. This is the acceleration of the system: a.</li>
+</ul>
+<p>&#160;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+	<b>2. Remarks: Combined system vs. separate system.</b> [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht13">
+<td>
+	<p>It is important to note that when constructing the free body diagram for the combined system in the example above we did not include the internal contact forces exerted by one box on the other. Working the problem by treating the blocks as separate systems clarifies the reason for neglecting the internal forces: they will always cancel out when the equations for the various systems are combined algebraically. This cancellation is fundamentally a result of the <b>constraint imposed by Newton's Third Law.</b> Because of this cancellation, we say that internal forces are irrelevant to the acceleration of the system.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p>Consider a conical pendulum (e.g. tether ball) below:</p>
+	<p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK4a.png" alt="p1a" texwrap="none" align="top"/></p>
+	<p>When the pendulum is in the "left-most" position, what diagram correctly shows the forces acting on it?</p>
+
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK4b.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK4c.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK4d.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK4e.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

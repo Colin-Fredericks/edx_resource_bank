@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+<!-- Systems Problems #1 -->
+<problem>
+
+<img src="/static/problems/S13/colin/images/Systems1.png" width="540" height="160" />
+
+<p>In the image above, two blocks are stacked on a flat plane. The stack is initially given a velocity to the right. The surface that block 2 slides on has friction, but the interface between blocks 1 and 2 has no friction.</p>
+
+<p>Which choice of system will <b>not</b> be accelerating?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">Only block 1 will not be accelerating.</choice>
+			<choice correct="false">Only block 2 will not be accelerating.</choice>
+			<choice correct="false">A system composed of block 1 and block 2 will not be accelerating.</choice>
+			<choice correct="false">Every possible system of blocks 1 and 2 will be accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

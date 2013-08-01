@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem show_answer="never" attempts="0">
+    <title>Modeling and Newton Second Law</title>
+
+<table border="1"><tr><td><b>Modeling and Newton Second Law</b></td></tr><tr><td><iframe height="315" width="560" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/---K1S6Zc7k?rel=0"/></td></tr></table>
+
+<p>Did you find this video useful?</p>
+
+      <br/>
+      <multiplechoiceresponse type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+        <choicegroup type="MultipleChoice">
+          <choice location="1" name="foil1" correct="true">
+
+                Very useful
+
+          </choice>
+          <choice location="2" name="foil2" correct="true">
+
+                Somewhat useful
+
+          </choice>
+          <choice location="3" name="foil3" correct="true">
+
+                Not useful
+
+          </choice>
+          <choice location="4" name="foil4" correct="true">
+
+                Confusing
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

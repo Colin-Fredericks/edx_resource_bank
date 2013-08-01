@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<problem>
+  <b>checked and modified</b><br/>
+<!-- too much info, not needed
+  <p>
+A uniform cylinder of outer radius \(R\) and Mass \(M\) with moment of inertia about the center of mass \(I_{cm}\), starts from rest and moves down 
+an incline tilted at an angle \(\theta\) from the horizontal. The center of mass of the cylinder has dropped a vertical distance h when it reached 
+the bottom of the incline. Let \(g\) denote the gravitational constant.
+The coefficient of static friction between the cylinder and the surface is \(\mu_s\). The cylinder rolles without slipping down the incline. 
+  </p>
+-->
+<p>
+A uniform cylinder moves along the rough surface of an incline plane. 
+</p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/rollingdown2.png" width="350"/>
+    </p>
+<p>
+Part 1. When the cylinder is <b>rolling down</b> without slipping, the friction is pointing in the direction of:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">(a) </choice>
+<choice location="random" correct="false" name="2">(b) </choice>
+<choice location="random" correct="true" name="3">(c) </choice>
+<choice location="random" correct="false" name="4">(d)</choice> 
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+	<p>
+Part 2. Now consider a situation where the cylinder is <b>rolling up</b> the incline without slipping, the friction is 
+pointing in the direction of:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="true" name="1">(a) </choice>
+<choice location="random" correct="false" name="2">(b) </choice>
+<choice location="random" correct="false" name="3">(c) </choice>
+<choice location="random" correct="false" name="4">(d)</choice> 
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

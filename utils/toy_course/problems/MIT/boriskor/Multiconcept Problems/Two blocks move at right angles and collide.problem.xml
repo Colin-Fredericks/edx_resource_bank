@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Two blocks are sliding along a frictionless horizontal surface. Their velocities directed at right angles to each other. One of the blocks has four times the mass of the other block; their kinetic energies are equal. The blocks collide inelastically and stick together. Find the amount of kinetic energy \(\Delta K\) lost in the collision if the initial kinetic energy of each block is \(K\).</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+                \(\Delta K=1.200K\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(\Delta K=0.800K\)
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+                \(\Delta K=K\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(\Delta K=0.586K\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(\Delta   K=1.414K\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(\Delta K=0.268K\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

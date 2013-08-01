@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<h3>Blocks in an Elevator</h3>
+
+<img src="/static/problems/U13/images/blocks_in_elevator.png"/>
+
+<p>
+Blocks I and II, each with a mass of 1.0 kg, are hung from the ceiling of an elevator by ropes 1 and 2. What is the force exerted by rope 1 on block I when the elevator is traveling upward at a constant speed of 2.0 m/s?
+</p>
+
+<multiplechoiceresponse>
+	<choicegroup type="MultipleChoice">
+		<choice correct="false" name="2">2 N</choice>
+		<choice correct="true" name="10">10 N</choice>
+		<choice correct="false" name="12">12 N</choice>
+		<choice correct="false" name="20">20 N</choice>
+		<choice correct="false" name="22">22 N</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

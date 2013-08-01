@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI22-1.problem" display_name="Multiple Axes 1" attempts="2" weight="0.5"/>
+	<problem filename="F12/MRI/MRI22-2.problem" display_name="Multiple Axes 1, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Multiple Axes 1" id="MReV_Summer2013_MRI22" discussion_category="Angular Momentum" />
+</vertical>

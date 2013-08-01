@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/RELATE/Unit_1_SIM_Problems/InclinedPlane.png" alt="InclinedPlane.png"/>
+
+      <p><br/>The block of mass m<sub>1</sub> in the figure above is being pulled up the ramp..  Below is an attempt at a free body diagram for the block of mass m<sub>1</sub> treated as a point particle system.<br/></p>
+
+    <randomlabel width="177" bgimg="/static/problems/MIT/RELATE/Unit_1_SIM_Problems/InclinedPlaneFBD1.png" height="189">
+      <labelgroup type="text" name="m1" texsize="\normalsize">
+        <location y="25" x="88">
+</location>
+        <location y="81" x="154">
+</location>
+        <location y="185" x="87">
+</location>
+        <location y="131" x="17">
+</location>
+        <location y="35" x="54">
+</location>
+        <label>A</label>
+        <label>B</label>
+        <label>C</label>
+        <label>D</label>
+        <label>E</label>
+      </labelgroup>
+    </randomlabel>
+
+      <p><br/>  Associate the forces shown in this diagram with the appropriate statements below.<br/>
+</p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <li>
+
+            <p>This arrow should not be in the free body diagram.</p>
+
+          <block condition="&EXT('user.resource.resource.0.tries') > 0 && index(&EXT('user.resource.resource.0.11.submission'),'normal='.$m1{5}) != -1 && index(&EXT('user.resource.resource.0.11.submission'),'shouldntB='.$m1{1}) == -1">
+            <notsolved>
+</notsolved>
+
+              <p>&#xA0;&#xA0;<font color="red">If $m1{5} represents the normal force, what interaction is producing $m1{1}?</font></p>
+
+          </block>
+          <optioninput location="random" name="shouldntB" options="('A','B','C','D','E','None of these')" correct="$m1{1}">
+</optioninput>
+        </li>
+        <conceptgroup concept="">
+          <choice location="random" name="tension" correct="$m1{2}">
+
+This arrow represents a tension force.
+          </choice>
+          <choice location="random" name="rope" correct="$m1{2}">
+
+This arrow represents the force on the block resulting from an interaction between the rope and the block.
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="">
+          <choice location="random" name="weight" correct="$m1{3}">
+
+This arrow represents a weight force.
+          </choice>
+          <choice location="random" name="earth" correct="$m1{3}">
+
+This arrow represents the force on the block resulting from an interaction between the earth and the block.
+
+              <block condition="&EXT('user.resource.resource.0.tries') > 0 && index(&EXT('user.resource.resource.0.11.submission'),'earth='.$m1{3}) == -1">
+                <notsolved>
+</notsolved>
+
+                  &#xA0;&#xA0;<font color="red">In this statement "the earth" does not include the ramp that the block is moving on.</font>
+
+              </block>
+              <br/>
+
+          </choice>
+        </conceptgroup>
+        <li>
+
+            <p>This arrow represents a friction force.</p>
+
+          <optioninput location="random" name="friction" options="('A','B','C','D','E','None of these')" correct="$m1{4}">
+</optioninput>
+        </li>
+        <li>
+
+            <p>
+This arrow represents a normal force.
+</p>
+
+          <block condition="&EXT('user.resource.resource.0.tries') > 0 && index(&EXT('user.resource.resource.0.11.submission'),'normal='.$m1{1}) != -1">
+            <notsolved>
+</notsolved>
+
+              <p>&#xA0;&#xA0;<font color="red">The normal force from the ramp on the block must be perpendicular to the surface of the ramp.  Which of the choices $m1{1} or $m1{5} is perpendicular to the surface?</font></p>
+
+          </block>
+          <optioninput location="random" name="normal" options="('A','B','C','D','E','None of these')" correct="$m1{5}">
+</optioninput>
+        </li>
+        <conceptgroup concept="">
+          <choice location="random" name="ma" correct="None of these">
+
+This arrow represents <i>ma</i> for the block.
+
+              <block condition="&EXT('user.resource.resource.0.tries') > 0 && index(&EXT('user.resource.resource.0.11.submission'),'ma='.$m1{2}) != -1">
+                <notsolved>
+</notsolved>
+
+                  &#xA0;&#xA0;<font color="red"><i>ma</i> is the net force (the sum of the forces resulting from interactions).  The net force should not be included in a free body diagram.  Only forces resulting from interactions should be included.  Thus, even though arrow $m1{2} is potentially in the same direction as <i>ma</i>, it does not represent <i>ma</i>.  (What other direction might <i>ma</i> point?)</font>
+
+              </block>
+              <br/>
+
+          </choice>
+          <choice location="random" name="motion" correct="None of these">
+
+This arrow represents the force produced by the block's motion.
+
+              <block condition="&EXT('user.resource.resource.0.tries') > 0 && index(&EXT('user.resource.resource.0.11.submission'),'motion='.$m1{2}) != -1">
+                <notsolved>
+</notsolved>
+
+                    <font color="red">All forces must be the result of an interaction.  The block's motion is not an interaction (what other object is participating?).</font>
+
+              </block>
+              <br/>
+
+          </choice>
+        </conceptgroup>
+      </ul>
+
+    </optionresponse>
+          </problem>
+</html>

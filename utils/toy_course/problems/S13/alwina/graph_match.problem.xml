@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+<!-- matching statements to graphs using drop-down boxes -->
+<problem>
+    <text>
+      <p>Below is a list of statements and three graphs. They are formatted in a table. Each row corresponds to a statement, with each column corresponding to the graph. In each entry, if the graph can be described by the statement, select "Yes". Otherwise, select "No." The second graph is a parabola. </p>
+    </text>
+  <optionresponse>
+	<table>
+	  <tr>
+		<td></td>
+	    <td><img src="/static/problems/S13/alwina/images/graphs/y=3.png"/></td>
+		<td><img src="/static/problems/S13/alwina/images/graphs/y=2-.5(x-2)^2.png"/></td>
+		<td><img src="/static/problems/S13/alwina/images/graphs/y=4-x.png"/></td>
+	  </tr>
+	  <tr>
+	    <td>Velocity vs. time for an object which starts and stops in the same place</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+	  </tr>
+	  <tr>
+	    <td>Position vs. time for an object with nonzero acceleration</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+	  </tr>	  
+	  <tr>
+	    <td>Velocity vs. time for an object with nonzero acceleration</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+	  </tr>
+	  <tr>
+	    <td>Position vs. time for an object undergoing constant acceleration</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+	  </tr>
+	  <tr>
+		<td></td>
+	    <td><img src="/static/problems/S13/alwina/images/graphs/y=3.png"/></td>
+		<td><img src="/static/problems/S13/alwina/images/graphs/y=2-.5(x-2)^2.png"/></td>
+		<td><img src="/static/problems/S13/alwina/images/graphs/y=4-x.png"/></td>
+	  </tr>	  
+	  <tr>
+	    <td>Position vs. time an object with an average velocity of zero</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+	  </tr>
+	  <tr>
+	    <td>Position vs. time for a positively accelerating object</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+	  </tr>
+	  <tr>
+	    <td>Position vs. time for a negatively accelerating object</td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="Yes"></optioninput></center></td>
+		<td><center><br/><optioninput options="('Yes','No')" correct="No"></optioninput></center></td>
+	  </tr>	  
+	</table>	
+  </optionresponse>
+</problem>
+</html>

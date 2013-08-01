@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+A satellite revolves around the Earth in a circular orbit. Which force forms a "Newton's 3rd law pair" with the weight of the satellite?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="okay" correct="false">
+              the gravitational force exerted on the satellite by the Earth          
+        </choice>
+        <choice location="random" name="okay1" correct="false">
+              the centripetal force acting on the satellite          
+        </choice>
+        <choice location="random" name="okay2" correct="true">
+              the gravitational force exerted on the Earth by the satellite          
+        </choice>
+        <choice location="random" name="okay4" correct="false">
+              the weight of the satellite has no "Newton's 3rd law pair" because the satellite is in free fall          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

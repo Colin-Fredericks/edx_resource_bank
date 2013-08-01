@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>One Step Problems and Simultaneous Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h4>Newton's Cradle</h4>
+
+<p>Newton's cradle, an ingenious device named in honor of Sir Isaac Newton, consists of five identical metal balls suspended in a frame so that they are just touching each other at rest. Each ball is attached to the frame by two wires of equal length angled away from each other. This restricts the pendulums' movements to the same plane. As shown in the animation, when one ball (ball 1) is pulled away and is let to fall, it strikes the first ball in the series and comes to nearly a dead stop. The ball on the opposite side (ball 5) almost instantly swings out. The device is also known as the Executive Stress Reliever.</p>
+<table>
+<tr>
+<td>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Newtons_cradle_animation_book_2.gif" />
+<!--
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/Newtons_cradle_animation_book_2.gif"/> 
+-->
+</td></tr>
+<tr>
+<td>This is a file from the <a href="http://en.wikipedia.org/wiki/Main_Page" class="extiw" title="wikipedia:Main Page">Wikimedia Commons</a>
+</td></tr></table>
+<p>Note that the intermediate balls appear stationary. In fact, the cradle continues to work even if the intermediate balls are physically clamped still. This is also counter intuitive - transmitting motion without moving. What actually happens is that the first impact produces a shock wave that propagates through the intermediate balls. Any efficiently elastic material such as steel will do this as long as the kinetic energy is temporarily stored as potential energy in the compression of the material rather than being lost as heat.
+</p><p>Let's assume that the balls have mass <b>m</b> and are made of a perfectly elastic material. Is it ever possible that when ball 1 is released, it stops after the collision and balls 4 and 5 swing out on the opposite side with half of the speed of ball 1? 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/Newtons_cradle_question.png" />
+</p>
+<table class="wikitable collapsible collapsed">
+
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+<tr style="display:none" id="ht13">
+<td><b>NO</b>
+<table class="wikitable collapsible collapsed">
+
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td>Let's consider the time interval that starts at the instant <font face="times new roman" size="3"><b><i>t</i><sub>i</sub></b></font>, right before ball 1 hits the second ball with a horizontal velocity of magnitude <font face="times new roman" size="3"><i><b>v</b></i></font>, and ends at the instant <font face="times new roman" size="3"><b><i>t</i><sub>f</sub></b></font>, right when balls 4 and 5 swing out with a horizontal velocity of magnitude <font face="times new roman" size="3"><b><i>v</i>/2</b></font>.
+<p><br />
+</p>
+<font color="blue"><b>System:</b></font> <a href='javascript:toggleDisplay( "toggledisplay9", "[hide]", "[SHOW System]" )' style="font-size:smaller" id="toggledisplay9l">[SHOW System]</a><div style="display:none;" id="toggledisplay9"> The 5 balls treatead as point particles.</div><br />
+<font color="blue"><b>Interactions:</b></font> <a href='javascript:toggleDisplay( "toggledisplay10", "[hide]", "[SHOW Interactions]" )' style="font-size:smaller" id="toggledisplay10l">[SHOW Interactions]</a><div style="display:none;" id="toggledisplay10"> 
+<p><b><u>External</u>:</b>
+</p>
+<ul style="list-style:disc outside none"><li>Balls <font size="3">&#8596;</font> Earth.
+</li><li>Balls <font size="3">&#8596;</font> strings.
+</li></ul>
+<p><b><u>Internal</u>:</b>
+The interaction between two consecutive balls. Because we assume that the balls are made of a perfect elastic material these interactions are conservative and are represented by a potential energy.
+</p><p>Because the motion of the balls during the time interval under consideration is horizontal and the external forces of tension and gravity are perpendicular to the balls' displacement, therefore they do not do work. As a result, the <b>mechanical energy of the system is constant</b>.
+</p><p>In addition, during the time interval under consideration, there is no external force along the horizontal direction, therefore the <b>linear momentum of the system is constant</b>.
+</p>
+</div><br />
+<font color="blue"><b>Model(s):</b> </font><a href='javascript:toggleDisplay( "toggledisplay11", "[hide]", "[SHOW Model]" )' style="font-size:smaller" id="toggledisplay11l">[SHOW Model]</a><div style="display:none;" id="toggledisplay11"> Constant mechanical energy and constant linear momentum applied to the 5 balls system.
+</div><br />
+<font color="blue"><b>Approach:</b></font><a href='javascript:toggleDisplay( "toggledisplay12", "[hide]", "[SHOW]" )' style="font-size:smaller" id="toggledisplay12l">[SHOW]</a><div style="display:none;" id="toggledisplay12"> 
+<p>In order to answer the question we need to check if the linear momentum along the horizontal direction and the mechanical energy of the system are constant during the time interval <font face="times new roman" size="3"><b><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></b></font>. Let's consider a coordinate system with the x-axis horizontal and positive to the right.
+</p><p><b><u>Initial State</u>:</b>
+</p>
+<ul style="list-style:disc outside none"><li> Ball 1 moving horizontally at speed <font face="times new roman" size="3"><i><b>v</b></i></font>.
+</li><li> Balls 2 to 5 are at rest.
+</li><li> None of the balls are compressing each other (zero elastic potential energy).
+</li></ul>
+<p>The initial momentum of the system along the x-direction:
+</p><p>\(p(t_i)=\;mv\) &#160;&#160;&#160;&#160;&#160; (eq. 1)
+</p><p>The initial mechanical energy is only the kinetic of ball 1:
+</p><p>\(E(t_i) = \frac{1}{2}mv^2\)&#160;&#160; (eq. 2)
+</p><p><b><u>Final State</u>:</b>
+</p>
+<ul style="list-style:disc outside none"><li> Balls 4 &amp; 5 moving together horizontally at speed <font face="times new roman" size="3"><i><b>v</b>/2</i></font>
+</li><li> Balls 1 to 3 are at rest.
+</li><li> None of the balls are compressing each other (no elastic potential energy).
+</li></ul>
+<p>The final momentum of the system along the x-direction:
+</p><p>\(p(t_f)=m\frac{v}{2}+m\frac{v}{2} = mv\)&#160;&#160;&#160;&#160; &#160;&#160;  (eq. 3)
+</p><p>The final mechanical energy is the kinetic of balls 4 &amp; 5:
+</p><p>\(E(t_f) = \frac{1}{2}m(v/2)^2 + \frac{1}{2}m(v/2)^2 = m\frac{v^2}{4}\) &#160;&#160; (eq. 4)
+</p><p>By comparing (eq. 1) and (eq. 3) we find that the linear momentum is constant during the collisions, but by comparing (eq. 2) and (eq. 4) we found that the mechanical energy is not constant. Then the event of balls 4 &amp; 5 moving at speed <font face="times new roman" size="3"><i><b>v</b>/2</i></font> after ball 1 hits ball 2 with speed <font face="times new roman" size="3"><i><b>v</b></i></font> and stops is not possible (assuming energy is conserved).
+</p>
+</div>
+</td></tr></table>
+</td></tr></table>
+
+</body>
+</html>
+

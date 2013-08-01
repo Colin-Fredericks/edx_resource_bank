@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>The masses and the instantaneous velocities of three spheres are shown in the diagram. </p>
+	<img width="886" alt="BK45.png" src="/static/problems/MIT/rayyan/check_points/Pictures/BK45.png"/>
+
+	<h3>Part 1.</h3>
+	<p>What is the total momentum of the system that includes spheres 1 and 2 only?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" name="foil1" correct="false">5 kgm/s to the left</choice>
+			<choice location="random" name="foil2" correct="false">12 kgm/s to the right</choice>
+			<choice location="random" name="foil3" correct="false">16 kgm/s to the left</choice>
+			<choice location="random" name="foil4" correct="false">28 kgm/s to the right</choice>
+			<choice location="random" name="foil5" correct="false">30 kgm/s to the right</choice>
+			<choice location="random" name="foil6" correct="true">4 kgm/s to the left</choice>
+	</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>What is the total momentum of the system that includes spheres 2 and 3 only?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" name="foil1" correct="false">12 kgm/s to the left</choice>
+			<choice location="random" name="foil2" correct="false">12 kgm/s to the right</choice>
+			<choice location="random" name="foil3" correct="false">9 kgm/s to the left</choice>
+			<choice location="random" name="foil4" correct="false">9 kgm/s to the right</choice>
+			<choice location="random" name="foil5" correct="true">3 kgm/s to the right</choice>
+			<choice location="random" name="foil6" correct="false">21 kgm/s to the right</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>What is the total momentum of the system that includes all three spheres?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" name="foil1" correct="true">13 kgm/s to the left</choice>
+			<choice location="random" name="foil2" correct="false">13 kgm/s to the right</choice>
+			<choice location="random" name="foil3" correct="false">19 kgm/s to the left</choice>
+			<choice location="random" name="foil4" correct="false">19 kgm/s to the right</choice>
+			<choice location="random" name="foil5" correct="false">5 kgm/s to the right</choice>
+			<choice location="random" name="foil6" correct="false">5 kgm/s to the left</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Tension interaction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Gravitational_intera').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Gravitational_intera.html');
+$('#Elastic_restoring_in').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>Ropes, wires, strings, etc. are commonly used to provide force in everyday situations.  A force provided by a rope or string is generally called a tension force. 
+</p>
+<h2> Tension as a Force</h2>
+<h4> Properties of Ideal Ropes</h4>
+<p>When discussing ropes, strings, etc. in this course, it will generally be that they have zero mass. In this case, their behavior is fairly simple. The important aspects can be summarized with two simple rules:
+</p>
+<ol><li> A segment of a massless rope can only exert a tension force if it is stretched between two points of contact with other objects.
+</li><li> If a massless rope is stretched between two points of contact with other objects, the tension force exerted by a given segment of the rope on the objects on either side will be equal in size and will point directly along the rope segment.
+</li></ol>
+<h4> Tension as Constraint</h4>
+<p>Tension does not have an associated force law like <!--<a id="go" rel="leanModal" href="#Gravitational_intera" name="Gravitational_intera" onclick="domath()">-->gravitational<!--</a>--> or <!--<a id="go" rel="leanModal" href="#Elastic_restoring_in" name="Elastic_restoring_in" onclick="domath()">-->elastic restoring<!--</a>--> forces do. Instead, tension acts as a constraint. It will take on whatever value is necessary to keep the objects joined by the rope at the same separation.
+</p>
+<h2> Tension and Energy</h2>
+<p>Tension is a non-conservative force, and therefore has no associated potential energy.  When tension is internal, however, it is a non-dissipative force, performing zero net work on the chosen system.  The reason is that an ideal rope cannot stretch, which guarantees that the two interacting objects will undergo the same displacement.  Thus, the work done on the two objects will cancel by Newton's Third Law.
+</p>
+<div id="Gravitational_intera" class="popup"></div>
+<div id="Elastic_restoring_in" class="popup"></div>
+</body>
+</html>
+

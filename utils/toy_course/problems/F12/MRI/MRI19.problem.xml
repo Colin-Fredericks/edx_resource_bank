@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 19 -->
+
+<problem>
+
+	<p>A ball is launched from the origin, and undergoes projectile motion without rotating. Ignore air resistance. </p>
+	<img src="/static/problems/F12/MRI/images/MRI19.png" width="302" />
+
+	<h3>Part 1</h3>
+	<p>While the ball is in the air, which of the following statements are true?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The ball’s angular momentum is conserved, but only about the origin of the coordinate system.</choice>
+			<choice location="random" correct="false">The ball’s angular momentum is conserved regardless of the chosen reference point.</choice>
+			<choice location="random" correct="true">The ball’s angular momentum is not conserved about any stationary point on the Earth's surface.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The ball is not spinning.</choice>
+			<choice location="random" correct="false">The ball’s velocity is perfectly in line with the origin.</choice>
+			<choice location="random" correct="false">The ball can be treated as a point mass.</choice>
+			<choice location="random" correct="false">Only conservative external forces are involved.</choice>
+			<choice location="random" correct="true">External torque is applied on the ball.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

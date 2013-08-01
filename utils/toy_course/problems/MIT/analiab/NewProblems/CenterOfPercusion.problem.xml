@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+  <img src="/static/problems/MIT/analiab/NewProblems/files/centerPercusion.png"/>
+    <br/>
+
+      <p>
+A baseball of length D and mass M rests on a horizontal and frictionless surface. The moment of inertia of the bat about its center of mass is <i>I</i> and the 
+distance between the handle end to the bat’s center of mass is d. The bat is struck by a baseball travelling perpendicular to the bat. The impact applies 
+a force F during a time interval \(\Delta t = t_f-t_i\). As shown in the figure, the force is applied at a distance x from the handle end of the bat.
+ What must be x so that the handle end remains at rest when the bat starts to move? 
+</p>
+x=
+
+    <formularesponse answer="I/(M*d)+d" samples="I,M,d@1,1,1:10,10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+
+  </problem>
+</html>

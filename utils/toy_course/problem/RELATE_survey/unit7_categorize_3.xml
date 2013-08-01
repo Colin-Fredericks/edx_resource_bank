@@ -1,0 +1,36 @@
+<problem attempts="0" show_answer="never" display_name="Categorization 3">
+
+<p>Please examine the problem below.</p>
+
+<table border="1">
+<tr>
+	<td>
+
+	<img src="/static/images/survey/categorize_3.png" />
+
+	<p>A 200-gram block is released from rest at a height of 25 cm on a frictionless 30° incline. It slides down the incline and then along a frictionless surface until it collides elastically with an 800-gram block at rest 1.4 meters from the bottom of the incline. See the figure.</p>
+	
+	<p>What is the velocity of the large block after the collision?</p>
+
+	</td>
+</tr>
+</table>
+
+<p>How do you <i>classify</i> this problem in your mind? Write a word or short phrase in each box below. Please put the response with the greatest descriptive power to you in the top box.</p>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+</problem>
+
+
+

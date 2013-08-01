@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+tension="m*g*sqrt(1+d^4/(2*R*h)^2) "
+
+</script>
+
+      <p>
+A bob of mass m is suspended from a fixed point with a massless string (i.e., it is a pendulum). The bob describes a circular 
+and horizontal path of radius R. The circle is at a height h from the ground. Right after the instant shown in the picture the 
+string breaks and the bob lands at a distance d from the position where the string broke. What is the magnitude of the force of tension
+ of the string at that instant? 
+
+</p>
+
+    <img  height="300" src="/static/problems/MIT/analiab/NewProblems/files/ConicalPendulum.png"/>
+
+<i>In your solution clearly indicate</i>:
+<br/>
+<p><i>The <b>system(s)</b> that you consider and the <b>interactions</b> between the object(s) in the system and external objects. 
+Draw the resulting forces in a FBD. Indicate the coordinate system that you will use to describe the vectors. Indicate in your solutions
+the <b>model(s)</b> that you use.
+</i></p>
+
+<br/>
+
+<p>
+Express your answer in terms of some or all of the given variables: 
+m, R, h and d.  Enter g for the magnitude of the acceleration
+due to gravity.
+</p>
+<p><b>T =</b>
+</p>
+
+    <formularesponse type="cs" answer="$tension"  samples="m,d,R,h,g,T,h@1,1,1,1,1:10,10,10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

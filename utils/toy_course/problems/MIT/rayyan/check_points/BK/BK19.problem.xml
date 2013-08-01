@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+    <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK19.png" alt="p1a" texwrap="none" align="top"/></p>
+
+    <p>A block is suspended from a string attached to the ceiling of an elevator. The diagram above shows the forces acting on the block, drawn to scale.</p>
+
+    <p>Part 1. The upward and the downward forces, shown in the diagram, are, respectively: </p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+			<text>Normal force and tension</text>
+          </choice>
+          <choice name="foil2" correct="false">
+			<text>Normal force and gravitational force</text>
+          </choice>
+          <choice name="foil3" correct="false">
+			<text>Tension and normal force</text>
+          </choice>
+          <choice name="foil4" correct="true">
+			<text>Tension and gravitational force</text>
+          </choice>
+          <choice name="foil5" correct="false">
+			<text>Gravitational force and tension.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+
+
+        <p>Part 2. In which scenario(s) is it possible for the forces to have the magnitudes shown in the diagram? Check all possible answers.</p>
+
+      <optionresponse texlayout="horizontal" randomize="yes">
+        <ul>
+          <li>
+            <p>The elevator is moving upward with a constant speed</p>
+            <optioninput location="random" name="Foil1" options="('True','False')" correct="False"></optioninput>
+          </li>
+          <li>
+            <p>The elevator is moving downward with a constant speed</p>
+            <optioninput location="random" name="Foil2" options="('True','False')" correct="False"></optioninput>
+          </li>
+          <li>
+            <p>The elevator is moving downward with increasing speed</p>
+            <optioninput location="random" name="Foil3" options="('True','False')" correct="False"></optioninput>
+          </li>
+          <li>
+            <p>The elevator is moving downward with decreasing speed</p>
+            <optioninput location="random" name="Foil4" options="('True','False')" correct="True"></optioninput>
+          </li>
+          <li>
+            <p>The elevator is moving upward with increasing speed</p>
+            <optioninput location="random" name="Foil5" options="('True','False')" correct="True"></optioninput>
+          </li>
+          <li>
+            <p>The elevator is moving upward with decreasing speed</p>
+            <optioninput location="random" name="Foil6" options="('True','False')" correct="False"></optioninput>
+          </li>
+          <li>
+            <p>The elevator remains at rest</p>
+            <optioninput location="random" name="Foil7" options="('True','False')" correct="False"></optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+  </problem>
+</html>

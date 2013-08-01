@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Calculating Moments of Inertia</title>
+</head>
+<body>
+
+<h2>Calculating Moments of Inertia</h2>
+
+<h3> Learning goals</h3>
+
+<p>After working through this module, you should be able to: </p>
+
+<ul>
+	<li>Apply the concept of moment of inertia to different objects.</li>
+	<li>Choose the correct form of moment of inertia based on choice of axis</li>
+</ul>
+
+<!-- The animation for this part no longer embeds properly.
+
+<h3> Moment of Inertia depends on the choice of axis of rotation</h3>
+
+<p>In the following animations, you can see that the same object can have different moments of inertia corresponding to rotation around different axes. In the different configurations the distribution of the mass is not the same with respect to each axis.</p>
+
+<p>
+
+<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="500" 
+id="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/rotation_spin_multi.swf" height="365">
+<param width="500" name="movie" value="files/Rotation_spin_multi.swf" height="365"/> <param name="quality" value="high"/> 
+<embed src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/rotation_spin_multi.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+name="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/rotation_spin_multi.swf" quality="high" align="" height="365" width="500" 
+type="application/x-shockwave-flash"/>
+</object>
+</p>
+
+-->
+
+
+
+<h3> Common Moments of Inertia</h3>
+
+<p>The tables below give the moment of inertia for commonly encountered rigid bodies of total mass <i>M</i> and uniform density rotating about a specific axis that passes through the body's center of mass.</p>
+
+<p>Note that the moment of inertia depends on the chosen axis. The same object can have different moments of inertia correpsonding to rotation around different axes.</p>
+
+<table>
+<tr>
+	<th>Table 1:  Rings, Cylinders, and Disks.</th>
+</tr>
+<tr>
+<td>
+
+<table>
+<tr>
+	<td><b>Description</b> </td>
+	<td><b>Viewed from Beside the Axis</b> </td>
+	<td><b>Viewed Along the Axis</b> </td>
+	<td><b>Moment of Inertia</b></td>
+</tr>
+<tr>
+	<td>Hollow Cylinder or Hoop </td>
+	<td><img height="200" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/HollowCylinderSide.png" height="350"/> </td>
+	<td><img height="200" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/HollowCylinderTop.png" height="350"/> </td>
+	<td>\(\mathcal{}MR^{2}\)</td>
+</tr>
+<tr>
+	<td>Solid Cylinder or Thin Disk<br/>about Axis Through the Face </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/CylinderSide.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/CylinderTop.png" height="350"/> </td>
+	<td>\(\frac{1}{2}MR^{2}\)</td>
+</tr>
+<tr>
+	<td>Thin Disk about Axis <br/>Through the Edge </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/DiskSide.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/DiskTop.png" height="350"/> </td>
+	<td>\(\frac{1}{4}MR^{2}\)</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th>Table 2:  Rectangular Plates, Thin Rods, and Boards</th>
+</tr>
+<tr>
+<td>
+
+<table>
+<tr>
+	<td><b>Description</b> </td>
+	<td><b>Viewed from Beside the Axis</b> </td>
+	<td><b>Viewed Along the Axis</b> </td>
+	<td><b>Moment of Inertia</b></td>
+</tr>
+<tr>
+	<td>Rectangular Plate about <br/>Axis Through the Edge<br/>or Thin Rod about Axis<br/>Perpendicular to Rod </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/PlateSide.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/PlateTop.png" height="350"/> </td>
+	<td>\(\frac{1}{12}ML^{2}\)</td>
+</tr>
+<tr>
+	<td>Rectangular Plate or<br/>Solid Board about Axis<br/>Through a Face </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/BoardSide.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/BoardTop.png" height="350"/> </td>
+	<td>\(\frac{1}{12}M\left(L^{2}+W^{2}\right)\)</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+	<th>Table 3: Spheres</th>
+</tr>
+<tr>
+<td>
+
+<table>
+<tr>
+	<td><b>Description</b> </td>
+	<td><b>Viewed from Beside the Axis</b> </td>
+	<td><b>Cross-Section</b> </td>
+	<td><b>Moment of Inertia</b></td>
+</tr>
+<tr>
+	<td>Solid Sphere </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/Sphere.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/SolidSphere.png" height="350"/> </td>
+	<td>\(\frac{2}{5}MR^{2}\)</td>
+</tr>
+<tr>
+	<td>Hollow Sphere </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/Sphere.png" height="350"/> </td>
+	<td><img height="250" src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module4/files/HollowSphere.png" height="350"/> </td>
+	<td>\(\frac{2}{3}MR^{2}\)</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

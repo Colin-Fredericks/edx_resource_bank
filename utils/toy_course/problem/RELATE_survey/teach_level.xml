@@ -1,0 +1,12 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How would you describe the level of school at which you teach? You may check more than one box.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="college_teacher"><text> I teach at a college or university.</text></choice>
+      <choice correct="true" name="high_school_teacher"><text> I teach in high school or secondary school.</text></choice>
+      <choice correct="true" name="grade_school_teacher"><text> I teach at middle, elementary, or grammar school.</text></choice>
+      <choice correct="true" name="adult_teacher"><text> I teach adults who are returning to school.</text></choice>
+      <choice correct="true" name="elsewhere_teacher"><text> I teach outside of traditional schools.</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

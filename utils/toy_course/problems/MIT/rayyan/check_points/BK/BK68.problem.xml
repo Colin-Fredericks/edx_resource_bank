@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Compressing a Spring </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.2,0.4,0.8])
+k=random.choice([200,300,600])
+v=random.choice([0.6,1.5,2.5])
+
+x= v* math.sqrt( m/ k)
+
+</script>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK68.PNG" alt="BK68.PNG"/>
+    <p>A block of mass  $m kg slides on a horizontal frictionless table toward a spring with a force constant $k N/m as shown. The block hits the spring at speed $v m/s. How far does the block slide from the time it contacts the spring to the time it stops momentarily?</p>
+
+        <p>\(x=\)</p>
+
+      <numericalresponse answer="$x" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

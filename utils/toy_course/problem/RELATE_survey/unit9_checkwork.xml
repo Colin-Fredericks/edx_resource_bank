@@ -1,0 +1,6 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What steps do you take if you have time to check your answer to a physics problem?</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

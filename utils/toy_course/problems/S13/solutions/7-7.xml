@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Collision- Conceptual -->
+<problem>
+
+<h3>Solution</h3>
+
+<img src="/static/problems/S13/ESG/images/6-4.png"/>
+
+<h3>First Stage</h3>
+<p>Block 1 falls, immediately before the collision</p>
+<p><b>System</b>: Block 1 + Earth</p>
+<p><b>External Interactions</b>: the block and the string resulting in a force of tension <i>T</i></p>
+<p><b>Internal Interactions</b>: block 1 and Earth, the work done by this force is treated as a potential energy</p>
+<p><b>Physical Principle</b>: Mechanical Energy and Work</p>
+
+<p>Although there is an external force, cause by the tension, acting on Block 1, the force is constantly directed perpendicular to the motion of the block, so it does not do any work.  This means that mechanical energy is conserved in the Block 1 + Earth system as the block swings down to reach the vertical position.</p>
+
+<h3>Second Stage</h3> 
+<p>During the collision</p>
+<p><b>System</b>: block1 and block 2.</p>
+<p><b>Internal Interaction</b>: the collision forces</p>
+<p><b>External interactions</b>: the blocks with the Earth and with the surface. There is no friction, therefore the net external force is zero.</p>
+<p><b>Physical principle</b>: Momentum and Impulse</p>
+
+<p>Because the net force is zero , there is no external impulse and the momentum is constant during the collision.  Conservation of momentum can be used to find the velocity of Block 2 immediately after the collision.</p>
+<p>(You cannot use conservation of kinetic energy to find the velocity of Block 2 immediately after the collision because energy is lost during the collision.</p>
+
+<h3>Third Stage</h3> 
+<p>Block 2 sliding along the track between points B and C.</p>
+<p><b>System</b>: Block 2 + Earth</p>
+<p><b>External Interactions</b>: block 2 and the track. Assuming no friction, the resulting force is a normal force <b>N</b>.</p>
+<p><b>Internal Interactions</b>: block 2 and the Earth. This interaction is represented by the gravitational potential energy.</p>
+<p><b>Physical principle</b>: Energy and work</p>
+
+<p>There are not internal and non-conservative forces and because the external force, N, is normal to the displacement its work is zero, so the mechanical energy is constant. This can be used to find the height H at which Block 2 falls off of the path.</p>
+
+</problem>
+</html>

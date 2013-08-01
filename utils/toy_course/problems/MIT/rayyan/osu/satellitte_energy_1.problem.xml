@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/satellite_energy_1.png" alt="satellite_energy" height="250"/>
+    <img src="/static/problems/MIT/rayyan/osu/images/satellite_energy_2.png" alt="satellite_energy_1" height="250"/>
+
+      <p><br/>
+Which satellite-earth system has a greater potential energy?  Assume orbits are circular, both satellites have the same mass, and the radius of the orbit of satellite B is smaller than the radius of the orbit of satellite A.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              Satellite-earth System A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Satellite-earth System B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              Both have the same potential energy.          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              Cannot be calculated.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

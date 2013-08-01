@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Example: Nonlinear Path Constant Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>Illustrative Example: Constant Force and Curving Motion</h3>
+
+<p>A block of mass <i>m</i> is blown up a hill by wind acting on it. The hill has a circular shape of radius <i>R</i>. The force of the wind has a constant magnitude <i>F</i> and is parallel to the horizontal as shown in the figure. What is the work done by the wind on the block after it has moved from the bottom to the top of the hill? </p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/WorkExample2.png"/></p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+	<th>Answer [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+	<td>
+	<p>The work is \(FR\)</p>
+	<hr/>
+	<p><b>Solution:</b></p>
+	<p>The coordinate system used to descrbe the vectors is shown in the figure below. Note that the angle \( \theta \) is defined by reference to the origin at the center of the circular hill, NOT by the angle between the wind force and the displacement.</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/WorkExample2solb.png"/></p>
+	<p>In this problem the force has a constant magnitude <i>F</i>. It also has a constant direction pointing towards the \( -x \) axis. The instantaneous displacement vector lies tangent to the circle and thus is changing direction. When the block is at an angle \( \theta \) with respect to the horizontal, the displacement vector and the force form an angle \( 90^{\circ} - \theta \) as shown in the figure. The magnitude of the displacement vector is given by an element of arc length, \( dr = R d\theta \).</p>
+	<p>The work done by the force of the wind is:</p>
+	<p>\[  W_{top, bottom} = \int_{bottom}^{top} \vec{F} \cdot d \vec{r}  = \int_{0}^{90^{\circ}}F \cos (90^{\circ} - \theta)Rd \theta  \]</p>
+	<p>\[ = FR \int_{0}^{90^{\circ}} \sin \theta d \theta =\]</p>
+	<p>\[ W_{top, bottom} = -FR(\cos \theta)|_{0}^{90^{\circ}} = FR\]</p>
+	<p>\[ W_{top, bottom} = FR \]</p>
+	<p>The work is positive because the force has a component in the same direction of the displacement vector.</p>
+	</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

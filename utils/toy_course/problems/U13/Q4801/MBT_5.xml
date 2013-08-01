@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<h3>Acceleration of a Block on a Ramp</h3>
+
+<p>
+The diagram depicts a block sliding along a frictionless ramp. The eight numbered arrows in the diagram represent directions to be referred to when answering the next two questions.
+</p>
+
+<img src="/static/problems/U13/images/block_ramp_arrows.png"/>
+
+<p>
+The direction of the acceleration of the block, when in position II, is best represented by which of the arrows in the diagram?
+</p>
+
+<multiplechoiceresponse>
+	<choicegroup type="MultipleChoice">
+		<choice correct="true" name="1">1</choice>
+		<choice correct="false" name="3">3</choice>
+		<choice correct="false" name="5">5</choice>
+		<choice correct="false" name="7">7</choice>
+		<choice correct="false" name="none">None of the arrows; the acceleration is zero.</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+<p>
+The direction of the acceleration of the block (after leaving the ramp) at position III, is best represented by which of the arrows in the diagram?
+</p>
+
+<multiplechoiceresponse>
+	<choicegroup type="MultipleChoice">
+		<choice correct="false" name="2">2</choice>
+		<choice correct="false" name="3">3</choice>
+		<choice correct="true" name="5">5</choice>
+		<choice correct="false" name="6">6</choice>
+		<choice correct="false" name="none">None of the arrows; the acceleration is zero.</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

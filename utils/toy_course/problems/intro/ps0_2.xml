@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<problem>
+  <text>
+    <p>You will often be asked for the numerical solution of a problem. An example can be the following. A car is moving at the constant velocity of 50 miles per hour. What is the distance in meters covered by the car in 1 hour? (The system only accepts a number for this type of question, so do not include the units!) </p>
+        <p><i>Clicking on "show answer" will only show you the answer <b>after</b> the due date. You will not be able to see them beforehand.</i></p>
+    <numericalresponse answer="80467">
+    	<textline>
+    	<responseparam type="tolerance" default="5%"/>
+    	</textline>
+    </numericalresponse> 
+    <p>Notice that for such questions, the system is programmed to accept an approximate answer to avoid rounding errors. For example, the previous question has a tolerance of 5%. </p>
+    <h3>Exponential Notation</h3>
+    <p>It can be very helpful to type in numbers in scientific notation.</p>
+    <p>What is the numerical value of Newton's constant G? Its value is 0.0000000000667428, which in scientific notation is \(6.67428 \times 10^{-11}\) m\(^3\) kg\(^{-1}\) s\(^{-2}\). Given a 5% tolerance, valid answers are 6.67e-11 or 6.67*10^(-11).</p>
+    <numericalresponse answer="6.67e-11">
+    	<textline>
+    	<responseparam type="tolerance" default="5%"/>
+    	</textline>
+    </numericalresponse> 
+    <p>Notice that the interpreter will tell you if it does not recognize the symbols you entered. To see this, please try answering 6.67*10^{-11} , here the system does not accept the curly brackets. You should also note that the "e" in this system is used for exponentiation, and is not the number "e" that is the base of the natural logarithm.</p>
+    <h3>Exact Answers</h3>
+    <p>Once in a while you will be asked questions which require an exact numerical answer. The usual 5% tolerance is turned off for such questions.</p>
+    <p>In which year were the <i>Magna Carta</i> originally issued?</p>
+      <numericalresponse answer="1215">
+        <textline>
+          <responseparam type="tolerance" default="0%"/>
+        </textline>
+      </numericalresponse>
+  </text>
+</problem>

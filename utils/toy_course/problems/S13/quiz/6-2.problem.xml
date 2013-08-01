@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Projectile problem comparing initial and final quantities -->
+
+<problem>
+
+<p>A projectile is fired through the air. It is launched from the ground, and travels without interference from wind or air resistance, landing on a raised platform above the field. Compare the following values:</p>
+
+<p>Initial speed vs. final speed:</p>
+<optionresponse>
+	<optioninput
+	options="('initial greater','final greater','no change')"
+	correct="initial greater"/>
+</optionresponse>
+
+<p>Initial vertical velocity vs. final vertical velocity:</p>
+<optionresponse>
+	<optioninput
+	options="('initial greater','final greater','no change')"
+	correct="initial greater"/>
+</optionresponse>
+
+<p>Initial horizontal velocity vs. final horizontal velocity:</p>
+<optionresponse>
+	<optioninput
+	options="('initial greater','final greater','no change')"
+	correct="no change"/>
+</optionresponse>
+
+<p>Initial acceleration vs. final acceleration:</p>
+<optionresponse>
+	<optioninput
+	options="('initial greater','final greater','no change')"
+	correct="no change"/>
+</optionresponse>
+
+</problem>
+
+</html>

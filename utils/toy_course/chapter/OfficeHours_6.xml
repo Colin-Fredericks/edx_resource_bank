@@ -1,0 +1,22 @@
+<chapter display_name="Office Hours - Unit 6">
+	<sequential display_name="Questions" url_name="Office_Hours_Questions_Unit_6">
+		<vertical display_name="Submit your Questions for Unit 6">
+			<html display_name="Submit your Questions for Unit 6" filename="OfficeHours/OH6"/>
+			<discussion for="Submit your Questions for Unit 6" id="MReV_Summer2013_OH6" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Answers" url_name="Office_Hours_Answers_Unit_6">
+		<vertical display_name="Projectile Up A Plane">
+			<video youtube="1.0:mkMid1_H2OI" url_name="Office_Hours_Answers_6_1"/>
+			<discussion for="Office Hours Answers for Unit 6 #1" id="MReV_Summer2013_OH6_answer1" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Friction on a Turning Car">
+			<video youtube="1.0:b6tAEbIwjR0" url_name="Office_Hours_Answers_6_2"/>
+			<discussion for="Office Hours Answers for Unit 6 #2" id="MReV_Summer2013_OH6_answer2" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="U-Control Airplane">
+			<video youtube="1.0:B74iW5T7KzI" url_name="Office_Hours_Answers_6_3"/>
+			<discussion for="Office Hours Answers for Unit 6 #3" id="MReV_Summer2013_OH6_answer3" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+</chapter>

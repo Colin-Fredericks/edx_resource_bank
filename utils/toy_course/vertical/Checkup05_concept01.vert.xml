@@ -1,0 +1,10 @@
+<vertical>
+
+			<problem display_name="SHM matching 2" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup05_concept01_part1.problem" attempts="2" weight="0.2"/>
+			<problem display_name="SHM matching 2, part 2" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup05_concept01_part2.problem" attempts="2" weight="0.2"/>
+			<problem display_name="SHM matching 2, part 3" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup05_concept01_part3.problem" attempts="2" weight="0.2"/>
+			<problem display_name="SHM matching 2, part 4" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup05_concept01_part4.problem" attempts="2" weight="0.2"/>
+			<problem display_name="SHM matching 2, part 5" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup05_concept01_part5.problem" attempts="2" weight="0.2"/>
+            <discussion for="SHM matching 2" id="MReV_Summer2013_Checkup05_concept01" discussion_category="Harmonic Oscillation" />
+		</vertical>
+

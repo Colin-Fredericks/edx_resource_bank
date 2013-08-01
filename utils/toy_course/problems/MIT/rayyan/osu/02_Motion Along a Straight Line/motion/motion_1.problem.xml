@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/motion_1.png" alt="motion_1" height="250"/>
+
+      <p>Driving a car in the positive x direction at a speed of 60 MPH, Mary tests her brakes by coming to a complete stop at a constant rate of deceleration in 4 seconds. Then, she accelerates at a constant rate to her previous speed of 60 MPH in 8 seconds. Which of the graphs best represents her velocity vs. time?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+			<text>1</text>
+        </choice>
+        <choice name="foil2" correct="false">
+			<text>2</text>
+        </choice>
+        <choice name="foil3" correct="false">
+			<text>3</text>
+        </choice>
+        <choice name="foil4" correct="false">
+			<text>4</text>
+        </choice>
+        <choice name="foil5" correct="false">
+			<text>5</text>
+        </choice>
+        <choice name="foil6" correct="false">
+			<text>6</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

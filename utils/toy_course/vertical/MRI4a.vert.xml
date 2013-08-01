@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI4a-1.problem" display_name="Pushing the Safe 1" attempts="1" weight="0.5"/>
+	<problem filename="F12/MRI/MRI4a-2.problem" display_name="Pushing the Safe 1, Part 2" attempts="1" weight="0.5"/>
+	<discussion for="Pushing the Safe 1" id="MReV_Summer2013_MRI4a" discussion_category="Applying Newton's Laws" />
+</vertical>

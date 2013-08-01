@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Work by a Pendulum</title>
+
+      <p>A pendulum consists of a small ball that has a mass m suspended on a light long string of length l. Initially, the pendulum is held at rest so that the string is taut and makes an angle \(\theta\) with the vertical. The pendulum is then released.</p>
+      <br/><br/>
+      <p>Part 1. By the time the pendulum passes through the equilibrium position, what is the amount of work done by the force of tension on the ball?</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( mgl \cos \theta\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( mgl(1- \cos \theta)\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \( mgl \sin \theta\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( mgl (1- \sin \theta)\)
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+				  zero
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 2. By the time the pendulum reaches the equilibrium position, what is the magnitude of the change of the potential energy of the ball?</p>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( mgl \cos \theta\)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \( mgl(1- \cos \theta)\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \( mgl \sin \theta\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( mgl (1- \sin \theta)\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+				  zero
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

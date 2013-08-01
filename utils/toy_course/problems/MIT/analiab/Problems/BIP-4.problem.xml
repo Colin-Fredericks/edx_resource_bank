@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>For an angle smaller than the one calculated in part c), a steeper slope, the block will slide down. What is the block's acceleration?  Express your answer in some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.</p>
+
+      <formularesponse answer="g*(cos(alpha)-muk*sin(alpha))" samples="g,muk,alpha@1,0.1,.1:10,0.9,.9#4">
+        <responseparam default="0.00000000001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+</problem>
+</html>

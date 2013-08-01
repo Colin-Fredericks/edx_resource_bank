@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>MAPS, Models and Modeling</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#System_Constituents').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/System_Constituents.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>
+Introduction to models and modeling</h3>
+<p>
+			This Newtonian Mechancs course uses the Modeling Applied to Problem Solving (MAPS) pedagogical approach. MAPS builds a framework for connecting your physics understanding and the problem you are trying to solve. It has two parallel tracks: organizing your knowledge using<b> physical models</b> on the one hand, and approaching problems using a <b>modeling process</b> on the other.</p>
+<p>
+			Modeling a physics problem requires making <b>simplifications</b> about a complex physical situation. The simplification is achieved by making <b>assumptions</b> about the object or objects and the forces involved in the problem and ignoring aspects of the problem that are irrelevant or of small consequence for the solution. Fluency with the essential physical principles helps one make reasonable assumptions and decisions about those consequences.</p>
+<h3>
+Soccer Ball Example</h3>
+<p>
+			Imagine that you want to estimate the height reached by a soccer ball after being thrown upwards with a given initial speed. You will probably neglect the air resistance, any possible wind, and the decrease of gravity as you get farther from the Earth. By doing these, you are making assumptions about the forces acting on the object whose motion you are studying (<!--<a id="go" rel="leanModal" href="#System_Constituents" name="System_Constituents" onclick="domath()">-->system<!--</a>-->). You will ignore the ball&#8217;s physical size; therefore a soccer ball, football or a ball as small as a single point are equivalent objects in your description of motion. You are making an assumption about the object, and by treating the ball as a point you have lost any information about any spin the ball might have while in air. In summary, during the ball's upward motion from its initial to its final height you are making the following major assumptions and accepting their resulting consequences:</p>
+<p>
+			&#160;</p>
+<table border="1">
+<tbody>
+<tr>
+<td>
+<b>Assumptions</b></td>
+<td>
+<b>Consequences</b></td>
+</tr>
+<tr>
+<td>
+						The ball is thrown straight up</td>
+<td>
+						Motion is a straight line (1 - dimensional)</td>
+</tr>
+<tr>
+<td>
+						The ball is a point</td>
+<td>
+						The ball translates (no rotation)</td>
+</tr>
+<tr>
+<td>
+						The force on the ball is constant gravity</td>
+<td>
+						The ball moves straight with constant acceleration</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+Constant Acceleration Model</h3>
+<p>
+			All the characteristics of the motion of an object treated as a point and moving under the action of a constant force are put together in what we call the constant acceleration model. Like all of the basic physical models in this course, the constant acceleration model contains the assumptions about the object which motion we are studying, the assumptions about the forces affecting the object's motion, and the mathematical description of the object's motion or <!-- <a href="../Unit5/Module4/Constant_Acceleratio_1.html">--><!-- </a> --><b>laws of change</b>. In the soccer ball example, the laws of change are the velocity, v(t), and the position of the ball, y(t), as functions of the time since it left the ground at height y<sub>o</sub> with speed v<sub>o</sub> via the following set of equations:</p>
+<ol style="list-style-type:decimal">
+<li>
+				v(t) = v<sub>o</sub> - g t and</li>
+<li>
+				y(t) = y<sub>o</sub> + v<sub>o</sub> t - 1/2 gt<sup>2</sup> (with +y - axis pointing up).</li>
+</ol>
+<p>
+			In a later unit we will see how to obtain these laws of change and apply the model. One way to obtain the answer to the soccer ball question is by finding the time, t<sub>top</sub>, at which the particle has zero velocity (v(t<sub>top</sub>)=0) and finding the corresponding position, y(t<sub>top</sub>).</p>
+<p>
+			This example shows how problems are solved in the MAPS approach by making the proper selection and simplifications about the objects and forces so that the problem satisfies the assumptions underlying one of the core physical models. <b>This procedure is called modeling. </b></p>
+<h3>
+Student Point of View</h3>
+<p>
+			From the student&#8217;s point of view, the Modeling Approach to Problem Solving approach will ask you to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Look at the world through the lenses of a small, organized set of basic physical models that represent common underlying patterns in mechanics.</li>
+<li>
+				Develop a procedure for understanding and planning the solution to new problems in terms of this set of models.</li>
+</ul>
+<div id="System_Constituents" class="popup"></div>
+</body>
+</html>
+

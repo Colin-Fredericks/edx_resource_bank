@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+<!-- Problem 2 -->
+<problem>
+
+	<h2>A Falling stick</h2>
+	<p>A uniform stick of mass <i>m</i>  and length <i>l</i>  is suspended horizontally 
+	with end <i>B</i>  at the edge of a table and the other end <i>A</i>  held by a hand. 
+	The end of the stick at <i>A</i>  is suddenly released. At the instant right after 
+	release:</p>
+
+	<img src="/static/problems/S13/ESG/images/8-6.png" />
+
+	<script type="loncapa/python">
+T = "m*g*l/2"
+alpha = "3*g/(2*l)"
+a = "3*g/4"
+F = "m*g/4"
+
+	</script>
+
+		<br/>
+		 <b>Part 1.</b> Determine the torque on the stick about the end <i>B</i>.
+		<br/>
+
+	<formularesponse samples="m,l,g@1,1,1:5,5,5#10" answer="$T">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\tau\)<sub>B</sub> =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+		<br/>
+		 <b>Part 2.</b> Determine the angular acceleration of the stick about the end <i>B</i>.
+		<br/>
+
+	<formularesponse samples="g,l@1,2:5,5#10" answer="$alpha">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		 \(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+		<br/>
+		<b>Part 3.</b> What is the vertical component of the acceleration of the center of mass of the stick? 
+		<br/>
+
+	<formularesponse samples="g@1:5#10" answer="$a">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		a =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+		<br/>
+		<b>Part 4.</b> What is the vertical component of the force that the table exerts on the stick at <i>B</i>?
+		<br/>
+
+	<formularesponse samples="m,g@1,1:5,5#10" answer="$F">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		F<sub>B</sub> =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

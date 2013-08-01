@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Block on Spring </title>
+    <script type="loncapa/python">
+
+T = random.randrange(16, 28, 1)/10
+x = random.randrange(15, 30, 5)/100
+t = random.randrange(8, 15, 1)
+newt = random.randrange(3, 7, 1)
+xmax = 0.4
+phi = math.acos( x/ xmax)
+omega = (2*3.14159)/ T
+xt =  xmax*math.cos( omega* t +  phi)
+vt = - omega *  xmax *math.sin( omega* newt +  phi)
+
+</script>
+
+<p>The amplitude of simple harmonic motion is x_{max} = 0.40 meters and the period is T = $T seconds. At t = 0, x = $x meters and the velocity is negative. The motion is to be described as \(x(t) = x_{max} \cos( \omega t + \phi )\).</p>
+
+<br/>
+<p>Find the phase angle \(\phi\) (in radians).</p>
+
+      <numericalresponse answer="$phi" unit="rad">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Find x at t = $t seconds.</p>
+
+      <numericalresponse answer="$xt" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Find v at t = $newt seconds.</p>
+
+      <numericalresponse answer="$vt" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

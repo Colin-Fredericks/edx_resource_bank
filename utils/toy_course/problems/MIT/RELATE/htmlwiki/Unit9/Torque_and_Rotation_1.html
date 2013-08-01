@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Torque and Rotation About a Fixed Axis</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h2>Angular Dynamics and Net Torque</h2>
+
+<p>In this unit we begin our discussion of rotational dynamics and rotational motion. We will start by introducing the concept of a <i>rigid body</i>, the new system constituent, and the concept of <i>torque</i>, the new manifestation of forces that produce a change in rotational motion.</p>
+
+<h3>Rigid Body </h3>
+
+<p>Up until now in this course, we have been treating objects as point particles. Point particles have no extent, and thus the only motion they are capable of is translation. Real objects, however, do have extent. They can do more than just translate &mdash; they can rotate or spin. In this unit we will introduce the next-simplest possible type of system: the rigid body.</p>
+
+<p>A rigid body, unlike a point particle, does have a size and shape. It is a simplification of real
+ solid objects: it has the property that the distance between any two points on the body remains constant
+  &#8211; we will not be analyzing deformations like bending, twisting, or stretching. The property that 
+  they are rigid means that each and every part of the body rotates at a constant <i>angular velocity</i>,
+   so that one variable &mdash; traditionally labeled \(\omega\) &mdash; can describe the rotational motion of the entire rigid body. 
+An additional complexity is that a rigid body can rotate about any axis; hence \(\vec{\omega}\) is, 
+in general, a vector. Fortunately, for the vast majority of this course, we will treat rigid bodies that 
+rotate only about one axis &mdash; generally taken as the z-axis (with both the translational and rotational motion of the body being entirely in the x-y plane). Therefore \(\vec{\omega}\) will have only a z component, and we will often treat this component as a one dimensional variable. In this unit we will be even more restrictive: we will consider only rotational motion of a rigid body about an axis that is fixed in an inertial frame &mdash; i.e. it cannot change direction, and its translational motion is, at worst, motion with constant velocity.</p>
+
+<h3>Torque and Rotational Motion </h3>
+
+<p>This unit is focused on the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/nettorque/">Rotational Dynamics and Net Torque</a> core model.</p>
+
+<p>The concept of torque produced by a force represents a new way of describing the effect of interactions on the motion of an object. This concept will be defined in the next module.</p>
+
+<p>We will be extending the idea from translational motion, namely</p>
+
+<table border="1" style="color:blue" cellspacing="0">
+<tbody>
+<tr>
+<td>Interactions \(\rightarrow\) Force \(\rightarrow\) Change in translational motion</td>
+</tr>
+</tbody>
+</table>
+
+<p>to include rotational motion. The net torque applied to a rigid body will produce a change in rotational motion:</p>
+
+<table border="1" style="color:blue" cellspacing="0">
+<tbody>
+<tr>
+<td>Interactions \(\rightarrow\) Force \(\rightarrow\) Torque \(\rightarrow\) Change in rotational motion</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Concept Map</h3>
+
+<p>The portion of the course outline covered in this unit is highlighted in red below:</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/files/RotationalDynamicsRed.png"/></p>
+
+</body>
+</html>

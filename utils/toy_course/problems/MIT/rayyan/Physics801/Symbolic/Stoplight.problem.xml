@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+answer = "d"
+
+</script>
+
+      <p>
+A car is stopped at an intersection with a red light, and a biker (in a bike lane) with velocity "v" is approaching the car from behind. When the biker is a distance "d" from the intersection, the light turns green, and the car begins to accelerate at a constant acceleration "a". In terms of only "d" (not "v" and "a") calculate the distance at which the biker catches the car if he only barely catches it while it is accelerating.
+</p>
+
+    <formularesponse answer="$answer"  samples="d@1:4#10">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+  </problem>
+</html>

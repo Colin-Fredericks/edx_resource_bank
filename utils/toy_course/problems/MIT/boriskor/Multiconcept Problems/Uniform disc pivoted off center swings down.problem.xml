@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/49-disc pivoted at mid-radius.png" alt="A disc pivoted at the midpoint of a vertical radius - in the vertical plane"/>
+    <br/>
+
+      <p>A uniform disc has mass \(m\) and radius \(r\). The disc is pivoted at the midpoint of a vertical radius, marked by a red line as shown. Initially, the disc is held at rest. At that instant, the point <b>A</b> is at the very top of the disc. After the disc is released, it rotates downward in the vertical plane about the pivot. Neglect all dissipative forces.</p>
+
+<p>What is the magnitude of the angular acceleration of the disc at the instant the red line is horizontal?</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="true">\(\alpha=\frac{2g}{3r}\)</choice>
+	<choice location="random" name="foil2" correct="false">\(\alpha=\frac{g}{3r}\)</choice>
+	<choice location="random" name="foil3" correct="false">\(\alpha=\frac{2g}{5r}\)</choice>
+	<choice location="random" name="foil4" correct="false">\(\alpha=\frac{g}{4r}\)</choice>
+	<choice location="random" name="foil5" correct="false">\(\alpha=\frac{3g}{5r}\)</choice>
+	<choice location="random" name="foil6" correct="false">\(\alpha=\frac{g}{2r}\)</choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+<p>What is the maximum linear speed of the point <b>A</b>?</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="true">\(v_{max} = \sqrt {6gr}\)</choice>
+	<choice location="random" name="foil2" correct="false">\(v_{max} = \sqrt {5gr}\)</choice>
+	<choice location="random" name="foil3" correct="false">\(v_{max} = 2\sqrt {gr}\)</choice>
+	<choice location="random" name="foil4" correct="false">\(v_{max} = \sqrt {3gr}\)</choice>
+	<choice location="random" name="foil5" correct="false">\(v_{max} = 2\sqrt {6gr}\)</choice>
+	<choice location="random" name="foil6" correct="false">\(v_{max} = 2\sqrt {3gr}\)</choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+    </problem>
+</html>

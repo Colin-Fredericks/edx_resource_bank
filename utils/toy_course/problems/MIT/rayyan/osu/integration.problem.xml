@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/integration.png" alt="integration" height="200"/>
+
+      <p><br/>
+A mass M is uniformly distributed over the length L of a thin rod. The mass inside a short element dx is given by:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              M/L          
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+
+              (M/L) dx          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              L/M          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              M dx          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

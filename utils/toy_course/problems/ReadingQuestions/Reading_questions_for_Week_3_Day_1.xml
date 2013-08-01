@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Questions for Week 3 Day 1</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">W03D1 Application of Newton's Second Law, Experiment 1: Force and Motion</b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman Chapter 4.1-4.6, 5.1-5.3, 12.1-12-2, <a>link text</a>http://web.mit.edu/8.01t/www/materials/Experiments/exp01.pdf <em>Experiment 1: Force and Motion</em>ENDHREF </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W03D1-1 (5 points): </b>
+  </p>
+  <p>
+A tension in a hanging uniform rope of length \(L\) and mass \(M\) is non-uniform. (i) What is the tension at the top of the rope? (ii) what is the tension at the bottom of the rope? (iii) Now take a small slice of the rope of length \(\Delta y\) a distance \(y\) from the bottom of the rope. Draw a free body force diagram on this small segment of the rope. Explain the meaning of all the symbols that you use. Is the tension at the top of the small section the same as the tension at the bottom of the small section? How do your symbols illustrate the answer to this last question? </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W03D1-2 (5 points):</b>
+  </p>
+  <p>
+Consider a cart rolling down an inclined plane, hitting a spring at the bottom, and rolling back up. Let's model the motion by assuming there is a frictional force \(\vec{\mathbf{f}}\) acting on the cart with \(\left| \vec{\mathbf{f}} \right| =\mu \left| \vec{\mathbf{N}} \right|\) where \(\vec{\mathbf{N}}\) is the normal force. (i) Is the magnitude acceleration the same as the cart rolls down and rolls up the inclined plane? Explain your reasoning with free body force diagrams. (ii) When the cart hits the spring and fully compresses the spring, what is the speed of the cart? At that instant, is the acceleration of the cart non-zero? </p>
+</problem>

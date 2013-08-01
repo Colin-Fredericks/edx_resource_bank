@@ -1,0 +1,139 @@
+<chapter display_name="3: Applying Newton's Laws">
+	<sequential display_name="Mini Survey 3 - Educational Background" filename="mini_survey_3" />
+	<sequential display_name="Applying Newton's Laws" url_name="Applying_Newtons_Laws">
+		<vertical display_name="Applying Newton's Laws Introduction">
+			<html display_name="Applying Newton's Laws Introduction" filename="problems/MIT/RELATE/htmlwiki/Unit3/Applying_Newtons_Law.html"/>
+			<discussion for="Applying Newton's Laws Introduction" id="MReV_Summer2013_Applying_Newtons_Law" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Point Particle, System and Environment, Internal and External Forces" url_name="Point_Particle_System_and_EnvironmentInternal_and_External_Forces">
+		<vertical display_name="Point Particle, System and Environment, Internal and External Forces">
+			<html display_name="Point Particle, System and Environment, Internal and External Forces" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module1/Point_Particle__Syst.html"/>
+			<discussion for="Point Particle, System and Environment, Internal and External Forces" id="MReV_Summer2013_Point_Particle__Syst" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Pulling 2 Boxes">
+			<html display_name="Example: Pulling 2 Boxes" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module1/IE_Pulling_2_Boxes.html"/>
+			<discussion for="Example: Pulling 2 Boxes" id="MReV_Summer2013_IE_Pulling_2_Boxes" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Contact">
+			<problem display_name="CheckPoint 1: Contact" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p3.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Contact" id="MReV_Summer2013_u1_m12_l1_p3" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: More Contact">
+			<problem display_name="CheckPoint 2: More Contact" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p4.problem" attempts="2"/>
+			<discussion for="CheckPoint 2: More Contact" id="MReV_Summer2013_u1_m12_l1_p4" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Follow the rope">
+			<problem display_name="CheckPoint 3: Follow the rope" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p6.problem" attempts="1"/>
+			<discussion for="CheckPoint 3: Follow the rope" id="MReV_Summer2013_u1_m12_l1_p6" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Multi-Body System treated as a Point Particle" url_name="Multi-Body_System_treated_as_a_Point_Particle">
+		<vertical display_name="Multi-Body System treated as a Point Particle">
+			<html display_name="Multi-Body System treated as a Point Particle" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module2/MultiBody_System_tre.html"/>
+			<discussion for="Multi-Body System treated as a Point Particle" id="MReV_Summer2013_MultiBody_System_tre" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Pulling 2 Boxes (part 2)">
+			<html display_name="Example: Pulling 2 Boxes (part 2)" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module2/IE_More_Pulling_2_Boxes.html"/>
+			<discussion for="Example: Pulling 2 Boxes (part 2)" id="MReV_Summer2013_IE_More_Pulling_2_Boxes" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Pushing Books">
+			<problem display_name="Checkpoint 1: Pushing Books" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_8.problem" attempts="1"/>
+			<discussion for="Checkpoint 1: Pushing Books" id="MReV_Summer2013_forces_8" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Pushing Books">
+			<problem display_name="Checkpoint 2: Pushing Books" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_9.problem" attempts="1"/>
+			<discussion for="Checkpoint 2: Pushing Books" id="MReV_Summer2013_forces_9" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Pushing Books">
+			<problem display_name="Checkpoint 3: Pushing Books" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_10.problem" attempts="2"/>
+			<discussion for="Checkpoint 3: Pushing Books" id="MReV_Summer2013_forces_10" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Constrained Motion and Constraint Forces" url_name="Constrained_Motion_and_Constraint_Forces">
+		<vertical display_name="Constrained Motion and Constraint Forces">
+			<html display_name="Constrained Motion and Constraint Forces" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module3/Constrained_Motion_a.html"/>
+			<discussion for="Constrained Motion and Constraint Forces" id="MReV_Summer2013_Constrained_Motion_a" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Constraints on a Single Point Particle">
+			<html display_name="Constraints on a Single Point Particle" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module3/Single_Particle_Constraints.html"/>
+			<discussion for="Constraints on a Single Point Particle" id="MReV_Summer2013_Single_Particle_Constraints" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Simulation: The ramp">
+			<problem display_name="Simulation: The ramp" filename="MIT/analiab/Problems/The_ramp.problem" attempts="5"/>
+			<discussion for="Simulation: The ramp" id="MReV_Summer2013_The_ramp" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Constrained Multi-Particle Systems">
+			<html display_name="Constrained Multi-Particle Systems" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module3/Multi_Particle_Constraints.html"/>
+			<discussion for="Constrained Multi-Particle Systems" id="MReV_Summer2013_Multi_Particle_Constraints" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Choosing the Appropriate System">
+			<html display_name="Choosing the Appropriate System" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module3/Choosing_the_System.html"/>
+			<discussion for="Choosing the Appropriate System" id="MReV_Summer2013_Choosing_the_System" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Stacked blocks, horizontal pull (A)">
+			<problem display_name="CheckPoint 2: Stacked blocks, horizontal pull (A)" filename="MIT/boriskor/Newton_s laws/StackedBlocksA.problem" attempts="2"/>
+			<discussion for="CheckPoint 2: Stacked blocks, horizontal pull (A)" id="MReV_Summer2013_StackedBlocksA" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Stacked blocks pulled horizontally (B)">
+			<problem display_name="CheckPoint 3: Stacked blocks pulled horizontally (B)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally B.problem" attempts="2"/>
+			<discussion for="CheckPoint 3: Stacked blocks pulled horizontally (B)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_B" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Objects Constrained to Move with Equal Acceleration" url_name="Objects_Constrained_to_Move_with_Equal_Acceleration">
+		<vertical display_name="Objects Constrained to Move with Equal Acceleration">
+			<html display_name="Objects Constrained to Move with Equal Acceleration" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module4/Objects_Constrained.html"/>
+			<discussion for="Objects Constrained to Move with Equal Acceleration" id="MReV_Summer2013_Objects_Constrained" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Pushing 2 Blocks">
+			<html display_name="Example: Pushing 2 Blocks" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module4/IE_Pushing_2_Blocks.html"/>
+			<discussion for="Example: Pushing 2 Blocks" id="MReV_Summer2013_IE_Pushing_2_Blocks" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Raising 2 Blocks">
+			<html display_name="Example: Raising 2 Blocks" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module4/IE_Raising_2_Blocks.html"/>
+			<discussion for="Example: Raising 2 Blocks" id="MReV_Summer2013_IE_Raising_2_Blocks" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Trunk on a Board">
+			<html display_name="Example: Trunk on a Board" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module4/IE_Trunk_on_Board.html"/>
+			<discussion for="Example: Trunk on a Board" id="MReV_Summer2013_IE_Trunk_on_Board" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Stacked blocks pulled horizontally (F)">
+			<problem display_name="CheckPoint 1: Stacked blocks pulled horizontally (F)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally F.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Stacked blocks pulled horizontally (F)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_F" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Stacked blocks pulled horizontally (G)">
+			<problem display_name="Checkpoint 2: Stacked blocks pulled horizontally (G)" filename="MIT/boriskor/Newton_s laws/Stacked blocks pulled horizontally G.problem" attempts="2"/>
+			<discussion for="Checkpoint 2: Stacked blocks pulled horizontally (G)" id="MReV_Summer2013_Stacked_blocks_pulled_horizontally_G" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Objects Constrained to Move with Different Accelerations" url_name="Objects_Constrained_to_Move_with_Different_Accelerations">
+		<vertical display_name="Objects Constrained to Move with Different Accelerations">
+			<html display_name="Objects Constrained to Move with Different Accelerations" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module5/Objects_Constrained_2.html"/>
+			<discussion for="Objects Constrained to Move with Different Accelerations" id="MReV_Summer2013_Objects_Constrained_2" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Tension Force">
+			<problem display_name="CheckPoint 1: Tension Force" filename="MIT/rayyan/osu/05_Force and Motion I/accelerating/accelerating_1.problem" attempts="1"/>
+			<discussion for="CheckPoint 1: Tension Force" id="MReV_Summer2013_accelerating_1" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Two Blocks and a Pulley">
+			<html display_name="Example: Two Blocks and a Pulley" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module5/IE_Blocks_Pulley.html"/>
+			<discussion for="Example: Two Blocks and a Pulley" id="MReV_Summer2013_IE_Blocks_Pulley" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Two Blocks, a Pulley, and an Incline">
+			<html display_name="Example: Two Blocks, a Pulley, and an Incline" filename="problems/MIT/RELATE/htmlwiki/Unit3/Module5/IE_Blocks_Pulley_Incline.html"/>
+			<discussion for="Example: Two Blocks, a Pulley, and an Incline" id="MReV_Summer2013_IE_Blocks_Pulley_Incline" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Blocks and Pulleys">
+			<problem display_name="CheckPoint 2: Blocks and Pulleys" filename="MIT/rayyan/RP/blocks_and_pulleys.problem" attempts="2"/>
+			<discussion for="CheckPoint 2: Blocks and Pulleys" id="MReV_Summer2013_blocks_and_pulleys" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: More than one Pulley">
+			<problem display_name="CheckPoint 5: More than one Pulley" filename="MIT/rayyan/check_points/BK/BK26.problem" attempts="3"/>
+			<discussion for="CheckPoint 5: More than one Pulley" id="MReV_Summer2013_BK26" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Block on Incline">
+			<problem display_name="CheckPoint 6: Block on Incline" filename="MIT/rayyan/check_points/BK/BK27.problem" attempts="4"/>
+			<discussion for="CheckPoint 6: Block on Incline" id="MReV_Summer2013_BK27" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+</chapter>

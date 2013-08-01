@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Equilibrium</title>
+
+      <p><h3>Check Your Understanding of Force Balance</h3>
+Each of the following FBD's show the directions of all the forces acting on the relevant object. Assuming that the sizes of each force can be adjusted to any nonzero value but the directions cannot be changed, which of the objects can be put into equilibrium? <b>Mark "true" for any object that could be put into equilibrium.</b></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/1/1b/Unit1Mod4ChoiceA.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="green" size="-1">
+                <i>
+It is possible to achieve equilibrium. If we use standard x and y axes, the net x-component of the forces is clearly zero (neither force has an x-component) and the y-components can be made to cancel by adjusting the sizes to be equal, since one is in the positive y direction and the other is in the negative y direction.
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil1" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/b/ba/Unit1Mod4ChoiceB.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="green" size="-1">
+                <i>
+It is possible to achieve equilibrium. If we use standard x and y axes, the net y-component of the forces is clearly zero (neither force has a y-component) and the x-components can be made to cancel by adjusting the sizes to be equal, since one is in the positive x direction and the other is in the negative x direction.
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/c/c5/Unit1Mod4ChoiceC.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="red" size="-1">
+                <i>
+It is not possible to achieve equilibrium. If we use standard x and y axes, then there is clearly a negative net force in each direction.
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/4/47/Unit1Mod4ChoiceD.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="red" size="-1">
+                <i>
+It is not possible to achieve equilibrium. If we use standard x and y axes, the force which points into the second quadrant (left and up) will contribute a positive y-component which cannot be balanced by the rightward force (it has no y-component at all).
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/b/b1/Unit1Mod4ChoiceE.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="green" size="-1">
+                <i>
+It is possible to achieve equilibrium. If we use standard x and y axes, then because the diagonal force has a negative x-component and a negative y-component, we can adjust the upward force (positive y-component) and the rightward force (positive x-component) until the x and y vector sums give zero.
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil5" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/1/1c/Unit1Mod4ChoiceF.png"/>
+          <block>
+            <solved>
+              <br/>
+              <font color="red" size="-1">
+                <i>
+It is not possible to achieve equilibrium. If we use standard x and y axes, then it is possible to arrange the sizes of the forces to give zero net force in the y-direction, but it is not possible to cancel the force in the positive x direction.
+</i>
+              </font>
+            </solved>
+          </block>
+          <br/>
+          <optioninput location="random" name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+      </ul>
+      <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; (index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil3=False') == -1 || index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil4=False') == -1 || index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil6=False') == -1 )">
+        <notsolved>
+</notsolved>
+
+          <p>
+            <font color="red">
+              <b>Equilibrium requires that the x AND y force components simultaneously cancel.  Thus, it is impossible to have equilibrium if only one force has an x-component or if only one force has a y-component.  It may help you to gain intuition about this problem if you imagine that each object is connected to ropes that point along the arrows shown.  Imagine what would happen if the ropes are pulled.  Would the object be able to remain at rest, or would it move?</b>
+            </font>
+            <br/>
+</p>
+
+      </block>
+      <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil5=True') == -1">
+        <notsolved>
+</notsolved>
+
+          <p>
+            <font color="red">
+              <b>Remember that you are allowed to adjust the size of the forces as necessary.  Thus, it is possible for one force to simultaneously balance two other forces (it will just have to be larger than the other two).</b>
+            </font>
+            <br/>
+</p>
+
+      </block>
+      <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; (index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil1=True') == -1 || index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil2=True') == -1)">
+        <notsolved>
+</notsolved>
+
+          <p>
+            <font color="red">
+              <b>Remember that these pictures show ALL the forces acting on the object.  A case with two forces pulling directly against each other can certainly be brought into equilibrium (simply make the forces equal size).</b>
+            </font>
+            <br/>
+</p>
+
+      </block>
+    </optionresponse>
+                          </problem>
+</html>

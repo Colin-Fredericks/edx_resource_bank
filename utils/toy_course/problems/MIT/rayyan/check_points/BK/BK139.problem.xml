@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Energy in SHM</title>
+    <p>A block, attached to a spring, follows simple harmonic motion as shown in the diagram.</p>
+
+	<p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK139.PNG" alt="BK139" texwrap="none"/></p>
+
+	<p>Which of the following statements about the energy of this system are true? In the options below, K stands for kinetic energy and U stands for potential energy. <b>Check all that apply.</b></p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="false"><text>K is directly proportional to the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>K is inversely proportional to the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>K is directly proportional to the square of the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>U is directly proportional to the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>U is inversely proportional to the displacement from equilibrium</text></choice>
+		<choice correct="true"><text>U is directly proportional to the square of the displacement from equilibrium</text></choice>
+		<choice correct="true"><text>K is at a maximum when the acceleration is zero</text></choice>
+		<choice correct="true"><text>K is at a minimum when U is at a maximum</text></choice>
+		<choice correct="true"><text>U is at a maximum when the acceleration is at a maximum</text></choice>
+		<choice correct="false"><text>U is at a minimum when the velocity is zero</text></choice>
+		<choice correct="false"><text>The sum (K+U) is directly proportional to the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>The sum (K+U) is inversely proportional to the displacement from equilibrium</text></choice>
+		<choice correct="false"><text>The sum (K+U) is directly proportional to the acceleration</text></choice>
+		<choice correct="false"><text>The sum (K+U) is inversely proportional to the acceleration</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+
+      </problem>
+</html>

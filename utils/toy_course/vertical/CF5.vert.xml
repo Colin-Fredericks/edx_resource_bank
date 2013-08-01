@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/colin/CF5-1.problem" display_name="Missile Command" attempts="2" weight="1"/>
+	<problem filename="F12/colin/CF5-2.problem" display_name="Missile Command, Part 2" attempts="2" weight="1"/>
+	<discussion for="Missile Command" id="MReV_Summer2013_CF5" discussion_category="Orbits" />
+</vertical>

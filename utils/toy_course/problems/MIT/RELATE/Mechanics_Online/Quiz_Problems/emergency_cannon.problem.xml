@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+D=random.randrange(50,60,1)
+H=random.randrange(100,110,1)
+g=9.81
+v0 = math.sqrt( 2* g* H + ( D* D* g/(2* H)) )
+angle = math.atan( (2* H/ D) )
+
+</script>
+	<p><img src="/static/problems/MIT/RELATE/Mechanics_Online/Quiz_Problems/ds_emergency_cannon_quiz.png" align="top" texwrap="none" width="500" alt="p1a"/></p>
+	<p>A cannon is shooting emergency packets to people stranded on the roof of a flooded building of height H = $H meters relative to the cannon, the corner of which is located a distance D = $D meters from the cannon.  It is desired that the incoming packets are flying tangent to the roof as shown so that they land gently with as little impact as possible and slide along to a stop.</p>
+	<p>Find the initial speed \(v_0\) and at what angle \(\theta\) (in radians) the cannon should be aimed to achieve the above scenario.</p>
+
+      <br/>
+
+        <p>
+          \(v_0=\)
+        </p>
+
+      <numericalresponse answer="$v0" unit="m/s" format="2s">
+        <responseparam default="10%" type="tolerance">
+</responseparam>
+        <textline math="1">
+          <hintgroup showoncorrect="no">
+
+              <br/>
+
+          </hintgroup>
+        </textline>
+      </numericalresponse>
+
+      <br/>
+
+        <p>
+          \(\theta=\)
+        </p>
+
+      <numericalresponse answer="$angle" unit="rad" format="2s">
+        <responseparam default="10%" type="tolerance">
+</responseparam>
+        <textline math="1">
+          <hintgroup showoncorrect="no">
+
+              <br/>
+
+          </hintgroup>
+        </textline>
+      </numericalresponse>
+
+  </problem>
+</html>

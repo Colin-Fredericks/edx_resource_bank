@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/vesaldini/Unit 1/Mod 13/Mod 13 AE MP_1_problem.jpg" alt="Unit 1/Mod 13/Mod 13 AE MP_1_problem.jpg"/>
+    <br/>
+
+      <p>Three blocks on a horizontal frictionless surface are connected by massless strings as shown in the picture above. A force F acts on M3 and accelerates the system to the right.  There are several possible systems you might choose to analyze in a situation like this.  Which of the possible systems below will experience T<sub>1</sub>, the tension in the rope connecting the blocks of mass M<sub>1</sub> and M<sub>2</sub>, as an <b>external</b> force? <br/> <b>Select "True" for the systems that will experience T<sub>1</sub> as an external force.</b></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ol>
+        <li>
+
+            <p>Block M<sub>1</sub> alone as a point particle system.</p>
+
+          <optioninput location="random" name="Foil1" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Block M<sub>2</sub> alone as a point particle system.</p>
+
+          <optioninput location="random" name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Block M<sub>3</sub> alone as a point particle system.</p>
+
+          <optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Blocks M<sub>1</sub> and M<sub>2</sub> together as a single point particle system.</p>
+
+          <optioninput location="random" name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Blocks M<sub>2</sub> and M<sub>3</sub> together as a single point particle system.</p>
+
+          <optioninput location="random" name="Foil5" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+
+            <p>All three blocks together as a single point particle system.</p>
+
+          <optioninput location="random" name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+      </ol>
+      <hintgroup showoncorrect="no">
+        <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil3=True') != -1">
+
+            <p>
+HINT:  One component of the system must be in contact with the rope T<sub>1</sub> to feel its tension as an external force.
+</p>
+
+        </block>
+        <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; (index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil4=False') == -1 or index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil6=False') == -1)">
+
+            <p><br/>HINT:  Any system that contains both blocks M<sub>1</sub> and M<sub>2</sub> will also contain the rope between them.
+</p>
+
+        </block>
+        <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; (index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil1=False') != -1 or index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil2=False') != -1 or&#10;index(&amp;EXT('user.resource.resource.0.11.submission'),'Foil5=False') != -1)">
+
+            <p><br/>HINT:  Any system that contains either block M<sub>1</sub> or block M<sub>2</sub> will feel the force T<sub>1</sub>.
+</p>
+
+        </block>
+      </hintgroup>
+    </optionresponse>
+      </problem>
+</html>

@@ -1,0 +1,260 @@
+<html><html>
+<head>
+<title>Centripetal Acceleration</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Centripetal Acceleration</h3>
+<br/>
+<font size="3"><b>Observing the Motion using the <a href="http://paer.rutgers.edu/pt3/">Physics Teaching Technology Resource</a></b></font>
+<br/>
+<p>
+In order to describe a motion, we have to first observe it carefully. One of the great advantages of mechanics over other branches of physics
+ is the fact that we can use our eyes to make the observation (this is not true when studying electricity or quantum mechanics, for example).
+<a href="http://paer.rutgers.edu/">The Physics and Astronomy Education Research Group</a> at <a href="http://www.rutgers.edu/">Rutgers University</a>
+have created a library of simple video experiments to illustrate many kinds of motion. Below, we present two of their videos that involve 
+circular motion. Observe them carefully. Particularly, think about the forces acting on the object that is moving in a circle in each video. 
+</p>
+
+
+<table border="1">
+	<tbody>
+		<tr>
+			<td>
+				<b>Video 1: David Brookes turns a bowling ball </b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<iframe width="420" height="315" src="http://www.youtube.com/embed/kIsQlbNwtPU?rel=0" frameborder="0" allowfullscreen></iframe>
+			<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Bowling_Ball.mp4">Click here to download this video.</a></p>
+			</td>
+		</tr>
+	</tbody>
+
+</table>
+
+
+<table border="1">
+	<tbody>
+		<tr>
+			<td>
+				<b>Video 2: A ball is confined to a ring </b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<iframe width="420" height="315" src="http://www.youtube.com/embed/lNe59oGVLuE?rel=0" frameborder="0" allowfullscreen></iframe>
+				<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Ball_In_Circle.mp4">Click here to download this video.</a></p>
+			</td>
+		</tr>
+	</tbody>
+
+</table>
+
+<br/>
+
+<p>We are now ready to discuss the properties of the acceleration associated with uniform circular motion. There are three important claims we will make about this acceleration.</p>
+
+<p><b>Claim 1: An object executing uniform circular motion <i>must</i> be experiencing an interaction.<b></p>
+
+<p>This claim is based upon Newton's First Law, which says that an object that is <i>not</i> experiencing any interaction will necessarily move in a straight line. You can see the evidence for this claim in the first video. The bowling ball moves in a straight line unless acted upon by the hammer. In the second video, the ball only moves in a circular path when constrained to do so by the interaction from the wall. When the wall is removed, the ball travels a straight path.</p>
+
+<p><b>Claim 2: The net force on an object in uniform circular motion must point toward the center of the circular path.</b></p>
+
+<p>Evidence for this claim can be seen by careful observation of the videos using what we have already learned about the properties of interactions. In the first movie, the hammer is always applied to the bowling ball on the side directly opposite the center of the circle. If we assume that the ball and hammer are fairly smooth (so there is little friction) then the contact interaction points toward the center of the circle. In the second  video, the normal force applied by the wall is perpendicular to the wall and therefore points toward the center of the circle (again, we assume that friction is small).</p>
+
+<p><b>Claim 3: The size of the object's acceleration is given by <i>v</i><sup>2</sup>/<i>r</i>, where <i>v</i> is the speed of the object and <i>r</i> is the radius of the circular path. The magnitude of the acceleration is also \(a_c = \omega^2*r\) where \(a_c, \omega\), and r are acceleration, angular velocity, and radius respectively. (This acceleration points toward the center of the circle.)</b></p>
+
+<p>Evidence for our final claim cannot be observed directly in the videos, but rather must be <i>derived</i> using what our assumptions about the motion (uniform speed and uniform radius). Below we present two possible derivations, one using trigonometry (and limits) and the other using calculus.</p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Derivation, Option 1: Trigonometry plus Limits</b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+						As with any mathematical description of motion, we begin by setting up a coordinate system. We will choose our coordinates such that the circular motion takes place in the x-y plane with its center at the origin. Further, we will arrange things so that the object is moving counterclockwise, and we will take the initial time t<sub>i</sub> to occur at an instant when the object is touching the positive x-axis. With these choices in mind, we can draw the velocity of the object at two different times: t<sub>i</sub>, when the object is on the x-axis moving counterclockwise, and t<sub>i</sub>+&#916;t, a time &#916;t later. The velocity of the object at each of these times is shown in the figure below.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccTrigProof1.png"/></p>
+<p>Note that the velocity is always tangential to the path of the object. It is also important to note that the object's movement along the circle has swept out an angle &#916;&#952; in the time &#916;t.</p>
+<p>Because acceleration is defined as the time rate of change of the velocity, we want to look at the change in the velocity during the time &#916;t. To do this, we set up a vector subtraction, taking:</p>
+<p>
+\(\Delta \vec{v} = \vec{v}(t+\Delta t) - \vec{v}(t)\)</p>
+<p>Graphically, this subtraction looks like:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccTrigProof2.png"/></p>
+<p>Now, we have to use a trick. We know that the velocity has a <i>constant size v</i> because of our assumption of <i>uniform</i> circular motion. Thus, the changing velocity vector <i>will itself</i> sweep out a circle of radius <i>v</i>, as indicated by the dotted line in the figure below:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccTrigProof3.png"/></p>
+<p>The trick is this: as the time difference between the two velocities we are subtracting becomes very small, so does the angle &#916;&#952;. In the limit of a very small &#916;&#952;, the length of a small portion of the circle swept out by the velocity vector as it turns becomes essentially equal to the straight-line difference &#916;v that we are trying to find. The important thing about this is that we <i>know</i> the length of the curved portion of the circle. That length is simply &#916;&#952; times v.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccTrigProof4.png"/></p>
+<p>Thus, in the limit of a very short time interval, we know:</p>
+<p>
+\(\lim_{\Delta t \rightarrow 0} |\Delta \vec{v}| = v (\Delta \theta)\)</p>
+<p>Now, we can go back to the original circle in position space (the green circle in the first figure) and we can find an expression for &#916;&#952;. We can do this by using the fact that in a time &#916;t the object will cover an arc length of v&#916;t along the edge of the circle, as shown in the figure below.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccTrigProof5.png"/></p>
+<p>Thus, <i>as long as we are measuring</i> &#952; <i>in radians</i>, we can write:</p>
+<p>
+\(\Delta \theta = \frac{v(\Delta t)}{r}\)</p>
+<p>Substituting this into our expression for the change in velocity gives:</p>
+<p>
+\(\lim_{\Delta t \rightarrow 0} |\Delta \vec{v}| = \frac{v^{2}(\Delta t)}{r}\)</p>
+<p>Now, we simply use the definition of acceleration as the time rate of change of velocity:</p>
+<p>
+\(a \equiv \lim_{\Delta t \rightarrow 0} \frac{|\Delta \vec{v}|}{\Delta t} = \frac{v^{2}}{r}\)</p>
+<p>where the &#916;t's have canceled.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Derivation, Option 2: Calculus</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+						We can use the definition of acceleration as the second time derivative of position, provided that we can write a mathematical expression for the position of an object executing uniform circular motion. Before we can define the position, we must set up a coordinate system. We will choose our coordinates such that the circular motion takes place in the x-y plane with its center at the origin. Further, we will arrange things so that the object is moving counterclockwise, and we will take the initial time t = 0 to occur at an instant when the object is touching the positive x-axis. The situation is shown below:
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccCalcProof1.png"/></p>
+<p>The components of the position vector can then be written using trigonometry as:</p>
+<p>
+\(x(t) = r \cos\left(\frac{v t}{r} \right)\)</p>
+<p>and</p>
+<p>
+\(y(t) = r \sin\left(\frac{v t}{r} \right)\)</p>
+<p>where we have used the fact that we can find the angle in radians by dividing the arc length traveled by the object by the radius of the circle. The arc length traveled around the circle is simply <i>vt</i> because the object is moving with constant speed v.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccCalcProof1a.png"/></p>
+<p>With our position functions in hand, we can find the velocity of the object by taking derivatives:</p>
+<p>
+\( v_{x}(t) = \frac{dx}{dt} = - v\sin\left(\frac{vt}{r}\right)\)</p>
+<p>and</p>
+<p>
+\( v_{y}(t) = \frac{dy}{dt} = v\cos\left(\frac{vt}{r}\right)\)</p>
+<p>By plotting this vector and the position vector for an arbitrary time <i>t</i>, you can show that the velocity of the object is perpendicular to the position vector and tangent to the circle as shown in the figure below.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccCalcProof2.png"/></p>
+<p>With the velocity determined, we can now take another derivative to find the acceleration:</p>
+<p>
+\( a_{x}(t) = \frac{dv_{x}}{dt} = - \frac{v^{2}}{r} \cos\left(\frac{vt}{r}\right)\)</p>
+<p>and</p>
+<p>
+\( a_{y}(t) = \frac{dv_{y}}{dt} = - \frac{v^{2}}{r} \sin\left(\frac{vt}{r}\right)\)</p>
+<p>We can now find the size of the acceleration by using the Pythagorean theorem plus the trig identity that sine squared plus cosine squared equals 1:</p>
+<p>
+\( a = \sqrt{a_{x}^{2} + a_{y}^{2}} = \)</p>
+<p>
+\( a = \frac{v^{2}}{r}\sqrt{\cos^{2}\left(\frac{vt}{r}\right) + \sin^{2}\left(\frac{vt}{r}\right)} = \)</p>
+<p>
+\( a = \frac{v^{2}}{r}\)</p>
+<p>and we have demonstrated Claim 3, which completes our goal. We can actually go farther and use our work to demonstrate Claim 2 as well. Looking carefully at the form of the acceleration, you can see that:</p>
+<p>
+\( \vec{a} = -\left(\frac{v^{2}}{r}\right)\hat{r}\)</p>
+<p>in other words, the acceleration points directly opposite to the position vector, as shown in the figure below.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module5/files/CentAccCalcProof3.png"/></p>
+<p>Thus, the acceleration points to the center of the circle, and we have demonstrated Claim 2.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+			The acceleration associated with circular motion is generally called <b>centripetal acceleration</b> because of Claim 2. "Centripetal" means "center-seeking" and is meant to remind us that the acceleration of an object moving in a circle <i>constantly changes direction</i> so as to <i>always point at the center of the circular path</i>.</p>
+
+<font size="4"><b>The Uniform Circular Motion (Centripetal Acceleration) Model</b></font>
+<br/>
+<p>
+			We are now ready to introduce the Uniform Circular Motion (Centripetal Acceleration) Model. In principle, this model involves a full description of the position, velocity and acceleration of an object moving in a circle of constant radius with constant speed. In practice, the most important thing to remember about Uniform Circular Motion is that any object executing this motion <i>must</i> be experiencing a centripetal acceleration that obeys the three claims outlined above. By adding in what we have learned about Newton's Laws, we can see that if we are given a problem involving an object executing Uniform Circular Motion we have important information about the magnitude <i>and</i> direction of the net force on this object (since the net force is equal to <i>ma</i>, and we know <i>a</i> = <i>v</i><sup>2</sup>/<i>r</i> and points toward the center of the circle).</p>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>Conservative and Non Conservative Forces</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<h2>Conservative
+Forces</h2>
+
+
+<p><h3>Potential Energy</h3>
+The potential energy is defined as the negative of the work done by a conservative 
+force:</p>
+<p>
+\(U(\vec{r}) = - \int_{\vec{r}_{ref}}^{\vec{r}}\vec{F}\cdot d\vec{r}\)
+</p>
+<p>This expression may give you some intuition about the potential, which we extend by 
+calculating the potential from the work integrals for several 
+common conservative forces in the next two pages. 
+</p>
+
+<h3>Conservative Force </h3>
+<table border="1" style="color:teal" cellspacing="0">
+<tbody>
+<tr>
+<td>A force is&#160;<b>conservative </b>if&#160;the work done by the force on a body
+ that moves from an initial position to a final position is <i>independent</i> of the
+  path taken. 
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><br/>To understand this concept we will consider the following situation:</p>
+<p>	A small box of mass <i>m</i> moves from point <i><b>A</b></i> on the horizontal
+ surface to a final point <i><b>B</b></i> at the top of a building of height <i>h</i>.
+It can do so by following different paths but we will consider the two paths indicated in the
+figure:<br/><br/>
+
+<b>Path 1:</b> it moves along the horizontal surface, from point <i><b>A</b></i> until the bottom 
+of the building, point <b><i>c</i></b>. Then it moves vertically upwards until it reaches point <i><b>B</b></i>.
+<br/>
+<b>Path 2:</b> it moves from point <i><b>A</b></i> to point <i><b>B</b></i> up an incline of angle \(\theta\). 
+ </p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/Conservative_non_Conservative_1.png"/></p>
+
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Find the work done by the force of gravity between points <i>A</i> and 
+<i>B</i> for the two cases: when the box moves along path 1 and when it moves along path 2.</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer:</b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+<p>The work done by gravity along path 1 and path 2 is the same and equal to \(-mgh\)
+	<p><b>The work done by gravity is independent of the path</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>The work along path 1 - Calculation.  </b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<p>
+We start with the definition of work:<br/><br/>
+\(W_{BA}^{path1}=\int_A^B\vec{F}_g\cdot d\vec{r}\)<br/><br/>
+Because the path changes at point <i>c</i>, the displacement vector also
+changes. As a result we write the work as:<br/><br/>
+\(W_{B,A}^{path1}=\int_A^c\vec{F}_g\cdot d\vec{r}+\int_c^B\vec{F}_g\cdot d\vec{r}\)<br/><br/>
+While the box is moving along the horizontal surface, the force of gravity is perpendicular to
+the displacement vector, therefore \(\vec{F}_g\cdot d\vec{r} = 0\) and the work done by gravity 
+between <i>A</i> and <i>c</i> is zero . When
+ the box is moving up, the gravitational force is in opposite direction to the displacement vector. 
+ The work done by gravity between  points <i>c</i> and <i>B</i> is negative, and the work along
+ path 1 is calculated as: </p>
+ <p>
+ \(W_{B,A}^{path1}=0+\int_0^h(-mg)\hat{j}\cdot dy\hat{j}=-mg\hat{j}\cdot\hat{j}\int_0^hdy=-mgh\)<br/>
+</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/Conservative_non_Conservative_2.png"/></p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>The work along path 2 - Calculation.</b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+
+<p>The box is moving along an incline of angle \(\theta\) with respect to the horizontal, 
+therefore the gravitational force is at an angle of \(\pi/2+\theta\) with respect to the 
+displacement vector. The dot product between these two vectors becomes:<br/><br/>
+
+\(\vec{F}_g\cdot d\vec{r}= mg\cos(\pi/2+\theta)dr = -mg\sin\theta dr\)<br/><br/>
+
+where we have used that \(\cos(\pi/2+\theta)=-\sin\theta\).
+<p>
+
+
+The work along path 2 is given by:<br/>
+<br/>
+\(W_{B,A}^{path2}=\int_A^B\vec{F}_g\cdot d\vec{r}=-mgsin\theta\int_0^{d} dr\)
+<br/><br/>
+where \(d\) is the distance along the 
+incline between the points <i><b>A</b></i> and <i><b>B</b></i>
+and is given by \(d = h/\sin\theta\). Then, <br/><br/>
+\(W_{B,A}^{path2} =-mg\sin\theta d = -mg\sin\theta h/\sin\theta=-mgh\)<br/>
+</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/Conservative_non_Conservative_3.png"/></p>
+
+<p>
+<b>Note:</b> Another way to calculate the dot product is to write the components of the displacement
+ vector in the x,y coordinate system:<br/><br/>
+
+ 
+
+\(\vec{dr}=dr(\cos\theta\hat{i}+\sin\theta\hat{j} )\)<br/><br/>
+
+where \(dr\) is the magnitude of the displacement vector, \(d\vec{r}\). This is the element of length 
+along the incline. In the same way, 
+we write the gravitational force in components:<br/><br/>
+
+\(\vec{F}_g=-mg\hat{j}\) <br/><br/>
+
+The dot product becomes:<br/> <br/>
+\(\vec{F}_g\cdot d\vec{r}=-mg\hat{j}\cdot dr(\cos\theta\hat{i}+\sin\theta\hat{j})\)<br/><br/>
+
+After distributing terms and  using that \(\hat{j}\cdot\hat{i}=0\) and \(\hat{j}\cdot\hat{j}=1\) :<br/><br/>
+
+\(\vec{F}_g\cdot d\vec{r}=-mg\sin\theta dr \)<br/><br/>
+
+The work along path 2 is:<br/><br/> 
+\(W_{B,A}^{path2}=-mg\sin\theta\int_0^{d}dr=-mgh\)
+</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p><b>Potential Energy Expressions:</b><br/>
+
+In the example above we have shown that the work done by the gravitational force near the Earth's surface is independent of the path followed by the object. 
+It depends only on the initial and final position (actually just the heights). The same result can be shown for the gravitational force far from the 
+Earth's surface and also for the elastic force of a spring. In the next two pages  
+we'll find the calculations of the potential energies of the these three most 
+common conservative interactions in introductory mechanics. The definition of potential energy 
+allows it to be calculated from the spatial behavior of the associated force. 
+<br/>
+The following table is a summary
+of these forces and their potential energies.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/conservative_force_4.png"/></p>
+<!--
+<table class="wikitable">
+<tr>
+	<th><b>Interaction</b></th>
+	<th><b>Force</b></th>
+	<th><b>Potential Energy</b></th>
+
+</tr>
+<tr>
+	<th> Gravitational, near earth</th>
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/conservative_force_1.png"/></td>
+<td>\( \displaystyle U(h)= mgh \) where h is the height</td>
+</tr>
+<tr>
+	<th>Gravitational, Universal</th>
+    <td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/conservative_force_2.png"/></td>
+	<td>\( U(r)= \displaystyle -\frac{G m_1 m_2}{r} \) Where r is the distant between two objects</td>
+
+</tr>
+<tr>
+	<th>Spring</th>
+    <td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module4/files/conservative_force_3.png"/></td>
+	<td>\( \displaystyle U(x)= \frac{1}{2}kx^2 \) where x is the distance from the equilibrium point of the spring</td>
+
+</tr></table>
+
+</p>
+-->
+<p>
+In summary, potential energy gives us a way to account for the effects of a <b>conservative interaction</b> 
+that does not require us to calculate the work from the corresponding interaction. 
+<br/><br/>
+However, we will have to calculate the work done by a <b>non-conservative force</b>  because its work depends on
+the path, therefore it depends on the particular situation present in each problem.
+ <!--
+Warning: This implies that a particular interaction must be incorporated in your mathematical description either 
+as a potential energy OR as a force that does work, but not both ways simultaneously.
+	-->
+	</p>
+			
+</body>
+</html>
+

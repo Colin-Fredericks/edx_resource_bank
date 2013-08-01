@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Which of the choices below describes the scenario depicted by the energy bar chart?</p>
+
+    <img src="/static/problems/MIT/GWUproblems/Physics_21_Exams/fig17.gif" height="215" width="280" texheight="54" texwidth="70" alt="Energy Bar Chart"/>
+    <br/>
+    <multiplechoiceresponse max="5" direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              A block attached to an unstretched spring is pulled with increasing speed along a rough flat surface.          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              A rope is lifting a box straight upward at constant speed.          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              A car traveling at high speed jams on the brakes and skids to a halt on a rough flat road.          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              A box slides down a rough slope, hits a spring at the bottom, compresses it and comes to rest.          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              A ball is shot straight upward from a compressed spring, then sticks to the ceiling.          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+A person is pushing a crate up a rough slope at constant speed.          
+        </choice>
+      </choicegroup>
+
+    </multiplechoiceresponse>
+              </problem>
+</html>

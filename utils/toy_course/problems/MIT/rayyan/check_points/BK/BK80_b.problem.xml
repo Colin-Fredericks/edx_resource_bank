@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<html>
+
+<problem>
+<title> CheckPoint: Torque and Angular Acceleration</title>
+
+<text/>A uniform solid disc of mass m and radius r is acted upon by three forces of given magnitudes (see the diagram). 
+<p></p>
+    <img width="449" alt="BK80" src="/res/MIT/rayyan/check_points/Pictures/BK80.png" />
+
+<b>Part 1.</b> 
+The angular acceleration of the disc if it rotates about the axis passing through the center of the disc, perpendicular to the page.
+
+<br/>
+            <b>a. </b>\(\alpha = 2F/mr\); counterclockwise<br/>
+            <b>b. </b>\(\alpha =  2F/mr\); clockwise<br/>
+            <b>c. </b>\(\alpha =  4F/mr\); counterclockwise<br/>
+            <b>d. </b>\(\alpha =  4F/mr\); clockwise<br/>
+            <b>e. </b>\(\alpha =  6F/mr\); counterclockwise<br/>
+            <b>f. </b>\(\alpha =  6F/mr\); clockwise<br/>
+<optionresponse>
+      <optioninput options="('a','b','c','d','e','f')" correct="f"/>
+</optionresponse>
+
+<b>Part 2.</b>  
+Find the angular acceleration of the disc if it rotates about the axis passing through the point of application of force 3F, perpendicular to the page.
+
+<br/>
+<b>a. </b>\(\alpha =  2F/mr\); counterclockwise <br/>
+<b>b. </b>\(\alpha =  2F/mr\); clockwise<br/>
+<b>c. </b>\(\alpha =  4F/mr\); counterclockwise<br/>
+<b>d. </b>\(\alpha =  4F/mr\); clockwise<br/>
+<b>e. </b>\(\alpha =  6F/mr\); counterclockwise<br/>
+<b>f. </b>\(\alpha = 6F/mr\); clockwise<br/>
+<optionresponse>
+      <optioninput options="('a','b','c','d','e','f')" correct="f"/>
+</optionresponse>
+
+<b>Part 3.</b><br/> 
+Find the angular acceleration of the disc if it rotates about the axis passing through the point of application of force 2F, perpendicular to the 
+page.
+
+<b>a. </b>\(\alpha =  8F/3mr\); counterclockwise <br/>
+<b>b. </b>\(\alpha =  8F/3mr\); clockwise<br/>
+<b>c. </b>\(\alpha =  4F/mr\); counterclockwise<br/>
+<b>d. </b>\(\alpha =  4F/mr\); clockwise<br/>
+<b>e. </b>\($\alpha =  2F/mr\); counterclockwise<br/>
+<b>f. </b>\(\alpha = 2F/mr\); clockwise<br/>
+<optionresponse>
+      <optioninput options="('a','b','c','d','e','f')" correct="f"/>
+</optionresponse>
+
+</problem>
+</html>
+

@@ -1,0 +1,23 @@
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+#Enter the computations here
+hang_mass=random.randrange(300,700,50)
+table_mass=random.randrange(200,400,10)
+stretch=random.randrange(20,50,2)
+amplitude=random.randrange(10,25,1)
+const=( hang_mass/1000.)*9.8/( stretch/100.)
+period=2.0*3.14159*math.sqrt(( table_mass/1000.)/ const)
+</script>
+
+      <p>If a mass of $hang_mass grams is hung from the bottom of a vertical spring, the spring will stretch $stretch cm.  Now the hanging mass is removed, and the spring is placed horizontally on a frictionless table.  One end of the spring is held fixed and the other end is attached to a $table_mass gram mass.  The mass is then pulled out a distance of $amplitude cm from its equilibrium position and released from rest.  What is the period of oscillation of this mass/spring system?</p>
+
+    <numericalresponse answer="$period" unit="s" format="3f">
+      <responseparam default="2%" type="tolerance"/>
+      <responseparam default="0,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+      <textline math="1"/>
+
+    </numericalresponse>
+  </problem>
+</html>

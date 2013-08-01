@@ -1,0 +1,17 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>Where have you been particularly active in the course? You can check multiple boxes.</p>
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+			<choice correct="true" name="reading"><text>I have done the majority of the reading.</text></choice>
+			<choice correct="true" name="checkpoints"><text>I have done the majority of the checkpoint problems.</text></choice>
+			<choice correct="true" name="homework"><text>I have done the majority of the homework.</text></choice>
+			<choice correct="true" name="quizzes"><text>I have done most or all of the quizzes.</text></choice>
+			<choice correct="true" name="wiki_read"><text>I read the wiki often.</text></choice>
+			<choice correct="true" name="wiki_edit"><text>I have edited the wiki several times.</text></choice>
+			<choice correct="true" name="discussion_lurk"><text>I read discussions often.</text></choice>
+			<choice correct="true" name="discussion_talk"><text>I contribute to discussions often.</text></choice>
+			<choice correct="true" name="external"><text>I am in a study group for this course outside of the discussion boards.</text></choice>
+			<choice correct="true" name="external"><text>I have not been particularly active.</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+</problem>

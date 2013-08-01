@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/spring.png" alt="spring" height="150"/>
+
+      <p><br/>
+A block attached to a spring is oscillating between point X (fully compressed) and point Y (fully stretched). As the block moves from point X to O (spring relaxed), the spring does work W on the block. How much work does the spring do on the block as it moves from O to Y?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              0          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              W          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              -W          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              2W          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              -2W          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+              W/2          
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+
+              -W/2          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

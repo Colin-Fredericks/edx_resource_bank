@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/moving.png" alt="moving" height="200"/>
+
+      <p><br/>
+Mr. Ant, standing in an elevator, moves up 40 m with the elevator.  He then gets out of the elevator and walks along a straight hallway for 3 minutes at a speed 10 meters/minute.  What is the magnitude of Mr. Ant's net displacement?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              0m          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              30m          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              40m          
+        </choice>
+        <choice name="foil4" correct="true">
+
+              50m          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              70m          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              Not enough information given          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

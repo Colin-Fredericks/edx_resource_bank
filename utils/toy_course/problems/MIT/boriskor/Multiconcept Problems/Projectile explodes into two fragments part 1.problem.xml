@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>A projectile of mass \(3m\) is launched upward from the ground level. The projectile explodes at the top point of its trajectory which is a horizontal distance \(x\) from the launch point. As a result of the explosion, the projectile breaks into two fragments, of masses \(2m\) and \(m\), both initially travelling horizontally. The larger fragment ends up landing at the launch point. </p>
+
+	<p>How far from the launch point does the smaller fragment land?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true"><text>d = 6x</text></choice>
+			<choice location="random" correct="false"><text>d = 5x</text></choice>
+			<choice location="random" correct="false"><text>d = 4x</text></choice>
+			<choice location="random" correct="false"><text>d = 3x</text></choice>
+			<choice location="random" correct="false"><text>d = 2x</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

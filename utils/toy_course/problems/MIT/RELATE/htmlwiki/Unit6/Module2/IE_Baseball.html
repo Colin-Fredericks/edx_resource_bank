@@ -1,0 +1,353 @@
+<html>
+<head>
+<title>Example: Throwing a Baseball</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</Script>
+<Style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Example: Throwing a Baseball Horizontally</h3>
+
+<p>The simplest case of two-dimensional projectile motion is a projectile that is launched or thrown with a perfectly horizontal initial velocity.  The following examples explore this situation.</p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+	<th> <b>Part A:</b> Suppose you are throwing a baseball. You release the ball with a perfectly horizontal velocity of 5.0 m/s at a height of 1.5 m above the ground. How far will the ball travel horizontally from the instant it leaves your hand until the instant it first contacts the ground? [<a href="javascript:toggleDisplay('ht2','hide','solution')" id="ht2l">solution</a>]</th></tr>
+<tr style="display:none" id="ht2">
+	<td>
+	<b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1">The baseball will be treated as a single point particle.</div><br/>
+	<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2"> The only relevant interaction is the gravitational interaction between the earth and the baseball (weight).  Thus, the baseball is in freefall.</div><br/>
+	<b>Model:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l">[show Model]</a><div style="display:none;" id="toggledisplay3">The horizontal component of the ball's motion will experience no acceleration and so will be governed by Constant Velocity (Zero Acceleration).  The vertical component, on the other hand, will experience the constant acceleration of gravity and so will be governed by One-Dimensional Motion with Constant Acceleration.</div><br/>
+	<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4">
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+		<th> Choose a Coordinate System [<a href="javascript:toggleDisplay('hide1','hide','show')" id="hide1l">show</a>]</th></tr>
+		<tr style="display:none" id="hide1">
+		<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module2/files/BaseballHorizontalRed.png" alt="The chosen coordinate system."/>
+		<p>We choose the positive y-axis to point upward, and take \(y = 0\) at ground level.  The positive x-axis points along the ground in the direction of the throw with <i>x</i> = 0 at the location of the ball's release.  We will choose to make \(t = 0\) at the instant the ball is released.
+		</p>
+		</td></tr></table>
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+		<th> Understand the Givens  [<a href="javascript:toggleDisplay('hide2','hide','show')" id="hide2l">show</a>]</th></tr>
+		<tr style="display:none" id="hide2">
+		<td> With our coordinate system in place, we can summarize the givens:
+
+			<table class="subsubtable">
+			<tr>
+				<th>Givens for Part A</th>
+			</tr>
+			<tr>
+			<td> 
+				<p>\(t_{i} = 0 \qquad y_{i} = \mbox{1.5 m} \qquad y_{f} = 0 \qquad x_{i} = 0 \qquad v_{i,y} = 0 \qquad v_{i,x} = \mbox{5.0 m/s} \qquad a_{y} = -\mbox{9.8 m/s$^2$}\)</p>
+			</td>
+			</tr></table>
+
+		<p>Note that we have separated the initial velocity into x and y components, and that the x-component has <i>no</i> subscript for initial or final.  The x-component of the velocity is constant.  </p>
+		</td>
+		</tr></table>
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+			<th> Represent the Model Mathematically   [<a href="javascript:toggleDisplay('hide3','hide','show')" id="hide3l">show</a>]</th></tr>
+		<tr style="display:none" id="hide3">
+		<td> 
+			<p>We are interested in finding <i>x</i><sub><i>f</i></sub>, the final x-position of the ball, since that will correspond to the horizontal distance of the ball from the point of release.  The motion of the ball in the x-direction is governed by the Constant Velocity (Zero Acceleration) Model, which has only one mathematical representation:</p>
+			<p>\[x_f=x_i+v_x(t_f-t_i)\]</p>
+			<p>Unfortunately, we <i>cannot</i> solve this equation yet, because it contains two unknown quantities: \(x_f\) and \(t_f\).</p>
+		</td>
+		</tr></table>
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+			<th> Recognize Constraints  [<a href="javascript:toggleDisplay('hide4','hide','show')" id="hide4l">show</a>]</th></tr>
+		<tr style="display:none" id="hide4">
+		<td> 
+			<p>To solve this problem, we only need to know the time at which the ball hits the ground.  We cannot determine this time from the Model used in describing the x-motion, but luckily the x-motion and the y-motion are constrained to obey the same clock (the time evolution is the same).  Thus, if we can use a description of the y-motion to determine when the ball hits the ground, the same time can be used in the mathematical representation of the x-motion.  We can solve for this time by using:</p>
+			<p>\[ y_{f} = y_{i} + v_{i,y}(t_{f}-t_{i}) + \frac{1}{2}a_{y}(t_{f}-t_{i})^{2}\]</p>
+			<p>which at first looks messy, but after substituting zeros becomes:</p>
+			<p>\[ 0 = y_{i} + \frac{1}{2}a_{y}t_{f}^{2} \]</p>
+			<p>This simplified equation can be solved to give:</p>
+			<p>\[ t = \pm \sqrt{-2y_{i}/{a_{y}}}\]</p>
+			<p>Thinking about the situation, we can see that we must choose the plus sign, since we have defined our coordinates such that the ball is first released at \(t = 0\) (it cannot hit the ground before that time). 
+			</p>
+		</td>
+		</tr></table>
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+			<th> Utilize Constraints   [<a href="javascript:toggleDisplay('hide5','hide','show')" id="hide5l">show</a>] </th></tr>
+		<tr style="display:none" id="hide5">
+		<td>
+			<p>With the final time in hand, we can simply substitute into the mathematical representation of the Constant Velocity Model we are using for the x-motion:</p>
+			<p>\[x_f=x_i+v_{i,x}(t_f-t_i)\]</p>
+			<p>which becomes:</p>
+			<p>\[x_{f} = v_{i,x}\sqrt{-2y_{i}/{a_{y}}}\]</p>
+			<p>and substituting numbers gives:</p>
+			<p>\[ x_{f} = (\mbox{5.0 m/s})\sqrt{-\mbox{2(1.5 m)}/{-\mbox{9.8 m/s$^2$}}}=\mbox{2.8 m}\]</p>
+		</td>
+		</tr></table>
+
+	</div>
+	</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+	<th> <b>Part B:</b> Suppose you are throwing a baseball. You release the ball with a perfectly horizontal velocity at a height of 1.5 m above the ground. The ball travels 5.0 m horizontally from the instant it leaves your hand until the instant it first contacts the ground. How fast was the ball moving when you released it? [<a href="javascript:toggleDisplay('ht3','hide','solution')" id="ht3l">solution</a>]</th></tr>
+<tr style="display:none" id="ht3">
+	<td>
+	<p><b>System, Interactions and Models:</b> As in Part A.<br/>
+	</p>
+	<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay5l">[show approach]</a><div style="display:none;" id="toggledisplay5">
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+		<th> Understand the Givens  [<a href="javascript:toggleDisplay('hide6','hide','show')" id="hide6l">show</a>] 
+		</th></tr>
+		<tr style="display:none" id="hide6">
+		<td> 
+			<p>This question works basically the same as Part A, except that the givens are slightly different. In this part, we have (assuming the same coordinate system as was used in Part A):</p>
+
+			<table class="subsubtable">
+			<tr>
+			<th> Givens for Part B</th></tr>
+			<tr>
+			<td>\(t_{i} = 0 \qquad y_{i} = \mbox{1.5 m} \qquad y_{f} = 0 \qquad x_{i} = 0 \qquad x_{f} = \mbox{5.0 m} \qquad v_{i,y} = 0 \qquad a_{y} = -\mbox{9.8 m/s$^2$}\)
+			</td></tr></table>
+
+		<p>Note that although we are not given the x component of the initial velocity, the phrase "perfectly horizontal velocity" still tells us that the y component is zero initially.
+		</p>
+		</td>
+		</tr></table>
+
+		<table class="subtable collapsible collapsed">
+		<tr>
+			<th> Represent the Models Mathematically and Apply Constraints   [<a href="javascript:toggleDisplay('hide7','hide','show')" id="hide7l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="hide7">
+		<td> Once again, we have an unknown that requires the x direction's Law of Change, but we do not have enough information. We proceed in exactly the same fashion as in Part A to find the same answer for the time at which the ball hits the ground:
+		<p>\[ t_{f} = \sqrt{-2y_{i}/{a_{y}}}\]</p>
+		<p>With this time in hand, we can rearrange the equation describing the x-motion to find:</p>
+		<p>\[v_{i,x} = \frac{x_{f}}{t_{f}} = x_{f} \sqrt{\frac{a_{y}}{-2y_{i}}}\]</p>
+		<p>and we have all the information we need to substitute, finding:</p>
+		<p>\[v_{i,x} = \mbox{5.0 m}\sqrt{\frac{-\mbox{9.8 m/s$^2$}}{-2(\mbox{1.5 m})}} = \mbox{9.0 m/s}\]</p>
+		<p>Because the initial y-velocity for the throw is zero, the initial velocity vector consists only of this x-velocity.  Thus, the full initial velocity of the throw has a magnitude of 9.0 m/s.
+		</p>
+		</td></tr></table>
+
+	</div>
+	</td>
+</tr></table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+	<th> <b>Part C:</b>  Suppose a certain major-league pitcher releases a fastball with a perfectly horizontal velocity of 95 mph. The ball is released at a height of 6.0 feet above the ground and travels 60.0 feet before being caught by the catcher. At what height above the ground should the catcher place his glove? [<a href="javascript:toggleDisplay('ht4','hide','solution')" id="ht4l">solution</a>]
+</th></tr>
+<tr style="display:none" id="ht4">
+	<td>
+	<p><b>System, Interactions and Models:</b> As in Part A.<br/>
+	</p>
+	<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay6&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay6l">[show approach]</a><div style="display:none;" id="toggledisplay6">
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Understand the Givens [<a href="javascript:toggleDisplay('hide8','hide','show')" id="hide8l">show</a>]
+	</th></tr>
+	<tr style="display:none" id="hide8">
+	<td> The approach and coordinate system is essentially the same as in the previous parts, but now <i>we cannot assume that the final y position of the ball is zero</i>. The catcher will receive the ball at some nonzero height above the ground. After performing unit conversions to bring all quantities to SI units, we have:
+
+		<table class="subsubtable">
+		<tr>
+		<th> Givens for Part C
+		</th></tr>
+		<tr>
+		<td> \(t_{i} = 0 \qquad y_{i} = \mbox{1.83 m} \qquad x_{i} = 0 \qquad x_{f} = \mbox{18.3 m} \qquad v_{i,x} = \mbox{42.5 m/s} \qquad v_{i,y} = 0 \qquad a_{y} = -\mbox{9.8 m/s$^2$}\)
+		</td></tr></table>
+
+	<p>Note that because we are accustomed to using the SI value for the acceleration of gravity (9.8 m/s<sup>2</sup>) it is essential to convert all quantities to SI units in order to be consistent!
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+		<th> Represent the Models Mathematically and Apply Constraints  [<a href="javascript:toggleDisplay('hide9','hide','show')" id="hide9l">show</a>]
+	</th></tr>
+	<tr style="display:none" id="hide9">
+	<td> This time (unlike in Parts A and B) the unknown is a y-axis position, but the roadblock that we encounter is basically the same. Choose any of the possible mathematical representations of the y-motion that involve position and you will find yourself unable to solve without further information. Since the roadblock is similar to that in Parts A and B, we attempt the same work-around. Use the other direction (this time, the x direction) to solve for time. The sole x direction Law of Change is:
+		<p>\[x_{f} = x_{i} + v_{i,x}(t_{f} - t_{i})\]</p>
+		<p>Substituting zeros gives:</p>
+		<p>\[x_{f} = v_{i,x} t_{f}\]</p>
+		<p>which is solved to find:</p>
+		<p>\[t_{f} = \frac{x_{f}}{v_{i,x}}\]</p>
+		<p>This time can now be used in a y direction equation to find the final height of the ball. The most direct approach is to use:</p>
+		<p>\[y_{f} = y_{i} + v_{i,y}(t_{f}-t_{i}) + \frac{1}{2} a_{y}(t_{f}-t_{i})^{2}\]</p>
+		<p>which becomes:</p>
+		<p>\[y_{f} = y_{i} + \frac{1}{2} a_{y}t_{f}^{2}\]</p>
+		<p>Substituting for the time using our x-direction result then gives:</p>
+		<p>\[y_{f} = y_{i} +\frac{1}{2} a_{y}\left(\frac{x_{f}}{v_{i,x}}\right)^{2}\]</p>
+		<p>and substituting yields:</p>
+		<p>\[y_{f} = \mbox{1.83 m} - \frac{1}{2}(\mbox{9.8 m/s$^2$})\left(\frac{\mbox{18.3 m}}{\mbox{42.5 m/s}}\right)^{2} = \mbox{0.92 m} = \mbox{3.0 ft}\]
+		</p>
+	</td>
+	</tr></table>
+	</div>
+	</td>
+</tr></table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part D:</b> Suppose you are throwing a baseball. You release the ball with a perfectly horizontal velocity at a height of 1.5 m above the ground. The ball travels 5.0 m horizontally from the instant it leaves your hand until the instant it first contacts the ground.  What is the velocity of the ball just before it strikes the ground? [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]
+</th></tr>
+<tr style="display:none" id="ht5">
+<td>
+<b>System, Interactions and Models:</b> As in Part A.<br/>
+<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay7&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay7l">[show approach]</a><div style="display:none;" id="toggledisplay7">
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Understand the Givens  [<a href="javascript:toggleDisplay('hide10','hide','show')" id="hide10l">show</a>]
+	</th></tr>
+	<tr style="display:none" id="hide10">
+	<td> The givens are identical to those of Part B, assuming that we use the same coordinate system.  Note, however, that we are asked to find a different unknown:  the velocity as the ball hits the ground rather than the velocity upon release.
+
+		<table class="subsubtable">
+		<tr>
+		<th> Givens for Parts B and D
+		</th></tr>
+		<tr>
+		<td> \(t_{i} = 0 \qquad y_{i} = \mbox{1.5 m} \qquad y_{f} = 0 \qquad x_{i} = 0 \qquad x_{f} = \mbox{5.0 m} \qquad v_{i,y} = 0 \qquad a_{y} = -\mbox{9.8 m/s$^2$}\)
+		</td></tr></table>
+
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+		<th> Understand the Consequences of the Model  [<a href="javascript:toggleDisplay('hide11','hide','show')" id="hide11l">show</a>]</th>
+	</tr>
+	<tr style="display:none" id="hide11">
+	<td> One important tactic in problem solving is to use your knowledge of physics to simplify your solution.  Remember that the Model we are using for the x-motion of the baseball is the Constant Velocity Model.  Thus, the x-component of the velocity is constant throughout the motion.  We have already solved for the x-velocity in Part B.  Even though Part B was asking for the initial velocity, we can use the same result as the x-component of the final velocity:
+		<p>\[v_{i,x} = \frac{x_{f}}{t_{f}} = x_{f} \sqrt{\frac{a_{y}}{-2y_{i}}}= \mbox{9.0 m/s}\]</p>
+		<p>This time, however, we are not done yet. The x-velocity is only half of the story. When the ball is first released, its velocity is entirely in the x direction, but during its flight it acquires a y-component (this is why the path is parabolic rather than linear). </p>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module2/files/Baseball_vectorsRed.png"/></p>
+	</td>
+	</tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+		<th> Represent the Models Mathematically  [<a href="javascript:toggleDisplay('hide12','hide','show')" id="hide12l">show</a>]</th>
+	</tr>
+	<tr style="display:none" id="hide12">
+	<td>When asked how fast something is traveling, we generally make no distinction between x- and y-components. Instead, we want to know the size of the total velocity. To find the magnitude of the total velocity, we must use the Pythagorean theorem:
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module2/files/Vel_triangleRed.png"/></p>
+		<p>\[v_{f} = \sqrt{v_{f,x}^{2} + v_{f,y}^{2}}\]</p>
+		<p>We already have the x-component from our work in Part B, but now we must find the y-component as well.  There are several possible ways to find the final y-velocity.  One possibility is to use:</p>
+		<p>\[v_{f,y}^{2} = v_{i,y}^{2} + 2a_{y}(y_{f} - y_{i})\]</p>
+		<p>which, for our givens, becomes:</p>
+		<p>\[v_{f,y}^{2} = -2a_{y}y_{i}\]</p>
+		<p>giving:</p>
+		<p>\[v_{f,y} = \pm \sqrt{-2a_{y}y_{i}}\]</p>
+		<p>In this case, we must choose the negative sign in front of the square root, because the ball is clearly moving downward just before it strikes the ground, and downward is the negative y-direction in our coordinate system.  Thus:</p>
+		<p>\[v_{f,y} = -\sqrt{-2a_{y}y_{i}} = -\sqrt{-2(-\mbox{9.8 m/s$^2$})(\mbox{1.5 m})} = -\mbox{5.4 m/s}\]</p>
+		<p>We can now substitute to find the magnitude of the final velocity:</p>
+		<p>\[v_{f} = \sqrt{v_{f,x}^{2} + v_{f,y}^{2}} = \sqrt{(\mbox{9.0 m/s})^{2} + (-\mbox{5.4 m/s})^{2}} = \mbox{10.5 m/s} \]</p>
+		<p>Note that we did not have to choose between a plus or minus sign when taking this square root, since the pythagorean theorem does not give us a choice.  The reason for this is that the Pythagorean theorem gives <i>lengths</i> (when dealing with its original application to triangles), or in the case of vectors like velocity and acceleration, it gives <i>magnitudes</i>. Magnitudes can never be negative. Whenever the Pythagorean theorem is being used, we are clearly working with vectors in two or more dimensions. Once we have moved beyond one dimension, it is impossible  to unambiguously report the direction of a vector by assigning a plus or minus sign to the magnitude. The baseball of this problem is a good example. It is clearly moving to the right (positive in our coordinate system) and down (negative in our coordinate system). </p>
+		<p>All this talk of vectors is a reminder that we haven't finished yet:  we still need the <i>direction</i> of the velocity just before the ball impacts the ground.  To find this, we construct the vector triangle for the final velocity:</p>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module2/files/Vel_triangle_thetaRed.png"/></p>
+		<p>and solve for the angle shown using trigonometry.  One possible approach is:</p>
+		<p>\[\theta = \tan^{-1}\left(\frac{\mbox{5.4 m/s}}{\mbox{9.0 m/s}}\right) = 31^{\circ}\]</p>
+		<p>Reporting the complete vector is a little tricky here, since we are not told which direction the ball is thrown (north? south? east? west?). The best we can do is to say the final velocity is 10.5 m/s at \(31^{\circ}\) below the horizontal.</p>
+	</td>
+	</tr></table>
+
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

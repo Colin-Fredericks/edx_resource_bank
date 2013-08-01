@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+a = "m*g/k"
+b = "g*sqrt(m/k)"
+
+</script>
+
+<p>An object of mass m is suspended from a spring that has spring constant k and whose other end is attached to the ceiling. Let y0 be the equilibrium position of the object in the absence of gravity, and y1 the equilibrium position of the object under the influence of gravity, both measured from the ceiling.</p>
+
+<p><img src="/static/problems/MIT/rayyan/problemset/Pictures/p11a.png" alt="p1a" texwrap="none" align="top"/></p>
+
+<p>a) What is the distance between y0 and y1?  Use variables m, g, and k in your answer.</p>
+
+    \(\Delta y=\)
+    <formularesponse answer="$a" samples="m,g,k@1,1,1:10,10,10#4">
+	<responseparam type="tolerance" default="1%"/>
+    	<textline size="25" math="1"></textline>
+    </formularesponse>
+
+<p>b) If the mass is released from y0, what is the maximum subsequent value of the velocity of the mass? Use the variables g, m, and k. </p>
+
+    \(v_{max}=\)
+    <formularesponse answer="$b" samples="g,m,k@1,1,1:10,10,10#4">
+	<responseparam type="tolerance" default="1%"/>
+    	<textline size="25" math="1"></textline>
+	</formularesponse>
+
+  </problem>
+</html>

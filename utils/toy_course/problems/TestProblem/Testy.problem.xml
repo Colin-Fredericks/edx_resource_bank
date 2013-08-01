@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!-- This problem is just to test things. -->
+
+<problem>
+
+	<script type="loncapa/python">
+import random
+from symmath import *
+
+def test_ans(expect,ans):
+
+	ans = str(ans)			# Make the answer a string
+	ans = ans.strip()		# Strip off whitespace
+	ans = ans.lower()		# Convert to lowercase
+
+	# Convert to v1 notation.
+	ans = ans.replace("v2", "(v1*2)");
+
+	#Check to see if the answer given is the same as the real one.
+	return symmath_check(expect, ans, dynamath=None, options=None, debug=None, xml=None)
+
+	</script>
+
+		<p><i>I am Testy the Test Problem! I am just for trying things out and problem type development.</i></p>
+		<p>The velocity of a particle is v1, which is half of v2. Its mass is m. What is the particle's kinetic energy?</p>
+		<p>Good news: my code is basically working. Semi-good news: symmath_check returns an error message for an answer with the wrong variables. Bad news: It also does it for an error message with the wrong <i>answer</i>.</p>
+
+	<customresponse cfn="test_ans" expect="(1/2) * m * v1 * v1" >
+		<textline size="40" />
+	</customresponse>
+
+	<p>This is to check whether it's actually reloading a new copy. 10</p>
+
+</problem>
+

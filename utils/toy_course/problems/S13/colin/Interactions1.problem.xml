@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<!-- Interactions Problems #1 -->
+<problem>
+
+<p>Consider the following set of interactions. Which of them are <b>negligible in everyday situations?</b></p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">Gravitational attraction between the objects present.</choice>
+			<choice correct="false">Friction with the environment.</choice>
+			<choice correct="false">Friction between the objects present.</choice>
+			<choice correct="false">Normal forces and contact forces.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+<p>Given the same set of interactions, which of them are <b>most likely to be important</b> in a question involving <b>planets, moons, and stars?</b></p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">Gravitational attraction between the objects present.</choice>
+			<choice correct="false">Friction with the environment.</choice>
+			<choice correct="false">Friction between the objects present.</choice>
+			<choice correct="false">Normal forces and contact forces.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

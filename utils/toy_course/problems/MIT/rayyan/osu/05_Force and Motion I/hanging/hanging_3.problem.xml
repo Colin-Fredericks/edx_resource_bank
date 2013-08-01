@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/hanging_3.png" alt="hanging_3" height="300"/>
+
+      <p><br/>
+Man A (70kg) and Man B (90kg) are hanging motionless from a platform (200kg) at rest.  What is the tension, \(T_A\), in the top rope if the platform accelerates upward at a constant rate of 2 \(m/s^2\)? Assume the ropes are massless and use g = 10 \(m/s^2\).
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              0N          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              200N          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              700N          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              840N          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              900N          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              1600N          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              1740N          
+        </choice>
+        <choice name="foil8" correct="true">
+
+              1920N          
+        </choice>
+        <choice name="foil9" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

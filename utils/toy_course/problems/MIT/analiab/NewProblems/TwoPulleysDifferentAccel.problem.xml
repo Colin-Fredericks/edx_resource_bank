@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <img src="/static/problems/MIT/analiab/NewProblems/files/TwoPulleysDifferentAccel.png" />
+      <br/>
+
+        <p>
+
+A block of mass \(m_1\) rests motionless on an inclined plane. The coefficients of static and kinetic
+friction between the block and the plane are \(\mu_s\) and \(\mu_k\). A massless string attached to one end of 
+the block passes over a fixed pulley, around a second freely suspended pulley, and is finally attached to a fixed support.
+ The left hand part of the string is parallel to the plane. The sections of the string coming off the suspended pulley are vertical.
+ The pulleys are frictionless and massless, but a block of mass \(m_2\) is hung from the second pulley. Gravity acts downward.
+
+</p>
+
+      <br/>
+
+        <b><u>Part a:</u></b> What is the maximum value of the mass that block 2 can have without block 1 beginning to slip upward along the incline?
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                    \(m_{2,max}= 2m_1(sin \theta - \mu_s cos \theta)\) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+
+\(m_{2,max}= 2m_1(sin \theta + \mu_s cos \theta)\) 
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+\(m_{2,max}= 2m_1(cos \theta - \mu_s sin \theta)\) 
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+\(m_{2,max}= 2m_1(cos \theta +\mu_s sin \theta)\) 
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+\(m_{2,max}= m_1(sin \theta - \mu_s cos \theta)\) 
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+\(m_{2,max}= m_1(sin \theta + \mu_s cos \theta)\) 
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+        <b><u>Part b:</u></b> What is the relationship between the acceleration of block 1, \(a_1\), and the acceleration of block 2, \(a_2\)?
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                    \(a_1=a_2\) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(a_1=-a_2\) 
+
+            </choice>
+            <choice location="random" name="foil3" correct="true">
+
+                    \(a_1=2a_2\) 
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                    \(a_1=a_2/2\) 
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                    \(a_1=-2a_2\) 
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                    \(a_1=-a_2/2\) 
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+        <b><u>Part c:</u></b> What is the acceleration of block 1?
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                    \(a_1=2g(m_2-2m_1sin\theta-2\mu_km_1cos\theta)/(4m_1+m_2)\) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(a_1=2g(m_2-2m_1cos\theta-2\mu_km_1sin\theta)/(2m_1+m_2)\) 
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                    \(a_1=2g(m_2-2m_1sin\theta+2\mu_km_1cos\theta)/(2m_1+m_2)\) 
+
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+
+                    \(a_1=2g(m_2-2m_1sin\theta-2\mu_km_1cos\theta)/(4m_1+m_2)\) 
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                    \(a_1=2g(m_2+2m_1sin\theta-2\mu_km_1cos\theta)/(2m_1+m_2)\) 
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                    \(a_1=g(m_2+2m_1sin\theta-2\mu_km_1cos\theta)/(4m_1+m_2)\) 
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+    
+  </problem>
+</html>

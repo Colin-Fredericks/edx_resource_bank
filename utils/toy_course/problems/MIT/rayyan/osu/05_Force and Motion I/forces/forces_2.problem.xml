@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/fix.png" alt="forces_1" height="150"/>
+
+      <p><br/>
+Now, the block moves with a constant velocity to the right on a surface that has friction.  Which of the following most closely resembles the correct freebody diagram for all forces acting on the block? </p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              D          
+        </choice>
+        <choice location="random" name="foil5" correct="true">
+
+              E          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

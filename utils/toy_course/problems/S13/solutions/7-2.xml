@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<html>
+<!--A cart and a spring on an incline-->
+<problem>
+
+<h3>Solution</h3>
+<h3>Part 1</h3>
+<img src="/static/problems/S13/solutions/images/7-2.png" />
+
+<p>The forces acting on the cart are shown in the free body diagram below:</p>
+<img src="/static/problems/S13/solutions/images/7-2(2).png" />
+
+<p>Because the cart is at rest the net force on the cart is zero, then Netwon’s second law on the cart implies that along the x-axis:</p>
+<p>F<sub>spring</sub> - mgsin\(\theta\) = 0      (eq.1)</p>
+<p>Because the spring is stretched a distance l - l<sub>o</sub> from its natural length l<sub>o</sub>, then the force of the spring on the cart has a magnitude of F<sub>spring</sub> = k(l − l<sub>o</sub>) . Replacing this expression in (eq. 1) we obtain that:</p>
+<p>l = l<sub>o</sub> + \({mgsin\theta\over k}\)</p>
+
+<h3>Part 2</h3>
+<p>Process: The process to consider is the cart moving down and then up of the ramp. It starts at the instant right after the cart is released from rest and the spring is compressed a distance x<sub>1</sub> with respect to its equilibrium position. It ends at the instant right when the spring first returns to its natural length of l<sub>o</sub> after being stretched a distance x<sub>2</sub>.</p>
+<img src="/static/problems/S13/solutions/images/7-2(3).png" />
+
+<p>\(\ast\)\(\ast\) The conservative work done by the internal forces is represented as a potential energy.</p>
+<p>Because the internal forces are conservative and the work done by the external forces is
+zero, then the mechanical energy of the cart+Earth+system is constant during the time
+interval under consideration.</p>
+<p>Let's define the zero of potential energy to be the position of the free end of the spring
+when its length is the natural length of lo.</p>
+<p>Initial state:</p>
+<p>Cart:</p>
+<p>It is at rest, v<sub>i</sub> = 0, K<sub>i</sub> = 0.</p>
+<p>It is at a height h<sub>i</sub> - x<sub>i</sub> sin\(\theta\)(see figure), then U<sub>i</sub><sup>gravity</sup> = mgh<sub>i</sub> = mgx<sub>1</sub>sin\(\theta\)</p>
+<p>Spring:</p>
+<p>It is compressed a distance x<sub>1</sub> from its natural length l<sub>o</sub> : U<sub>i</sub><sup>spring</sup> = \({1\over 2}\) k x<sub>1</sub><sup>2</sup></p>
+<p>Initial Mechanicial Energy:</p>
+<p>E<sub>i</sub> = mgh<sub>i</sub> + \({1\over 2}\) k x<sub>1</sub><sup>2</sup> = mgx<sub>1</sub>sin\(\theta\) + \({1\over 2}\) kx<sub>1</sub><sup>2</sup></p>
+<p>Final state:</p>
+<p>Cart:</p>
+<p>It is moving with v<sub>f</sub> K<sub>f</sub> = \({1\over 2}\) kmv<sub>f</sub><sup>2</sup></p>
+<p>It is at a height h<sub>f</sub> = 0 , the U<sub>f</sub><sup>gravity</sup> = 0</p>
+<p>Spring: The length of the spring is l<sub>o</sub> , the U<sub>f</sub><sup>spring</sup> = 0</p>
+<p>Final Mechanicial Energy:</p>
+<p>E<sub>f</sub> = \({1\over 2}\) mv<sub>f</sub><sup>2</sup></p>
+<p>E<sub>f</sub> = E<sub>i</sub> \(\Rightarrow\) v<sub>f</sub> = \(\sqrt{2gx_{1}sin\theta}\) + \({k\over m}\)x<sub>1</sub><sup>2</sup></p>
+<p>(Check: if \(\theta\) = 0 then the problem reduces to the horizontal oscillating spring done in class.)</p>
+
+<h3>Part 3</h3>
+<img src="/static/problems/S13/solutions/images/7-2(4).png" />
+<p>For the same system and same process we need to consider the external force of friction which is doing work on the system and given by</p>
+<p>\(\displaystyle W_{i,f}^{friction} =\int_{h_{i}}^{h_{f}} \! \vec{F}_{friction} \, \mathrm{d} \vec{l} = - \mu_{k} mgcos\theta x_{1}\)</p>
+<p>Applying the work energy principle:</p>
+<p>E<sub>f</sub> = E<sub>i</sub> + W<sub>i,f</sub><sup>friction</sup> \(\Rightarrow\) \({1\over 2}\) mv<sub>f</sub><sup>2</sup> = mgh<sub>i</sub> + \({1\over 2}\) kx<sub>1</sub><sup>2</sup> - \({\mu_{k}mg\over cos\theta}\)x<sub>1</sub></p>
+<p>And the velocity at the unstretched length is</p>
+<p>v<sub>f</sub> = \(\sqrt{2gx_{1}sin\theta}\) + \({k\over m}\)x<sub>1</sub><sup>2</sup> - \({2\mu_{k}g\over cos\theta x_{1}}\)</p>
+
+</problem>
+</html>

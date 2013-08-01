@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+<!--TWO ROTATING BALLS-->
+<problem>
+
+<h3>Solution</h3>
+
+<p>Realize that the motion of the two balls is a translation and rotation. I will consider the system to be the two balls and the string. The velocity of the center of mass is the translational velocity of the system and the two balls will rorate around the center of mass as shown if the figure, where U<sub>A</sub> and U<sub>B</sub> are the velocities of balls A and B with respect to an ovserver at the center of mass, and R<sub>A</sub> and R<sub>B</sub> are the radius of rotation of balls A and B, respectively. (see picture)</p>
+<img src="/static/problems/S13/solutions/images/5-7.png" />
+<p>Interactions: The objects of the system interact with the external objects: surface and the Earth. As a result we have the external forces on the system, the contact forces and the gravitational force. Because the surface is assumed to be frictionless and horizontal the contact force exerted by the surface on each ball is perpentdicular to it and in the opposite direction of the gravitational force on the masses. The string is assumed to have negligible mass therefore it does not experience any gravitational force - no interaction with the environment. The role of the string is to provide the same force of tension on each of the masses which is directed towards the center of gravity of the system. (These are the internal forces that do not contribute to the change in momentum.) In this problem: <b>The net force acting on the "two balls - string" system is zero, therfore the acceleration of the center of mass of the system is zero and the velocity of the center of mass is constant.</b> This implies that I can calculate the velocity of the center of mass, its magnitude and direction, using the velocity of the elements of the system at the instant shown in the picture of the introduction.</p>
+<p>At the instant shown in the picture:</p>
+<p>- the velocity of the center of mass has the same direction of the velovity of ball B</p>
+<p>- the magnitude is V<sub>cm</sub> = \({m_{B} \over {m_{A} +m_{B}}}\)  (using the definition of center of mass)</p>
+<p>I will consider an observer at the center of mass (inertia grame as it is moving at a constant speed). The motion of ball B with respect to the center of mass is a circle of radius:</p>
+<p>R<sub>B</sub> = L - R<sub>CM</sub> = L - \({{m_{B} * L} \over {m_{A} + m_{B}}}\)</p>
+<p>and the velocity of ball B relative to the center of mass is</p>
+<p>U<sub>B</sub> = V - V<sub>CM</sub> = V - \({{m_{B} V}\over {m_{A} + m_{B}}}\) = \({{m_{A} V}\over {m_{A} +m_{B}}}\)</p>
+<p>Now I will consider only the ball B as the system. Use the +x axis pointing towards the center of the circle described by ball B. The net force acting on ball B is the force of the string that points towards the center. Apply Newton's 2<sup>nd</sup> law to obtain:</p>
+<p>T = \({m_{B} U_{B}^{2}}\over R_{B}\)</p>
+<p>b)Combine all the results:</p>
+<p>T = \({{m_{A} m_{B}} \over {m_{A} +m_{B}}}  {V_{2} \over L}\)</p>
+<p><b>Check the answer</b></p>
+<p>- units OK</p>
+<p>- Interchange m<sub>B</sub> with m<sub>A</sub> \(\Rightarrow\) should give the same values of the force of tension.</p>
+<p>- If one of the masses is very large we expect the cneter of mass to be placed on that mass and the second ball will be rotating in a circle of radius L. (Ex: m<sub>A</sub> &#62;&#62; m<sub>B</sub>, then \({{m_{A} m_{B}}\over {m_{A} + m_{B}}}\) ~ m<sub>B</sub> , then T = \({{m_{B} V_{2}}\over L}\)</p>
+
+</problem>
+</html>

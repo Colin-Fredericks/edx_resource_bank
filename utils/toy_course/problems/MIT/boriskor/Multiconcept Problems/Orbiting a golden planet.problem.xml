@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<html>
+  <problem><br/>
+A space expedition has discovered a perfectly spherical planet with no atmosphere. A probe revealed that the entire planet is made of pure solid gold. The astronauts want to orbit the planet once in their spaceship before heading back to their native Krypton. What is the minimum amount of time it would take the spaceship with its engines turned off to orbit the planet once? Feel free to search for all the necessary reference information.
+
+<br/>
+\(t=\)
+<numericalresponse answer="2705"><responseparam default="2%" type="tolerance"/><textline math="1"/></numericalresponse> seconds
+</problem>
+</html>

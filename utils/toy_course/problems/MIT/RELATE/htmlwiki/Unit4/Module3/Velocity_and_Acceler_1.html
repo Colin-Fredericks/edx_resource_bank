@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Velocity and Acceleration</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+			Velocity and Acceleration</h2>
+<p>
+			The motion of an object with a changing velocity is most elegantly expressed using the language of calculus. In fact, this might be called the original calculus problem, since it motivated Newton to invent calculus.</p>
+<h3>
+From instantaneous velocity to instantaneous acceleration </h3>
+<p>
+			In mathematical terms, velocity is the time derivative of position, and acceleration is the time derivative of velocity:</p>
+<p>
+\( \vec{v}(t) = \frac{d\vec{r}(t)}{dt}\)</p>
+<p>
+\( \vec{a}(t) = \frac{d\vec{v}(t)}{dt}\)</p>
+<p>
+			where \(\vec{r}(t)\) is the three dimensional position vector, \(\vec{v}\) is the velocity vector, and \(\vec{a}\) is the acceleration vector.</p>
+<p>
+			An equivalent representation is through the integral forms of these equations:</p>
+<p>
+\( \vec{r}(t)=\vec{r}_{i} + \int_{t_{i}}^{t} \vec{v}(\eta)\; d\eta\)</p>
+<p>
+\( \vec{v}(t) = \vec{v}_{i} + \int_{t_{i}}^{t} \vec{a}(\eta)\; d\eta \)</p>
+<p>
+			where &#951; is a dummy variable for the integral over time.</p>
+<p>
+			It should be noted in these expressions that the integrals are definite integrals that start at the initial time \(t_i\) where the arbitrary constant of integration is replaced by the value of the physical quantity at that time, e.g. \(\vec{r}(t_i)\) or \(\vec{v}(t_i)\).</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+						Recovering the Special Case of Constant Velocity [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht2">
+<td>
+<p>
+							Suppose \(\vec{a} = 0\). Then, the integral representation becomes:</p>
+<p>
+\( \vec{v}(t) = \vec{v}_{i}\)</p>
+<p>
+							(which implies constant velocity) and:</p>
+<p>
+\( \vec{r}(t) = \vec{r}_{i} + \vec{v} \int_{t_{i}}^{t} d\eta = \vec{r}_{i} + \vec{v}(t-t_{i})\)</p>
+<p>
+							where we have used the fact that the velocity is constant in evaluating the integral.</p>
+<p>
+							If we define our coordinates so that the velocity vector is aligned with the x direction, the final equation is identical to the mathematical representation of the "Constant Velocity (Zero Acceleration) Model".</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 24 -->
+
+<problem>
+
+	<p>Two uniform cylinders of the same height are shown. </p>
+	<img src="/static/problems/F12/MRI/images/MRI24.png" />
+
+	<h3>Part 1</h3>
+	<p>Which of them has the larger moment of inertia?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">A</choice>
+			<choice location="random" correct="false">B</choice>
+			<choice location="random" correct="false">Both have the same moment of inertia</choice>
+			<choice location="random" correct="true">More information is needed</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

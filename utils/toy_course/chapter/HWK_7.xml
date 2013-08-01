@@ -1,0 +1,70 @@
+<chapter display_name="Homework for Unit 7: Momentum and Impulse">
+	<sequential display_name="Momentum and Impulse Homework" url_name="Momentum_and_Impulse_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Tossing a Ball, Part 1">
+			<problem display_name="Tossing a Ball, Part 1" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/tossing a ball/tossing_a_ball.problem" attempts="1" weight="1"/>
+			<discussion for="Tossing a Ball, Part 1" id="MReV_Summer2013_tossing_a_ball" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Two Cars Colliding">
+			<problem display_name="Two Cars Colliding" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/linear momentum_2/linear momentum.problem" attempts="3" weight="1"/>
+			<discussion for="Two Cars Colliding" id="MReV_Summer2013_linear_momentum" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="How Fast is it Traveling?">
+			<problem display_name="How Fast is it Traveling?" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/linear momentum_2/linear momentum_1.problem" attempts="3" weight="1"/>
+			<discussion for="How Fast is it Traveling?" id="MReV_Summer2013_linear_momentum_1" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="A Three-Way Explosion">
+			<problem display_name="A Three-Way Explosion" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/linear momentum_2/linear momentum_2.problem" attempts="3" weight="1"/>
+			<discussion for="A Three-Way Explosion" id="MReV_Summer2013_linear_momentum_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Momentum and Impulse">
+			<problem display_name="Momentum and Impulse" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/impulse/impulse_3.problem" attempts="2" weight="1"/>
+			<discussion for="Momentum and Impulse" id="MReV_Summer2013_impulse_3" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Momentum and Impulse 2">
+			<problem display_name="Momentum and Impulse 2" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/impulse/impulse_2.problem" attempts="2" weight="1"/>
+			<discussion for="Momentum and Impulse 2" id="MReV_Summer2013_impulse_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Tennis Ball Drop" filename="BK153.vert" />
+		<vertical display_name="Spring-Loaded 2" filename="MRI15.vert" />
+
+<!-- Level 2 -->
+
+		<vertical display_name="Cue Balls">
+			<problem display_name="Cue Balls" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/linear momentum/linear_2.problem" attempts="2" weight="2"/>
+			<discussion for="Cue Balls" id="MReV_Summer2013_linear_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Tossing a Ball, Part 2">
+			<problem display_name="Tossing a Ball, Part 2" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/tossing a ball/tossing_a_ball_1.problem" attempts="1" weight="2"/>
+			<discussion for="Tossing a Ball, Part 2" id="MReV_Summer2013_tossing_a_ball_1" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Tossing a Ball, Part 3">
+			<problem display_name="Tossing a Ball, Part 3" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/tossing a ball/tossing_a_ball_2.problem" attempts="1" weight="2"/>
+			<discussion for="Tossing a Ball, Part 3" id="MReV_Summer2013_tossing_a_ball_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+<!--	Elastic - needs energy from Unit 8.	<vertical display_name="Elastic Collision" filename="BK154.vert" /> -->
+		<vertical display_name="Block on Wedge 2" filename="MRI11.vert" />
+
+<!-- Level 3 -->
+
+<!-- Moved to Quiz 0		<vertical display_name="center of mass">
+			<problem display_name="center of mass" filename="MIT/rayyan/Physics801/Symbolic/center of mass.problem" attempts="10" weight="3"/>
+			<discussion for="center of mass" id="MReV_Summer2013_center_of_mass" discussion_category="Momentum and Impulse" />
+		</vertical>
+-->
+		<vertical display_name="Ranking final speed in inelastic collisions">
+			<problem display_name="Ranking final speed in inelastic collisions" filename="MIT/boriskor/Momentum/Ranking final speed in inelastic collisions.problem" attempts="2" weight="3"/>
+			<discussion for="Ranking final speed in inelastic collisions" id="MReV_Summer2013_Ranking_final_speed_in_inelastic_collisions" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Jumping between two skateboards">
+			<problem display_name="Jumping between two skateboards" filename="MIT/boriskor/Momentum/Jumping between the skateboards.problem" attempts="2" weight="3"/>
+			<discussion for="Jumping between two skateboards" id="MReV_Summer2013_Jumping_between_the_skateboards" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Jumping on a sliding board">
+			<problem display_name="Jumping on a sliding board" filename="MIT/boriskor/Multiconcept Problems/Jumping on a sliding board.problem" attempts="10" weight="3"/>
+			<discussion for="Jumping on a sliding board" id="MReV_Summer2013_Jumping_on_a_sliding_board" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+</chapter>

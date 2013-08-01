@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Pendulum SHM</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3>Simple Harmonic Motion of a Pendulum</h3>
+<p>Watching a pendulum should quickly convince you that the motion resembles SHM. In particular, there is a defined equilibrium point (hanging straight down) about which the motion is symmetric and periodic. Furthermore, the energy of the motion appears nearly constant (if friction and air resistance are small).</p>
+<p>Let's try to solve for the motion of a pendulum and show that a pendulum undergoes SHM like a mass on a spring. The first complication is that the natural position variable for a pendulum is angle. Thus, the dynamics of the pendulum is governed by the Rotational Dynamics and Net Torque Model (with a fixed axis). Remember that the Dynamics and Net Force model (F = ma) led to SHM by first obtaining the differential equation</p>
+<p>\[\frac{d^2 x}{dt^2} = -\omega_{\rm osc}^2 x\]</p>
+<p>where \(\omega_{\rm osc}\) is a constant. This suggests that we should start with the equation</p>
+<p>\[\tau_a = I_a \alpha\]</p>
+<p>where the axis a is taken as the pivot as shown in this figure:</p>
+
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit13/Module2/files/PendulumRed.png"/>
+
+<p>For a pendulum, the torque is provided by gravity. If we define \(\theta\) to be zero at the equilibrium position of the pendulum (straight down), then we have:</p>
+<p>\[\tau_a = -mgL_{cm} \sin \theta_a\]</p>
+<p>where \(L\) is the distance to the center of mass and \(m\) is the mass of the pendulum bob. Thus, the dynamical equation for the pendulum becomes:</p>
+<p>\[-mgL_{cm} \sin\theta_a = I \alpha_a = I \frac{d^2 \theta_a}{dt^2}\]</p>
+<p>This does not have the form of the SHM differential equation,</p>
+<p>\[\frac{d^2\theta_a}{dt^2} = - \omega_{\rm osc}^2 \theta_a\]</p>
+<p>the difference being that we have \(\sin\theta\) on the left hand side instead of simply \(\theta\).</p>
+<p>Rather than wrestle with this equation, we restrict our attention to small angles of \(\theta\). It is well known that for small angles:</p>
+<p>\[\sin \theta_a = \theta_a + \mathcal{O}(\theta_a^3)\]</p>
+<p>Thus, <b>if</b> we restrict the motion of the pendulum so that:</p>
+<p>\[\theta_a^3 &lt; &lt; \theta_a\]</p>
+<p>where \(\theta\) is measured in radians, we can write:</p>
+<p>\[-mgL_{cm}\theta_a \approx I_a \frac{d^2 \theta_a}{dt^2}\]</p>
+<p>which can be rearranged to give:</p>
+<p>\[\frac{d^2 \theta_a}{dt^2} \approx \frac{-mgL_{cm}}{I_a} \theta_a\]</p>
+<p>which has the form of the Simple Harmonic Motion differential equation with</p>
+<p>\[\omega_{\rm osc} = \sqrt{\frac{mgL_{cm}}{I_a}}\]</p>
+<p>We have solved for a <i>compound pendulum</i> &mdash; one with a moment of inertia different from \(m L_{cm}^2\).</p>
+
+<h4>Simple Pendulum &mdash; Angular Frequency</h4>
+<p>If we have only a simple pendulum (a small, massive bob on a very light string of length \(L\)), the moment of inertia is approximately \(mL^2\) and the center of mass is at a distance \(L\) from the axis so we can simplify this to:</p>
+<p>\[\omega_{\rm osc} = \sqrt{\frac{mgL}{mL^2}} = \sqrt{\frac{g}{L}}\]</p>
+<p>One can see immediately that \(g/L\) has the dimensions of t<sup>-2</sup>, consistent with the dimensions of \(\omega\).</p>
+
+<h4>Angular Position vs. Time for Pendulum</h4>
+<p>After our small angle approximation, the differential equation involving \(\theta(t)\) is exactly of the form that implies SHM. We can thus write down the general solution for \(\theta(t)\) for a pendulum oscillating through a small angle:</p>
+<p>\[\theta(t) = \theta_c \cos(\omega_{\rm osc} t) + \theta_s \sin(\omega_{\rm osc} t)\]</p>
+<p>If a pendulum is released at a small angle \(\theta_0\) with a small angular velocity \(\omega_0\), its subsequent angular position will be (by analogy with the previous discussion of the solution for SHM):</p>
+<p>\[\theta(t) = \theta_0 \cos(\omega_{\rm osc} t) + \omega_0 \omega_{\rm osc} \sin(\omega_{\rm osc} t)\]</p>
+<p>Warning: there are two \(\omega\)'s in this expression: the oscillation frequency and the angular velocity. If you have not been careful to write \(\omega_{\rm osc}\) when discussing SHM, you will be at very high risk of mixing up the two \(\omega\)'s in situations where the angle of something is oscillating.</p>
+
+<h2> Ubiquity of Simple Harmonic "Motion"</h2>
+<p>As is implied by the case of the pendulum, any physical system in <i>stable equilibrium</i> can be set into harmonic oscillation, provided that the initial perturbation from equilibrium is small, where the exact meaning of "small" depends on the specifics of the system. Thus, a vast array of physical systems ranging from the deck of a suspension bridge to atoms in a solid lattice can exhibit SHM.</p>
+<p>Additionally, the general form of the differential equation for SHM is fundamental to wave propagation. Thus, the transverse location of a portion of a string undergoes harmonic oscillation in a typical string wave, the air pressure undergoes harmonic oscillation in a sound wave, and so on. In this way, familiarity with the differential equation governing SHM has figured in many of the major advances of physics since Newton. In 1865 <a href="http://en.wikipedia.org/wiki/James_Clerk_Maxwell" class="extiw" title="wikipedia:James Clerk Maxwell">James Clerk Maxwell</a> published a unified theory of electricity and magnetism that showed free electric and magnetic fields oscillate harmonically to create electromagnetic waves (e.g. microwaves or light). In 1916 <a href="http://en.wikipedia.org/wiki/Einstein" class="extiw" title="wikipedia:Einstein">Albert Einstein</a> completed his general theory of relativity which predicts that the fabric of spacetime can oscillate harmonically to create gravity waves. In 1926 <a href="http://en.wikipedia.org/wiki/Schrodinger" class="extiw" title="wikipedia:Schrodinger">Erwin Schrodinger</a> proposed a theory of quantum mechanics in which the quantum wave function that represents particles fluctuates harmonically.</p>
+</body>
+</html>
+

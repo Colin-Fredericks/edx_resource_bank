@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 8 -->
+
+<problem>
+
+	<img src="/static/problems/F12/procedures/images/proc8b.png" />
+	<p>What is the net torque about the center of the disk? Assume gravity is not present and take the positive direction as shown. You can type 
+	"F1" and "F2" for the appropriate forces, and "theta" for \( \theta \).</p>
+
+	<formularesponse answer="(2*R/3)*F1 - F2*R*cos(theta)" samples="R,F1,F2,theta@1,1,1,1:10,10,10,10#4">	
+	<textline size="25" math="1" />	
+	</formularesponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 156 -->
+<problem>
+
+	<p>In the system shown, the strings and the pulleys are ideal. There is no friction anywhere in the system. As the system is released, block m<sub>1</sub> moves downward. </p>
+	<img src="/static/problems/F12/boris/images/BK156_assembly.png" width="411" />
+
+	<h3>Part 1</h3>
+	<p>If the magnitude of the acceleration of block m<sub>1</sub> is a, what is the magnitude of the acceleration of block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\(a\)</choice>
+			<choice correct="true">\(2a\)</choice>
+			<choice correct="false">\(a/2\)</choice>
+			<choice correct="false">\(a/4\)</choice>
+			<choice correct="false">\( a \left( m_1 / m_2 \right) \)</choice>
+			<choice correct="false">\( a \left( m_2 / m_1 \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

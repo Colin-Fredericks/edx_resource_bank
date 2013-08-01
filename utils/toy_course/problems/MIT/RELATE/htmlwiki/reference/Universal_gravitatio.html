@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Universal gravitation</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<!--<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<script type="text/javascript"> 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>Technically, there is a gravitational interaction between every pair of massive objects in the universe.  The force is proportional to the masses of the bodies, and inversely proportional to the square of the distance between them.  This interaction dominates the dynamics of astronomical bodies.
+</p>
+<h2> Gravitational Force (Newton's Law of Universal Gravitation)</h2>
+<p>Between any two point particles of mass <i>m</i><sub>1</sub> and <i>m</i><sub>2</sub>, respectively, there will exist an attractive force along the line joining the masses.  The force on body 1 due to body 2 will have the form:
+</p><p><m>$ \vec{F}^{G}_{12} = -G\frac{m_{1}m_{2}}{r_{12}^{2}} \hat{r}_{12}$</m>
+</p><p>where <m>$\vec{r}_{12}$</m> is the position of object 1 as measured from an origin located at the position of object 2, and <i>G</i> is the gravitational constant which is equal to:
+</p><p><m>$G = 6.67\times 10^{-11} \mbox{N m}^{2}/\mbox{kg}^{2}$</m>
+</p><p>The Law of Universal Gravitation is compatible with Newton's Third Law of motion, since, by definition:
+</p><p><m>$ \vec{r}_{12} = \vec{r}_{1} - \vec{r}_{2} = -(\vec{r}_{2} - \vec{r}_{1}) = -\vec{r}_{21}$</m>
+</p><p>(where <m>$\vec{r}_{1}$</m> and <m>$\vec{r}_{2}$</m> are the positions of object 1 and 2 in an arbitrary coordinate system) and this implies:
+</p><p><m>$ \vec{F}^{G}_{12} = - \vec{F}^{G}_{21}$</m>
+</p>
+<h4> The Case of Spherical Symmetry</h4>
+<p>Although the form of Newton's Law of Universal Gravitation is strictly valid only for <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particles<!--</a>-->, it is possible to show mathematically that it also holds for the interaction between any pair of spherically symmetric mass distributions, provided that the position of the spherical masses are specified by their centers.
+</p>
+<h2> Gravitational Potential Energy</h2>
+<h4> Gravity is Conservative</h4>
+<p>Gravitation is a conservative interaction, and, when internal to a system, should be represented by a potential energy rather than a force.  
+</p>
+<h4> Form of the Potential Energy</h4>
+<p>It is customary to make the assignment that the gravitational potential energy of a system consisting of two objects goes to zero as the separation goes to infinity:
+</p><p><m>$ \lim_{r\rightarrow \infty} U^{G}(r) = 0$</m>
+</p><p>With this assumption, we can determine the potential energy of the pair at any separation if we assume that Newton's Law of Universal Gravitation holds.  The correct expression is:
+</p><p><m>$ U^{G}_{12} = - G \frac{m_{1}m_{2}}{r_{12}}$</m>
+</p>
+<h4> Potential Energy Curve</h4>
+<p>If the two objects are isolated from other influences, their potential energy curve has the shape:
+</p><p><img src="files/UniversalGr.gif" />
+</p><p>This curve is somewhat misleading, however, since the potential energy is spherically symmetric.  In spherical coordinates, <i>r</i> cannot become negative.  If we define a regular one-dimensional coordinate axis along the line joining the centers of the two objects, we would generate a symmetric curve:
+</p><p><img src="files/UniversalGx.gif" />
+</p><p>This curve indicates the possibility of stable equilibrium when the objects' separation goes to zero.  Of course, this is technically impossible for objects of finite size.
+</p>
+<h4> Gravitational Potential Energy of a Many-Body System</h4>
+<p>In a system composed of many spherically symmetric objects, the total gravitational potential energy can be found by adding the contribution from each distinct <i>interaction</i>.  Consider, for example, a system composed of four objects labeled 1, 2, 3 and 4.  There are six distinct gravitational interactions among these bodies, each of which has an associated gravitational potential energy:
+</p><p><m>$ 1 \leftrightarrow 2 \mbox{ gives rise to }U_{12}$</m><br />
+<m>$ 1 \leftrightarrow 3 \mbox{ gives rise to }U_{13}$</m><br />
+<m>$ 1 \leftrightarrow 4 \mbox{ gives rise to }U_{14}$</m><br />
+<m>$ 2 \leftrightarrow 3 \mbox{ gives rise to }U_{23}$</m><br />
+<m>$ 2 \leftrightarrow 4 \mbox{ gives rise to }U_{24}$</m><br />
+<m>$ 3 \leftrightarrow 4 \mbox{ gives rise to }U_{34}$</m>
+</p><p>The total potential energy would then be given by:
+</p><p><m>$U_{sys} = U_{12} + U_{13} + U_{14} + U_{23} + U_{24} + U_{34}\;$</m>
+</p><p><i>Note: It is important to beware of the tendency to double-count when computing the potential energy of a system.  Although every interaction gives rise to two <b>forces</b> (e.g. F<sub>12</sub> and F<sub>21</sub>) each interaction gives rise to only <b>one</b> potential energy.  If U<sub>12</sub> appears in the sum, then U<sub>21</sub> must <b>not</b> appear (they are different names for the same energy).</i>
+</p>
+<div id="Point_particle" class="popup"></div>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+omega="sqrt(6*g/L)"
+v_e="sqrt(6*g*L)"
+a_xe=0
+v_m="sqrt(3*g*L/2)"
+alpha=0
+a_ye="6*g"
+a_xm=0
+a_ym="3*g"
+F_x=0
+F_y="4*m*g"
+
+</script>
+    <img src="/static/problems/MIT/boriskor/BKimages/pivoted_bar_swinging_top_bottom.png" alt="Pivoted bar swinging downard from the top position"/>
+
+    <p>A uniform bar of mass \(m\) and length \(L\) is pivoted at one end and is held vertically as shown. After the bar is released, it swings downward with no friction in the pivot.</p>
+	<p>At the instant the bar is <b>at the bottom of the swing</b>, find the magnitudes of the following quantities: </p>
+
+        <p>The angular speed of the bar \(\omega=\)</p>
+
+      <formularesponse answer="$omega" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+		<hr/>
+
+        <p>The angular acceleration of the bar \(\alpha=\)</p>
+
+	  <formularesponse answer="$alpha" samples="m,g,L@4,5,2:10,60,4#2">
+	    <responseparam default="1%" type="tolerance"/>
+		<textline size="25" math="1"/>
+	  </formularesponse>
+
+</problem>
+</html>

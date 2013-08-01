@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/42-rolling mass and spring - horizontal SHM.png" alt="Rolling disc (sphere) attached to a horizontal spring"/>
+        <br/>
+
+<p>A uniform solid disk of mass \(m\) and radius \(r\) is attached to a spring with a force constant \(k\) as shown. Initially, the spring is relaxed. When the disk is pulled to the left and released, it begins simple harmonic motion. If the disk rolls without slipping, find the period of oscillations of the system.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(T=2\pi\sqrt{3m/2k}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(T=2\pi\sqrt{3r/2g}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(T=2\pi\sqrt{5m/3k}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(T=2\pi\sqrt{5r/3g}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(T=2\pi\sqrt{m/2k}\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(T=2\pi\sqrt{r/2g}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+	
+</problem>
+</html>

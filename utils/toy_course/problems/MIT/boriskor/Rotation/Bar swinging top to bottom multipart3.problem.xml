@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+omega="sqrt(6*g/L)"
+v_e="sqrt(6*g*L)"
+a_xe=0
+v_m="sqrt(3*g*L/2)"
+alpha=0
+a_ye="6*g"
+a_xm=0
+a_ym="3*g"
+F_x=0
+F_y="4*m*g"
+
+</script>
+	<p>At the instant the bar is <b>at the bottom of the swing</b>, find the magnitudes of the following quantities: </p>
+
+
+        <p>The linear speed of the midpoint of the bar \(v_m=\)</p>
+
+      <formularesponse answer="$v_m" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+		<hr/>
+
+
+
+        <p>The horizontal component of the acceleration of the midpoint of the bar \(a_{xm}=\)</p>
+
+      <formularesponse answer="$a_xm" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+		<hr/>
+
+        <p>The vertical component of the acceleration of the midpoint of the bar \(a_{ym}=\)</p>
+
+      <formularesponse answer="$a_ym" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+	
+
+      </problem>
+</html>

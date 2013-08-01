@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #163 -->
+<problem>
+
+	<p>During the first t seconds of motion, the average velocity of the car is zero. Find t. </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">Zero</choice>
+			<choice correct="false">2.11 sec</choice>
+			<choice correct="true">3.19 sec</choice>
+			<choice correct="false">3.35 sec</choice>
+			<choice correct="false">3.67 sec</choice>
+			<choice correct="false">4.02 sec</choice>
+			<choice correct="false">4.88 sec</choice>
+			<choice correct="false">There is no such value of t.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

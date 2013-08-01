@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Momentum of a disk </title>
+    <script type="loncapa/python">
+
+#Enter the computations here
+m=random.choice([2.0,5.0,8.0])
+r=random.choice([0.25,0.45,0.60])
+t=random.choice([0.8,1.2,4.2])
+
+A=2* r
+C=2* r* t
+D=4* t/( m* r)
+
+</script>
+
+<p>A solid disc of mass m = $m kg and radius r = $r m is spinning clockwise about the axis passing through the center of the disc. At t = 0, three forces are applied to the disc as shown.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK107.PNG" alt="BK107"/>
+
+<br/>
+
+<p>Part 1. What is the magnitude of the net torque acting on the disc?</p>
+<p>\(\tau \) [N.m] =</p>
+      <numericalresponse answer="$A" unit="N*m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 2. Immediately after the three forces are applied, is the magnitude of the angular momentum of the disc increasing, decreasing or staying the same?</p>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                increasing 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                decreasing
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                same
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 3. Assuming that the net torque stays constant, what is the change in the magnitude of the angular momentum of the disc between t = 0 and t = $t s?</p>
+<p>\(\Delta L\)  [N.m.s] =</p>
+      <numericalresponse answer="$C" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 4. What is the change in the magnitude of the angular speed between t = 0 and the moment described in Part 3?</p>
+<p>\(\Delta \omega\)  [s<sup>-1</sup>] =</p>
+
+      <numericalresponse answer="$D" unit="rad/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

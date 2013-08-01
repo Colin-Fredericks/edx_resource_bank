@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 151 -->
+<problem>
+
+	<p>The diagram shows a system of two blocks suspended by ideal strings and pulleys. </p>
+	<img src="/static/problems/F12/boris/images/BK151_pulleys.png" width="265" />
+
+	<h3>Part 1</h3>
+	<p>If block m<sub>1</sub> has acceleration of magnitude a directed downward, what is the acceleration of block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">a, directed downward</choice>
+			<choice location="random" correct="false">a/2, directed downward</choice>
+			<choice location="random" correct="false">2a, directed downward</choice>
+			<choice location="random" correct="false">a, directed upward</choice>
+			<choice location="random" correct="true">a/2, directed upward</choice>
+			<choice location="random" correct="false">2a, directed upward</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>If the tension of the string attached to block m<sub>1</sub> is T, what is the tension of the short string attached to block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The answer depends on the ratio of the masses.</choice>
+			<choice location="random" correct="false">T</choice>
+			<choice location="random" correct="true">2T</choice>
+			<choice location="random" correct="false">T/2</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>If \( m_1 \gg m_2 \), what is the acceleration a<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="false">2g</choice>
+			<choice location="random" correct="true">g/2</choice>
+			<choice location="random" correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>If \( m_2 \gg m_1 \), what is the acceleration a<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="true">2g</choice>
+			<choice location="random" correct="false">g/2</choice>
+			<choice location="random" correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

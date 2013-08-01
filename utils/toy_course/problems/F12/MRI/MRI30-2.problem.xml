@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 30 -->
+
+<problem>
+
+	<p>How do you know that the error is there?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Since this is an inelastic collision, we cannot use conservation of mechanical energy during the collision.</choice>
+			<choice location="random" correct="false">Since friction is involved, we cannot use conservation of mechanical energy.</choice>
+			<choice location="random" correct="false">We have ignored the friction from before the cars crashed.</choice>
+			<choice location="random" correct="false">The approach described is valid, but the equation listed in this step is incorrect.</choice>
+			<choice location="random" correct="false">This step has too many unknowns or requires information that we do not have.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

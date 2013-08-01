@@ -1,0 +1,193 @@
+<html>
+<head>
+
+<title>Mathematical Form of Newton's 2nd Law</title>
+
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:10pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:0 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+font-size:10pt;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+
+</head>
+
+<body>
+
+<h3>Mathematical Form of Newton's 2nd Law</h3>
+<p>Newton's Second Law is (Cajori's translation):</p>
+
+<blockquote><p><i>"The change of motion is proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed."</i></p></blockquote>
+
+<p>The first phrase says the [net] force causes a change in the motion, by which Newton meant in the quantity of motion, which we call the momentum and represent as mv.  The second phrase states that force is a vector quantity.  Thus the law can be written:</p>
+
+<p>
+\[ \vec{F}_{net} = \frac {d(m\vec{v})} {dt} = m\vec{a} \]
+</p>
+
+<p>The net force applied on an object causes an acceleration that is inversely proportional to the mass of the object. Larger mass makes it more difficult to change a body's direction or speed. The net force \(\vec{F}_{net}\)&#160; is the resulting force obtained by adding all the forces applied on the object. For an object with mass <i>m</i> that has three different forces acting on it,&#160;</p>
+<p>\(\vec{F}_{net} = \sum_{i=1}^3 \vec{F}_{i} = m\vec{a}\)</p>
+
+<h3>Important Notes</h3>
+<p>&#160;</p>
+
+<p>When applying Newton's second law in problem solving the most important aspects to remember are:</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+	<tr>
+		<th>
+			<b>1.</b> Newton's second law is a LAW OF CHANGE: \(\vec{a} = \frac{d\vec{v}}{dt} = \vec{F}_{net}/m\) [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]
+		</th>
+	</tr>
+	<tr style="display:none" id="ht3">
+		<td>
+			<p>Our <i>Modeling Approach to Problem Solving </i>emphasizes that all the core physical principles in mechanics contain a LAW OF CHANGE &#8211; an expression that describes how force changes motion.  The law of change specifies how some state variable representing motion will be changed by some function of the force called the AGENT OF CHANGE.  Mathematically the form of these laws is that the first time derivative of the motion variable equals some function of the force (e.g. the external force, the torque&#8230;)  In the case of Newton's Second Law, the object's velocity is changed by the net force arising from the object&#8217;s interactions with the rest of the world:
+			\(\frac{d\vec{v}}{dt} = \vec{a} = \vec{F}_{net}/m\)
+			</p>
+			<p> <b>On the left hand side:</b> the derivative means the rate of change of the velocity over time (change in motion)</p>
+			<p>
+			<b>On the right hand side&#160;:</b> the net Force (the cause of the changing motion) is divided by the mass (a property of the object related to its inertia).</p>
+			<p>
+			<b>NOTICE:</b> This equation says that a <i>vector</i> derivative of the velocity (not the velocity itself) has the same direction as the <i>net force</i>  The velocity can change because either its direction of motion or its velocity, or both, change.  A special case arises when the force causing the directional change is perpendicular to the velocity, in which case the speed remains constant and only the direction changes.  This gives rise to the special type of motion called <i>uniform circular motion</i>.</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+	<tr>
+		<th>
+			<b>2.</b> \( m\vec{a}\) defines force, but \( m\vec{a}\) is <b>NOT</b> a force!  [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]
+		</th>
+	</tr>
+	<tr style="display:none" id="ht5">
+		<td>
+			<p>Newton's second law is the operational definition of force: directly proportional to the acceleration and to the mass.   This definition enables us to quantify force, and thereby to study it.  Thus we can discover <i>Laws of Force</i> like universal gravity and Hooke&#8217;s law for springs.  Knowing the force from these laws and the objects&#8217; positions, we can make accurate predictions about the motion of most objects in the universe. </p>
+			<p>The equation F = ma is an example of the different uses of equalities in physics and mathematics. Mathematics equations are used as identities. Newton's Second Law is a relation between two very different physical quantities:  \(\vec{F}_{net}\) and \( m\vec{a}\); force and momentum change (mass times acceleration).  It is a Law of Nature, and therefore subject to experimental test to see whether it accurately describes how the world works.  It would be falsified if the same force, when applied to a mass twice as big, did not result in an acceleration exactly one half as large.  It&#8217;s vector nature would be contradicted if two forces acting on a body simultaneously resulted in an acceleration different from what one would predict from the vector addition of the accelerations that each force would cause if acting separately.  It is accurately checked each time we observe Jupiter pass behind the moon at the time we calculated in advance, or when we make a midcourse correction of a space probe so that it will enter Mars&#8217; atmosphere at the correct angle to avoid burning up. </p>
+			<p><b>On the left hand side:</b> force \(\vec{F}_{net}\) is the resulting force from all interaction(s) with other objects. We call it "net" force to indicate the importance of adding the vector forces from ALL the interactions. The "net force" is not "one of the forces" acting on the object. Rather, the net force can be thought of as the <i>single force that could be applied to the object to cause the same consequence</i> as the effect of all the forces actually acting on the object.</p>
+			<p> <b>On the right hand side&#160;:</b> <i>m</i> is the mass (an intrinsic property of the object), and \(\vec{a}\) is the <a href="http://en.wikipedia.org/wiki/acceleration" class="extiw" title="wikipedia:acceleration">acceleration</a> of the object, describing how the motion is changing. The product of these two physical quantities always has the same (vector) value as the net force acting on the object. This does not mean that \( m\vec{a}\) is a force or interaction of any kind with the object. Repeat as often as necessary: <b>\( m\vec{a}\) is not a force!  It should never be put on your free body diagram &#8211; it is the result of those forces.</b></p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+	<tr>
+		<th>
+			<b>3.</b> Dimensions vs Units for Force. [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]
+		</th>
+	</tr>
+	<tr style="display:none" id="ht7">
+		<td>
+			<p>In case you are one of many who confuse the words <i>dimensions</i> and <i>units</i>, we&#8217;ll try to clarify. </p>
+			<p><b><i>Dimensions</i></b> inform us about what type of physical quantities are actually being represented by the symbols used in physics equations.   The three base dimensions needed for classical mechanics are <i>length, time, and mass</i>.  Thus the dimensions for velocity and acceleration are \(\frac {length}{time}\)and those for acceleration are \(\frac {length}{time^{2}}\) respectively.</p>
+			<p><b><i>Units</i></b> In application, physical quantities are measured in numerical values that are the result of direct measurements or computations made using a particular <i>system of units</i>. The most accurately known units are those maintained by the <i>Bureau International des Poids et Mesures</i> (BIPM) and are called  SI units (for Systeme International).  In the case of motion, the measurements that are important are length (measured in <i>meters</i>) and time (in <i>seconds</i>). Since the dimensions of acceleration are \(\frac {length}{time^2}\) the units for acceleration, usually written in one line in SI units, are m/s<sup>2</sup>.</p>
+
+			<h4>Dimensions of Equations and Defining the Newton as the SI unit for force</h4>
+			<p>Equations for physical quantities must have the same dimensions on each side of the equasion, otherwise they don&#8217;t make sense.  When one substitutes measurements in them, both sides of the equation  must be measured using the same base units.  Thus one can (and often should) perform a valuable check on a physical equation, like the answer you&#8217;re obtained for a problem, by checking that the dimensions (or units if you&#8217;re working with numbers) are consistent.  Simply perform the implied algebraic operations on just the dimensions or the units; of the quantities involved in the expressions.  For example, the units of the derivative of velocity are found by dividing m/s by s, leading to the units for acceleration - m/s<sup>2</sup>.  In England, a person&#8217;s weight is often measured in &#8220;stones&#8221;, in America in &#8220;pounds&#8221;.  (One pound of force equals 4.448N)</p>
+			<p>While it is perfectly correct to report your weight in units of \( kg \cdot m/s^2 \), this would seem silly to most people.   Because force is so ubiquitous in our lives, and because it seems so disconnected from length and time, a special unit has been named after Newton to measure it.  Force is measured in <a href="http://en.wikipedia.org/wiki/Newtons" class="extiw" title="wikipedia:Newtons">Newtons (N)</a> (in the <a href="http://en.wikipedia.org/wiki/SI" class="extiw" title="wikipedia:SI">International System of Units.)</a> Newton's Second Law provides an operational (or procedural) definition for the unit of force.  A pushing force of 1 N is the amount of force that will cause a mass of 1kg to accelerate with an acceleration of 1 m/s<sup>2</sup>. Force has the same dimensions as [mass]\(\cdot\)[acceleration] which in SI becomes \( kg \cdot m/s^2 \).				</p>
+			<p>Therefore 1 N is equivalent to 1 kg\(\cdot\) m/s<sup>2</sup>.  The BIPM does not maintain a separate unit for force (e.g. a special spring that would give 1 N force when stretched one centimeter &#8211; rather the Newton is called a <i>derived unit</i>.  If you have to measure a force accurately, you&#8217;ll have to figure out how to connect that force to motion of an object whose mass you know well.</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+	<tr>
+		<th>
+			<b>Final Note:</b> For students who hunt for equations as a problem solving strategy! [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]
+		</th>
+	</tr>
+	<tr style="display:none" id="ht6">
+		<td>
+			One of the languages of physics is mathematical expressions as in Newton's Second Law. However, students who inquire only as far as identifying the equation that represents the law frequently misunderstand the interpretation of the right hand side of the equation and make numerous mistakes in problem solving. It is good intellectual practice to restate in your own way the physical meaning of each term in any fundamental equation in physics. Write the equation down, think about it, and check your new ideas against your understanding of older, more basic ones. 
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p>&#160;</p>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Pulling a Block </title>
+    <script type="loncapa/python">
+
+Fx="F*cos(theta)"
+Fy="F*sin(theta)"
+SF="F*sin(theta)+N-M*g"
+N="-F*sin(theta)+M*g"
+SFx="F*cos(theta)-mu*(M*g-F*sin(theta))"
+a="F/M*cos(theta)-mu*(g-F/M*sin(theta))"
+
+</script>
+    <img src="/static/problems/MIT/rayyan/Physics801/quizzes/figures/pulling_block.png" alt="Pulling a Block"/>
+    <p>A block of mass M is pulled with a rope that exerts a force of a magnitude F, causing it to slide over horizontal ground with kinetic coefficient of friction \(\mu\) (use "mu" when you input your answer).  The force is applied at angle \(\theta\)  (use "theta" when you input your answer) above the horizontal shown below.</p>
+
+<p>1) Resolve \(\vec{F}\) into components using the coordinate system shown.</p>
+
+<p>\(F_x ,F_y = \)</p>
+
+      <formularesponse answer="$Fx" samples="F,theta@-3,-3:3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+        <p>\(,\)</p>
+
+      <formularesponse answer="$Fy" samples="F,theta@-3,-3:3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <p>2) Find the sum of the force components in the y-direction acting on the mass (in terms of N,M,g,F, where N is the magnitude of the normal force exerted by the surface on the box). Do not evaluate your expression - that is, do not get a number. Give a formula instead.</p>
+
+<p>\(\sum F_y = \)</p>
+
+      <formularesponse answer="$SF" samples="N,M,g,F,theta@-3,-3,-3,-3,-3:3,3,3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <p>3) Find the normal force of the ground acting on the mass.</p>
+
+<p>\(N = \)</p>
+
+      <formularesponse answer="$N" samples="N,M,g,F,theta@-3,-3,-3,-3,-3:3,3,3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <p>4) Find the net force in the x-direction acting on the mass (in terms of mu, F, M, g, theta):</p>
+
+<p>\(\sum F_x = \)</p>
+
+      <formularesponse answer="$SFx" samples="N,M,g,F,theta,mu@-3,-3,-3,-3,-3,-3:3,3,3,3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <p>5) Find the acceleration of the mass in the x-direction (in terms of mu, F, M, g, theta).</p>
+
+<p>\(a = \)</p>
+
+      <formularesponse answer="$a" samples="N,M,g,F,theta,mu@-3,-3,-3,-3,-3,-3:3,3,3,3,3,3#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+	<p>6) The block has a normal force \(N\), a friction force \(F_f\), a gravitational force \(W\), and \(F\) acting on it. Which of these relationships about the magnitudes of these forces is true when \(F\) is angled as shown and is just strong enough to keep the block moving at a constant speed along the ground?</p>
+
+      <br/>
+      <multiplechoiceresponse texlayout="horizontal" direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="Foil1" correct="false">
+            <text>\( F = F_f \) and \(N = W\)</text>
+          </choice>
+          <choice location="random" name="Foil2" correct="false">
+			<text>\( F = F_f \) and \(N &gt; W\) </text>
+          </choice>
+          <choice location="random" name="Foil3" correct="true">
+			<text>\( F &gt; F_f \) and \(N &lt; W\) </text>
+          </choice>
+          <choice location="random" name="Foil4" correct="false">
+			<text>\( F &gt; F_f \) and \(N = W\) </text>
+          </choice>
+          <choice location="random" name="Foil5" correct="false">
+			<text>\( F &gt; F_f \) and \(N &gt; W\) </text>            
+          </choice>
+          <choice location="random" name="Foil6" correct="false">
+			<text>\( F &lt; F_f \) and \(N = W\) </text>
+          </choice>
+          <choice location="bottom" name="Foil7" correct="false">
+			<text>none of the above </text>            
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

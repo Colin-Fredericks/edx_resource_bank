@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>Example: Two Blocks and a Pulley</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Two blocks and an ideal pulley.</h3>
+<div class="floatright">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1Pulley1a.png"/></div>
+<p>Consider two blocks connected by an ideal rope that passes over an ideal pulley fixed on a table as shown in the figure. The blocks have masses m<sub>1</sub> and m<sub>2</sub>. The block of mass m<sub>1</sub> moves to the right along the horizontal and frictionless surface of the table while block 2 moves down. The goal of the problem is to find the acceleration of the blocks and the force of tension in the rope.</p>
+<p>The blocks do not move in the same direction: block 1 moves to the right, and block 2 moves down. Therefore the two<b>&#160;accelerations are not equal</b> and we <b>cannot use the combined system</b> approach we used in the examples of the previous module. We can treat a multiple-object system as a single point particle with total mass equal to the sum of the masses of its constituents ONLY when all the objects in the system are moving with the same acceleration. In this example we can't use this approach, so we will solve the problem using separate systems as indicated in the "standard approach" of applying Newton's Laws:</p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>1. Two separate systems</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht1">
+<td>
+<b>System 1:</b> block of mass m<sub>1</sub> treated as a point particle			<p>
+<b>System 2:</b> block of mass m<sub>2</sub> treated as a point particle</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>2. Identify the interactions</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht2">
+<td>
+<b>block 1</b> interacts with the Earth, the surface and the rope.			<p>
+<b>block 2</b> interacts with the Earth and the rope.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>3. Classify the forces and draw the force diagrams</b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht3">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyFBD2.png"/>
+<p>				&#160;</p>
+<ul style="list-style:disc outside none">
+<li>					If we assume that the pulley is ideal then the force of tension at any point in the rope has the same magnitude, <b>T</b>. Therefore, the magnitude of the force of tension on block 1, <b>T<sub>1R</sub> = T</b> and the magnitude of the force of tension on block 2, <b>T<sub>2R</sub> = T</b>.</li>
+<li>					The magnitude of the gravitational force on block 1, F<sub>1E</sub> = m<sub>1</sub>g, and the magnitude of the gravitational force on block 2, F<sub>2E</sub> = m<sub>2</sub>g.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>4. Select a convenient coordinate system</b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht4">
+<td>			To obtain the blocks' acceleration we need to write Newton's second law for each block. For that purpose we need to select the coordinate system that we will use to write these equations. In the examples we have seen so far, the different objects were moving in the same direction, therefore we could use the same coordinate system for all of them.			<p>				In this problem we have that block 1 moves horizontally and block 2 vertically. We could use the same coordinate system to describe the forces on both blocks or we could use a different coordinate system for each block. We will show two solutions to this problem.</p>
+<p>
+<b>First solution</b>. Use the <b>same coordinate system for both blocks</b> where the +x - axis is to the right and the +y axis is up. In this coordinate system, the direction of the acceleration of block 1 is along the +x and the direction of the acceleration of block 2 is along the -y - axis.</p>
+<p>
+<b>Second solution</b>. Use <b>different coordinate systems for each block</b>. We will choose each coordinate system such that the <b>acceleration</b> of each box is along the <b>positive direction</b> of one of the axis.</p>
+<dl>
+<dd>
+<b>For block 1</b> we will use +x to the right and +y pointing up (the acceleration of block 1 is along the +x axis).</dd>
+<dd>
+<b>For block 2</b> we will use +y - axis pointing down and the +x axis to the right (the acceleration of block 2 is along the +y axis).</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>5. Write Newton's second law</b></p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>6. Related Accelerations Constraint</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht5">
+<td>			In this particular example it is easy to find the relationship between the blocks. Because the rope does not stretch or become slack, its length has to be constant during the motion of the blocks, therefore when block 2 goes down 1 cm, block 1 moves to the right the same distance. As a result, the accelerations of the two blocks have the same magnitude. If we call the magnitude of the acceleration 'a', then the <b>Related Acceleration Constrained</b> is given by:			<table>
+<tbody>
+<tr>
+<td>
+<b>Equal magnitudes</b></td>
+</tr>
+<tr>
+<td>
+\(|\vec{a}_{1}| = |\vec{a}_{2}| = a \)</td>
+</tr>
+<tr>
+<td>
+<b>Different directions</b></td>
+</tr>
+<tr>
+<td>
+\(\vec{a}_{1}\) <font size="3">&#160;&#160;&#160;&#160;</font><b>points to the right</b></td>
+</tr>
+<tr>
+<td>
+\(\vec{a}_{2}\) <font size="3">&#160;&#160;&#160;&#160;</font><b>points down</b></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+	<th><b>7. Solve for the magnitudes of the accelerations, a, and for the magnitude of the tension force, T.</b> [<a href="javascript:toggleDisplay('ht32','hide','show')" id="ht32l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht32">
+	<td>
+	<p><b>Solution 1:Same coordinate system for both blocks</b></p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyCoord1a.png"/></p>
+	<p><b>Solution 2: Different coordinate system for each block</b></p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyCoord2a.png"/></p>
+	<p>The solution obtained using two different coordinate systems is the same:</p>
+	<p>\[a = \frac{m_2 g}{m1+m2}\]</p>
+	<p>\[T = \frac{m_1 m_2 g}{m1+m2}\]</p>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>8. Check if the answers are reasonable.</b> [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht8">
+<td>
+<ul style="list-style:disc outside none">
+<li>
+<b>Consider the case when there is no block hanging: m<sub>2</sub> = 0</b>.</li>
+</ul>
+<p>				In this case we expect that there will be no tension in the rope, T = 0, and therefore the block 1 will not move: a = 0.</p>
+<p>				Replace m<sub>2</sub> = 0 in the expressions above to check if what we expect is true.</p>
+<ul style="list-style:disc outside none">
+<li>
+<b>Consider the case when there is no block 1 on the table: m<sub>1</sub> = 0</b>.</li>
+</ul>
+<p>				In this case we expect that the rope will not be under tension, T = 0, and therefore the only force on block 2 is the gravitational force. In this case, the block's acceleration is a = g.</p>
+<p>				Replace m<sub>1</sub> = 0 in the expressions above to check if what we expect is true.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+

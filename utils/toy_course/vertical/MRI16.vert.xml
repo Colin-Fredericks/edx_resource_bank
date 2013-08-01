@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/MRI/MRI16-1.problem" display_name="Colliding Bars" attempts="2" weight="0.66"/>
+	<problem filename="F12/MRI/MRI16-2.problem" display_name="Colliding Bars, Part 2" attempts="2" weight="0.67"/>
+	<problem filename="F12/MRI/MRI16-3.problem" display_name="Colliding Bars, Part 3" attempts="2" weight="0"/>
+	<problem filename="F12/MRI/MRI16-4.problem" display_name="Colliding Bars, Part 4" attempts="2" weight="0.67"/>
+	<discussion for="Colliding Bars" id="MReV_Summer2013_MRI16" discussion_category="Angular Momentum" />
+</vertical>

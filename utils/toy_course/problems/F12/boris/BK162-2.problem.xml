@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #162 -->
+<problem>
+
+	<p>After the first t seconds of motion, the displacement of the point is 54 m. What is the average velocity (m/s) during that time interval?</p>
+	<numericalresponse answer="9.0" unit="m/s" >
+		<responseparam default="5%" type="tolerance" />
+		<textline />
+	</numericalresponse>
+
+</problem>
+</html>

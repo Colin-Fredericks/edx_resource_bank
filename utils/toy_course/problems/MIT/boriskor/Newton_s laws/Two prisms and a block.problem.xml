@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <img src="/static/problems/MIT/boriskor/BKimages/two prisms and block sliding.png" alt="Two prisms and a block slide as one object"/>
+      <br/>
+
+        <p>In the diagram, both prisms and the block have equal masses \(m\). Angle \(\theta\) is given. Both surfaces of the larger prism are frictionless; however, there is friction between the horizontal surface of the smaller prism and the block. The larger prism is being pushed along the floor by a constant unknown force F, and it is observed that the three objects remain at rest <i>relative to each other.</i></p>
+
+        <p><b>Find the acceleration of the system.</b></p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                    \(a = 2g \tan \theta\)
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+                    \(a = g \tan \theta\)
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                    \(a = g \sin \theta\)
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                    \(a = 2g \cos \theta\)
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+                    \(a = g \cos \theta\)
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+                    \(a = 2g \sin \theta\)
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+        <p><b>Find the value of the pushing force \(F\).</b></p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                    \(F = 6mg \tan \theta\)
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                    \(F = 6mg \sin \theta\)
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                    \(F = 6mg \cos \theta\)
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                    \)F = 3mg \cos \theta\)
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+                    \(F = 3mg \sin \theta\)
+            </choice>
+            <choice location="random" name="foil6" correct="true">
+                    \(F = 3mg \tan \theta\)
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+        <p><b>Find the minimum coefficient of static friction \(k\) between the block and the smaller prism that makes it possible for the block to stay at rest relative to the prism.</b></p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                    \(k=2\tan \theta\)
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+                    \(k=\tan \theta\)
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                    \(k=2\sin \theta\)
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                    \(k=\sin \theta\)
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+                    \(k=2\cos \theta\)
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+                    \(k=\cos \theta\)
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+  </problem>
+</html>

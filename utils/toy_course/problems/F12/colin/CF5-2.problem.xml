@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Colin problem #5 -->
+<!-- Also an MRI problem -->
+
+<problem>
+
+	<p>Why did you choose this answer?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">At this point, atmospheric drag will have slowed the missile down.</choice>
+			<choice location="random" correct="false">The acceleration from Earth's gravity will be the smallest here, so the rocket's speed will also be 
+			the smallest.</choice>
+			<choice location="random" correct="true">Kepler's Second Law indicates that the missile's speed will be smallest here.</choice>
+			<choice location="random" correct="false">Newton's Third Law says that the missile and Earth put the same force on each other, which is 
+			smallest here.</choice>
+			<choice location="random" correct="false">Kepler's Third Law relates the time the missile takes to its distance from Earth. The farther 
+			up the missile is along its path, the more time it takes.</choice>
+			<choice location="random" correct="false">At this distance gravity from the Moon will also be pulling on the missile, slowing it down.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

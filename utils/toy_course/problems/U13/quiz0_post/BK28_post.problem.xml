@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+<title> Blocks and Pulleys. </title>
+<p>In the diagram, the masses of all blocks are given. The pulleys and the strings are ideal. Block \(m_4\) descends vertically while block \(m_3\) remains on top of \(m_4\). There is friction between blocks 1 and 2, and between block 2 and the table. Assume that there is at least a little tension in the string connecting masses 1 and 2.</p>
+
+<img src="/static/problems/MIT/rayyan/check_points/BK/BK28.png" align="top" texwrap="none" height="300" width="300" alt="p1a"/>
+
+<h3>Part 1:</h3>
+<p>What is the correct free body diagram for \(m_1\)? Pay attention to the way forces are labeled.</p>
+
+<multiplechoiceresponse randomize="yes" type="MultipleChoice">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/28a.png" align="middle" texwrap="none" width="150" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil2" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/28b.png" align="middle" texwrap="none" width="150" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil3" correct="true">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/28c.png" align="middle" texwrap="none" width="150" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil4" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/28d.png" align="middle" texwrap="none" width="150" alt="p1a"/>
+		</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+<h3>Part 2:</h3>
+<p>What is the correct FBD for block \(m_2\)? Count all major forces (gravitational, normal, tension, friction). </p>
+
+<multiplechoiceresponse randomize="yes" type="MultipleChoice">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/BK28e.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil2" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/BK28f.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil3" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/BK/BK28g.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil4" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK28h.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil5" correct="false">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK28i.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+		<choice location="random" name="foil6" correct="true">
+			<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK28j.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+		</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+<h3>Part3:</h3> 
+<p>The direction of the forces acting on block 4 are shown in the free body diagram below. Identify each of the forces: </p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK28k.png" align="top" texwrap="none" height="150" alt="p1a"/>
+
+<multiplechoiceresponse randomize="yes" type="MultipleChoice">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="false"><text>F<sub>1</sub> = normal, F<sub>2</sub> = gravity, F<sub>3</sub> = tension</text></choice>
+		<choice location="random" name="foil2" correct="false"><text>F<sub>1</sub> = tension, F<sub>2</sub> = gravity, F<sub>3</sub> = gravity</text></choice>
+		<choice location="random" name="foil3" correct="false"><text>F<sub>1</sub> = normal, F<sub>2</sub> = gravity, F<sub>3</sub> = gravity</text></choice>
+		<choice location="random" name="foil4" correct="true"><text>F<sub>1</sub> = tension, F<sub>2</sub> = gravity, F<sub>3</sub> = normal</text></choice>
+		<choice location="random" name="foil5" correct="false"><text>F<sub>1</sub> = normal, F<sub>2</sub> = gravity, F<sub>3</sub> = normal</text></choice>
+		<choice location="random" name="foil6" correct="false"><text>F<sub>1</sub> = tension, F<sub>2</sub> = normal, F<sub>3</sub> = normal</text></choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

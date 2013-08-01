@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="200" alt="Effective Spring Constant" height="230" src="/static/problems/MIT/rayyan/Figures/Effective Spring Constant.png"/>
+    <br/>
+
+      <p>Two springs with spring constants k1 and k2 are connected in parallel (A) or in series (B) as shown below. Find the effective spring constant k<sub>eff</sub> for each configuration. (The effective spring constant is k = Force<sub>applied</sub>/(Resulting Displacement).) Use k1 and k2 (not k_1 and k_2). </p>
+
+      <script type="loncapa/python">
+
+
+</script>
+      <formularesponse answer="k2+k1" samples="k1,k2@1,1:5,5#4">
+        <responseparam default="0.00001" type="tolerance"/>
+
+          <p>(A) When in parallel, k<sub>eff</sub> = </p>
+
+        <textline size="25" math="1"/>
+      </formularesponse>
+<!--
+      <block condition="tries &gt; 0">
+
+          <p>Think about what is similar about both springs: both are stretched the same distance X. The force applied by each spring adds up to force applied by the "effective" spring.</p>
+
+      </block>
+-->
+
+      <script type="loncapa/python">
+
+
+</script>
+      <formularesponse answer="(1/k1+1/k2)^-1" samples="k1,k2@1,1:5,5#4">
+        <responseparam default="0.00001" type="tolerance"/>
+
+          <p>(B) When in series, k<sub>eff</sub> = </p>
+
+        <textline size="25" math="1"/>
+      </formularesponse>
+<!--
+      <block condition="tries &gt; 0">
+
+          <p>Think about what is similar about both springs: both apply the same force F, which is the same force applied by the "effective" spring.</p>
+
+      </block>
+-->
+
+      </problem>
+</html>

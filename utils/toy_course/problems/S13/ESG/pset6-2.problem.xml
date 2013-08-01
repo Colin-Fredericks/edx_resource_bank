@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<!-- A collision -->
+<problem>
+
+	<h2>A collision</h2>
+	<p>Particle 1 of mass <i>m<sub>1</sub></i> is initially moving in the positive <i>x</i>-direction with a speed 
+	<i>v<sub>1,0</sub></i> . It collides with a second particle 2 of mass <i>m<sub>2</sub></i> = <i>m<sub>1</sub></i> / 3, 
+	which is initially moving in the opposite direction with an unknown speed <i>v<sub>2,0</sub></i>.
+After the collision, particle 1 moves with a speed <i>v<sub>1,f</sub></i> = <i>v<sub>1,0</sub></i> / 2 , at an angle of
+ 90<sup>o</sup> with respect to the positive <i>x</i>-direction. After the collision, particle 2 moves with an unknown speed
+<i>v<sub>2,f</sub></i>, at an angle \(\theta\) = 45<sup>o</sup> with respect to the positive <i>x</i>-direction.
+Assume that the total external force acting on the particles is zero.</p>
+
+	<img src="/static/problems/S13/ESG/images/6-2.png" />
+
+	<optionresponse direction="vertical" randomize="yes">
+		<p>
+			Is momentum conserved? 
+			<optioninput inline="1" options="('Yes','No', 'Not enough information')" correct="Yes"/>
+		</p>
+		<p>
+			Is kinetic energy conserved? 
+			<optioninput options="('Yes','No', 'Not enough information')" correct="Yes"/>
+		</p>
+	</optionresponse>
+
+</problem>
+</html>

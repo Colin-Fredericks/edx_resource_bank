@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #161 -->
+<problem>
+
+	<p>A car travels from town A to town D (aren’t you sick of always traveling from A to B?) at a constant speed v. It then turns around and travels back to A at an unknown constant speed u. The average speed of the car for the entire trip is 0.8v. Find u. </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="top" correct="false">The problem cannot be solved without knowing the distance between A and D.</choice>
+			<choice location="random" correct="true">2v/3</choice>
+			<choice location="random" correct="false">3v/5</choice>
+			<choice location="bottom" correct="false">8v/9</choice>
+			<choice location="random" correct="false">9v/10</choice>
+			<choice location="random" correct="false">4v/5</choice>
+			<choice location="bottom" correct="false">2v/5</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

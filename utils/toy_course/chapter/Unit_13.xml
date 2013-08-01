@@ -1,0 +1,183 @@
+<chapter display_name="13: Optional Unit: Orbits">
+	<sequential display_name="Mini Survey 13 - No Survey" filename="mini_survey_13" />
+	<sequential display_name="Keplerian Orbit Model" url_name="Keplerian_Orbit_Model">
+		<vertical display_name="Gravity and Orbits">
+			<html display_name = "Gravity and Orbits" filename="problems/MIT/RELATE/htmlwiki/Unit12/Gravity_and_Orbits.html"/>
+			<discussion for="Gravity and Orbits" id="MReV_Summer2013_Gravity_and_Orbits" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: gravity superposition">
+			<problem display_name="CheckPoint 1: gravity superposition" filename="MIT/rayyan/osu/gravity_superposition.problem" attempts="3"/>
+			<discussion for="CheckPoint 1: gravity superposition" id="MReV_Summer2013_gravity_superposition" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: gravity superposition 1">
+			<problem display_name="CheckPoint 2: gravity superposition 1" filename="MIT/rayyan/osu/gravity_superposition_1.problem" attempts="3"/>
+			<discussion for="CheckPoint 2: gravity superposition 1" id="MReV_Summer2013_gravity_superposition_1" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: gravity superposition 2">
+			<problem display_name="CheckPoint 3: gravity superposition 2" filename="MIT/rayyan/osu/gravity_superposition_2.problem" attempts="3"/>
+			<discussion for="CheckPoint 3: gravity superposition 2" id="MReV_Summer2013_gravity_superposition_2" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: single gravitation question">
+			<problem display_name="CheckPoint 4: single gravitation question" filename="MIT/rayyan/osu/gravity_single_question.problem" attempts="2"/>
+			<discussion for="CheckPoint 4: single gravitation question" id="MReV_Summer2013_gravity_single_question" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Keplerian Orbit Model">
+			<html display_name="Keplerian Orbit Model" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module1/Keplerian_Orbit_Mode.html"/>
+			<discussion for="Keplerian Orbit Model" id="MReV_Summer2013_Keplerian_Orbit_Mode" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Applying Kepler's Laws 1">
+			<video youtube="1.0:JXcb9o-T22I" display_name="Video: Applying Kepler's Laws 1"/>
+			<html display_name="Download" filename="problems/S13/alwina/Kepler_Intro.html"/>
+			<discussion for="Video: Applying Kepler's Laws 1" id="MReV_Summer2013_youtube_1.0_JXcb9o-T22I" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Applying Kepler's Laws 2">
+			<video youtube="1.0:rNoEaMSVnes" display_name="Video: Applying Kepler's Laws 2"/>
+			<html display_name="Download" filename="problems/S13/alwina/Apply_Keplers_Laws.html"/>
+			<discussion for="Video: Applying Kepler's Laws 2" id="MReV_Summer2013_youtube_1.0_rNoEaMSVnes" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Period of an Orbit">
+			<problem display_name="CheckPoint 5: Period of an Orbit" filename="MIT/rayyan/check_points/BK/BK116.problem" attempts="10"/>
+			<discussion for="CheckPoint 5: Period of an Orbit" id="MReV_Summer2013_BK116" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Mass of the Sun">
+			<problem display_name="CheckPoint 6: Mass of the Sun" filename="MIT/rayyan/check_points/BK/BK124.problem" attempts="10"/>
+			<discussion for="CheckPoint 6: Mass of the Sun" id="MReV_Summer2013_BK124" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Period of Different Orbits">
+			<problem display_name="CheckPoint 7: Period of Different Orbits" filename="MIT/rayyan/check_points/BK/BK114.problem" attempts="3"/>
+			<discussion for="CheckPoint 7: Period of Different Orbits" id="MReV_Summer2013_BK114" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Example: The Galactic Center">
+			<html display_name="Example: The Galactic Center" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module1/IE_Galactic_Center.html"/>
+			<discussion for="Example: The Galactic Center" id="MReV_Summer2013_IE_Galactic_Center" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Simulation: Gravity and Orbits">
+			<html display_name="Simulation: Gravity and Orbits" filename="problems/MIT/analiab/Simulations/Gravity_and_Orbits.html"/>
+			<discussion for="Simulation: Gravity and Orbits" id="MReV_Summer2013_Gravity_and_Orbits" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Circular Orbit Derivation">
+			<video youtube="1.0:18fRY9cR6d4" display_name="Video: Circular Orbit Derivation"/>
+			<html display_name="Download" filename="problems/S13/alwina/Circular_Orbit_Derivation.html"/>
+			<discussion for="Video: Circular Orbit Derivation" id="MReV_Summer2013_youtube_1.0_18fRY9cR6d4" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Circular Orbit Examples">
+			<video youtube="1.0:EKZxpRi-jDw" display_name="Video: Circular Orbit Examples"/>
+			<html display_name="Download" filename="problems/S13/alwina/Circular_Orbit_Examples.html"/>
+			<discussion for="Video: Circular Orbit Examples" id="MReV_Summer2013_youtube_1.0_EKZxpRi-jDw" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 8: Circular Orbits">
+			<problem display_name="CheckPoint 8: Circular Orbits" filename="MIT/rayyan/check_points/BK/BK112.problem" attempts="3"/>
+			<discussion for="CheckPoint 8: Circular Orbits" id="MReV_Summer2013_BK112" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 9: binary_stars">
+			<problem display_name="CheckPoint 9: binary_stars" filename="MIT/rayyan/osu/binary_stars.problem" attempts="2"/>
+			<discussion for="CheckPoint 9: binary_stars" id="MReV_Summer2013_binary_stars" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 10: binary stars 1">
+			<problem display_name="CheckPoint 10: binary stars 1" filename="MIT/rayyan/osu/binary_stars_1.problem" attempts="1"/>
+			<discussion for="CheckPoint 10: binary stars 1" id="MReV_Summer2013_binary_stars_1" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 11: Binary Star System">
+			<problem display_name="CheckPoint 11: Binary Star System" filename="MIT/rayyan/check_points/BK/BK113.problem" attempts="6"/>
+			<discussion for="CheckPoint 11: Binary Star System" id="MReV_Summer2013_BK113" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 12: Satellites with different speeds">
+			<problem display_name="CheckPoint 12: Satellites with different speeds" filename="MIT/rayyan/check_points/BK/BK115.problem" attempts="3"/>
+			<discussion for="CheckPoint 12: Satellites with different speeds" id="MReV_Summer2013_BK115" discussion_category="Orbits" />
+		</vertical>
+<!-- This is currently a quiz question.
+		<vertical display_name="CheckPoint 13: satellite">
+			<problem display_name="CheckPoint 13: satellite" filename="MIT/rayyan/osu/satellitte.problem" attempts="1"/>
+			<discussion for="CheckPoint 13: satellite" id="MReV_Summer2013_satellitte" discussion_category="Orbits" />
+		</vertical>
+-->
+		<vertical display_name="CheckPoint 14: satellite 1">
+			<problem display_name="CheckPoint 14: satellite 1" filename="MIT/rayyan/osu/satellitte_1.problem" attempts="1"/>
+			<discussion for="CheckPoint 14: satellite 1" id="MReV_Summer2013_satellitte_1" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 15: satellite 2">
+			<problem display_name="CheckPoint 15: satellite 2" filename="MIT/rayyan/osu/satellitte_2.problem" attempts="1"/>
+			<discussion for="CheckPoint 15: satellite 2" id="MReV_Summer2013_satellitte_2" discussion_category="Orbits" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Angular Momentum of Orbits" url_name="Angular_Momentum_of_Orbits">
+		<vertical display_name="Angular Momentum of Orbits">
+			<html display_name="Angular Momentum of Orbits" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module2/Angular_Momentum_of_1.html"/>
+			<discussion for="Angular Momentum of Orbits" id="MReV_Summer2013_Angular_Momentum_of_1" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint: Orbit Angular Momentum">
+			<problem display_name="CheckPoint: Orbit Angular Momentum" filename="S13/alwina/orbit_L.problem" attempts="2"/>
+			<discussion for="CheckPoint: Orbit Angular Momentum" id="MRev_Summer2013_orbit_L" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Example: Halley's Comet">
+			<html display_name="Example: Halley's Comet" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module2/IE_Halleys_Comet.html"/>
+			<discussion for="Example: Halley's Comet" id="MReV_Summer2013_IE_Halleys_Comet" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Simulation: Planetary Motion">
+			<html display_name="Simulation: Planetary Motion" filename="problems/MIT/analiab/Simulations/Planetary_Motion.html"/>
+			<discussion for="Simulation: Planetary Motion" id="MReV_Summer2013_Planetary_Motion" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Angular Momentum in Circular Orbits">
+			<problem display_name="CheckPoint 1: Angular Momentum in Circular Orbits" filename="MIT/rayyan/check_points/BK/BK121.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Angular Momentum in Circular Orbits" id="MReV_Summer2013_BK121" discussion_category="Orbits" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Mechanical Energy of Orbits" url_name="Mechanical_Energy_of_Orbits">
+		<vertical display_name="Mechanical Energy of Orbits">
+			<html display_name="Mechanical Energy of Orbits" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module3/Mechanical_Energy_of.html"/>
+			<discussion for="Mechanical Energy of Orbits" id="MReV_Summer2013_Mechanical_Energy_of" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Energy of Circular Orbits">
+			<problem display_name="CheckPoint 1: Energy of Circular Orbits" filename="MIT/rayyan/check_points/BK/BK117.problem" attempts="3"/>
+			<discussion for="CheckPoint 1: Energy of Circular Orbits" id="MReV_Summer2013_BK117" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Escape Velocity">
+			<video youtube="1.0:yWV560eDCnw" display_name="Video: Escape Velocity"/>
+			<html display_name="Download" filename="problems/S13/alwina/Escape_Velocity.html"/>
+			<discussion for="Video: Escape Velocity" id="MReV_Summer2013_youtube_1.0_yWV560eDCnw" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Escape Speed">
+			<problem display_name="CheckPoint 2: Escape Speed" filename="MIT/rayyan/check_points/BK/BK118.problem" attempts="10"/>
+			<discussion for="CheckPoint 2: Escape Speed" id="MReV_Summer2013_BK118" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Example: Eccentricity of One-Half">
+			<html display_name="Example: Eccentricity of One-Half" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module3/IE_e_is_One_Half.html"/>
+			<discussion for="Example: Eccentricity of One-Half" id="MReV_Summer2013_IE_e_is_One_Half" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Kepler orbit simulation">
+			<html display_name="Kepler orbit simulation" filename="problems/MIT/analiab/Simulations/Keplerian_Model.html"/>
+			<discussion for="Kepler orbit simulation" id="MReV_Summer2013_Keplerian_Model" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Speed of a Rocket">
+			<problem display_name="CheckPoint 3: Speed of a Rocket" filename="MIT/rayyan/check_points/BK/BK119.problem" attempts="10"/>
+			<discussion for="CheckPoint 3: Speed of a Rocket" id="MReV_Summer2013_BK119" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: satellite energy 1">
+			<problem display_name="CheckPoint 4: satellite energy 1" filename="MIT/rayyan/osu/satellitte_energy_1.problem" attempts="2"/>
+			<discussion for="CheckPoint 4: satellite energy 1" id="MReV_Summer2013_satellitte_energy_1" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: satellite energy 2">
+			<problem display_name="CheckPoint 5: satellite energy 2" filename="MIT/rayyan/osu/satellitte_energy_2.problem" attempts="2"/>
+			<discussion for="CheckPoint 5: satellite energy 2" id="MReV_Summer2013_satellitte_energy_2" discussion_category="Orbits" />
+		</vertical>
+	</sequential>
+	<sequential display_name="To the Moon" url_name="To_the_Moon">
+		<vertical display_name="Example: To the Moon">
+			<html display_name="Example: To the Moon" filename="problems/MIT/RELATE/htmlwiki/Unit12/Module4/IE_To_the_Moon.html"/>
+			<discussion for="Example: To the Moon" id="MReV_Summer2013_IE_To_the_Moon" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Orbit">
+			<problem display_name="CheckPoint 1: Orbit" filename="MIT/rayyan/check_points/BK/BK123.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Orbit" id="MReV_Summer2013_BK123" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Elliptical Orbit">
+			<problem display_name="CheckPoint 2: Elliptical Orbit" filename="MIT/rayyan/check_points/BK/BK122.problem" attempts="10"/>
+			<discussion for="CheckPoint 2: Elliptical Orbit" id="MReV_Summer2013_BK122" discussion_category="Orbits" />
+		</vertical>
+		<vertical display_name="Video: Centrifugal Potential Energy">
+			<video youtube="0.75:iMXTIqkhJfI,1.0:koXXTu39Qpc,1.25:4l_pmu6Uz_Q,1.50:SGgxvMsJxCM" display_name="Video: Centrifugal Potential Energy"/>
+			<html display_name="Download" filename="problems/S13/alwina/Centrifugal_Potential_Energy.html"/>
+			<discussion for="Video: Centrifugal Potential Energy" id="MReV_Summer2013_youtube_1.0_TQZ6qjepPno" discussion_category="Orbits" />
+		</vertical>
+	</sequential>
+</chapter>

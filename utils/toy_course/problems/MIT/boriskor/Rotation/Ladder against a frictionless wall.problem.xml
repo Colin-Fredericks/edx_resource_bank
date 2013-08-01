@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/ladder_corner.jpg" alt="Ladder leaning against the corner"/>
+    <script type="loncapa/python">
+theta="arctan(2*mu)"
+</script>
+
+	<p>A uniform ladder rests against the wall as shown.  The wall is frictionless. The coefficient of static friction between the floor and the ladder is \(\mu\). What is the maximum value of \(\theta\) that the ladder can make with the wall without sliding?</p>
+	<p>Use <i> mu</i> for \(\mu\) in your answer. For inverse trigonometric functions use <i>arcsin( )</i> , <i>arccos( )</i> or <i>arctan( )</i>, these are the only 3 inverse trigonometric functions the problem will accept.</p>
+
+	<p>\(\theta=\)</p>
+
+    <formularesponse answer="$theta" samples="mu@1:4#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

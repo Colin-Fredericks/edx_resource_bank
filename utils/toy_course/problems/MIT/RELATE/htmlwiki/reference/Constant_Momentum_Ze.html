@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Constant Momentum Zero External Impulse</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Contact_interaction.html').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Contact_interaction.html'); 
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<h3> Restrictions to the Momentum and External Impulse Model</h3>
+<p>Constant Momentum is a sub-model of the Momentum and External Impulse Model.  This model applies in the case that the net external force applied to the system during a given time interval is zero, so that the system experiences no external impulse during that time interval.
+</p>
+<h3> Approximate Application in Short Duration Processes</h3>
+<p>When describing the effects of a process that has an extremely short duration such as a collision it is often reasonable to neglect the external impulse, provided that the system is taken to encompass all the objects participating in the collision.  During the collision, the <!--<a id="go" rel="leanModal" href="#Contact_interaction.html" name="Contact_interaction.html" onclick="domath()">-->contact interaction<!--</a>--> exerted by the colliding objects upon each other will generally be much larger than any other forces acting on the objects participating in the collision.  Thus, as long as the collision forces are defined to be internal, the external forces can generally be neglected.
+</p>
+<h2> Mathematical Representation</h2>
+<p><m>$\mathcal{}\vec{p}_{f} = \vec{p}_{i}$</m>
+</p>
+<div id="Contact_interaction.html" class="popup"></div>
+</body>
+</html>
+

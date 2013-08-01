@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>Example: What Goes Up</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+<h3> Illustrative Example:  What Goes Up</h3>
+<p>A person heaves a 5.0 kg object straight up into the air. The object is released at a height of 1.0 m above the ground, and reaches a maximum height of 1.0 m above the release point. The object then falls all the way to the ground. What is the kinetic energy of the object at the instant of release and at the instant it hits the ground?</p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Solution</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td>
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>System:</b>
+	 [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th></tr>
+	<tr style="display:none" id="ht17">
+	<td>The 5.0 kg object, treated as a point particle, plus the earth, treated as an infinitely massive object.
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Interactions:</b>
+	 [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+	<tr style="display:none" id="ht18">
+	<td>The object plus the earth generate a gravitational interaction.
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Model:</b>
+	 [<a href="javascript:toggleDisplay('ht19','hide','show')" id="ht19l">show</a>]</th></tr>
+	<tr style="display:none" id="ht19">
+	<td>Constant sum of kinetic plus gravitational potential energy.
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Quantitative Approach:</b>
+	 [<a href="javascript:toggleDisplay('ht20','hide','show')" id="ht20l">show</a>]</th></tr>
+	<tr style="display:none" id="ht20">
+	<td>We will solve this problem using two different possible definitions of the gravitational potential energy for the system.
+		<table class="subtable collapsible collapsed">
+		<tr>
+		<th> Method 1: Set y = 0 at ground level.
+		 [<a href="javascript:toggleDisplay('ht21','hide','show')" id="ht21l">show</a>]</th></tr>
+		<tr style="display:none" id="ht21">
+		<td>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 1:</b>  Plot the gravitational potential energy curve for this situation.</li>
+			  <li><b>Step 2:</b>  Determine where the object has zero speed y<sub>m</sub> = 2.0 m. This will occur when the object has reached maximum height. Draw a horizontal line that touches the potential energy curve at this point. This line will represent the total energy, since zero speed means zero kinetic energy. In this problem, zero speed will occur at y = 2.0 m, since that is the maximum height reached by the object above the ground, assuming that y = 0 at ground level.</li>
+			</ul>
+			<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/WhatGoesUpChoice1.png"/></p>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 3:</b>  Fill in energy bars for all points of interest. In this case, the principle points of interest are at a height of 0.0 m (the point at which the object hits the ground) and a height of 1.0 m (the height at which the object was released). The energy bars must always add up to the total energy. The height of the potential energy bar is simply the value of the potential energy curve at the appropriate location.</li>
+			</ul>
+			<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/WhatGoesUp1EBs.png"/></p>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 4:</b>  We can now simply read off the appropriate kinetic energies.  At the moment of impact with the ground, the object has 98 J of kinetic energy.  At the instant of release, it has 49 J.</li></ul>
+		</td></tr></table>
+		
+		<br/>
+		<table class="subtable collapsible collapsed">
+		<tr>
+		<th> Method 2: Set y = 0 at release height.
+		 [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th></tr>
+		<tr style="display:none" id="ht22">
+		<td>
+			<p>Another completely equivalent description of the motion can be obtained by choosing coordinates such that y = 0 at the height of release.</p>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 1:</b>  Plot the gravitational potential energy curve for this situation.</li>
+			  <li><b>Step 2:</b>  Determine where the object has zero speed y<sub>m</sub> = 1.0 m. This will occur when the object has reached maximum height. Draw a horizontal line that touches the potential energy curve at this point. This curve will represent the total energy, since zero speed means zero kinetic energy. In this problem, zero speed will occur at y = 1.0 m, since that is the maximum height reached by the object above the point of release, assuming that y = 0 at the height of release.</li>
+			</ul>
+			<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/WhatGoesUpChoice2.png"/></p>
+			<p>Note that this gives <i>less total energy</i> than the first method (y = 0 at ground level).</p>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 3:</b>  Fill in energy bars for all points of interest. In this case, the principle points of interest are at a height of -1.0 m (the point at which the object hits the ground) and a height of 0.0 m (the height at which the object was released). The energy bars must always add up to the total energy. The height of the potential energy bar is simply the value of the potential energy curve at the appropriate location.</li>
+			</ul>
+			<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/WhatGoesUp2EBs.png"/></p>
+			<p>Note that at y = -1.0 m, the potential energy is <i>negative</i>.</p>
+			<ul style="list-style:disc outside none">
+			  <li><b>Step 4:</b>  We can now simply read off the appropriate kinetic energies. At the moment of impact with the ground, the object has 98 J of kinetic energy. At the instant of release, it has 49 J. These kinetic energies are exactly the same as those obtained with y = 0 at ground level. Thus, even though we have redefined the potential energy and the total energy of the system, the description of the <i>motion</i> (the kinetic energy) is unchanged!</li>
+			</ul>
+		</td></tr></table>
+	</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

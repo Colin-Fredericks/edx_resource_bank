@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>If you were able to change the angle of the incline plane, at what angle will the block start to slide? </p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  <text>\(\tan^{-1} \mu_s\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  <text>\(\cot^{-1} \mu_s\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\(\sin^{-1} \mu_s\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>\(\cos^{-1} \mu_s\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+ 
+</html>

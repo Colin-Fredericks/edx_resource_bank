@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #162 -->
+<problem>
+
+<script type="loncapa/python">
+
+t1 = random.randrange(0,24, 1) / 10
+t2 = random.randrange(3,8,1)
+
+vav = (2*((t2)**2 - (t1)**2) - 3*(t2-t1))/(t2 - t1)
+
+</script>
+
+	<p><b>checked and add units</b></p>
+	<p>The position of a point, moving along a straight line is given by \( x(t) = 2t^2 - 3t - 4 \)  where all coefficients are assumed to have the SI units. </p>
+
+	<h3>Part 1</h3>
+	<p>Find the average velocity (m/s) of the point between t<sub>1</sub> = $t1 seconds and t<sub>2</sub> = $t2 seconds.</p>
+	<numericalresponse answer="$vav" unit="m/s" >
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+	<h3>Part 2</h3>
+	<p>In the first t seconds of motion, the displacement of the point is 54 m. What is the average velocity (m/s) during that time interval?</p>
+	<numericalresponse answer="9.0" unit="m/s" >
+		<responseparam default="5%" type="tolerance" />
+		<textline />
+	</numericalresponse>
+
+	<h3>Part 3</h3>
+	<p>During the first t seconds of motion, the average velocity of the car is zero. Find t.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">0.67 seconds</choice>
+			<choice location="random" correct="true">1.5 seconds</choice>
+			<choice location="random" correct="false">2.35 seconds</choice>
+			<choice location="bottom" correct="false">9.4 seconds</choice>
+			<choice location="bottom" correct="false">4.7 seconds</choice>
+			<choice location="bottom" correct="false">There is no such value of t.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

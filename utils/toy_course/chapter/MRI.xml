@@ -1,0 +1,16 @@
+<chapter display_name="MRI diagnostic test">
+	<sequential display_name="MRI Problems" url_name="MRI_Problems">
+		<vertical display_name="Cut the String" filename="MRI1.vert" />
+		<vertical display_name="The Crawling Astronaut" filename="MRI2.vert" />
+		<vertical display_name="Circular Motion" filename="MRI3.vert" />
+		<vertical display_name="Pushing the Safe 1" filename="MRI4a.vert" />
+		<vertical display_name="Pushing the Safe 2" filename="MRI4b.vert" />
+		<vertical display_name="Pushing the Safe 3" filename="MRI4c.vert" />
+		<vertical display_name="Pushing the Safe 4" filename="MRI4d.vert" />
+		<vertical display_name="Slide and Dive" filename="MRI5.vert" />
+		<vertical display_name="Block Falls on Spring" filename="MRI6.vert" />
+		<vertical display_name="Rocket Launch" filename="MRI7.vert" />
+		<vertical display_name="Block and Spring with Friction" filename="MRI8.vert" />
+		<vertical display_name="Pendulum Collision with Friction" filename="MRI9.vert" />
+	</sequential>
+</chapter>

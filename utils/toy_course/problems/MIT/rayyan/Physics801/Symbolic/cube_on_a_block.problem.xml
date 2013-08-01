@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT801/MIT/rayyan/scrap/Sophie/Slide3new.png" align="top" texwrap="none" height="540" width="720" alt="mass and slide"/>
+    <br/>
+    <script type="loncapa/python">
+
+
+height="1/2/g*(M/(M+m))*v^2"
+
+</script>
+
+      <p>
+A block of mass M sits at rest on a frictionless table; the block has a circular surface of radius R as shown in the figure. A small cube of mass m and speed v is incident upon the block; the cube moves without friction on the table and the block.
+<br/>
+What is the maximum height h above the table that is reached by the cube?
+<br/>
+Assume v is small enough so that h &lt; R.
+<br/>
+\(h =\)
+</p>
+
+    <formularesponse answer="$height" samples="g,M,m,v@1,1,1,1:9,9,9,9#4">
+	<responseparam type="tolerance" default="1%"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+              </problem>
+</html>

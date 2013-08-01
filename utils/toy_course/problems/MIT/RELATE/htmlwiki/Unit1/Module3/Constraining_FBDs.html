@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Constraining Free Body Diagrams with Newton's Laws</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Constraining Free Body Diagrams using Newton's Laws</h3>
+<p>
+			When constructing each free body diagram (FBD), think carefully about how the forces acting on the body must be consistent with Newton's Second and Third Laws:</p>
+<ul style="list-style:disc outside none">
+<li> For every force in the diagram, you should be able to identify <i>both</i> the type of interaction that causes it and the other object involved in this interaction.</li>
+<li>Newton's Second Law allows you to spot missing forces because the Net Force on the body must be in the direction of the body's acceleration (or zero if the body does not accelerate). If all of the forces you have identified do not satisfy this Net Force condition, you can be certain you have missed some interaction. </li>
+
+<li>
+				Repeat: all the forces drawn in one FBD must be forces acting on the body in that diagram.</li>
+</ul>
+<p>
+			When considering two or more FBDs for interacting objects:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Newton's Third Law requires the sizes of the forces pairs to be equal (F<sub>AB</sub> = F<sub>BA</sub>) and the directions of these to be opposite. These forces are applied on the different objects. For example, FAB must appear in the FBD of object A, and FBA must appear in the FBD of object B. </li>
+</ul>
+<p>
+			Finally</p>
+<ul style="list-style:disc outside none">
+<li>
+				Third Law force pairs are never present in the free body diagram for a single object. (Why?)</li>
+</ul>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+<!--Checkpoint 21-->
+<problem>
+
+<!-- code for inserting image needs to be editted-->
+<h3>Solution</h3>
+<img src="/static/problems/S13/solutions/images/8-4.png" />
+<p>System: bar</p>
+<img src="/static/problems/S13/solutions/images/8-4(1).png" />
+
+<p></p>
+<p>System: block</p>
+<img src="/static/problems/S13/solutions/images/8-4(2).png" />
+
+<p>\(\Sigma\) F = 0 \(\Rightarrow\) N=mg (1)</p>
+<p>Apply \(\Sigma\) \(\vec{F}\) = 0 on bar    F<sub>A</sub> + F<sub>B</sub> - N - Mg = 0</p>
+<p>use (1) \(\Rightarrow\)    F<sub>A</sub> + F<sub>B</sub> = (m+M)g  (2)    (Need another equation!)</p>
+<p>Apply \(\Sigma\) \(\vec{\tau}_{Q}\) = 0 about point Q: contact point bar-support B </p>
+<p>\(\displaystyle\) \(\Sigma\) \(\vec{\tau}_{Q}\) =   \(\vec{\tau}_{Q}^{F_{A}}\) + \(\vec{\tau}_{Q}^{Mg}\) + \(\vec{\tau}_{Q}^{F_{B}}\) + \(\vec{\tau}\)<sub>Q</sub><sup>N</sup> = 0</p>
+<p>-d<sub>2</sub>F<sub>A</sub> + (\(-{L \over 2}\)+d<sub>1</sub> + d<sub>2</sub>)Mg - (L - d<sub>1</sub> - d<sub>2</sub>)N = 0 ; N=mg</p>
+<p>F<sub>A</sub> = d<sub>1</sub> + d<sub>2</sub> - \({{L\over 2} \over d_{2}}\)Mg - \({(L - d_{1} - d_{2})mg\over d_{2}}\)</p>
+<p>a) use F<sub>A</sub> in (2) to get F<sub>B</sub> </p>
+<p>b) Ask F<sub>A</sub> = 0 \(\Rightarrow\) solve for m \(\rightarrow\)  m = M(d<sub>1</sub> + d<sub>2</sub> - \({{L\over 2}\over L - d_{1} - d_{2}}\)</p>
+
+</problem>
+</html>

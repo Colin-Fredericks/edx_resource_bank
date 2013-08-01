@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/spinning_wheel.png" alt="spinning_wheel" height="150"/>
+
+      <p><br/>
+
+  The non-spinning axle of a rapidly spinning wheel is attached to a non-spinning rod supported by a pole on one end.  The direction of spin is such that a point on the wheel is coming at you when it is at the bottom of the wheel and moving away from you when it is at the top.  What is the direction of the wheel's angular momentum? (Use the right-hand rule)
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              Left (on the page)          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Right (on the page)          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              Out of the page          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              Into the page          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              Up(on the page)          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+              Down(on the page)          
+        </choice>
+        <choice location="random" correct="unused">          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

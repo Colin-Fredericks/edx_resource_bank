@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+t=11.664
+
+	</script>
+
+	<p>You are participating in an unusual drag race. You start from rest and try to cover a straight quarter-mile (400 meters, for the purpose of this problem) in the shortest time possible. Your car is very well built so it can achieve speeds of up to 360 km/h. It is equipped with a very powerful engine and an excellent anti-lock braking system. The coefficient of static friction between the wheels and the road is about 1.2 (the drag-race tires are made of very soft rubber which is pre-heated before the start by spinning the wheels; as a result, the wheels achieve the effective coefficient of friction greater than 1). </p>
+	<p>However, there is a crucial difference: you are required, for publicity purposes, to come to a dead stop at the finish line (in a typical drag race, you would fly right through that finish line!).</p>
+
+<br/>What is the best strategy for finishing the race in the shortest time possible while coming to a stop at the finish line?
+
+<optionresponse direction="vertical" randomize="yes">
+    <p>speed up at the maximum possible rate for the first half of the distance; then slow down at the same rate
+    <optioninput name="Foil1" options="('True','False')" correct="True"></optioninput></p>
+    <p>speed up at a constant rate until you achieve the maximum possible speed; then slow down
+    <optioninput name="Foil2" options="('True','False')" correct="False"></optioninput></p>
+    <p>speed up at a constant rate until you achieve the one-half of the maximum possible speed; then slow down
+    <optioninput name="Foil3" options="('True','False')" correct="False"></optioninput></p>
+    <p>speed up at one-half the maximum possible rate for the first half of the distance; then slow down at the same rate
+    <optioninput name="Foil4" options="('True','False')" correct="False"></optioninput></p>
+</optionresponse>
+
+<br/>
+
+<p>What is the shortest possible time needed to complete the race (in seconds)?</p>
+<p>\(t=\)</p>
+<numericalresponse answer="$t">
+	<responseparam default="3%" type="tolerance"/>
+	<textline math="1"/>
+</numericalresponse>
+
+  </problem>
+</html>

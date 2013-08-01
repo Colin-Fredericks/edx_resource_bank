@@ -1,0 +1,92 @@
+<chapter display_name="Optional: Homework for Unit 14: Review">
+	<sequential display_name="Review Homework" url_name="Review_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Video by Jonathan Abbott (MIT): Physics of Unicycling">
+			<problem display_name="Video by Jonathan Abbott (MIT): Physics of Unicycling" filename="MIT/rayyan/8011_videos/unicycling.problem" attempts="1" weight="1"/>
+			<discussion for="Video by Jonathan Abbott (MIT): Physics of Unicycling" id="MReV_Summer2013_unicycling" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Slide and Dive" filename="MRI5.vert" />
+		<vertical display_name="Impulse 1">
+			<problem display_name="Impulse 1" filename="MIT/rayyan/osu/09_Center_of_Mass _Linear_ Momentum/impulse/impulse_1.problem" attempts="2" weight="1"/>
+			<discussion for="Impulse 1" id="MReV_Summer2013_impulse_1" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Blocks on incline" filename="BK140.vert" />
+		<vertical display_name="Block and Spring">
+			<problem display_name="Block and Spring" filename="MIT/rayyan/check_points/BK/BK148.problem" attempts="4" weight="1"/>
+			<discussion for="Block and Spring" id="MReV_Summer2013_BK148" discussion_category="Review" />
+		</vertical>
+
+<!-- Level 2 -->
+
+		<vertical display_name="Ranking the heat in inelastic collisions">
+			<problem display_name="Ranking the heat in inelastic collisions" filename="MIT/boriskor/Momentum/Ranking Heat in Collision.problem" attempts="2" weight="2"/>
+			<discussion for="Ranking the heat in inelastic collisions" id="MReV_Summer2013_Ranking_Heat_in_Collision" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Projectile explodes into two fragments at the apex of the trajectory" filename="Projectile explodes into two fragments.vert"/>
+
+<!-- Level 3 -->
+
+		<vertical display_name="Block slides down one movable prism then slides up the other movable prism">
+			<problem display_name="Block slides down one movable prism then slides up the other movable prism" filename="MIT/boriskor/Multiconcept Problems/Block and two sliding prisms.problem" attempts="2" weight="3"/>
+			<discussion for="Block slides down one movable prism then slides up the other movable prism" id="MReV_Summer2013_Block_and_two_sliding_prisms" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Block slides and moves another block attached by a spring">
+			<problem display_name="Block slides and moves another block attached by a spring" filename="MIT/boriskor/Multiconcept Problems/Block slides and moves another block attached by spring.problem" attempts="2" weight="3"/>
+			<discussion for="Block slides and moves another block attached by a spring" id="MReV_Summer2013_Block_slides_and_moves_another_block_attached_by_spring" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Block sliding up a sliding wedge on a frictionless table" filename="Block sliding up a moving wedge.vert"/>
+		<vertical display_name="Changing tension in a swinging simple pendulum">
+			<problem display_name="Changing tension in a swinging simple pendulum" filename="MIT/boriskor/Multiconcept Problems/Changing tension in a swinging pendulum.problem" attempts="10" weight="3"/>
+			<discussion for="Changing tension in a swinging simple pendulum" id="MReV_Summer2013_Changing_tension_in_a_swinging_pendulum" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Cylinder rolls down an incline and then up the other incline" filename="Cylinder rolls down then up.vert"/>
+		<vertical display_name="Two blocks collide at the bottom of a hemispherical cavity" filename="Two blocks collide at bottom of a hemispherical cavity.vert"/>
+		<vertical display_name="Two blocks slide at right angles and collide">
+			<problem display_name="Two blocks slide at right angles and collide" filename="MIT/boriskor/Multiconcept Problems/Two blocks move at right angles and collide.problem" attempts="2" weight="3"/>
+			<discussion for="Two blocks slide at right angles and collide" id="MReV_Summer2013_Two_blocks_move_at_right_angles_and_collide" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Rock and Ice">
+			<problem display_name="Rock and Ice" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Rock and Ice.problem" attempts="10" weight="3"/>
+			<discussion for="Rock and Ice" id="MReV_Summer2013_Rock_and_Ice" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Finding maximum speed of a block connected to another by a spring on a frictionless table">
+			<problem display_name="Finding maximum speed of a block connected to another by a spring on a frictionless table" filename="MIT/boriskor/Multiconcept Problems/Two different blocks connected by a spring on a frictionless table_2.problem" attempts="3" weight="3"/>
+			<discussion for="Finding maximum speed of a block connected to another by a spring on a frictionless table" id="MReV_Summer2013_Two_different_blocks_connected_by_a_spring_on_a_frictionless_table_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Rollercoaster Loop">
+			<problem display_name="Rollercoaster Loop" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Rollercoaster Loop.problem" attempts="10" weight="3"/>
+			<discussion for="Rollercoaster Loop" id="MReV_Summer2013_Rollercoaster_Loop" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Compressing a spring 3">
+			<problem display_name="Compressing a spring 3" filename="MIT/rayyan/Physics801/Symbolic/Compresing a spring.problem" attempts="10" weight="3"/>
+			<discussion for="Compressing a spring 3" id="MReV_Summer2013_Compresing_a_spring" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Block slides along a horizontal sliding board">
+			<problem display_name="Block slides along a horizontal sliding board" filename="MIT/boriskor/Multiconcept Problems/Block pushed a long a movable board.problem" attempts="2" weight="3"/>
+			<discussion for="Block slides along a horizontal sliding board" id="MReV_Summer2013_Block_pushed_a_long_a_movable_board" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Find initial speed of a board pushed across the boundary between two rough surfaces">
+			<problem display_name="Find initial speed of a board pushed across the boundary between two rough surfaces" filename="MIT/boriskor/Multiconcept Problems/Board slides across boundary between two rough surfaces.problem" attempts="2" weight="3"/>
+			<discussion for="Find initial speed of a board pushed across the boundary between two rough surfaces" id="MReV_Summer2013_Board_slides_across_boundary_between_two_rough_surfaces" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Horizontal meter stick with almost no strings attached">
+			<problem display_name="Horizontal meter stick with almost no strings attached" filename="MIT/boriskor/Multiconcept Problems/Meterstick suspended on two strings.problem" attempts="2" weight="3"/>
+			<discussion for="Horizontal meter stick with almost no strings attached" id="MReV_Summer2013_Meterstick_suspended_on_two_strings" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Collision of two spheres that rolled down the inclined planes">
+			<problem display_name="Collision of two spheres that rolled down the inclined planes" filename="MIT/boriskor/Multiconcept Problems/Two different spheres roll down the inclines and collide.problem" attempts="2" weight="3"/>
+			<discussion for="Collision of two spheres that rolled down the inclined planes" id="MReV_Summer2013_Two_different_spheres_roll_down_the_inclines_and_collide" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Two spheres roll down the same incline plane">
+			<problem display_name="Two spheres roll down the same incline plane" filename="MIT/boriskor/Multiconcept Problems/Two different spheres roll down the same incline.problem" attempts="2" weight="3"/>
+			<discussion for="Two spheres roll down the same incline plane" id="MReV_Summer2013_Two_different_spheres_roll_down_the_same_incline" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Two light bars with masses at the ends swing down and collide inelastically">
+			<problem display_name="Two light bars with masses at the ends swing down and collide inelastically" filename="MIT/boriskor/Multiconcept Problems/Two weighted light bars swinging down and colliding.problem" attempts="10" weight="3"/>
+			<discussion for="Two light bars with masses at the ends swing down and collide inelastically" id="MReV_Summer2013_Two_weighted_light_bars_swinging_down_and_colliding" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Sphere pushed along a rough surface" filename="Sphere pushed along a rough surface.vert"/>
+	</sequential>
+</chapter>

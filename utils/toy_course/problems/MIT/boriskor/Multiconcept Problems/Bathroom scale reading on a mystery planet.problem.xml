@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <br/>
+
+      <p>
+A planet is a uniform sphere of mass \(M\). The length of the day on the planet (that is, the period of rotation about its axis) is \(T\). The linear speed of the points on the equator of the planet is \(v\). Based on this information, what would be the reading (in newtons) of the bathroom scale on the equator if a person of mass \(m\) stands on it? 
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                \(F_N=GMm(2\pi /(vT))^2-(2\pi mv/T)\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(F_N=GMm(2\pi /(vT))^2+(2\pi mv/T)\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(F_N=GMm(2\pi /(vT))^2-(\pi mv/T)\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \(F_N=GMm(2\pi /(vT))^2+( \pi mv/T)\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(F_N=GMm(2\pi /(vT))^2\)
+
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+                \(F_N=2\pi mv/T\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

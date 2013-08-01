@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+<!-- Block-spring on a rough surface -->
+<problem>
+
+<script type="loncapa/python">
+import math
+
+W = "(-(m*u^2)/2)/(1+k/(b*m*g))"
+</script>
+
+	<h2>Block-Spring on a Rough Surface</h2>
+	<p>A block of mass <i>m</i>  slides along a horizontal table with speed <i>u</i>. At <i>x</i> = 0 it hits a spring
+	 with spring constant <i>k</i> . At this point, the spring is neither stretched nor compressed.  As the block moves, the spring
+	  gets compressed. The surface on which the block moves exerts a friction force on it. The coefficient of friction is 
+	  <i>variable</i> and is given by \( \mu \) = <i>bx</i> , where <i>b</i> is a positive constant. </p>
+
+	<p>Find the change in mechanical energy of the block-spring system from <i>x</i> = 0 until the block first momentarily comes to rest.</p>
+
+	<formularesponse samples="m,u,k,b,g@1,2,1,1,9:3,4,5,5,10#2" answer="$W">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>Change in Energy =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

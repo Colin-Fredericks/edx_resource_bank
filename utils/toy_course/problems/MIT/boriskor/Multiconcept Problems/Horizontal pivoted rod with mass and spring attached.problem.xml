@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/37-horizontal pivoted rod with mass and spring.png" alt="Horizontal pivoted rod with vertica endl spring attached to one end and a mass to suspended at the other"/>
+        <br/>
+
+<p>A block of mass \(m\) is suspended on a light string attached to the end of a light bar pivoted as shown. The other end of the bar is connected to a spring with a force constant \(k\). Initially, the system is in equilibrium and the bar is horizontal. The pivot point divides the bar in 2:1 ratio as shown. Find the period \(T\) of vertical small-amplitude oscillations of the block.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(T=\pi\sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(T=2\pi\sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(T=\pi\sqrt{2m/k}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(T=2\pi\sqrt{2m/k}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(T=\pi\sqrt{m/2k}\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(T=2\pi\sqrt{m/2k}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+ 
+</problem>
+</html>

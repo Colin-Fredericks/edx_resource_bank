@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- average velocity problem -->
+
+<problem>
+
+<img src="/static/problems/S13/quiz/images/5-1.png" />
+
+<p>Two soccer players kick a ball back and forth toward each other. They start off 50 meters apart, and walk toward each other with equal speeds. They kick the ball continuously until they meet in the middle one minute later. What is the magnitude of the ball’s average horizontal velocity in meters per second?</p>
+
+<numericalresponse answer="0.41666">
+	<responseparam type="tolerance" default="5%" />
+	<textline />
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+<p>Velocity is the change in position over time. When finding an average velocity, only the initial position, the final position (25 meters away), and the time (60 seconds) are important.</p>
+</div>
+</solution>
+
+</problem>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Conservation of Momentum</title>
+
+      <p>Two blocks of different masses are connected by a spring and placed on a horizontal and frictionless table as shown. A rope is used to keep the blocks at rest and the spring compressed a distance d. After cutting the rope the spring expands and pushes the blocks away from each other.
+
+</p>
+      <br/>
+
+    <img src="/static/problems/MIT/analiab/Figures/2BlocksSpring1Initial.png" alt="BK55"/>
+        <br/>
+
+      <p>
+
+Consider two moments in time: before cutting the rope and after cutting it. Between these two moments, the momentum is conserved for: 
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                The block with the greater mass only
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                The block with the smaller mass only
+
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+
+                For the system of both blocks only
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+None of the above because the spring adds mechanical energy into the system
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+          </problem>
+</html>

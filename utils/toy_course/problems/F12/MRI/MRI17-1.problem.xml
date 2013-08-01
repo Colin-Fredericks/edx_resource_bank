@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 17 -->
+
+<problem>
+
+	<p>A bowl full of sand rests on a frictionless surface. A spinning disc is dropped onto the sand. Shortly thereafter, the bowl, sand, and disk are spinning at the same rate.</p>
+	<img src="/static/problems/F12/MRI/images/MRI17.png" height="210" />
+
+	<h3>Part 1</h3>
+	<p>Which of the following statements is true for the system of disc, bowl, and sand?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Angular momentum is conserved</choice>
+			<choice location="random" correct="false">Angular momentum is not conserved</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

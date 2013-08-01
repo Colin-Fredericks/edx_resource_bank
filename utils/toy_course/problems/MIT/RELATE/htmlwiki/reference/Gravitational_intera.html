@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Gravitational interaction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--script type="text/javascript"> 
+$('#Nearearth_gravity_we').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Nearearth_gravity_we.html');
+$('#Universal_gravitatio').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Universal_gravitatio.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>The gravitational interaction is an interaction at a distance that is present between any two massive bodies in the universe.  This interaction is governed by Newton's law of <!--<a id="go" rel="leanModal" href="#Universal_gravitatio" name="Universal_gravitatio" onclick="domath()">-->universal gravitation<!--</a>-->. For bodies near the earth, however, the gravitational interaction with the earth is the only gravitational interaction of significance (taking the earth to be an inertial reference frame).  Thus, in Newtonian mechanics, we more often consider the special case of <!--<a id="go" rel="leanModal" href="#Nearearth_gravity_we" name="Nearearth_gravity_we" onclick="domath()">-->near-earth gravity<!--</a>-->.
+</p>
+<div id="Universal_gravitatio" class="popup"></div>
+<div id="Nearearth_gravity_we" class="popup"></div>
+</body>
+</html>
+

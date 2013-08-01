@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+<!--A HOT AIR BALLOON-->
+
+<h3>Solution</h3>
+<h3>Part 1</h3>
+<p>System:  the balloon, rope and person.</p>
+<p>Interactions:</p>
+<p>External: There is no net external force on the system. The gravitational force on the system must be balanced by an upward force exerted by the air (called buoyant force), since we know that the system is at rest initially, and moves with constant velocity afterwards.</p>
+<p>Internal: contact forces between the man and the rope. The man climbing the rope cannot change the total momentum of the system (he is “internal” to the system).</p>
+<p>Because there is no net force on the system then:</p>
+<p>\(\vec{a}_{cm}\) = 0     \(\Rightarrow\)     \(\vec{v}_{cm}\) = constant</p>
+<p>Initially the balloon and the man are at rest hence the \(\vec{v}_{cm}\), the center of mass of the system is at rest with respect to the ground and it will remain at rest at any instant of time because the velocity of the center of mass is constant. If the man moves downwards, and the CM has to stay in the same position, the balloon must move upwards.</p>
+
+<h3>Part 2</h3>
+
+<p>Call the upward direction positive. Then the velocity of the man with respect to the balloon is −v . Call the velocity of the balloon with respect to the ground v<sub>BG</sub> . This is positive, since the balloon’s velocity with respect to the ground is upwards. Then the velocity of the man with respect to the ground is v<sub>MG</sub> = −v + v<sub>BG</sub> . Apply impulse-momentum theorem in one dimension (with net external force = 0):</p>
+<p>0 = mv<sub>MG</sub> + Mv<sub>BG</sub> = m(-v + v<sub>BG</sub>) + Mv<sub>BG</sub> </p>
+<p> \(\rightarrow\) v<sub>BG</sub> = \({v*m \over (m+M)}\) , upward</p>
+
+<h3>Part 3</h3>
+<p>If the passenger stops, the balloon also stops, since the CM of the system has to remain at rest.</p>
+
+</problem>
+</html>

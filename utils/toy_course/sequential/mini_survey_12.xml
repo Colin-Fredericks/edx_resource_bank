@@ -1,0 +1,11 @@
+<sequential display_name="Mini Survey 12 - Challenge Level" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 12 - Challenge Level">
+			<h2>Mini Survey 12 - Challenge Level</h2>
+			<p>This week we are asking again about the level of challenge in the course - this time in the second half.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit12_challenge"/>
+		<problem url_name="RELATE_survey:unit12_toomuch"/>
+		<problem url_name="RELATE_survey:unit12_needmore"/>
+	</vertical>
+</sequential>

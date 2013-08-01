@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/integration.png" alt="integration" height="200"/>
+
+<p>A mass M is uniformly distributed over the length L of a thin rod. In finding the moment of inertia about an axis through the center of the rod, the contribution made by the mass in a short element dx at position x from the axis of rotation is given by:</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+                \(x M dx\)          
+        </choice>
+        <choice name="foil2" correct="true">
+                \(x^2 (M/L) dx\)
+        </choice>
+        <choice name="foil3" correct="false">
+                \(x^3 (M/L)\)
+        </choice>
+        <choice name="foil4" correct="false">
+                \(x^2 M dx\)
+        </choice>
+        <choice name="foil5" correct="false">
+                \(\frac{1}{12} M L^2\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

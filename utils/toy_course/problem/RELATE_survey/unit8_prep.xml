@@ -1,0 +1,18 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Are you taking this course in order to prepare for something specific? Please check all that apply.</p>
+   <choiceresponse>
+    <checkboxgroup direction="vertical" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="job"><text>Yes, for my job.</text></choice>
+       <choice correct="true" name="college"><text>Yes, for a college course.</text></choice>
+       <choice correct="true" name="HS"><text>Yes, for a high school course.</text></choice>
+       <choice correct="true" name="AP"><text>Yes, for an Advanced Placement or International Baccelaureate exam.</text></choice>
+       <choice correct="true" name="skip"><text>Yes, for an exam so that I can skip a college course.</text></choice>
+       <choice correct="true" name="other"><text>Yes, for another reason (see below).</text></choice>
+       <choice correct="true" name="no"><text>No, I am only taking it for my own interest.</text></choice>
+    </checkboxgroup>
+   </choiceresponse>
+  <p>If you chose "other", please let us know what you are preparing for.</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

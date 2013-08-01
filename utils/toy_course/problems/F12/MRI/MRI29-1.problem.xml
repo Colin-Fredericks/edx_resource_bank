@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 29 -->
+
+<problem>
+
+	<p>A brick of mass m slides down a frictionless slope of height h. You may treat the brick as a point object. At the bottom of the slope is a flat patch 
+	with friction. </p>
+	<img src="/static/problems/F12/MRI/images/MRI28.png" height="197" />
+<br/>
+	<h3>Part 1</h3>
+	<br/>
+	<p>The goal is to determine the eventual speed of the brick after it has moved along the flat area for a given time \(t\). Consider the following approach for 
+	determining the speed.</p>
+	<p>
+	<ol>
+		<li> Use kinematics to determine the speed of the brick at the bottom of the slope.</li>
+		<li> Use the mass of the brick to determine the normal force.</li>
+		<li> Calculate the frictional force on the brick.</li>
+		<li> Calculate the acceleration provided by this force.</li>
+		<li> Use kinematics to determine the velocity of the brick at the given time.</li>
+	</ol>
+	</p>
+	<p>That solution has an error. At what step does this error appear? (Enter a number from 1 to 5).</p>
+
+	<numericalresponse answer="1">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+	</numericalresponse>
+
+</problem>
+
+</html>

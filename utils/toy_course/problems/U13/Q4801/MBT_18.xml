@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>
+A woman weighing 6.0 \(\times\) 10<sup>2</sup> N is riding an elevator from the 1st floor to the 6th floor. As the elevator approaches the 6th floor, it decreases its upward speed from 8.0 m/s to 2.0 m/s in 3.0 s. What is the average force exerted by the elevator floor on this woman during this 3.0 s interval?
+</p>
+
+<multiplechoiceresponse>
+	<choicegroup type="MultipleChoice">
+		<choice correct="false" name="120">120 N</choice>
+		<choice correct="true" name="480">480 N</choice>
+		<choice correct="false" name="600">600 N</choice>
+		<choice correct="false" name="720">720 N</choice>
+		<choice correct="false" name="1200">1200 N</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

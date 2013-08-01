@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/work_1.png" alt="work_1" height="200"/>
+
+      <p><br/>
+A car travels is moving up a hill that makes an angle &#x3B8; with respect to the horizontal.  After traveling a distance d, what is the  work done by the sum of the gravitational force and the constant upward frictional force F that the hill exerts on the tires of the car?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              W = F*d          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              W = -F*d          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              w = 0          
+        </choice>
+        <choice name="foil4" correct="true">
+
+              W = (F-mg*sin\(\theta\))d          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              W = (F+mg*sin\(\theta\))d          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

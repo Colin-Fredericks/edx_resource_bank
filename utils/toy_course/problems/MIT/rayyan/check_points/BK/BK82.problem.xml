@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+	<title> Moments of Inertial </title>
+  
+<script type="loncapa/python">
+II="m*d*d"
+I="7*m*d*d/12"
+III="7*m*d*d/3"
+</script>
+
+<p>A uniform rod has mass m and length d. Point A is the midpoint of the rod; point B divides the rod in 2:1 ratio. A small block of mass 2m is attached to the left end of the rod. Three possible axes of rotation are marked on the diagram.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK82.png" alt="BK82"/><br/>
+
+<p>Part 1. Find the moment of inertia of the rod about axis 1.</p>
+	<formularesponse answer="$I" samples="m,d@-3,-3:3,3#4">
+		<responseparam default="0.00001" type="tolerance"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+	
+<p>Part 2. Find the moment of inertia of the rod about axis 2.</p>
+	<formularesponse answer="$II" samples="m,d@-3,-3:3,3#4">
+		<responseparam default="0.00001" type="tolerance"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+	
+<p>Part 3. Find the moment of inertia of the rod about axis 3.</p>
+	<formularesponse answer="$III" samples="m,d@-3,-3:3,3#4">
+		<responseparam default="0.00001" type="tolerance"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+
+	</problem>
+</html>

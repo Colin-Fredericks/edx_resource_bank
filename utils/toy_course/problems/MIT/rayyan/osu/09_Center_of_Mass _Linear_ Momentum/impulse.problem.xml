@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulse.png" alt="impulse" height="200"/>
+
+      <p><br/>
+Two balls of equal mass swing down and hit identical bricks while traveling at identical speeds. Ball A bounces back, but ball B stops immediately upon hitting the brick. Which ball has a better chance of knocking the brick over?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              They both have the same chance          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

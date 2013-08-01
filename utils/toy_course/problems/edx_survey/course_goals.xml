@@ -1,0 +1,29 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>What are your goals for this course?</p>
+	<multiplechoiceresponse direction="horizontal" >
+  	<choicegroup type="MultipleChoice">
+      <choice correct="true" name="committed">
+        <text>I am committed to do all of the work earn a certificate. </text>
+      </choice>
+      <choice correct="true" name="considering_not_commited">
+        <text>I am considering, but not committed to, earning a certificate. </text>
+      </choice>
+      <choice correct="true" name="audit_only">
+        <text>I am planning to audit the course only. </text>
+      </choice>
+      <choice correct="true" name="specific_topics_only">
+        <text>I am interested in specific topics in this course. I will only complete materials related to     specific topics I am interested in.</text>
+      </choice>
+      <choice correct="true" name="just_visiting">
+        <text>I am just visiting</text>
+      </choice>
+      <choice correct="true" name="other">
+        <text>Other</text>
+      </choice>
+   	</choicegroup>
+ 	</multiplechoiceresponse>
+  <p>If you answered "other", what are your goals for this course?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

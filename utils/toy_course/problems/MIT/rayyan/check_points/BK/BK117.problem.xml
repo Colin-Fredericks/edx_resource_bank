@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Energy of Circular Orbits </title>
+
+<p>A satellite of mass m revolves around a planet of mass M in circular orbit. The gravitational potential energy of the satellite-planet system is U. Assume that the potential energy is zero when the satellite is very far from the planet.</p>
+
+<p>Part 1. What is the radius of the orbit?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                \(-GMm/U\)
+          </choice>
+          <choice name="foil2" correct="false">
+                \(GMm/U\)
+          </choice>
+          <choice name="foil3" correct="false">
+                \(\sqrt{-GMm/U}\)
+          </choice>
+          <choice name="foil4" correct="false">
+				\(\sqrt{GMm/U}\)
+          </choice>
+          <choice name="foil5" correct="false">
+				\(U/mg\)
+          </choice>
+          <choice name="foil6" correct="false">
+				\(-U/mg\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 2. What is the kinetic energy of the satellite?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                -U/2
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                U/2
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                -U
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                -2U
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                U
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				2U
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 3. How much extra energy must be added to the satellite to bring it to the orbit with twice the radius of the initial orbit?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                U/2 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                -U/2 
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                2U 
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+				-2U
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                -U/4 
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+				U/4
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

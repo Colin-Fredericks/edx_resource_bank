@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/forces.png" alt="forces" height="150"/>
+
+      <p><br/>
+A block sits at rest on a frictionless surface.  Which of the following sketches most closely resembles the correct freebody diagram for all forces acting on the block? Each red arrow represents a force. Observe their number and direction, but ignore their lengths.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              D          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

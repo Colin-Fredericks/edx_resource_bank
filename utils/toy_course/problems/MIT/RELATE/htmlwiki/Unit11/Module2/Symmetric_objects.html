@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Example: Angular Momentum of a Rod</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h3>Spin Angular Momentum of Symmetric Objects</h3>
+
+<p>Consider a symmetric object as those in the figure. If the objectrotates about a fixed axis of symmetry then the angular momentum about ANY point <b>S</b> along the axis of rotation is given by:</p>
+<p>\(\vec{L}_S = I_{cm}\vec{\omega}\)</p>
+<p>where \(I_{cm}\) is the moment of inertia about the center of mass ofthe object.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/Symmetric_objects.png"/></p>
+<p>The expression of the angular momentum about a point in the axis is expected because a symmetric object can be thought of being composed by an infinite amount of planar objects perpendicular to the axis of rotation. The axis of rotation passes through the centerof mass of the rigid object as well as through the center of mass of each of the planar objects as shown.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/Symmetric_objects2.png"/></p></p>
+<p>The angular momentum of each planar object about a point in the axis is parallel to \(\vec{\omega}\) and it is independent of the location of the reference point along the axis of rotation. Because the angular momentum of the rigid object is the sum of the angular momentum of each of the planar objects then it is parallel to \(\vec{\omega}\) and independent of the location of the reference point along the axis.</p>
+<!--
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+Answer: [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht10">
+<td>
+xx
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+Solution [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht11">
+<td>
+xx
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+-->
+</body>
+</html>
+

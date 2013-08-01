@@ -1,0 +1,11 @@
+<sequential display_name="Mini Survey 11 - Model Relations" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 11 - Model Relations">
+			<h2>Mini Survey 11 - Model Relations</h2>
+			<p>This week we are asking about relationships between Models and how you would rate them.</p>
+			<p>If you will not be continuing after Unit 11, please also take our <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/courseware/RELATE_exit_survey/Exit_Survey/">Exit Survey</a> before you go! It will really help us improve the course in future years.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit11_derive"/>
+		<problem url_name="RELATE_survey:unit11_difficult"/>
+	</vertical>
+</sequential>

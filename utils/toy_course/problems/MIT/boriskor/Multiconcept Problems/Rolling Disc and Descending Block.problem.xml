@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/2-pulley-disc-block.png" alt="Disc rolling horizontally is connected by a string to a descending block"/>
+        <br/>
+
+      <p>
+In the diagram, the block of mass \(2m\) descends as a uniform solid cylinder of mass \(m\) and radius \(r\) rolls without slipping along a horizontal table. The string connecting the cylinder and the block goes over a pulley, a uniform solid disc of mass \(m\) and radius \(r\). There is no slipping between the string and the pulley. Find the acceleration \(a\) of the block. 
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                a = g/2          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                a = g/3          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                a = 3g/5          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                a = 2g/3          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                a = 2g/5          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

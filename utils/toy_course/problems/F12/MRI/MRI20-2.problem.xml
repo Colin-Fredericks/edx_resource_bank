@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 20 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">There are external forces acting on the ball.</choice>
+			<choice location="random" correct="false">There are no external forces acting on the ball.</choice>
+			<choice location="random" correct="true">Only conservative forces are involved</choice>
+			<choice location="random" correct="false">The ball can be treated as a point mass</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

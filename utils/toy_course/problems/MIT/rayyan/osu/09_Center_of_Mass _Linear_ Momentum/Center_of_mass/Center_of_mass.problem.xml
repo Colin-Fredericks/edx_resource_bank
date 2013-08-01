@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/center_of_mass.png" alt="center_of_mass" height="150"/>
+
+      <p><br/>
+A large skinny guy with mass 2M and a smaller guy with mass M are holding onto a massless pole while standing on frictionless ice, as shown below.  If the big guy pulls himself toward the little guy along the massless rod, where will they meet?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              -3m          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              -2m          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              -1m          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              0m          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              1m          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              2m          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              3m          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

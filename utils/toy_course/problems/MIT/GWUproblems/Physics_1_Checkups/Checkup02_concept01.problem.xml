@@ -1,0 +1,38 @@
+<html>
+
+<problem>
+
+	<p>An object of mass m is hanging by a string from the roof of an elevator.  We want to compare the tension in the string due to the weight of the object 
+	under various conditions.  Which statements are true?</p>
+
+	<optionresponse texlayout="horizontal" >
+	<ol>
+		<li>
+			<p>If the elevator is moving up at constant speed, the tension in the string is equal to the object's weight</p>
+			<optioninput name="foil1" correct="True" options="('True','False')"></optioninput>
+		</li>
+
+		<li>
+			<p>If the elevator is moving downwards, and speeding up, the tension in the string is larger than the object's weight</p>
+			<optioninput name="foil2" correct="False" options="('True','False')"></optioninput>
+		</li>
+
+		<li>
+			<p>If the elevator is moving downwards, and slowing down, the tension in the string is greater than the object's weight</p>
+			<optioninput name="foil3" correct="True" options="('True','False')"></optioninput>
+		</li>
+
+		<li>
+			<p>If the elevator is moving upwards, and speeding up, the tension in the string is smaller than the object's weight</p>
+			<optioninput name="foil4" correct="False" options="('True','False')"></optioninput>
+		</li>
+
+		<li>
+			<p> If the elevator is moving downwards in free fall, the tension in the string is equal to zero</p>
+			<optioninput name="foil5" correct="True" options="('True','False')"></optioninput>
+		</li>
+	</ol>
+	</optionresponse>
+
+</problem>
+</html>

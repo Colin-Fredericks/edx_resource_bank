@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+from __future__ import division
+from loncapa import *
+
+b= "m*g*(sin(alpha)+mus*cos(alpha))"
+</script>
+
+
+      <p>
+      
+<b>Part c.</b> For which value of F will the cabinet start to move upwards?</p>
+    
+    <br/>
+    
+      <formularesponse answer="$b" samples="mus,m,g,alpha,F,muk@1,1,1,1,1,1:10,10,10,10,10,10#4" loncapaid="17">
+        <responseparam default="0.00001" type="tolerance" name="tol" description="Numerical Tolerance"/>
+        <textline readonly="no" size="25" dojs="math"/>
+        <hintgroup showoncorrect="no">
+          
+            <br/>
+          
+        </hintgroup>
+      </formularesponse>
+</problem>
+</html>

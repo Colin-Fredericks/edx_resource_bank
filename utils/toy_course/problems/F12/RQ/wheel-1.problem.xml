@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A wheel of radius \(R\) is translating and rotating. How does the speed of the center of 
+mass \(V_{cm}\) relate to the angular speed around the center of mass \(\omega_{cm}\)? consider the following situations:
+
+  </p>
+<!---
+  <p>the figure is not informative unless we use it showing a solution
+      <img src="/static/problems/F12/RQ/images/wheel.png" width="350"/>
+    </p>
+-->
+<h3>Part 1</h3>
+<p> The wheel is <i>slipping</i> (e.g. the accelerator was pushed too hard):
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">\( V_{cm}= R \omega_{cm} \) </choice>
+<choice location="random" correct="false" name="2">\( V_{cm} \gt R \omega_{cm} \) </choice>
+<choice location="random" correct="true" name="3">\( V_{cm} \lt R \omega_{cm} \) </choice>
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

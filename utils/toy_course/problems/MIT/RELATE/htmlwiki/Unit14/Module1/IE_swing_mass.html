@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>Illustrative Example: Swing</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h4> Illustrative Example</h4>
+<table border="1">
+
+<tr>
+<td colspan="2" align="left">A ball of mass <i><b>m</b></i> attached to a string of length <i><b>d</b></i> is set to rotate in a vertical circle. What is the minimum speed that the ball must have at the bottom of the circle so that it can complete one turn while keeping the string taut?
+</td></tr>
+<tr>
+<td width="170"><div class="floatleft"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/BallVerticalCircle.png" /></div>
+</td>
+<td width="170"><font face="times new roman" size="4"><b><i>t</i><sub>f</sub></b></font>: Instant right when the ball is at the top of the circle moving with speed <font face="times new roman" size="3"><b><i>v</i><sub>f</sub></b></font>.
+<p><br />
+<br />
+<br />
+<br />
+<font face="times new roman" size="4"><b><i>t</i><sub>i</sub></b></font>: Instant right when the ball is at the bottom of the circle moving with speed <font face="times new roman" size="3"><b><i>v</i><sub>i</sub></b></font>.
+</p>
+</td></tr></table>
+<p>This problem is an example of a <b>one step</b> problem solved by applying <b>3 models</b>:
+</p>
+<ul style="list-style:disc outside none"><li> constant mechanical energy (relates the initial and the final state of the problem)
+</li><li> dynamics and net force applied at the final state of the problem.
+</li><li> circular motion applied at the final state of the problem.
+</li></ul>
+We will consider the time interval <font face="times new roman" size="3"><b><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></b></font> that it takes the ball to move up along the circle. Looking at the <font color="blue">system and interactions</font> <a href='javascript:toggleDisplay( "toggledisplay2", "[hide]", "(SHOW)" )' style="font-size:smaller" id="toggledisplay2l">(SHOW)</a><div style="display:none;" id="toggledisplay2">
+<hr noshade="noshade" size="3" />
+<table border="1">
+
+<tr>
+<td><font size="3"><b>System and Interactions:</b></font>
+<p><b><u>System</u>:</b> ball treated as a point particle and the Earth treated as a point particle of infinite mass. (By treating the Earth as an object of infinite mass its motion can be neglected when the ball is moving.)
+</p><p><b><u>Interactions</u>:</b>
+</p>
+<ul style="list-style:disc outside none"><li><b>Internal:</b> ball interacts with the Earth. This internal interaction is conservative and can be expressed as a potential energy.
+</li><li><b>External:</b> The ball and the string. The resulting force is the force of tension that is always perpendicular to the ball's velocity, therefore it does not do work.
+</li></ul>
+<p>Then, the mechanical energy of the ball+Earth system is constant:
+\(E(t_f) = \; E(t_i)\)
+</p><p>Considering the zero for potential energy at the bottom:
+</p><p><b>Initial mechanical energy:</b>
+</p><p>\(E(t_i) = K_i + U_i = \frac{1}{2}mv_i^2 + 0\)
+</p><p><b>Final Mechanical Energy:</b>
+</p><p>\(E(t_f) = K_f + U_f = \frac{1}{2}v_f^2 + mg2d \)
+</p>
+</td></tr></table>
+<hr noshade="noshade" size="3" />
+</div> 
+<p>Since there are no non-conservative interactions, the mechanical energy of the ball-Earth system is constant during this time interval.
+</p><p><br />
+\(\frac{1}{2}mv_f^2 + mg2d = \frac{1}{2}mv_i^2 \;\;\;\; \mbox{(eq. 1)}\)
+</p><p><br />
+To find the minimum speed at the bottom, <font face="times new roman" size="3"><i><b>v<sub>i</sub></b></i></font> ,  we need to know the minimum speed at the top, <font face="times new roman" size="3"><i><b>v<sub>f</sub></b></i></font> . 
+</p><p><b>Condition of minimum speed:</b> 
+</p><p>To obtain the speed at the bottom we will use the condition about the minimum speed needed at the bottom in order to make a turn. 
+</p>
+Let's consider the ball to be the <b>system</b>. Tension and gravity are the only forces exerted on the ball. At the top of the circle, both forces are <font color="blue"> pointing towards the center</font> &#160;<a href='javascript:toggleDisplay( "toggledisplay3", "[hide forces]", "(SHOW FORCES)" )' style="font-size:smaller" id="toggledisplay3l">(SHOW FORCES)</a><div style="display:none;" id="toggledisplay3">.
+<hr noshade="noshade" size="3" />
+<table border="1">
+
+<tr>
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/BallVerticalCircle_FBD.png" />
+<p>Applying the dynamics and net force model and using the coordinate system shown above we have that at the top, \(\sum\vec{F}=m\vec{a}\) becomes:
+</p><p><br />
+\(- T - mg = - m\;a_r\)
+</p><p><br />
+where <font face="times new roman" size="3"><i><b>a<sub>r</sub></b></i></font> is the radial component of the ball's acceleration vector, that at the top, it has only one component that is pointing downwards to the center and is given by:
+</p><p>\(a_r = \frac{v_f^2}{d}\)
+</p><p>Combining both equations we obtain:
+</p><p>\(T + mg = m\frac{v_f^2}{d}\)
+</p>
+</td></tr></table>
+<hr noshade="noshade" size="5" />
+</div> 
+<p>Applying the <b>dynamics and net force</b> and <b>circular motion</b> models, we obtain a relationship between the magnitude of the tension on the string and the ball's speed at the top of the circle:
+</p><p><br />
+\(T + mg = m\frac{v_f^2}{d}\;\;\;\; \mbox{(eq. 2)}\)
+</p><p><br />
+</p>
+<b> The ball will be able to keep the string (barely) taut if</b> <font face="times new roman" size="3"><b><i>T</i> = 0</b></font> <b>at the top</b>. <a href='javascript:toggleDisplay( "toggledisplay4", "[Hide Explanation]", "(SHOW EXPLANATION)" )' style="font-size:smaller" id="toggledisplay4l">(SHOW EXPLANATION)</a><div style="display:none;" id="toggledisplay4">
+<hr noshade="noshade" size="3" />
+<table border="1">
+
+<tr>
+<td><b>Understanding the minimum speed condition needed to make a turn:</b>
+<p>From the energy equation, (eq. 1), the slower the ball is moving at the bottom, the slower it moves at the top, and, from (eq. 2) the smaller the tension is in the string, <font face="times new roman" size="3"><i><b>T</b></i></font>. The minimum value that the tension can have at the top is zero. When <font face="times new roman" size="3"><b><i>T</i> = 0</b></font> at the top, the ball will just have enough to keep the string straight. If the tension achieves a value of zero before reaching the top then the ball will fall below the circular path due to the mg force.
+</p>
+</td></tr></table>
+<hr noshade="noshade" size="3" />
+</div>
+<p>Using the condition <font face="times new roman" size="3"><b><i>T</i> = 0</b></font> in (eq. 2) we obtain that in order to make a complete turn, the ball must have at the top a speed given by:
+</p><p>\(v_f=\sqrt{gd} \)
+</p><p>Replacing this expression in (eq. 1) we obtain that the minimum speed the ball needs to have at the bottom in order to do a complete turn is:
+</p>
+<table border="1">
+<tr>
+<td>\(v_i=\sqrt{5gd}\)
+</td></tr></table>
+
+</body>
+</html>
+

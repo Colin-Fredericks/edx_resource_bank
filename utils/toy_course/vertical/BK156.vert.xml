@@ -1,0 +1,8 @@
+<vertical>
+	<problem filename="F12/boris/BK156-1.problem" display_name="Block-and-pulley Assembly" attempts="2" weight="0.2"/>
+	<problem filename="F12/boris/BK156-2.problem" display_name="Block-and-pulley, Part 2" attempts="2" weight="0.2"/>
+	<problem filename="F12/boris/BK156-3.problem" display_name="Block-and-pulley, Part 3" attempts="2" weight="0.2"/>
+	<problem filename="F12/boris/BK156-4.problem" display_name="Block-and-pulley, Part 4" attempts="2" weight="0.2"/>
+	<problem filename="F12/boris/BK156-5.problem" display_name="Block-and-pulley, Part 5" attempts="2" weight="0.2"/>
+	<discussion for="Block-and-pulley Assembly" id="MReV_Summer2013_BK156" discussion_category="Applying Newton's Laws" />
+</vertical>

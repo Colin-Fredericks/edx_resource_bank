@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 5 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">a. Mechanical energy is conserved throughout.</choice>
+			<choice location="random" correct="false">b. Mechanical energy is only conserved when the block is on the slide.</choice>
+			<choice location="random" correct="true">c. It is necessary to find the speed of the block as it is leaving the slide.</choice>
+			<choice location="random" correct="false">d. There is a collision when the block hits the water.</choice>
+			<choice location="random" correct="false">e. Statements b, c and d are all needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

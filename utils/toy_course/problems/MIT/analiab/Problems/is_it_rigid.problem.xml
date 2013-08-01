@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Is it Rigid? </title>
+
+        <p>
+</p>
+        <p>The object shown below is rotating about a fixed pivot point. The velocity (relative to the pivot) is shown at two different points on the object. Is this object a rigid body?</p>
+
+      <img src="/static/problems/MIT/analiab/Problems/files/PurpleBar.png"/>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                Yes, this object is a rigid body.
+
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+
+                No, this object is not a rigid body.
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                It is impossible to tell whether this is a rigid body.
+
+          </choice>
+        </choicegroup>
+        <hintgroup showoncorrect="yes">
+
+            <br/>
+            <p>In a rotating rigid object, the entire object rotates with the same angular velocity around its pivot point. The two points shown have <i>different</i> angular velocities about the pivot point.</p>
+
+        </hintgroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

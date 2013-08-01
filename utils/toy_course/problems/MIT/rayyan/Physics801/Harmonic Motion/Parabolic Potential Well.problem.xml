@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+answerchoice=random.randrange(0,2,1)
+objects=["solid disk","solid sphere","spherical shell"]
+answers=["sqrt(4/3*g*a)","sqrt(10/7*g*a)","sqrt(6/5*g*a)"]
+object=objects[answerchoice]
+answer=answers[answerchoice]
+
+</script>
+    <img width="617" alt="Rock and Ice" height="184" src="/static/problems/MIT/rayyan/Physics801/Figures/Parabola Potential Well.png"/>
+
+<p>A $object of radius R rolls without slipping on a parabola given by y=a*(x)<sup>2</sup>.<br/> What is the angular velocity of the $object for small oscillations? (Use g for the gravitational constant.)</p>
+
+    <formularesponse samples="g,a,R@9,1,1:10,4,3#10" answer="$answer">
+    	<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

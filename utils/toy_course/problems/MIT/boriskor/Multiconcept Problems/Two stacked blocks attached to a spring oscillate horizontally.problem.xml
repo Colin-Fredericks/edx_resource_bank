@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/22-spring and two stacked masses SHM.png" alt="Two masses stacked, bottom mass connected to spring, horizontal SHM"/>
+        <br/>
+
+      <p>In the diagram, the force constant of the spring is \(k\), the mass of the bottom block is \(2m\) and that of the top block is \(m\). The coefficient of static friction between the blocks is \(\mu_s\). The system oscillates with the period of T=\(2\pi \sqrt{3m/k}\). What is the maximum possible amplitude \(x_m\) of the oscillations for which the top block won't slip?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(x_m=3\mu_smg/k\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(x_m = \mu_smg/k\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(x_m=2\mu_smg/k\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(x_m = \mu_smg/(2k)\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(x_m = \mu_smg/(3k)\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

@@ -1,0 +1,35 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What percentage of these resources did you use while taking this class? For instance, if you watched every video, you would enter 100% in that box. If you did half of the checkpoint problems, you would enter 50% in that box.</p>
+
+  <p>Course Text and Examples:</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+  <p>Course Videos (other than Office Hours):</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+  <p>Office Hours Videos:</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+  <p>Checkpoint Problems:</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+  <p>Homework Problems:</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+  <p>Quiz Problems:</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+
+
+</problem>

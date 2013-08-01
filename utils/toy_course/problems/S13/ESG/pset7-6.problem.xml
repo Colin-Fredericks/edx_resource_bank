@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Two Block Swing- conceptual -->
+<problem>
+
+	<h2>A Two Block Swing- conceptual</h2>
+	<p>A box of mass M is at rest on a horizontal table. The coefficient of static friction between the box and the table is \(\mu\). The box is connected by a taut string to a block of unknown mass m, initially held horizontally as shown and then released. The box begins to slide at the instant the block reaches the bottom point of its swing.  The goal is to find the mass m of the block.</p>
+
+	<img src="/static/problems/S13/ESG/images/6-3.png" />
+
+	<p>Which of the following strategies could you use to solve this problem?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true" name="red">Use conservation of mechanical energy of the block m-earth system to find the velocity of the block when it reaches the vertical; then use this velocity and \(\vec{F}\)=m\(\vec{a}\) to calculate the tension in the string.  Then use \(\vec{F}\)=m\(\vec{a}\) to calculate the force of friction on block M and solve for m.</choice>
+			<choice location="random" correct="false" name="green">Use conservation to mechanical energy to calculate the work done by the tension.  Using this, find the tension in the string, then use \(\vec{F}\)=m\(\vec{a}\) to calculate the force of friction on block M and solve for m.</choice>
+			<choice location="random" correct="false" name="yellow">Use kinematics to find the velocity of block m when it reaches the vertical; then use this velocity and \(\vec{F}\)=m\(\vec{a}\) to calculate the tension in the string.  Then use \(\vec{F}\)=m\(\vec{a}\) to calculate the force of friction on block M and solve for m.</choice>
+			<choice location="random" correct="false" name="blue">Use conservation of kinetic energy of the block m-earth system to find the velocity of the block when it reaches the vertical; 
+			then use this velocity and \(\vec{F}\)=m\(\vec{a}\) to calculate the tension in the string.  Then use \(\vec{F}\)=m\(\vec{a}\) to calculate the force of friction on block M and solve for m.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

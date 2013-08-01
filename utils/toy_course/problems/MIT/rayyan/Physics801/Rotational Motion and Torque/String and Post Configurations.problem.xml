@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<img src="/static/problems/MIT/analiab/Figures/Post_String Configurations4.png" alt="Post_String Configurations"/>
+
+	<p>Two types of tetherballs are shown above. In both pictures, a small ball is attached by a string to a post of radius <b>r</b>. The ball is initially at a distance <b>R</b> from the center of the post (point Q) and moving with a speed <b>v</b>.</p>
+	<p>On the left, the string simply wraps around the outside of the post. On the right, the string passes trough a hole in the center of the post. The string is gradually shortened by pulling it slowly so that the ball gets closer to the post.(Ignore gravity in both cases).</p>
+	<p>Consider the system to be the ball. During the time interval it takes the ball to hit the post, choose one of these options for each statement.</p>
+	<p>A. True for the left case only</p>
+	<p>B. True for the right case only</p>
+	<p>C. True for both cases</p>
+	<p>D. True for neither case</p>
+
+    <optionresponse direction="vertical" randomize="yes">
+    <p>Energy is conserved<optioninput options="('A','B','C','D')" correct="A"></optioninput></p>
+    <p>Speed is conserved.<optioninput options="('A','B','C','D')" correct="A"></optioninput></p>
+    <p>Angular momentum about point <i><b>Q</b></i> is conserved.<optioninput options="('A','B','C','D')" correct="B"></optioninput></p>
+    </optionresponse>
+
+
+
+        <p>For the left picture, what is the speed of the ball right before when it hits the post?</p>
+
+      <formularesponse answer="v" samples="v,r,R@1,1,1:101,10,10#4">
+        <responseparam default="no" type="string_yesno" name="turnoffeditor" description="Hide DragMath-Editor"/>
+        <responseparam/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <hr/>
+
+        <p>For the right picture, what is the speed of the ball right when it hits the post?</p>
+
+      <formularesponse answer="v*R/r" type="cs" samples="v,r,R@1,1,1:10,10,10#4">
+        <responseparam default="no" type="string_yesno" name="turnoffeditor" description="Hide DragMath-Editor"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    </problem>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+      <p>Part 7. (Same question as part 6) During the motion of the blocks, the magnitude of the force of tension acting on each block is the same at all times, as long as:</p>
+        <optionresponse texlayout="horizontal" randomize="no">
+		  <ul>
+            <li>
+                <p>Block \(M_{1}\) is moving upward</p>
+              <optioninput location="random" name="foil5" options="('True','False')" correct="False"></optioninput>
+            </li>
+            <li>
+                <p>Block \(M_{1}\) is moving downward</p>
+              <optioninput location="random" name="foil6" options="('True','False')" correct="False"></optioninput>
+            </li>
+            <li>
+                <p>Newton's 3rd law remains valid</p>
+              <optioninput location="random" name="foil7" options="('True','False')" correct="False"></optioninput>
+            </li>
+          </ul>
+        </optionresponse>
+  </problem>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+r_eq = "r_0*2^(1/6)"
+dissociation= "(4)*U_0*( math.pow( r0/ r_eq,12) - math.pow( r0/ r_eq,6) )* 1e-23"
+</script>
+
+      <p>The Lennard-Jones equation shown below gives the potential energy of two atoms when they are separated by a distance \(r\). \[ U(r)=4 U_0 \left[\left(\frac{r_0}{r}\right)^{12}-\left(\frac{r_0}{r}\right)^6\right]\] </p>
+
+        <p>What is the distance between atoms at the condition of stable equilibrium? (Enter \(r_0\) or \(U_0\) by typing r_0 or U_0). If you choose to give an approximate answer, be sure to give your answer to at least 4 digits after the decimal.</p>
+        <br/>
+
+      <formularesponse answer="$r_eq" samples="r_0,U_0@1,1:5,5#2">
+        <responseparam default="0.01" type="tolerance"/>
+        <textline addchars="r_0,U_0" size="25" math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </formularesponse>
+
+      <br/><br/>
+<p>What is the minimum work needed to completely dissociate the molecule by separating the atoms from each other if they are initially at equilibrium? (Enter \(r_0\) or \(U_0\) by typing r_0 or U_0)</p><br/>
+
+      <formularesponse answer="U_0" samples="r_0,U_0@1,1:5,5#2">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline addchars="r_0,U_0" size="25" math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </formularesponse>
+
+  </problem>
+</html>

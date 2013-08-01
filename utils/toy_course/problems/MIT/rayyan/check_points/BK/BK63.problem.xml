@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Work and Energy </title>
+
+      <p>
+The net work done on an object is always equal to that object's change in:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              total energy          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              mechanical energy          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              potential energy          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+
+              kinetic energy          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              heat energy          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

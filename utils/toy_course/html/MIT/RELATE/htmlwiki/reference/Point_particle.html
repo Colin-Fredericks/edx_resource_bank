@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Point particle</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Dynamics_and_Net_For').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Dynamics_and_Net_For.html'); 
+$('#Momentum_and_Externa').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Momentum_and_Externa.html');
+$('#Angular_Momentum_and').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Angular_Momentum_and.html'); 
+$('#Rigid_body').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rigid_body.html');
+$('#Rotational_Dynamics').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rotational_Dynamics.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>Applying the point particle assumption to an object in the system implies that the object will be treated as if all its mass were located at a single point in space.  
+</p>
+<h2> Translational Motion Models and Point Particles</h2>
+<p>When applying Models that describe translational motion (<!--<a id="go" rel="leanModal" href="#Dynamics_and_Net_For" name="Dynamics_and_Net_For" onclick="domath()">-->Dynamics and Net Force<!--</a>-->, <!--<a id="go" rel="leanModal" href="#Momentum_and_Externa" name="Momentum_and_Externa" onclick="domath()">-->Momentum and External Impulse<!--</a>-->, or their sub-Models) the point particle approximation is <i>required</i>.  Any object whose motion is to be described by these Models must be approximated as a point particle.  
+</p>
+<h4> Center of Mass as a Point Particle for Translational Motion</h4>
+<p>The translational motion of a <!--<a id="go" rel="leanModal" href="#Rigid_body" name="Rigid_body" onclick="domath()">-->rigid body<!--</a>--> will occur as if the mass of the body was located at its center of mass.  This fact is extremely important when solving problems that involve an object which will both rotate and translate.  Describing the motion of such an object will require the application of both translational motion Models <i>and</i> rotational motion Models.  When applying the translational motion Models, the object can be treated as a point particle located at the center of mass.  When applying the rotational motion Models, the object can be approximated as a rigid body.  Thus, in some problems, a single object can be simultaneously treated as a rigid body for rotation and as a point particle for translation.
+</p>
+<h2> Angular Motion Models and Point Particles</h2>
+<p>When applying a Model that describes rotational motion (<!--<a id="go" rel="leanModal" href="#Rotational_Dynamics" name="Rotational_Dynamics" onclick="domath()">-->Angular Velocity and Angular Acceleration about a Single Axis<!--</a>-->, <!--<a id="go" rel="leanModal" href="#Angular_Momentum_and" name="Angular_Momentum_and" onclick="domath()">-->Angular Momentum and External Angular Impulse about a Single Axis<!--</a>-->, or their sub-Models) the point particle approximation can be justified in two circumstances:
+</p>
+<ol><li> The object will not spin about its own center, even though it may affect the spinning of other objects (e.g. a bucket for bringing water up from a well will cause the well crank to turn as it falls, but the bucket itself will not spin).
+</li><li> The size of the object is much much less than the distance of the object from the chosen axis of rotation, so that any spinning motion of the object about its own center of mass is negligible compared to its rotational motion about the axis.
+</li></ol>
+<h2> Mechanical Energy and Point Particles</h2>
+<p>When using mechanical energy to describe the motion of a system, an object can be treated as a point particle only if its rotational kinetic energy is negligible compared to its translational kinetic energy.
+</p>
+<!--<div id="Rigid_body" class="popup"></div>
+<div id="Dynamics_and_Net_For" class="popup"></div>
+<div id="Momentum_and_Externa" class="popup"></div>
+<div id="Angular_Momentum_and" class="popup"></div>
+<div id="Mechanical_Energy__E" class="popup"></div>-->
+
+</body>
+</html>
+

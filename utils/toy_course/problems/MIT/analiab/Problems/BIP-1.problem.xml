@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+    <p><img src="/static/problems/MIT/analiab/Figures/Block_at_rest_incline.png" alt="Block at rest on an incline" texwrap="none" align="top"/></p>
+
+<p>A block of mass <i>m</i> is at rest on an incline plane of angle <i>\(\alpha\)</i> with respect to the <i>vertical</i>.  There is friction 
+between the block and the incline surface (<i>\(\mu\)</i>k and <i>\(\mu\)</i>s).</p>
+
+<p>What is the value of the normal force exerted by the incline on the block? Express your answer in terms of some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.</p>
+
+      <formularesponse answer="m*g*sin(alpha)" samples="mus,muk,m,g,alpha@1,1,1,1,1:10,10,10,10,89#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+</html>

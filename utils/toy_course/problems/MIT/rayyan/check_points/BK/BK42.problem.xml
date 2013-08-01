@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Force in Uniform Circular Motion </title>
+
+      <p>
+Which of the diagrams shows a possible direction of the net force acting on an object moving at a constant speed in a circular trajectory?
+</p>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK42.PNG" alt="BK42.PNG"/>
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice align="middle" name="foil1" correct="false">
+
+               A          
+        </choice>
+        <choice align="middle" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice align="middle" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice align="middle" name="foil4" correct="true">
+
+              D          
+        </choice>
+        <choice align="middle" name="foil5" correct="false">
+
+              Either C or D are possible          
+        </choice>
+        <choice align="middle" name="foil6" correct="false">
+
+              Either A or D are possible          
+        </choice>
+        <choice align="middle" name="foil7" correct="false">
+
+              Either A or B are possible          
+        </choice>
+        <choice align="middle" name="foil8" correct="false">
+
+              Since v = const, F = 0 so none of the diagrams are correct!          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

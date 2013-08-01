@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Work by friction </title>
+        <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK64.png" alt="BK64"/>
+
+		<p>A small block of mass m is placed at the bottom of an inclined plane. After a quick push, the block acquires a speed v directed up the plane. The block then slides along the plane until it stops and remains at rest. The vertical displacement of the block is h.</p>
+		<p>During the ascent of the block, the work done by the force of friction is:</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              zero          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              \(mgh + 0.5mv^{2}\)
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+              \(mgh - 0.5mv^{2}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+              \(-mgh + 0.5mv^{2}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              \(-mgh - 0.5mv^{2}\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+			  \(-mgh\)       
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+			  \(-0.5mv^{2}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

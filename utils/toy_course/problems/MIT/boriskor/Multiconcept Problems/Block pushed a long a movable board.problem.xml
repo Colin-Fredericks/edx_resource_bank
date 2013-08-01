@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/45-block pushed on long board.png" alt="Small block pushed along a long horizontal board"/>
+        <br/>
+
+      <p>A board of mass \(M\) and length \(L\) is at rest on a frictionless surface. A small block of mass \(m\) is placed on the left end of the board as shown. The block is then given a quick impulse to the right that gives it a speed \(v\). The block barely reaches the opposite end of the board. Find the coefficient of friction \(\mu\) between the board and the block. </p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(\mu=(v^2/(2gL))(M/(M+m))\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(\mu=(2v^2/(gL))(M/(M+m))\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(\mu=(2v^2/(gL))(m/(M+m))\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(\mu=(v^2/(gL))(m/M)\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(\mu=(2v^2/(gL))(m/M)\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(\mu=(v^2/(2gL))(m/M)\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

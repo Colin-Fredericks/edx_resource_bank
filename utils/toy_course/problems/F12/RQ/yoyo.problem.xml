@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A Yo-Yo of mass \( m\) has an axle of radius  \(b\) and a spool of radius  \(R\) . Its moment 
+of inertia about an axis perpendicular to the screen and passing through the center of mass can be taken to be  
+\(I = (1/ 2)mR^2\) and the thickness of the string can be neglected. The string does not slip with respect to the axle. The Yo-Yo is released from rest.
+ What is the relation between the magnitude of the angular acceleration about the center of mass and the 
+ magnitude of the linear acceleration of the center of mass?
+  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/yoyob.png" width="350"/>
+    </p>
+<p>
+
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">\( a_{cm}= R \alpha_{cm} \) </choice>
+<choice location="random" correct="true" name="2">\( a_{cm}= b \alpha_{cm} \) </choice>
+<choice location="random" correct="false" name="3">\( a_{cm}= \frac{b^2}{R} \alpha_{cm} \) </choice>
+<choice location="random" correct="false" name="4">\( a_{cm}= 0 \) </choice>
+<choice location="random" correct="false" name="5">\( a_{cm}\) is independent of \( \alpha_{cm} \) </choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

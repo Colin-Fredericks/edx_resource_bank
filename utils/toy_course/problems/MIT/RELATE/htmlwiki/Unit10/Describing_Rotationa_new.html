@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>Describing Rotational and Translational Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Describing Motion that Combines Rotation and Translation</h2>
+
+<p>
+This Unit addresses the general question: what happens to a rigid body that 
+is free to translate and rotate when external forces act on it?  We will also
+ discuss the question of what happens when this motion is constrained in some 
+ way – for instance when a wheel rolls without slipping, or when a roll of
+  tape is released while the tape is held fixed (imagine that it is a roll of 
+  Teflon tape that does not stick to itself).</p>
+<!--
+<p>This unit is focused on combining the 
+<a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/nettorque/">Rotational Dynamics and Net Torque</a> core model with the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> core model.</p>
+-->
+
+<h3> Learning Goals </h3>
+
+<p>After completing this unit you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Describe the dynamics of a rigid body as motion of the center of mass and rotation
+	about the center of mass</li>
+	<li>Express constraints on translation of the center of mass and the rotation
+	about the center of mass as a mathematical relationship between acceleration of the center of mass \(a_{cm}\)
+	and the angular acceleration, \(\alpha\). For example, the constraint of rolling without slipping.</li>
+	
+</ul>
+
+<h3>Translation Of and Rotation About Center of Mass</h3>
+
+<p>
+The central point of this chapter is that that the motion of a rigid body  can be 
+thought of as a combination of translation of the center of mass and rotation about the 
+center of mass, each of which independently obeys the appropriate core  model and 
+associated equation of change. For a truly rigid body that cannot deform at all, the 
+combination of translation of the center of mass plus spin about the center of mass are 
+sufficient to reproduce any possible real motion.</p>
+
+<h4><i>Center of Mass Acceleration</i></h4>
+<p>In the Momentum and External Impulse core model we learned that</p>
+
+<p>\(\sum\vec{F}^{ext} = M \vec{A}_{cm}\)</p>
+<p>where \(M\) is the mass of the object (or system).</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Check your understanding </b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<p>The following six statements are about situations when the 
+expression 
+\(\sum\vec{F}^{ext} = M \vec{A}_{cm}\) can be applied. All of the statements are true. 
+Which one is the most general statement?
+</p>
+<p>The expression can be applied..
+<ol>
+<li> to a rigid body provided that the external forces are all applied at the center of mass</li>
+<li> to a point particle or a system of point particles</li>
+<li> to a rigid body if all the external forces are applied at any point on the body</li>
+<li> to a system containing several rigid bodies if the forces are applied to different 
+points on different bodies</li>
+<li> to a system containing several rigid bodies if the external forces are all applied to the same body</li>
+<li> to a rigid body if the forces are applied at different points on the body</li>
+</ol>
+
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+
+<p>#4. The above law of change applies to any system with the external forces applied 
+anywhere on any body in the system.</p>
+<p>
+When this law is applied to a rigid body it determines the acceleration of the center of
+ mass, and makes it clear that this acceleration does not depend on where on the body the 
+ forces are applied
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h4><i>Angular Acceleration of Translationally Accelerating Rigid Object</i></h4>
+
+<p>The law of change in the Angular Dynamics and Net Torque model, \(\sum{\tau}^{ext}_{axis} = I_{axis} \alpha\), applies only to fixed axis rotations &mdash; which requires that the axis is fixed in an inertial reference frame (i.e. is not accelerating). This is the same requirement as for the validity of \(\sum \vec{F} = m \vec{a}\), and it follows because the torque equation is derived from Newton's second law.</p>
+
+<p>This raises a serious problem: if you apply a force on an extended rigid body that is free (i.e. is not constrained to rotate about a fixed axis), it will accelerate. Your intuition already understands that angular acceleration may well result – especially if the force is applied near the edge of the body. In the following example, shown below, the object will rotate about an axis passing through its center of mass. Because the object is accelerating the center of mass is accelerating as well, therefore the object is not an inertial frame of reference. Is it possible to apply \(\sum{\tau}^{ext}_{cm} = I_{cm} \alpha\) about the axis passing through the center of mass to determine the angular acceleration? 
+ </p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Example: Apply a force on a rod. </b> [<a href="javascript:toggleDisplay('ht21','hide','show')" id="ht21l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht21">
+<td>
+<p>A rod that is free to rotate – it might be lying on a horizontal and frictionless icy surface. A force is applied as shown:</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module1/files/free_rod.png"/></p>
+
+<p>In which figures will there be no angular acceleration of the rod?</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht22">
+<td>
+
+<p><b> Figures 2, 4, and 5</b></p>
+<p><b>Conclusion: When the <i>Line of Force</i> passes through the center of mass of the rod, it will not cause rotational acceleration of the rod. There is no torque about the center of mass.</b></p>
+<p><b>Important:</b> Figure 5 shows that a force can be applied at the end of the rod without causing it to have rotational acceleration. The key factor is whether the force generates a torque with respect to the center of mass.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>The rod example motivates, but it is not a formal proof, the important case in which the torques determine the rotational motion of unconstrained rigid bodies: <b>when the torques are taken about the center of mass</b>. Therefore,</p>
+<p>\(\sum \tau_{cm}^{ext} = I_{cm} \alpha\)</p>
+<p>can be applied to any rigid body, regardless of how much the center of mass is accelerating.</p>
+
+<h4><i>Summary of Rotational and Translational Dynamics</i></h4>
+<p>When forces act on a rigid body, they may cause both translation and rotation. Their complete dynamics can be found by considering the motion to be made up of two parts:</p>
+<p>
+<ol>
+<li>translation of the center of mass</li>
+<li>rotation about the center of mass</li>
+</ol>
+<p>The corresponding equations of change are:</p>
+<ol>
+<li>\(\sum\vec{F}^{ext}=M\vec{a}_{cm}\)</li>
+<li>\(\sum\tau_{cm}^{ext}=I_{cm}\alpha\)</li>
+</ol>
+
+<h4>Remarks</h4>
+<p><b>Note 1: you will have to educate your intuition that these equations apply 
+INDEPENDENTLY of each other.</b></p>
+<ol>
+<li>The amount of acceleration of the center of mass is independent of the point of application of the forces on the object.</li>
+<li>The amount of angular acceleration resulting from the forces is independent of how much acceleration of the center of mass they produce.</li>
+</ol>
+<p><b>Note 2:</b> The above discussion assumes that the rigid bodies are planar, or highly symmetrical, and that the applied forces are in the plane of the body or such that they do not tend to change the axis of rotation of the body. The motion of spinning rigid bodies in three dimensions involves advanced concepts of angular momentum that include the possibility that the momentary axis of rotation will not remain in a fixed direction even for a body with no  forces acting on it!</p>
+<!--
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Proof </b> [<a href="javascript:toggleDisplay('ht21','hide','show')" id="ht21l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht21">
+<td>
+
+xx
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+-->

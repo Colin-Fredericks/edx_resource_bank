@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Part 5. If an object at point A is moving to the right with kinetic energy of 18 J, what is its kinetic energy of that object at point L?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+			<text>14 J</text>
+          </choice>
+          <choice name="foil2" correct="false">
+			<text>18 J</text>
+          </choice>
+          <choice name="foil3" correct="true">
+			<text>22 J</text>
+          </choice>
+          <choice name="foil4" correct="false">
+			<text>4 J</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK72.PNG" alt="BK72.PNG"/> 
+	</problem>
+</html>

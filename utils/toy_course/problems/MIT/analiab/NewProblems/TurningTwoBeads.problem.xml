@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+tension1="(m1/(L1+L2))*((0.5*g*T^2-h)/T)^2 "
+tension2="F1+ m2*L2/(L1+L2)^2*((0.5*g*T^2-h)/T)^2"
+</script>
+
+      <p>
+Two small beads of masses m1 and m2 are connected to each other by a string of length L1. The other end of bead 2 is connected to 
+another string of length L2. A little boy holds the free end of the string (L2) at a height h from the ground and rotates the beads 
+counter-clockwise in a vertical circle as shown in the figure (the figure does not show the boy).
+</p><p>
+When the beads are at the 3 o’clock position, the string between the two beads (L1) breaks. The bead that flies off returns to the 
+ground at a time T after the string broke. The goal is to determine the tension in each of the two strings just before the 
+string (L1) broke.
+
+</p>
+
+    <img  src="/static/problems/MIT/analiab/NewProblems/files/TurningTwoBeads.png"/>
+
+<i>In your solution clearly indicate</i>:
+<br/>
+<p><i>The <b>system(s)</b> that you consider and the <b>interactions</b> between the object(s) in the system and external objects. 
+Draw the resulting forces in a FBD. Indicate the coordinate system that you will use to describe the vectors. Indicate in your solutions
+the <b>model(s)</b> that you use.
+</i></p>
+
+<br/>
+
+<p><b>Part 1.</b> What is the value of the force of tension on string 1, F1?</p>
+<p><font size="2"> <i>Express your answer in terms of some or all of the given variables: 
+L1, L2, m1, m2, h, T. Enter g for the magnitude of the acceleration
+due to gravity.</i></font>
+</p>
+<p><b>F1 =</b>
+</p>
+
+    <formularesponse type="cs" answer="$tension1"  samples="m1,L1,L2,g,T,h@1,1,1,1,1,1:10,10,10,10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+<br/>
+<p><b>Part 2.</b> What is the value of the force of tension on string 2, F2? </p>
+<p><font size="2"><i>Express your answer in terms of <b>F1</b> (force of tension on string 1) and some or
+all of the given variables L1, L2, m1, m2, h, T. Enter g for the magnitude of the acceleration due to gravity.</i></font>
+</p>
+<p><b>F2 =</b>
+</p>
+
+    <formularesponse type="cs" answer="$tension2"  samples="F1,m1,m2,L1,L2,g,t1,h@1,1,1,1,1,1,1,1:10,10,10,10,10,10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

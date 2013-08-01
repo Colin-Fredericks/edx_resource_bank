@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+m=random.randrange(3,15,3)
+n=random.randrange(3,6,1)
+nm= n* m
+L=random.randrange(5,25,5)/10
+R=random.randrange(1,4,1)/10
+formula=2*3.14* math.sqrt(((1/3+ n)*( L* L)+1/2* n*( R* R))/(9.8* L*(1/2+ n)))
+
+</script>
+
+<img src="/static/problems/MIT/rayyan/Physics801/Figures/Pendulum.png" alt="Physical Pedulum"/>
+<p>A rod of length $L m and mass $m kg is fixed to a disk of radius $R m and mass $nm kg. If the rod can freely rotate on the end opposite the disk, what is the period (in seconds) of the pendulum?<br/>
+Use 3.14 for \(\pi\) and 9.8 m/s<sup>2</sup> for the acceleration due to gravity.</p>
+
+    <numericalresponse answer="$formula">
+      <responseparam default="5%" type="tolerance"/>
+      <responseparam default="0,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+      <textline math="1"/>
+
+    </numericalresponse>
+      </problem>
+</html>

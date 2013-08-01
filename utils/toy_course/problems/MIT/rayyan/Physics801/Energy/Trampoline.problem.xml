@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+n=random.randrange(5,10,1)/100
+h=random.randrange(20,50,1)/100
+insidesqrt= n* n+2* n* h
+answer= n+ math.sqrt( insidesqrt)
+
+</script>
+
+      <p>A spring-like trampoline dips down $n m when a particular person stands on it. If this person jumps up to a height of $h m above the top of the uncompressed trampoline, how far will the trampoline compress after the person lands?</p>
+
+    <br/>
+    <numericalresponse answer="$answer" unit="m" format="3s">
+      <responseparam default="5%" type="tolerance"/>
+      <textline math="1"/>
+    </numericalresponse>
+  </problem>
+</html>

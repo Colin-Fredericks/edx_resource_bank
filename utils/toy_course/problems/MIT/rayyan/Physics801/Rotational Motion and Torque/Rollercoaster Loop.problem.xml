@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="400" alt="Rollercoaster Loop" height="300" src="/static/problems/MIT/rayyan/Physics801/Figures/Rollercoaster Loop.png"/>
+    <hr/>
+    <script type="loncapa/python">
+n=random.randrange(15,30,5)/10
+</script>
+
+      <p>As an engineer for amusement park, you are asked to design a simple rollercoaster with an inversion (a loop). The rollercoaster will start from rest at a height of h, drop on a smooth track, complete a circular loop of radius r, and then continue towards the right. You want the riders' perceived weight at the top of the loop to be $n mg (also known as a g-force of $n). What must h be in terms of r? Assume there is no friction or air resistance and ignore the size of the rider relative to h.</p>
+
+    <formularesponse answer="r*($n+5)/2" samples="r@1:4#4">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

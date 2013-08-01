@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="245" alt="Spinning Rod" height="250" src="/static/problems/MIT/rayyan/Physics801/Figures/Spinning_rod.png"/>
+    <script type="loncapa/python">
+
+
+</script>
+    <hr/>
+
+      <p>
+A thin rod of mass M and length D is at rest on a horizontal and frictionless table contained in the (x,y) axis. A small circular block of mass 
+M initially traveling along the +x axis with a speed v  hits one of the ends of the rod.
+After the collision,  the small block's final speed is 3v/4 (along the +x axis). What is the rod's angular velocity after the collision? (Gravity is into the screen).
+</p>
+
+    <br/>
+    <formularesponse answer="3/2*v/D" samples="v,D,M@1,1,1:30,30,30#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+
+          <p> Hint: consider where should you put your axis.</p>
+
+      </hintgroup>
+    </formularesponse>
+      </problem>
+</html>

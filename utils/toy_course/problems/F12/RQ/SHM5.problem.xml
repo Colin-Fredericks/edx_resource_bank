@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<problem>
+
+<p><img src="/static/problems/F12/RQ/images/SHM7.png" width="450"/></p>
+<p>3 particles have the same potential energy \(U(x)\), but they have different total mechanical energies: \(E_1\), \(E_2\) and \(E_3\). Which particles have an approximate <i>simple harmonic</i> motion? Check all that apply.</p>
+<choiceresponse direction="vertical" randomize="no">
+    <checkboxgroup direction="vertical">
+		<choice correct="false" name="1">The particle with total Mechanical Energy \(E_1\). </choice>
+		<choice correct="false" name="2">The particle with total Mechanical Energy \(E_2\).</choice>
+		<choice correct="true" name="3">The particle with total Mechanical Energy \(E_3\).</choice>
+    </checkboxgroup>
+</choiceresponse>
+
+<p>Which of these particles undergo <i>periodic</i> motion? Check all that apply.</p>
+<choiceresponse direction="vertical" randomize="no">
+    <checkboxgroup direction="vertical">
+		<choice correct="false" name="1">The particle with total Mechanical Energy \(E_1\). </choice>
+		<choice correct="true" name="2">The particle with total Mechanical Energy \(E_2\).</choice>
+		<choice correct="true" name="3">The particle with total Mechanical Energy \(E_3\).</choice>
+    </checkboxgroup>
+</choiceresponse>
+
+
+
+</problem>

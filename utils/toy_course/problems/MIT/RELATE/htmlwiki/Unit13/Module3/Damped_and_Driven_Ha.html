@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Damped and Driven Harmonic Oscillations</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>Damped and Driven Harmonic Oscillations</h2>
+<h3> Learning Goals</h3>
+<ul style="list-style:disc outside none"><li>Describe the basic features of damped and driven harmonic oscillations.
+</li></ul>
+
+<h3> Damped Harmonic Oscillation</h3>
+<h4> Ubiquity of Damping</h4>
+<p>No real system conserves energy perfectly. There are many ways for harmonic oscillators to lose energy. If we consider a mass-on-spring system, the spring will heat up due to deformation as it expands and contracts, air resistance will slow the mass as it moves, vibration will be transmitted to the support structure, etc.
+</p>
+
+<h4> A Simple Model</h4>
+<p>To incorporate every possible energy loss mechanism would require a model that is too specific to be generally interesting. One very simple model that can illustrate the basic features of loss (called "damping" for an oscillation) is to assume that the damping force is proportional to the velocity of the oscillating mass, but in the opposite direction. For a mass-on-spring, we would then write:
+</p><p>\( \sum F_{x} = -\gamma \frac{dx}{dt} - kx \)
+</p><p>where &#947; is a positive constant (if it were negative, the force would enhance the motion rather than slowing it). The overall differential equation for this type of damped harmonic oscillation is then:
+</p><p>\( m\frac{d^{2}x}{dt^{2}} = - \gamma \frac{dx}{dt} - kx\)
+</p><p>which is usually written:
+</p><p>\( m\frac{d^{2}x}{dt^{2}} + \gamma \frac{dx}{dt} + kx = 0 \)
+</p><p>to remind us of a quadratic polynomial. In fact, this differential equation <i>can</i> be solved as a quadratic polynomial if we assume the solution has the form <i>A</i>exp(<i>rt</i>) where <i>A</i> and <i>r</i> are constants. Substituting this guess gives:
+</p><p>\( mr^{2} Ae^{rt} + \gamma r Ae^{rt} + kAe^{rt} = 0 \;\)
+</p><p>This equation will only be satisfied if:
+</p><p>\( mr^{2} + \gamma r + k = 0 \;\)
+</p><p>which is a quadratic equation in <i>r</i>. The equation is satisfied if:
+</p><p>\( r = \frac{-\gamma}{2m} \pm \sqrt{\frac{\gamma^{2}}{4m^{2}}-\frac{k}{m}} \)
+</p><p>This can be written in a more suggestive form as:
+</p><p>\( r = \frac{-\gamma}{2m} \pm i\sqrt{\frac{k}{m}}\sqrt{1-\frac{\gamma^{2}}{4km}}\)
+</p><p>It is important to note that if the damping is zero, then:
+</p><p>\( r = \pm i \sqrt{\frac{k}{m}}\)
+</p><p>which is, of course, the natural frequency of undamped spring oscillations. Note: for those unfamiliar with complex notation, the fundamental identity is \(e^{i \theta} = \cos \theta + i \sin \theta\), so \(e^{i \theta} + e^{-i \theta} = 2 \cos \theta\). Thus, the imaginary value for \(r\) will produce oscillations rather than exponential behavior.
+</p><p>For small damping, we can write:
+</p><p>\( r \approx \frac{-\gamma}{2m} \pm i \sqrt{\frac{k}{m}} \)
+</p><p>which means the full solution for <i>x</i> can be written:
+</p><p>\( x \approx e^{\left(-\gamma/(2m)\right)t} \left(A \cos(\omega_{\rm osc} t) + B \sin(\omega_{\rm osc} t)\right)\)
+</p><p>Thus, we have regular oscillations at the expected frequency, but they are exponentially damped.
+</p><p>If, however, &#947;<sup>2</sup>/(4<i>km</i>) is greater than or equal to one, the solutions for <i>r</i> become purely real, and the motion no longer exhibits oscillation. It merely dies away.
+</p>
+
+<h4> Utility of Damping</h4>
+<p>It is important to remember that any system in stable equilibrium can be set into harmonic oscillation. Without damping, these oscillations would <i>never die away</i>!  This would of course be a disaster for society. Imagine if every structure in a city were constantly vibrating for long periods of time whenever a gust of wind hit or a person began walking around. Damping is vital to dissipating the energy that is continually being imparted to buildings, bridges, etc. One example of the importance of damping is found in an old car whose shock absorbers are deteriorating. If no mechanism is in place to dissipate the energy imparted to the shocks by bumps in the road, the ride can be extremely unpleasant. In fact, tall buildings often do not have enough intrinsic damping and so they often have large damped oscillators tuned to their resonant frequency (see <a href="en.wikipedia.org/wiki/Tuned_mass_damper">here</a>).
+</p>
+<h3> Driven Harmonic Oscillation</h3>
+<h4> Without Damping</h4>
+<p>Thanks to damping, it is often desirable to purposely drive harmonic oscillation by inputting energy in phase with motion. Classic examples are pendulum-driven clocks which need an escapement (which makes the tick-tock sound), or a child on a swing who needs pushing. As with damping, it is impossible to make a general model to account for every possible type of driving. We will model a driven, undamped oscillator using a driving force with the simple sinusoidal form:
+</p><p>\( F_{\rm driving} = F_{0} \cos(\omega_{d}t) \;\)
+</p><p>thus, the full differential equation for a sinusoidally-driven oscillation of a mass-on-spring system is:
+</p><p>\( m \frac{d^{2}}{dt^{2}} = -kx + F_{0}\cos(\omega_{d}t)\)
+</p><p>which is usually written:
+</p><p>\( m\frac{d^{2}}{dt^{2}} + kx = F_{0}\cos(\omega_{d} t) \)
+</p><p>It is possible to show that one solution of this equation is a response at the driving frequency (not at \(\omega_{\rm osc}\)):
+</p><p>\(x = \frac{F_{0}}{m(\omega_{\rm osc}^{2}-\omega_{d}^{2})}\cos(\omega_{d}t)\)
+</p><p>where 
+</p><p>\( \omega_{\rm osc} = \sqrt{\frac{k}{m}}\)
+</p><p>is the natural frequency of the spring oscillator. 
+</p><p>Of course, we know that <i>adding</i> a component of the form:
+</p><p>\( x_{h}(t) = A\cos(\omega_{\rm osc}t)+B\sin(\omega_{\rm osc} t) \;\)
+</p><p>to the above solution will still satisfy the dynamical equation, since the left hand side of the differential equation clearly gives zero when <i>x</i><sub>h</sub> is put in. Thus, we can construct a general solution:
+</p><p>\( x = A \cos(\omega_{\rm osc}t)+B\sin(\omega_{\rm osc} t) + \frac{F_{0}}{m (\omega_{\rm osc}^{2} - \omega_{d}^{2})}\cos(\omega_{d} t)\)
+</p><p>which implies that we have a combination of oscillations at the natural frequency and oscillations at the driving frequency. If there is a little damping, the oscillations at \(\omega_{\rm osc}\) will die out.
+</p>
+
+<h4> Resonance</h4>
+<p>Note that the case 
+</p><p>\(\omega_{\rm osc} = \omega_{d}\;\)
+</p><p>gives an infinite amplitude of oscillation. Formally, we would have had to solve the equation differently in this case (because the left hand side will always give zero for pure sine or cosine terms at the natural frequency), but in reality (i.e. when there is some damping), the oscillations do become very large when driven at the natural oscillation frequency. This is called resonance.
+</p>
+<h4> With Damping</h4>
+<p>With damping, the situation above actually becomes simpler. The solution we added (<i>x</i><sub>h</sub>) has to include an exponential decay, so it simply disappears as time goes on!  Further, the infinite amplitude at resonance is moderated when damping is included. We can gain some insight, however, by looking at the form of the solution <i>away from resonance</i> after the natural frequency oscillations have died away:
+</p><p>\(x(t \rightarrow \infty) \sim \frac{F_{0}}{m(\omega_{\rm osc}^{2} - \omega_{d}^{2})} \cos(\omega_{d} t)\)
+</p><p>If the natural frequency of oscillations is <i>greater</i> than the driving frequency, the solution will be in phase with the driving force. If, however, the natural frequency is <i>less</i> than the driving frequency the prefactor will turn negative and the oscillations will go 180&#176; out of phase with the driving. 
+</p>
+</body>
+</html>
+

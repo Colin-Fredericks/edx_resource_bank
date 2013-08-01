@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    
+<img src="/static/problems/MIT/boriskor/BKimages/a three-spring pendulum.png" alt="three-spring-and-mass oscillating system"/>
+<p>In the diagram, the pulleys are light and frictionless, the force constant of each spring is \(k\) and the mass of the block is \(m\). Find the period \(T\)of vertical oscillations of the block.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+              \(T=2\pi\)\(\sqrt{(3m)/(4k)}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              \(T=2\pi\)\(\sqrt{(4m)/(3k)}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+              \(T=2\pi\)\(\sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+              \(T=2\pi\)\(\sqrt{3m/k}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              \(T=2\pi\)\(\sqrt{m/(3k)}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+</problem>
+</html>

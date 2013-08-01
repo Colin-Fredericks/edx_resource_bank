@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/cat.png" alt="cat" height="300"/>
+
+      <p><br/>
+ A cat spots a flowerpot that sails first up past an open window.  The pot, which passes very close to the window, is in view for 0.25 s while going up, and the top-to-bottom height of the window is 2.00 m. How high above the top of the window does the flowerpot go? </p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              4.68 m          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              4.34 m          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              2.34 m          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              It doesn't reach the top of the window          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

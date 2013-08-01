@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 154 -->
+<problem>
+
+	<p>If \( m_1 \ll m_2 \), what are the speeds of blocks 1 and 2 after the collision, respectively?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">zero; v</choice>
+			<choice correct="false">v/2; v/2</choice>
+			<choice correct="false">v/2; v</choice>
+			<choice correct="false">v; v/2</choice>
+			<choice correct="true">v; zero</choice>
+			<choice correct="false">v; 2v</choice>
+			<choice correct="false">2v; v</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

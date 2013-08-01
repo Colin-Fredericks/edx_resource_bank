@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 152 -->
+<problem>
+
+	<p>Find the instantaneous speed of point C.</p>
+	<formularesponse answer="v*sqrt(17)/5" samples="v,R@1,1:10,10#10">
+		<responseparam default="1%" type="tolerance"/>
+		<textline size="25" math="1" />
+	</formularesponse>	
+
+</problem>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+<!--A collision between carts-->
+<problem>
+
+<h3>Solution</h3>
+<p>In the plot we are considering the collision process. It starts at the instant t<sub>i</sub> right before cart 1 touches the spring, and ends at the instant t<sub>f</sub> right when the cart 1 detaches from the spring.</p>
+<p>Let’s consider the system: cart 1 + cart 2 + spring. The spring is assumed to be massless. I will assume that there are no external interactions. There are no external interactions. The internal interactions are only between the carts and the spring, therefore we can associate to it an elastic potential energy.</p>
+<p>In this process, because there are no external force and there is no work done by internalnon conservative forces then mechanical energy is constant. (Note that the mechanical energy is constant before (t &#60; t<sub>i</sub>) and after (t>t<sub>f</sub>) the collision, also momentum is constant).</p>
+<p>Right before the collision the mechanical energy of the system is the sum of the kinetic energy of the carts. Because cart 1 is at rest then</p>
+<p>E(t<sub>i</sub>) = 0 + E = E   (eq.1)</p>
+<p>When cart 1 touches the spring, the spring starts to compress and at the same time starts to push cart 2 (the kinetic energy of 1 decreases and the kinetic energy of 2 increases). At a given instant of time, t<sub>c</sub>, in the figure, the objects have the same kinetic energy.</p>
+<p>From the plot, at the instant tc the kinetic energy of cart 1 is equal to the kinetic energy of cart 2: K<sub>1</sub> = K<sub>2</sub> = \({3E\over 8}\)</p>
+<p>At that instant, the total mechanical energy of cart1+cart2+spring system is</p>
+<p>E(t<sub>c</sub>) = K<sub>1</sub> + K<sub>2</sub> + U<sub>spring</sub> = \({3E\over 8}\) + \({3E\over 8}\) + U<sub>spring</sub> = \({3E\over 4}\) + U<sub>spring</sub>   (eq.2)</p>
+<p>Because the mechanical energy is constant then (eq. 1) = (eq. 2)</p>
+<p>E = \({3E\over 4}\) + U<sub>spring</sub></p>
+<p>\(\Rightarrow\) U<sub>spring</sub> = \({E \over 4}\) </p>
+
+</problem>
+</html>

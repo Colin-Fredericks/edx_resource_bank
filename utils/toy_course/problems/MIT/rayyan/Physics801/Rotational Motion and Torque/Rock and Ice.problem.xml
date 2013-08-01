@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+answerchoice=random.randrange(0,2,1)
+objects=["solid disk","solid sphere","spherical shell"]
+answers=["2/3*H","5/7*H","3/5*H"]
+object=objects[ answerchoice]
+answer=answers[ answerchoice]
+
+</script>
+    <img width="582" alt="Rock and Ice" height="257" src="/static/problems/MIT/rayyan/Physics801/Figures/Rock and Ice.png"/>
+
+      <p><br/>A $object, initially starting from rest, rolls without slipping down an incline of height H. Then the $object travels onto an icy (frictionless) incline and reaches a height h. What is h in terms of H? <br/></p>
+
+    <formularesponse answer="$answer" samples="H@2:3#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo </title>
+
+
+      <p>A yo-yo has an external radius <i>R</i> and an internal radius <i>r</i>. The mass 
+      of the yo-yo is <i>m</i> and its moment of inertia about an axis perpendicular to the screen
+      and passing through its
+       center of mass is <i>I</i>. The yo-yo is being pulled 
+       horizontally by a moderate force of magnitude <i>F</i> applied to a light string wrapped around 
+       the inner shaft as shown. The yo-yo rolls along a horizontal surface without slipping,
+       at low values of <i>F</i>, as shown in the diagram. </p>
+
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK90.PNG" alt="BK90"/>
+
+<p>If the magnitude of the force of friction has a magnitude \(F_f\), and the acceleration 
+of the center of mass has a magnitude <i>a</i>, what is the correct expression for
+ Newton's 2nd law for the yo-yo? (assume right to be positive)</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( F = ma  \)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \( F - F_f  = ma \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( Fr - F_f  = ma \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( F - \mu m g  = ma \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( F - rF_f  = ma\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  
+      </problem>
+</html>

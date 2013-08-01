@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Core Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		
+</style>
+</head>
+<body>
+
+<h2>Core Models</h2>
+
+<p>One central objective of the Modeling Applied to Problem Solving pedagogy is to help you organize your knowledge of the key concepts of Newtonian Mechanics into a framework that allows you to think systematically about which particular knowledge applies to any problem at hand. This has led us to carefully distinguish between core models that we use to represent the important content of Newtonian Mechanics and the many general physical models (like motion with constant acceleration).</p>
+
+<p>In this unit we first introduce the ideas of physical models and core models for mechanics. Then we give a pictorial road-map of these core models. Subsequently we discuss some models familiar from the previous unit: 1-dimensional motion with constant velocity and 1-dimensional motion with constant acceleration.</p>
+
+<p>This unit is focused on the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> core model, but it looks more broadly at the idea of models and modeling as a whole.</p>
+
+<h3>Learning Goals for this Introduction</h3>
+
+<ol style="list-style-type:decimal">
+	<li>Understand what constitutes a physical model</li>
+	<li>Know the specific components of core models in mechanics.</li>
+</ol>
+
+<h3>Models and Physical Models</h3>
+
+<p>A model is a <i>simplified description of a complex entity or process</i>. Models often highlight some particular feature of the modeled entity or process while blatantly ignoring others. For example, some scale models of a particular airplane (e.g. an SR-71) are faithful in appearance but can't fly. Other models of that same plane can fly but don't look very much like a real SR-71. Still other models are not tangible, e.g. computer models of the supersonic air flow over the wings and into the air inlets for the engines of the SR-71. As George Box (an industrial statistician) once said, "All models are wrong. Some are useful."</p>
+
+<p>A <b>physical model</b> (in physics) is a <i>representation of structure and behavior of a physical system and/or its properties.</i> A physical model will describe the system, the state of its constituents (for example the momentum or velocity vs. time), the internal and external interactions, and the changes of state (that is to say, the system's behavior).</p>
+
+<p>Physical models combine the definitions, concepts, procedures, interactions, laws of nature and other relationships that model some particular behavior or pattern found in the physical world. Cognitively, a physical model is a mentally-linked collection of facts, descriptions, and rules that relate to a particular common pattern found in nature.</p>
+
+<p>Models often center on a law of nature - a fundamental relationship among abstract quantities (e.g. F = ma or the conservation of energy). Models generally include several representations, each of which is a different way to conceptualize the model's structure, applicability, and implications. For example position can be represented as an algebraic function of time, a graph of position vs. time, or a strobe picture of a moving object. The modeler's mind will typically recognize immediately when aspects of a particular physical situation are similar to one of these representations and will be ready to apply other representations and features of the model to this situation. The model's different aspects are then activated, and hopefully one will give intuitive insight and another will lead to a solution.</p>
+
+<h3>Models in Newtonian Mechanics</h3>
+
+<p>Newtonian mechanics is concerned primarily with describing how changes in motion result from interactions between objects. The <b>core models</b> that we have selected for mechanics are therefore <strong>process models</strong>. This restriction best fits our overall objective of helping you make connections between our models and problems being solved. While it is perfectly legitimate to call Hooke's Law of spring force vs. spring stretch a model, or to model an ice-skater as moving without friction, we do not include such descriptive models in our core set. Rather we regard these as approximations or assumptions, and they are often given explicitly in the statement of the problems.</p>
+
+<p>In our core models, variables like velocity, momentum, kinetic energy, angular momentum, etc. are <strong>state variables</strong> that describe the motion. In the overall framework of physics, these quantities take on far more richness and significance. </p>
+
+<p>Examples of core physical models relevant to Newtonian mechanics are:</p>
+
+<ul>
+	<li>Dynamics and Net Force</li>
+	<li>Mechanical Energy and Non-Conservative Work</li>
+	<li>Angular Momentum and External Torque</li>
+</ul>
+
+<p>For a formal organization of these models, you may wish to consider this image as we talk about our models.</p>
+
+<p><img src="/static/html/intro/images/CoreModelsSIMJan13.png"/></p>
+
+<h3>Specification of Core Models</h3>
+
+<p>Each of our core models consist of the following pieces:</p>
+
+<ol>
+	<li>Description of the model: its name and the situations, conditions, and idealizations under which the model applies</li>
+	<li>Knowledge and definitions prerequisite for understanding the model</li>
+	<li>Specification of the <b>allowed systems</b>: the types and number of objects allowed in the system for that model. This includes the particular state variables that characterize the system and which the model interrelates</li>
+	<li>The <b>relevant interactions</b> that change these variables</li>
+	<li>Physical theories that underlie the model and the resulting equations and representations</li>
+	<li>The model's <b>mathematical Law of Change</b> that describes how the interactions change the state variables</li>
+	<li>Cues and suggestions for recognizing when the model applies.</li>
+</ol>
+
+<p>The power of Newtonian mechanics is that the small number of models (mechanical energy conservation, constant acceleration, rotational dynamics, etc.) presented in the course is sufficient to describe the behavior of systems composed of many objects (even gasses and liquids) in many seemingly disparate situations.</p>
+
+<p>In our modeling approach to mechanics, the various core models can be applied to a large number of real-world situations. For example, both a baseball falling through the air and a jet moving down a runway might reasonably be idealized to fit the model of motion with constant acceleration.</p>
+
+<p>The challenge in problem solving is to take a real world situation and recognize which model(s) adequately describes the system evolution. Since our models represent only some of the structure in a physical system, more than one model may apply in the same context. For example, if a moving block hits another block, its momentum is critical. But if it hits a spring, its energy is critical.</p>
+
+<p>All of our models are described in more detail in the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/#coremodels">course wiki</a>.</p>
+
+</body>
+</html>
+

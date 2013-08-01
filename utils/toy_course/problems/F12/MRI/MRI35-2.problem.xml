@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 35 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The inner bug needs a greater force to keep itself above the ground all the time.</choice>
+			<choice location="random" correct="false">The inner bug will need more  force to keep itself moving in a smaller circle.</choice>
+			<choice location="random" correct="true">The outer bug will need more  force because of its higher speed.</choice>
+			<choice location="random" correct="false">The outer bug’s trajectory has a sharp point at the bottom, which requires substantial force to create.</choice>
+			<choice location="random" correct="false">The outer bug moves up and down more, which requires more force.</choice>
+			<choice location="random" correct="false">Both bugs feel gravity and the centripetal force, so both have the same total force.</choice>
+			<choice location="random" correct="false">Both bugs are stationary with respect to the wheel, and thus feel zero net force.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

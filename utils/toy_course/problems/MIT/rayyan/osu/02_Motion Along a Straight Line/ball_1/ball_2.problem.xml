@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/ball_2.png" alt="ball_2" height="300"/>
+
+      <p><br/>
+You throw a ball vertically upward.  Which statement best describes the direction and magnitude of the ball's acceleration  while the ball is moving upward?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              Upward, increasing magnitude          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Upward, constant magnitude          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              Upward, decreasing magnitude          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              Downward, increasing magnitude          
+        </choice>
+        <choice location="random" name="foil5" correct="true">
+
+              Downward, constant magnitude          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+              Downward, decreasing magnitude          
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+
+              Zero acceleration          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

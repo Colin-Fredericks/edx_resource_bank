@@ -1,0 +1,17 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <!-- This is CLASS Survey question #39 -->
+  <p>It is possible to explain physics ideas without mathematical formulas.</p>
+   <choiceresponse>
+    <checkboxgroup direction="vertical" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="strongagree"><text>Strongly Agree</text></choice>
+       <choice correct="true" name="agree"><text>Agree</text></choice>
+       <choice correct="true" name="unsure"><text>Unsure or "It Depends"</text></choice>
+       <choice correct="true" name="disagree"><text>Disagree</text></choice>
+       <choice correct="true" name="strongdisagree"><text>Strongly Disagree</text></choice>
+    </checkboxgroup>
+   </choiceresponse>
+  <p>If you chose "it depends," please let us know why.</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4c -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The static friction must be greater than the applied force.</choice>
+			<choice location="random" correct="false">The person’s weight determines the friction.</choice>
+			<choice location="random" correct="false">Newton's Third Law.</choice>
+			<choice location="random" correct="true">The person is not accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

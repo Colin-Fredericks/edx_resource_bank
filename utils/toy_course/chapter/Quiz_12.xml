@@ -1,0 +1,8 @@
+<chapter display_name="Optional: Quiz 12">
+	<sequential display_name="Quiz 12" url_name="Quiz_12">
+        <problem display_name="Quiz 12, Problem 1" filename="MIT/rayyan/check_points/DS/cq_what_changes_frequency.problem" attempts="3"/>
+        <problem display_name="Quiz 12, Problem 2" filename="problems/S13/quiz/13-1.problem" attempts="2"/>
+        <problem display_name="Quiz 12, Problem 3" filename="MIT/rayyan/problemset/hw11/U11_problem1.problem" attempts="3"/>
+        <problem display_name="Quiz 12, Problem 4" filename="MIT/rayyan/problemset/hw11/U11_problem2.problem" attempts="3"/>
+	</sequential>
+</chapter>

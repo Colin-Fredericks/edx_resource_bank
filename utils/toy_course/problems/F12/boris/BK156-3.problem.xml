@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 156 -->
+<problem>
+
+	<p>Using the results of Parts 1 and 2, use Newton’s laws to find the magnitude of the acceleration of block m<sub>1</sub>. </p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( 2g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( 4g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( g \left( \frac{m_1}{m_1 + 2m_2} \right) \)</choice>
+			<choice correct="true">\( g \left( \frac{m_1}{m_1 + 4m_2} \right) \)</choice>
+			<choice correct="false">\( a \left( \frac{m_1}{2m_1 + m_2} \right) \)</choice>
+			<choice correct="false">\( a \left( \frac{m_1}{4m_1 + m_2} \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

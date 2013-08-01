@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="200" alt="PE" height="200" src="/static/problems/MIT/rayyan/osu/images/PE.png"/>
+
+      <p><br/>
+Two balls, one twice as massive as the other, are dropped from the roof of a building (freefall). Just before hitting the ground, the more massive ball has ______ the kinetic energy of the less massive ball. Neglect air resistance.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              One half          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              The same          
+        </choice>
+        <choice name="foil13" correct="true">
+
+              Twice          
+        </choice>
+        <choice name="foil1\4" correct="false">
+
+              Four times          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Energy Bar Diagrams for Constant Mechanical Energy</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+<h3> Potential Energy Curves with Energy Conserved</h3>
+<p>Consider the motion of a single particle when it is acted on by a conservative force that acts along x. This force can be represented by a potential energy curve &mdash; the function U(x) that is a continuous function of x as shown:</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/PECurveWithBarsRed.png"/></p>
+<p>Given that its total energy is constant, the conservative forces transform potential energy to/from kinetic energy as the particle moves along.  In the figure above, the potential energy is increasing for motion to the right. Any position x can be regarded as a "final" point, and we have put two energy bars on the figure. Considering that U increases as x increases, the kinetic energy is decreasing.</p>
+
+<p>Question: How far will it move to the right in this case?</p>
+<table class="wikitable collapsible collapsed">
+<tr><th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td><p>It will move to the point where \(U(x_f)=E_{Tot}\), where it will stop because KE=0.</p>
+</td></tr></table>
+
+<p>Question: What will happen after this?</p>
+<table class="wikitable collapsible collapsed">
+<tr><th><b>Answer</b>
+  [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td><p>The force on the particle will be \(F_x(x_f)= -\frac{dU}{dx}\big|_{x_f}\) which is less than 0 &mdash; hence the force will be to the left and the particle will reverse course and accelerate to the left.</p>
+</td></tr></table>
+
+<p>Important Intuition: You can gain intuition into potential energy curves by imagining that the potential energy curve is a frictionless track that the particle moves on under the influence of gravity. This will enable you to visualize the direction of motion, where it will reverse course, etc. However, it falsely suggests that the particle is moving in two dimensions when in reality it moves only along + or - x.</p>
+</body>
+</html>
+

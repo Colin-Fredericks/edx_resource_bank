@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 17 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Angular momentum is always conserved.</choice>
+			<choice location="random" correct="false">Frictional forces conserve angular momentum.</choice>
+			<choice location="random" correct="false">Friction removes angular momentum from the system.</choice>
+			<choice location="random" correct="false">Objects naturally slow down in their rotation as time goes on.</choice>
+			<choice location="random" correct="false">Friction provides the same torque on the sand and the disc.</choice>
+			<choice location="random" correct="true">All the torques in this problem are internal to the system of disc, bowl, and sand.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

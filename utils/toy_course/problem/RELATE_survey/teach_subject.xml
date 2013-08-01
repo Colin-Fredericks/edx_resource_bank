@@ -1,0 +1,11 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How would you describe the subject that you teach? You may check more than one box.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="physics_teacher"><text> I teach physics.</text></choice>
+      <choice correct="true" name="science_teacher"><text> I teach another science.</text></choice>
+      <choice correct="true" name="math_teacher"><text> I teach mathematics.</text></choice>
+      <choice correct="true" name="non_science_teacher"><text> I teach non-science subjects.</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

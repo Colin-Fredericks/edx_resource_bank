@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="400" src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module4/files/Accelvelpos.gif"/>
+    <br/>
+
+      <p>
+By looking at the position versus time graph shown above, determine whether the position, the velocity and the acceleration are positive or negative at each of the eight numbered instants of time.  Also, determine whether the object whose position is plotted is speeding up ("accelerating") or slowing down ("decelerating") at each of these instants.  <br/>
+<b>To answer:</b> Enter the sign of the position, velocity and acceleration and then "a" for accelerating or "d" for decelerating separated by commas.  For example, if the position is positive, the velocity is positive, and the acceleration is negative (so the object is decelerating), you would enter <b>+,+,-,d</b>.<br/>
+</p>
+
+
+        <p><br/>Time 1:</p>
+
+      <stringresponse answer="+,+,+,a" type="cs">
+        <textline math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </stringresponse>
+      <solution>
+
+          <p>
+            <br/>
+            <i>
+              <font color="green">Correct!  The position is positive since the graph is above the time axis.  The velocity is positive since the graph is moving upward.  The acceleration is positive since the slope is becoming steeper in the positive direction.  The object is "accelerating" rather than "decelerating" since the acceleration vector and the velocity vector are in the same direction (both positive).</font>
+            </i>
+</p>
+
+      </solution>
+
+
+        <p><br/>Time 2:</p>
+
+      <stringresponse answer="+,+,-,d" type="cs">
+        <textline math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </stringresponse>
+      <solution>
+
+          <p>
+            <br/>
+            <i>
+              <font color="green">Correct!  The position is positive since the graph is above the time axis.  The velocity is positive since the graph is moving upward.  The acceleration is negative since the slope is becoming less steep in the positive direction.  The object is decelerating since the acceleration vector and the velocity vector are in opposite directions (velocity positive, acceleration negative).</font>
+            </i>
+</p>
+
+      </solution>
+
+
+        <p><br/>Time 7:</p>
+
+      <stringresponse answer="-,+,+,a" type="cs">
+        <textline math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </stringresponse>
+      <solution>
+
+          <p>
+            <br/>
+            <i>
+              <font color="green">Correct!  The position is negative since the graph is below the time axis.  The velocity is positive since the graph is moving upward.  The acceleration is positive since the slope is becoming steeper in the positive direction.  The object is "accelerating" rather than "decelerating" since the acceleration vector and the velocity vector are in the same direction (both positive).</font>
+            </i>
+</p>
+
+      </solution>
+
+
+        <p><br/>Time 8:</p>
+
+      <stringresponse answer="-,+,-,d" type="cs">
+        <textline math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </stringresponse>
+      <solution>
+
+          <p>
+            <br/>
+            <i>
+              <font color="green">Correct!  The position is negative since the graph is below the time axis.  The velocity is positive since the graph is moving upward.  The acceleration is negative since the slope is becoming less steep in the positive direction.  The object is decelerating since the acceleration vector and the velocity vector are in opposite directions (velocity positive, acceleration negative).</font>
+            </i>
+</p>
+
+      </solution>
+
+      </problem>
+</html>

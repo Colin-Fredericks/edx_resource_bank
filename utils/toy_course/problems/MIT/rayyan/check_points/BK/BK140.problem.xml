@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p> In the diagram, the blocks are connected by an ideal string. The axle of the pulley and the inclined plane are frictionless. Masses \(M_{1}\) and \(M_{2}\) as well as angle &#x3B8; are given. The system is held at rest and then released.
+</p>
+      <br/>
+
+    <img width="474" alt="BK140" src="/static/problems/MIT/rayyan/check_points/Pictures/BK140.png"/>
+          <br/>
+
+        <p>
+Part 1. 
+Which of the following statements are true?
+</p>
+
+        <optionresponse texlayout="horizontal" randomize="no">
+          <ul>
+            <li>
+
+                <p>Block \(M_{1}\) must be moving down the incline</p>
+
+              <optioninput location="random" name="foil1" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>Block \(M_{2}\) must be moving downward</p>
+
+              <optioninput location="random" name="foil2" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>There is just one specific ratio of \(M_{1}\) and \(M_{2}\) that may keep the blocks at rest</p>
+
+              <optioninput location="random" name="foil3" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+There is a range of ratios of \(M_{1}\) and \(M_{2}\) that may keep the blocks at rest
+</p>
+
+              <optioninput location="random" name="foil4" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+Blocks \(M_{1}\) and \(M_{2}\) will have the same magnitude of acceleration
+</p>
+
+              <optioninput location="random" name="foil5" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For block \(M_{1}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil6" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For block \(M_{2}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil7" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For the system of blocks \(M_{1}\) and \(M_{2}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil8" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+The total momentum of blocks \(M_{1}\) and \(M_{2}\) remains constant
+</p>
+
+              <optioninput location="random" name="foil9" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+          </ul>
+        </optionresponse>
+
+
+          <p>
+Part 2. 
+Now suppose there is friction between  \(M_{1}\) and the inclined plane. The system is held at rest and then released. Which of the following statements are true?
+</p>
+
+        <optionresponse texlayout="horizontal" randomize="no">
+          <ul>
+            <li>
+
+                <p>Block \(M_{1}\) must be moving down the incline </p>
+
+              <optioninput location="random" name="foil1" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>Block \(M_{2}\) must be moving downward</p>
+
+              <optioninput location="random" name="foil2" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>There is just one specific ratio of \(M_{1}\) and \(M_{2}\) that may keep the blocks at rest</p>
+
+              <optioninput location="random" name="foil3" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>There is a range of ratios of \(M_{1}\) and \(M_{2}\) that may keep the blocks at rest</p>
+
+              <optioninput location="random" name="foil4" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>Blocks \(M_{1}\) and \(M_{2}\) will have the same magnitude of acceleration</p>
+
+              <optioninput location="random" name="foil5" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For block \(M_{1}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil6" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For block \(M_{2}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil7" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+For the system of blocks \(M_{1}\) and \(M_{2}\), the change in its kinetic energy is equal and opposite to the change in its potential energy
+</p>
+
+              <optioninput location="random" name="foil8" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+The total momentum of blocks \(M_{1}\) and \(M_{2}\) remains constant
+</p>
+
+              <optioninput location="random" name="foil9" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+          </ul>
+        </optionresponse>
+
+
+          <p>
+Part 3. 
+During the motion of the blocks, their speeds remain equal at all times as long as:
+</p>
+
+        <optionresponse texlayout="horizontal" randomize="no">
+          <ul>
+            <li>
+
+                <p>There is no friction in the system </p>
+
+              <optioninput location="random" name="foil1" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The connecting string has negligible mass</p>
+
+              <optioninput location="random" name="foil2" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The connecting string does not stretch</p>
+
+              <optioninput location="random" name="foil3" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The mechanical energy is conserved</p>
+
+              <optioninput location="random" name="foil4" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>Block \(M_{1}\) is moving upward</p>
+
+              <optioninput location="random" name="foil5" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+Block \(M_{1}\) is moving downward
+</p>
+
+              <optioninput location="random" name="foil6" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+          </ul>
+        </optionresponse>
+
+
+          <p>
+Part 4. 
+During the motion of the blocks, the magnitude of the force of tension acting on each block is the same at all times, as long as:
+</p>
+
+        <optionresponse texlayout="horizontal" randomize="no">
+          <ul>
+            <li>
+
+                <p>There is no friction in the system </p>
+
+              <optioninput location="random" name="foil1" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The connecting string and the pulley have negligible masses</p>
+
+              <optioninput location="random" name="foil2" options="('True','False')" correct="True">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The connecting string does not stretch</p>
+
+              <optioninput location="random" name="foil3" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>The mechanical energy is conserved</p>
+
+              <optioninput location="random" name="foil4" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>Block \(M_{1}\) is moving upward</p>
+
+              <optioninput location="random" name="foil5" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+Block \(M_{1}\) is moving downward
+</p>
+
+              <optioninput location="random" name="foil6" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+            <li>
+
+                <p>
+Newton's 3rd law remains valid
+</p>
+
+              <optioninput location="random" name="foil7" options="('True','False')" correct="False">
+</optioninput>
+            </li>
+          </ul>
+        </optionresponse>
+
+    
+  </problem>
+</html>

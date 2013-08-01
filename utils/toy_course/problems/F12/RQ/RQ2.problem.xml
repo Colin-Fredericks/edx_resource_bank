@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<problem>
+
+<!-- Taken from 8.01rq -->
+
+	<p>The motion of a particle \(y(t)\) is Simple Harmonic and described by the graph below. Answer the following questions:</p>
+	<p><img src="/static/problems/F12/RQ/images/SHM1.png" /></p>
+
+	<p>Part 1. Assume that \(A\),\(B\) and \(\omega_0\) are all non zero positive constants. The function that best describes the motion of the particle is:
+
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">\( y(t)= A \cos ( \omega_0 t ) \) </choice>
+		<choice location="random" correct="true" name="2">\( y(t)= A \sin ( \omega_0 t ) \) </choice>
+		<choice location="random" correct="false" name="3">\( y(t)= A \cos ( \omega_0 t ) + B \sin ( \omega_0 t ) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+	<p>Part 2. The amplitude \(A=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">1.5</choice>
+		<choice location="random" correct="true" name="2">3.0</choice>
+		<choice location="random" correct="false" name="3">6.0</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+	<p>
+	Part 3. The angular frequency \(\omega_0=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="true" name="1">\(2 \) </choice>
+		<choice location="random" correct="false" name="2">\( \pi \) </choice>
+		<choice location="random" correct="false" name="3">\( 2\pi \) </choice>
+		<choice location="random" correct="false" name="4">\( \frac{1}{\pi} \) </choice>
+		<choice location="random" correct="false" name="5">\( \frac{1}{2\pi} \) </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+	<p>
+	Part 4. The Frequency \(f=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">\(1 \) </choice>
+		<choice location="random" correct="false" name="2">\( \pi \) </choice>
+		<choice location="random" correct="false" name="3">\( 2\pi \) </choice>
+		<choice location="random" correct="true" name="4">\( \frac{1}{\pi} \) </choice>
+		<choice location="random" correct="false" name="5">\( \frac{1}{2\pi} \) </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+	<p>
+	Part 5. The Period \(T=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">\(1 \) </choice>
+		<choice location="random" correct="true" name="2">\( \pi \) </choice>
+		<choice location="random" correct="false" name="3">\( 2\pi \) </choice>
+		<choice location="random" correct="false" name="4">\( \frac{1}{\pi} \) </choice>
+		<choice location="random" correct="false" name="5">\( \frac{1}{2\pi} \) </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>	
+
+</problem>

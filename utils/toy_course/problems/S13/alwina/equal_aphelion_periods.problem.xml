@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: comparing periods of orbits with equal aphelion -->
+
+<problem>
+  <customresponse>
+	<p>You may take the scale drawn below as accurate</p>
+
+	<img src="/static/problems/S13/alwina/images/equal_aphelion.png"/>
+
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="A" label="A" can_reuse="false"/>
+      <draggable id="B" label="B" can_reuse="false"/>
+      <draggable id="C" label="C" can_reuse="false"/>
+	  <draggable id="1" label="Reason 1" can_reuse="false"/>
+	  <draggable id="2" label="Reason 2" can_reuse="false"/>
+	  <draggable id="3" label="Reason 3" can_reuse="false"/>
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <br/>
+	  <target id="norank" x="50" y="70" w="145" h="35"/>
+    </drag_and_drop_input>
+
+	<text>
+	  <h4>Rank the <b>orbital periods</b> of the orbits shown above from greatest to least.</h4>
+	  <br/>
+	  <p>To rank them: use the letters A-C and the symbols = and >. For example, A = B > C means "A and B have the same min speeds, and they both have a greater min speed than C." If you believe that they cannot all be ranked, select from one of the reasons below and put the corresponding reason number into the bottom row (be sure to leave the top row blank).</p>
+
+      <p>Reason 1: Information about the masses of the objects is needed to compare the periods, so the ranking is not possible.
+	  <br/>Reason 2: The period changes depending on where along the orbit the planet is, so the ranking is not possible
+	  <br/>Reason 3: The period will depend on the speed of the planet. In an elliptic orbit the planet's speed is not constant; therefore the period will change depending on where along the orbit the planet is and the ranking is not possible.
+	  </p>
+    </text>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['A'],'targets': ['item1'],'rule':'unordered_equal'},
+	{'draggables': ['B'],'targets': ['item2'],'rule':'unordered_equal'},	
+	{'draggables': ['C'],'targets': ['item3'],'rule':'unordered_equal'},
+	{'draggables': ['eq'],'targets': ['sign1','sign2'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

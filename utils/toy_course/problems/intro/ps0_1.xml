@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<problem>
+<text>
+	<p>Multiple-choice questions are common throughout the course. Simply select the box next to your answer and click the button marked "Check". Depending on the problem, the "Check" box may be at the bottom of the page, or there may be several "Check" boxes on the same page, each for a different part of the problem.</p>
+	<p>You will receive different numbers of attempts on different problems. You should see below that it says "You have used 0 of 2 submissions." Some problems only give you a single attempt, others give up to ten or even an unlimited number. Each time you click "Check" it will use up an attempt, so try not to click it more than once even if the system is being slow.</p>
+	<p>Which year is commonly referred to as the <i class="it">Annus Mirabilis</i> in Einstein's career?</p>
+	<multiplechoiceresponse>
+	<choicegroup direction="vertical">
+		<choice correct="false" name="1"><text>1879</text></choice>
+		<choice correct="false" name="2"><text>1955</text></choice>
+		<choice correct="true" name="3"><text>1905</text></choice>
+		<choice correct="false" name="4"><text>1927</text></choice>
+		<choice correct="false" name="5"><text>1921</text></choice>
+	</choicegroup>
+	</multiplechoiceresponse>
+</text>
+</problem>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+mu="m1^2/m2^2*l/d"
+</script>
+
+        <p>
+
+A sports company that manufactures skiing equipment is interested in determining the coefficient of friction between two surfaces. Your group, as part 
+of an interview process for a lucrative contract with the sports company, is asked to solve the following problem: 
+
+A bob of mass m1, at the end of a string of length l swings down from a horizontal starting position and hits a box of mass m2. The bob is assumed 
+to stop when it hits the box, and the box slides across the horizontal surface. You measure that the box travels a distance d along a straight line 
+before it stops. Your task is to determine the coefficient of kinetic friction between the box and the surface. Express your answer in terms of m1, m2, l, d 
+and the gravitational acceleration g as required. 
+
+</p><br/>
+
+    <br/>
+    \(\mu_k \)=<formularesponse answer="$omega" samples="m1,m2,l,d@1,1,1,1:10,10,10,10#4"><textline size="25" math="1">
+</textline></formularesponse>
+
+  </problem>
+</html>

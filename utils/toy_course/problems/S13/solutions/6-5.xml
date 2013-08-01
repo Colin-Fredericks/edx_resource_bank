@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<html>
+<!-- Space Junk -->
+<problem>
+
+<h3>Solution</h3>
+
+<p>Let’s choose as our system a small element of the asteroid cloud \(\Delta\) m that is absorbed by the rocket during the interval [t,t+\(\Delta\)t] and the rocket itself. Choose positive x-direction as the direction the rocket is moving. The momentum diagram at the beginning of the interval at time t is shown in the figure below. </p>
+
+<img src="/static/problems/S13/solutions/images/6-5(1).png" />
+
+<p>The momentum diagram at time t + \(\Delta\) t is also shown below.</p>
+
+<img src="/static/problems/S13/solutions/images/6-5(2).png" />
+
+<p>Because we are assuming that there are no external forces on our system,</p>
+
+<p><i>p<sub>x</sub>(t+dt) = p<sub>x</sub>(t)</i></p>
+<p><i>(m+dm)(v+dv) = m.v - dm.u</i></p>
+<p><i>mv + mdv + dm.v + dmdv = mv - dm.u</i></p>
+<p><i>mdv + vdm = -udm</i></p>
+<p><i>mdv = -(u+v)dm</i></p>
+
+<p>By arranging the terms in the last equation we find the differential equation describing the relation between the acceleration of the rocket and the time rate of change of the mass of the rocket</p>
+<p></p>
+<p> 0 = m\({dv\over dt}\) + (v+u)\({dm\over dt}\)</p>
+<p></p>
+<p>We can integrate this equation through the separation of variable technique. Rewrite Eq. (9) as:</p>
+<p></p>
+<p> \({-dv\over u+v}\) = \({dm\over m}\) </p>
+<p></p>
+<p>We can then integrate both sides of Eq. (10) with the limits as shown</p>
+
+<p>- \(\int_{v'=v_{0}}^{v'=v(m)} \! {dv'\over u+v'} \, dv' = \int_{m'=m_{0}}^{m'=m} \! {dm'\over m'} \, dm'\)</p>
+
+<p>integration yields</p>
+
+<p>-ln(<i>\({u + v(m)\over u + v_{0}}\)</i>) = ln(<i>\({m\over m_{0}}\)</i>)</p>
+
+<p>Recall that ln(<i>\({a\over b}\)</i>) = - ln(<i>\({b\over a}\)</i>) so the above equation becomes</p>
+
+<p>ln(<i>\({u + v_{0}\over u + v}\)</i>) = ln(<i>\({m\over m_{0}}\)</i>)</p>
+
+<p>Also recall that exp(ln(<i>\({a\over b}\)</i>)) = \({a\over b}\) and so exponentiating both sides of the equation above yields</p>
+
+<p><i>\({u + v_{0}\over u + v(m)}\)</i> = <i>\({m\over m_{0}}\)</i></p>
+
+<p>After some rearranging, the speed <i>v(m)</i> of the rocket as a function of <i>m</i> can be expressed as</p>
+
+<p><i>m(u + v(m)) = m<sub>0</sub>(u + v<sub>0</sub>)</i></p>
+<p><i>u + v(m) = \({m_{0}\over m}\)(u+v<sub>0</sub>)</i></p>
+<p><i>v(m) = \({m_{0}\over m}\)(u+v<sub>0</sub>)-u</i></p>
+
+<p>In the above expression for the speed <i>v(m)</i> of the rocket is a function of the mass of the rocket. We can determine how the mass of the rocket behaves as a function of time by considering mass conservation. In the interval [t,t + \(\Delta\)t] the rocket sweeps out a tube of length Δl = vΔt . All the asteroids inside this tube are collected by the rocket adding an amount of mass to the rocket Δm1 = \(\rho\) Av \(\Delta\) t . In addition, because the asteroids are moving towards the rocket an additional amount of mass \(\Delta\)m<sub>2</sub> = \(\rho\) Au\(\Delta\)t also is collected by the rocket (see figure below).</p>
+
+<img src="/static/problems/S13/solutions/images/6-5(3).png" />
+
+<p>Therefore the total amount of mass collected by the rocket during the interval is</p>
+<p></p>
+<p> <i>\(\Delta\)m = \(\Delta\)m<sub>1</sub> + \(\Delta\)m<sub>2</sub> = \(\rho\)Av\(\Delta\)t + \(\rho\)Au\(\Delta\)t = \(\rho\)A(v+u)\(\Delta\)t</i></p>
+<p></p>
+<p>Dividing the above equation through by \(\Delta\)t and taking limits we have that</p>
+
+<img src="/static/problems/S13/solutions/images/6-5(4).png" />
+
+<p>We can now substitute the previous equations into each other and find that</p>
+<p><i>\({dm\over dt}\) = \({\rho Am_{0}\over m(u+v_{0})}\)</i></p>
+<p>We can integrate this equation by separating variables to find an integral expression for the mass of the rocket as a function of time</p>
+
+<p>\(\int_{m'=m_{0}}^{m'=m(t)} \! m' \, dm'_{b} = \int_{t'=0}^{t'=t} \! \rho Am_{0}(u+v_{0}) \, dt'\)</p>
+
+<p>We can easily integrate both sides of this equation, yielding</p>
+<p><i> \({1\over 2}\)(m(t)<sup>2</sup> - m<sub>0</sub><sup>2</sup>) = \(\rho\)Am<sub>0</sub>(u+v<sub>0</sub>)t</i></p>
+<p>So the mass of the rocket as a function of time is then</p>
+
+<p><i>m(t) = m<sub>0</sub>\(\sqrt{(1 + {2\rho A(u+v_{0})t)\over m_{0}}}\)</i></p>
+
+<p>We now substitute the above equation into our previous equation yielding the speed of the rocket as a function of time</p>
+
+<p><i>v(t) = \({u+v_{0}\over \sqrt{1 + {2\rho A(u+v_{0})t)\over m_{0}}}}\)-u</i></p>
+
+</problem>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+<!-- elliptical orbits: max speeds -->
+<problem>
+
+<h2>Solution</h2>
+
+<img src="/static/problems/S13/alwina/images/elliptical_orbit_sol.png" />
+
+<h4>Finding the maximum speeds</h4>
+<p>At the perihelion, apply conservation of energy and of angular momentum. Using the distances defined in the image above, the ratio of perihelion velocities is:</p>
+<p>\(\frac{v_Q}{v_P} = \sqrt{\frac {r_1 r_3 (r_1 + r_2} {r_2 r_4 (r_3 + r_4)} }\)</p>
+<p>You will find that the maximum speeds are ranked as follows: D > C > B > A > F > E.</p>
+
+<h4>Finding the minimum speeds</h4>
+<p>Go through the same process as finding the maximum speeds, this time applying conservation of energy and of angular momentum at the aphelion. You will find that the minimum speeds are ranked as follows: A > E > B > F > C > D.</p>
+
+</problem>
+</html>

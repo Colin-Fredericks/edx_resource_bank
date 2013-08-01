@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Video Tutorial: Which will slide first? </title>
+      <p><b>Concept Question: Which one moves first?</b></p>
+    <p><img src="/static/problems/MIT/analiab/Figures/Static_friction_blocks_incline_question.png" alt="Static Friction Blocks Incline Figure" texwrap="none" align="top"/></p>
+
+	<p>You may assume in this problem that the angle of the slope is always low enough that the blocks do not tip over.</p>
+
+	<p>a. Two blocks with the same mass <i>m</i> are both at rest on a surface at an angle \(\alpha\) with respect to the horizontal, as shown in the left-hand image above. One is made of plastic and the other is made of rubber. The coefficient of static friction of the rubber is larger than the one of plastic. When the angle of the incline increases, which of the objects will start sliding first?</p>
+      <optionresponse texlayout="vertical" randomize="no">
+        <optioninput name="Foil1" options="('the rubber block','the plastic block','both move at the same time')" correct="the plastic block"></optioninput>
+      </optionresponse>
+
+        <p>b. The two blocks are now made of the same plastic material but one has twice 
+        the mass than the other, as shown in the central image above.  When the angle increases which of the blocks move 
+        first?</p>
+      <optionresponse texlayout="vertical" randomize="no">
+        <optioninput name="Foil2" options="('block of mass 2m','block of mass m','both move at the same time')" correct="both move at the same time"></optioninput>
+      </optionresponse>
+
+
+        <p>c. The blocks are identical, same mass and same material, but they are placed 
+        on the incline in such a way that one has a smaller surface area in contact 
+        with than the other. This is shown in the right-hand image above. When the angle is increased which one moves first?</p>
+        <optionresponse texlayout="vertical" randomize="no">
+          <optioninput name="Foil3" options="('the one having a smaller surface area in contact','the one having a larger surface area in contact','both move at the same time')" correct="both move at the same time"></optioninput>
+        </optionresponse>
+
+    <br/>
+        <h3> Helpful Resource: Demonstration by Professor Walter Lewin</h3>
+    <table border="1">
+      <tr>
+        <td>
+          <b>Static friction of blocks on an incline</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/XBAqWD3pTis?rel=0"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+	<p>This video is part of Prof. Lewin's <a href="http://ocw.mit.edu/courses/physics/8-01-physics-i-classical-mechanics-fall-1999/video-lectures/lecture-8/">Lecture #8</a>,  8.01 Physics I: Classical Mechanics, Fall 1999. Massachusetts Institute of Technology: <a href="http://ocw.mit.edu">MIT OpenCourseWare</a>, Accessed 22 Feb, 2012. License: Creative Commons BY-NC-SA.</p></td>
+      </tr>
+    </table>
+    
+    <p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Lewin_Friction_Blocks_Incline.mp4">Click here to download this video.</a></p>
+
+      </problem>
+</html>

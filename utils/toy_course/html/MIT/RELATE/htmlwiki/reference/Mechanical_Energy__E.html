@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Mechanical Energy, External Work, and Internal Non-Conservative Work</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Gravitational_intera').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Gravitational_intera.html');
+$('#Elastic_restoring_in').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+$('#Rigid_body').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rigid_body.html'); 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<h2> Compatible Systems</h2>
+<p>This Model can simultaneously describe both the rotational and translational motion of a system composed of any number of<!--<a id="go" rel="leanModal" href="#Rigid_body" name="Rigid_body" onclick="domath()">-->rigid bodies<!--</a>--> and <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particles<!--</a>-->.  
+</p>
+<h2> Relevant Interactions</h2>
+<p>Internal conservative interactions such as <!--<a id="go" rel="leanModal" href="#Gravitational_intera" name="Gravitational_intera" onclick="domath()">-->gravity<!--</a>--> and <!--<a id="go" rel="leanModal" href="#Elastic_restoring_in" name="Elastic_restoring_in" onclick="domath()">-->elastic restoring interactions<!--</a>--> are generally described by their associated potential energy, and therefore do not change the total mechanical energy of the system.  External conservative interactions and <b>any</b> non-conservative interactions (internal <b>or</b> external) that perform work do change the total mechanical energy.
+</p>
+<h2> Definitions</h2>
+<h4> Translational Kinetic Energy</h4>
+<p><m>$K = \frac{1}{2}mv^{2}$</m>
+</p>
+<h4> Rotational Kinetic Energy</h4>
+<p><m>$K_{rot} = \frac{1}{2}I\omega^{2}$</m>
+</p>
+<h4> Gravitational Potential Energy</h4>
+<p><i><b>Near Earth Gravity</b></i>
+</p><p><m>$\mathcal{}U_{g} = mgh$</m>
+</p><p><br />
+<i><b>Universal Gravitation</b></i>
+</p><p><m>$U_{g} = -\frac{Gm_{1}m_{2}}{r_{21}}$</m>
+</p>
+<h4> Elastic Potential Energy</h4>
+<p><m>$U_{e} = \frac{1}{2}kx^{2}$</m>
+</p>
+<h4> System Mechanical Energy</h4>
+<p><m>$\mathcal{ }E=\sum_{int}K+\sum_{int}K_{rot}+\sum_{int}U_{g}+\sum_{int} U_{e}$</m>
+</p>
+<h4> Net Work</h4>
+<p>
+<m>$ W_{net} = \int_{i}^{f} ( \sum_{ext\;{\rm or}\;NC} \vec{F}\cdot d\vec{r}\;)+ \sum_{ext\;{\rm or}\;NC} \vec{\tau}\cdot d\vec{\theta}) $</m>
+<br />
+<br />
+<m>$W_{net}= \int_{t_{i}}^{t_{f}} (\sum_{ext\;\;{\rm or}\;\;NC} \vec{F}\cdot\vec{v}\;+ \sum_{ext\;\;{\rm or}\;\;NC} \vec{\tau}\cdot \vec{\omega}) dt$</m>
+</p>
+<h2> Mathematical Representation</h2>
+<h4> Differential Form</h4>
+<p><m>$\frac{dE}{dt} = \sum_{ext\;\;{\rm or}\;\;NC}\vec{F}\cdot \vec{v}\;+ \sum_{ext\;\;{\rm or}\;\;NC}\vec{\tau}\cdot \vec{\omega}$</m>
+</p>
+<h4> Integral Form</h4>
+<p><m>$\mathcal{}E_{f} = E_{i} + W_{net}$</m>
+</p>
+<!--<div id="Rigid_body" class="popup"></div>
+<div id="Point_particle" class="popup"></div>
+<div id="Gravitational_intera" class="popup"></div>
+<div id="Elastic_restoring_in" class="popup"></div>-->
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Are you taking this course with the intention of obtaining Continuing Education Units?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="CEU_yes"><text> Yes, I hope to obtain CEUs from the AAPT for completing this course.</text></choice>
+      <choice correct="true" name="CEU_schoolboard"><text> Yes, I hope to obtain CEUs for completing this course from my local school board.</text></choice>
+      <choice correct="true" name="CEU_dont_need"><text> No, I do not need CEUs.</text></choice>
+      <choice correct="true" name="CEU_expensive"><text> No, I cannot afford to pay for them.</text></choice>
+      <choice correct="true" name="CEU_other"><text> No, other reason.</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 28 -->
+
+<problem>
+
+	<p>A brick of mass m slides down a frictionless slope of height h. You may treat the brick as a point object. At the bottom of the slope is a flat
+	 patch with friction. </p>
+	<img src="/static/problems/F12/MRI/images/MRI28.png" height="197" />
+
+	<h3>Part 1</h3>
+	<p>The goal is to determine the eventual speed of the brick after it has moved along the flat area for a given time \(t\). Consider the following approach for 
+	determining the speed.</p>
+
+<p>	<ol>
+		<li>Use conservation of energy to determine the kinetic energy of the brick at the bottom of the slope.</li>
+		<li>Use the mass of the brick to determine the normal force.</li>
+		<li>Calculate the frictional force on the brick.</li>
+		<li>Use the work-energy theorem to determine the change in kinetic energy over a particular distance, and thus the brick’s new kinetic energy.</li>
+		<li>Use the new kinetic energy to determine the speed of the brick.</li>
+	</ol>
+	</p>
+	<p>That solution has an error. At what step does this error appear? (Enter a number from 1 to 5).</p>
+
+	<numericalresponse answer="4">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+	</numericalresponse>
+
+	<h3>Part 2</h3>
+	<p>How do you know that the error is there?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">We are missing information that would be necessary for that step.</choice>
+			<choice location="random" correct="true">We have not connected the distance traveled with the time elapsed.</choice>
+			<choice location="random" correct="false">Energy lost to friction cannot be accounted for; we cannot use energy in this step.</choice>
+			<choice location="random" correct="false">The effect of the curved slope cannot be accounted for.</choice>
+			<choice location="random" correct="false">This is an energy problem; the use of force is inappropriate.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

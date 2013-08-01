@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <img src="/static/problems/MIT/boriskor/BKimages/struck_pivoted_bar_swinging_up.png" alt="Vertical pivoted bar struck by horizontal projectile"/>
+    <br/>
+
+    <p>A uniform bar of mass \(m\) and length \(l\) is suspended on a frictionless hinge. A horizontally launched blob of clay of mass \(m\) strikes the bottom end of the bar and sticks to it. After that, the bar swings upward. What is the minimum initial speed \(v\) of the blob of clay that would enable the rod to swing a full circle?</p>
+	<p><b>Which concepts/laws would be most helpful in solving this problem?</b> Select the best answer from the options below.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              kinematics of rotational motion; conservation of energy          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              conservation of momentum, conservation of energy          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+              conservation of angular momentum, conservation of momentum          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+              conservation of angular momentum, conservation of energy          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              conservation of energy, Newton's laws          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+              Newton's laws, conservation of angular momentum          
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+              conservation of angular momentum, kinematics of rotational motion          
+        </choice>
+        <choice location="random" name="foil8" correct="false">
+              Newton's laws, kinematics of rotational motion          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

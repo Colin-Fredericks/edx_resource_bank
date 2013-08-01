@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/circular.png" alt="circular" height="150"/>
+
+      <p><br/>
+Bob the block is placed next to the cylindrical glass wall of an amusement park ride.  The cylinder then spins up to a constant angular velocity, and spinning Bob remains stuck to the wall even when the floor drops away. The free-body diagram of all forces acting on Bob looks like:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              C          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              D          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              None of the Above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

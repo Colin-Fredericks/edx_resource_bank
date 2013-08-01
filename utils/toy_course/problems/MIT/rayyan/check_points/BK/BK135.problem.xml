@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Block on Spring </title>
+    <script type="loncapa/python">
+
+m = random.randrange(40, 80, 5)/100
+vmax = random.randrange(12, 18, 1)/10
+amax = random.randrange(12, 45, 1)/100
+T = 2*3.14159 *  vmax /  amax
+A =  vmax* vmax/ amax
+d =  A/(math.sqrt(2))
+x = math.sqrt(2/3)* A
+
+</script>
+
+<p>A block of mass m = $m kg is connected to a spring. The block is in simple harmonic motion during which its maximum velocity is v<sub>max</sub>  = $vmax m/s and its maximum acceleration is a<sub>max</sub> =  $amax m/s^2. </p>
+
+<br/>
+<p>Part 1. Find the period of oscillations.</p>
+
+      <numericalresponse answer="$T" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Part 2. Find the amplitude of the oscillations.</p>
+
+      <numericalresponse answer="$A" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Part 3. How far is the block from equilibrium at the moment when its kinetic energy equals to its potential energy? Assume that potential energy is zero at equilibrium.</p>
+
+      <numericalresponse answer="$d" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Part 4. How far is the block from equilibrium at the moment when its kinetic energy equals to one-third of its maximum kinetic energy? Assume that potential energy is zero at equilibrium.</p>
+
+      <numericalresponse answer="$x" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

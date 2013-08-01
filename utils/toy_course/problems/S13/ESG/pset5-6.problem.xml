@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+	<!-- Two particles colliding -->
+	<script type="loncapa/python"> 
+Distance = "(m2*d+m1*v1*(tf-ti))/(m1+m2)"
+	</script>
+
+	<h2>Two particles colliding</h2>
+	<p>Two small particles of mass m<sub>1</sub> and mass m<sub>2</sub> attract each other with a force that varies at the 
+	inverse cube of their separation. At time t<sub>i</sub>, m<sub>1</sub> has a velocity of magnitude v<sub>1</sub>  directed 
+	towards m<sub>2</sub> , which is at rest a distance d away. At time t<sub>f</sub>, the particles collide. How far does m<sub>1</sub> 
+	travel in time interval t<sub>f</sub>-t<sub>i</sub>?</p>
+	<p>Type m1 for m<sub>1</sub>, m2 for m<sub>2</sub>, v1 for v<sub>1</sub>, ti for t<sub>i</sub> and tf for t<sub>f</sub>.</p>
+
+	<img src="/static/problems/S13/ESG/images/5-6.png"/>
+
+	<formularesponse type="cs" samples="m1,m2,v1,d,ti,tf@1,1,1,1,1,1:10,10,10,10,10,10#2" answer="$Distance">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p>Distance =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A uniform cylinder of outer radius \(R\) and Mass \(M\) with moment of inertia about the center of mass \(I_{cm}\), starts from rest and moves down an 
+incline tilted at an angle \(\beta\) from the horizontal. The center of mass of the cylinder has dropped a vertical distance \(h\) when it reached the bottom 
+of the incline. Let \(g\) denote the gravitational constant. The coefficient of static friction between the cylinder and the surface is \(\mu_s\). The 
+cylinder rolls without slipping down the incline. The goal of this problem is to find the magnitude of the velocity of the center of mass of the cylinder 
+when it reaches the bottom of the incline.
+  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/rollingdown.png" width="550"/>
+    </p>
+<p>
+The problem can be solved by:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">Applying the net torque about the center of mass and the net force on the cylinder and using kinematics.</choice>
+<choice location="random" correct="false" name="2">Applying conservation of mechanical energy. </choice>
+<choice location="random" correct="false" name="3">Applying the net torque about a fixed point that lies along the line of contact between the cylinder and the surface and using kinematics. </choice>
+<choice location="random" correct="true" name="4">All of the above</choice> 
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

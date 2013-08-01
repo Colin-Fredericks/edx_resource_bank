@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<problem>
+<!-- Two rotating balls -->
+<script type="loncapa/python"> 
+T="(mB*mA)/(mA+mB)*V^2/L" 
+</script>
+
+		<h2>Two rotating balls</h2>
+		<p>Two balls, A and B, with masses m<sub>A</sub> and m<sub>B</sub> are connected by a taut, massless string, and are 
+		moving along a horizontal frictionless plane. The plane is parallel to the screen and gravity points into the screen.
+		The distance between the centers of the two balls is L. At a certain instant, the velocity of ball B has magnitude V 
+		and is directed perpendicular to the string and parallel to the horizontal plane, and the velocity of ball A is zero. </p>
+		<p>The goal is to find the force of tension in terms of m<sub>A</sub>, m<sub>B</sub>, V and L. </p>
+		<p>Hint: before you start solving the problem describe the motion of the balls.</p>
+		<p>Type mA for m<sub>A</sub>, mB for m<sub>B</sub>.</p>
+
+		<img src="/static/problems/S13/ESG/images/5-7.png"/>
+
+		<formularesponse  samples="mA,mB,V,L@1,1,1,1:10,10,10,10#2" answer="$T">
+			<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+			<p>T =</p>
+			<textline size="40" math="1"/>
+		</formularesponse>
+
+</problem>
+</html>

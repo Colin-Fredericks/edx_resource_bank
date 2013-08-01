@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/acceleration.png" alt="acceleration" height="200"/>
+
+      <p><br/>
+Two 1 kg wheels with fixed hubs start from rest, and a force is applied to each of them as shown. Assume that the hub and spokes are massless. If F1 = 1 N, how large must F2 be in order to impart identical angular accelerations upon the wheels?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              .25N          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              .5          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              1N          
+        </choice>
+        <choice name="foil4" correct="true">
+
+              2N          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              4N          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

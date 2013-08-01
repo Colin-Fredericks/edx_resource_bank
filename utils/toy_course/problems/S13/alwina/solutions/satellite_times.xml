@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<html>
+<!-- satellite times -->
+<problem>
+
+<h2>Solution</h2>
+
+<p>Kepler’s Third Law is effective even in the case of a “degenerate” orbit, such as one that falls straight inward. In this case, the semi-major axis would be half of the distance to the center of the planet. Instead of finding a period for such an orbit, one could find the “time to crash” as half of the period. Therefore, an object crashing from a particular distance takes as much time as an object orbiting at one quarter of the distance. You will find that C > B > A = F > E > D.</p>
+
+</problem>
+</html>

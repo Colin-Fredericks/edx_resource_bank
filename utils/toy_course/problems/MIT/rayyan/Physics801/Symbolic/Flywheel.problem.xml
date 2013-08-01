@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="600" alt="Flywheel" height="300" src="/static/problems/MIT/rayyan/Physics801/Figures/Flywheelwithlabels.png"/>
+    <script type="loncapa/python">
+
+
+</script>
+
+<p>A flywheel on a small engine is connected to a piston as shown in the picture. The flywheel rotates with a crankshaft of length R that holds a crankpin. The crankpin is connected to a connecting rod of length L that is attached to a wristpin on the piston.<br/> 
+If the flywheel (and hence crankshaft) turns at a constant rate of W radians per second, what is the distance between the wrist pin and the center of the flywheel when the piston is accelerating with the greatest magnitude? Hint: solve this conceptually.</p>
+
+    <multiplechoiceresponse max="6" direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+                \(L-R\)
+        </choice>
+        <choice name="foil2" correct="false">
+				Somewhere between \(L-R\) and \(\sqrt{L^2-R^2}\)
+        </choice>
+        <choice name="foil3" correct="false">
+                \(\sqrt{L^2-R^2}\)
+        </choice>
+        <choice name="foil4" correct="false">
+				Somewhere between \(\sqrt{L^2-R^2}\) and \(L+R\)
+        </choice>
+        <choice name="foil5" correct="true">
+                \(L+R\)
+        </choice>
+        <choice name="foil6" correct="false">
+				\(L-R\) and \(L+R\)
+        </choice>
+      </choicegroup>
+      
+	  <hintgroup showoncorrect="no">
+<p>Use the following picture to help you.<br/></p>
+<img width="500" alt="Flywheel Solution" height="355" src="/static/problems/MIT/rayyan/Figures/FlywheelSoln.png"/>
+      </hintgroup>
+    </multiplechoiceresponse>
+
+      <solution>
+      <br/>
+      <img width="500" alt="Flywheel Solution" height="355" src="/static/problems/MIT/rayyan/Figures/FlywheelSoln.png"/>
+
+        <p><b><i>Solution:</i></b><br/>
+Great! You should have been able to solve this conceptually. One way to do this is to view both the wheel and the rod as two circles that move back and forth as they are connected at a point P. You can then see how the total acceleration is really the sum of the acceleration of vector <b>a</b> and the acceleration of vector <b>b</b>. The following steps can be used to show the correct answer is R+L:<br/>
+1.) Since w is constant, <b>a</b> moves left and right in a sinusoidal relationship. In fact, <b>a</b> = R*cos(w*t) <b>i</b>. Therefore, the magnitude of the acceleration of <b>a</b> is greatest when a = R. (You can differentiate twice to see this).<br/>
+2.) A similar sinusoidal argument shows that the acceleration of <b>b</b> is greatest when b = L. We can prove this by arguing that if the rod rotated at a constant angular velocity, <b>b</b>'s acceleration would be maximized when b = L (just like the case for when a = R). However, we know that the rod does not have a constant angular velocity. This is okay because the angular velocity about the piston is maximized when b = L (as P has the greatest vertical speed when a = R). Since the acceleration of <b>b</b> increases as the angular speed about the piston increases, the maximum acceleration of <b>b</b> happens when b = L.<br/>
+3.) So now we can find when the acceleration of the piston is truly maximized by when both the maximum acceleration of a and b happen at the same time in the same direction. a can equal R at two places: when the distance is L+R and when the distance is L-R. L-R cannot be the correct solution because as <b>a</b> is accelerating to the right, b is accelerating to the left. (You can see this by drawing <b>a</b> and <b>b</b> for small changes in the angle). Therefore, at L-R, the accelerations of a and b partially cancel each other. L+R must be the correct solution because while <b>a</b> is accelerating to the left, <b>b</b> is also accelerating to the left. Therefore, the accelerations add, giving the maximum acceleration of the piston.
+</p>
+
+    </solution>
+              </problem>
+</html>

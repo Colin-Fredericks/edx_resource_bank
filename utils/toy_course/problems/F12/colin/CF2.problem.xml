@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Colin problem #2 -->
+
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+t = random.randrange(70000, 74000, 100)
+G = 6.67*10**(-11)
+M = 10**30
+
+r = ( t**2*( (G*M) / (4*3.14**2) ))**(1/3)
+
+</script>
+
+	<p>A planet discovered in another solar system has an orbital period of just $t seconds - about <a href="http://www.nature.com/news/2009/090203/full/news.2009.78.html">20 hours!</a> If its sun's mass is half that of our sun's, and the planet's orbit is circular, how far from the star does it orbit (in meters)? You may need to look up the mass of our sun.</p>
+
+	<numericalresponse answer="$r" unit="m">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+</problem>
+</html>

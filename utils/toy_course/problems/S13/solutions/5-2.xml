@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+<!-- two blocks -->
+
+<h3>Solution</h3>
+
+<p>System: bullet + wood</p>
+<p>Interactions: The net external forces on the system is zero because there is no friction, the internal forces are the collision forces but they do not change the momentum of the system, therefore momentum is constant.</p>
+<p>In both cases, right before the collision, the bullet is traveling to the right with a momentum of magnitude p<sub>o</sub> and the blocks are at rest, therefore the initial momentum of the system is:</p>
+<p>p(t<sub>i</sub>) = p<sub>o</sub> + 0 = p<sub>o</sub>               (eq.1) </p>
+<p>After the collision with the steel block, the bullet bounces back with its incident speed and the block moves to the right with momentum of magnitude p<sub>steel</sub>, therefore the momentum right after the collision is:</p>
+<p>p(t<sub>f</sub>) = -p<sub>o</sub> + p<sub>steel</sub>              (eq.2) </p>
+<p>Because momentum is constant then p(t<sub>i</sub>) = p(t<sub>f</sub>), and from (eq. 1) and (eq.2):</p>
+<p>p<sub>o</sub> = -p<sub>o</sub> + p<sub>steel</sub>   \(\rightarrow\) p<sub>steel</sub> = 2p<sub>o</sub>           (eq.3) </p>
+<p>After the collision with the wood block, both bullet and block are moving together to the right with the same speed. Let p<sub>b</sub> and p<sub>wood</sub> be the magnitude of the final momentum of the bullet and wood block, respectively. Then the momentum of the system after the collision is</p>
+<p>p(t<sub>f</sub>) = p<sub>b</sub> + p<sub>steel</sub>               (eq.4) </p>
+<p>Because momentum is constant then p(t<sub>i</sub>) = p(t<sub>f</sub>), from (eq. 1) and (eq. 4):</p>
+<p>p<sub>o</sub> = p<sub>b</sub> + p<sub>wood</sub>  \(\rightarrow\) p<sub>wood</sub> = p<sub>o</sub> - p<sub>b</sub> \(\le\) 2p<sub>o</sub> = p<sub>steel</sub></p>
+<p>Therefore the momentum of the wood block is smaller than the momentum of the steel block.
+Because both blocks have the same masses then steel moves faster than the wood block.</p>
+
+</problem>
+</html>

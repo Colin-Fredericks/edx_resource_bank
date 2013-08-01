@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI17-1.problem" display_name="Disc Drop Angular Momentum" attempts="1" weight="1"/>
+	<problem filename="F12/MRI/MRI17-2.problem" display_name="Disc Drop Angular Momentum, Part 2" attempts="2" weight="1"/>
+	<discussion for="Disc Drop Angular Momentum" id="MReV_Summer2013_MRI17" discussion_category="Angular Momentum" />
+</vertical>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A time \(t_0\) a bowling ball of mass \(m\) and radius \(R\) is  thrown down an alley with an initial speed \(v_0\) and no spin. At a given instant of time \(t_f\)
+the ball starts to roll without slipping.  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/bowlingBallNew.png" width="800"/>
+    </p>
+<p>
+During the time interval \(t_0 \le t \le t_f\), while the ball is slipping and rolling,
+angular momentum is conserved around:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">The center of mass of the bowling ball. </choice>
+<choice location="random" correct="false" name="2">A fixed point along the horizontal line going through the center of mass. </choice>
+<choice location="random" correct="true" name="3">A fixed point Q on the surface. (Point Q is on the straight line described by the point of contact between the ball and the surface) </choice>
+<choice location="random" correct="false" name="4">Any fixed point, including any of the points above.</choice> 
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

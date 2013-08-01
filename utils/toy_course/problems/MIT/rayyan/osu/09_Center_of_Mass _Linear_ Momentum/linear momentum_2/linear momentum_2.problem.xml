@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/linear_4.png" alt="linear_4" height="200"/>
+
+      <p><br/>
+A rocket ship parked at rest in space suddenly explodes into 3 pieces of equal mass traveling in the directions shown. If the piece traveling upward has a speed of 150 m/s, what are the speeds of the other two pieces?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              150 m/s          
+        </choice>
+        <choice name="foil2" correct="true">
+
+              300 m/s          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              600 m/s          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              900 m/s          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              1200 m/s          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              1500 m/s          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              They have different speeds          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

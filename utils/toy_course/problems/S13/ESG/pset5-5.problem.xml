@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<html>
+<!-- A ball–rod collision -->
+<problem>
+
+	<script type="loncapa/python">
+R = "(Vi/2)*t*i+(L/4)*j" 
+x="(Vi/2)*t"
+y="L/4"
+Vx="Vi/2"
+Vy="0"
+</script>
+<!--
+	<script type="loncapa/python">
+V = "(Vi/2)*i" 
+</script>
+-->
+
+	<h2>A ball-rod collision</h2>
+
+	<p>A slender uniform rod of length L and mass M rests along the y-axis on a frictionless and horizontal table contained in the x-y plane. A particle of 
+	equal mass M is moving along the x-axis at a speed V<sub>i</sub>. At t=0 the particle strikes the end of the rod and sticks 
+	to it. Find the position \(\vec{R}_{cm}(t)\) and the \(\vec{V}_{cm}(t)\)  velocity  of the center of mass as a function of time. 
+	Enter Vi for V<sub>i</sub>. (Gravity is into the screen).</p>
+<!--
+	<p>Type i for \(\vec{i}\), j for \(\vec{j}\), Vi for V<sub>i</sub>.</p>
+-->	
+
+	<img src="/static/problems/S13/ESG/images/5-5.png"/>
+
+<p><b>Part a.</b> The position of the center of mass \(\vec{R}_{cm}(t)=X_{cm}(t)\hat{i}+Y_{cm}(t)\hat{j}\)</p>
+
+	<formularesponse samples="Vi,M,L,t@1,1,1,1:10,10,10,10#2" answer="$x">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p> The x-component, \(X_{cm}(t)=\)</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+    <formularesponse samples="Vi,M,L,t@1,1,1,1:10,10,10,10#2" answer="$y">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p> The y-component, \(Y_{cm}(t)=\)</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+<p><b>Part b.</b> The velocity of the center of mass \(\vec{V}_{cm}(t)=V_{x}(t)\hat{i}+V_{y}(t)\hat{j}\)</p> 		
+
+	<formularesponse samples="Vi,M,L,t@1,1,1,1:10,10,10,10#2" answer="$Vx">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p> The x-component, \(V_{x}(t)=\)</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+<formularesponse samples="Vi,M,L,t@1,1,1,1:10,10,10,10#2" answer="$Vy">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p> The y-component, \(V_{y}(t)=\)</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+<!--	
+	<formularesponse samples="L,Vi,t,i,j@1,1,1,1,1:10,10,10,10,10#10" answer="$V">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		<p>\(\vec{V}_{cm}(t)\) =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+-->
+
+</problem>
+</html>

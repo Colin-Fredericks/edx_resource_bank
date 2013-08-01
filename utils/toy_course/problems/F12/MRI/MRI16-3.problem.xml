@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 16 -->
+
+<problem>
+
+	<p>This problem was incorrect and has been changed to 0 points. The text is maintained here as a placeholder.</p>
+
+	<p><del>Which of these quantities is conserved from the moment immediately before the collision to the moment immediately after the collision?</del></p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Linear momentum of the 2-bars system only</choice>
+			<choice location="random" correct="true">Angular momentum of the 2-bars system (about the pivot point) only</choice>
+			<choice location="random" correct="false">Kinetic energy of the 2-bars system only</choice>
+			<choice location="random" correct="false">Mechanical energy of the 2-bars-Earth system only</choice>
+			<choice location="bottom" correct="false">None of them</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

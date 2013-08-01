@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Static Friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h2>Static Friction Force</h2>
+
+<p>The previous module introduced kinetic friction, the rubbing force that arises between two objects that are sliding with respect to each other. Objects that are in contact can also experience friction without moving with respect to each other. This form of friction is called <i>static friction</i>. This force will arise when some other interaction tries to produce slipping at the surface of contact. Static friction will resist this process.</p>
+
+<h3>Learning Goals</h3>
+
+<p>After completing this module, you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Define the terms "static" and "kinetic" in the context of friction.</li>
+	<li>Define the coefficient of static friction and use it to relate the limiting value of the static friction force and the associated normal force.</li>
+	<li>Use Newton's Second Law plus the presumed constraint that two objects do not slide relative to each other to compute the static friction force, and check that your result is consistent with the maximum value for the static friction.</li>
+</ul>
+
+<h3>The Coefficient of Static Friction</h3>
+
+<p>If only static friction opposes the relative motion of two objects and other forces on the objects increase, at some point&#160;the objects will start to slide relative to each other, and the kinetic friction force will be applied in the place of the static friction.&#160;This transition occurs when the <em>static friction reaches its maximum value</em>. This limiting value of static friction is also proportional to the normal force. Just like the coefficient of kinetic friction introduced in the previous module, the coefficient of static friction is a dimensionless constant that characterizes the contact between two surfaces. The coefficient of static friction, determined experimentally, is generally larger than the coefficient of kinetic friction for the same surface pair. (Notice that the aluminum on aluminum table entry below is an exception to this general rule. In this case, the metal surface interactions include a complex effect called galling).</p>
+
+<p>A more important difference than their relative size, however, is the difference between the relationship implied by the static friction coefficient versus that implied by the kinetic friction coefficient. In contrast with the coefficient of kinetic friction (which specifies the exact value of the friction force given the normal force) the coefficient of static friction <i>only specifies the limiting value (maximum) of the static friction force</i>.</p>
+
+<p>The mathematical relationship satisfied by the static friction force acting on object A as a result of its contact with object B is:</p>
+
+<p>\[f^{s}_{AB} \le \mu_{s} N_{AB}\]</p>
+
+<p>where the inequality indicates that &#956;<sub><i>s</i></sub><i>N</i><sub><i>A</i><i>B</i></sub> is the maximum size that the static friction force between objects A and B can have.</p>
+
+<p>When static friction is acting, it is generally less than its maximum value. Only when the system is "on the verge of slipping" or "just before slipping begins" does static friction attain its maximum value.</p>
+<table>
+<tbody>
+<tr>
+	<th colspan="4">Various Coefficients of Friction</th>
+</tr>
+<tr>
+	<td><b>Materials</b></th>
+	<td><b>Interface Condition</b></th>
+	<td><b>Kinetic</b></th>
+	<td><b>Static</b></th>
+</tr>
+<tr>
+	<td>Steel on Steel</td>
+	<td>Dry</td>
+	<td>0.42-0.57</td>
+	<td>0.74-0.78</td>
+</tr>
+<tr>
+	<td>Steel on Steel</td>
+	<td>Lubricated (Graphite)</td>
+	<td>0.058</td>
+	<td>&#160;</td>
+</tr>
+<tr>
+	<td>Aluminum on Aluminum</td>
+	<td>Dry</td>
+	<td>1.4</td>
+	<td>1.05</td>
+</tr>
+<tr>
+	<td>Glass on Glass</td>
+	<td>Dry</td>
+	<td>0.4</td>
+	<td>0.94</td>
+</tr>
+<tr>
+	<td>Wood on Wood</td>
+	<td>Dry</td>
+	<td>&#160;</td>
+	<td>0.35</td>
+</tr>
+<tr>
+	<td>Wood on Wood</td>
+	<td>Wet</td>
+	<td>&#160;</td>
+	<td>0.2</td>
+</tr>
+<tr>
+	<td>Wood on Brick</td>
+	<td>Dry</td>
+	<td>&#160;</td>
+	<td>0.6</td>
+</tr>
+<tr>
+	<td>Wood on Leather</td>
+	<td>Dry</td>
+	<td>&#160;</td>
+	<td>0.35</td>
+</tr>
+<tr>
+	<td>Ice on Ice</td>
+	<td>Clean, 0&#176; C</td>
+	<td>0.02</td>
+	<td>0.1</td>
+</tr>
+<tr>
+	<td>Ice on Ice</td>
+	<td>Clean, -12&#176; C</td>
+	<td>0.035</td>
+	<td>0.3</td>
+</tr>
+<tr>
+	<td>Ice on Ice</td>
+	<td>Clean, -80&#176; C</td>
+	<td>0.09</td>
+	<td>0.5</td>
+</tr>
+</tbody>
+</table>
+
+<div style="font-size:smaller;margin:1px 0px 0px 20px;width:550px;line-height:100%">
+<p>1. From "Coefficient of Friction" in <a href="http://www.hbcpnetbase.com/" class="external text" rel="nofollow"><i>CRC Handbook of Chemistry and Physics, 90th Edition (Internet Version 2010)</i></a>, David R. Lide, ed., CRC Press/Taylor and Francis, Boca Raton, FL.</p>
+</div>
+
+</body>
+</html>
+

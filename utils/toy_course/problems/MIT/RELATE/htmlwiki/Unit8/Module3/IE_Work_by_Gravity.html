@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>Example: Work Done by Gravity</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example: Work Done by the Gravitational Force.</h3>
+<p>We will calculate the work done by the <b>gravitational force</b> in the two situations:
+</p>
+<ul style="list-style:disc outside none"><li><b> Gravity near the Earth's surface</b>: The gravitational force is constant, though the path may change direction.
+</li></ul>
+<ul style="list-style:disc outside none"><li> <b>Gravity far from the Earth's surface</b>: The gravitational force depends on position. 
+</li></ul>
+<br/>
+<p>
+<b> Note:</b> In this example we use the gravitational force as another force to illustrate the procedure for calculating work. Because the gravitational force is conservative, it is more common (and easier) to use the gravitational <b>potential energy</b> instead of the gravitational work to treat the gravitational interaction.
+</p><p>
+<br/>
+<b> Example 1. The work done by near-Earth gravity.</b>
+</p><p>The control of a model airplane of mass <i>m</i> is not working properly. The airplane starts to descend from an initial height <i>y</i><sub><i>i</i></sub>, to a final height <i>y</i><sub><i>f</i></sub> as shown in the figure. What is the work done by the gravitational force as the airplane goes from point \(\vec{r}_i\) to point \(\vec{r}_f\)?
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/Airplane.png"/>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/AirplaneSol.png"/>
+<p>Consider the coordinate system shown in the figure. The force due to gravity, \(\vec{F}_g=-mg\hat{j}\), is constant. The displacement vector, \(d\vec{r} = dx\hat{i} + dy\hat{j}\),  is changing direction along the path.
+</p><p>The dot product between the gravitational force and the displacement vector is:
+</p><p>\(\vec{F}d\vec{r} = -mg\hat{j}(dx\hat{i} + dy\hat{j}) = -mgdy\)
+</p><p>Then, the work is given by:
+</p><p>\(W_{f,i}=\int_{\vec{r}_i}^{\vec{r}_f}(-mgdy) = -mgy|_{y_i}^{y_{f}}=-mg(y_f - y_i)\)
+</p><p><b>Note:</b>
+</p>
+<ul style="list-style:disc outside none"><li> Because the plane is descending then <i>y</i><sub><i>f</i></sub> &lt; <i>y</i><sub><i>i</i></sub> and <i>W<sub>f,i</sub> &gt; 0</i> as expected. In this case, work done by the gravitational force will increase the kinetic energy of the plane. 
+</li></ul>
+<ul style="list-style:disc outside none"><li> The result is still valid if the airplane is moving up. In this case, <i>y</i><sub><i>f</i></sub> &gt; <i>y</i><sub><i>i</i></sub> and the <i>W<sub>f,i</sub> &lt; 0</i>. The negative work means the kinetic energy will decrease.
+</li></ul>
+<p><br/>
+</p>
+</td></tr></table>
+<p><br/>
+<b>Example 2. Work done by far-Earth gravity </b>
+</p><p>The space shuttle is changing orbit by following the path shown in the figure. What is the work done by the gravitational force on the shuttle between points \(\vec{r}_i\) and \(\vec{r}_f\)?
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/SpaceShuttlecopy.png"/>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/SpaceShuttleSol.png"/>
+<p>The magnitude of the gravitational force is given by:
+</p><p>\(F_g = G\frac{m_Em}{r^2}\)
+</p><p>where r is the distance between the center of mass of the Earth and the shuttle. The gravitational force points towards the center of mass of the Earth (considered fixed because the mass of the Earth <i>m<sub>E</sub> &gt;&gt; m</i>).  
+</p><p>As shown in the figure, the displacement vector can be decomposed into two 
+components, one along the radial direction and one tangential to the circle of radius
+ <i>r</i>.
+ Using polar coordinates, <br/><br/>
+\(d\vec{r} = dr\hat{r} + rd\theta\hat{\theta}\). 
+<br/><br/>
+Note that the gravitational force is aligned with the radial component only. Therefore, 
+after taking the dot product, only the radial component of the displacement vector 
+contributes to the work. To understand this, we evaluate the dot product:
+
+</p><p>\(\vec{F}_g \cdot d\vec{r} = -G\frac{m_Em}{r^2}\hat{r} \cdot (dr\hat{r}+rd\theta\hat{\theta})\)
+</p><p>Distributing the terms:
+</p><p>\(\vec{F}_g \cdot d\vec{r} = -G\frac{m_Em}{r^2}(dr\hat{r} \cdot \hat{r}+rdrd\theta\hat{\theta}\cdot\hat{r})\)
+</p><p>
+ Using that \(\hat{r}\cdot\hat{r}=1 \) and \(\hat{\theta}\cdot\hat{r}=0\), we obtain:
+</p><p>\(\vec{F}_g \cdot d\vec{r} =-G\frac{m_Em}{r^2}dr\)
+</p><p>The work done by gravity:
+</p><p>\( W_{f,i}=\int_{\vec{r}_i}^{\vec{r}_f}\vec{F}_g \cdot  \;d\vec{r} = -Gm_Em\int_{\vec{r}_i}^{\vec{r}_f}\frac{dr}{r^2} = G\frac{m_Em}{r}|_{\vec{r}_i}^{\vec{r}_f}\)
+</p><p>where we have used that \(\int \frac{dr}{r^2}=-\frac{1}{r}\)
+</p><p>Therefore the work between the initial and final points is:<br/><br/>
+
+\( W_{f,i}=  G\frac{m_Em}{r_f} - G\frac{m_Em}{r_i}\)
+</p><p><b>Note:</b>
+</p>
+<ul style="list-style:disc outside none"><li> When the shuttle is moving to a larger orbit, <i>r</i><sub><i>f</i></sub> &gt; <i>r</i><sub><i>i</i></sub>, and <i>W<sub>f,i</sub> &lt; 0 </i>, which makes sense because the gravitational force points opposite to the radial component of displacement vector. The work causes the kinetic energy of the shuttle to decrease.
+</li></ul>
+<ul style="list-style:disc outside none"><li> The result above is also valid if the shuttle moves to a smaller orbit. In this case, <i>r</i><sub><i>f</i></sub> &lt; <i>r</i><sub><i>i</i></sub> and <i>W<sub>f,i</sub>  &gt; 0 </i>. Because the gravitational force points in the same direction as the radial component of the displacement, the work causes the kinetic energy to increase.
+</li></ul>
+</td></tr></table>
+</body>
+</html>
+

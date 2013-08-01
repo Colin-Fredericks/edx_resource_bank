@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>Which of the following statements are correct, according to Newton's 2nd law?</p>
+
+<optionresponse texlayout="horizontal" randomize="no">
+
+	<p>For any object, vectors \(F_{net}\) and \(a\) have the same direction.
+	<optioninput location="random" name="Foil1" options="('True','False')" correct="True"></optioninput></p>
+
+	<p>The velocity of an object is directly proportional to the magnitude of the net force acting on the object.
+	<optioninput location="random" name="Foil3" options="('True','False')" correct="False"></optioninput></p>
+
+	<p>The velocity of an object is inversely proportional to the mass of the object.</p>
+	<optioninput location="random" name="Foil4" options="('True','False')" correct="False"></optioninput>
+
+	<p>If more than two forces are applied to an object, its speed must be changing.</p>
+	<optioninput location="random" name="Foil5" options="('True','False')" correct="False"></optioninput>
+
+	<p>If more than two forces are applied to an object, its velocity must be changing.</p>
+	<optioninput location="random" name="Foil6" options="('True','False')" correct="False"></optioninput>
+
+	<p>If exactly two forces are applied to an object, its speed must be changing.</p>
+	<optioninput location="random" name="Foil7" options="('True','False')" correct="False"></optioninput>
+
+	<p>If exactly two forces are applied to an object, its velocity must be changing.</p>
+	<optioninput location="random" name="Foil8" options="('True','False')" correct="False"></optioninput>
+
+	<p>If exactly one force is applied to an object, its speed must be increasing.</p>
+	<optioninput location="random" name="Foil9" options="('True','False')" correct="False"></optioninput>
+
+	<p>If exactly one force is applied to an object, its speed must be decreasing.</p>
+	<optioninput location="random" name="Foil10" options="('True','False')" correct="False"></optioninput>
+
+</optionresponse>
+
+</problem>
+</html>

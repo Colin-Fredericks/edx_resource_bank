@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Projectile on a distant planet 2 </title>
+    <script type="loncapa/python">
+
+deg2rad = math.pi/180.0
+
+theta=random.choice([20,40,60,80])
+thetar=theta*deg2rad
+vi=random.choice([18,32,45,76])
+g=random.choice([10,15,30])
+v= vi/math.cos( thetar)
+t= vi*math.tan( thetar)/ g
+h=( vi*math.tan( thetar))*( vi*math.tan( thetar))/(2* g)
+x= vi* t
+
+</script>
+
+      <p>
+On a distant planet,a projectile of mass 2 kg is launched horizontally with initial velocity $vi m/s from a certain height. Just before it lands on the horizontal terrain, its velocity makes an angle $theta degrees with the horizontal. The acceleration due to gravity is $g m/s<sup>2</sup>. 
+
+</p>
+      <br/>
+
+
+        <p>
+Part 1. 
+Find the speed of the projectile just before landing. 
+
+</p>
+        \(v=\)
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 2. 
+Find the time the projectile spends in the air.
+
+</p>
+        \(t=\)
+
+      <numericalresponse answer="$t" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 3.
+Find the height h from which the projectile is launched. . 
+
+</p>
+        \(h=\)
+
+      <numericalresponse answer="$h" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 4. 
+Find the horizontal range \(\Delta x\) of the flight.
+</p>
+        \(\Delta x=\)
+
+      <numericalresponse answer="$x" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+  </problem>
+</html>

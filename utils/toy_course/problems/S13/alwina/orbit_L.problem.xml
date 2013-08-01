@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/satellite_energy.png" alt="satellite_energy" height="250"/>
+
+    <p>Which satellite orbits around earth with more angular momentum about the earth, L?  Assume that the orbits are circular and both satellites have the same mass.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			<text>\(L_A &lt; L_B\)</text>
+        </choice>
+        <choice name="foil2" correct="true">
+			<text>\(L_A &gt; L_B\)</text>
+        </choice>
+        <choice name="foil3" correct="false">
+            <text>\(L_A = L_B\)</text>
+        </choice>
+        <choice name="foil4" correct="false">
+            <text>Cannot be calculated</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+  </problem>
+</html>

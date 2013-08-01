@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<html>
+<!-- 1-1: moving wedge with block -->
+<problem>
+
+<h2>Solution</h2>
+<h2>Part a)</h2>
+
+<p>System: block</p>
+<p>Interactions:
+	<br/>The block interacts with the Earth and the wedge. As a result of these two interactions, there are two forces acting on the block. There is the gravitational force on the block, \(\vec{F}_{block\, by\, Earth}\), and the contact force between the incline and the block. Because there is no friction, the contact force only has a perpendicular component to the incline's surface, \(\vec{F}_{block\, by\, surface}\).</p>
+
+<p>Realize that if the block is to remain stationary relative to the wedge then it must have the same acceleration as the wedge. Let's choose a frame of reference fixed to the ground to describe the block's motion. Note that a frame of reference fixed to the wedge is a <i>non-inertial</i> frame of reference and therefore Newton's laws cannot be used there. Let's choose the +x-axis parallel to the ground, in the same direction as the acceleration. With this coordinate system, the block's acceleration is given by:</p>
+<p>\(\vec{\bf{a}} = a \hat{\bf{i}} + \bf{0 \hat{j}}\,\) to \(\,a_x = a\,\) and \(\,a_y = 0 \)</p>
+
+<p>The forces on the block are shown in the free body diagram.</p>
+<img src="/static/problems/S13/alwina/images/1-1sol-a.png" />
+
+<p>In order to simplify the notation, instead of double subscripts, we will use:</p>
+<p>\(F_N = F_{block\, by\, surface}\,\) and \(\,mg = F_{block\, by\, Earth}\)</p>
+<p>Applying Newton's second law to the box, we have:</p>
+<table>
+	<tr>
+		<td><i>x-axis:</i> \(F_N \cos \phi = ma\)</td>
+		<td>(eq. 1)</td>
+	</tr>
+	<tr>
+		<td><i>y-axis:</i> \(F_N \sin \phi - mg = 0 \Rightarrow F_N \sin \phi = mg \)</td>
+		<td>(eq. 2)</td>
+	</tr>
+	<tr><td colspan="2">Dividing (eq. 1) by (eq. 2) we have: \(\cot \phi = a/g\) and because \(\phi = 90^\circ - \theta\) then \(\cot \phi = \tan \theta\) and the magnitude of the acceleration is given by:</td></tr>
+	<tr>
+		<td>\(a = g \tan \theta\)</td>
+		<td>(eq. 3)</td>
+	</tr>
+</table>
+<!--May want to highlight the answer-->
+
+<h2>Part b)</h2>
+<p>If we look back at the free body diagram for the block, we see that if the force on the block by the wedge is increased (due to the increased acceleration of the wedge), the forces along the y-axis are no longer balanced. In particular, the upward component, which is due to the force on the block by the wedge, becomes greater than the force of gravity, and thus the block slides up.</p>
+
+<h2>Part c)</h2>
+
+<p>Realize that to answer this question, we should pick another system.</p>
+<p>System: block + wedge</p>
+<p>Interactions:
+	<br/>The objects in the system interact with three external objects: your hand, the Earth, and the ground. As a result of these three interactions, there are three forces acting on the system: the force of your hand, \(\vec{F}_{system\, by\, hand}\); the gravitational force, \(\vec{F}_{system\, by\, Earth}\); and the contact force between the ground surface and the wedge. We will assume that there is no friction; therefore, this contact force only has a perpendicular component to the ground, \(\vec{F}_{system\, by\, ground}\). They are shown in the free body diagram:</p>
+
+<img src="/static/problems/S13/alwina/images/1-1sol-b.png" />
+
+<p>We use again a coordinate system with the +x-axis parallel to the acceleration. Because there is no motion along the perpendicular direction, we have that
+\(\sum \vec{F} = (m+M) \vec{a}\), which implies that:</p>
+
+<p>\(F = (M + m) a\,\), where  \(\,a = g \tan \theta\)</p>
+<!--Again, may possibly want to highlight the answer-->
+
+<p>Note 1: The interaction between the block and the wedge results in the internal forces that are Newton's 3<sup>rd</sup> law pairs. The internal force acting on the block is the normal force, F<sub>N</sub>, in (eq. 1) and (eq. 2) of part a) and the internal force acting on the wedge has the same magnitude as F<sub>N</sub> but opposite direction. These internal forces do not contribute to the motion of the system as a whole.</p>
+
+<p>Note 2: If you have not done it yet, answer part c) by choosing the sytem to be only the wedge. Now the normal force exerted by the block on the wedge is an external force and must be included in the net force.</p>
+
+</problem>
+</html>

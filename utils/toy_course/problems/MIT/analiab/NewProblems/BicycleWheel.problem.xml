@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+  <img src="/static/problems/MIT/analiab/NewProblems/files/BicycleWheel.png"/>
+    <br/>
+
+      <p>
+A bicycle wheel of radius R and mass m has moment of inertia Icm about an axis passing perpendicular to the plane of the wheel
+and through the center-of-mass. The bicycle wheel is initially spinning with angular velocity \(\omega_o\) about the center-of-mass. 
+The wheel is lowered to the ground without bouncing. As soon as the wheel touches the level ground, the wheel starts to accelerate
+forward until it begins to roll without slipping with an unknown final angular velocity \(\omega^f\) 
+   and an unknown center-of-mass velocity \(v_{cm}^{f}\) .
+
+ Find the center-of-mass velocity  \(v_{cm}^{f}\) when the wheel rolls without slipping.
+ </p><p> Assume that the moment 
+ of inertia of the wheels is approximately \(I_{cm}=mR^2 \). Express your answer in some or all of the variables R, m, \(\omega_o\). Type omega_o for \(\omega_o\).
+</p>
+
+    <br/>
+    <formularesponse answer="omega_o*R/2" samples="omega_o,R@1,1:10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

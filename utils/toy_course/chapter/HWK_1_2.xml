@@ -1,0 +1,71 @@
+<chapter display_name="Homework for Units 1 and 2: Newtons Laws and Interactions and Forces">
+	<sequential display_name="Newtons Laws and Interactions and Forces Homework" url_name="Newtons_Laws_Interactions_and_Forces_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Interactions: Negligible Forces">
+			<problem display_name="Interactions: Negligible Forces" filename="S13/colin/Interactions1.problem" attempts="2" weight="1"/>
+			<discussion for="Interactions: Negligible Forces" id="MReV_Summer2013_Interactions1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="The net force">
+			<problem display_name="The net force" filename="MIT/rayyan/check_points/BK/BK7.problem" attempts="1" weight="1"/>
+			<discussion for="The net force" id="MReV_Summer2013_BK7" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="block hanging from ceiling">
+			<problem display_name="block hanging from ceiling" filename="MIT/rayyan/check_points/BK/BK9.problem" attempts="2" weight="1"/>
+			<discussion for="block hanging from ceiling" id="MReV_Summer2013_BK9" discussion_category="Newton's Laws" />
+		</vertical>
+<!-- Moved to Quiz 0		<vertical display_name=" Blocks and Pulleys">
+			<problem display_name=" Blocks and Pulleys" filename="MIT/rayyan/check_points/BK/BK28.problem" attempts="4" weight="1"/>
+			<discussion for=" Blocks and Pulleys" id="MReV_Summer2013_BK28" discussion_category="Interactions and Forces" />
+		</vertical>
+-->
+		<vertical display_name="Interactions: Thrown Ball">
+			<problem display_name="Interactions: Thrown Ball" filename="S13/colin/Interactions2.problem" attempts="2" weight="1" />
+			<discussion for="Interactions: Thrown Ball" id="MReV_Summer2013_Interactions2" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Interactions: Pendulum">
+			<problem display_name="Interactions: Pendulum" filename="S13/colin/Interactions3.problem"  attempts="2" weight="1"/>
+			<discussion for=" Interactions: Pendulum" id="MReV_Summer2013_Interactions3" discussion_category="Interactions and Forces" />
+		</vertical>
+
+<!-- Level 2 -->
+
+		<vertical display_name="Find the force">
+			<problem display_name="Find the force" filename="MIT/rayyan/check_points/BK/BK17.problem" attempts="2" weight="2"/>
+			<discussion for="Find the force" id="MReV_Summer2013_BK17" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Down the incline">
+			<problem display_name="Down the incline" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup02_concept04.problem" attempts="1" weight="2"/>
+			<discussion for="Down the incline" id="MReV_Summer2013_Checkup02_concept04" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Elevator Up... Elevator Down">
+			<problem display_name="Elevator Up... Elevator Down" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup02_concept01.problem" attempts="1" weight="2"/>
+			<discussion for="Elevator Up.. Elevator Down" id="MReV_Summer2013_Checkup02_concept01" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Push">
+			<problem display_name="Push" filename="MIT/GWUproblems/HTW_exams/exam1_con04.problem" attempts="1" weight="2"/>
+			<discussion for="Push" id="MReV_Summer2013_exam1_con04" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Hanging Men">
+			<problem display_name="Hanging Men" filename="MIT/rayyan/osu/05_Force and Motion I/hanging/hanging_3.problem" attempts="3" weight="2"/>
+			<discussion for="Hanging Men" id="MReV_Summer2013_hanging_3" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="3 Blocks and a Pulley">
+			<problem display_name="3 Blocks and a Pulley" filename="MIT/analiab/Problems/3_blocks_and_1_pulley.problem" attempts="10" weight="2"/>
+			<discussion for="3 Blocks and a Pulley" id="MReV_Summer2013_3_blocks_and_1_pulley" discussion_category="Interactions and Forces" />
+		</vertical>
+
+<!-- Level 3 -->
+
+		<vertical display_name="Hammock">
+			<problem display_name="Hammock" filename="MIT/rayyan/Hammock.problem" attempts="10" weight="3"/>
+			<discussion for="Hammock" id="MReV_Summer2013_Hammock" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Pulley Platform">
+			<problem display_name="Pulley Platform" filename="MIT/rayyan/Physics801/Forces/Pulley Platform.problem" attempts="10" weight="3"/>
+			<discussion for="Pulley Platform" id="MReV_Summer2013_Pulley_Platform" discussion_category="Interactions and Forces" />
+		</vertical>
+
+	</sequential>
+</chapter>

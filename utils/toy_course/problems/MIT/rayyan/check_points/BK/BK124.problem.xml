@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Mass of the Sun </title>
+    <script type="loncapa/python">
+
+T1=random.choice([352,374,385])
+T= T1*24*60*60
+aa=random.choice([1.3e11,1.63e11,1.75e11])
+G=6.67E-11
+
+m=4* math.pi* math.pi* aa* aa* aa/ G/ T/ T
+
+</script>
+
+<p>A sloppy astronomer measured the following parameters of the Earth orbital motion around the Sun: the period is $T1 days, and the semi-major axis is $aa  m. What is the mass of the Sun according to the astronomer's results? The universal gravitational constant is \(6.67 \times 10^{-11}\) in SI units.</p>
+
+      \(M_{sun}=\)
+
+    <numericalresponse answer="$m" unit="kg">
+      <responseparam default="5%" type="tolerance"/>
+      <textline math="1"/>
+    </numericalresponse>
+  </problem>
+</html>

@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI28-1.problem" display_name="Brick Slide 1" attempts="2" weight="1"/>
+	<problem filename="F12/MRI/MRI28-2.problem" display_name="Brick Slide 1, Part 2" attempts="2" weight="1"/>
+	<discussion for="Brick Slide 1" id="MReV_Summer2013_MRI28" discussion_category="Mechanical Energy and Work" />
+</vertical>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/motion.png" alt="motion" height="150"/>
+
+      <p><br/>
+Driving a car in the positive x direction at a speed of 60 MPH, Mary tests her brakes by coming to a complete stop in 4 seconds. Then she accelerates to her original speed of 60 MPH in 8 seconds. A motion diagram is created by illuminating her car with a strobe at 2 second intervals. Which of the following best represents the correct diagram? Mary's car is represented by a dot.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              D          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

@@ -1,0 +1,13 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How much of the required course material did you manage to finish?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="all"><text>All of the required material.</text></choice>
+       <choice correct="true" name="80"><text>80-100%</text></choice>
+       <choice correct="true" name="60"><text>60-80%</text></choice>
+       <choice correct="true" name="40"><text>40-60%</text></choice>
+       <choice correct="true" name="20"><text>20-40%</text></choice>
+       <choice correct="true" name="0"><text>0-20%</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+</problem>

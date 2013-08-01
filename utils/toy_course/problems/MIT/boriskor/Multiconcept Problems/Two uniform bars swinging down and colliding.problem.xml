@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<html>
+	<problem>
+
+	<img src="/static/problems/MIT/boriskor/BKimages/Uniform bars swinging down.png" alt="Two uniform bars of different lengths and masses swing down and collide"/>
+
+	<p>Two uniform bars have masses and lengths of \(m\), \(l\) and \(2m\), \(2l\), respectively. The bars are pivoted at the common frictionless hinge as shown. The bars are released from the horizontal position in such a way that they collide and stick together at the bottom position. After that, the bars swing upward together. Find the maximum angle \(\theta\) the bars would make with the vertical after the collision.</p>
+
+	<p>\(\theta=\)
+	<numericalresponse answer="59">
+		<responseparam default="5%" type="tolerance"/>
+		<textline math="1"/>
+	</numericalresponse> degrees</p>
+
+	</problem>
+</html>

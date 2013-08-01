@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+<!--Loop - the – loop ride with friction-->
+<problem>
+
+<script type="loncapa/python">
+import math
+</script>
+
+	<script type="loncapa/python"> 
+x0="((m*g/k)*(3*R*cos(theta)+2*R+2*muk*L))^.5"
+
+	</script>
+
+	<h2>Loop-the-loop ride with friction</h2>
+
+	<p>A box of mass m is fired using a spring (with a spring constant k) that is initially compressed to a 
+	distance x<sub>0</sub> beyond its relaxed length. The box encounters a rough surface of length L and a 
+	coefficient of kinetic friction \(\mu\)<sub>k</sub>, the surface of the track is otherwise frictionless. 
+	The box  then goes up a loop of radius R. What should x<sub>0</sub> be if the box is to fall off the loop 
+	at point P? Give your answer in the quantities given: k, L, \(\theta\), R, \(\mu\)<sub>k</sub>.</p>
+	<p>Type theta for \(\theta\), muk for \(\mu\)<sub>k</sub>.</p>
+
+	<img src="/static/problems/S13/ESG/images/7-4b.png" />
+
+	<formularesponse type="cs" samples="m,g,theta,k,R,L,muk@1,8,0,0.2,1,1,0.1:10,10,0.75,10,10,10,1#10" answer="$x0">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>x<sub>0</sub> =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+<!---
+or multiplechoice option
+	<p><br/></p>
+
+	<p><ol>
+	<li>\(x_o=\sqrt( mg(3R \cos(\theta)+2R+2\mu_k L)/k)\)</li>
+	<li>\(x_o=\sqrt( \frac{mg}{k}(3R \cos(\theta)+2R-2\mu_k L))\)</li>
+	<li>\(x_o=\sqrt( \frac{mg}{k}(2R \cos(\theta)+3R+2\mu_k L))\)</li>
+	<li>\(x_o=\sqrt( \frac{mg}{k}(2R \cos(\theta)+3R-2\mu_k L))\)</li>
+	</ol>
+	</p>
+
+<optionresponse direction="vertical" randomize="no">
+<optioninput options="('1','2','3','4')" correct="1"/>
+</optionresponse>
+
+-->
+
+</problem>
+</html>

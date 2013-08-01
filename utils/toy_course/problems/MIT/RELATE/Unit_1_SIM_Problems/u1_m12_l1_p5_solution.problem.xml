@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Suppose that a person is standing on a scale in an elevator when the elevator begins to accelerate upward.  According to Newton's Third Law, one of the following forces will be equal and opposite to the force the person exerts on the scale (which is what the scale will read as the person's weight).  Choose that force.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              The normal force exerted on the person.          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              The person's mass times their acceleration.          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              The person's weight.          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              None of the choices is the appropriate third law pair.          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              The force exerted on the scale by the elevator.          
+        </choice>
+      </choicegroup>
+      <hintgroup>
+        <block condition="&amp;EXT('user.resource.resource.0.tries') == 1">
+
+            <p>HINT: The Third Law relates the pair of forces that result from a single interaction.  What interaction are we interested in here?</p>
+
+        </block>
+        <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 1">
+
+            <p>HINT: Which of the forces listed is produced by the contact between the scale and the person?</p>
+
+        </block>
+      </hintgroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

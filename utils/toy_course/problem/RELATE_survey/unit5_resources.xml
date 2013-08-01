@@ -1,0 +1,6 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What is your favorite textbook, reference book, or website when it comes to learning more about physics? What do you use to help you with homework or to understand problems? If you list a website, please paste in the URL for the site.</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

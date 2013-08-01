@@ -1,0 +1,6 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Is there anything else you would like to say about the course?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

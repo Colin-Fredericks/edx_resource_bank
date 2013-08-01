@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>Example: Keys Please</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Keys Please</h3>
+
+<p>A college student with a third floor dorm room is exiting the dorm when he suddenly realizes he has forgotten his keys. Rather than run back up the stairs to the room, he calls his roommate and goes to stand under the dorm room window. The roommate brings the keys to the window. The following problems relate to this situation.</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+	<th>
+		<b>Part A:</b> Suppose the roommate releases the keys (at rest) from a height <i>h</i> = 5.0 m above the outstretched hand of the forgetful student. How long are the keys in the air from the time the roommate releases them until the instant they land in the student's hand? [<a href="javascript:toggleDisplay('ht17','hide','solution')" id="ht17l">solution</a>]</th>
+	</tr>
+<tr style="display:none" id="ht17">
+	<td>
+		<b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay12&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay12l" show="">[show system]</a>
+		<div style="display:none;" id="toggledisplay12">
+		The keys will be treated as a single [point particle].</div>
+		<br/>
+		<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay13&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay13l" show="">[show interactions]</a>
+		<div style="display:none;" id="toggledisplay13">
+		During the period of interest, neither the roommate nor the student are touching the keys. The only relevant interaction is the gravitational interaction between the earth and the keys (weight). Thus, the keys are in freefall.</div>
+		<br/>
+		<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay14&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay14l" show="">[show Model]</a>
+		<div style="display:none;" id="toggledisplay14">
+		"One-Dimensional Motion with Constant Acceleration".</div>
+		<br/>
+		<p>
+		<b>Quantitative Approach:</b></p>
+
+		<table class="subtable collapsible collapsed">
+		<tbody>
+		<tr>
+			<th>Choose a Coordinate System [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="ht18">
+			<td>
+				<div class="floatright">
+				<img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/KeysPleaseCoords.png"/></div>
+				<p>As in all motion problems, we begin by setting up our coordinates. The entire motion is vertical, so (in keeping with traditional use) we will set up a y-axis instead of an x-axis. We will choose the positive y-axis to point upward, and take <i>y</i> = 0 at the position of the forgetful student's hand. We will choose to make <i>t</i> = 0 at the instant the roommate drops the keys.</p>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		<table class="subtable collapsible collapsed">
+		<tbody>
+		<tr>
+		<th>Understand the Knowns from the Problem [<a href="javascript:toggleDisplay('ht19','hide','show')" id="ht19l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="ht19">
+		<td>The Model we are using has several possible mathematical realizations. Thus, we must carefully consider the given information in order to choose an appropriate equation.
+
+		<table class="subsubtable">
+			<tbody>
+			<tr>
+				<th>Knowns for Part A</th>
+			</tr>
+			<tr>
+			<td>
+				\(y_{i} = \mbox{5.0 m} \qquad y_{f} = 0\qquad t_{i} = 0 \qquad v_{i,y} = 0 \qquad a_{y} = -\mbox{9.8 m/s$^2$}\)</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<p>Note that only <i>one</i> of these givens was explicitly stated in the problem (the initial height of the keys was given as 5.0 m). The other givens all require some physics knowledge. The initial velocity of the keys is taken to be zero because the problem states they are dropped "at rest", a common phrase in mechanics problems. The acceleration is 9.8 m/s<sup>2</sup> downward because we are assuming the keys are in near-earth freefall. The other two givens were <i>chosen</i> by us in setting up our coordinate system.</p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+
+		<table class="subtable collapsible collapsed">
+		<tbody>
+		<tr>
+			<th>Choose the Appropriate Mathematical Representation [<a href="javascript:toggleDisplay('ht20','hide','show')" id="ht20l">show</a>]</th>
+		</tr>
+		<tr style="display:none" id="ht20">
+		<td>
+			The unknown which we seek is the time elapsed during the drop. The constant acceleration model contains this equation for position vs. time. 
+			<p>\( y(t) = y_{i} + v_{i,y}(t-t_{i}) + \frac{1}{2}a_{y}(t-t_{i})^{2}\)</p>
+			<p>or, after substituting zeros,</p>
+			<p>\( 0 = y_{i} + \frac{1}{2}a_{y}t_{f}^{2}\)</p>
+			<p>We can now solve algebraically for the time:</p>
+			<p>\( t_{f} = \pm \sqrt{\frac{-2y_{i}}{a_{y}}}\)</p>
+			<p>The negative in the square root might first seem troubling, but it is actually necessary, as you can see by substituting in the givens:</p>
+			<p>\( t_{f} = \pm \sqrt{\frac{-2(5.0 m)}{-\mbox{9.8 m/s$^2$}}} = \pm \mbox{1.0 s}\)</p>
+			<p>Without the negative from the algebra, the negative (downward) acceleration would give an imaginary square root. Instead, the two negatives cancel, and we obtain real solutions. We select the positive root, since our Model does not apply before <i>t</i> = 0. The plot of the motion from <i>t</i> = 0 until <i>t</i> = 1.0 s is shown below.</p>
+			<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/KeysPleasePartA.gif"/></p>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+	<th><b>Part B:</b> Suppose that, instead of dropping the keys, the roommate tosses them straight up with an initial speed of 3.3 m/s. The keys are released from a height <i>h</i> = 5.0 m above the outstretched hand of the forgetful student. How long are the keys in the air from the time the roommate releases them until the instant they land in the student's hand? [<a href="javascript:toggleDisplay('ht21','hide','solution')" id="ht21l">solution</a>]</th>
+</tr>
+<tr style="display:none" id="ht21">
+<td>
+		<b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay15&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay15l" show="">[show system]</a>
+		<div style="display:none;" id="toggledisplay15">
+		The keys will be treated as a [point particle].</div>
+		<br/>
+		<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay16&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay16l" show="">[show interactions]</a>
+		<div style="display:none;" id="toggledisplay16">
+		As in Part A, when the keys are not in contact with either students' hand, the only interaction is between the earth and the keys (weight). Thus, even when the keys are traveling upward, they experience only the <i>downward</i> force of gravity. This is why the keys immediately begin to slow down once the roommate has released them.</div>
+		<br/>
+		<b>Model:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay17&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay17l" show="">[show Model]</a>
+		<div style="display:none;" id="toggledisplay17">
+		"One-Dimensional Motion with Constant Acceleration".</div>
+		<br/>
+		<p>
+		<b>Quantitative Approach: </b></p>
+
+	<table class="subtable collapsible collapsed">
+	<tbody>
+	<tr>
+		<th>Method 1: Using the Quadratic Equation [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th>
+	</tr>
+	<tr style="display:none" id="ht22">
+		<td>We solve this problem using two methods. The first has a bit more math, but is fast. The second takes two steps and requires some physical intuition, but the math is simple.
+			<p>In essence, Part B is identical to Part A, except that the initial velocity is nonzero. Thus, making use of the work we did in Part A, we know that we want to solve the postition vs. time equation for the time, t<sub>f</sub>, when the keys reach the student's hand (y<sub>f</sub> = 0)</p>
+			<p>\( \mathcal{}0 = y_{i} + v_{i,y}t_{f} + \frac{1}{2}a_{y}t_{f}^{2}\)</p>
+			<p>This form of the equation requires the full quadratic formula to solve, giving:</p>
+			<p>\( \mathcal{}t_{f} = \frac{-v_{i,y} \pm \sqrt{v_{i,y}^{2} - 2a_{y}y_{i}}}{a_{y}}\)</p>
+			<p>Be careful when substituting, since the acceleration here is <i>negative</i>. The final answers are:</p>
+			<p>\( \mathcal{}t_{f} = -\mbox{0.73 s}\)</p>
+			<p>or</p>
+			<p>\(\mathcal{}t_{f} = \mbox{1.4 s}\)</p>
+			<p>Only the positive root is consistent with our choice of coordinates.</p>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tbody>
+	<tr>
+		<th>Method 2: Divide at Max Height [<a href="javascript:toggleDisplay('ht23','hide','show')" id="ht23l">show</a>]</th>
+	</tr>
+	<tr style="display:none" id="ht23">
+	<td>
+		<div class="floatright">
+		<img src="/static/problems/MIT/RELATE/htmlwiki/Unit5/Module4/files/Keysprojectile.gif"/>
+		</div>
+		<p>A technique that is commonly useful in problems involving freefall with an upward initial velocity is to divide the trajectory at the point of maximum height. The position of maximum height is special because the velocity goes to zero there.</p>
+		<p>We therefore begin by analyzing the portion of the trajectory shown in blue in the figure. For this portion of the trajectory, the final velocity is zero. We can therefore find the time elapsed during the upward (blue) portion by using the simplest mathematical representation of the Model:</p>
+		<p>\( \mathcal{}v(t) = v_{i,y} + a_{y}(t-t_{i}) \)</p>
+		<p>which becomes</p>
+		<p>\( \mathcal{} 0 = v_{i,y} + a_{y}t_{peak}\)</p>
+		<p>giving</p>
+		<p>\( \mathcal{}t_{peak} = \frac{-v_{i,y}}{a_{y}}\)</p>
+		<p>(again, remember that the acceleration is negative in this problem).</p>
+		<p>The time for the downward (red) portion of the motion is not so straightforward. We know the initial velocity is zero, but we do not know the final velocity <i>or</i> the total height (the keys have reached a height greater than the initial 5 m by the time the downward motion begins). We can easily find either of these quantities. Here, we choose to find the height of the peak by evaluating</p>
+		<p>\( \mathcal{} y_{peak} = y_{i} + \frac{1}{2}(v_{i,y}+v_{peak,y})(t_{peak}-t_{i})\)</p>
+		<p>for the upward motion to find</p>
+		<p>\( \mathcal{} y_{peak} = y_{i} + \frac{1}{2}v_{i,y}t_{peak} \)</p>
+		<p>and substituting our result for t<sub>peak</sub>, we have</p>
+		<p>\( \mathcal{} y_{peak} = y_{i} - \frac{1}{2} \frac{v_{i,y}^{2}}{a_{y}}\)</p>
+		<p>We can now find the time elapsed during the downward motion by using exactly the same procedures as in Part A, except that we have a different initial height:</p>
+		<p>\( \mathcal{}0 = y_{peak} + \frac{1}{2}a_{y}(t_{f}-t_{peak})^{2}\)</p>
+		<p>so</p>
+		<p>\( \mathcal{} t_{f} = t_{peak} \pm \sqrt{\frac{-2y_{peak}}{a_{y}}} \)</p>
+		<p>Only the plus sign makes sense here, because the time to fall must be nonzero. Substituting our values for t and y at the peak gives:</p>
+		<p>\( \mathcal{} t_{f} = \frac{-v_{i,y}}{a_{y}} + \sqrt{\frac{-2y_{i} + v_{i,y}^{2}/a_{y}}{a_{y}}} = \mbox{1.4 s}\)</p>
+		<p>The same answer as we obtained using Method 1. (In fact, this second treatment gives the same form of the answer we obtained previously using the quadratic formula because it is a method for deriving that relationship.)</p>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Part C:</b> As a final illustration, suppose that the roommate throws the keys <i>downward</i> with an initial speed of 3.3 m/s. The keys are released from a height <i>h</i> = 5.0 m above the outstretched hand of the forgetful student. How long are the keys in the air from the time the roommate releases them until the instant they land in the student's hand? [<a href="javascript:toggleDisplay('ht24','hide','solution')" id="ht24l">solution</a>]</th>
+</tr>
+<tr style="display:none" id="ht24">
+<td>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>Method 1: Using the Quadratic Equation [<a href="javascript:toggleDisplay('ht25','hide','show')" id="ht25l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht25">
+<td>Again, we present two separate but equivalent ways to do this problem. The first method again requires the quadratic equation but is faster. The second method requires more steps and stronger insight.<p>The solution in terms of the quadratic equation proceeds <i>exactly</i> as in Part B, yielding</p>
+<p>
+\(\mathcal{} t_{f} = \frac{-v_{i,y} \pm \sqrt{v_{i,y}^{2} - 2a_{y}y_{i}}}{a_{y}}\)</p>
+<p>The only difference is that the initial velocity here is <i>negative</i> 3.3 m/s instead of positive 3.3 m/s. Thus, we find:</p>
+<p>
+\(\mathcal{} t_{f} = -\mbox{1.4 s}\)</p>
+<p>or</p>
+<p>
+\(\mathcal{} t_{f} = \mbox{0.73 s}\)</p>
+<p>Again, the positive solution is the physical one.</p>
+<p>It is interesting to note that the solutions obtained from the quadratic equation to Parts B and C are the same, except with the negative signs reversed. Can you explain this result graphically?</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>Method 2: Using Final Velocity [<a href="javascript:toggleDisplay('ht26','hide','show')" id="ht26l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht26">
+<td>This time, the motion has no peak point at which the keys are turning around (keys thrown downward will only <i>speed up</i>, they will not slow to zero like keys thrown upward). Thus, we cannot break up the motion as we did in Part B. Instead, we use a two step process. It is very valuable in freefall (and projectile) problems to know the initial and final velocities. In this case, we only have the initial velocity as a given, but we can find the final velocity as a first step toward solving the problem. To do this, we must recognize that without time the only Law of Change for our model that can be solved for the final velocity is:<p>
+\(\mathcal{} v_{f,y}^{2} = v_{i,y}^{2} + 2a_{y}(y_{f}-y_{i})\)</p>
+<p>Using our standard coordinates, this becomes:</p>
+<p>
+\(\mathcal{} v_{f,y} = \pm \sqrt{v_{i,y}^{2} - 2a_{y} y_{i}}\)</p>
+<p>In this case, the <i>minus</i> sign must be chosen, because we know that the keys are moving <i>downward</i> when they reach the forgetful student's hand. Thus,</p>
+<p>
+\(\mathcal{} v_{f,y} = - \sqrt{v_{i,y}^{2} - 2a_{y}y_{i}} \)</p>
+<p>Once the final velocity is known, we can turn to the simple equation:</p>
+<p>
+\(\mathcal{} v_{y}(t) = v_{i,y} + a_{y}(t-t_{i}) \)</p>
+<p>which becomes:</p>
+<p>
+\(\mathcal{} v_{f,y} = v_{i,y} + a_{y}t_{f} \)</p>
+<p>giving:</p>
+<p>
+\(\mathcal{} t_{f} = \frac{v_{f,y} - v_{i,y}}{a_{y}} = \frac{-v_{i,y}-\sqrt{v_{i,y}^{2} -2a_{y}y_{i}}}{a_{y}} = \mbox{0.73 s}\)</p>
+<p>The same answer as was obtained using Method 1.</p>
+<p>
+<b>Challenge:</b> As a final Method of solving Part C, can you show that you obtain the same answer by using the answer to Part B and subtracting the time that the keys spend above y = 5 m?</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+
+</table>
+</body>
+</html>
+

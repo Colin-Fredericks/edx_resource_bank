@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Universal Gravity</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Newton's Law of Universal Gravitation </h3>
+
+<p>Newton's Law of Universal Gravitation provides an effective description of the movement of objects from submillimeter distances to inter-galactic scales, where gravity is the dominant force on astronomical bodies. It is an experimentally discovered physical law, and it's inverse distance squared dependence is extremely well-validated by the motion of the planets. Nevertheless determining the universal gravitation constant G demands accurate measurements of very small forces between two known masses, and G is currently uncertain at about one part in 10,000. In contrast, we know the mass of a hydrogen atom or the charge of an electron 10,000 times better than G - to a few parts per billion</p>
+
+<p><b>Force Law for Two Point Masses:</b> Between any two point masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i>&#160;there exists an attractive force along the line joining the two points. The magnitude of the force on body 1 due to body 2 will have the form:</p>
+
+<p>\( {F}_{12}= G \frac{m_{1}m_{2}}{r_{12}^{2}} \), where <i>G</i> is the gravitational constant, \( G = \mbox{6.67}\times\mbox{10}^{-11}\mbox{ N}\frac{\mbox{m}^{2}}{\mbox{kg}^{2}} \)</p>
+
+<p>and <i>r<sub>12</sub></i> is the distance between the two objects. The magnitude&#160;<i>r<sub>12</sub></i>&#160;&#160;can be obtained from the vector difference between the position vector of object 1 and the position vector of object 2, as shown in the figure (and in more detail in the box below). The difference is: \(\vec{r}_{12}= \vec{r}_{1}-\vec{r}_{2}\). The direction of the gravitational force on body 1 due to body 2 is along the line joining the point objects and directed towards object 2 (it is an attractive force).</p>
+
+<div class="center">
+<div class="floatnone">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module1/files/M1m2Gravitational1.png"/></div>
+</div>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+	<b>Vector Expression for Universal Gravity</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>Here we give the vector representation of the gravitational force measured from a coordinate system with origin at point Q as shown in the figure below. Consider two objects that can be represented by two point masses, <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> , located at the positions indicated by \(\vec{r}_{1}\) and \(\vec{r}_{2}\). Then the force exerted on object 1 due to object 2 is given by:			
+	<p>\( \vec{F}_{12}= - G \frac{m_{1}m_{2}}{r_{12}^{2}}\hat{r}_{12} \)</p>
+	<p>where \( r_{12} = |\vec{r}_{12}|\) is the magnitude of the vector difference between the position of object 1 and the position of object 2:</p>
+	<p>\(\vec{r}_{12}=\vec{r}_{1} - \vec{r}_{2} \),</p>
+	<p>and \(\hat{r}_{12} \) is the unit vector obtained as:</p>
+	<p>\(\hat{r}_{12} = \frac{\vec{r}_{1}-\vec{r}_{2}}{|\vec{r}_{12}|}\)</p>
+	<p>The unit vector \(\hat{r}_{12} \) has the same direction as the vector difference \(\vec{r}_{12}\), i.e. parallel to the line joining the center of the two objects and directed toward object 1. The minus in the expression of the gravitational force indicates that the force on object 1 due to object 2 is in the opposite direction to \(\hat{r}_{12}\). That is, object 1 is pulled toward object 2 (attractive force).</p>
+	<div class="center">
+	<div class="floatnone">
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module1/files/M1m2Gravitationalb1.png"/></div>
+	</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><b>The Case of Spherical Symmetry:</b> Although the form of the Law of Universal Gravitation is strictly valid only for point particles, it is possible to show that for extended objects with a spherically symmetric mass distribution, the Law will hold in the form stated above provided that the positions of the spherical objects are specified by their centers.</p>
+<p>Note: We consider the weight of an object as being \( W = mg \) only when the object is near Earth. If the object is situated far away from the Earth, its weight is given by the Law of Universal Gravitation.</p>
+
+<h3>Fundamental Force</h3>
+<p>Gravitation is the only fundamental interaction in most mechanics courses. The term "fundamental force" refers to a force that cannot be described in terms of other interactions. Fundamental forces are the only forces that act between elementary particles. Colliding atoms interact via electrostatic forces (and a small amount of gravitation). From such microscopic interactions emerge the macroscopic contact forces between objects with huge numbers of atoms.</p>
+
+</body>
+</html>
+

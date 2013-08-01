@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A system of effective mass m has a potential energy given by 
+<br/>
+\(U(x)=U_0 \bigg( -2\Big(\displaystyle\frac{x}{x_0}\Big)^2+\Big(\displaystyle\frac{x}{x_0}\Big)^4\bigg) \)
+<br/>
+where \(U_0\) and \(x_0\) are positive constants and \(U(0)=0\)
+  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/SHM6.png" width="550"/>
+    </p>
+<p>
+Part 1. The particle is in stable equilibrium at the point(s):<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">0 </choice>
+<choice location="random" correct="true" name="2">\(\pm x_0\)</choice>
+<choice location="random" correct="false" name="3">\( \frac{x_0}{2} \)</choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+	<p>
+Part 2. If the particle is given a small displacement from a stable equilibrium point, the angular frequency of small oscillation is :
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">\(\displaystyle\sqrt{\frac{U_0}{m x_0^2}}\)</choice>
+<choice location="random" correct="true" name="2">\(\displaystyle\sqrt{\frac{8 U_0}{m x_0^2}}\)</choice>
+<choice location="random" correct="false" name="3">\(\displaystyle\sqrt{\frac{U_0}{8 m x_0^2}}\)</choice>
+<choice location="random" correct="false" name="4">\(\displaystyle\sqrt{\frac{U_0}{m x_0}}\)</choice>
+<choice location="random" correct="false" name="5">\(\displaystyle\sqrt{\frac{4 U_0}{m x_0^2}}\)</choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/10-mass-spring-two-block-collision.png" alt="Mass connected to a spring collides with another mass inelastically"/>
+    <br/>
+
+      <p>
+A block of mass \(m\) is attached to a spring with a force constant \(k\), as in the above diagram. Initially, the spring is compressed a distance\(x\) from the equilibrium and the block is held at rest. Another block, of mass \(2m\), is placed a distance \(x/2\) from the equilibrium as shown. After the spring is released, the blocks collide inelastically and slide together. 
+How far (\(\Delta x\)) would the blocks slide beyond the collision point? Neglect friction between the blocks and the horizontal surface.
+
+</p>
+
+    <br/>
+
+What physical principles are most helpful in solving this problem?
+
+<br/><multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice"><choicegroup type="MultipleChoice"><choice location="random" name="foil1" correct="false">
+conservation of momentum, Newton's laws
+</choice><choice location="random" name="foil2" correct="true">
+conservation of momentum, conservation of energy
+</choice><choice location="random" name="foil3" correct="false">
+Newton's laws, kinematics of simple harmonic motion
+</choice><choice location="random" name="foil4" correct="false">
+conservation of energy, kinematics of simple harmonic motion
+</choice><choice location="random" name="foil5" correct="false">
+conservation of energy, Newton's laws
+</choice><choice location="random" name="foil6" correct="false">
+conservation of momentum, kinematics of simple harmonic motion
+</choice></choicegroup></multiplechoiceresponse>
+
+    <br/>
+
+        <p>
+Find \(\Delta x\).
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" loncapaid="1r" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \(\Delta x=0.707x\)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \(\Delta x=0.207x\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\Delta x=0.414x\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(\Delta x=0.732x\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(\Delta x=0.232x\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(\Delta x=0.268x\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

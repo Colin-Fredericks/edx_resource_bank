@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 1 -->
+
+<problem>
+
+	<p>A uniform bar of mass \(m\) and length \(d\) is rotating counterclockwise as viewed from above with an angular speed \( \omega \) about an axis
+	 passing through one of its ends (point Q) and perpendicular to the screen (x-y plane). What is the angular momentum of the bar about point Q? 
+	 Type "omega" for \( \omega \).</p>
+	<img src="/static/problems/F12/procedures/images/proc1b.png" /><br/>
+
+	<formularesponse answer="(1/3)*m*(d^2)*omega" samples="m,d,omega@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+	</formularesponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('Up','Down','Left','Right','Out of screen','Into screen','N/A')" correct="Out of screen" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

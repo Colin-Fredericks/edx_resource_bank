@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 7 -->
+
+<problem>
+
+	<p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 5 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI7.png" />
+
+	<h3>Part 1</h3>
+	<p>A toy rocket is launched at rest from the ground.  As long as the rocket has fuel, it accelerates upward with a constant rate <b>a</b>.  After a time
+	<b> T</b>, the rocket suddenly runs out of fuel and its engine stops (this happens in time frame 3 in the figure).  Its engine remains off for the 
+	remainder of the flight.  The goal of this problem is to determine the maximum height reached by the rocket.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">One problem: intervals 1-5</choice>
+			<choice location="random" correct="true">Two sub-problems: intervals 1-3 and 3-5</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-3, 3, and 3-5</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-3, 3-5, and 5</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

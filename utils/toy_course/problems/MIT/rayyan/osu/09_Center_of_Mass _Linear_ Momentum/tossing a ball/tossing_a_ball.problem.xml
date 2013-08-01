@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/tossing a ball.png" alt="tossing_a_ball" height="150"/>
+
+      <p><br/>
+Suppose you are on a cart initially at rest that rides on a frictionless track. If you throw a ball off the cart towards the  left, will the cart be put into motion?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+              Yes, and it will move to the right.          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Yes, and it will move to the left.          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              No, it will remain in place.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

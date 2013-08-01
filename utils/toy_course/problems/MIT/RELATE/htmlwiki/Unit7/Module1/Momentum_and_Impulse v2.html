@@ -1,0 +1,158 @@
+<html>
+<head>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+<title>Momentum and Impulse</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script><style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}</style>
+</head>
+<body>
+<h2>
+		Momentum and Impulse Model - A Core Model</h2>
+<p>
+Learning Goals</p>
+<p>
+		After completing this module you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+			Define momentum</li>
+<li>
+			Define impulse in terms of force</li>
+<li>
+			Define impulse in terms of momentum.</li>
+</ul>
+<h2>
+Allowable Systems</h2>
+<p>
+		This model is applicable to systems consisting of multiple point particles (or centers of mass of rigid bodies).</p>
+<h3>
+Cues</h3>
+<p>
+		The model is especially useful when describing the momentum of systems where external forces are absent (system momentum will then be constant) or estimating the external force in a process that occurs in a very short time interval such as collisions or explosions (where impulse can be determined from change of momentum).</p>
+<h3>
+Relevant Definitions</h3>
+<h4>
+		Momentum</h4>
+<p>
+<i>Newton's Principia</i> DEFINITION II [Cajori translation]: &#8220;The quantity of motion is the measure of the same, arising from the velocity, and the quantity of matter, jointly.&#8221;</p>
+<p>
+		We call this quantity <strong>momentum,&#160;</strong>which is traditionally given the symbol <i>p </i>(partly for<i> "impulse", </i>and<i>&#160;</i>since&#160;<em>m</em> is already taken):</p>
+<p>
+\( \vec{p} = m\vec{v} \)</p>
+<p> for a single particle of mass <i>m</i> traveling with velocity <i>v</i>.&#160;</p>
+<p>
+		For a system composed of multiple particles, the momentum of the system is just the sum of the momenta of the masses in the system:</p>
+<p>
+\(\vec{p}^{system} = \sum_i m_i\vec{v}_i\)</p>
+<h4>
+		Impulse</h4>
+<p>
+		Impulse (which is given the symbol <i>J</i>) is defined by:</p>
+<p>
+\(\vec{J}_{fi} = \int_{t_i}^{t_f} \vec{F}^{ext}\;dt\)</p>
+<p>
+		for the net force acting over a time interval <i>t<sub>i</sub></i> to <i>t<sub>f</sub></i>. We use the notation \(\vec{J}_{fi}\) to emphasize that the impulse depends on the initial and final times.</p>
+<h2>
+		Relevant Interactions</h2>
+<p>
+		The agent of change for momentum is <i>external force</i>, meaning forces acting on objects in the system due to their interactions with objects outside the system. The key point about momentum is that internal forces (no matter how large) do not change a system's total momentum.</p>
+<h2>
+		Laws of Change</h2>
+<h4>
+		Integral Form &#8212; especially useful when momentum does not change, or changes in a short \(\Delta t\)</h4>
+<p>
+\(\vec{p}_{f} = \vec{p}_{i}+\vec{J}_{fi} = \vec{p}_{i}+\int_{t_i}^{t_f} \sum \vec{F}^{ext}\;dt\)</p>
+<h4>
+		Differential Form</h4>
+<p>
+\(\frac{d\vec{p}}{dt} = \sum \vec{F}^{ext}\)</p>
+<h4>
+Vector Nature</h4>
+<p>
+		It is important to note that momentum is a vector. The direction of the momentum of an object is in the direction of the object's velocity. For a system with multiple objects, the momentum is in the direction of the velocity of the system's center of mass.</p>
+<h4>
+Dimensions and Units</h4>
+<p>
+		The dimensions of momentum, by its definition, are [mass] * [length]/[time]. In SI units momentum is measured in kg m/s.</p>
+</body>
+</html>
+

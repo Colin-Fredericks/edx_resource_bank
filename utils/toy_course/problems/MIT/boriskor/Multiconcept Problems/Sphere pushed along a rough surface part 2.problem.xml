@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>Find the speed \(v\)  of the sphere after slipping stops.</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="true"><text> \( v = \frac{5 v_0}{7} \) </text></choice>
+	<choice location="random" name="foil2" correct="false"><text> \( v = \frac{3 v_0}{5} \) </text></choice>
+	<choice location="random" name="foil3" correct="false"><text> \( v = \frac{2 v_0}{7} \) </text></choice>
+	<choice location="random" name="foil4" correct="false"><text> \( v = \frac{3 v_0}{7} \) </text></choice>
+	<choice location="random" name="foil5" correct="false"><text> \( v = \frac{v_0}{3} \) </text></choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

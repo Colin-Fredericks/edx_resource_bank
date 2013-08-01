@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK14.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+The diagrams show three boxes on a frictionless surface, along with the magnitudes of the horizontal forces applied to them. Which of the boxes is moving to the left?
+
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              Box A only          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Box B only          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              Box C only          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              Boxes A and B only          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              Boxes B and C only          
+        </choice>
+        <choice location="random" name="foil6" correct="true">
+
+              It is impossible to know the direction of velocity with the information given          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

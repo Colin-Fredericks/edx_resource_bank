@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Two Block Swing- Conceptual -->
+<problem>
+
+<h3>Solution</h3>
+
+<img src="/static/problems/S13/ESG/images/6-3.png"/>
+
+<h3>First Stage</h3>
+<p>Block m falls</p>
+<p><b>System</b>: Block m + Earth</p>
+<p><b>External Interactions</b>: Tension in the string attached to block 1, <i>T</i></p>
+<p><b>Internal Interactions</b>: block m and Earth, the work done by this force is treated as a potential energy and is conservative</p>
+<p><b>Physical Principle</b>: Mechanical Energy and Work</p>
+
+<p>Although there is an external force, cause by the tension, acting on Block m, the force is constantly directed perpendicular to the motion of the block, so it does not do any work.  This means that mechanical energy is conserved in the Block m + Earth system as the block swings down to reach the vertical position.</p>
+<p>(Because tension is constantly acting on Block m, you will need more information to try to solve the problem with kinematics.)</p>
+
+<h3>Second Stage</h3> 
+<p>Block m is at the vertical</p>
+<p><b>System</b>: Block m</p>
+<p><b>External interactions</b>: gravity and tension act on Block m.</p>
+<p><b>Physical principle</b>: \(\vec{F}\) = m\(\vec{a}\)</p>
+
+<p>When Block m is at the vertical, it is moving along a circular path, so it has acceleration <i>v<sup>2</sup>/r</i>.  The only forces acting on the bead are the tension and gravity, so they must be causing this centripetal acceleration.  Drawing a free body diagram and using \(\vec{F}\) = m\(\vec{a}\) will therefore allow you to calculate the normal force of the wire on the bead.</p>
+
+<h3>Third Stage</h3> 
+<p>Block M starts to slip</p>
+<p><b>System</b>: Block M and block m</p>
+<p><b>Internal interactions</b>: tension is constant throughout the string.</p>
+<p><b>External interactions</b>: gravity and tension continue to act on Block m, friction acts on block M.</p>
+<p><b>Physical principle</b>: \(\vec{F}\) = m\(\vec{a}\)</p>
+
+<p>At this point, the net force acting on block M is zero, so that with any additional tension in the string, it will begin to accelerate to the right.  Therefore \(\vec{F}\) = 0 = M\(\vec{a}\) at this point.  The frictional force can be calculated using the normal force, and substituting this in, it becomes possible to solve for m.</p>
+
+</problem>
+</html>

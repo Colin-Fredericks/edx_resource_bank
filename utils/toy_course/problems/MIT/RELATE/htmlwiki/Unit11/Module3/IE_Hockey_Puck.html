@@ -1,0 +1,227 @@
+<html>
+<head>
+<title>Example: Hockey Puck</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>Illustrative Example: Spinning Hockey Puck</h3>
+<p>A uniform hockey puck of mass <i><b>m</b></i> and radius <i><b>R</b></i> is moving on a horizontal surface contained in the x-y plane. The puck translates with a speed <i><b>v</b></i> following a straight line parallel to the x-axis and rotates clockwise as viewed from above the +z axis with an angular speed <i><b>&#969;</b></i> as shown in the left figure below.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/HockeyPuck.png"/></p>
+<p>Consider three points <i><b>Q</b></i>, <i><b>S</b></i> and <i><b>O</b></i> which are contained in the plane of motion as shown in the right figure above:</p>
+<ul style="list-style:disc outside none">
+	<li>Point <i><b>Q</b></i> is at a distance <i><b>d</b></i> from the line followed by the puck.</li>
+	<li>Point <i><b>S</b></i> is at a distance <i><b>h</b></i> from the line followed by the puck.</li>
+	<li>Point <i><b>O</b></i> is placed on the line followed by the puck.</li>
+</ul>
+
+<p><u><b>Question 1.</b></u> What is the angular momentum vector with respect to point <i><b>Q</b></i>?</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+\(\vec{L}_Q = - dmv\hat{k}- I_{cm}\omega\hat{k}\),
+<p>where <font size="3" face="times new roman"><i>I<sub>cm</sub> = mR<sup>2</sup>/2</i></font></p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Solution</b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>The puck is rotating and translating therefore the angular momentum with respect to point <i><b>Q</b></i> is given by the sum of the orbital and the spin components:
+<p>\(\vec{L}_Q = \vec{r}_{cm,Q}\times m\vec{v}_{cm} + I_{cm}\vec{\omega}\)</p>
+<p>where <font size="3" face="times new roman"> <i>I<sub>cm</sub> = mR<sup>2</sup>/2</i></font> is the moment of inertia of a uniform disk of radius <i>R</i>. The velocity of the center of mass is \(\vec{v}_{cm}=\vec{v}\), and the position of the center of mass measured from point <i><b>Q</b></i>, \(\vec{r}_{cm,Q}\), is shown in the figure below.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/HockeyPuck_pointQ_sol.png"/></p>
+
+<p><u><b>Orbital:</b></u></p>
+<p>This component represents the angular momentum about point <i><b>Q</b></i> of a <i>point particle</i> of mass <i><b>m</b></i> moving with speed <i><b>v</b></i> along the x-axis. This problem was solved in Question 1, Example 1, What's the point? in Module 1:</p>
+<p>\(\vec{L}_Q^{orbital} = \vec{r}_{cm,Q}\times m\vec{v}_{cm} = -mvd\hat{k}\)</p>
+<p>where \(\hat{k}\) is the unit vector parallel to the +z-axis. Following the right hand rule, the orbital angular 
+momentum is into the screen pointing towards the negative z-axis in the \(-\hat{k}\) direction.</p>
+
+<p><u><b>Spin:</b></u></p>
+<p>The spin component corresponds to the angular momentum due to the rotation of all the particles in the rigid object about the axis passing through the center of mass. With respect to a point in the axis of rotation, the angular momentum is the one obtained in Module 2 for the case of rotation about a fixed axis:</p>
+<p>\(\vec{L}_{cm}^{spin}=I_{axis}\vec{\omega}\).</p>
+<p>Following the right hand rule, the angular velocity vector is into the screen, pointing towards the -z-axis, then:</p>
+<p>\(\vec{L}_{cm}^{spin} = -I_{cm}\omega\hat{k}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><u><b>Question 2.</b></u> What is the angular momentum vector with respect to point <i><b>S</b></i> at the top left corner of the right figure?</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht7">
+<td>
+\(\vec{L}_S = + hmv\hat{k}- I_{cm}\omega\hat{k}\),
+<p>where <font size="3" face="times new roman"><i>I<sub>cm</sub> = mR<sup>2</sup>/2</i></font></p>
+<p><b>Note:</b> Comparing with the answer of question 1, the spin angular momentum is independent of the reference point (point Q or S) whereas the orbital angular momentum depends critically on this point (point Q or S).</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Solution</b> [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht8">
+<td>The puck is rotating and translating therefore the angular momentum with respect to point <i><b>S</b></i> is given by the sum of the orbital and the spin components:
+<p>\(\vec{L}_S = \vec{r}_{cm,S}\times m\vec{v}_{cm} + I_{cm}\vec{\omega}\)</p>
+<p>where <font size="3" face="times new roman"> <i>I<sub>cm</sub> = mR<sup>2</sup>/2</i></font> is the moment of inertia of a uniform disk of radius <i>R</i>. The velocity of the center of mass is \(\vec{v}_{cm}=\vec{v}\), and the position of the center of mass measured from point <i><b>S</b></i>, \(\vec{r}_{cm,S}\), is shown in the figure below.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/HockeyPuck_pointS_sol.png"/></p>
+
+<p><u><b>Orbital:</b></u></p>
+<p>This component represents the angular momentum about point <i><b>S</b></i> of a <i>point particle</i> of mass <i><b>m</b></i> moving with speed <i><b>v</b></i> along the x-axis. This problem was solved previously:</p>
+<p>\(\vec{L}_S^{orbital} = \vec{r}_{cm,S}\times m\vec{v}_{cm} = +mvh\hat{k}\)</p>
+<p>where \(\hat{k}\) is the unit vector parallel to the +z-axis. Following the right hand rule, the orbital angular momentum is out of the screen pointing towards the +z-axis, in the \(+\hat{k}\) direction.</p>
+
+<p><u><b>Spin:</b></u></p>
+<p>The spin component corresponds to the angular momentum due to the rotation of all the particles in the rigid object about the axis passing through the center of mass. As shown in Module 2, the angular momentum about an axis passing through the object's center of mass is:</p>
+<p>\(\vec{L}_{cm}^{spin}=I_{axis}\vec{\omega}\).</p>
+<p>Following the right hand rule, the angular velocity vector is into the screen pointing towards the -z-axis, then:</p>
+<p>\(\vec{L}_{cm}^{spin} = -I_{cm}\omega\hat{k}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><u><b>Question 3.</b></u> What is the angular momentum vector with respect to point <i><b>O</b></i>?</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht9">
+<td>
+\(\vec{L}_O = - I_{cm}\omega\hat{k}\)
+<p>where <font size="3" face="times new roman"><i><b>I<sub>cm</sub> = mR<sup>2</sup>/2</b></i></font></p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Solution</b> [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht10">
+<td>The puck is rotating and translating therefore the angular momentum with respect to point <i><b>O</b></i> is given by the sum of the orbital and the spin components:
+<p>\(\vec{L}_O = \vec{r}_{O,cm}\times m\vec{v}_{cm} + I_{cm}\vec{\omega}\)</p>
+<p>where <font size="3" face="times new roman"> <i>I<sub>cm</sub> = mR<sup>2</sup>/2</i></font> is the moment of inertia of a uniform disk of radius <i>R</i>. The velocity of the center of mass is \(\vec{v}_{cm}=\vec{v}\), and the position of the center of mass measured from point <i><b>O</b></i>, \(\vec{r}_{cm,O}\), are shown in the figure below.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/HockeyPuck_pointO_sol.png"/></p>
+
+<p><u><b>Orbital:</b></u></p>
+<p>This component represents the angular momentum about point <i><b>O</b></i> of a <i>point particle</i> of mass <i><b>m</b></i> moving with speed <i><b>v</b></i> along the x-axis. Because the position and velocity vector are at a 180<sup>o</sup> angle, (i.e., the puck is moving directly toward point O), then the orbital component is zero:</p>
+<p>\(|\vec{L}_O| = |\vec{r}_{cm,O}|v\sin 180^\circ = 0\)</p>
+
+<p><u><b>Spin:</b></u></p>
+<p>The spin component corresponds to the angular momentum due to the rotation of all the particles in the rigid object about the axis passing through the center of mass. With respect to a point in the axis of rotation, the angular momentum is the one obtained in Module 2 for the case of rotation about a fixed axis:</p>
+<p>\(\vec{L}_{cm}^{spin}=I_{axis}\vec{\omega}\).</p>
+<p>Following the right hand rule, the angular velocity vector is into the screen pointing towards the -z-axis, then:</p>
+<p>\(\vec{L}_{cm}^{spin} = -I_{cm}\omega\hat{k}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

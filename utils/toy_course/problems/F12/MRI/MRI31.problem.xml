@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 31 -->
+
+<problem>
+
+	<p>A projectile is launched horizontally from a certain height over a flat terrain. The horizontal range of the projectile equals the height from which the projectile is launched. Neglect resistive forces.</p>
+
+	<h3>Part 1</h3>
+	<p>Consider the angle \(\theta\) that the landing velocity vector makes with the ground. What statement about angle \(\theta\) is correct?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\(\theta = 45\deg \)</choice>
+			<choice location="random" correct="true">\(\theta\) is greater than \(45\deg \)</choice>
+			<choice location="random" correct="false">\(\theta\) is less than \(45\deg \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>Which of the following statements about \(\theta\) is correct? </p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The information given in the problem is sufficient to calculate \(\theta\)</choice>
+			<choice location="random" correct="false">Knowing the initial height only is sufficient to calculate \(\theta\)</choice>
+			<choice location="random" correct="false">Knowing the acceleration due to gravity only is sufficient to calculate \(\theta\)</choice>
+			<choice location="random" correct="false">Knowing both the initial height and the acceleration due to gravity is necessary to calculate \(\theta\)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Newton's First Law</title>
+<script type="text/javascript"> 
+
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+
+</script>
+<script type="text/javascript">
+	$(function(){
+	$('a[rel*=leanModal]').leanModal();
+	});
+</script>	
+<script type="text/javascript">	
+	$('#interactions').load('/static/problems/MIT/RELATE/htmlwiki/reference/Interactions_Studied.html');
+	$('#elastic').load('/static/content-mit-8011x/problems/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+        function domath(){
+           MathJax.Hub.Queue(["Typeset",MathJax.Hub]);	// force all math to retypeset
+        }
+</script>
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #003;
+    display: none;
+}
+
+#go { margin: 0 auto; width: 200px; }
+
+#box2 {
+     width: 600px;
+	padding: 30px; 
+    display:none;
+
+    background: #FFF;
+        border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+
+#interactions {
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+
+#elastic {
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+</style>
+</head>
+<body>
+
+<h2>Newton's First Law</h2>
+<p>Before we describe the effects of interactions, we have to understand what motion to expect in the <i>absence</i> of interactions. 
+</p>
+<h3> Learning Goals</h3>
+<p>After completing this module, you should be able to:
+</p>
+<ul style="list-style:disc outside none"><li> Describe the motion of an object that experiences no interactions, sometimes called the "natural state of motion".
+</li></ul>
+<h3> Statement of the Law</h3>
+<p>Newton's statement of his first law of motion is [Cajori's translation]:</p>
+<p><i>Every body continues in its state of rest, or of uniform motion in a right line, unless it is compelled to change that state by forces impressed upon it.</i>
+</p><p>Thus, according to Newton, the natural states of translational motion are:
+</p>
+<ul style="list-style:disc outside none"><li> motion with constant velocity - i.e. in a straight line path at constant speed
+</li><li> rest (no motion) - an important special case of constant velocity (v = 0)
+</li></ul>
+<p>Newton's First Law says when an object experiences no <a href="/static/problems/MIT/RELATE/htmlwiki/reference/Interactions_Studied.html">interaction</a> with any other object, then if it is at rest it will remain at rest and if in motion it will remain in motion along a straight line path with constant speed.  Previous theories of motion (<a href="http://classics.mit.edu/Aristotle/physics.7.vii.html" class="external text" rel="nofollow">Aristotle</a>, <a href="http://en.wikipedia.org/wiki/Theory_of_impetus" class="external text" rel="nofollow">Impetus Theory</a>), held that the natural state of motion was at rest, in common with everyday observation. 
+</p>
+<h3> Inertia</h3>
+<p> Newton's first law implies the concept of Inertia, the tendency of matter to maintain its state of rest or motion with constant velocity. 
+
+</p><p><br/>
+Newton's Laws of Motion refer to the causes of any change in the motion of an object.  <i>Translational</i> or linear motion of an object is evident by any change in the object's position along a straight line path.  We will discuss translational motion in the first part of this course, and rotational motion later in the course.  When analyzing translational motion, interactions are manifested as forces acting on the bodies participating in the interaction.
+</p>
+<p>
+<a id="go" rel="leanModal" href="#interactions" name="interactions">Interactions (leanModal)</a><br/>
+<a id="go" rel="leanModal" href="#elastic" name="elastic" onclick="domath()">Elastic (leanModal)</a><br/>
+<a id="go" rel="leanModal" href="#box2" name="box2">Hello world (leanModal)</a><br/>
+</p>
+<div id="box2"> Hello World </div>
+<div id="interactions"></div>
+<div id="elastic"></div>
+</body>
+</html>
+

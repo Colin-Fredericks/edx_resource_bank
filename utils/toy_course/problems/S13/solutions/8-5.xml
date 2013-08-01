@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+<!--Checkpoint 21-->
+<problem>
+
+<!-- code for inserting image needs to be editted-->
+<h3>Solution</h3>
+<p>System: cylinder treated as a rigid object</p>
+<p>Interactions:</p>
+<p>Cylinder \(\leftarrow\) \(\rightarrow\) surface (normal and friction at the two points of contact)</p>
+<p>Cylinder \(\leftarrow\) \(\rightarrow\) Earth (gravity acting at the center of mass of the cylinder)</p>
+<p>Physical principle: Netwon’s 2nd law for rotation \(\sum \vec{\tau}_{axis}^{ext} = I_{axis} \vec{\alpha)} \) </p>
+<img src="/static/problems/S13/solutions/images/8-5.png" />
+
+<p>If the cylinder moves at constant angular velocity, then the total torque about the center of mass is zero.</p>
+<p><i>\(\vec{\tau}\)<sub>cm, applied</sub> + \(\vec{\tau}\)<sub>cm, 1</sub> + \(\vec{\tau}\)<sub>cm, 2</sub> = 0</i></p>
+<p>where:</p>
+<p><i>\(\vec{\tau}_{cm, 1}\) = \(\vec{r}\)<sub>cm, 1</sub></i> x <i> \(\vec{f}\)<sub>1</sub> = -Rf<sub>1</sub> \(\hat{k}\)</i></p>
+<p><i>\(\vec{\tau}_{cm, 2}\) = \(\vec{r}\)<sub>cm, 2</sub></i> x <i> \(\vec{f}\)<sub>2</sub> = -Rf<sub>2</sub> \(\hat{k}\)</i></p>
+<p>The center of mass is at rest, so:</p>
+<p><i>\(\vec{F}\)<sub>cm</sub><sup>total</sup> = m<sup>total</sup> \(\vec{a}\)<sub>cm</sub></i></p>
+<p>This give the torque equation:</p>
+<p><i>\(\vec{r}\)<sub>cm, applied</sub> - R(f<sub>1</sub> + f<sub>2</sub>) = 0</i></p>
+<p>or: <i>\(\vec{r}\)<sub>cm, applied</sub> = R(f<sub>1</sub> + f<sub>2</sub>)</i></p>
+<p>For the force equations: <i>cos 45<sup>o</sup> = sin 45<sup>o</sup> = \({\sqrt{2}\over 2}\)</i></p>
+<p>\(\hat{i}\) : <i> N<sub>1</sub> - f<sub>2</sub> - mg\({\sqrt{2}\over 2}\) = 0</i></p>
+<p>\(\hat{j}\) : <i> N<sub>2</sub> + f<sub>1</sub> - mg\({\sqrt{2}\over 2}\)</i></p>
+<p>The forces of friction are:</p>
+<p><i> f<sub>1</sub> = \(\mu\)N<sub>1</sub>  and  f<sub>2</sub> = \(\mu\)N<sub>2</sub></i></p>
+<p>So the force equations become:</p>
+<p><i>N<sub>1</sub> - \(\mu\)N<sub>2</sub> = mg\({\sqrt{2}\over 2}\)</i></p>
+<p><i>N<sub>2</sub> - \(\mu\)N<sub>1</sub> = mg\({\sqrt{2}\over 2}\)</i></p>
+<p>We first solve those equations for <i>N<sub>1</sub></i>.</p>
+<p><i>N<sub>2</sub> = mg\({\sqrt{2}\over 2}\) - \(\mu\)N<sub>1</sub></i></p>
+<p>This equation can then be substituted into our earlier equation:</p>
+<p><i>N<sub>1</sub> - \(\mu\)(mg\({\sqrt{2}\over 2}\) - \(\mu\)N<sub>1</sub>) = mg\({\sqrt{2}\over 2}\)</i></p>
+<p><i>N<sub>1</sub>(1 + \(\mu\)<sup>2</sup>) = mg\({\sqrt{2}\over 2}\)(1 + \(\mu\))</i></p>
+<p><i>N<sub>1</sub> = \({\sqrt{2}\over 2}\)mg\({1+\mu\over 1 + \mu_{2}}\)</i></p>
+<p>We can now substitute in this value of <i>N<sub>1</sub></i> to our previous equation:</p>
+<p><i>\(\mu\)(\(\mu\)N<sub>2</sub> + \({\sqrt{2}\over 2}\)2mg) + N<sub>2</sub> = \({\sqrt{2}\over 2}\)mg</i></p>
+<p> yielding:</p>
+<p><i>N<sub>2</sub>(1 + \(\mu\)<sup>2</sup>) = \({\sqrt{2}\over 2}\)mg(1 - \(\mu\))</i></p>
+<p>Thus:</p>
+<p><i>N<sub>1</sub> = \({\sqrt{2}\over 2}\)\({1 + \mu\over 1 + \mu^{2}}\)</i></p>
+<p><i>N<sub>2</sub> = \({\sqrt{2}\over 2}\)\({1 - \mu\over 1 + \mu^{2}}\)</i></p>
+<p>Hence:</p>
+<p><i>N<sub>1</sub> + N<sub>2</sub> = \({\sqrt{2}\over 2}\)\({(1 + \mu) + (1 - \mu)\over 1 + \mu^{2}}\) = \({\sqrt{2}\over 1 + \mu^{2}}\)</i></p>
+<p><i>f<sub>1</sub> + f<sub>2</sub> = \(\mu\)(N<sub>1</sub> + N<sub>2</sub>) = \({\mu \sqrt{2}\over 1 + \mu^{2}}\)</i></p>
+<p>Finally:</p>
+<p><i>\(\vec{\tau}\)<sub>cm, applied</sub> = R(f<sub>1</sub> + f<sub>2</sub>)</i> \(\hat{k}\)</p>
+<p><i>\(\vec{\tau}\)<sub>cm, applied</sub> = (R\(\mu\)\({{\sqrt{2}\over 2}\over (1 + \mu^{2})}\)</i> \(\hat{k}\) </p>
+
+</problem>
+</html>

@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Example: Exploding Projectile</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: An explosion in air.</h3>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmProjectile.png"/>
+<p>A projectile of mass <i>M</i> explodes at the top of its trajectory, point (<i>x<sub>m</sub></i> , <i>h<sub>m</sub></i> ) measured with respect to the launching point as shown in the figure.  Right after the explosion, the smallest piece of mass <i>m</i><sub>1</sub> = <i>M</i> / 3, is momentarily at rest. Where does the other piece of mass <i>m<sub>2</sub></i> land? Give your answer measured with respect to the launching position.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht65','hide','show')" id="ht65l">show</a>]</th></tr>
+<tr style="display:none" id="ht65">
+<td>\(2.5\;x_m\)
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Derivation:</b>
+ [<a href="javascript:toggleDisplay('ht66','hide','show')" id="ht66l">show</a>]</th></tr>
+<tr style="display:none" id="ht66">
+<td>There are two ways to solve this problem. The first uses kinematics and conservation of linear momentum. The second uses the concept of the center of mass. We will follow the second approach, which is shorter than the first.
+<p>The time interval we are considering is while the projectile is in air.
+</p><p><u><b>System:</b></u> the projectile.
+</p><p><u><b>Interactions:</b></u>
+</p>
+<ul style="list-style:disc outside none"><li><b>External:</b> The projectile and the Earth. We will neglect the presence of air. The resulting force is the gravitational force that will act on the complete projectile before the explosion, and on each of the pieces after the explosion. 
+</li><li><b>Internal:</b> The forces resulting from the explosion. They produce the change in momentum of the individual pieces but do <b>not</b> affect the motion of the center of mass. These forces act during the short time interval that the explosion lasts.
+</li></ul>
+<p><b>Note:</b> the piece m<sub>1</sub> must be ejected (i.e. given an impulse) straight back along \(- \hat{x}\) in order to be motionless, so m<sub>2</sub> is projected straight forwards, and both pieces land at the same time.</p>
+<p>While the projectile or pieces are in the air, the net external force on the system is gravity, so 
+</p><p>\(\sum \vec{F}^{ext} = M \vec{A}_{cm}\)
+</p><p>implies that 
+</p><p>\(\vec{A}_{cm}=\vec{g}\).
+</p><p>As a result, the center of mass follows a projectile motion and it will land at a distance 2<i>x<sub>m</sub></i> from the launching point as shown below:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/CmProjectile_sol1.png"/>
+</p><p>In the figure, <i>x</i><sub>2</sub> is the landing position of the largest piece of mass <i>m</i><sub>2</sub>. Using the definition of the center of mass:
+</p><p>\(X_{cm} =\frac{m_1 x_1 + m_2 x_2}{m_1+m_2} \)
+</p><p>Replacing the values of the masses:
+</p><p>\(X_{cm} =\frac{M/3 x_1 + 2M/3 x_2}{M} \)
+</p><p>or,
+</p><p>\(X_{cm} =\frac{x_1 + 2 x_2}{3} \)
+</p><p><br/>
+Solving for <i>x</i><sub>2</sub>:
+</p><p><br/>
+\(x_2 = 3\; X_{cm}/2 - x_1/2\)
+</p><p><br/>
+Knowing that \(X_{cm}=2\;x_m\) and \(x_1 = \;x_m\), the above equation becomes: 
+</p><p><br/>
+\(x_2 =3\;(2x_m)/2 -x_m/2 = 2.5\;x_m \)
+</p><p><br/>
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 28 -->
+
+<problem>
+
+	<p>How do you know that the error is there?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Straightforward application of energy conservation is difficult on a curved track.</choice>
+			<choice location="random" correct="true">We have not connected the distance traveled with the time elapsed.</choice>
+			<choice location="random" correct="false">Energy lost to friction cannot be accounted for; we cannot use energy in this step.</choice>
+			<choice location="random" correct="false">The acceleration of the block changes in an unknown way while it is on the curved slope.</choice>
+			<choice location="random" correct="false">This is an energy problem; the use of force is inappropriate.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

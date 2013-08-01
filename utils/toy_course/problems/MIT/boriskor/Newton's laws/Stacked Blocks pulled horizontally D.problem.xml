@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <img src="/static/problems/MIT/boriskor/BKimages/Stacked blocks_top_pull.png" alt="Two stacked blocks on a table; top block pulled horizontally"/>
+      <br/>
+
+        <p>
+            Two blocks of equal masses are placed on a horizontal table as shown. The top block is then pulled with a slowly increasing horizontal force \(F\). The coefficients of static friction for both contact surfaces are greater than zero and equal to each other<br/>
+Select the correct description of the motion of the blocks. <b>Note: "move" or "does not move" refers to the laboratory ("Earth") frame of reference.</b>
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                Both blocks begin to move simultaneously as F reaches a certain minimum value; as F increases further, both blocks always have the same acceleration.
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                Both blocks begin to move simultaneously as F reaches a certain minimum value; as F increases further, the acceleration of the bottom block exceeds the acceleration of the top block.
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                Both blocks begin to move simultaneously as F reaches a certain minimum value; as F increases further, the acceleration of the top block exceeds the acceleration of the bottom block.
+
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+
+                The top block begins to move as soon as F reaches a certain minimum value; the bottom block would never move even as F increases further.
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                The top block begins to move as soon as F reaches a certain minimum value; the bottom block does not begin to move at that instant but would begin to move as F increases further.
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

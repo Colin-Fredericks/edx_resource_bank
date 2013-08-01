@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<!-- Problem 1 -->
+<problem>
+<script type="loncapa/python">
+import math
+</script>
+
+	<h2>Keep turning the cylinder</h2>
+	<p>A cylinder of mass <i>m</i> and radius <i>R</i> is rotated in a V groove with constant angular 
+	velocity \(\omega\). The coefficient of friction between the cylinder and the surface is \(\mu\).</p>
+	<script type="loncapa/python">
+T = "R*mu*sqrt(2)/(1+mu^2)"
+	</script>
+	<img src="/static/problems/S13/ESG/images/8-5.png" />
+
+		<br/>
+		What external torque must be applied to the cylinder to keep it rolling? Type "mu" for \(\mu\) and "omega" for \(\omega\).
+		<br/>
+
+	<formularesponse samples="m,R,mu,omega@1,2,0.2,1:10,10,0.9,10#10" answer="$T">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\tau\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

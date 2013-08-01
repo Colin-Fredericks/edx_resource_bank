@@ -1,0 +1,6 @@
+<vertical>
+	<problem filename="F12/boris/BK154-1.problem" display_name="Elastic Collision" attempts="2" weight="0.66"/>
+	<problem filename="F12/boris/BK154-2.problem" display_name="Elastic Collision, Part 2" attempts="2" weight="0.67"/>
+	<problem filename="F12/boris/BK154-3.problem" display_name="Elastic Collision, Part 3" attempts="2" weight="0.67"/>
+	<discussion for="Elastic Collision" id="MReV_Summer2013_BK154" discussion_category="Momentum and Impulse" />
+</vertical>

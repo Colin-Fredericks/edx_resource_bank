@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Questions for Week 2 Day 2</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">W02D02 Forces and Newton's Laws</b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman: 4.1-4.6, 5.1-5.3 </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W02D2-1 (5 points): </b>
+  </p>
+  <p>
+The static friction force \(\vec{\mathbf{f}} _{\mathbf{s}}\) can have a magnitude \(\left| \vec{\mathbf{f}} _{\mathbf{s}} \right| \equiv f_{s} \leq \mu _{s} N\) (Eq. 5.6). Suppose you have a block with a rope attached on opposite sides (right and left sides). (a) Describe the direction and magnitude of the static friction force as you increase your pull on the right side until the block just slips. </p>
+  <p>
+Direction: <optionresponse><optioninput options="('left','right')" correct="left"/></optionresponse> </p>
+  <p>
+Magnitude: <optionresponse><optioninput options="('less than fH_s','greater than fH_s','equal to fH_s')" correct="less than fH_s"/></optionresponse> </p>
+  <p>
+(b) Describe the direction and magnitude of the static friction force as you increase your pull on the left side until the block just slips. </p>
+  <p>
+Direction: <optionresponse><optioninput options="('left','right')" correct="left"/></optionresponse> </p>
+  <p>
+Magnitude: <optionresponse><optioninput options="('less than fH_s','greater than fH_s','equal to fH_s')" correct="less than fH_s"/></optionresponse> </p>
+  <p>
+(c). Describe the direction and magnitude of the static friction force when you pull both sides with the same magnitude of force. </p>
+  <p>
+Direction: <optionresponse><optioninput options="('left','right')" correct="left"/></optionresponse> </p>
+  <p>
+Magnitude: <optionresponse><optioninput options="('less than fH_s','greater than fH_s','equal to fH_s')" correct="less than fH_s"/></optionresponse> </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W02D2-2 (5 points):</b>
+  </p>
+  <p>
+The magnitude of gravitational force on an object of mass \(m\) at the surface of the earth due to the interaction of the object and the earth is given by \(\left| \vec{\mathbf{F}} _{grav} \right| =mg_{E}\) (Eq. 4.10). The magnitude of this force is also given by Eq. 12.2, \(\left| \vec{\mathbf{F}} _{grav} \right| =Gm_{E} m/R_{E} ^{2}\) . If you placed the same object on the surface of a planet with the same mass as the earth, \(m_{P} =m_{E}\) but only one fifth the mass density, \(\rho _{P} =(1/5)\rho _{E}\) , what is the ratio of the magnitudes of the gravitational accelerations at the surface of the planet and earth, i.e. what is \(g_{P} /g_{E}\) ?<symbolicresponse answer="5"><textline math="1"/></symbolicresponse> </p>
+</problem>

@@ -1,0 +1,68 @@
+<html>
+  <problem>
+
+      <p>Two steel balls, one weighing twice as much as the other, roll off a horizontal table with the same speed.  The balls will hit the ground at a certain horizontal distance away from the base of the table.  How do these impact positions compare for the two balls, as measured from the base of the table?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <conceptgroup concept="One">
+          <choice location="random" name="OneA" correct="false">
+
+light ball hits the floor at half the distance of the heavy ball
+
+          </choice>
+          <choice location="random" name="OneB" correct="false">
+
+heavy ball hits the floor at twice the distance of the light ball
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="Two">
+          <choice location="random" name="TwoA" correct="false">
+
+light ball hits the floor at twice the distance of the heavy ball
+
+          </choice>
+          <choice location="random" name="TwoB" correct="false">
+
+heavy ball hits the floor at half the distance of the light ball
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="Three">
+          <choice location="random" name="ThreeA" correct="true">
+
+both balls hit the floor at the same distance
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="Four">
+          <choice location="random" name="FourA" correct="false">
+
+light ball hits the floor at about 3/4 of the distance of the heavy ball
+
+          </choice>
+          <choice location="random" name="FourB" correct="false">
+
+heavy ball hits the floor at about 1.5 times the distance of the light ball
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="Five">
+          <choice location="random" name="FiveA" correct="false">
+
+light ball hits the floor at about 1.5 times the distance of the heavy ball
+
+          </choice>
+          <choice location="random" name="FiveB" correct="false">
+
+heavy ball hits the floor at about 3/4 the distance of the light ball
+
+          </choice>
+        </conceptgroup>
+      </choicegroup>
+
+    </multiplechoiceresponse>
+  </problem>
+</html>

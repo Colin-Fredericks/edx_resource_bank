@@ -1,0 +1,14 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How much Newtonian mechanics have you studied? If your last exposure to Newtonian mechanics was more than one year ago, please check the last box as well.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="more_than_year_college"><text>More than one year of Newtonian mechanics in college/university</text></choice>
+      <choice correct="true" name="one_year_or_less_college"><text>One year or less of Newtonian mechanics in college/university</text></choice>
+      <choice correct="true" name="more_than_year_secondary"><text>More than one year of Newtonian mechanics in high school/secondary school</text></choice>
+      <choice correct="true" name="one_year_or_less_secondary"><text>One year or less of Newtonian mechanics in high school/secondary school</text></choice>
+      <choice correct="true" name="self_taught"><text>Self-taught in Newtonian mechanics</text></choice>
+      <choice correct="true" name="none_of_above"><text>None of the above</text></choice>
+      <choice correct="true" name="old_xp"><text>My last exposure to physics (of any type) was more than one year ago</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

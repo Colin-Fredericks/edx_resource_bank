@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Impulse</title>
+
+      <p>The diagram shows an object in its initial state (on the left) and the final state on the right. 
+
+</p>
+      <br/>
+
+    <img width="400" alt="BK47b.png" src="/static/problems/MIT/rayyan/check_points/Pictures/BK47_1.png"/>
+        <br/>
+
+      <p>
+Which of the following vectors best describes a possible direction of the impulse imparted on the object between the initial and the final moments?
+</p>
+
+    <br/>
+    <img width="300" alt="BK47b.png" src="/static/problems/MIT/rayyan/check_points/Pictures/BK47_2.png"/>
+
+      <br/>
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice  name="foil1" correct="false">
+
+                vector A
+
+          </choice>
+          <choice  name="foil2" correct="false">
+
+                vector B
+
+          </choice>
+          <choice  name="foil3" correct="false">
+
+                vector C
+
+          </choice>
+          <choice  name="foil4" correct="false">
+
+vector D
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+vector E
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+vector F
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+
+vector G
+          </choice>
+          <choice location="random" name="foil8" correct="true">
+
+vector H
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+          </problem>
+</html>

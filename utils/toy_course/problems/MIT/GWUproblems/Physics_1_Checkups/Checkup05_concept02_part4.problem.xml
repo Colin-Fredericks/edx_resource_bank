@@ -1,0 +1,22 @@
+<html>
+  <problem>
+
+<p>If the initial amplitude doubles, the frequency will: </p>
+				
+<p>
+<multiplechoiceresponse direction="vertical" randomize="no">
+      <choicegroup type="MultipleChoice">
+        <choice  correct="false" name="1"> also double. </choice>
+        <choice  correct="false" name="2"> quadruple.</choice>
+        <choice  correct="true" name="3">  not change. </choice>
+        <choice  correct="false" name="4"> increase  by a factor of 2.</choice>
+        <choice  correct="false" name="5"> none of the above.</choice>
+        
+      </choicegroup>
+    </multiplechoiceresponse>
+</p>        
+
+
+
+  </problem>
+</html>

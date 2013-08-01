@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+<p>
+Part 3. 
+At the moment when the speed of block m is at a maximum, what statement is true? Check all that apply.
+</p>
+<choiceresponse>
+<checkboxgroup direction="vertical">
+<choice correct="false"><text>The speed of block 2m is zero</text></choice>
+<choice correct="true"><text>The speed of block 2m is at a maximum</text></choice>
+<choice correct="true"><text>The net force acting on block m is zero</text></choice>
+<choice correct="true"><text>The net force acting on block 2m is zero</text></choice>
+<choice correct="false"><text>The elastic potential energy of the system is at a maximum</text></choice>
+<choice correct="true"><text>The elastic potential energy of the system is zero</text></choice>
+<choice correct="false"><text>The center of mass of the system is moving in the same direction as block m</text></choice>
+<choice correct="false"><text>The center of mass of the system is moving in the same direction as block 2m</text></choice>
+<choice correct="true"><text>The center of mass of the system is not moving with respect to the surface</text></choice>
+
+		</checkboxgroup>
+	</choiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Kinetic friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Normal_force').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Normal_force.html'); 
+$('#Static_friction').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Static_friction.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>The specific manifestation of friction that is directly opposed to an object's sliding motion along a surface. The force of kinetic friction has a size independent of the speed of the object, and proportional to the <!--<a id="go" rel="leanModal" href="#Normal_force" name="Normal_force" onclick="domath()">-->normal force<!--</a>--> exerted on the object by the surface.
+</p>
+<h2> Kinetic Friction as a Force</h2>
+<h4> Direction</h4>
+<p>Kinetic friction is always directed opposite to the direction of the velocity of the object measured relative to the surface (i.e. in the reference frame moving with the surface). 
+</p>
+<h4> Magnitude</h4>
+<p>For an object that is already sliding along a surface or is accelerating from rest on a surface, the size of the friction force will be proportional to the normal force exerted by the surface on the object. The corresponding mathematical relationship is:
+</p><p><m>$f^{k} = \mu_{k}N\;$</m>
+</p><p>where &#956;<sub>k</sub> is a constant of proportionality called the coefficient of kinetic friction and <i>N</i> is the normal force exerted on the object by the surface which is creating the friction.  The coefficient of kinetic friction is a dimensionless number, usually less than 1.0 (but not required to be less than 1.0). Rough surfaces will yield larger coefficients of friction than smooth surfaces. 
+</p><p>The coefficient of kinetic friction for a given object on a given surface will usually be different than the corresponding coefficient of <!--<a id="go" rel="leanModal" href="#Static_friction" name="Static_friction" onclick="domath()">-->static friction<!--</a>-->. It is usually the case that &#956;<sub>k</sub> &lt; &#956;<sub>s</sub>.
+</p>
+<h2> Kinetic Friction and Energy</h2>
+<h4> Internal Kinetic Friction is Always Dissipative</h4>
+<p>Kinetic friction is a non-conservative force, and so has no associated potential energy.  An internal kinetic friction force must therefore be accounted for as work done on the system.  Furthermore, an internal kinetic friction force will <i>always</i> do net negative work due to the fact that the kinetic force <i>requires</i> that motion be taking place, and the direction of the net force is guaranteed to be directed opposite to that motion.
+</p>
+<div id="Normal_force" class="popup"></div>
+<div id="Static_friction" class="popup"></div>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 4. </title>
+
+
+
+<p>What is the magnitude of the acceleration of the yo-yo's center of mass?</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( a = g (mr^2)/(mr^2 + I) \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( a = g (mr^2 + I)/(mr^2)   \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( a = g (mr^2)/( I)   \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( a = g (I)/(mr^2) \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( a = g (I)/(mr^2 + I)    \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( a = g (mr^2 + I)/ I)        \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+
+</problem>
+</html>

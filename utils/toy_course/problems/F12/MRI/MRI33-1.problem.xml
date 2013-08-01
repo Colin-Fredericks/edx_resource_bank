@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 33 -->
+
+<problem>
+
+	<p>Two projectiles are launched at different velocities from the same spot on the ground level simultaneously. The initial speeds and the launch angles for both projectiles are given but the acceleration due to gravity is not. Neglect resistive forces.</p>
+
+	<h3>Part 1</h3>
+	<p>For the time interval when both projectiles are in the air, it is possible to find:</p>	
+	<p>
+		The vertical displacement of each projectile as a function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="No"/>
+		</optionresponse>
+	</p>
+	<p>
+		The horizontal displacement of each projectile as a function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The distance between the projectiles as a function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The horizontal component of each projectile’s velocity as a function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The vertical component of each projectile’s velocity as a function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="No"/>
+		</optionresponse>
+	</p>
+
+</problem>
+</html>

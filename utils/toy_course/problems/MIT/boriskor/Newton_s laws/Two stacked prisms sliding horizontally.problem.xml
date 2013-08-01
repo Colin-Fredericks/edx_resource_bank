@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <img src="/static/problems/MIT/boriskor/BKimages/two prisms sliding.png" alt="Two prisms and a block slide as one object"/>
+      <br/>
+
+        <p>
+Two prisms are placed as shown. Angle \(\theta\) (see the diagram) is given. The coefficient of static friction between the touching surfaces of the prisms is \(k\). The bottom prism is pushed along a horizontal surface. What is the range of accelerations of the bottom prism that allows the top prism to remain at rest relative to the bottom one? 
+</p>
+
+      <br/>
+
+        <b>Find the <i>minimum</i> acceleration of the bottom prism.</b>
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+
+                    \(a_{min}= g(sin \theta - k cos \theta)/(cos \theta + k sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(a_{min}= g(sin \theta + cos \theta)/(k(cos \theta -  sin \theta\))) 
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                    \(a_{min}= g(sin \theta + k cos \theta)/(cos \theta + k sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                    \(a_{min}= g(sin \theta - cos \theta)/(k(sin \theta + k cos \theta\))) 
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                    \(a_{min}= g(sin \theta -  cos \theta)/(k cos \theta - sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                    \(a_{min}= g(sin \theta +  cos \theta)/(cos \theta -  k sin \theta\)) 
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+        <b>Find the <i>maximum</i> acceleration of the bottom prism.</b>
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+
+                    \(a_{max}= g(sin \theta + k cos \theta)/(cos \theta - k sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(a_{max}= g(sin \theta + k cos \theta)/(cos \theta + k sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                    \(a_{max}= g(sin \theta + cos \theta)/(cos \theta + k sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                    \(a_{max}= g(k sin \theta - cos \theta)/(sin \theta + k cos \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                    \(a_{max}= kg(sin \theta -  cos \theta)/(cos \theta + sin \theta\)) 
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                    \(a_{max}= kg(sin \theta +  cos \theta)/(k cos \theta +  sin \theta\)) 
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+    
+  </problem>
+</html>

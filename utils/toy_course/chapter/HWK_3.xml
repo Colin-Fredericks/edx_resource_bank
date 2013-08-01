@@ -1,0 +1,53 @@
+<chapter display_name="Homework for Unit 3: Applying Newton's Laws">
+	<sequential display_name="Applying Newton's Laws Homework" url_name="Applying_Newtons_Laws_Homework">
+
+<!-- Level 1 -->
+
+		<vertical display_name="Pulley Acceleration" filename="BK151.vert" />
+		<vertical display_name="Block-and-pulley Assembly" filename="BK156.vert" />
+		<vertical display_name="Pushing the Safe 1" filename="MRI4a.vert" />
+		<vertical display_name="Pushing the Safe 2" filename="MRI4b.vert" />
+		<vertical display_name="Pushing the Safe 3" filename="MRI4c.vert" />
+
+<!-- Level 2 -->
+
+		<vertical display_name="Pushing the Safe 4" filename="MRI4d.vert" />
+		<vertical display_name="Stacked blocks pulled horizontally (C)">
+			<problem display_name="Stacked blocks pulled horizontally (C)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally C.problem" attempts="2" weight="2"/>
+			<discussion for="Stacked blocks pulled horizontally (C)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_C" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Stacked blocks pulled horizontally (D)">
+			<problem display_name="Stacked blocks pulled horizontally (D)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally D.problem" attempts="2" weight="2"/>
+			<discussion for="Stacked blocks pulled horizontally (D)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_D" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Stacked blocks pulled horizontally (E)">
+			<problem display_name="Stacked blocks pulled horizontally (E)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally E.problem" attempts="2" weight="2"/>
+			<discussion for="Stacked blocks pulled horizontally (E)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_E" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Stacked blocks pulled horizontally (H)">
+			<problem display_name="Stacked blocks pulled horizontally (H)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally H.problem" attempts="2" weight="2"/>
+			<discussion for="Stacked blocks pulled horizontally (H)" id="MReV_Summer2013_Stacked_Blocks_pulled_horizontally_H" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="The Atwood Machine" filename="BK149.vert" />
+		<vertical display_name="The Modified Atwood Machine" filename="BK150.vert" />
+
+<!-- Level 3 -->
+
+		<vertical display_name="Two connected blocks, an inclined plane with friction">
+			<problem display_name="Two connected blocks, an inclined plane with friction" filename="MIT/boriskor/Newton_s laws/Two blocks, an inclined plane, friction.problem" attempts="10" weight="3"/>
+			<discussion for="Two connected blocks, an inclined plane with friction" id="MReV_Summer2013_Two_blocks_an_inclined_plane_friction" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Two prisms and block sliding horizontally">
+			<problem display_name="Two prisms and block sliding horizontally" filename="MIT/boriskor/Newton_s laws/Two prisms and a block.problem" attempts="5" weight="3"/>
+			<discussion for="Two prisms and block sliding horizontally" id="MReV_Summer2013_Two_prisms_and_a_block" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Two stacked prisms sliding along a horizontal surface">
+			<problem display_name="Two stacked prisms sliding along a horizontal surface" filename="MIT/boriskor/Newton_s laws/Two stacked prisms sliding horizontally.problem" attempts="3" weight="3"/>
+			<discussion for="Two stacked prisms sliding along a horizontal surface" id="MReV_Summer2013_Two_stacked_prisms_sliding_horizontally" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<vertical display_name="Blocks with friction">
+			<problem display_name="Blocks with friction" filename="MIT/rayyan/problemset/hw1/U1_Problem2.problem" attempts="10" weight="3"/>
+			<discussion for="Blocks with friction" id="MReV_Summer2013_U1_Problem2" discussion_category="Applying Newton's Laws" />
+		</vertical>
+	</sequential>
+</chapter>

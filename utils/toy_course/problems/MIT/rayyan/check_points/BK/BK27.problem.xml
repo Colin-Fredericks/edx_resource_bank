@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <p>In the diagram, all masses and angle \(\theta\) are given. The pulleys and the string are ideal. The tension of the top string is \(T_1\) and the tension of the bottom string is \(T_2\). Frictional forces are negligible.</p><br/><img src="/static/problems/MIT/rayyan/check_points/BK/BK27.png" alt="p1a" texwrap="none" align="top"/><br/><u><b>Part1:</b></u>What is the correct relationship between the magnitudes of the accelerations of blocks 1 and 2?
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                \(a_1\) = \(a_2\sin\theta\)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                \(a_1\) = \(a_2\cos\theta\)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(a_1\) = \(\frac{a_2}{\sin\theta}\)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(a_1\) = \(\frac{a_2}{\cos\theta}\)
+
+          </choice>
+          <choice location="bottom" name="foil5" correct="true">
+
+                None of the Above
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part2:</b></u>What is the correct FBD for block \(m_2\)?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                  <img src="/static/problems/MIT/rayyan/check_points/BK/BK27a.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                  <img src="/static/problems/MIT/rayyan/check_points/BK/BK27b.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+
+                  <img src="/static/problems/MIT/rayyan/check_points/BK/BK27c.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                  <img src="/static/problems/MIT/rayyan/check_points/BK/BK27d.png" align="middle" texwrap="none" width="100" alt="p1a"/>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part3:</b></u>Under what conditions would the system be in equilibrium?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                \(m_1\) = \(m_2-m_3\)
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                \(m_1\) = \(m_2+m_3\)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(m_1\) = \(m_2sin\theta-m_3\)
+
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+
+                \(m_1\) = \(m_2sin\theta+m_3\)
+
+          </choice>
+          <choice location="bottom" name="foil5" correct="false">
+
+                \(m_1\) = \(m_2cos\theta-m_3\)
+
+          </choice>
+          <choice location="bottom" name="foil6" correct="false">
+
+                \(m_1\) = \(m_2cos\theta+m_3\)
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+                      </problem>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 16 -->
+
+<problem>
+
+	<p>Two uniform bars have masses and lengths of \(m\), \(l\) and \(2m\), \(2l\), respectively. The bars are pivoted at the common frictionless hinge as shown, and gravity is down. Initially, the bars are held horizontally. Then, they are released in such a way (not at the same instant of time) that they collide and stick together, at the bottom position. After that, the bars swing upward together. No resistive forces at the pivot act either before or after the collision.</p>
+	<img src="/static/problems/F12/MRI/images/MRI16.png" />
+	<p>Consider the following quantities: linear momentum, angular momentum (about the pivot), kinetic energy, mechanical energy.</p>
+
+	<h3>Part 1</h3>
+	<p>Which of these quantities is conserved from the moment the first bar is released to the moment when the bars come to momentary rest after their first upward swing?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Linear momentum of the 2-bars system only</choice>
+			<choice location="random" correct="false">Angular momentum of the 2-bars system (about the pivot point) only</choice>
+			<choice location="random" correct="false">Kinetic energy of the 2-bars system only</choice>
+			<choice location="random" correct="false">Mechanical energy of the 2-bars-Earth system only</choice>
+			<choice location="bottom" correct="true">None of them</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

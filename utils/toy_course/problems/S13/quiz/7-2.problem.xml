@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Center of mass for a hollow object -->
+
+<problem>
+
+<img src="/static/problems/S13/quiz/images/7-2.png" />
+
+<p>The diagram above shows a uniform density <i>hollow</i> cylindrical shell with an <i>open top</i>. It has radius R and height h.</p>
+
+<p>Find the height for the center of mass of this cylinder, taking the origin of the coordinate system at the center of the bottom. Use "pi" for \(\pi\).</p>
+
+<script type="loncapa/python">
+answer_value = "(2*pi*R*h*(h/2))/(pi*R*R + 2*pi*R*h)"
+</script>
+<formularesponse type="ci" samples="R,h@1,1:10,10#10" answer="$answer_value">
+  <responseparam type="tolerance" default="0.00001"/> 
+  <textline size="40" math="1" />    
+</formularesponse>
+
+<solution>
+<div class="detailed-solution">
+<p>The center of mass for the bottom of the cylinder is in its center, and the center of mass for the curved part is in the very center of the cylinder. To find the center of mass for the entire object, use the equation for the position of the center of mass.</p>
+
+<p>\[ z_{CM} = \frac{z_1 m_1 + z_2 m_2}{m_1 + m_2} \]</p>
+
+<p>We treat the sides and bottom as being very thin, so that we do not have to worry about the bottom rim of the cylinder and whether it belongs to the bottom or the sides. This also lets us treat the area of the cylinder as if it were the mass.</p>
+
+<p>\[ z_{CM} = \frac{2 \pi R h \frac{h}{2}}{\pi R^2 + 2 \pi R h} \]</p>
+
+</div>
+</solution>
+
+</problem>
+
+</html>

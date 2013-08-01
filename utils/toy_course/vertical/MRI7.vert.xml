@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI7-1.problem" display_name="Rocket Launch" attempts="2" weight="0.5"/>
+	<problem filename="F12/MRI/MRI7-2.problem" display_name="Rocket Launch, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Rocket Launch" id="MReV_Summer2013_MRI7" discussion_category="Mechanical Energy and Work" />
+</vertical>

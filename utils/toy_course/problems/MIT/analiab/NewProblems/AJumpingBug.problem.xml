@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+  <img src="/static/problems/MIT/analiab/NewProblems/files/AJumpingBug.png"/>
+
+    <br/>
+
+      <p>
+A thin rod of uniform mass M and length d is placed on a horizontal and frictionless table. The rod is free two rotate about a pivot at one end. 
+A small bug of mass m, initially standing at a distance x from the pivot decides to jumps off with a speed v relative to the surface as shown in the figure.
+ </p>
+
+<b>Part a:</b><br/>
+<p>
+a) Briefly explain if the following statements are true or false during the time interval of the jump:
+<br/>
+1) Linear momentum of the rod+insect system is constant.
+</p>
+<optionresponse>
+      <optioninput options="('true','false')" correct="false"/>
+    </optionresponse>
+
+<p>
+2) Angular momentum of the rod+insect system is constant about the center of mass of the combined system. 
+</p>
+
+<optionresponse>
+      <optioninput options="('true','false')" correct="false"/>
+    </optionresponse>
+
+<p>
+3) Angular momentum of the rod+insect system is constant about the pivot point.
+</p>
+
+<optionresponse>
+      <optioninput options="('true','false')" correct="true"/>
+    </optionresponse>
+
+<b>Part b:</b><br/>
+<p>Calculate the magnitude  of the angular velocity of the rod at the instant right after the insect has jumped off the rod. 
+</p>
+<p>
+\(\omega=\)
+</p>
+
+    <formularesponse answer="3*m*v*x/(M*d^2)" samples="m,M,v,x,d@1,1,1,1,1:10,10,10,10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+
+  </problem>
+</html>

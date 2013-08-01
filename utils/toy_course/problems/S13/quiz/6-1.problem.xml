@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>Four rocks are thrown horizontally from a building, with varying speeds and from various floors. Rock 1 lands a distance r away from the building, rock 2 lands 2r away from the building, rock 3 lands at distance 3r, and rock 4 at 4r. Ignore air resistance.</p>
+
+<p>Drag the rocks into place to select the rock that was thrown with the height and speed shown. If there was no rock thrown with a certain combination of values, drag "no rock" into that slot. You will use the "no rock" answer more than once.</p>
+
+<customresponse>
+	<drag_and_drop_input img="/static/problems/S13/quiz/images/6-1.png" target_outline="true" one_per_target="true" no_labels="true">
+		<draggable id="rock1" label="Rock 1" can_reuse="false"/>
+		<draggable id="rock2" label="Rock 2" can_reuse="false"/>
+		<draggable id="rock3" label="Rock 3" can_reuse="false"/>
+		<draggable id="rock4" label="Rock 4" can_reuse="false"/>
+		<draggable id="norock" label="No Rock" can_reuse="true"/>
+		<target id="vh"   x="180" y="0"   w="20" h="30"/>
+		<target id="2vh"  x="180" y="35"  w="20" h="30"/>
+		<target id="v2h"  x="180" y="70"  w="20" h="30"/>
+		<target id="2v2h" x="180" y="105" w="20" h="30"/>
+		<target id="v3h"  x="180" y="140" w="20" h="30"/>
+		<target id="2v4h" x="180" y="175" w="20" h="30"/>
+		<target id="v6h"  x="180" y="210" w="20" h="30"/>
+		<target id="v9h"  x="180" y="245" w="20" h="30"/>
+	</drag_and_drop_input>
+
+	<answer type="loncapa/python">
+correct_answer = [
+{'draggables': ['rock1'],
+'targets': ['vh'],
+'rule':'anyof'
+},
+{'draggables': ['rock2'],
+'targets': ['2vh'],
+'rule':'anyof'
+},
+{'draggables': ['norock'],
+'targets': ['v2h','2v2h','v3h','v6h'],
+'rule':'unordered_equal'
+},
+{'draggables': ['rock4'],
+'targets': ['2v4h'],
+'rule':'anyof'
+},
+{'draggables': ['rock3'],
+'targets': ['v9h'],
+'rule':'anyof'
+}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+	</answer>
+</customresponse>
+
+</problem>
+
+</html>

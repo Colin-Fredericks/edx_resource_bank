@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="260" height="155" src="/static/problems/MIT801/MIT/rayyan/Figures/Hooke's Law Spring Configurations.png"/>
+    <br/>
+
+      <p>
+As shown in Figure A, a block of mass m is hanging from a spring attached to the ceiling.
+As shown in Figure B, two blocks of mass m/2 are hanging from two strings that are attached to a spring.
+If both springs have the same spring constant k and the spring in Figure A is stretched a distance d, how far will the spring in Figure B stretch?
+</p>
+
+    <br/>
+
+    <script type="loncapa/python">
+
+
+</script>
+    <formularesponse answer="d/2" samples="d@1:10#4">
+	<responseparam type="tolerance" default="1%"/>
+      <textline size="25" math="1">
+        <hintgroup showoncorrect="no">
+
+            <p>Hint: in Figure B, pretend that one side of the spring is attached to a wall and that the other side feels tension from the mass and string.</p>
+
+        </hintgroup>
+      </textline>
+    </formularesponse>
+    <solved>
+
+        <p><br/><b>
+Correct!
+</b><br/>
+As shown in the force diagrams below, the spring in Figure B only has half the force. Since F = k*x, as the force drops by a factor of two, the distance 
+d also drops by a factor of 2. So the correct answer is d/2.<br/>
+
+Note that by Newton's Third Law we always have an equal and opposite forces. That said, when we ask what is the force on a spring, we only look at one side.<br/>
+
+One helpful trick is to fixate one side of the spring to an imaginary wall if the system is not moving. If you only consider one side of the spring, it is easy to compare different spring and mass arrangements.</p>
+
+      <br/>
+      <img width="275" height="300" src="/static/problems/MIT801/MIT/rayyan/Figures/Hooke's Law Spring Configurations_Soln.png"/>
+    </solved>
+
+  </problem>
+</html>

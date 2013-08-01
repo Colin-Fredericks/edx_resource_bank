@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+	<p>A uniform solid sphere of mass \(m\) and radius \(r\) is given, by a quick push, a horizontal speed \(v_0\) along a horizontal surface. Due to the friction between the surface and the sphere, the latter eventually begins to roll without slipping. </p>
+
+	<p>What is the best description of the motion of the sphere <i>before</i> slipping ends?</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="false">
+		<p>The translational speed increases while rotational speed increases</p>
+	</choice>
+	<choice location="random" name="foil2" correct="true">
+		<p>The translational speed decreases while rotational speed increases</p>
+	</choice>
+	<choice location="random" name="foil3" correct="false">
+		<p>The translational speed increases while rotational speed decreases</p>
+	</choice>
+	<choice location="random" name="foil4" correct="false">
+		<p>The translational speed decreases while rotational speed decreases</p>
+	</choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+<p>Find the speed \(v\)  of the sphere after slipping stops.</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="true"><p> \( v = \frac{5 v_0}{7} \) </p></choice>
+	<choice location="random" name="foil2" correct="false"><p> \( v = \frac{3 v_0}{5} \) </p></choice>
+	<choice location="random" name="foil3" correct="false"><p> \( v = \frac{2 v_0}{7} \) </p></choice>
+	<choice location="random" name="foil4" correct="false"><p> \( v = \frac{3 v_0}{7} \) </p></choice>
+	<choice location="random" name="foil5" correct="false"><p> \( v = \frac{v_0}{3} \) </p></choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+<p>Find the amount of heat \(Q\) generated before the slipping of the sphere stops. Note: the "amount of heat" can be found as the difference between the initial and the final kinetic energy of the sphere. </p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="true"><p> \( Q = \frac{m v_0^2}{7} \) </p></choice>
+	<choice location="random" name="foil2" correct="false"><p> \( Q = \frac{m v_0^2}{3} \) </p></choice>
+	<choice location="random" name="foil3" correct="false"><p> \( Q = \frac{m v_0^2}{5} \) </p></choice>
+	<choice location="random" name="foil4" correct="false"><p> \( Q = \frac{m v_0^2}{4} \) </p></choice>
+	<choice location="random" name="foil5" correct="false"><p> \( Q = \frac{3m v_0^2}{14} \) </p></choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

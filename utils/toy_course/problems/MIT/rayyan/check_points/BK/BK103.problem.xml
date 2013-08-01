@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Momentum of Point Masses </title>
+    <script type="loncapa/python">
+
+#Enter the computations here
+m=random.choice([0.06,0.15,0.24])
+L=random.choice([0.8,1.2,1.5])
+o=random.choice([0.8,2.5,4.8])
+A=50* m* L* L* o
+B=20* m* L* L* o
+C=10* m* L* L* o
+D=20* m* L* L* o
+E=10* m* L* L* o
+F=12.5* m* L* L* o
+
+</script>
+
+<p>A light rigid rod of length \(3s \) where s = $L m has small spheres of masses m = $m kg, 2m, 3m and 4m attached as shown. The rod is spinning in a horizontal plane with angular speed \(\omega \) = $o rad/s about a vertical axis.</p>
+<p>Find the magnitude of angular momentum of the rod in each case. Enter your answers in [kg.m<sup>2</sup>.s<sup>-1</sup>].</p>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK103.PNG" alt="BK103"/>
+
+<p>Part A. The axis of rotation is passing through mass m.</p>
+<p>\(L_A=\)</p>
+
+      <numericalresponse answer="$A" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part B. The axis of rotation is passing through mass 2m.</p>
+<p>\(L_B=\)</p>
+
+      <numericalresponse answer="$B" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part C. The axis of rotation is passing through mass 3m.</p>
+<p>\(L_C=\)</p>
+
+      <numericalresponse answer="$C" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part D. The axis of rotation is passing through mass 4m.</p>
+<p>\(L_D=\)</p>
+
+      <numericalresponse answer="$D" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part E. The axis of rotation is passing through the center of mass of the configuration.</p>
+<p>\(L_{cm}=\)</p>
+
+      <numericalresponse answer="$E" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part F. The axis of rotation is passing through the midpoint of the rod.</p>
+<p>\(L_{1/2}=\)</p>
+
+      <numericalresponse answer="$F" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

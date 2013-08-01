@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>Example: Off the Wall</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example:  Off the Wall</h3>
+<p>Various example problems asking for the force exerted on a wall by objects colliding with it.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part A:</b>  A wall running north to south is hit by a 0.50 kg ball moving with a velocity of 12 m/s at an angle of 60&#176; E of N. The ball rebounds from the wall with the same speed, but now directed at an angle of 60&#176; W of N. The impact lasts 8.5 ms. What is the time-averaged force exerted on the wall by the ball during the collision?
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td><b>System:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1"> We will take the system to be composed of the ball only, treated as a point particle.</div><br/>
+<b>Interactions:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2"> The ball will experience an interaction with the wall, giving rise to a collision (contact) force on the ball.  </div><br/>
+<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l">[show Model]</a><div style="display:none;" id="toggledisplay3"> Momentum and External Impulse</a>.</div><br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Why isn't the Wall Included in the System?
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td> Based upon the problem statement, our choice of system may seem odd. The problem clearly asks for the force exerted <i>on the wall</i>, and yet our system is composed of the ball only. There is an important method to our madness, however. Newton's Third Law assures us that if we can determine the force exerted on the ball by the wall during the collision, then the force exerted on the wall by the ball during the collision will be exactly opposite in direction and equal in size. The force exerted on the ball is much easier to determine, since the ball's motion is clearly changed by the action of the force. The wall, on the other hand, is essentially an infinitely massive object, and so we cannot examine its motion to determine the force.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Construct an Initial State-Final State Diagram
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td> To determine the force on the ball from the wall, we will find the change in the ball's momentum during the collision. The relevant initial state-final state diagram is:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/BallWall.png"/>
+</p><p>Given the coordinates chosen in the diagram, we can break the initial and final momenta into components:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/BallWallCoordinates.png"/>
+</p><p>The components of the ball's momentum before the collision are:<br/>
+\( p_{x,i} = (\mbox{12 m/s})(\mbox{0.5 kg})(\sin(60^{\circ})) = \mbox{5.2 kg m/s} \)<br/>
+\( p_{y,i} = (\mbox{12 m/s})(\mbox{0.5 kg})(\cos(60^{\circ})) = \mbox{3.0 kg m/s} \)
+</p><p>After the collision, the momentum has become:<br/>
+\( p_{x,f} = -(\mbox{12 m/s})(\mbox{0.5 kg})(\sin(60^{\circ})) = -\mbox{5.2 kg m/s} \)<br/>
+\( p_{y,f} = (\mbox{12 m/s})(\mbox{0.5 kg})(\cos(60^{\circ})) = \mbox{3.0 kg m/s} \)
+</p><p>Note that although the size of the momentum is clearly the same before and after the collision, the direction has changed.  This can be seen in the sign flip of the x-component.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td> The time-averaged force exerted on the ball during the collision can be found using:
+<p>\(\langle F_{BW,x} \rangle = \frac{p_{B,f,x} - p_{B,i,x}}{\Delta t} =\)<br/>
+</p><p>\(\langle F_{BW,x} \rangle= \frac{\mbox{-5.2 kg m/s} - \mbox{5.2 kg m/s}}{0.0085 s} = - \mbox{1200 N} \)
+</p><p>\(\langle F_{BW,y} \rangle = \frac{p_{B,f,y} - p_{B,i,y}}{\Delta t} = \)<br/>
+</p><p>\(\langle F_{BW,y} \rangle = \frac{\mbox{3.0 kg m/s} - \mbox{3.0 kg m/s}}{0.0085 s} = \mbox{0 N} \)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Apply Constraints
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td> We were asked for the force on the wall, not on the ball. Newton's Third Law, however, constrains the force on the wall to be exactly opposite the force on the ball:
+<p>\( \langle F_{WB,x} \rangle = - \langle F_{BW,x} \rangle = +\mbox{1200 N} \)
+</p><p>\( \langle F_{WB,y} \rangle = - \langle F_{BW,y} \rangle = \mbox{0 N} \)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Check Your Answer
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td> Our final answer for the force on the wall from the ball was in the positive x direction. In our coordinate system, that means the ball applied a force on the wall directed due east. To make sense of this answer, we should consider the change in momentum of the ball. Looking at the initial and final momenta of the ball, we can see that the ball received a kick in the westward direction as a result of hitting the wall. Thus, by Newton's Third Law, it makes sense that the wall received an eastward kick in response.
+</td></tr></table>
+</div>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part B:</b> An automatic rifle is firing 4.0 g bullets into a wall at a rate of exactly 800 bullets per minute.  The bullets impact the wall moving with a speed of 750 m/s at a 90&#176; angle to the wall, and remain embedded in the wall.  What is the time-averaged force exerted on the wall by the bullets?
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<td><b>System:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay5l">[show system]</a><div style="display:none;" id="toggledisplay5"> We will take the system to be composed a single bullet treated as a point particle.</div><br/>
+<b>Interactions:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay6&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay6l">[show interactions]</a><div style="display:none;" id="toggledisplay6"> The bullet will experience an interaction with the wall, giving rise to a collision force on the bullet.  </div><br/>
+<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay7&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay7l">[show Model]</a><div style="display:none;" id="toggledisplay7"> Momentum and External Impulse.</div><br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay8&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay8l">[show approach]</a><div style="display:none;" id="toggledisplay8"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Understand the Problem
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td> This problem is very similar to the last. Looking ahead, however, we can foresee one important difference: this problem does not specify the duration of the collision. We are not told how long it takes the bullets to come to rest once they hit the wall. The reason we do not need this duration is because this problem involves a continuous sequence of collisions rather than a single impact. For a continuous sequence of collisions, we can use an alternate definition of the average force. Instead of averaging over the duration of a single impact, if we average over the total time between collisions we can find the average force experienced by the wall during the entire time that the stream of bullets is impacting.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Construct an Initial State-Final State Diagram
+ [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+<tr style="display:none" id="ht12">
+<td> The relevant initial state-final state diagram for the impact of one bullet with the wall is:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/BulletWall.png"/>
+</p><p>The bullet's motion is one dimensional, with initial momentum:
+</p><p>\(\mathcal{}p_{i,x} = (\mbox{0.0040 kg})(\mbox{750 m/s}) = \mbox{3.0 kg m/s} \)
+</p><p>and final momentum:
+</p><p>\(\mathcal{}p_{f,x} = \mbox{0 kg m/s}\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Determine the Time Between Impacts
+ [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+<tr style="display:none" id="ht13">
+<td> The time between bullet impacts can be found by using the methods of unit conversion. We know it takes 1 minute for 800 bullet impacts, thus the number of seconds between impacts is:
+<p>\( \frac{\mbox{1 minute}}{\mbox{800 impacts}} \times \frac{\mbox{60 seconds}}{\mbox{1 minute}} = \mbox{0.075 seconds per impact}\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td> We know that the time-averaged force exerted on the bullet by the wall is related to the momentum change by:
+<p>\(\langle F_{BW,x}\rangle = \frac{p_{f,x} - p_{i,x}}{\Delta t} = \frac{\mbox{0 kg m/s} - \mbox{3.0 kg m/s}}{\mbox{0.075 s}} = -\mbox{40 N} \)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Apply Constraints
+ [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+<tr style="display:none" id="ht15">
+<td> As in the previous problem, we apply the constraint of Newton's Third Law, which tells us that the average force exerted on the wall by the bullet is equal and opposite to the force exerted on the bullet by the wall:
+<p>\(\langle F_{WB,x}\rangle = - \langle F_{BW,x}\rangle = \mbox{40 N}\)
+</p><p>Thus, as we would expect, the force on the wall is in the same direction as the direction of the bullet's motion before impact.  
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Make Sense of the Answer
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td> The answer 40 N may seem small for the force exerted by a bullet. (It is, after all, the weight of a 4.1 kg mass -- equivalent to about 9 pounds.) We must remember, however, that we have chosen to average the force of the bullet over the time between bullet impacts. This time (75 ms) is much much longer than the <i>duration</i> of a single bullet impact. The duration of a single bullet impact is probably less than 1/10th as long. Thus, if we look at the average force exerted by a single bullet as it is brought to rest, we expect it to be at least 10 times as large as the average force exerted by the series of bullets.
+</td></tr></table>
+</div>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part C:</b> A fire hose shoots a steady stream of water at a wall. The water flows from the hose at a rate of 8.0 kg per second. The water impacts the wall moving with a speed of 7.0 m/s at a 90&#176; angle to the wall. After impact, the water sprays out in a uniform pattern along the wall and trickles down (it does not rebound). What is the time-averaged force exerted on the wall by the water?
+ [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th></tr>
+<tr style="display:none" id="ht17">
+<td><b>System:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay9&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay9l">[show system]</a><div style="display:none;" id="toggledisplay9"> We will take the system to be composed of a tiny length &#916;<i>x</i> of the stream of water, treated as a point particle.</div><br/>
+<b>Interactions:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay10&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay10l">[show interactions]</a><div style="display:none;" id="toggledisplay10"> The water will experience an interaction with the wall, giving rise to a collision force on the water.  </div><br/>
+<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay11&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay11l">[show Model]</a><div style="display:none;" id="toggledisplay11"> Momentum and External Impulse.</div><br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay12&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay12l">[show approach]</a><div style="display:none;" id="toggledisplay12"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Break the Stream Into Pieces
+ [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+<tr style="display:none" id="ht18">
+<td> We can think of this problem as analogous to Part B, provided that we imagine the continuous water stream to be composed of a sequence of tiny "parcels" of water. We will divide the stream such that each parcel has length &#916;<i>x</i>.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/WaterParcels.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Understand the Properties of a Parcel
+ [<a href="javascript:toggleDisplay('ht19','hide','show')" id="ht19l">show</a>]</th></tr>
+<tr style="display:none" id="ht19">
+<td> We want to treat the parcels of water like the bullets of the previous part, but we do not know the mass of each parcel or the "rate of fire", both of which were required for the solution of Part B. We therefore want to write expressions for these quantities.
+<p>We first tackle the rate the parcels or, equivalently, the "duration" of a parcel. The duration of a parcel is the length of time the hose has to spray to create the parcel. We will simply define this duration to be &#916;<i>t</i>. The duration of a parcel can be related to the parcel's length by using the velocity of the stream (&#916;<i>x</i> = <i>v</i><sub><i>stream</i></sub>&#916;<i>t</i>).
+</p><p>With this definition in hand, we can find the mass of the parcel by using the given rate of mass flow from the hose:
+</p><p>\( \frac{dm_{stream}}{dt} = \mbox{8.0 kg/s}\)
+</p><p>we can use flow rate to define the mass of a parcel as:
+</p><p>\( m_{parcel} = \frac{dm_{stream}}{dt} \Delta t\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Construct an Initial State-Final State Diagram
+ [<a href="javascript:toggleDisplay('ht20','hide','show')" id="ht20l">show</a>]</th></tr>
+<tr style="display:none" id="ht20">
+<td> The initial state-final state diagram for a single parcel is:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/WaterWall.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht21','hide','show')" id="ht21l">show</a>]</th></tr>
+<tr style="display:none" id="ht21">
+<td> The average force on a single parcel from the wall is:
+<p>\(\langle F_{PW,x} \rangle = \frac{p_{f,x} - p_{i,x}}{\Delta t} = \frac{0 - m_{parcel} v_{stream}}{\Delta t}\)
+</p><p>Now we can make an important substitution. We have previously expressed the mass of the parcel in terms of the duration. Substituting this expression give:
+</p><p>\( \langle F_{PW,x} \rangle = - \frac{(dm_{stream}/dt) (\Delta t) v_{stream}}{\Delta t}\)
+</p><p>The importance of defining the mass in terms of the duration is obvious from this expression: the duration of the parcel will now <i>cancel</i> from the fraction. This is important because we have <i>arbitrarily</i> defined this duration. We have invented the parcels. The fact that the duration cancels means that we have not corrupted our solution by splitting the stream into parcels (we can make the duration as small as we want and the answer will not change). Our result is:
+</p><p>\( \langle F_{PW,x} \rangle = - \frac{dm_{stream}}{dt} v_{stream} = - (\mbox{8.0 kg/s})(\mbox{7.0 m/s}) = - \mbox{56 N}\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Apply Constraints
+ [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th></tr>
+<tr style="display:none" id="ht22">
+<td> As in the previous parts, the constraint of Newton's Third Law tells us that the force applied by the stream of water to the wall is the opposite of the force applied by the wall to the stream:
+<p>\( \langle F_{WS,x} \rangle = - \langle F_{PW,x} \rangle = \mbox{56 N}\)
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+</body>
+</html>
+

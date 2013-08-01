@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+<!--Checkpoint 17-->
+<problem>
+
+<h3>Solution</h3>
+
+<h3>Part 1</h3>
+<img src="/static/problems/S13/solutions/images/8-1(1).png" />
+
+<p>\(\displaystyle \Sigma \vec{\tau}_{A}\) = \({d\over 2}\)F - \({d3F\over 2}\) sin 30<sup>o</sup> \(\hat{k}\) = I<sub>A</sub> \(\vec{ \alpha}\)</p>
+<p>I<sub>A</sub> = I<sub>CM</sub> = \({md^{2}\over 12}\)</p>
+<p><i>dF</i>\(({1\over 2}\) - \({3\over 4}\)) \(\hat{k}\) = \({md^{2}\over 12}\)\(\vec{\alpha}\)</p>
+<p>- <i>\({dF\over 4} \hat{k}\) = \({md^{2}\over 12}\)\(\vec{\alpha}\)</i></p>
+<p>\(\vec{\alpha}\) = - \({3F\over m}\)\(\hat{k}\)</p>
+<p>|\(\vec{\alpha}\)| = \({3F\over m}\)  </p>
+
+<h3>Part 2</h3>
+<img src="/static/problems/S13/solutions/images/8-1(2).png" />
+
+<p>\(\displaystyle \sum\) \(\vec{\tau}_{B}\) = (\({d\over 6} + {d\over 2}\))F \(\hat{k}\) - \({2\over 3}{d\over 2}\)3F sin 30<sup>o</sup> \(\hat{k}\) = I<sub>B</sub> \(\hat{\alpha}\)</p>
+<p>\({4d\over 6}\)F \(\hat{k} - {df\over 2} \hat{k}\) = I<sub>B</sub> \(\hat{\alpha}\)</p>
+<p><i>\({dF\over 6} \hat{k}\) = I<sub>B</sub> \(\hat{\alpha}\)</i> </p>
+<p>I<sub>B</sub> = \({md^{2}\over 12}\) + \({md^{2}\over 36}\) ; \({md^{2}\over 12}\) = I<sub>cm</sub></p>
+<p>I<sub>B</sub> = md<sup>2</sup> \({4\over 36}\) = \({md^{2}\over 9}\)</p>
+<p><i>\({dF\over 6} \hat{k}\) = \({md^{2}\over 9} \vec{\alpha}\)</i></p>
+<p>\(\vec{\alpha}\) = \({9\over 6} {dF\over md_{2}} \hat{k}\) = \({3\over 2} {F\over md} \hat{k}\)</p>
+<p>|\(\vec{\alpha}\)| = \(\alpha\) = \({3\over 2} {F\over md}\) , counter-clockwise rotation</p>
+<h3>Part 3</h3>
+<img src="/static/problems/S13/solutions/images/8-1(3).png" />
+
+<p>\(\displaystyle \sum \vec{\tau}_{Q} = 3dF sin 30^{o} (- \hat{k}) = I_{Q} \vec{\alpha}\) </p>
+<p>I<sub>Q</sub> = \({md^{2} \over 12} + {md^{2} \over 4} = {md^{2} \over 3}\)</p>
+<p>- \({3dF \over 2} \hat{k} = {md^{2} \over 3 } \vec{\alpha}\)</p>
+<p>\(\vec{\alpha}\) = - \({9 \over 2} {F \over md} \hat{k}\)</p>
+<p>|\(\vec{\alpha}\)| = \(\alpha\) = \({9 \over 2}{F \over md}\)</p>
+<p>The net torque about Q will set a \(\rightarrow\) rotation; clockwise</p>
+
+</problem>
+</html>

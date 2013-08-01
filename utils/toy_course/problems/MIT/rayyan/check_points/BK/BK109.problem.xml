@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Collision </title>
+    <p>The diagram shows the side view of two uniform solid discs spinning in the same direction on a horizontal thin frictionless axle. The discs are made of the same material that has the same thickness. The disc on the right has twice the radius of the disc on the left. The angular speeds of the discs are 2&#x3C9; and &#x3C9;, respectively.</p>
+	<p>The discs are slowly brought in contact with each other. Due to the friction between the surfaces, the discs eventually begin to spin with the same angular speed.</p>
+
+    <img width="611" alt="BK109" src="/static/problems/MIT/rayyan/check_points/Pictures/BK109.PNG"/>
+        <br/>
+
+      <p>Part A. The best concept to apply in order to find the final angular speed of the discs is:</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                Conservation of angular momentum
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                Angular momentum and angular impulse
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                Conservation of momentum
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+				Conservation of energy
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+				Rotational kinematics
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+      <p>Part B. If the rotational inertia of the smaller disc about the axis of rotation is I, then the rotational inertia of the larger disc about its axis of rotation is:</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                \(2I\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                \(4I\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                \(8I\)
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                \(16I\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                \(32I\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				\(64I\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+      <p>Part C. The magnitude of the final angular speed of the discs is:</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+			\(18\omega/17\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+			\(20\omega/17\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+			\(6\omega/5\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+			\(8\omega/5\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+			\(10\omega/9\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+			\(4\omega/3\)
+		  </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+      <p>Part D. Find the final angular speed of the discs if all initial conditions are the same &#x2013; except that the smaller disc spins in the opposite direction before they come in contact.</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+			\(14\omega/17\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+			\(12\omega/17\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+			\(2\omega/5\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+			\(\omega/5\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+			\(4\omega/9\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+			\(2\omega/3\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    </problem>
+</html>

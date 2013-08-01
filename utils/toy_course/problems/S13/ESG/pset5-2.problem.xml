@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+<!-- two blocks -->
+<problem>
+
+	<h2>Two Blocks</h2>
+
+	<p>Two identical bullets are fired with identical speeds  at two blocks of equal mass. The blocks are initially at rest on a 
+	frictionless horizontal surface and are made of steel and wood respectively. One bullet bounces back elastically off the steel 
+	block. The other bullet gets embedded in the wooden block. Each block moves in the same direction after the collision. 
+	The arrows in the picture below only represent the direction of the motion. Gravity is into the screen.</p>
+
+	<img src="/static/problems/S13/ESG/images/5-2b.png" />
+
+	<h3> Part 1 </h3>
+	<optionresponse direction="vertical" randomize="no">
+		<p>
+			Consider the system to be the bullet and the steel block. Which of the following is constant during the collision between the bullet and the steel block: 
+			<optioninput inline="1" options="('Momentum','Mechanical Energy', 'Both Momentum and Mechanical Energy', 'Neither Momentum nor Mechanical Energy')" correct="Both Momentum and Mechanical Energy"/>
+		</p>
+	<h3> Part 2 </h3>
+		<p>
+			Consider the system to be the bullet and the wood block. Which of the following is constant during the collision between the bullet and the wood block: 
+			<optioninput options="('Momentum','Mechanical Energy', 'Both Momentum and Mechanical Energy', 'Neither Momentum nor Mechanical Energy')" correct="Momentum"/>
+		</p>
+	<h3> Part 3 </h3>
+		<p>
+			Which block travels faster just after the collision? 
+			<optioninput options="('Steel','Wood', 'Same')" correct="Steel"/>
+		</p>
+	</optionresponse>
+
+</problem>
+</html>

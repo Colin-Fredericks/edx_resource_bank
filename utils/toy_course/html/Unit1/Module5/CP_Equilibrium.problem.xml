@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Equilibrium</title>
+
+      <p><h3>Check Your Understanding of Force Balance</h3>
+Each of the following FBD's show the directions of all the forces acting on the relevant object. Assuming that the sizes of each force can be adjusted to any nonzero value but the directions cannot be changed, which of the objects can be put into equilibrium? <b>Mark "true" for any object that could be put into equilibrium.</b></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ol>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/1/1b/Unit1Mod4ChoiceA.png"/>
+          <br/>
+          <optioninput location="random" name="Foil1" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/b/ba/Unit1Mod4ChoiceB.png"/>
+          <br/>
+          <optioninput location="random" name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/c/c5/Unit1Mod4ChoiceC.png"/>
+          <br/>
+          <optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/4/47/Unit1Mod4ChoiceD.png"/>
+          <br/>
+          <optioninput location="random" name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/b/b1/Unit1Mod4ChoiceE.png"/>
+          <br/>
+          <optioninput location="random" name="Foil5" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/1/1c/Unit1Mod4ChoiceF.png"/>
+          <br/>
+          <optioninput location="random" name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+      </ol>
+    </optionresponse>
+                          </problem>
+</html>

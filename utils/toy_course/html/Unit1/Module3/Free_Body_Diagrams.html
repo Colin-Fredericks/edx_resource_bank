@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Free Body Diagrams</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>		
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+<h2>Force Diagrams and Free Body Diagrams</h2>
+
+<p>In solving mechanics problems, determining all of the interactions that an object experiences frequently allows us to write down a system of equations that describes the way that object's motion changes. The strategy for identifying all the interactions and then identifying all the forces is to construct a force diagram. A force diagram considers the body to be free of the rest of the environment, with all interactions on the body replaced by the forces acting on it.</p>
+
+<p>Physicists draw many types of diagrams to represent forces on an object. One represents the object as a single point. Another draws the object as a simplified two-dimensional shape. The single point suffices in cases where only translational motion is important, while the second type of diagram can deal with both straight-line and rotational motion. The terms "free body diagram" and "force diagram" are used inconsistently (both in physics in general and in this course) to refer to these two approaches.</p>
+
+<p>The three diagrams below all show the same forces acting on the same object (perhaps a box being pushed up a hill). The two on the right are more detailed about where the forces are applied. One has the arrows drawn so that the <i>tip</i> of the arrow shows where the force is applied; the other is drawn so that the <i>tail</i> of the arrow is used instead. All three of these approaches are in common use, so you must be prepared to use and understand all three.</p>
+
+<img src="/static/images/Unit1/ForceDiagrams.png" width="615">
+
+<p>Below are the steps to follow for drawing the force diagram of a box that you push forwards along a smooth horizontal surface while your friend is pulling it with a rope.</p>
+
+<p><b>Step 1.</b> Draw a sketch of the situation described in the problem.</p>
+
+<p><b>Step 2.</b> Circle the object (objects) of interest in the sketch. This is called the system. (In this example the system contains only one object: the box.)</p>
+<p><b>Step 3.</b>If the object in the system is small or you consider only its center of mass (ignoring any rotation) you can think the object to be a point particle. Draw a dot to represent the object.</p>
+<p><b>Step 4.</b> Identify the objects outside the system (external objects) that interact with the system. Decide what objects exert forces and which are irrelevant because they do not. (In this example the relevant interactions are between the box and the smooth surface, the box and the rope, the box and the Earth and the box and your hands. Note: the box also interacts with the air but the resulting forces exerted by the air molecules on the box - buoyancy and air resistance - are negligible with respect to the other forces on the box ).</p>
+<p><b>Step 5.</b> Identify and label the forces that result from each of the interactions. A good habit is to use clear labels indicating the object on which the force is applied and the object that is exerting the force.(In this example, F<sub>On Box by Hands</sub>, means the force exerted on the box by your hands.</p>
+<p><b>Step 6.</b> Draw the force diagram by drawing the arrows representing the forces identified in step 5 with their tails starting at the dot. The lengths of the arrows should represent the relative magnitudes of the forces, and their direction should indicate the direction of the forces.</p>
+<p><img src="/static/problems/MIT/analiab/Figures/WikiFigures/FBD_definition.png" /></p>
+
+<h3> Double Subscript Notation:</h3>
+<p> In this text, forces will be labeled using a double subscript convention for the two interacting bodies, for example&nbsp;<b>F<sub>12</sub></b> to indicate the force on body 1 due to its interaction with body 2. To keep track of which body corresponds to label "1" and "2" (and distinguish&nbsp;<b>F<sub>12</sub></b>&nbsp;from&nbsp;<b>F<sub>21</sub></b>), we adopt a specific <i>convention.</i> Learn this convention for this course, but be cautioned that other authors may use a different convention. The symmetry of Newton's Third Law is reflected in the notation, as we shall see.</p>
+		<p>
+			In this convention, the first subscript denotes the object the force acts <i>on</i>, while the second subscript denotes the other object involved in that interaction. A shorthand for this notation is <b>F<sub>On By</sub></b> which represents the force <b>F</b>&nbsp;on the object (<strong>On</strong>)&nbsp;by the partner object (<strong>By)</strong> involved in the interaction. Often the type of interaction is indicated by another sub- or super-script, or by replacing the <b>F</b> by another symbol (e.g. <b>T</b> for tension).&nbsp;</p>
+		<table class="wikitable collapsible collapsed">
+			<tbody>
+				<tr>
+					<th>
+						<b>Confusion avoidance: </b>F<sub>On By</sub><b> Notation?</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+				</tr>
+				<tr style="display:none" id="ht2">
+					<td>
+						One of the habits of the discipline of physics is adherence to strict rigor when defining terms and codifying both the ideas and the logic of the study. In order to avoid confusion and to help simplify communication, many mutually agreed upon symbols in physics are used. You are familiar with using single letters for some quantities. The English language bias is seen in many of these, e.g. "a" for acceleration, "m" for mass, "v" for velocity, "t" for time. This tradition creates problems, for example you might run out of variations for all of the physical quantities that start with the letter "t" that you want to label as "t": "t" is for time, "T" is for period of time to repeat the cycle, " \(\vec{T} \) " for tension force, or "&tau;" for torque. Using the same symbolic label for all of these would be impossible in an equation involving these parameters. Labeling forces precisely requires keeping track of five pieces of information.
+						<table class="wikitable collapsible collapsed">
+							<tbody>
+								<tr>
+									<th>
+										<i>What five quantities are required to uniquely identify each force?</i> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+								</tr>
+								<tr style="display:none" id="ht3">
+									<td>
+										<ul style="list-style:disc outside none">
+											<li>
+												the quantity is a <b>Force</b>, and not energy, inertia, velocity or some other physical quantity.</li>
+											<li>
+												the quantity is a force acting <b>ON</b> a particular body.</li>
+											<li>
+												the quantity is a force caused <b>BY</b> an interaction with another body.</li>
+										</ul>
+										<p>
+											AND, the quantity is a vector, meaning it has</p>
+										<ul style="list-style:disc outside none">
+											<li>
+												<b>magnitude</b> and</li>
+											<li>
+												points in a unique <b>direction</b>.</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+							If you use <b>F<sub>AB</sub></b> for the force on A by B and I use <b>F<sub>BA</sub></b> for the SAME force on A by B, eventually we will get confused trying to communicate with each other. Worse, if you use <b>F<sub>AB</sub></b> for the force on A by B and later refer to the same force using the reversed notation <b>F<sub>BA</sub></b>, you will have introduced a significant logic error in your analysis. To avoid this dilemma we simply agree on a system and use it.</p>
+						<table class="wikitable collapsible collapsed">
+							<tbody>
+								<tr>
+									<th>
+										<i>The Virtue of Simplicity in Notation</i> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+								</tr>
+								<tr style="display:none" id="ht4">
+									<td>
+										Caution: Many times too much information encoded in a label can be just as difficult as inconsistent notation. A good habit of mind when starting to model a problem with symbols is to review the symbolic language you have created after you think you have decoded the system thoroughly. If you can simplify the notation you use within a problem it will help you to recognize important relationships. If the symbolic language is too thick, it is easy to get lost in the notation and miss the physics. Strive to be concise and transparent in your notation.</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+	</body>
+</html>
+

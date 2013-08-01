@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 21 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Newton’s First Law says that objects in motion remain in motion</choice>
+			<choice location="random" correct="true">Friction removes mechanical energy from the shopping cart.</choice>
+			<choice location="random" correct="false">Mechanical energy is conserved in this situation.</choice>
+			<choice location="random" correct="false">There is a force involved other than the push and friction.</choice>
+			<choice location="random" correct="false">The force that you exert on the shopping cart diminishes with time.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

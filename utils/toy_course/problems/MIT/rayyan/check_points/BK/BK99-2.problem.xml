@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Check every axis for which the direction of the angular momentum of the particle is <i>into of the page.</i></p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="false"><text>A</text></choice>
+		<choice correct="false"><text>B</text></choice>
+		<choice correct="false"><text>C</text></choice>
+		<choice correct="false"><text>D</text></choice>
+		<choice correct="true"><text>E</text></choice>
+		<choice correct="true"><text>F</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+
+
+      </problem>
+</html>

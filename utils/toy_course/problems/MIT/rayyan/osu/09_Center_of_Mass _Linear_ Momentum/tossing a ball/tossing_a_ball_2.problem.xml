@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/tossing a ball_2.png" alt="tossing_a_ball_2" height="200"/>
+
+      <p><br/>
+Suppose you are on a cart that is moving at a constant speed v to the left on a frictionless track. If you throw a massive ball straight up (from your perspective), how will the speed of the cart change?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              The speed of the cart will increase          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              The speed of the cart will decrease          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              The speed of the cart will not change          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              You need to know how fast the ball was thrown          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

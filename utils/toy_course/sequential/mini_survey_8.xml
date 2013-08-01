@@ -1,0 +1,10 @@
+<sequential display_name="Mini Survey 8 - Connections" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 8 - Connections">
+			<h2>Mini Survey 8 - Connections</h2>
+			<p>This week we are asking how this course connects to your job or school, and what other courses you might be connecting with this one.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit8_prep"/>
+		<problem url_name="RELATE_survey:unit8_alongside"/>
+	</vertical>
+</sequential>

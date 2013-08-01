@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Part 2. At what points is the object in unstable equilibrium? Check all that apply.</p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="true"><text>B</text></choice>
+		<choice correct="false"><text>C</text></choice>
+		<choice correct="false"><text>D</text></choice>
+		<choice correct="false"><text>E</text></choice>
+		<choice correct="true"><text>F</text></choice>
+		<choice correct="false"><text>G</text></choice>
+		<choice correct="false"><text>H</text></choice>
+		<choice correct="true"><text>I</text></choice>
+		<choice correct="false"><text>K</text></choice>
+		<choice correct="false"><text>L</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+
+	</problem>
+</html>

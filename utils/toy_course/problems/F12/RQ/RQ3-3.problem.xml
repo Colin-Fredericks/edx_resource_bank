@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<!-- Taken from 8.01rq -->
+    <title> CheckPoint: Kinematics of Simple Harmonic Motion </title>
+
+	<p>Find the speed of the particle when \(x=0.20~m\) is:</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">\(2.11 ~m/s\)</choice>
+          <choice location="random" name="foil2" correct="false">\(1.96 ~m/s\)</choice>
+          <choice location="random" name="foil3" correct="false">\(2.62 ~m/s\)</choice>
+          <choice location="random" name="foil4" correct="false">\(2.30 ~m/s\)</choice>
+          <choice location="random" name="foil5" correct="false">\(1.24 ~m/s\)</choice>
+          <choice location="random" name="foil6" correct="false">\(0.86 ~m/s\)</choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

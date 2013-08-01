@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Work done by a Varying force and Work along a General Path</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h2>Work by a Varying Force and Work over a General Path</h2>
+
+<h3>Learning Objectives </h3>
+
+<p>After completing this module you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Calculate the work done by a force that changes along the path followed by the object.</li>
+	<li>Calculate the work done by a force along a path that changes direction with position.</li>
+	<li>Calculate the change of kinetic energy of an object in terms of the work done by the external forces on the object.</li>
+</ul>
+
+<h3>Work done by a changing force or changing displacement </h3>
+
+<p>When either the force is not constant or the displacement vector changes direction along the path, the work is calculated as the integral of the dot product between the force and the infinitesimal displacement vector along the path taken.</p>
+
+<p>\[ W_{f,i} = \int_{\vec{r}_{i}}^{{\vec{r}_f}} \vec{F}(\vec{r}) \cdot d\vec{r}\]</p>
+
+<p>In order to understand the operation implied by the integral, let's consider a particle of mass m moving along an arbitrary path from an initial to a final position as shown in the figure. A given force of magnitude F is applied on the particle. Between two consecutive instances of time, t and t+dt, the applied force and the displacement vector form an angle &#952;. The component of the force along the displacement vector is F cos&#952;.</p>
+
+<p>The work done by the force along the small distance dr is dW = F cos&#952; dr. Note that only the component of the force along the displacement vector, F cos&#952;, will contribute to the work.</p>
+
+<p>To obtain the work between the initial and final position, W<sub>f,i</sub>, we must integrate dW along the path followed by the particle.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/workKineticIntro2c.png"/></p>
+
+<p><b>Advanced Note 1:</b> The work integral is along the actual path the particle takes from the initial to the final point. Therefore, it may in general depend on the specifics of the path. As we shall see in the upcoming module, when the integral does not depend on the path, the corresponding force is called <b>conservative</b>. Rather than calculate the work done by conservative forces, we will make use of the concept of <b>potential energy</b> for conservative forces (like gravity and springs).</p>
+
+<p><b>Advanced Note 2:</b> You may notice a superficial similarity between the definition of work, an integral of force over <i>distance</i>, and the definition of impulse, an integral of force over <i>time</i>. Both of these relationships convey changes to the state of motion of a system by forces acting on the system: work (scalar quantity) changes the energy (scalar quantity), and impulse (vectorial quantity) changes the momentum (vectorial quantity).</p>
+
+</body>
+</html>
+

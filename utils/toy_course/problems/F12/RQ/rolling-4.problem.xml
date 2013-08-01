@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<problem>
+
+<p>Speed of point D is:
+<multiplechoiceresponse direction="vertical" randomize="no">	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="true" name="1">Zero </choice>
+		<choice location="random" correct="false" name="2">\( \frac{1}{\sqrt{2}} v_{CM}\) </choice>
+		<choice location="random" correct="false" name="3">\( \sqrt{2} v_{CM}\) </choice>
+		<choice location="random" correct="false" name="4">\( 2 v_{CM}\) </choice>
+	</choicegroup>
+</multiplechoiceresponse>
+</p>
+
+</problem>

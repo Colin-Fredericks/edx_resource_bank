@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Force and Potential Energy </title>
+    <script type="loncapa/python">
+
+aa=random.choice([0.6,1.5,2.0])
+bb=random.choice([0.8,4.0,8.0])
+cc=random.choice([0.2,4.0,5.0])
+F=4* aa- bb
+x=- bb/2/ aa
+
+</script>
+    <p>A conservative force \(F\) is acting on an object along the \(x\)axis. The potential energy associated with the force \(F\) is given by the expression \(U(x)=$aa x^2 +  $bb x + $cc \) J, where \(x\) is measured in meters.</p>
+
+<P>Part 1. Find \(F\) at \( x = -2.0 m\).</P>
+
+        <p>\(F=\)</p>
+
+      <numericalresponse answer="$F" unit="N">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <p>Part 2. For what value of x is the instantaneous acceleration of the object zero?</p>
+
+        <p>\(x=\)</p>
+
+      <numericalresponse answer="$x" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+  </problem>
+</html>

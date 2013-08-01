@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #158 -->
+<problem>
+
+	<p>A car is moving along a straight highway. First, it covers a distance 3d at a constant velocity v, then a distance 2d at a velocity 2v, then a distance d at a speed 3v. What is the magnitude of the average velocity of the car during the entire trip?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">18v/13</choice>
+			<choice location="random" correct="false">2v</choice>
+			<choice location="random" correct="false">7v/6</choice>
+			<choice location="bottom" correct="false">13v/7</choice>
+			<choice location="bottom" correct="false">9v/4</choice>
+			<choice location="bottom" correct="false">5v/3</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

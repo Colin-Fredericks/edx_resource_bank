@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4d -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Both contact the same ground.</choice>
+			<choice location="random" correct="false">The safe is much heavier than the person.</choice>
+			<choice location="random" correct="false">Newton's Third Law.</choice>
+			<choice location="random" correct="true">The system composed of the person and safe is not accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

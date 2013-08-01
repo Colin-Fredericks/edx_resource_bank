@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 23 -->
+
+<problem>
+
+	<p>A small object of mass <i>m</i> moves in a straight line. </p>
+	<img src="/static/problems/F12/MRI/images/MRI23.png" />
+
+	<h3>Part 1</h3>
+	<p>At the instant shown in the picture, compare the magnitude of its angular momentum about points A through D.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The angular momentum is zero about points A through D.</choice>
+			<choice location="random" correct="true">The angular momentum is the same non-zero value for points A through D.</choice>
+			<choice location="random" correct="false">The angular momentum is greatest for D, and smallest for A.</choice>
+			<choice location="random" correct="false">The angular momentum is greatest for A, and smallest for D.</choice>
+			<choice location="random" correct="false">More information is needed.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

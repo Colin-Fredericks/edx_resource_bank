@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/32-Atwood machine with rotational inertia.png" alt="Two blocks connected by a string that goes over a massive pulley"/>
+        <br/>
+
+<p>When the system, shown in the diagram, is released from rest, the magnitude of the acceleration 
+of each block is \(g/3\). The masses of the blocks are \(m\) and \(3m\), the radius of the pulley is \(r\). There is no slipping between the pulley and the light string that connects the blocks. Find the moment of inertia of the pulley.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(I=2mr^2\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(I=(3/2)mr^2\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(I=(1/2)mr^2\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(I=(5/2)mr^2\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(I=mr^2\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(I=3mr^2\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+	
+      </problem>
+</html>

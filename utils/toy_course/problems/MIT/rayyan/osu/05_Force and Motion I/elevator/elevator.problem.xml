@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/elevator.png" alt="elevator" height="150"/>
+
+      <p>A student is riding an elevator in the Acme Building, and the elevator is moving upward at a constant speed.  Which plot shows the tension T in the elevator cable as a function of time?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+
+              D          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

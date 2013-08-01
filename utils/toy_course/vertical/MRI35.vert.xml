@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI35-1.problem" display_name="Bugs on a Wheel" attempts="1" weight="1"/>
+	<problem filename="F12/MRI/MRI35-2.problem" display_name="Bugs on a Wheel, Part 2" attempts="3" weight="1"/>
+	<discussion for="Bugs on a Wheel" id="MReV_Summer2013_MRI35" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+</vertical>

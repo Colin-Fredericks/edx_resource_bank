@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<!--
+<p><b> answer is 3L/5  and it is checked incorrect... why?</b></p>
+Fixed - use "true" not "correct"
+-->
+
+<p><img src="/static/problems/S13/quiz/images/8-2.png" /><br/></p>
+
+<p> A pendulum formed by a string of length \(L\) and a small sphere of mass \(m\) swings in the vertical plane until the string hits a peg located a distance \(d\) below the point of suspension as shown. </p>
+<p>What is the minimum value of \(d\) so that the the sphere follows a (smaller) circular path when it is released from the horizontal position \(\theta=\pi/2\)?</p>
+
+<p> 
+     <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="foil1">
+            <text> \(d = 3L/2\)</text>
+          </choice>
+          <choice correct="false" name="foil2">
+            <text>\(d = 3L/4\)</text>
+          </choice>
+          <choice correct="true" name="foil3">
+            <text> \(d = 3L/5\)</text>
+          </choice>
+          <choice correct="false" name="foil4">
+            <text> \(d = L/2 \)</text>
+          </choice>
+          <choice correct="false" name="foil5">
+            <text> \(d = 2L/3\)</text>
+          </choice>
+          <choice correct="false" name="foil6">
+            <text> \(d = 5L/7\)</text>
+          </choice>
+
+        </choicegroup>
+      </multiplechoiceresponse> 
+</p> 
+
+</problem>
+</html>

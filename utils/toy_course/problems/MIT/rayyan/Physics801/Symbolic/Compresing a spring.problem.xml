@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/compressing a spring.png" align="top" texwrap="none" height="224" width="461" alt="Compressing a spring"/>
+    <br/>
+    <script type="loncapa/python">
+
+
+v="3/2*d*sqrt(k/2/m)"
+
+</script>
+
+      <p>
+A block of mass m is moving on a smooth table when it collides elastically with a second block of mass 2m. This second block then strikes a massless spring with a spring constant k, which compresses an amount d before the block comes to rest.
+<br/>
+
+Find the original velocity at which the first block was moving using the other variables in the problem.
+<br/>
+\(v =\)
+</p>
+
+    <formularesponse answer="$v" samples="d,k,m@1,1,1:8,8,8#4">
+	<responseparam type="tolerance" default="1%"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

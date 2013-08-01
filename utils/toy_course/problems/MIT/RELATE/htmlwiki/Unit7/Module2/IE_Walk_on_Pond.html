@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Example: A Walk on the Pond</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example:  A Walk on the Pond</h3>
+<p>A family which includes a girl with a mass of 20 kg and her younger brother who has a mass of 15 kg is out playing on a pond covered with frictionless ice.  The following problems refer to this situation.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part A:</b>  The girl and her brother are standing next to each other at rest, when suddenly the boy reaches out and gives his sister a big shove.  As a result of the push, the girl ends up moving off at a speed of 3.0 m/s.  What is the boy's resulting motion?
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> <b>System:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1"> We will take the system to be composed of the boy and the girl, but we will treat them as separate point particles within the system.</div><br/>
+<b>Interactions:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2"> Both the boy and the girl are subject to external interactions from the earth (gravity) and from the ice (normal force), but these interactions cancel each other leaving no net external force.  The force exerted by the boy on the girl and the reaction force exerted by the girl on the boy are <i>internal</i> forces and do not affect the motion of the chosen system.</div><br/>
+<b>Model:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l">[show Model]</a><div style="display:none;" id="toggledisplay3">Constant Momentum (Zero External Impulse).</div><br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Construct an Initial State-Final State Diagram
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> We will choose the x-axis to point along the direction of the girl's motion (the exact origin does not matter for momentum, since it only involves velocity and not position).  The resulting initial state-final state diagram is:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module2/files/BoyGirlPush.png"/>
+</p><p>Note that the initial state is very simple.  Neither the boy nor the girl is moving, so the total momentum is clearly zero.  
+</p><p>The final state, however, is more complicated.  We know that the boy will move <i>backward</i> after pushing his sister.  You can arrive at this conclusion using what we have learned in Units 1 and 2 of this course, or even what we have learned so far in a previous unit:
+</p>
+<ul style="list-style:disc outside none"><li> <b>Explanation 1</b> (Newton's Third Law):  When the boy pushes the girl, Newton's Third Law guarantees that the boy experiences an equal and <i>opposite</i> force.  Since the force on the boy is directly opposite to the force on the girl, the boy's motion will be in the opposite direction.
+</li><li> <b>Explanation 2</b> (Looking Ahead):  Another way to understand the boy's motion is to look ahead.  We are going to use the fact that momentum is conserved to solve this problem, so the total momentum should remain equal to the initial value, which we know to be zero!  Since the girl clearly has a nonzero momentum, this would seem to be a problem, unless we remember that momentum is a vector.  Thus, by moving off in the opposite direction, which is <i>negative</i> in our coordinate system, the boy's momentum can cancel the girl's giving zero.
+</li></ul>
+<p><b>So why is the arrow representing the boy's velocity drawn pointing to the right?</b>
+<br/>This is necessary because we are using the same coordinate system for both the boy and the girl, with x positive to the right.</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> The mathematical representation of momentum conservation for this system is:
+<p>\(p_{f,x} = p_{i,x} + J_x = p_{i,x}\)
+</p><p>\(\mathcal{}m_{b}v_{b,f,x} + m_{g}v_{g,f,x} = m_{b}v_{b,i,x} + m_{g}v_{g,i,x}\)
+</p><p>Substituting zeros, we find:
+</p><p>\(\mathcal{}m_{b}v_{b,f,x} + m_{g}v_{g,f,x} = 0\)
+</p><p>giving:
+</p><p>\( v_{b,f,x} = -\frac{m_{g}v_{g,f,x}}{m_{b}}\)
+</p><p>Note that the x-component of the boy's final velocity is found to be in the opposite direction from the girl's (as shown by the negative sign).
+</p><p>Substituting numbers gives the final result:
+</p><p>\( v_{b,f,x} = -\frac{(\mbox{20 kg})(\mbox{3.0 m/s})}{\mbox{15 kg}} = - \mbox{4 m/s}\)
+</p><p>so the boy ends up moving with a speed of 4 m/s in the direction opposite that in which he pushed his sister.
+</p><p><b>IMPORTANT POINT:</b>
+<br/>Note: If we had drawn his velocity arrow to the left in the picture, the x-component of final momentum would be \(p_{f,x} = -m_b v_{b,f,x} + m_g v_{g,f,x}\) and the value of \(v_{b,f,x}\) would be positive, indicating motion to the left.
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part B:</b> Now suppose the boy is moving due north at 1.75 m/s and his sister is moving due east at 1.75 m/s.  They are headed for a collision.  When they collide, they become entangled and slide off as one "object".  What is their velocity after the collision?
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td> <b>System, Interactions and Model:</b> As in Part A.<br/>
+<b>Quantitative Approach:</b><a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay5l">[show approach]</a><div style="display:none;" id="toggledisplay5"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Construct an Initial State-Final State Diagram
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td> This problem is inherently two-dimensional, since the boy and girl are moving at a right angle to each other.  We will choose the x-axis to point due east (the direction of the girl's motion) and the y-axis to point due north (the direction of the boy's motion).  For simplicity, we will put the origin of the coordinates at the location of the collision.  The resulting initial state-final state diagram is:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module2/files/BoyGirlCollide.png"/>
+</p><p>Once again, we have had to assume the direction of the final momentum.  Just as we did in Part A, we have used the fact that momentum is conserved in making our assumption.  Since the system composed of the boy and girl has positive x-momentum in the initial state (from the girl's motion) and also positive y-momentum (from the boy) we expect (since we are using the Constant Momentum Model) that the final system momentum will point into the first quadrant (positive x and y components).  
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td> The mathematical representation of momentum conservation for this system consists of <i>two</i> equations, one for the x and one for the y direction:
+<p>x: \(\mathcal{}m_{b}v_{b,i,x} + m_{g}v_{g,i,x} = (m_{b} + m_{g})v_{f,x}\)
+</p><p>and
+</p><p>y: \(\mathcal{}m_{b}v_{b,i,y} + m_{g}v_{g,i,y} = (m_{b} + m_{g})v_{f,y}\)
+</p><p>Note that we have defined only one final velocity, which applies to <i>both</i> the boy and the girl.  The reason is that we know the boy and girl are stuck together after the collision, and so they must have the same velocity.  This was shown in our initial state-final state diagram above.
+</p><p>Substituting zeros, we find:
+</p><p>\( \mathcal{}m_ {g}v_{g,i} = (m_{b} + m_{g})v_{f,x}\)
+</p><p>and
+</p><p>\( \mathcal{}m_ {b}v_{b,i} = (m_{b} + m_{g})v_{f,y}\)
+</p><p>These two equations are solved to give:
+</p><p>\( v_{f,x} = \frac{m_{g}v_{g,i}}{m_{b}+m_{g}} = \frac{(\mbox{20 kg})(\mbox{1.75 m/s})}{\mbox{20 kg}+\mbox{15 kg}} = \mbox{1.0 m/s}\)
+</p><p>and
+</p><p>\( v_{f,y} = \frac{m_{b}v_{b,i}}{m_{b}+m_{g}} = \frac{(\mbox{15 kg})(\mbox{1.75 m/s})}{\mbox{20 kg}+\mbox{15 kg}} = \mbox{0.75 m/s}\)
+</p><p>To find the total velocity, we must construct a vector triangle using these components:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module2/files/BoyGirlFinalV.png"/>
+</p><p>the Pythagorean theorem then gives a magnitude:
+</p><p>\( v_{f} = \sqrt{(\mbox{1.0 m/s})^{2} + (\mbox{0.75 m/s})^{2}} = \mbox{1.25 m/s}\)
+</p><p>To find the direction, we select an angle to find using trigonometry.  We will use the typical angle, measured from the positive x-axis, as shown in the figure below.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module2/files/BoyGirlVAngle.png"/>
+</p><p>This angle is:
+</p><p>\( \theta = \tan^{-1} \left(\frac{\mbox{0.75 m/s}}{\mbox{1.0 m/s}}\right) = 37^{\circ}\)
+</p><p>Since the initial velocities were given in terms of the cardinal directions (north, south, east, west) it is reasonable to report this answer as:
+</p><p>\( \vec{v}_{f} = \mbox{1.25 m/s at 37}^{\circ}\mbox{ N of E}\)
+</p><p>where "N of E" means that the angle is measured moving toward the north from due east.
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+</body>
+</html>
+

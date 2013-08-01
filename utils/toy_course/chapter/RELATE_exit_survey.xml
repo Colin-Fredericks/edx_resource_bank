@@ -1,0 +1,50 @@
+<chapter display_name="Exit Survey">
+<sequential display_name="Exit Survey" format="Survey">
+	<vertical>
+		<html display_name="General Questions">
+			<h2>Exit Survey</h2>
+			<p>This is the end of the course! While there are optional units later on and we encourage you to continue with them, Quiz 11 is the last required item for those seeking a certificate.</p>
+			<p>Please take some time to tell us about our cousre and your experience with it. We use responses to these surveys to improve the course for future students.</p>
+		</html>
+		<problem url_name="RELATE_survey:time_spent"/>
+		<problem url_name="RELATE_survey:percent_finished"/>
+		<problem url_name="RELATE_survey:if_unfinished"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Resources">
+			<h2>What Did You Find Useful?</h2>
+			<p>Please indicate how useful you found the various resources in this course.</p>
+		</html>
+		<problem url_name="RELATE_survey:useful"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Course Comparison">
+			<h2>Compared to Other Courses</h2>
+			<p>If you have taken other online physics courses, please let us know how this course compared to them. If you have not, you can skip on to the next question.</p>
+		</html>
+		<problem url_name="RELATE_survey:other_courses"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Free Response">
+			<h2>Free Response</h2>
+			<p>Please answer the following questions.</p>
+		</html>
+		<problem url_name="RELATE_survey:frustrated"/>
+		<problem url_name="RELATE_survey:top_positive"/>
+		<problem url_name="RELATE_survey:top_negative"/>
+		<problem url_name="RELATE_survey:change_the_course"/>
+		<problem url_name="RELATE_survey:final_comments"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Final Question">
+			<h2>Thank you for completing this survey!</h2>
+		</html>
+		<problem url_name="RELATE_survey:permission"/>
+	</vertical>
+
+</sequential>
+</chapter>

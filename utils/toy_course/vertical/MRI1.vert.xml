@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/MRI/MRI1-1.problem" display_name="Cut the String" attempts="1" weight="0.25"/>
+	<problem filename="F12/MRI/MRI1-2.problem" display_name="Cut the String, Part 2" attempts="2" weight="0.25"/>
+	<problem filename="F12/MRI/MRI1-3.problem" display_name="Cut the String, Part 3" attempts="1" weight="0.25"/>
+	<problem filename="F12/MRI/MRI1-4.problem" display_name="Cut the String, Part 4" attempts="2" weight="0.25"/>
+	<discussion for="Cut the String" id="MReV_Summer2013_MRI1" discussion_category="Mechanical Energy and Work" />
+</vertical>

@@ -1,0 +1,12 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What was your experience with class prerequisites prior to Mechanics ReView?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="advanced_prerequisite"><text>Advanced subject prerequisite/higher than needed</text></choice>
+      <choice correct="true" name="basic_prerequisites"><text>Basic prerequisite</text></choice>
+      <choice correct="true" name="less_than_basic_prerequisite"><text>Less than basic prerequisite</text></choice>
+      <choice correct="true" name="self-taught_in_prerequisite"><text>Self-taught in prerequisite for subject</text></choice>
+      <choice correct="true" name="none_of_above"><text>None of the above</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

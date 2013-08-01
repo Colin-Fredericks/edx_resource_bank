@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 2 -->
+
+<problem>
+<script type="loncapa/python">
+
+
+a= "0.5*m*R*v"
+
+</script> 
+
+	<p>A uniform disk of mass \(m\) and radius \(R\) is rolling without slipping along a horizontal surface as shown in the figure below. Its center of 
+	mass is moving at speed \(v\).</p>
+	<img src="/static/problems/F12/procedures/images/proc2b.png" />
+	<p>What is the magnitude and the direction of the angular momentum of the disk about its center of mass? Express your answer in terms of \(m\), \(R\) 
+	and \(v\).</p>
+
+	<formularesponse answer="$a" samples="m,R,v@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+		 <responseparam default="0.00000000001" type="tolerance"/>
+	</formularesponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('Up','Down','Left','Right','Out of screen','Into screen','N/A')" correct="Into screen" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

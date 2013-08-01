@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Example: Raising 2 Blocks</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example:  Two connected blocks pulled upward by ropes.</h3>
+<p>Two blocks connected by an ideal rope (A) are pulled upward by a second rope (B) attached to the upper block as shown in the figure below. The magnitude of the force of tension applied to block 2 is known and is equal to F<sub>2B</sub>.  Because the blocks are connected by a rope of constant length (it does not expand or become slack) they are constrained to move upward together with the same acceleration. 
+
+</p>
+<div class="center"><div class="floatnone"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPull3b.png"/></div></div>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>1. Concept Questions</b>
+ [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+<tr style="display:none" id="ht15">
+<td>
+<table class="subsubtable collapsible collapsed">
+<tr>
+<th><b>Question 1:  What system would you use to calculate the acceleration of block 1?</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','answer')" id="ht16l">answer</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td>
+Possible systems:
+<ul style="list-style:disc outside none"><li> Combined block1+rope A+ block 2 system.
+</li><li> 3 separate systems: block 1, rope A and block 2.
+</li></ul>
+<p>The <b>straightforward way</b> to calculate the acceleration is to consider the combined system. The reason is that the force of tension due to the connecting rope A is not known and by considering the combined system it will be an internal force, therefore  it will not contribute to the acceleration of the system. 
+</p>
+</td></tr></table>
+<table class="subsubtable collapsible collapsed">
+<tr>
+<th><b>Question 2:  What system would you use to calculate the force of tension of rope A?</b>
+ [<a href="javascript:toggleDisplay('ht17','hide','answer')" id="ht17l">answer</a>]</th></tr>
+<tr style="display:none" id="ht17">
+<td>
+Possible systems:
+<ul style="list-style:disc outside none"><li>Combined system first, then the system formed by block 1 only.
+</li><li>3 separate systems: block 1, rope A and block 2.
+</li><li>Combined system first, then the system formed by block 2 only.
+</li></ul>
+<p>If we choose the combined (block 1+ rope A + block 2) system the force of tension is an internal force and we will not be able to get any information about it. Therefore you will have to use a system where the force of tension is an external force: either block 1 or block 2. The shortest solution is to use the combined system first to obtain the acceleration and then use block 1 as the system to obtain the tension.
+</p>
+</td></tr></table>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>2. Obtain the acceleration</b>
+ [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+<tr style="display:none" id="ht18">
+<td>
+<p>We will solve the problem using two approaches. First approach, the shortest, starts by considering the combined system formed by block 1+rope A+block 2. The second approach, the longest, starts by considering the three separate systems: block 1, rope A and block 2.
+</p>
+
+	<table class="subsubtable collapsible collapsed">
+	<tr>
+	<th width="400"><b>Combined system&#160;:</b>
+	 [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+	<tr style="display:none" id="ht5">
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPullAb.png"/>
+	<ul style="list-style:disc outside none"><li><b>System</b>:block 1+rope A+block 2 is treated as a point particle of mass m<sub>1</sub>+m<sub>2</sub>.
+	</li></ul>
+	<ul style="list-style:disc outside none"><li><b>Interactions:</b> the system interacts with the Earth and Rope B. 
+	</li></ul>
+	<ul style="list-style:disc outside none"><li>The resulting forces of these interactions are shown in the free body diagram above, where the subscript (1+2) is used to indicate the point particle of mass m<sub>1</sub>+m<sub>2</sub>. The equation below the FBD is the y - component of Newton's second law written consistent with a coordinate system with the y - axis positive upwards. (There are no horizontal forces in this problem.)
+	</li></ul>
+	<p><br/>
+	</p>
+	</td></tr></table>
+
+	<table class="subsubtable collapsible collapsed">
+	<tr>
+	<th width="400"> <b>Three Separate systems&#160;:</b>
+	 [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+	<tr style="display:none" id="ht6">
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module4/files/MultiSystemPullBa.png"/>
+	<ul style="list-style:disc outside none"><li><b>Systems:</b>
+	<ul style="list-style:disc outside none"><li>System 1: block 1 assumed to be a point particle of mass m<sub>1</sub>. 
+	</li><li>System 2: rope A treated as a point particle of no mass, m<sub>A</sub> = 0. 
+	</li><li>System 3: block 2 treated as a point particle of mass m<sub>2</sub>.
+	</li></ul>
+	</li></ul>
+	<ul style="list-style:disc outside none"><li><b>Interactions:</b> Block 1 interacts with the Earth and rope A. Rope A interacts with bock 1 and block 2 (no mass - no interaction with Earth). Block 2 interacts with rope A, rope B and the Earth. The resulting forces from these interactions are shown in the free body diagrams in the figure above.
+	</li></ul>
+	<ul style="list-style:disc outside none"><li>The equations below the FBD's are Newton's Second Law for each of the systems written consistent with a coordinate system with the y - axis positive upwards.  
+	</li></ul>
+	<p>Note that we have 3 independent equations and seven unknowns: 4 tension forces, the acceleration of the two blocks and the acceleration of the system. However, the tension forces are Newton's third law pairs (we have 2 equations more), and because the rope has a constant length it constrains the blocks to move with the same acceleration (2 extra equations).  
+	</p><p>In summary, to obtain the acceleration, add equations (1), (2) and (3) and consider:
+	</p>
+	<ul style="list-style:disc outside none"><li> <b>Newton's third law constraint</b> applied to the interaction between block 1 and rope A. As a result, the forces between block 1 and rope A have the same magnitude F<sub>1A</sub> = F<sub>A1</sub>. Their directions are already considered in the signs of the terms in equations (1) and (2).
+	</li><li> <b>Newton's third law constraint</b> to the interaction between block 2 and rope A. As a result, the forces between block 2 and rope A have the same magnitude F<sub>2A</sub> = F<sub>A2</sub>. Their directions are already considered in the signs of the terms in equations (2) and (3).
+	</li><li> <b>Related accelerations constraint</b>: the blocks must move together a<sub>1,y</sub> = a<sub>2,y</sub> = a, the acceleration of the system.
+	</li><li> The connecting rope has <b>zero mass</b>:  m<sub>A</sub> = 0  
+	</li></ul>
+	<p><br/>
+	</p><p><br/>
+	</p>
+	</td></tr></table>
+
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>3.  Calculate the force of the tension of the connecting rope A.</b>
+ [<a href="javascript:toggleDisplay('ht19','hide','solution')" id="ht19l">solution</a>]</th></tr>
+<tr style="display:none" id="ht19">
+<td>
+<p>Consider the <b>system</b> to be formed by block 1 only. It interacts with the Earth and rope A. As a result of these <b>interactions</b> the forces on block 1 are the gravitational force, <b>F<sub>1E</sub></b>, and the force of tension due to rope A,<b> F<sub>1A</sub></b>, as shown in the left free body diagram in the figure below.</p>
+<img src="/static/problems/MIT/analiab/Figures/MultiSystemPullTension2.png"/>
+<p> The equation below the free body diagram is the vertical component of Newton's second law written consistent with a y-axis positive upwards. Note that the force of tension, F<sub>1A</sub>,  depends on the acceleration of block 1, a<sub>1y</sub>. Because the rope constrains the blocks to move together, both blocks have the same acceleration, a. The force of tension is given by (eq. 1) where a is the acceleration of the blocks obtained in part 2 of this module.</p>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/swinging_pendulum_theta.png" alt="A pendulum swinging between vertical and theta"/>
+    <br/>
+    <script type="loncapa/python">
+
+#Enter the computations here
+theta=60
+
+</script>
+
+<p>A simple pendulum (a small massive object suspended on a long light string) is at rest in the state of equilibrium. The force of tension in the string is \(T\). The pendulum is then pulled sideways until the string makes an unknown angle \(\theta\) with the vertical and it is then released from rest. As the pendulum swings back, the force of tension at the bottom point of the swing is now \(2T\).</p>
+<p>Find the unknown angle \(\theta\) (in degrees).</p>
+<p> \(\theta=\) </p>
+
+    <numericalresponse answer="$theta" unit="deg">
+      <responseparam default="3%" type="tolerance"/>
+      <textline math="1"/>
+    </numericalresponse>
+      </problem>
+</html>

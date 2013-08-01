@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Describing Rotational and Translational Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Describing Motion that Combines Rotation and Translation</h2>
+
+<p>It is not required that an object have a fixed axle or hinges in order to spin.  You can spin essentially any object.  Almost any sport will provide an excellent example of a spinning and translating object.  In some sports, that object is a ball or implement.  In others, the "object" is a person! </p>
+
+<p>This unit is focused on combining the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/nettorque/">Rotational Dynamics and Net Torque</a> core model with the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> core model.</p>
+
+<h3> Learning Goals </h3>
+
+<p>After completing this unit you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Explain why the translation and rotation of a system can be described as the translation of the center of mass and the rotation about an axis passing through the center of mass.</li>
+	<li>Determine the translational and rotational motion of a system in terms of the external forces and torques applied.</li>
+	<li>Apply the constraint of rolling without slipping</li>
+</ul>
+
+<h3>Translation Of and Rotation About Center of Mass</h3>
+
+<p>For a rigid body that is free to rotate and translate, the motion of the object can be thought of as a combination of translation of the center of mass  and rotation about the center of mass.  For a truly rigid body that cannot deform at all, the combination of translation of the center of mass plus spin about the center of mass are sufficient to reproduce any possible real motion.</p>
+
+<p>Systems that are free to translate and rotate can simultaneously experience translational acceleration of their center of mass and angular acceleration about an axis through the center of mass. In this case, both Newton's Second Law and the equivalent expression for rotational dynamics will each be satisfied. In other words, the equations: </p>
+
+<p>
+\[\sum{\vec{F}^{ext}}=M\vec{a}_{cm}\]
+</p>
+
+<p>\[\sum{\tau}^{ext}_{cm} = I_{cm} \alpha\]
+</p>
+
+<p>can be applied simultaneously.</p>
+
+</body>
+</html>
+

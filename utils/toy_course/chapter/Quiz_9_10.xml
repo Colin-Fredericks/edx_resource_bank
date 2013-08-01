@@ -1,0 +1,17 @@
+<chapter display_name="Quiz 9 and 10">
+	<sequential display_name="Quiz 9 and 10" url_name="Quiz_9_10">
+        <problem display_name="Quiz 9 and 10, Problem 1" filename="MIT/GWUproblems/Physics_21_Exams/con04.problem" attempts="2"/>
+        <problem display_name="Quiz 9 and 10, Problem 2" filename="MIT/rayyan/check_points/BK/BK80.problem" attempts="3"/>
+        <problem display_name="Quiz 9 and 10, Problem 3" filename="MIT/boriskor/Multiconcept Problems/Rolling Disc and Descending Block.problem" attempts="2"/>
+        <vertical display_name="Quiz 9 and 10, Problem 4" filename="BarSwingingTopToHorizontal.vert" />    
+        <problem display_name="Quiz 9 and 10, Problem 5" filename="MIT/boriskor/Rotation/Ladder against a frictionless wall.problem" attempts="3"/>
+		<problem display_name="Quiz 9 and 10, Problem 6" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Accelerating Gear.problem" attempts="3"/>
+		<problem display_name="Stay On The Turntable, Review" filename="U13/Q4801/MBT_8" attempts="2"/>
+		<vertical display_name="Car Crash Investigation, Review" filename="MRI30_post.vert"/>
+		<problem display_name="Blocks on Ramp, Review" filename="U13/quiz0_post/block_on_ramp_post.problem" attempts="3"/>
+		<problem display_name="Vertical Spring, Review" filename="U13/quiz0_post/BK71_post.problem" attempts="3"/>
+		<vertical display_name="Pendulum Collision with Friction, Review" filename="MRI9_post.vert"/>
+		<problem display_name="Spring and Mass, Review" filename="U13/quiz0_post/Spring and mass post.problem" attempts="10"/>
+	</sequential>
+</chapter>
+

@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Example: Return to Campus</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example:  Return to Campus</h3>
+<p>Consider again the example from the previous module:
+</p><p><i>A student rushes from their dorm room to the physics building in 2 minutes.  After spending 4 minutes turning in their homework, the student runs to the cafeteria in 2 minutes.  The student eats lunch for 12 minutes, then walks to the library in 6 minutes.</i>
+</p><p>Further, recall the coordinate system and positions we assigned to the locations, with the positive x-axis directed east:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module2/files/Campus.png"/>
+</p><p>Now, suppose you were asked to determine how fast the student moves during their rush from dorm to physics building as described in the problem statement.  All you know is the total displacement (2 blocks East) and the duration of their rush (2 minutes).  In this case we can only determine their average velocity over that time interval.  </p><p>
+Suppose that we define our time coordinates so that the example problem begins at time <i>t</i> = 0.  Then we have all the information we need to find the student's average velocity during each leg of their trip.  The answers for each leg are available below, but initially hidden to give you a chance to work them out yourself.
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Average Velocity Calculation for Leg 1 (Dorm Room to Physics Building)
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>In the first leg of the trip described in the example, the student leaves their dorm room and rushes to the physics building in 2 minutes.  Based upon the coordinate system we defined and our choice to define <i>t</i> = 0 at the beginning of the trip, we have the initial conditions:
+<p>\(x_{1,i} = 0 \;\;\;t_{1,i} = 0\)
+</p><p>This leg of the trip ends at the final location and time:
+</p><p>\(x_{1,f} = 2 \mbox{ blocks} \;\;\;t_{1,f} = 2 \mbox{ minutes}\)
+</p><p>Then the student's average velocity is:
+</p><p>\(v_{1} = \frac{x_{1,f} - x_{1,i}}{t_{1,f} - t_{1,i}} = \frac{2 \mbox{ blocks} - 0}{2\mbox{ minutes} -0} = 1 \mbox{ block/minute}\)
+</p><p><b>Note #1:</b> The position depends on the origin of the coordinate system but the change in position,\(x_{1,f}-x_{1,i}\), does not. Therefore the average velocity does not depend on the origin. 
+</p><p><b>Note #2:</b> The units of velocity are distance/time. 
+</p><p><b>Note #3:</b> The subscript 1 is used to indicate that we are calculating the velocity for leg 1. 
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Average Velocity Calculation for Leg 2 (Turning in Homework)
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> After reaching the physics building, the student spends four minutes in the physics building turning in homework.  Clearly, the velocity for this portion of the trip will be zero.  The initial conditions for this leg are the same as the <i>final</i> conditions for the <i>previous</i> portion of the trip:
+<p>\(x_{2,i} = 2\mbox{ blocks} \;\;\;t_{2,i} = 2\mbox{ minutes}\)
+</p><p>The final position and time are:
+</p><p>\(x_{2,f} = 2 \mbox{ blocks} \;\;\;t_{2,f} = 6 \mbox{ minutes}\)
+</p><p>Thus, the student's average velocity is:
+</p><p>\(v_2 = \frac{x_{2,f} - x_{2,i}}{t_{2,f}-t_{2,i}} =  \frac{2 \mbox{ blocks}-2\mbox{ blocks}}{6 \mbox{ minutes} - 2 \mbox{ minutes}}\)</p><p>
+</p><p>\(v_2= 0\mbox{ blocks/minute} \)
+</p><p>which is the result we expected.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Average Velocity Calculation for Leg 3 (Physics Building to Cafeteria)
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> After turning in their homework, the student hurries to the cafeteria in 2 minutes.  Again, the initial conditions are equal to the conditions at the end of the previous leg:
+<p>\(x_{3,i} = 2\mbox{ blocks} \;\;\;t_{3,i} = 6\mbox{ minutes}\)
+</p><p>The final conditions are:
+</p><p>\(x_{3,f} = -1\mbox{ blocks} \;\;\;t_{3,f} = 8\mbox{ minutes}\)
+</p><p>giving:
+</p><p>\(v_{3} = \frac{x_{3,f} -x_{3,i}}{t_{3,f}-t_{3,i}} = \frac{-1\mbox{ blocks}-2\mbox{ blocks}}{8\mbox{ minutes}-6\mbox{ minutes}} \)</p><p>
+</p><p>\(v_3 = - 1.5 \mbox{ blocks/minute}\)
+</p><p>This average velocity is <i>negative</i>, which, in our coordinate system (positive x-axis directed east), implies that the velocity is in the opposite direction of the average velocity in the first leg of the trip. Specifically, if the +x-axis points east, the first leg gave an eastward velocity and this 3rd leg represents a westward velocity.  Note: the sign of this velocity is negative because average velocity is a vector, and due to the definition of it in terms of the displacement vector, the velocity vector will point in the direction of the displacement.   
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Average Velocity Answers for Remaining Legs
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td> Using the same techniques employed in the previous legs, you can show that the student's average velocity during the time that they spend at the cafeteria is zero, and their velocity during the walk to the library is positive 0.67 blocks/minute.  The direction of this velocity vector is positive, meaning the same direction as the velocity of the first leg of the student's journey.
+</td></tr></table>
+</body>
+</html>
+

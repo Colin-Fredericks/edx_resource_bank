@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Torgue and Angular Acceleration</title>
+
+      <p>A uniform rod of mass m and length d is acted upon by two forces of given magnitudes applied as shown. Point A is the midpoint of the rod; point B divides the rod in 2:1 ratio.
+</p>
+      <br/>
+
+    <img width="961" alt="BK80" src="/static/problems/MIT/rayyan/check_points/Pictures/BK81.png"/>
+        <br/>
+
+      <p>
+Part 1. 
+Find the angular acceleration of the rod if it rotates about the axis passing through point A, perpendicular to the page.
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                \(\alpha = 3F/md\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+
+                \(\alpha = 3F/md\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha = 3F/4md\) counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha = 3F/4md\); clockwise
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha = 15F/md\); counterclockwise
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha = 15F/md\); clockwise
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+
+                \(\alpha = 15F/4md\); counterclockwise
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+
+                \(\alpha = 15F/4md\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+Find the angular acceleration of the rod if it rotates about the axis passing through point B, perpendicular to the page.
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                \(\alpha = 3F/2md\); counterclockwise 
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                \(\alpha = 3F/2md\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha = 3F/4md\) counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha = 3F/4md\); clockwise
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha = 15F/4md\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha = 15F/4md\); clockwise
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+
+                \(\alpha = 9F/md\); counterclockwise
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+
+                \(\alpha = 9F/md\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 3. 
+Find the angular acceleration of the rod if it rotates about the axis passing through the point of application of force F, perpendicular to the page.
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                \(\alpha = 9F/2md\); counterclockwise 
+
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+
+                \(\alpha = 9F/2md\); clockwise
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                \(\alpha = 3F/2md\) counterclockwise
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                \(\alpha = 3F/2md\); clockwise
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                \(\alpha = 3F/4md\); counterclockwise
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(\alpha = 3F/4md\); clockwise
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

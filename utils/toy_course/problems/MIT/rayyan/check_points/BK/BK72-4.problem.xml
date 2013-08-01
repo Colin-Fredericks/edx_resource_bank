@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Part 4. Which statement about points E and K is correct?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+			<text>At point E, force <i>f</i> has a greater magnitude than at point K; 
+			the direction of the force at point E is opposite to the one at point K</text>
+          </choice>
+          <choice name="foil2" correct="true">
+			<text>At point K, force <i>f</i> has a greater magnitude than at point E; 
+			the direction of the force at point K is opposite to the one at point E
+			</text>
+          </choice>
+          <choice name="foil3" correct="false">
+			<text>At point E, force <i>f</i> has a greater magnitude than at point K; 
+			the direction of the force at point E is the same as the one at point K
+			</text>
+          </choice>
+          <choice name="foil4" correct="false">
+			<text>At point K, force <i>f</i> has a greater magnitude than at point E; 
+			the direction of the force at point K is the same as the one at point E
+			</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+	</problem>
+</html>

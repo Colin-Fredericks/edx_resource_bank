@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<img src="/static/problems/MIT/analiab/Figures/Post_String Configurations4.png" alt="Post_String Configurations"/>
+
+	<p>Two types of tetherballs are shown above. In both pictures, a small ball is attached by a string to a post of radius <b>r</b>. The ball is initially at a distance <b>R</b> from the center of the post (point Q) and moving with a speed <b>v</b>.</p>
+	<p>On the left, the string simply wraps around the outside of the post. On the right, the string passes trough a hole in the center of the post. The string is gradually shortened by pulling it slowly so that the ball gets closer to the post.(Ignore gravity in both cases).</p>
+	<p>Consider the system to be the ball. During the time interval it takes the ball to move in and hit the post, choose one of these options for each question.</p>
+
+    <optionresponse direction="vertical">
+    	<p>For which case is mechanical energy constant?</p>
+		<optioninput options="('Left case only','Right case only','Both cases','Neither case')" correct="Left case only"></optioninput>
+		
+		<p>For which case is speed constant?</p>
+		<optioninput options="('Left case only','Right case only','Both cases','Neither case')" correct="Left case only"></optioninput>
+
+		<p>For which case is the angular momentum about point Q constant?</p>
+		<optioninput options="('Left case only','Right case only','Both cases','Neither case')" correct="Right case only"></optioninput>
+	</optionresponse>
+
+    </problem>
+</html>

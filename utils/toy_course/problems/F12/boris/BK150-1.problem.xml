@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 150, MIT-level -->
+<problem>
+
+	<p>The following series of questions refer to the “modified” Atwood machine, as shown in the diagram. (As usual, we assume ideal strings and pulleys.) </p>
+	<img src="/static/problems/F12/boris/images/BK150_mod_atwood.png" width="300" />
+	<p>Finding the general solutions for the accelerations of the blocks and the tensions in the strings is surprisingly difficult (compared to the two-block Atwood machine) and algebraically tedious. However, you are not expected to find the general solution in order to answer the questions below. </p>
+
+	<h3>Part 1</h3>
+	<p>What is the relationship between the accelerations of the blocks a<sub>1</sub>, a<sub>2</sub> and a<sub>3</sub>? (Take positive acceleration to be in the same direction for all blocks.)</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\( a_1 = a_2 + a_3 \)</choice>
+			<choice location="random" correct="false">\( a_1 = a_2 - a_3 \)</choice>
+			<choice location="random" correct="false">\( a_1 =0.5( a_2 + a_3) \)</choice>
+			<choice location="random" correct="true">\( a_1 =- 0.5( a_2 + a_3) \)</choice>
+			<choice location="random" correct="false">\( a_1 = 2(a_2 + a_3) \)</choice>
+			<choice location="random" correct="false">\( a_1 = -2(a_2 + a_3) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

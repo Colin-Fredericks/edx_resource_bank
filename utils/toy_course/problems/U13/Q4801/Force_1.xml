@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A block is suspended by a single vertical string from the ceiling. Which force forms a "Newton's 3rd law pair" with the weight of the block?</p>
+
+    <br/>
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+        	<text>the weight of the block has no "Newton's 3rd law pair" because the block is in equilibrium</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+        	<text>the force of tension in the string acting on the block</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+        	<text>the normal force from the ceiling acting on the string</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+        	<text>the gravitational force exerted on the block by the Earth</text>
+        </choice>
+        <choice location="random" name="foil5" correct="true">
+        	<text>the gravitational force exerted on the Earth by the block</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

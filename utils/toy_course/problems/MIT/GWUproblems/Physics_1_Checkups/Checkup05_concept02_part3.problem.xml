@@ -1,0 +1,17 @@
+<html>
+  <problem>
+
+<p> Which of the following statements about the ideal pendulum are true?</p>
+<p>
+      <multiplechoiceresponse direction="vertical" randomize="no">
+      <choicegroup type="MultipleChoice">
+        <choice  correct="true" name="1"> If the pendulum is moved to Jupiter, the frequency will increase. </choice>
+        <choice  correct="false" name="2"> If the pendulum is moved to Jupiter, the frequency will decrease</choice>
+        <choice  correct="false" name="3"> If the pendulum is moved to the Moon, the frequency will stay the same.</choice>
+        <choice  correct="false"  name="4"> If the pendulum is moved to the Moon, the frequency will increase.</choice>
+        <choice  correct="fasle" name="5"> none of the above.</choice>  
+      </choicegroup>
+    </multiplechoiceresponse>
+</p>        
+  </problem>
+</html>

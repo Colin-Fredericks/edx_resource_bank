@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/Physics801/quizzes/figures/spacejunk_pic.png" alt="space junk"/>
+    <script type="loncapa/python">
+
+
+</script>
+    <hr/>
+
+      <p>A satellite of mass \(m\) is in a circular orbit around the Earth with radius \(2R_E\). The satellite hits a piece of space junk of mass \(m_j\) that sticks to it. The satellite (carrying the extra mass) then falls in an elliptical orbit around the Earth. Assume that the piece of junk had a negligible speed at the moment of the collision. What is the maximum value of the junk mass \(m_j\) if the satellite of \(m\) is to remain in orbit without hitting the Earth? Write your expression in terms of \(m\).</p>
+
+      <p>\(m_j\)= </p>
+
+    <formularesponse answer="(sqrt(3/2)-1)*m" samples="m@-3:3#4">
+      <responseparam default="0.1" type="tolerance"></responseparam>
+      <textline size="25" math="1">
+	  
+        <hintgroup showoncorrect="no">
+            <p> Hint: there are 4 models to consider in this problem, be sure to check algebra when combining your equations.</p>
+        </hintgroup>
+      </textline>
+    </formularesponse>
+
+  </problem>
+</html>

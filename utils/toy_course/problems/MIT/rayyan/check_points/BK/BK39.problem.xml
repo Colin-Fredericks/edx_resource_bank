@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Projectile on a distant planet. </title>
+    <script type="loncapa/python">
+
+deg2rad = math.pi/180.0
+
+#Enter the computations here
+theta=random.choice([20,40,60])
+thetar=theta* deg2rad
+h=random.choice([15,30,60])
+g=random.choice([10,15,30])
+t= math.sqrt(8* h/ g)
+v= math.sqrt(2* h* g)/math.sin( thetar)
+vmin= math.sqrt(2* h* g)/math.tan( thetar)
+x= vmin* t
+
+</script>
+
+      <p>
+Somewhere in the vast flat tundra of planet Tehar, a projectile is launched from the ground at an angle of $theta degrees. It reaches the maximum height of $h m. The acceleration due to gravity is $g \(m/s^2\). 
+</p>
+      <br/>
+
+
+        <p>
+Part 1. 
+Find the time t the projectile spends in the air. Enter the answer in "s".
+</p>
+        <br/>
+        \(t=\)
+
+      <numericalresponse answer="$t" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 2. 
+Find the initial speed \(v\) of the projectile. Enter the answer in "m/s".
+</p>
+        <br/>
+        \(v=\)
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 3.
+Find the minimum speed \(v_{min}\) of the projectile during the flight. Enter the answer in "m/s".
+</p>
+        <br/>
+        \(v_{min}=\)
+
+      <numericalresponse answer="$vmin" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+        <p>
+Part 4. 
+Find the horizontal range \(\Delta x\) of the flight. Enter the answer in "m".
+</p>
+        <br/>
+        \(\Delta x=\)
+
+      <numericalresponse answer="$x" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <responseparam/>
+        <textline math="1"/>
+      </numericalresponse>
+
+  </problem>
+</html>

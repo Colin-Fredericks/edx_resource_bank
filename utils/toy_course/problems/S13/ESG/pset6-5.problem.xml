@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+<!-- Space Junk -->
+<problem>
+
+<script type="loncapa/python">
+import math
+
+v1 = "-((u+v)/m)*Deltam" 
+v2 = "m0/m*(u+v)-u"
+m3 = "rho*A*(v+u)*Deltat"
+m4 = "m0*sqrt(1+(2*rho*A*(u+v0)*t)/m0)"
+
+</script>
+
+	<h2>Space Junk. </h2>
+	<p>Not checked because we are not covering this topic, are we?</p>
+	<p>A Spacecraft of cross-sectional area <i>A</i>, proceeding along the positive <i>x</i>-direction, enters an asteroid storm at time <i>t</i>=0, in which the mean mass density of the asteroid storm is \(\rho\) and the average asteroid velocity is \(\vec{u}\) = <i>-u</i>\(\vec{i}\) in the negative <i>x</i>-direction.  As the spacecraft proceeds through the storm, all of the asteroids that hit the spacecraft stick to it.</p>
+
+<!--	</img>
+-->
+
+	<h3>Part 1</h3>
+	<p>Suppose that at time <i>t</i> the velocity of the spacecraft is \(\vec{v}\) = <i>v</i>\(\vec{i}\) in the positive <i>x</i>-direction, and its mass is <i>m</i>. Further, suppose that in an interval \(\Delta\)<i>t</i>, the mass of the spacecraft increases by an amount \(\Delta\)<i>m</i>. Given that there are no external forces, using conservation of momentum find an equation for the change of the spacecraft velocity \(\Delta\)<i>v</i>, in terms of  m, \(\Delta\)m, u, and v?</p>
+	<p>You may type "Deltam" for \(\Delta\) m.</p>
+	<formularesponse samples="m,deltam,v,u@1,1,1,1:5,5,5,5#10" answer="$v1">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>\(\Delta\)v =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 2</h3>	
+	<p>When the spacecraft enters the asteroid storm, the magnitude of its velocity and mass are <i>v<sub>0</sub></i>  and <i>m<sub>0</sub></i> , respectively. Integrate your differential equation in part 1 to find the velocity <i>v</i> of the spacecraft when the mass is <i>m</i>.</p>
+	<p>You may type "m0" for m<sub>0</sub>.</p>
+	<formularesponse samples="m0,m,u,v@1,2,1,1:2,5,5,5#10" answer="$v2">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>v(m) =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 3</h3>	
+	<p>Find an expression for the mass of the asteroids \(\Delta\)m that sticks to the spacecraft within the time interval \(\Delta\)t? (Hint: consider the volume of asteroids swept up by the spacecraft in time \(\Delta\) t). </p>
+	<p>You may type "rho" for \(\rho\) and "Deltat" for \(\Delta\) t.</p>
+	<formularesponse samples="rho,A,v,u,Deltat@1,1,1,1,1:5,5,5,5,5#10" answer="$m3">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>\(\Delta\)m =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 4</h3>
+	<p>When the spacecraft enters the asteroid storm, the magnitude of its velocity and mass are <i>v<sub>0</sub></i>  and <i>m<sub>0</sub></i> , respectively. What is the mass of the spacecraft at time <i>t</i> ? (Use your results from parts 2 and 3.)</p>
+	<p>You may type "m0" for m<sub>0</sub>, "v0" for v<sub>0</sub>, and "rho" for \(\rho\).</p>
+	<formularesponse samples="m0,rho,A,u,v0,t@1,1,1,1,1,1:5,5,5,5,5,5#10" answer="$m4">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>m(t) =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

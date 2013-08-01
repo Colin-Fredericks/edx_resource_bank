@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/ladder_corner.jpg" alt="Ladder leaning against the corner"/>
+    <script type="loncapa/python">
+
+
+theta="arctan(2*mu/(1-mu^2))"
+
+</script>
+
+      <p><br/>
+A uniform ladder of mass \(m\) and length \(L\) rests against the wall as shown.  The coefficients of static friction between the floor and the ladder and between the wall and the ladder are equal to each other (\(\mu\)). What is the maximum value of angle \(\theta\) that the ladder can make with the wall without sliding? (Use m for \(m\), L for \(L\), mu for \(\mu\), and arcsin, arccos, and arctan for the inverse trig functions.)
+
+<br/>
+\(\theta=\)
+</p>
+
+    <formularesponse answer="$theta" samples="mu,m,L@1,1,1:4,2,2#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+<p>Part 2. 
+At the instant ball passes its lowest position, which statements are true? Check all that apply.
+</p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">    
+    <choice correct="false"><text>The ball is in a state of equilibrium .</text></choice>             
+    <choice correct="true"><text>The acceleration of the ball is directed upward.</text></choice>
+    <choice correct="false"><text>The acceleration of the ball is directed downward.</text></choice>
+    <choice correct="false"><text>The acceleration of the ball is directed to the left.</text></choice>
+    <choice correct="true"><text>The force of tension in the string is at a maximum.</text></choice>
+    <choice correct="false"><text>The force of tension and the weight of the ball have the same magnitude.</text></choice>
+	</checkboxgroup>
+	</choiceresponse>
+
+    
+  </problem>
+</html>

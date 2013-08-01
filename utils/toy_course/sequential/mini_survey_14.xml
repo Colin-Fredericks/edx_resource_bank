@@ -1,0 +1,9 @@
+<sequential display_name="Mini Survey 14 - Resource Usage" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 14 - Resource Usage">
+			<h2>Mini Survey 14 - Resource Usage</h2>
+			<p>This week we are asking again about how much of our resources you used.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit14_howmuch"/>
+	</vertical>
+</sequential>

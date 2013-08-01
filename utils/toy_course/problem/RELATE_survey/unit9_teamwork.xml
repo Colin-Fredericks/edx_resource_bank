@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>When solving homework, checkpoint, or quiz questions, how often have you worked with other students in this course?</p>
+   <choiceresponse>
+    <checkboxgroup direction="vertical" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="daily"><text>Almost every day.</text></choice>
+       <choice correct="true" name="weekly"><text>On a weekly basis.</text></choice>
+       <choice correct="true" name="topical"><text>Only when I need help with a particular topic.</text></choice>
+       <choice correct="true" name="once"><text>Only once or twice.</text></choice>
+       <choice correct="true" name="never"><text>I have not worked with any other students in this course.</text></choice>
+    </checkboxgroup>
+   </choiceresponse>
+  <p>If you do work with other students, what methods do you use? (For instance: discussion boards, Skype, in-person study group, other online forums, etc.)</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

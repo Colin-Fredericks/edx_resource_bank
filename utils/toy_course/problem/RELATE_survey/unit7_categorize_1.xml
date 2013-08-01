@@ -1,0 +1,36 @@
+<problem attempts="0" show_answer="never" display_name="Categorization 1">
+
+<p>Please examine the problem below.</p>
+
+<table border="1">
+<tr>
+	<td>
+
+	<img src="/static/images/survey/categorize_1.png" />
+
+	<p>Block 1, of mass m<sub>1</sub>, is connected over an ideal (massless and frictionless) pulley to block 2, of mass m<sub>2</sub>, as shown. Assume that the blocks accelerate as shown with an acceleration of magnitude a and that the coefficient of kinetic friction between block 2 and the plane is \( \mu \).</p>
+
+	<p>Find the ratio of the masses \( m_1 / m_2 \).</p>
+
+	</td>
+</tr>
+</table>
+
+<p>How do you <i>classify</i> this problem in your mind? Write a word or short phrase in each box below. Please put the response with the greatest descriptive power to you in the top box.</p>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+</problem>
+
+
+

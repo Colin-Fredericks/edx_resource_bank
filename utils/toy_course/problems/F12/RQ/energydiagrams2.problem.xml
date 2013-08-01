@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+  A particle with total mechanical energy \( E \) has position \(x\) &gt; 0 at \(t\) = 0
+  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/energydiarams2.png" width="450"/>
+    </p>
+    <p>
+Which of the following statements is true about the motion of the particle?
+</p>
+<p>
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">The particle escapes to infinity in the – x-direction</choice>
+<choice location="random" correct="false" name="2">The particle oscillates around a</choice>
+<choice location="random" correct="false" name="3">The particle oscillates around b</choice>
+<choice location="bottom" correct="true" name="4">The particle periodically revisits a and b</choice>
+<choice location="bottom" correct="false" name="5">not enough information is given to answer the question</choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+Two point like objects of mass \(M\) each are attached to a thin rod of mass \(M\) and 
+Length \(L\). The rod and the masses are spinning at a constant rate \(\omega\) about an
+axis perpendicular to that of the rod. 
+What is the kinetic energy of the composite object (rod + 2 point objects)?  
+
+<br/>
+      <img src="/static/problems/F12/RQ/images/spinningrod.png" width="400"/>
+<br/>
+
+<br/>
+\(K =\)
+</p>
+
+<p>
+<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice correct="false" name="1">\( \frac{M L^2 \omega^2}{12}\)</choice>
+		<choice correct="false" name="2">\( \frac{7M L^2 \omega^2}{12}\)</choice>
+		<choice correct="true" name="3">\( \frac{7M L^2 \omega^2}{24}\)</choice>
+		<choice correct="false" name="9">\( \frac{M L^2 \omega^2}{24}\)</choice>
+		<choice correct="false" name="8">\( \frac{5M L^2 \omega^2}{12}\)</choice>
+		<choice correct="false" name="4">\( \frac{7M L^2 \omega^2}{6}\)</choice>
+		<choice correct="false" name="5">\( \frac{M L^2 \omega^2}{3}\)</choice>
+		<choice correct="false" name="6">\( \frac{M L^2 \omega^2}{4}\)</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+    </p>
+  </problem>
+</html>

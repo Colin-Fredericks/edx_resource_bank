@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+position_r="R"
+position_t="0"
+velocity_r="0"
+velocity_t="3*b*t^2*R"
+acceleration_r="-9*b^2*t^4*R"
+acceleration_t="6*b*t*R"
+a1="6"
+force="m*3*pi*R*sqrt(9*pi^2+4)"
+</script>
+
+      <p>
+
+A small object of mass m is moving counterclockwise in a circle of radius R as shown in the left figure below. 
+At the instant t = 0 the object is at rest at the +x-axis. The object’s angular position as a function of time is given by</p>
+\( \theta(t)=bt^3 \)
+<p>where <i>b</i> is a positive constant with units of rad/sec<sup>3</sup></p>.
+
+    <img  src="/static/problems/MIT/analiab/NewProblems/files/AnObjectInCircularMotion.fw.png"/>
+
+<br/>
+ <p><font color="blue"><b>Part 1.</b></font> What are the components of the <b>position</b> vector in polar coordinates?</p>
+The radial component: 
+
+    <formularesponse type="cs" answer="$position_r"  samples="R@1:10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+The tangential component: 
+
+    <formularesponse type="cs" answer="$position_t"  samples="b,t,R@1,1,1:10,10,10#2"  >
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+ <p><font color="blue"><b>Part 2.</b></font> What are the components of the <b>velocity</b> vector in polar coordinates?</p>
+The radial component: 
+
+    <formularesponse type="cs" answer="$velocity_r"  samples="b,t,R@1,1,1:10,10,10#2" >
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+The tangential component: 
+
+    <formularesponse type="cs" answer="$velocity_t"  samples="b,t,R@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+ <p><font color="blue"><b>Part 3.</b></font> What are components of the <b>acceleration</b> vector in polar coordinates?</p>
+The radial component: 
+
+    <formularesponse type="cs" answer="$acceleration_r"  samples="b,t,R@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+The tangential component: 
+
+    <formularesponse type="cs" answer="$acceleration_t"  samples="b,t,R@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+ <p><font color="blue"><b>Part 4.</b></font> At the instant when the object is crossing the <b>positive y axis</b> for the first time,
+which of the vectors in the right figure above best represents the acceleration vector of the object?</p>
+
+Enter a number from 1 to 8.
+
+    <formularesponse type="cs" answer="$a1"  samples="b,t,R@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+ <p><font color="blue"><b>Part 5.</b></font> At the instant when the object is crossing the <b>negative x axis</b> for the first time, 
+what is the magnitude of the net force acting on the object? To answer this question assume the value of the constant <i>b</i> to be  
+ \(b = \pi\) rad/sec<sup>3</sup>. Express your answers in terms of m, R and pi ( for \(\pi=3.1415...\)).
+ </p>
+
+    <formularesponse type="cs" answer="$force"  samples="m,R@1,1:10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

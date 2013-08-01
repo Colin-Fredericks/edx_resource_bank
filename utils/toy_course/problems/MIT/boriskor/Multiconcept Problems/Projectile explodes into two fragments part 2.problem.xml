@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>If the speed of the projectile just before the explosion was \(v\), by how much did the kinetic energy of the system increased as the result of the explosion?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true"><text>\(\Delta K = 12mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = 10mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = 8mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = 2mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = \frac{1}{2} mv^2 \)</text></choice>
+			<choice location="random" correct="false"><text>\(\Delta K = \frac{3}{2} mv^2 \)</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

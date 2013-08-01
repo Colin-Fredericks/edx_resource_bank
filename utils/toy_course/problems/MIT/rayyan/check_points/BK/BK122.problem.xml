@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Elliptical Orbit </title>
+    <script type="loncapa/python">
+
+
+w="2*v/5/r"
+w2="10*v/9/r"
+u="5*v/3"
+f="25/9"
+
+</script>
+    <p>
+A satellite is moving around a planet of radius r  in an elliptical orbit. The minimum altitude of the satellite above the planet is (r/2) and the maximum altitude is (3r/2). At the maximum altitude, the tangential speed of the satellite is v. 
+</p><br/>
+Answer the following parts in terms of v and r.
+<br/>
+
+        <p>
+Part 1.
+Find the angular speed of the satellite at the maximum altitude
+</p>
+        <br/>
+        \(\omega=\)
+
+      <formularesponse answer="$w" samples="r,v@1,1:10,10#4">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </formularesponse>
+
+
+        <p>
+Part 2.
+Find the tangential speed of the satellite at the minimum altitude
+</p>
+        <br/>
+        \(v_{min}=\)
+
+      <formularesponse answer="$u" samples="r,v@1,1:10,10#4">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </formularesponse>
+
+
+        <p>
+Part 3.
+Find the angular speed of the satellite at the minimum altitude.
+</p>
+        <br/>
+        \(\omega=\)
+
+      <formularesponse answer="$w2" samples="r,v@1,1:10,10#4">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </formularesponse>
+
+
+        <p>
+Part 4.
+What is the ratio of the kinetic energy of the satellite at the minimum altitude to that at the maximum altitude?
+</p>
+        <br/>
+        \(KE_{min}/KE_{max}=\)
+
+      <formularesponse answer="$f" samples="r,v@1,1:10,10#4">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </formularesponse>
+
+  </problem>
+</html>

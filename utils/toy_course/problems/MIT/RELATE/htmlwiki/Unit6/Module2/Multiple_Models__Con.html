@@ -1,0 +1,116 @@
+<html><html>
+<head>
+<title>Multiple Models, Constraints and Two-Dimensional Projectile Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+Projectile Motion -  The Utility of Multiple Simultaneous Models</h2>
+<p>
+			Describing the motion of a single system sometimes necessitates the <i>simultaneous</i> application of multiple models. An example of this is the motion of an object released into freefall with a nonzero horizontal component to its initial velocity. Such an object is called a <i>projectile</i> and its motion is called <i>projectile motion</i>.</p>
+<h3>
+Learning Goals</h3>
+<p>
+			After working through this module you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Explain the significance of initial conditions in distinguishing between freefall and projectile motion.</li>
+<li>
+				Explain why two Models in the hierarchy are needed to describe projectile motion.</li>
+<li>
+				Use time as a constraint to couple the equations governing the horizontal and vertical motion of a projectile.</li>
+</ul>
+<h3>
+			Projectile Motion</h3>
+<p>
+			Like any object in freefall near the Earth, projectiles experience the constant acceleration of gravity, 9.8 m/s<sup>2</sup> directed downward (assuming <a href="http://en.wikipedia.org/wiki/Drag_(physics)" class="extiw" title="wikipedia:Drag (physics)">air resistance</a> is negligible). Unlike the motion of an object thrown directly upward or directly downward, however, projectile motion is inherently two-dimensional. Projectiles <i>do not</i> follow a straight line as they move. Instead, as illustrated in the applet on the next page, projectiles trace out a segment of a <a href="http://en.wikipedia.org/wiki/parabola" class="extiw" title="wikipedia:parabola">parabola</a> as they move. Thus, it might seem that we need a new model (something like "two-dimensional motion with constant acceleration") to represent the motion of a projectile. By decomposing vectors into components, however, we can actually employ the models we have already developed to describe projectile motion.</p>
+<p>
+			Note that gravitational acceleration is purely vertical. The x-component of the projectile's motion experiences <i>no acceleration</i> while the y-component experiences freefall. Thus, the two-dimensional motion of a projectile can be described by saying that the projectile is governed <i>simultaneously</i> by <i>two one-dimensional</i> models: the x-component motion is governed by the Constant Velocity (Zero Acceleration) model and the y-component motion is governed by the One-Dimensional Motion with Constant Acceleration model.</p>
+<h3>
+Constraints on Multiple Models</h3>
+<p>
+			When multiple models apply to a single system, it is vitally important to recognize what physical variables appear in <i>both</i> of the models. These quantities will serve to constrain the equations and allow us to solve them. In projectile motion, the quantity that serves to tie the x and y directions together is time. Unless you really enjoy nasty algebra, it is <b>strongly</b> recommended that you set up your equations such that the time coordinate is the same in the x-motion and the y-motion. The advantage of making this choice is clear: if you can find the time associated with an important event by looking at the y-motion (for example the time to reach maximum height or the time to hit the ground) you can use that value to determine the x-coordinate at the same instant, or vice versa.</p>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

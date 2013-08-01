@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Collision- conceptual -->
+<problem>
+
+	<h2>A Collision and up the loop- conceptual</h2>
+	<p>A block of mass m<sub>1</sub>, suspended by a string as shown in the figure, is released from rest at an unknown height H. At the bottom of its trajectory it hits a block of mass m<sub>2</sub> initially at rest. Block m<sub>1</sub> stops and block m<sub>2</sub> moves until it encounters a vertical circular track of radius R. There is no friction along block’s 2 trajectory.  The goal is to determine H is block 2 looses contact with the track at the angle \(\theta\) shown in the figure.</p>
+
+	<img src="/static/problems/S13/ESG/images/6-4.png" />
+
+	<p>Which of the following strategies could you use to solve this problem?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false" name="red">Use conservation of mechanical energy of the block 1-earth system to find the velocity of block 1 immediately before the collision; then use conservation of kinetic energy to find the velocity of block 2 immediately after the collision; then analyze the forces on the block at the given angle \(\theta\), and use this to find solve for H.</choice>
+			<choice location="random" correct="true" name="green">Use conservation of mechanical energy of the block 1- earth system to find the velocity of block 1 immediately before the collision; then use conservation of momentum to find the velocity of block 2 immediately after the collision; then use conservation of mechanical energy of the block 2-earth system to find the given angle \(\theta\), and use this to solve for H.</choice>
+			<choice location="random" correct="false" name="yellozzw">Use conservation of mechanical energy of the block 1- earth system to find the velocity of block 1 immediately before the collision; then use conservation of momentum to find the velocity of block 2 immediately after the collision; then use conservation of mechanical energy of the block 2-earth system to find the given angle \(\theta\).</choice>
+			<choice location="bottom" correct="false" name="blue">Use conservation of mechanical energy of the block 1-earth system to find the velocity of block 1 immediately before the collision; then use conservation of kinetic energy to find the velocity of block 2 immediately after the collision; then analyze the forces on the block at the given angle \(\theta\), and use this to solve for H.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

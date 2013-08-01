@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+angle=random.randrange(8,10,1)
+flight=random.randrange(60,80,1)/10
+speed=2
+# speed=random.randrange(2,3,1)
+final=(9.81)*( flight* flight)/(2* speed*math.sin( angle* math.pi/180))
+
+</script>
+    <img src="/static/problems/MIT/RELATE/Mechanics_Online/Quiz_Problems/switchback.png" align="top" texwrap="none" width="250" alt="p1a"/>
+    <br/>
+
+      <p>
+A fly fisherman in Montana approaches the edge of the Smith River Canyon and notices a "switch back" leading down to the river's edge.  This switch back is a walking trail made up of 6 sections on an almost perfectly vertical canyon wall, and a sign reads that each section is a $angle degree descent as measured from the horizon (\(\theta\) in the figure is the same for each section).  The fisherman decides to estimate how long it will take him to descend the switch back by dropping a stone into the canyon below, and measuring the stone's time of flight with his wrist watch.  If he measures the stone's time of flight to be $flight seconds, how long (in seconds) will it take him to descend the switchback at a constant speed of $speed meters per second?
+</p>
+
+    <br/>
+    <numericalresponse answer="$final" unit="s" format="2s">
+      <responseparam default="10%" type="tolerance">
+</responseparam>
+
+      <textline math="1">
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </textline>
+    </numericalresponse>
+
+  </problem>
+</html>

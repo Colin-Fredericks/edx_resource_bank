@@ -1,0 +1,11 @@
+<sequential display_name="Mini Survey 10 - Physics Opinions" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 10 - Physics Opinions">
+			<h2>Mini Survey 10 - Physics Opinions</h2>
+			<p>This week we are asking about your opinions on various physics topics.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit10_noform"/>
+		<problem url_name="RELATE_survey:unit10_equation"/>
+		<problem url_name="RELATE_survey:unit10_method"/>
+	</vertical>
+</sequential>

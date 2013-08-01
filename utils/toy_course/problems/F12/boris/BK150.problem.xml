@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 150, MIT-level -->
+<problem>
+
+	<p>The following series of questions refer to the “modified” Atwood machine, as shown in the diagram. (As usual, we assume ideal strings and pulleys.) </p>
+	<img src="/static/problems/F12/boris/images/BK150_mod_atwood.png" width="300" />
+	<p>Finding the general solutions for the accelerations of the blocks and the tensions in the strings is surprisingly difficult (compared to the two-block Atwood machine) and algebraically tedious. However, you are not expected to find the general solution in order to answer the questions below. </p>
+
+	<h3>Part 1</h3>
+	<p>What is the relationship between the accelerations of the blocks a<sub>1</sub>, a<sub>2</sub> and a<sub>3</sub>? (Accelerations are assumed to be positive if they are directed downward.)</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\( a_1 = a_2 + a_3 \)</choice>
+			<choice location="random" correct="false">\( a_1 = a_2 - a_3 \)</choice>
+			<choice location="random" correct="false">\( a_1 =0.5( a_2 + a_3) \)</choice>
+			<choice location="random" correct="true">\( a_1 =- 0.5( a_2 + a_3) \)</choice>
+			<choice location="random" correct="false">\( a_1 = 2(a_2 + a_3) \)</choice>
+			<choice location="random" correct="false">\( a_1 = -2(a_2 + a_3) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>If the tension of the string attached to block m<sub>1</sub> is T, what is the tension of the string attached to blocks m<sub>2</sub> and m<sub>3</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The answer depends on the ratio of the masses.</choice>
+			<choice location="random" correct="false">T</choice>
+			<choice location="random" correct="false">2T</choice>
+			<choice location="random" correct="true">T/2</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>If m<sub>1</sub> = 12 kg, m<sub>2</sub> = 4 kg and m<sub>3</sub> = 8 kg, what is the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="false">3g/4</choice>
+			<choice location="bottom" correct="true">None of the above </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>If m<sub>1</sub> = 12 kg, m<sub>2</sub> = 6 kg and m<sub>3</sub> = 6 kg, what is the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Zero</choice>
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="false">g/2</choice>
+			<choice location="random" correct="false">3g/4</choice>
+			<choice location="bottom" correct="false">None of the above </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 5</h3>
+	<p>If m<sub>1</sub> = 12 kg, m<sub>2</sub> = 4 kg and m<sub>3</sub> = 0.0001 kg, what is most nearly the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="true">g</choice>
+			<choice location="random" correct="false">g/3</choice>
+			<choice location="random" correct="false">3g/4</choice>
+			<choice location="random" correct="false">10000g</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 6</h3>
+	<p>If m<sub>1</sub> = 0.0001 kg, m<sub>2</sub> = 4 kg and m<sub>3</sub> = 12 kg, what is most nearly the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="true">g</choice>
+			<choice location="random" correct="false">g/3</choice>
+			<choice location="random" correct="false">3g/4</choice>
+			<choice location="random" correct="false">10000g</choice>
+			<choice location="random" correct="false">5000g</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 7</h3>
+	<p>If m<sub>1</sub> = 4 kg, m<sub>2</sub> = 4 kg and m<sub>3</sub> = 4 kg, what is the magnitude of the acceleration of m<sub>1</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="true">g/3</choice>
+			<choice location="random" correct="false">g/4</choice>
+			<choice location="random" correct="false">2g/3</choice>
+			<choice location="random" correct="false">3g/4</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

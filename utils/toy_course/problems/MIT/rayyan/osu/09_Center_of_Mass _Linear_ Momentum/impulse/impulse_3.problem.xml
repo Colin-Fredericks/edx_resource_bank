@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulse_2.png" alt="impulse_2" height="150"/>
+
+      <p><br/>
+Identical constant forces F push blocks A and B from the start line to the finish line. Both blocks start at rest, but block A's mass is 4 times as great as block B's mass. Which block has the greater change in momentum while moving from the start line to the finish line?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+
+              A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              They both have the same change in momentum          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Not enough information to determine          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

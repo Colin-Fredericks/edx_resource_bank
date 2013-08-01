@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #160 -->
+<problem>
+
+	<p>A student is running north at a constant speed v and covers a distance d. She then turns around and runs at a speed 2v, covering a distance 4d. What is the magnitude of her average velocity for the entire run?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">v</choice>
+			<choice location="random" correct="false">5v/3</choice>
+			<choice location="random" correct="false">3v/2</choice>
+			<choice location="bottom" correct="false">3v/5</choice>
+			<choice location="random" correct="false">4v/3</choice>
+			<choice location="bottom" correct="false">3v/4</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

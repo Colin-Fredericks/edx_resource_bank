@@ -1,0 +1,15 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>On average, how much time did you spend on the course per week?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="less"><text>Less than an hour</text></choice>
+       <choice correct="true" name="1-2"><text>1-2 hours</text></choice>
+       <choice correct="true" name="2-4"><text>2-4 hours</text></choice>
+       <choice correct="true" name="4-6"><text>4-6 hours</text></choice>
+       <choice correct="true" name="6-8"><text>6-8 hours</text></choice>
+       <choice correct="true" name="8-10"><text>8-10 hours</text></choice>
+       <choice correct="true" name="10-12"><text>10-12 hours</text></choice>
+       <choice correct="true" name="12+"><text>Over 12 hours</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+</problem>

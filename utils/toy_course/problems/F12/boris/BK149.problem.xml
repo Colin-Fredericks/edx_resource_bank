@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 149 -->
+<problem>
+
+	<br/>
+
+	<p>A common Atwood machine looks like this: two blocks, connected by a string that passes over a pulley, suspended from a rigid support. If the masses of the blocks are known, it is relatively easy to find the accelerations of the blocks and the tension of the string that connects them. (Common assumptions are: the string is massless and un-stretchable and the pulley is massless and frictionless.) However, you are not expected to solve the general case in order to answer the questions below. </p>
+	<img src="/static/problems/F12/boris/images/BK149_atwood.png" width="330" />
+
+	<h3>Part 1</h3>
+	<p>What is the tension of the string connecting the blocks in case the mass of each block is equal to m?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Zero</choice>
+			<choice location="random" correct="true">mg</choice>
+			<choice location="random" correct="false">2mg</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>What is the tension of the string connecting the blocks in case \( m_1 \gg m_2 \) > 0?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\( m_1 g \)</choice>
+			<choice location="random" correct="false">\( m_2 g \)</choice>
+			<choice location="random" correct="false">\( m_1 g + m_2 g \)</choice>
+			<choice location="random" correct="false">\( m_1 g - m_2 g \)</choice>
+			<choice location="random" correct="false">\( 0.5 \left( m_1 g - m_2 g \right) \)</choice>
+			<choice location="random" correct="false">\( 0.5 \left( m_1 g + m_2 g \right) \)</choice>
+			<choice location="random" correct="true">\( 2 m_2 g \)</choice>
+			<choice location="random" correct="false">\( Zero \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>Suppose m<sub>1</sub> and m<sub>2</sub> are not equal. If the pulley is accelerated vertically upward in the laboratory frame of reference, which of the following statements about the accelerations of the blocks in the lab frame of reference <i>must</i> be true?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">They have the same magnitude and the same direction.</choice>
+			<choice location="random" correct="false">They have different magnitude and the same direction. </choice>
+			<choice location="random" correct="false">They have the same magnitude and different direction. </choice>
+			<choice location="random" correct="false">They have different magnitude and different direction. </choice>
+			<choice location="bottom" correct="true">None of the above must be true </choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

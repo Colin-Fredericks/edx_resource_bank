@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 13 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The centripetal acceleration is zero.</choice>
+			<choice location="random" correct="false">The force of tension is zero.</choice>
+			<choice location="random" correct="false">The net force on the ball is zero.</choice>
+			<choice location="random" correct="false">The normal force on the ball equals the force of tension.</choice>
+			<choice location="random" correct="false">The force of tension equals the weight of the ball.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

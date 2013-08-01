@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 156 -->
+<problem>
+
+	<p>Which of the following properly approximates the magnitude of the acceleration of block m<sub>1</sub> when \( m_2 \gg m_1 \)?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( \frac{g}{4} \)</choice>
+			<choice correct="true">\( g \left( \frac{m_1}{4m_2} \right) \)</choice>
+			<choice correct="false">\( g \)</choice>
+			<choice correct="false">\( 4g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( \frac{g}{5} \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

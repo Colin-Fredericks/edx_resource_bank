@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Choosing the Appropriate System</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+When to Choose Two Independent Systems Instead of One Combined System</h3>
+<p>
+			Whenever you have a physical situation where two or more objects interact and, as a result, are <b>constrained to move with the same acceleration</b>, you can consider either the combined system or a set of sub-systems (for example, single-object systems). We will use the combined system when we are interested in external forces or in the acceleration of the combined system. However, if we need to obtain information about an internal force of the combined system, we must choose a sub-system for which that particular force is <em>external</em>. Sometimes you will have to work with the combined system and with single-object systems simultaneously.</p>
+<h3>
+Module Summary </h3>
+<p>
+			Anything that limits or determines the motion of one or more objects is a constraint (on the motion). In consequence, there must be associated constraint forces that satisfy Newton's Second Law. In this module and in the next one, we consider systems where the constraint forces make all the elements in the system move with the same acceleration (in magnitude and direction).</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Check Your Understanding</b> [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht15">
+<td>
+<p>
+							Consider the two stacked boxes on the elevator of the example in the previous module,</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 1: Which system would give a more straightforward determination of N<sub>lf</sub>, the normal force exerted on the lower box by the floor?</b> [<a href="javascript:toggleDisplay('ht16','hide','answer')" id="ht16l">answer</a>]</th>
+</tr>
+<tr style="display:none" id="ht16">
+<td>
+<b>The Combined lower + upper box system</b> because the internal forces between boxes never appear in any equation.</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 2: Which system would give a more straightforward determination of N<sub>ul</sub>, the normal force exerted on the upper box by the lower box?</b> [<a href="javascript:toggleDisplay('ht17','hide','answer')" id="ht17l">answer</a>]</th>
+</tr>
+<tr style="display:none" id="ht17">
+<td>
+<b>The upper box system</b> is best because the forces on the lower box are not involved.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br/>
+</body>
+</html>
+

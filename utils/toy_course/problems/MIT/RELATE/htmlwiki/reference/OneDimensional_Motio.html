@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>One-Dimensional Motion with Constant Acceleration</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<h3> Restrictions to the Velocity and Acceleration Model</h3>
+<p>One-Dimensional Motion with Constant Acceleration is a sub-model of the Velocity and Acceleration model.  This model applies to a <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particle<!--</a>--> experiencing an acceleration which is constant in size and direction, and which has its initial velocity directed either parallel to or precisely opposite to the acceleration.  (If the condition on the acceleration is satisfied but the condition on the initial velocity is not, the motion will still have constant acceleration, but it will not be confined to one dimension.)  In the equations that follow, we will assume that the coordinates have been defined in such a way that the motion is confined to the x-axis.
+</p>
+<h2> Mathematical Representations</h2>
+<p><m>$\mathcal{}v_x(t) = v_{i,x} + a_x(t-t_{i})$</m>
+</p><p><m>$x(t) = x_{i} + v_{i,x}(t-t_{i})+\frac{1}{2}a_x(t-t_{i})^{2}$</m>
+</p><p><m>$v_{f,x}^{2} = v_{i,x}^{2} + 2a_x(x_{f}-x_{i})$</m>
+</p><p><m>$x_{f} = x_{i} + \frac{1}{2}(v_{i,x}+v_{f,x})(t_{f}-t_{i})$</m>
+</p>
+<div id="Point_particle" class="popup"></div>
+</body>
+</html>
+

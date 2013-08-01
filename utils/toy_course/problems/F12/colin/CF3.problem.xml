@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Colin problem #3 -->
+
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+d = random.randrange(20000000000, 60000000000, 1000000)
+dkm = d/1000
+v = random.randrange(40000, 60000, 1000)
+e = random.randrange(80, 95, 1) / 100
+
+vfar = v*(1 - e)/(1 + e)
+
+</script>
+
+	<p>A new comet is discovered. At its closest approach to the sun, it is $dkm kilometers away from the sun, and moving with a speed of $v m/s. 
+	Its orbit has eccentricity e = $e .</p>
+	<p>What is the speed of this comet (in m/s) at its greatest distance from the sun?</p>
+
+	<numericalresponse answer="$vfar" unit="m/s">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+</problem>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Example: Lunar Gravity</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Illustrative Example: The Acceleration of Gravity Near the Surface of the Moon </h3>
+<p>
+			Consider an object of mass <i>m</i> at the surface of the Moon. &#160;By analogy with the weight of an object near the Earth's surface, we model the force exerted on the object by the Moon as pointing down towards the Moon's center with a magnitude:</p>
+<p>
+\(\mathcal{}F_{mM} = mg_{M} &#160;\)(eq. 1)</p>
+<p>
+			where <i>g<sub>M</sub></i> is the acceleration due gravity at the Moon's surface. Our goal is to find <i>g<sub>M</sub></i> from the mass and radius of the moon: M and R<sub>M</sub> respectively.</p>
+<p>
+			We treat both the object and the Moon as uniform spheres with masses \(m\) and \(M\), respectively, and denote their positions by the centers of each sphere. With this assumption as well as Newton's proof that the gravitational force from a sphere on an object outside the sphere can be found by imagining that all of its mass is concentrated in the center, we can use the Law of Universal Gravitation to find the force exerted on the object by the Moon.</p>
+<p>
+\(F_{mM}= G \frac{mM}{r_{mM}^{2}}\) (eq. 2)</p>
+<p>
+<br/>
+			where <i>r</i><sub><i>m</i><i>M</i></sub> is the distance between the center of the object and the center of the Moon. Since we are interested in the near-Moon-surface force, it is reasonable to approximate this distance by the radius of the Moon, <i>R</i><sub><i>M</i></sub>&#160;(can you see why?) Thus we will set&#160;<i>r</i><sub><i>m</i><i>M</i></sub> = <i>R</i><sub><i>M</i></sub>.</p>
+<p>
+<br/>
+			Equating (eq. 1 and 2) we have:</p>
+<p>
+\( mg_{M} = G \frac{mM}{R_{M}^{2}}\)</p>
+<p>
+<br/>
+			Canceling <i>m</i> we obtain:</p>
+<p>
+\( g_{M} = G \frac{M}{R_{M}^{2}} \) (eq. 3)</p>
+<p>
+<br/>
+			Substituting the values of the Moon's mass, <i>M</i> = 7.3477 &#215; 10<sup>22</sup> kg, and the value of the Moon's radius, R<sub>M</sub> = 1,737.10 km, in (eq. 3) we get:</p>
+<p>
+<br/>
+<i>g<sub>M</sub></i> = 1.6 m/s<sup>2</sup></p>
+<p>
+<br/>
+			This value is about 1/6 of the acceleration due to gravity at the Earth's surface (9.8 m/s<sup>2</sup>)</p>
+<p>
+			The expression of the acceleration due to gravity in (eq. 3) is valid at the surface of ANY spherical object with its mass distributed with spherical symmetry. (eg It works for the Earth which has a dense iron core)</p>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<!-- Custom Cross Product: r x p = L -->
+
+<problem>
+
+	<script type="loncapa/python">
+rDir = random.choice(["+z","-z","+y","-y","+x","-x"])
+pDir = random.choice(["+z","-z","+y","-y","+x","-x"])
+
+def dir2vec(dir):
+
+	translator = {
+		"+x" : [1,0,0],
+		"-x" : [-1,0,0],
+		"+y" : [0,1,0],
+		"-y" : [0,-1,0],
+		"+z" : [0,0,1],
+		"-z" : [0,0,-1]
+	}
+
+	return translator[dir]
+
+def vec2dir(vec):
+
+	translator = {
+		[1,0,0] : "+x",
+		[-1,0,0] : "-x",
+		[0,1,0] : "+y",
+		[0,-1,0] : "-y",
+		[0,0,1] : "+z",
+		[0,0,-1] : "-z"
+	}
+
+	return translator[vec]
+
+def crossprod(vec1, vec2):
+	vec3 = [0,0,0]
+
+	vec3[0] = vec1[1]*vec2[2] - vec1[2]*vec2[1]
+	vec3[1] = - vec1[0]*vec2[2] + vec1[2]*vec2[0]
+	vec3[2] = vec1[0]*vec2[1] - vec1[1]*vec2[0]
+
+	return vec3
+
+def dotprod(vec1, vec2):
+
+	return vec1[0]*vec2[0] + vec1[1]*vec2[1] + vec1[2]*vec2[2]
+
+def test_ans(expect,ans):
+
+	global rDir		# Bring in the global variables
+	global pDir		# for the proton and b-field directions
+
+	#Get the real answer: crossproduct of velocity with B-field
+	realanswer = crossprod(dir2vec(rDir), dir2vec(pDir))
+
+	ans = str(ans)			# Make the answer a string
+	ans = ans.strip()		# Strip off whitespace
+	ans = ans.lower()		# Convert to lowercase
+
+	# Would be nice to check whether the answer is valid,
+	# but how would I return control to the student?
+
+	# Check for zero answer
+	if ans == "none":
+		if realanswer == [0,0,0]:
+			return True
+		else:
+			return False
+
+	ansvec = dir2vec(ans)	# Turn the answer from text into a vector
+
+	# Check to see if the answer given is the same as the real one.
+	if ansvec == realanswer:
+		return True
+	else:
+		return False
+
+	</script>
+
+		<p>An object moves in a straight line in the $pDir direction. At some instant, it is located along the $rDir axis. Consider its angular momentum at that instant, as 
+		measured from the origin. In what direction does that angular momentum vector point? (Type <i>+z</i>, <i>-x</i> etc. If there is no angular momentum, 
+		write <i>none</i>.)</p>
+
+	<customresponse cfn="test_ans">
+		<textline size="40" correct_answer="depends on randomization"/>
+
+	</customresponse>
+
+</problem>
+

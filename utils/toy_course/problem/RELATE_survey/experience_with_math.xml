@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What is your level of expertise in mathematics? If your last exposure to mathematics was more than one year ago, please check the last box as well.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="DiffEQ"><text>Differential equations or higher</text></choice>
+      <choice correct="true" name="multivar"><text>Multivariable calculus</text></choice>
+      <choice correct="true" name="college_calc"><text>One semester of calculus in college </text></choice>
+      <choice correct="true" name="hs_calc"><text>One semester of calculus in high school </text></choice>
+      <choice correct="true" name="hs_math"><text>More than two years of mathematics in high school </text></choice>
+      <choice correct="true" name="hs_calc"><text>Two years of mathematics or less in high school  </text></choice>
+      <choice correct="true" name="self-taught_in_math"><text>Self-taught in mathematics for subject</text></choice>
+      <choice correct="true" name="none_of_above"><text>None of the above</text></choice>
+      <choice correct="true" name="old_math_xp"><text>My last exposure to mathematics (at any level) was more than one year ago and I do not use it in my job</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

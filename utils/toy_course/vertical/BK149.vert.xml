@@ -1,0 +1,6 @@
+<vertical>
+	<problem filename="F12/boris/BK149-1.problem" display_name="The Atwood Machine" attempts="1"  weight="0.66"/>
+	<problem filename="F12/boris/BK149-2.problem" display_name="Atwood Machine, Part 2" attempts="2" weight="0.67"/>
+	<problem filename="F12/boris/BK149-3.problem" display_name="Atwood Machine, Part 3" attempts="2" weight="0.67"/>
+	<discussion for="The Atwood Machine" id="MReV_Summer2013_BK149" discussion_category="Applying Newton's Laws" />
+</vertical>

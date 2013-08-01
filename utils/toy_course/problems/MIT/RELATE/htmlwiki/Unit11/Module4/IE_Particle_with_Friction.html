@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Example: Particle with Friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Particle Moving with Friction</h3>
+A small particle of mass <i>m</i> is moving with speed <i><b>v</b></i> along a straight line on a horizontal surface contained in the xy - plane as shown below. There is friction between the particle and the surface of magnitude <font size="3" face="times new roman"><i>F<sub>f</sub></i></font>.
+<p>Let <i><b>Q</b></i> be a point placed at a distance <i>d</i> from the straight line as shown below.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/StraightLine_L_0.png"/>
+</p>
+<table>
+<tr>
+<td><b>Question </b>
+<p>Consider the time interval starting at the instant of time <i>t</i> and ending at the instant <i>t + &#916;t</i>. We define the change of the angular momentum vector to be:
+</p><p>\[\Delta\vec{L}_Q=\vec{L}_Q(t+\Delta t)-\vec{L}_Q(t)\]
+</p><p>The vector \(\Delta\vec{L}_Q\) is a vector pointing towards the:
+</p>
+<table>
+<tr>
+<td>(1) +x-axis
+</td>
+<td>(2) +y-axis
+</td>
+<td>(3) +z-axis
+</td></tr>
+<tr>
+<td>(4) -x-axis
+</td>
+<td>(5) -y-axis
+</td>
+<td>(6) -z-axis
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td><b>The direction of the change of the angular momentum is the direction of the torque, then option (3): +z-axis</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td><b>First Explanation:</b>
+<p>Because the rate of change of the angular momentum vector about a point is equal to the net torque about the same point, then
+</p><p>\[\frac{d\vec{L}_Q}{dt}=\sum\vec{\tau}_Q\]
+</p><p>if the time interval &#916;<i>t</i> is very small we can write:
+</p><p>\[\Delta\vec{L}_Q = (\sum\vec{\tau}_Q)\Delta t\]
+</p><p><br/>
+The above expression implies that the <font color="blue"><b>direction of the change of the angular momentum vector is the direction of the net torque</b></font>. Then, we need to find the direction of the net torque.
+</p><p><u> <b>Find the net torque about point <i>Q</i>:</b></u>
+</p><p><b>Looking at the forces on the particle</b>:
+</p><p>Consider the particle to be the system. It interacts with the Earth and the surface. The forces resulting from these interactions, the gravitational force of magnitude <i><b>mg</b></i> along the <b>-z - axis</b>, the normal force of magnitude <i><b>N</b></i> along the <b>+z-axis</b>, and the force of friction of magnitude <i><b>F<sub>f</sub></b></i> along the <b>-x- axis</b>, are shown in the figure below. 
+</p><p><b>Obtain the net torque</b>
+</p><p>To calculate the net torque about point <i><b>Q</b></i> we use the position vector \(\vec{r}\) to be the position vector of the point of application of each of the forces as shown in the figure. In this example, the point of application of each of the forces is the same point for the three forces. The point is the <i>point particle</i>.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/StraightLine_forces.png"/>
+</p><p>The torques about point <i><b>Q</b></i> due to the normal and the gravitational force cancel each other, therefore the net torque about point <i><b>Q</b></i> is the torque due to the force of friction which points along the <b>+z-axis</b>.
+</p><p>If the net torque about point <i><b>Q</b></i> is along the +z-axis, then the change of angular momentum vector is along the +z-axis.
+</p><p><br/>
+<b>Second Explanation</b>
+</p><p>A second explanation is obtained by calculating the angular momentum as a function of time.
+</p><p>In Example 1 of Module 1 we have obtained that the angular momentum of the particle about a point <i><b>Q</b></i> located at a distance <i>d</i> from the straight line is directed into the screen and has a magnitude <font size="3" face="times new roman"><i>L<sub>Q</sub> = dmv</i></font>.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/StraightLine_L.png"/>
+</p><p><br/>
+The net force on the particle 
+</p><p>\[\sum\vec{F} = \vec{F}_f+\vec{N}+m\vec{g}=\vec{F}_f\]
+</p><p>is the force of friction which points along the <b>-x-axis</b>. As a result, the speed of the particle decreases with time, and so does the magnitude of the angular momentum about point <i><b>Q</b></i>, <font size="3" face="times new roman"><i>L<sub>Q</sub></i>(t)<i> = dmv</i>(t)</font>.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/StraightLine_DL.png"/>
+</p><p>As shown in the figure above, the change in the angular momentum vector about point <i><b>Q</b></i> points along the <b>+z-axis</b>, in the same direction as the torque about point <i><b>Q</b></i>.
+</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

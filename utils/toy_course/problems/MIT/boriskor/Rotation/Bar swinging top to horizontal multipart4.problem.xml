@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+
+<p>At the instant the bar is <b>horizontal</b>, find the 
+the following quantities (use \(g\) for the acceleration of gravity):</p>
+	
+        <p>The <b>magnitude</b> of the horizontal component of the force exerted on the bar by the hinge \(F_x=\)</p>
+
+      <formularesponse answer="3*m*g/2" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+
+        <p>The <b>magnitude</b> of the vertical component of the force exerted on the bar by the hinge \(F_y=\)</p>
+
+      <formularesponse answer="m*g/4" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+      </problem>
+</html>
+

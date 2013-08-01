@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoints: Cut the rope </title>
+        <p>
+A uniform rod of mass M and length 2d is spinning without friction about a vertical axis passing through its midpoint. Two small solid spheres of mass M each can slide on the rod without friction. The diagrams show the top view of the rod-spheres assembly. Initially, the spheres are connected by a light string of length d as shown on the left diagram. The angular speed of the assembly at this point is &#x3C9;. 
+</p><p>
+Then the string snaps, and the spheres slide to the ends of the rod where they are "caught." What is the angular speed of the assembly after the spheres reach the ends of the rod?
+</p>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK110.PNG" alt="BK110"/>
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			\(5\omega/14\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			\(14\omega/5\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			\(7\omega/25\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			\(25\omega/7\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			\(5\omega/23\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+			\(23\omega/5\)
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+			\(5\omega\)
+        </choice>
+        <choice location="random" name="foil8" correct="false">
+			\(\omega/5\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

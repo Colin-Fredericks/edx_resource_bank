@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+<!--Checkpoint 19-->
+<problem>
+
+<!-- code for inserting image needs to be editted-->
+<h3>Solution</h3>
+<img src="/static/problems/S13/solutions/images/8-2.png" />
+
+<p>System: 3M</p>
+<p>Free body diagram of 3M:</p>
+<img src="/static/problems/S13/solutions/images/8-2(1).png" />
+
+<p>\(\Sigma\) \(\vec{F}\) = 3M\(\vec{a}_{1}\)</p>
+<p>x: T<sub>1</sub> = 3Ma<sub>1</sub> </p>
+<p></p>
+<p>System: pulley</p>
+<p>Free body diagram of pulley</p>
+<img src="/static/problems/S13/solutions/images/8-2(2).png" />
+
+<p>\(\Sigma\) \(\vec{\tau}_{CM}\) = I<sub>cm</sub>\(\vec{\alpha}\)</p>
+<p>\(\hat{k}\) rT<sub>1</sub> - rT<sub>2</sub> = -I<sub>cm</sub>\(\alpha\)</p>
+<p>\(\alpha\) = |\(\vec{\alpha}\)| ( is into the paper)</p>
+<p></p>
+<p>System: M</p>
+<p>Free body diagram of M</p>
+<img src="/static/problems/S13/solutions/images/8-2(3).png" />
+
+<p>\(\Sigma\) \(\vec{F}\) = M\(\vec{a}_{2}\)</p>
+<p>y: Mg - T<sub>2</sub> = Ma<sub>a</sub></p>
+<p>Ideal rope \(\Rightarrow\) |\(\vec{a}_{1}\)| = |\(\vec{a}_{2}\)| = a   (1)</p>
+<p>The rope does not slide with respect to pulley \(\Rightarrow\) a = \(\alpha\)r  (2)  (non dep-condition)</p>
+<p>replacing (1) and (2) in Newton's law equations:</p>
+<p>T<sub>1</sub> = 3Ma</p>
+<p>(T<sub>1</sub> - T<sub>2</sub>) = -I<sub>cm</sub>\({a\over r^{2}}  (4)</p>
+<p>Mg - T<sub>2</sub> = Ma  (5)</p>
+<p>Combining (3) + (4) : T<sub>1</sub> - T<sub>2</sub> = 3Ma + Ma - Mg</p>
+<p>Then replace T<sub>1</sub> - T<sub>2</sub> in (4):</p>
+<p>3Ma + Ma - Mg = - I<sub>cm</sub> \({a\over r^{2}}\) </p>
+<p>4Ma + I<sub>cm</sub> \({a\over r^{2}}\) = Mg </p>
+<p>a(4M + \({I_{cm}\over r^{2}}\)) = Mg</p>
+<p>a = \({Mg\over {4M + I\over r^{2}}}\)</p>
+
+</problem>
+</html>

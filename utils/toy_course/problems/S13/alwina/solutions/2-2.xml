@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+<!-- 2-2: U-control model airplane -->
+<problem>
+
+<h2>Solution</h2>
+
+<h2>Part a)</h2>
+<p>We choose the x-axis along the acceleration so we have 0 acceleration along the y-axis, as shown below:</p>
+<p>
+<img src="/static/problems/S13/alwina/images/2-2sol-a.png" />
+<img src="/static/problems/S13/alwina/images/2-2sol-b.png" />
+</p>
+
+<p>Then we have:</p>
+<p>\(\sum \vec{F} = m \vec{a}\)</p>
+<p>\(\sum F_y = m a_y = 0 \Rightarrow F \cos \theta - T \sin \theta - mg = 0\)</p>
+<p>\(\sum F_x = m a_x = \frac{m v^2}{R} = \frac{m v^2}{L \cos \theta} \Rightarrow F \sin \theta + T \cos \theta = \frac{m v^2}{L \cos \theta}\)</p>
+<p>Solving for T, we get:</p>
+<p>\(T = \frac{m v^2}{L}-m g \sin \theta\)</p>
+
+<h2>Part b)</h2>
+<p>The tension must be greater than 0 in order for there to be circular motion:</p>
+<p>\(T - \frac{m v^2}{L} + m g \sin \theta = 0\)</p>
+<p>The physical condition \(\,T \geq 0\,\) will set a restriction on \(\,\theta\):</p>
+<p>\(\sin \theta \leq \frac{v^2}{L g}\)</p>
+<p>So \(\,\theta_{crit} = \arcsin \frac{v^2}{L g}\)</p>
+
+<h2>Part c)</h2>
+<p>The max value of \(\,\sin \theta\,\) is 1, so \(v_{safe} = \sqrt{Lg}\) is the minimum velocity for the tension to remain greater than 0.</p>
+
+</problem>
+</html>

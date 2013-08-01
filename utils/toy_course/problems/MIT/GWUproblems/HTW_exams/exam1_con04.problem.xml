@@ -1,0 +1,35 @@
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+coeff=random.randrange(25,45,1)/100
+</script>
+
+      <p>You are pushing a filing cabinet horizontally across a rough floor (\(\mu\)<sub>k</sub> = $coeff) in a straight line at a constant speed.  Which of the following statements about the magnitudes of the forces acting on the filing cabinet are correct?</p>
+
+    <optionresponse texlayout="horizontal" max="5" randomize="yes">
+
+        <p>The force that you exert on the filing cabinet will be more than its weight</p>
+          <optioninput location="random" name="OneA" correct="False" options="('True','False')"></optioninput>
+
+		<p>The force that you exert on the filing cabinet will be equal to the frictional force on the cabinet</p>
+          <optioninput location="random" name="TwoA" correct="True" options="('True','False')"></optioninput>
+
+        <p>The force that you exert on the filing cabinet will be equal to its weight</p>
+          <optioninput location="random" name="ThreeA" correct="False" options="('True','False')"></optioninput>
+
+		<p>The force that you exert on the filing cabinet will be less than its weight</p>
+          <optioninput location="random" name="ThreeB" correct="True" options="('True','False')"></optioninput>
+
+		<p>The force that you exert on the filing cabinet will be more than the frictional force on the cabinet</p>
+          <optioninput location="random" name="FourA" correct="False" options="('True','False')"></optioninput>
+
+		<p>If you exerted twice the force, the cabinet would slide at a constant speed that is twice the original value</p>
+          <optioninput location="random" name="FiveA" correct="False" options="('True','False')"></optioninput>
+
+		<p>If you exerted twice the force, the cabinet would accelerate across the floor</p>
+          <optioninput location="random" name="FiveB" correct="True" options="('True','False')"></optioninput>
+
+    </optionresponse>
+  </problem>
+</html>

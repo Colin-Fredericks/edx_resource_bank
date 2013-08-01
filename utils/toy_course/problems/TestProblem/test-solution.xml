@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+<!-- 3-1: recoil on ice -->
+<problem>
+
+<h2>Solution</h2>
+<h2>Parts a) and b)</h2>
+
+<p>Consider a reference frame fixed on the ground</p>
+<p><b>System:</b> ball + person + cart</p>
+<p><b>Interactions:</b> Earth, track. Assume no friction; therefore there is no horizontal force on the system and the x-component of the momentum of the system is constant during the process.</p>
+<p><b>Models:</b> Momentum conservation: 2 time periods.</p>
+<ul>
+	<li>Initial state is the instant right before throwing the ball. At this instant the three objects are at rest.</li>
+	<li>Final state is right after throwing the ball. At this instant of time, both the cart and the person are moving together at \(v_{f,cart}\) with respect to ground and the ball is moving at \(v_{f,ball}\) with respect to the ground and at \(v'_{f,ball}\) with respect to the cart.</li>
+</ul>
+
+<p>The initial x-component of the total momentum is zero: \(\,p_{x,0}^{total}=0\)</p>
+<p>After the ball is thrown, the cart and person have a final momentum \(\,\vec{p}_{f,cart} = -(m_2+m_1) v_{f,cart} \hat{\bf{i}}\)</p>
+<p>The ball is thrown with speed \(\,v_0\) at an angle \(\,\theta\) with respect to the horizontal. Therefore:</p>
+<p>cart: \(\,v'_{f,ball} = v_0 \cos \theta \hat{\bf{i}} + v_0 \sin \theta \hat{\bf{j}}\)</p>
+<p>ground: \(\,v_{f,ball} = (v_0 \cos \theta - v_{f,cart}) \hat{\bf{i}} + v_0 \sin \theta \hat{\bf{j}}\)</p>
+<p>Since the total x-component of the momentum of the system is constant, we have:</p>
+<p>\(0 = (p_{f,cart})_x + (p_{f,ball})_x = -(m_2 + m_1)v_{f,cart} + m_3 (v_0 \cos \theta - v_{f,cart})\)</p>
+<p>We can solve this for the cart's velocity:</p>
+<p>\(v_{f,cart} = \frac{m_3 v_0 \cos \theta}{m_1+m_2+m_3}\)</p>
+<p>Then, using the equation for the final velocity of the ball:</p>
+<p>\(\vec{v}_{f,ball} = (\frac{(m_1+m_2)v_0 \cos \theta}{m_1+m_2+m_3})\hat{i}+v_0 \sin \theta \hat{\bf{j}}\)</p>
+<p>Note that the y-component of the moementum is not constant because as the person is throwing the ball, they are pushing off the cart, and the normal force that the ground exerts on the cart exceeds the gravitational force and so the net force in the y-direction is non-zero.</p>
+
+<h2>Part c)</h2>
+<p>The angle at which the ball is thrown as seen by the observer on the ground is given by:</p>
+<p>\(\phi = \tan^{-1} [\frac{(v_{f,ball})_y}{(v_{f,ball})_x}]\)</p>
+<p>\(\quad = \tan^{-1} [\frac{v_0 \sin \theta}{v_0 \cos \theta - v_{f,cart}}]\)</p>
+<p>\(\quad = \tan^{-1}[\frac{v_0 \sin \theta}{v_0 \cos \theta - (m_3 v_0 \cos \theta/(m_1+m_2+m_3))}]\)</p>
+<p>\(\quad = \tan^{-1} [\frac{(m_1+m_2+m_3)\sin \theta}{(m_1+m_2) \cos \theta}]\)</p>
+<p>\(\quad = \tan^{-1} [\tan \theta (1+\frac{m_3}{m_1+m_2})]\)</p>
+<p>Note that \(\,\phi > \theta\); the observer on the ground sees the ball moving closer to the vertical.</p>
+
+</problem>
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Models and SIM strategy</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#MAPS__Models_and_Mod').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/MAPS__Models_and_Mod.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Models and SIM</h3>
+<p>A (physical) model is a simplified representation of structure and behavior in a physical system.  In Mechanics, all of our models are focused on a particular <b>Law of Change</b>: an equation expressing how some physical quantity changes with time due to  particular types of interaction(s).   In the <!--<a id="go" rel="leanModal" href="#MAPS__Models_and_Mod" name="MAPS__Models_and_Mod" onclick="domath()">-->soccer ball example<!--</a>--> what is changing is the velocity of the ball because the net force on the ball is the gravitational force. 
+</p><p><br/>
+The key mnemonic for <b>modeling</b> and <b>models</b> is S. I. M. which has a slightly different meaning in these two applications (modeling the problem and core physical models):
+</p><p><br/>
+</p>
+<ul style="list-style:disc outside none"><li>When <b>modeling</b> a problem, you must first develop an understanding of the situation and then conceptually plan your attack.  The SIM Strategy for modeling the solution is the standard procedure for problem solving in MAPS pedagogy:
+</li></ul>
+<dl><dd>1. Choose a <b>S</b>ystem composed of some objects in the problem.
+</dd></dl>
+<dl><dd>2. Describe the <b>I</b>nteractions this system experiences - this means the forces, the physical interactions that cause them, and their properties. 
+</dd></dl>
+<dl><dd>3. Choose a <b>M</b>odel from the hierarchy whose allowed system and relevant interactions fit the system and interactions at hand.
+</dd></dl>
+<p><br/>
+</p>
+<ul style="list-style:disc outside none"><li>To help you decide which of the basic physical models can be applied to a problem that you are solving, the core physical models you will see in this course have a parallel structure. For these <b>models</b> S. I. M.  stands for:
+</li></ul>
+<dl><dd><b>S</b>. What are the allowable constituents of <b>S</b>ystems to which that model can apply (i.e. what types of objects are allowed in the system)
+</dd></dl>
+<dl><dd><b>I</b>. What types of <b>I</b>nteractions are agents of change in this model (e.g. forces, work done by forces, torques due to forces) 
+</dd></dl>
+<dl><dd><b>M</b>. The <b>M</b>athematical statements of the Law of Change for that model.  All models have both a differential and an integral form of the law of change.
+</dd></dl>
+<p><br/>
+This is a cyclic process; the objects in a multi-objects problem can be combined into different systems with different interactions, and sometimes the nature of an interaction changes from internal to external as a result.  Often it is necessary to combine two different SIM procedures in one solution, either simultaneously or sequentially.
+</p>
+<div id="MAPS__Models_and_Mod" class="popup"></div>
+</body>
+</html>
+

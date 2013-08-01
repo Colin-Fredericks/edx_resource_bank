@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 3 -->
+
+<problem>
+
+	<p>A uniform disk of mass \(m\) and radius \(R\) is rolling without slipping along a horizontal surface as shown in the figure below. Its center 
+	of mass is moving at speed \(v\).</p>
+	<img src="/static/problems/F12/procedures/images/proc2.png" />
+	<p>What is the magnitude and the direction of the angular momentum of the disk about the point \(Q\) fixed on the table? Express your answer in terms 
+	of \(m\), \(R\) and \(v\).</p>
+
+	<formularesponse answer="(R*m*v+0.5*m*R*v)" samples="m,v,R@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+	</formularesponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('Up','Down','Left','Right','Out of screen','Into screen','N/A')" correct="Into screen" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

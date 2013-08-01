@@ -1,0 +1,32 @@
+<html>
+  <problem>
+
+      <p>A small block of mass <i>m</i> sits on a horizontal and frictionless table.  It is attached to a wall by a spring.  The block is initially located at x = 0 when the spring 
+      is unstretched (equilibrium position).  You pull the block away from the equilibrium position, out to x = A, and then release it.  The 
+      block then oscillates horizontally back and forth in simple harmonic motion.  
+      </p>
+
+<p>Which of the statements below are true about the magnitude of the acceleration?  Check all that apply.</p>
+       <choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice correct="true">
+          <text>The magnitude of the acceleration of the block is maximum at x = A</text>
+        </choice>
+        <choice correct="false">
+          <text>The magnitude of the acceleration of the block is maximum at x = 0</text>
+        </choice>
+        <choice correct="true" >
+          <text>The magnitude of the acceleration  of the block is maximum at x = -A</text>
+        </choice>
+        <choice correct="false" >
+          <text>The magnitude of the acceleration  of the block is maximum at x = A/2</text>
+        </choice>
+      </checkboxgroup>
+    </choiceresponse>
+    
+
+     
+
+
+  </problem>
+</html>

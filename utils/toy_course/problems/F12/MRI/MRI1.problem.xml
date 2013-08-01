@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 1 -->
+
+<problem>
+
+	<p>An L shaped block of mass m<sub>2</sub> and a box of mass m<sub>1</sub> \( (m_2 > m_1) \) are connected by a horizontal spring of spring constant k. The spring is compressed a distance X with respect to its equilibrium length and a rope is used to hold the block and the box motionless together as shown in the figure 1. There <b>is friction between the block and the box</b> but there is <b>no friction between the L shaped block and the ground</b>. </p>
+	<img src="/static/problems/F12/MRI/images/MRI1-1.png" /> <img src="/static/problems/F12/MRI/images/MRI1-2.png" />
+	<p>When the rope is cut the spring expands to recover its equilibrium position. As a result, the box moves to the left and the L-shaped box to the right as shown in figure 2.</p>
+
+	<h3>Part 1</h3>
+	<p>Which of the following statements accurately describes the linear momentum of the block-box-spring system during the time interval that starts 
+	at the instant at which the rope is cut, and ends at the instant at which the box is moving with speed V<sub>1</sub> and the block is moving with 
+	V<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true"><p>The linear momentum of the block-box-spring system must be conserved.</p></choice>
+			<choice location="random" correct="false"><p>The linear momentum of the block-box-spring system is not conserved.</p></choice>
+			<choice location="random" correct="false"><p>The linear momentum of the block-box-spring system is conserved only
+			 when m<sub>1</sub> = m<sub>2</sub>.</p></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The spring’s potential energy is completely converted to kinetic energy.</choice>
+			<choice location="random" correct="true">Both the spring and the friction act equally on the box and the block.</choice>
+			<choice location="random" correct="false">Linear momentum is always conserved.</choice>
+			<choice location="random" correct="false">The friction removes momentum from the system.</choice>
+			<choice location="random" correct="false">The process is essentially an elastic collision.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>Which of the following statements accurately describes the mechanical energy of the block-box-spring system during the time interval that starts at the instant at which the rope is cut, and ends at the instant at which the box is moving with speed V<sub>1</sub> and the block is moving with V<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false"><p>The mechanical energy of the block-box-spring system must be conserved.</p></choice>
+			<choice location="random" correct="true"><p>The mechanical energy of the block-box-spring system is not conserved.></p></choice>
+			<choice location="random" correct="false"><p>The mechanical energy of the block-box-spring system is only conserved when m<sub>1</sub> = m<sub>2</sub>.</p></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>My answer to part 3 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Both the spring and the friction act equally on the box and the block.</choice>
+			<choice location="random" correct="false">The spring’s potential energy is completely converted to kinetic energy.</choice>
+			<choice location="random" correct="false">Mechanical energy is always conserved.</choice>
+			<choice location="random" correct="true">The friction removes mechanical energy from the system.</choice>
+			<choice location="random" correct="false">The process is essentially an elastic collision.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

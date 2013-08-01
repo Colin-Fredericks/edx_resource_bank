@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>Normal Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Normal Force as a Constraint</h3>
+
+<p>The normal force, like tension, arises from a dynamical constraint: it takes on whatever value is necessary to ensure that the objects in contact will not move into each other.</p>
+
+<p>When objects come in contact, the contact interaction generates a normal force which causes the appropriate acceleration to change their velocities so they don't interpenetrate.  In other words, the normal force <i>constrains</i> the motions of these objects so that they remain in contact without getting closer or farther from each other. This means they have the same velocity component in the normal (perpendicular to surface) direction.</p>
+
+<p><em>Unlike the forces due to gravity or springs, there is no "force law" for normal forces</em> - the normal force must be found using Newton's Second Law and is determined by the acceleration of the objects.</p>
+
+<h3>Illustrative Examples</h3>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Stationary Horizontal Surface (Floor)</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>			An object in contact with a stationary horizontal surface like the floor is constrained to have no acceleration in the vertical direction (or it will break contact), but it may have a nonzero horizontal acceleration. Thus, the floor and the object need not have the same acceleration vector, but their acceleration vectors will have the same vertical component (zero in this case).			<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Pushing a box</b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>							An example is a box of mass <i> m </i> being pushed along a horizontal and frictionless surface with a horizontal force of magnitude <i>F</i> as shown in the figure. The box interacts with three objects, the person pushing the box, the contact surface, and the Earth. As a result of these three interactions, there are three forces acting on the box as shown in the free body diagram:							<p>
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/PushingBox.png"/></p>
+<p>								 </p>
+<ul style="list-style:disc outside none">
+<li>
+\(\vec{F}\) is the force exerted on the box by the person.</li>
+<li>
+\(\vec{F}_{bE}\) is the gravitational force on the box by the Earth. It has magnitude <i>mg</i> and points down</li>
+<li>
+\(\vec{N}_{bS}\) is the normal force exerted on the box by the surface. It points up, and its magnitude <i>N</i><sub><i>b</i><i>S</i></sub> must be determined from Newton's Laws and motion constraints.</li>
+</ul>
+<p>
+<br/>								To obtain the normal force we need to consider the forces only along the vertical direction. We write the vertical component of Newton's Second Law consistent with the coordinate system indicated in the figure, +y axis upwards.</p>
+<p>								Newton's Second Law, \(\sum \vec{F} = m\vec{a}\), implies that along the y-axis</p>
+<p>
+<br/>
+\( \mathcal{} N_{bS} - mg = ma_{y}\)</p>
+<p>
+<br/>								Because there is no acceleration along the vertical direction, <i>a<sub>y</sub> = 0</i>, and we have</p>
+<p>
+<br/>
+\(\mathcal{}N_{bS} = mg\)</p>
+<p>
+<br/>								The value of the normal force is obtained as a consequence of Newton's Second Law and the constraint imposed by the contact between both rigid objects.</p>
+<p>								 </p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Vertically Accelerating Horizontal Surface (Elevator)</b> [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht7">
+<td>			An object in steady contact with a vertically moving horizontal surface like the floor of an accelerating elevator is constrained to have the same vertical velocity and acceleration as the elevator, but it may have a different horizontal acceleration. The acceleration vectors for the elevator and the object will have the same vertical component.			<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Box on an elevator accelerating upwards</b> [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht8">
+<td>							The box of mass <i>m</i> is at rest on the floor of an elevator which is accelerating upwards with acceleration <i>a</i>. The box interacts with two objects, the elevator floor and the Earth. As a result of these two interactions, there are two forces acting on the box as shown in the free body diagram:							<p>
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/BoxFloorElevator.png"/></p>
+<p>								 </p>
+<ul style="list-style:disc outside none">
+<li>
+\(\vec{F}_{bE}\) is the gravitational force on the box by the Earth. It has magnitude <i>mg</i> and points down</li>
+<li>
+\(\vec{N}_{bf}\) is the normal force exerted on the box by the floor. It points up, and its magnitude <i>N</i><sub><i>b</i><i>f</i></sub> remains to be determined.</li>
+</ul>
+<p>
+<br/>								We write the vertical component of Newton's Second Law consistent with the coordinate system indicated in the figure, +y axis upwards.</p>
+<p>
+<br/>								Newton's Second Law, \(\sum \vec{F} = m\vec{a}\), implies that along the y-axis</p>
+<p>
+<br/>
+\( \mathcal{} N_{bf} - mg = ma\)</p>
+<p>
+<br/>								therefore</p>
+<p>
+<br/>
+\(\mathcal{}N_{bf} = m(a+g)\)</p>
+<p>
+<br/>								Realize that the value of the normal force is obtained as a consequence of Newton's Second Law, and it will adjust its value depending on the acceleration of the elevator to make the box and elevator move together.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>			Horizontally Moving Horizontal Surface (Truck Bed) [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht9">
+<td>			An object in contact with a horizontal surface that is moving horizontally like the bed of a moving pickup truck (assuming the road is not bumpy) is constrained to have zero vertical acceleration, but it might not have the same horizontal acceleration as the truck (the object could be sliding relative to the truck). The truck and the object are not required to have the same total acceleration, but their acceleration will have the same vertical component.</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

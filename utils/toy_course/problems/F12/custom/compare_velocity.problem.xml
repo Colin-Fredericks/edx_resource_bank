@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!-- Custom comparison: SHM velocity -->
+
+<problem>
+
+	<script type="loncapa/python">
+
+A_a = random.randrange(-50, 50, 1)/10
+A_b = random.randrange(-50, 50, 1)/10
+T_a = random.randrange(1, 20, 1)/10
+T_b = random.randrange(1, 20, 1)/10
+phi_a = random.randrange(0, 30, 1)/10
+phi_b = random.randrange(0, 30, 1)/10
+h_a = random.randrange(0, 100, 1)/10
+h_b = random.randrange(0, 100, 1)/10
+
+	</script>
+
+		<p>The equations below show the positions of two oscillators over time:</p>
+		<p>\( \displaystyle A: x_A = $A_a \sin \left( \frac{2\pi}{ $T_a } \left( t - $phi_a \right) \right) + $h_a \)</p>
+		<p>\( \displaystyle B: x_B = $A_b \sin \left( \frac{2\pi}{ $T_b } \left( t - $phi_b \right) \right) - $h_b \)</p>
+		<p>Which oscillator, A or B, has the greater average velocity over a full cycle? You may assume all quantities given are in S.I. units. 
+		Choose A or B. If the velocities are perfectly identical, choose "Same".</p>
+
+	<optionresponse direction="vertical" randomize="yes">
+			<optioninput options="('A','B','Same')" correct='Same'/>
+	</optionresponse>
+
+	<solution>
+
+			<p>This problem asks for the average <i>velocity</i> over one cycle. Since each oscillator returns to its original position at the end of a cycle, its total displacement is zero. Both oscillators (and indeed all undamped oscillators) have an average velocity of zero.</p>
+
+	</solution>
+</problem>
+

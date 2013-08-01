@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 1 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The spring’s potential energy is completely converted to kinetic energy.</choice>
+			<choice location="random" correct="true">Both the spring and the friction act equally on the box and the block.</choice>
+			<choice location="random" correct="false">Linear momentum is always conserved.</choice>
+			<choice location="random" correct="false">The friction removes momentum from the system.</choice>
+			<choice location="random" correct="false">The process is essentially an elastic collision.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

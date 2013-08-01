@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Example: Meteor</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Meteor Grazing a Planet</h3>
+A small meteor of mass <i>m</i> is moving along a straight line (in free space) with a speed <i>V<sub>o</sub></i> when it enters the gravitational field around a planet of mass <i>M</i> and radius <i>R</i> as shown in the figure. The distance between the straight line and the center of the planet (point <i><b>Q</b></i>) is <i>h</i>.
+<p>Assume that the meteor can be treated as a point particle, and that its mass <i>m</i> &lt;&lt; <i>M</i>, so that the gravitational force of the meteor on the planet does not change the planet's position.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/ImpactParameter.png"/>
+</p><p>Consider the motion of the meteor between the time interval <i>t<sub>i</sub></i>&lt;<i>t</i>&lt;<i>t<sub>f</sub></i>, where, <i>t<sub>i</sub></i>, is the instant at which the meteor is far away from the planet and moving moving with <i>V<sub>o</sub></i>, and <i>t<sub>f</sub></i>, is the instant at which the meteor just grazes the planet (the meteor does not collide with the planet).
+</p><p><b>Question 1:</b> Which of the following statements about the angular momentum of the meteor about point <i><b>Q'</b> is true:</i>
+</p><p><b>1.</b> \(\vec{L}_Q(t_f) &gt; \vec{L}_Q(t_i)\)
+</p><p><b>2.</b> \(\vec{L}_Q(t_f) = \vec{L}_Q(t_i)\)
+</p><p><b>3.</b> \(\vec{L}_Q(t_f) &lt; \vec{L}_Q(t_i)\)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td><b>Option 2. The angular momentum is constant</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>The angular momentum is constant because the gravitational interaction is a <i>central force</i>. Consider the <b>system to be the meteor</b> treated as a point particle. It interacts with the planet only through the gravitational interaction. At any point along its trajectory, the gravitational force exerted on the meteor by the planet, \(\vec{F}_{mM}\), is pointing towards the center of the planet, point <i><b>Q</b></i>.
+<p>Therefore, the torque about point <i><b>Q</b></i>:
+</p><p>\[\vec{\tau}_Q=\vec{r}_Q\times\vec{F}_{mM}=0\]
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/ImpactParameter_sol.png"/>
+</p><p>The position vector from point <i><b>Q</b></i> to the point of application of the force \(\vec{r}_Q\) is at 180<sup>o</sup> angle with respect to \(\vec{F}_{mM}\)
+</p><p>Since the net torque is always zero, the meteor's angular momentum about point <i><b>Q</b></i> is constant.
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

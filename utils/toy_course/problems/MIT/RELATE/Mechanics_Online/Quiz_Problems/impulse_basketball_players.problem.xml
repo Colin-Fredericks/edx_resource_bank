@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+        <p>
+Two NBA players are revered for their ability to dunk a basketball, i.e., both players can jump very high. The first player is a tall, heavy center, and the second player is an average height, slim guard. The first player is 1.5 times the mass of the second player, and the first player jumps a maximum of 0.4 times as high as the second player's maximum jump. If both players start from a stationary standing position, which player imparts the most impulse when jumping to their respective maximum vertical leaps?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                Player 1.
+
+          </choice>
+          <choice name="foil2" correct="true">
+
+                Player 2.
+
+          </choice>
+          <choice name="foil3" correct="false">
+
+                The impulses are equal.
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                Not enough information.
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

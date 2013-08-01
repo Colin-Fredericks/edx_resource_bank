@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Near-earth gravity weight</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+        {
+          display = "inline";
+          link.nodeValue = hidetext;
+        }
+      else
+        {
+          display = "none";
+          link.nodeValue = showtext;
+        }
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+
+<!--<script type="text/javascript"> 
+$('#Universal_gravitatio').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Universal_gravitatio.html'); 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+                        <p>The gravitational interaction between the earth and an object near the earth's surface overwhelms the other gravitational interactions experienced by the object (in the reference frame of the earth).  The gravitational force exerted on an object near the earth's surface is called the object's weight. 
+</p>
+<h2> The Force of Gravity Near the Earth's Surface</h2>
+<h4> Form of the Force</h4>
+<p>The force acting on an object of mass <i>m</i> near the earth's surface due to the gravitational interaction with the earth has the following properties:
+</p>
+<ul><li> The force points straight down (into the surface of the earth).
+</li><li> The force has magnitude <i>m</i><i>g</i> where <i>g</i> = 9.8 m/s<sup>2</sup> when mass is in kilograms.
+</li></ul>
+<h4> Relationship to Universal Gravitation</h4>
+<p>The form of this force is a special case of Newton's law of <!--<a id="go" rel="leanModal" href="#Universal_gravitatio" name="Universal_gravitatio" onclick="domath()">-->universal gravitation<!--</a>-->.  Objects on the earth's surface have negligible size (relative to the size of the earth) so they can be treated as <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particles<!--</a>-->.  Since the earth is essentially spherical, an object located anywhere on its surface experiences the same gravitational force interaction by the law of universal gravitation.  For objects near the earth's surface, the separation between the object and the position of the earth's center is essentially equal to the radius of the earth, <i>R</i><sub><i>e</i></sub>.  Assuming that the earth has mass <i>M</i><sub><i>e</i></sub>, the law of universal gravitation gives:
+</p><p><m>$ |F^{G}_{me}| = G \frac{mM_{e}}{R_{e}^{2}} $</m>
+</p><p>which can be written:
+</p><p><m>$ |F^{G}_{me}| = m \left(G\frac{M_{e}}{R_{e}^{2}}\right)$</m>
+</p><p>The expression in parenthesis is essentially constant, so that this expression has the form 
+</p><p><m>$ |F^{G}_{me}| = mg $</m>
+</p><p>if <i>g</i> is equal to:
+</p><p><m>$ g = G\frac{M_{e}}{R_{e}^{2}}$</m>
+</p><p>Looking up the mass and radius of the earth gives:
+</p><p>
+<m>$ g = G\frac{M_{e}}{R_{e}^{2}} = $</m>
+<br />
+<m>$ g = (6.67\times 10^{-11}\mbox{ N m}^{2}/\mbox{kg}^{2})\left(\frac{5.98\times 10^{24}\mbox{ kg}}{(6.37\times 10^{6}\mbox{ m})^{2}}\right) = $</m> <br />
+<m>g = $\mbox{9.83 m/s}^{2} $</m>
+</p><p><br />
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b> Making Essential Assumptions</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>Physics endeavors to examine the physical behavior of the <a href="http://en.wikipedia.org/wiki/Orders_of_magnitude_(length)" class="extiw" title="wikipedia:Orders of magnitude (length)">exceedingly small</a> (nuclear particles are on the order of 10<sup> &#8722; 15</sup><i>m</i><i>e</i><i>t</i><i>e</i><i>r</i><i>s</i>) to the extent of the visible universe on the order of 10<sup> + 24</sup><i>m</i><i>e</i><i>t</i><i>e</i><i>r</i><i>s</i>.
+<p>The average radius of the earth is <m>$R_{e}= 6.37\times 10^{+6}\ meters$</m>.  A typical object treated as a point particle on the surface of the earth might be a 3.00 meters tall gorilla.  The ratio of the height (H) of a the gorilla to the radius of the earth is 
+</p><p><m>$\frac {H_{gorilla}}{R_{e}} = \frac {3.00\mbox{ meters}}{6.37\times 10^{+6}\mbox{ meters}}=0.5\times10^-6 $</m>.  This is 1 part in 2 million.  It is reasonable to claim the height of the gorilla is neglibile compared to the radius of the earth, therefore we can reasonably treat the gorilla as a point particle.  (Tell that to the girl in King Kong's hand!)
+
+</p><p>Likewise, the argument that the earth is a sphere is based on insignificant variability in the radius of the earth. The radius varies from <m>$R_{e}= 6.353\times 10^{+6}\ meters$</m> to <m>$R_{e}= 6.384\times 10^{+6}\ meters$</m>.  
+</p>
+</td></tr></table>
+<h2> Acceleration of Gravity</h2>
+<p>The form of the weight force is particularly simple.  If it is the only force acting on an object, then Newton's Second Law says that:
+</p><p><m>$ F_{net} = mg = ma\; $</m>
+</p><p>so that:
+</p><p><m>$ g = a \;$</m>
+</p><p>Thus, for any object near the surface of the earth with net force equal to its weight, the acceleration will be 9.8 m/s<sup>2</sup> downward.
+</p>
+<h2> Gravitational Potential Energy Near Earth's Surface</h2>
+<p>For a system consisting of the earth plus an object of mass <i>m</i> near the earth's surface, the gravitational potential energy will be a function of the height of the object, since the force of gravity is perfectly vertical.  Taking <i>y</i> to be the vertical coordinate (positive upward, origin at an arbitrary height), and choosing the zero of the potential energy to lie at <i>y</i> = 0:
+</p><p><m>$ U^{g}_{me}(y=0) = 0 $</m>
+</p><p>the potential energy will take the form:
+</p><p><m>$ U^{g}_{me}(y) = mgy$</m>
+</p><p>The potential energy curve for this form of the potential energy is a straight line with positive slope:
+</p><p><img src="../Unit8/Module4/files/NEGravPot.png" />
+</p><p>This curve has no minimum.  Thus, there is no position of equilibrium for an object moving under the influence of its weight alone.  At least one other force must be present to produce equilibrium.
+</p>
+
+<div id="Point_particle.html" class="popup"></div>
+
+<div id="Universal_gravitatio" class="popup"></div>
+</body>
+</html>
+

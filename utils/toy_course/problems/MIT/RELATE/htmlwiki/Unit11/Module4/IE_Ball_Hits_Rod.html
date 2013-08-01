@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Example: Ball Hits Rod</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Ball Hits Rod</h3>
+<p>A small ball of mass <i>m</i> is moving on a horizontal and frictionless surface contained in the xy-plane. A thin rod of mass <i>M</i> and length <i>d</i> is at rest on the surface. The rod can rotate about an axle perpendicular to the xy-plane that passes through one of its end, point <i><b>Q</b></i> in the figure.</p>
+<p>At the instant right before the collision, time  <i>t<sub>i</sub></i> , the ball is moving with speed  <i>v<sub>o</sub></i> directed perpendicular to the rod. The ball hits the rod and sticks to it at the rod's free end. At the instant right after the collision, time <i>t<sub>f</sub></i> , the ball and the rod start to rotate together counterclockwise as viewed from the +z-axis. (<b>Note:</b>. Gravity is into the screen/)
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/StickyCollision1.png"/>
+</p><p><b>Question 1:</b> Consider the system to be the ball and the rod. Is the angular momentum about point <i><b>Q</b></i> of the ball-rod system constant during the time that the collision lasts (<i>t<sub>i</sub></i> &lt; <i>t</i> &lt; <i>t<sub>f</sub></i>)?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td><b>Yes</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+<tr style="display:none" id="ht15">
+<td>As shown below, the advantage of calculating torques about a point in the pivot is that the force at any pivot point will not contribute to the net torque because its torque about the pivot s zero.
+<p><u><b>System:</b></u> ball and rod. The ball is treated as a point particle. The rod as a rigid object.</p>
+<p>Note: The system changes state when the ball sticks to the rod, but it is still the same system (specified by the objects in it).</p>
+<p><br/><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/stickyCollision1_sol2.png"/></p>
+<p><u><b>External Interactions:</b></u>
+</p><p><b>Ball \(\Leftrightarrow\) Earth.</b> The resulting force is the weight along the -z-axis and of magnitude <i>mg</i>. The weight is acting on the particle which position about point <i><b>Q</b></i> is the vector \(\vec{r}_1\) in the figure. The torque about point <i><b>Q</b></i> due to the weight:
+</p><p>\[\vec{\tau}_Q^{mg} = \vec{r}_1\times m\vec{g}\]
+</p><p><b>Ball \(\Leftrightarrow\) Surface.</b> The resulting force is the normal force of magnitude <i>N<sub>ball</sub></i> in the +z-axis. The normal is acting on the particle which position about point <i><b>Q</b></i> is the vector \(\vec{r}_1\) in the figure. The torque about point <i><b>Q</b></i> due to the normal:
+</p><p>\[\vec{\tau}_Q^{N_{ball}} = \vec{r}_1\times\vec{N}_{ball}\]
+</p><p><b>Rod \(\Leftrightarrow\) Earth.</b> The resulting force is the weight of magnitude <i>Mg</i> along the -z-axis. The weight is acting on the center of mass of the rod which position about point <i><b>Q</b></i> is the vector \(\vec{r}_2\) in the figure. The torque about point <i><b>Q</b></i> due to the weight: 
+</p><p>\[\vec{\tau}_Q^{Mg} = \vec{r}_2\times M\vec{g}\]
+</p><p><b>Rod \(\Leftrightarrow\) Surface.</b> The resulting force is the normal force of magnitude <i>N<sub>rod</sub></i> in the +z-axis. The normal is acting on the center of mass of the rod which position about point <i><b>Q</b></i> is the vector \(\vec{r}_2\) in the figure. The torque due to the normal about point <i><b>Q</b></i>: 
+</p><p>\[\vec{\tau}_Q^{N_{rod}} = \vec{r}_2\times\vec{N}_{rod}\]
+</p><p><b>Rod \(\Leftrightarrow\) Axle.</b> The resulting force is a contact force exerted by the axle on the rod. Assuming an axle with a perfect bearing then the torque about point <i><b>Q</b></i> due to this force is zero (zero moment arm). 
+</p><p><u><b>Internal Interactions:</b></u>
+</p><p><b>Rod \(\Leftrightarrow\) Ball.</b>. The result of these interaction is a Newton 3rd law pair. The force exerted by the rod on the ball will make the ball slow down and become deformed during the collision. The force exerted by the ball on the rod will cause the rod to start to rotate, and there may be some deformation of the rod's surface. These are internal forces and the sum of the torques due to these two forces add to zero and do not contribute to the total torque. This is the advantage of picking the system to be the ball and the rod. These contact forces due to the collision are not known; fortunately, if they are internal forces we do not need to calculate their torque. 
+</p><p>The net torque about point <i><b>Q</b></i>:
+</p><p>\(\sum\vec{\tau}_Q = \vec{\tau}_Q^{mg} + \vec{\tau}_Q^{N_{ball}}+ \vec{\tau}_Q^{Mg} + \vec{\tau}_Q^{N_{rod}}\)
+</p><p>\(\sum\vec{\tau}_Q = \vec{r}_1\times m\vec{g} + \vec{r}_1\times\vec{N}_{ball} + \vec{r}_2\times M\vec{g} + \vec{r}_2\times\vec{N}_{rod}\)
+</p><p>\(\sum\vec{\tau}_Q = \vec{r}_1\times\ (m\vec{g} + \times\vec{N}_{ball}) + \vec{r}_2\times (M\vec{g} + \vec{N}_{rod})\)
+</p><p>Because there is no motion along the z-axis (out of the plane of the motion):
+</p><p>\[m\vec{g} + \vec{N}_{ball}=0\]
+</p><p>\[M\vec{g} + \vec{N}_{rod} = 0\]
+</p><p>Then the net torque about point <i><b>Q</b></i> of the ball - rod system is zero during the collision and the angular momentum of the system about point <i><b>Q</b></i> is constant during the collision. 
+</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>Question 2</b>. Consider the system to be the ball. Which of the following statements are true about the magnitude of the angular momentum about point <i><b>Q</b></i> of the ball?
+</p><p><b>1.</b>\(|\vec{L}_Q^{ball}(t_f)| &gt; |\vec{L}_Q^{ball}(t_i)|\)
+</p><p><b>2.</b>\(|\vec{L}_Q^{ball}(t_f)| = |\vec{L}_Q^{ball}(t_i)|\)
+</p><p><b>3.</b>\(|\vec{L}_Q^{ball}(t_f)| &lt; |\vec{L}_Q^{ball}(t_i)|\)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td><b>Option 3.</b>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th></tr>
+<tr style="display:none" id="ht17">
+<td>If the system is the ball, the interaction between the rod and the ball is now an external interaction. The resulting force, \(\vec{F}_{ball,rod}\), will produce a torque about point <i><b>Q</b></i>,&#160;\(\vec\tau_Q^F\). This torque will be perpendicular to the xy-plane, along the <i>-z - axis</i>. As shown in the explanation of question1, the torques due to the weight and the normal cancel each other, then the net torque is the one due to the collision force on the ball. The net torque is different from zero then the angular momentum of the ball is not constant during the collision.
+<p>The initial angular momentum is out of the screen, along the <i>+z - axis</i> and given by:
+</p><p>\[\vec{L}^{ball}_Q(t_i)=\vec{r}_1\times m\vec{v}_o=dmv_o\hat{k}\]
+</p><p>Then, the angular momentum of the ball right after the collision can be approximated as:
+</p><p>\[ \vec{L}^{ball}_Q(t_f)=\vec{L}^{ball}_Q(t_i) + \vec\tau_Q^F(t_f - t_i)\]
+</p><p>Then the magnitude of the angular momentum about <i><b>Q</b></i> decreases.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module4/files/stickyCollision1_sol3.png"/>
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

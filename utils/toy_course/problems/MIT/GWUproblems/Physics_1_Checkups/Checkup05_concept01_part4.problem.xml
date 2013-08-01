@@ -1,0 +1,25 @@
+<html>
+  <problem>
+
+<p>Which of the statements below are true about the total energy of the block-spring system?  Check all that apply.</p>
+
+
+        <choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice correct="true">
+          <text>The total energy of the block-spring system at x = A is the same as the total energy at x = 0</text>
+        </choice>
+        <choice correct="true">
+          <text>The total energy of the block-spring system at x = A is the same as the total energy at x = -A</text>
+        </choice>
+        <choice correct="true" >
+          <text>The total energy of the block-spring system at x = A is the same as the total energy at x = A/2</text>
+        </choice>
+        <choice correct="true" >
+          <text>The total energy of the block-spring system at x = A is the same as the total energy at any value of x</text>
+        </choice>
+      </checkboxgroup>
+    </choiceresponse>
+
+  </problem>
+</html>

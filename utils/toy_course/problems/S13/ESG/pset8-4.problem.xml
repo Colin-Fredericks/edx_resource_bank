@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+<!-- checkpoint 21 -->
+<problem>
+
+	<h2>Checkpoint 21</h2>
+	<p>A horizontal uniform bar of mass M and length L is placed on two supports, labeled A and B, located as shown in the diagram. A block of mass m is placed on the right end of the bar.  Answer the following questions in terms of some or all of the given variables L, d1, d2, m, M, and g.</p>
+
+	<img src="/static/problems/S13/ESG/images/8-4.png" />
+
+	<h3>Part 1</h3>
+	<script type="loncapa/python">
+FA = "((d1+d2-(L/2))/d2)*M*g-(m*g*(L-d1-d2))/d2"
+	</script>
+
+		<br/>
+		 Find the normal force F<sub>A</sub> exerted on the bar by Support A.
+		<br/>
+
+	<p>You may type "d1" for d<sub>1</sub> and "d2" for d<sub>2</sub>.</p>
+	<formularesponse type= "cs" samples="d1,d2,L,M,g,m@1,1,1,1,1,1:5,5,5,5,5,5#10" answer="$FA">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		F<sub>A</sub> =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 2</h3>
+	<script type="loncapa/python">
+mmin = "M*(d1+d2-(L/2))/(L-d1-d2)"
+	</script>
+
+		<br/>
+		 What is the minimum mass m<sub>min</sub> that would cause the bar to tip over?
+		<br/>
+
+	<p>You may type "d1" for d<sub>1</sub> and "d2" for d<sub>2</sub>.</p>
+	<formularesponse type= "cs" samples="M,d1,d2,L@1,2,1,1:2,5,5,5#10" answer="$mmin">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		m<sub>min</sub> =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

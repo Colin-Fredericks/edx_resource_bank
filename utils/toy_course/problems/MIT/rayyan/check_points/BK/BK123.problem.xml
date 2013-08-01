@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Orbit </title>
+
+      <p>A satellite follows an elliptical orbit around a planet. During a certain time interval, the distance between the satellite and the planet is decreasing. What happens to the following characteristics of the satellite during this time interval?</p>
+
+    <optionresponse randomize="no">
+      <ul>
+        <li>
+			<p>weight</p>
+			<optioninput location="random" name="Foil1" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+        <li>
+            <p>speed</p>
+			<optioninput location="random" name="Foil2" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+        <li>
+			<p>gravitational potential energy</p>
+			<optioninput location="random" name="Foil3" options="('increases','decreases','stays the same')" correct="decreases"></optioninput>
+        </li>
+        <li>
+			<p>angular momentum (about the planet)</p>
+			<optioninput location="random" name="Foil4" options="('increases','decreases','stays the same')" correct="stays the same"></optioninput>
+        </li>
+        <li>
+			<p>acceleration</p>
+			<optioninput location="random" name="Foil5" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+        <li>
+			<p>kinetic energy</p>
+			<optioninput location="random" name="Foil6" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+        <li>
+			<p>total mechanical energy</p>
+			<optioninput location="random" name="Foil7" options="('increases','decreases','stays the same')" correct="stays the same"></optioninput>
+        </li>
+        <li>
+			<p>net torque (about the planet)</p>
+			<optioninput location="random" name="Foil8" options="('increases','decreases','stays the same')" correct="stays the same"></optioninput>
+        </li>
+        <li>
+			<p>net force</p>
+			<optioninput location="random" name="Foil9" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+        <li>
+			<p>momentum</p>
+			<optioninput location="random" name="Foil10" options="('increases','decreases','stays the same')" correct="increases"></optioninput>
+        </li>
+      </ul>
+
+    </optionresponse>
+  </problem>
+</html>

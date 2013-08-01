@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 11 -->
+
+<problem>
+
+	<p>A uniform bar of mass \(M\) and length \(D\) is rotating and translating along a horizontal and frictionless surface contained in the x-y plane. The 
+	bar is rotating counterclockwise as viewed from the screen with angular speed \(\omega\) and it is translating with speed \(v\) along the +x axis.  At the instant 
+	\(t_1\), the middle picture in the figure below, what is the velocity of a point at the lower end of the bar? You can type "omega" for \( \omega \)</p>
+	<img src="/static/problems/F12/procedures/images/proc11b.png" /><br/>
+<br/>
+	<formularesponse answer="v + (D/2)*omega" samples="v,D,omega@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+	</formularesponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('+x','-x','+y','-y','Out of screen','Into screen','N/A')" correct="+x" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

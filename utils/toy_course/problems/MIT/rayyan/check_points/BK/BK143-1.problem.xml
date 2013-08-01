@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A small ball of mass m is suspended on a light long string of length l. Initially, the string makes the angle &#x3B8; with the vertical and the ball is held at rest. The ball is then released. 
+</p>
+      <br/>
+
+    <img width="738" alt="BK143" src="/static/problems/MIT/rayyan/check_points/Pictures/BK143.png"/>
+
+        <p>
+      <br/>
+Part 1. 
+In order to find the tension of the string at the moment when the ball passes its lowest position, which concepts/ideas are most useful?
+</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                  Constant-acceleration kinematics and conservation of energy.
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                  Constant-acceleration kinematics and conservation of momentum.
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  Simple harmonic motion kinematics and conservation of energy.
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+Simple harmonic motion and conservation of momentum.
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+Conservation of energy only.
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+Conservation of momentum only.
+
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+
+Conservation of energy and conservation of momentum.
+
+            </choice>
+            <choice location="random" name="foil8" correct="true">
+
+Newton's laws and conservation of energy.
+
+            </choice>
+            <choice location="random" name="foil9" correct="false">
+
+Newton's laws and conservation of momentum.
+
+            </choice>
+            <choice location="random" name="foil10" correct="false">
+
+Newton's laws and constant-acceleration kinematics.
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+  </problem>
+</html>

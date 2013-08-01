@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/RELATE/Unit_1_SIM_Problems/InclinedPlane.png" alt="InclinedPlane.png"/>
+
+      <p><br/>The block of mass m<sub>2</sub> in the figure above is moving downward as the other block slides up the ramp.  Below is an attempt at a free body diagram for the block of mass m<sub>2</sub> treated as a point particle system.<br/></p>
+
+    <randomlabel width="177" bgimg="/static/problems/MIT/RELATE/Unit_1_SIM_Problems/InclinedPlaneFBD2.png" height="190">
+      <labelgroup type="text" name="m2" texsize="\normalsize">
+        <location y="18" x="88">
+</location>
+        <location y="186" x="88">
+</location>
+        <label>A</label>
+        <label>B</label>
+      </labelgroup>
+    </randomlabel>
+
+      <p><br/>  Associate the forces shown in this diagram with the appropriate statements below.<br/></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <li>
+
+            <p>This arrow represents a tension force.</p>
+
+          <optioninput location="random" name="tension2" options="('A','B','None of these')" correct="$m2{1}">
+</optioninput>
+        </li>
+        <li>
+
+            <p>
+This arrow represents a weight force.
+</p>
+
+          <optioninput location="random" name="weight2" options="('A','B','None of these')" correct="$m2{2}">
+</optioninput>
+        </li>
+        <li>
+
+            <p>
+This arrow represents a normal force.
+</p>
+
+          <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'normal='.$m2{1}) != -1">
+            <notsolved>
+</notsolved>
+
+              <p>&#xA0;&#xA0;<font color="red">The block must be in contact with a surface to experience a normal force.</font></p>
+
+          </block>
+          <optioninput location="random" name="normal" options="('A','B','None of these')" correct="None of these">
+</optioninput>
+        </li>
+        <conceptgroup concept="">
+          <choice location="random" name="ma" correct="None of these">
+
+This arrow represents <i>ma</i> for the block.
+
+              <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'ma='.$m2{2}) != -1">
+                <notsolved>
+</notsolved>
+
+                  &#xA0;&#xA0;<font color="red"><i>ma</i> is the net force (the sum of the forces resulting from interactions).  The net force should not be included in a free body diagram.  Only forces resulting from interactions should be included.  Thus, even though arrow $m2{2} is in the same direction as <i>ma</i>, it does not represent <i>ma</i>.  It represents the tension acting on the block.</font>
+
+              </block>
+              <br/>
+
+          </choice>
+          <choice location="random" name="motion" correct="None of these">
+
+This arrow represents the force produced by the block's motion.
+
+              <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'motion='.$m2{2}) != -1">
+                <notsolved>
+</notsolved>
+
+                    <font color="red">All forces must be the result of an interaction.  The block's motion is not an interaction.</font>
+
+              </block>
+              <br/>
+
+          </choice>
+        </conceptgroup>
+        <conceptgroup concept="">
+          <choice location="random" name="rope" correct="$m2{1}">
+
+This arrow represents the force on the block resulting from an interaction between the rope and the block.
+          </choice>
+          <choice location="random" name="earth" correct="$m2{2}">
+
+This arrow represents the force on the block resulting from an interaction between the earth and the block.
+          </choice>
+        </conceptgroup>
+        <li>
+
+            <p>
+This arrow represents the force on the block resulting from an interaction between the ramp and the block.
+</p>
+
+          <block condition="&amp;EXT('user.resource.resource.0.tries') &gt; 0 &amp;&amp; index(&amp;EXT('user.resource.resource.0.11.submission'),'ramp=None%20of%20these') == -1">
+            <notsolved>
+
+                <p>
+                  <font color="red">How is the ramp interacting with the block?</font>
+      </p>
+
+            </notsolved>
+          </block>
+          <optioninput location="random" name="ramp" options="('A','B','None of these')" correct="None of these">
+</optioninput>
+        </li>
+      </ul>
+
+    </optionresponse>
+              </problem>
+</html>

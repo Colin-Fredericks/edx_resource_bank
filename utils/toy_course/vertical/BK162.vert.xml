@@ -1,0 +1,6 @@
+<vertical>
+	<problem filename="F12/boris/BK162-1.problem" display_name="Average Velocity 6" attempts="5" weight="0.66"/>
+	<problem filename="F12/boris/BK162-2.problem" display_name="Average Velocity 6, Part 2" attempts="5" weight="0.67"/>
+	<problem filename="F12/boris/BK162-3.problem" display_name="Average Velocity 6, Part 3" attempts="2" weight="0.67"/>
+	<discussion for="Average Velocity 6" id="MReV_Summer2013_BK162" discussion_category="Describing Motion" />
+</vertical>

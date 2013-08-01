@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 14 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because at that moment, for the entire system:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The momentum is zero but the kinetic energy is not</choice>
+			<choice location="random" correct="false">The kinetic energy is zero but the momentum is not</choice>
+			<choice location="random" correct="false">The elastic energy and the momentum are both zero</choice>
+			<choice location="random" correct="false">The elastic energy and the momentum are both non-zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

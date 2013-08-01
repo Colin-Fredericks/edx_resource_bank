@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+Suppose there were a planet with exactly the same density as earth, but with a radius 
+half as great as the Earth's radius. The mass of a uniform sphere is given by 
+\(M=(4/3)\pi\)\(r^3\)\(\rho\), where \(\rho\) 
+is the density of the sphere. What would be the ratio of \(g_p/g_E\) for 
+the gravity on this planet compared to gravity on earth?  Note that the mass of the planet 
+would be 8 times smaller than earth.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              1/8          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              1/4          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              1/2          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              1          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              2          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

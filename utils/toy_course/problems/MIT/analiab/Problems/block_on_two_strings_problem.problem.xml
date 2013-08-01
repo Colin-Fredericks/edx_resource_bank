@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem><title> Video Tutorial: Block suspended by two strings </title>
+  <script type="loncapa/python">
+
+
+T1="2*m*g/(1+sqrt(3))"
+
+T2="2*m*g/(sqrt(2)*(1+sqrt(3)))"
+
+</script>
+
+<img src="/static/problems/MIT/analiab/Figures/A_block_hanging_by_two_strings.png" alt="A block hanging by two strings" texwrap="none" align="top"/><p>
+</p><br/>
+A block of mass <i>m</i> is hanging by two strings of negligible mass as shown in the figure. String 1 is at an angle of 60<sup>o</sup> with the 
+horizontal and string 2 at an angle of 45<sup>o</sup> with respect to the horizontal. Find the magnitude of the force of tension in strings 1 and 2.
+ Express your answers in terms of <i>m</i> and <i>g</i>. (For the values of the trigonometric functions input sqrt(3)/2 for cos(30) or sin(60), 1/2 for 
+ cos(60) or sin(30) and sqrt(2)/2 for cos(45)or sin(45) as needed).
+ <br/>
+
+T1=
+<formularesponse answer="$T1" samples="m,g@1,1:10,10#4"><textline size="25" math="1"/><responseparam default="0.01" type="tolerance"/></formularesponse>
+<br/>
+
+T2=
+<formularesponse answer="$T2" samples="m,g@1,1:10,10#4"><textline size="25" math="1"/><responseparam default="0.01" type="tolerance"/></formularesponse>
+
+<h3> Helpful resource: Video Tutorial Of Professor Walter Lewin Solving the problem </h3>
+
+<table border="1"><tr><td><b>A block supported by two strings</b></td></tr><tr><td><iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/NqixpEPRNvo?rel=0"/></td></tr><tr>
+<td>
+<p>This video is part of Prof. Lewin's <a href="http://ocw.mit.edu/courses/physics/8-01-physics-i-classical-mechanics-fall-1999/video-lectures/lecture-6/">Lecture #6</a>, MIT <a href="http://ocw.mit.edu">OCW</a> 8.01 Physics I: Classical Mechanics, Fall 1999, (Accessed 22 Feb, 2012). License: Creative Commons BY-NC-SA.</p>
+<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Block_Hanging_by_Two_Strings.mp4">Click here to download this video.</a></p>
+</td></tr></table>
+</problem>
+</html>

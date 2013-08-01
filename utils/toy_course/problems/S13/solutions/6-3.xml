@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Two Block Swing -->
+<problem>
+
+<h3>Solution</h3>
+
+<h3>First Part</h3>
+<p>The box of mass m swings down from points A to B in the figure. Consider the zero of the coordinate system at the bottom of the trajectory.</p>
+
+<p><b>Initial State:</b> The box is at rest at point A in the figure, at a height L from the ground, where L is the portion of the string between the pulley and the box of mass m.</p>
+<p><b>Final State:</b> The box is moving with speed v<sub>B</sub>.  Its height is zero.</p>
+<p><b>System:</b> the box and the Earth</p>
+<p><b>Internal Interactions:</b> The Earth and the box, the resulting force is the conservative gravitational force. Its work is represented as a potential energy.</p>
+<p><b>External Interactions:</b> box and the string, the resulting force is the force of tension that is perpendicular to the path, therefore its work is zero.</p>
+<p>Mechanical energy and work applied to the box-Earth system is constant (no work done by external and internal forces are conservative).</p>
+<p><i>E<sub>b</sub> = E<sub>A</sub> + W<sub>AB</sub><sup>ext</sup> + W<sub>AB</sub><sup>internal, NC</sup> \(\Rightarrow\) E<sub>B</sub> = E<sub>A</sub></i></p>
+<p><i> \({1\over 2}\)mv<sup>2</sup> = mgL</i></p>
+
+<h3>Second Part</h3>
+<p>The box of mass M is at rest and the box of mass m is right at point B. Consider two independent systems: the box of mass M and the box of mass m. Apply Newton’s 2<sup>nd</sup> law on both of them.</p>
+<p>The box of mass M interacts with the surface (normal force and static friction, N and f), with the string (tension T) and the Earth ( MG). The forces are shown in the free body diagram below. The box of mass m interacts with the Earth (mg) and the string (tension T). See the forces in the FBD:</p>
+
+<p>PUT IN CORRECT PICTURE</p>
+
+<p><b>System:</b> Box of mass M</p>
+<p>\(\sum \vec{F} = M\vec{a} \Rightarrow\) <i>x-axis: T - f = 0</i> and <i>y-axis: N - Mg = 0</i></p>
+<p><b>System:</b> Box of mass m</p>
+<p>\(\sum \vec{F} = m\vec{a} \Rightarrow\) <i>y-axis: T - mg = m\({v_{b}^{2}\over L}\)</i></p>
+<p><i>T = m(g + \({v_{b}^{2}\over L}\))</i></p>
+<p>From the previous equation, <i>T = f</i></p>
+<p>Combining these two equations gives:</p>
+<p><i>f = m(g + \({v_{b}^{2}\over L}\))</i></p>
+<p>For box of mass M not to slide, friction must be smaller that its maximum value:</p>
+<p><i> f &#60; \(\mu_{s}\)N</i></p>
+<p> So, <i> f &#60; \(\mu_{s}\)Mg</i></p>
+<p>Combining this and our previous equations gives:</p>
+<p><i>m(g + \({v_{B}^{2}\over L}\)) &#60; \(\mu_{s}\)Mg</i></p>
+<p>Substitute the result from the first equation: <i>v<sub>B</sub><sup>2</sup> = 2gL</i> into the previous equation to get:</p>
+<p><i>m(g + \({2gL\over L}\)) &#60; \(\mu_{s}\)Mg \(\Rightarrow\) 3mg &#60; \(\mu_{s}\)Mg \(\Rightarrow\) m &#60; \({\mu_{s} M\over 3}\)</i></p>
+
+</problem>
+</html>

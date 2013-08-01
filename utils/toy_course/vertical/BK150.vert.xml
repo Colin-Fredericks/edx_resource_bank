@@ -1,0 +1,10 @@
+<vertical>
+	<problem filename="F12/boris/BK150-1.problem" display_name="The Modified Atwood Machine" attempts="2"  weight="0.28"/>
+	<problem filename="F12/boris/BK150-2.problem" display_name="Modified Atwood, Part 2" attempts="2" weight="0.28"/>
+	<problem filename="F12/boris/BK150-3.problem" display_name="Modified Atwood, Part 3" attempts="2" weight="0.28"/>
+	<problem filename="F12/boris/BK150-4.problem" display_name="Modified Atwood, Part 4" attempts="2" weight="0.29"/>
+	<problem filename="F12/boris/BK150-5.problem" display_name="Modified Atwood, Part 5" attempts="2" weight="0.29"/>
+	<problem filename="F12/boris/BK150-6.problem" display_name="Modified Atwood, Part 6" attempts="2" weight="0.29"/>
+	<problem filename="F12/boris/BK150-7.problem" display_name="Modified Atwood, Part 7" attempts="2" weight="0.29"/>
+	<discussion for="The Modified Atwood Machine" id="MReV_Summer2013_BK150" discussion_category="Applying Newton's Laws" />
+</vertical>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 6</title>
+
+<p>What is the magnitude of the force of friction acting on the yo-yo?</p>
+    
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="22" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( F_f = F(I + mrR)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( F_f = F(I - mr^2)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(F_f = F(I + mr^2)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(F_f = F(I - mR^2)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                  \(F_f = F(I - mrR)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \(F_f = F(I + mR^2)/(I + mR^2)\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

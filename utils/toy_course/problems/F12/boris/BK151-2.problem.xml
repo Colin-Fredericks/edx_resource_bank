@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 151 -->
+<problem>
+
+	<p>If the tension of the string attached to block m<sub>1</sub> is T, what is the tension of the string attached to block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The answer depends on the ratio of the masses.</choice>
+			<choice location="random" correct="false">T</choice>
+			<choice location="random" correct="true">2T</choice>
+			<choice location="random" correct="false">T/2</choice>
+		</choicegroup>
+	</multiplechoiceresponse>	
+
+</problem>
+</html>

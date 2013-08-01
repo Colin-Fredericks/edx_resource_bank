@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+    <p>A small uniform solid disc is allowed to roll down from the top of an inclined plane. 
+    The disc takes time \(t_1\) to reach the bottom of the plane, rolling without slipping. 
+    Then the same disc is released from rest at the top of another inclined plane, 
+    identical to the first one in every respect except that it is frictionless. How 
+    long (\(t_2\)) would it take the disc to reach the bottom of the second inclined plane?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(t_2=t_1 \sqrt{2/3}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(t_2=2t_1 \sqrt{3/5}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(t_2=t_1 \sqrt{1/2}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(t_2=t_1 \sqrt{2}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(t_2=2t_1 \sqrt{1/3}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

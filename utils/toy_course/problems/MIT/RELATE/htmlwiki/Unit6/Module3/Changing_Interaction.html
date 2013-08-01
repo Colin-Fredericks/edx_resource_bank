@@ -1,0 +1,133 @@
+<html><html>
+<head>
+<title>Changing Interactions and Constraints</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+			Changing Interactions and Constraints</h2>
+<p>
+			Motions observed in the real world frequently involve changing interactions. The models introduced in this course, however, often assume constant interactions. Fortunately, complex motions can often be decomposed into a <em>sequence of motions with constant interactions</em>. For example, a spring gun has harmonic motion when the projectile is pushed by the spring and free fall projectile motion thereafter.</p>
+<h3>
+Learning Goals</h3>
+<p>
+			After working through this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Analyze complex motions by decomposing them into different temporal or spatially separated segments during which the motion is well-approximated by a standard model.</li>
+<li>
+				Assemble a continuous description of a motion by applying constraints ("boundary conditions") to the position and velocity at the transitions from one model to the next.</li>
+</ul>
+<h3>
+Decomposing Motion Using Multiple Sequential Models</h3>
+<p>
+			The general procedure for dealing with such a case is summarized below.</p>
+<table class="wikitable">
+<tbody>
+<tr>
+<th>
+<b>Steps for Decomposing a Problem Involving Changing Interactions</b></th>
+</tr>
+<tr>
+<td>
+<ol style="list-style-type:decimal">
+<li>
+								Split the motion into time intervals during which one or another model applies.</li>
+<li>
+								Determine a general description of the motion during each interval.</li>
+<li>
+								Reassemble the complete motion by matching the final conditions of each interval to the initial conditions of the next interval.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+			When decomposing motion into different segments, each of which involves a different model, it is necessary to use a general "initial value" formulation of the model. Errors often arise from using a form of the equations that assumes t<sub>i</sub> = 0, x<sub>i</sub> = 0 or v<sub>i</sub> = 0 for initial values.</p>
+<p>
+			The key step in the procedure given above is the notion of <i>applying the constraint</i> <em>that the final conditions of one interval will become the initial conditions of the next interval</em>. Often this simply requires that the two models agree on the position and velocity of the object at the boundary where the applicable model changes. We have already approached a problem in this way: the example of a student walking around a college campus used in the Describing Motion unit.</p>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #162 -->
+<problem>
+
+	<p>During the first t seconds of motion, the average velocity of the point is zero. Find t.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">0.67 seconds</choice>
+			<choice location="random" correct="true">1.5 seconds</choice>
+			<choice location="random" correct="false">2.35 seconds</choice>
+			<choice location="bottom" correct="false">9.4 seconds</choice>
+			<choice location="bottom" correct="false">4.7 seconds</choice>
+			<choice location="bottom" correct="false">There is no such value of t.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

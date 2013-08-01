@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+<p>Part 3. 
+If the speed of the ball at the lowest position is v, which equation is correct?
+</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                    \( mv^{2} = 2mgl\)
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                    \(mv^{2} = 2mgl \cos \theta\)
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                    \(mv^{2} = 2mgl \sin \theta\)
+
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+
+                    \(mv^{2} = 2mgl(1 - \cos \theta)\)
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+\(mv^{2} = 2mgl(1 - \sin \theta)\)
+
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+
+\(mv^{2} = 2mgl(1 + \sin \theta)\)
+
+            </choice>
+            <choice location="random" name="foil8" correct="false">
+
+\(mv^{2} = 2mgl(1 + \cos \theta)\)
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+
+    
+  </problem>
+</html>

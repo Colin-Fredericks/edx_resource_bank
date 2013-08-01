@@ -1,0 +1,196 @@
+<html>
+<head>
+<title>Constraints on a Single Point Particle</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Constraints on a Single Point Particle</h3>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Illustrative Example:  Block in an Elevator</b>
+ [<a href="javascript:toggleDisplay('ht0','hide','show')" id="ht0l">show</a>]</th></tr>
+<tr style="display:none" id="ht0">
+<td>
+<p>Imagine a box resting on the horizontal floor of an elevator at rest. The box interacts with the Earth and the elevator's floor. The resulting forces are the gravitational force pulling down and the normal force pushing up. The force diagram is simple and shown at the right of the figure below:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3boxElevatorIntro.png"/>
+</p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Question 1. Are these two forces Newton's third law pair forces?</b>
+	 [<a href="javascript:toggleDisplay('ht1','hide','answer')" id="ht1l">answer</a>]</th></tr>
+	<tr style="display:none" id="ht1">
+	<td><font size="3"><b>NO</b></font>
+	<ul style="list-style:disc outside none"><li>The forces arise from two different interactions: 
+	<ul style="list-style:disc outside none"><li>the box interacting with the Earth (gravitational force)
+	</li><li>the box interacting with the surface of the elevator's floor (normal contact force)
+	</li></ul>
+	</li><li>Both forces act on the same object.
+	</li></ul>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Question 2. Why are they equal in magnitude?</b>
+	 [<a href="javascript:toggleDisplay('ht2','hide','answer')" id="ht2l">answer</a>]</th></tr>
+	<tr style="display:none" id="ht2">
+	<td>The box's <b>acceleration is zero</b> therefore <b>Newton's Second Law</b> implies that the sum of the two forces is zero:
+	<p><font size="3"><b>&#931;</b></font><b>F =  N<sub>bf</sub> - F<sub>bE</sub> = 0</b> then <b>N<sub>bf</sub> = F<sub>bE</sub></b>
+	</p>
+	</td></tr></table>
+
+</td></tr></table>
+
+<p>The situation of the example above has all the hallmarks of <b>constrained motion</b>: The requirement that the object remain on the floor requires that its y-component of acceleration equal that of the floor (in this case is zero).  This in turn requires the normal force to have a particular value.  In this situation, the normal force is the <b>constraint force</b>.</p>
+<p><b>Constraint Forces</b> adjust themselves according to Newton's Second Law so that the acceleration of an object is just the right value for the object to follow the motion required by the particular constraint.</p>
+
+<p><b>Typical Constraint Forces</b></p>
+
+<ul style="list-style:disc outside none">
+     <li> Normal Forces</li>
+     <li> Tension in an ideal rope</li>
+     <li> Static friction (as long as slipping does not begin).</li>
+     <li>  An external force that causes a particular motion (e.g. car has acceleration A due to attached rocket)</li>
+</ul>
+
+<table class="wikitable collapsible collapsed">
+
+<tr>
+	<th colspan="2">
+	<b>Concept Questions</b>
+ 	</th>
+</tr>
+
+<tr>
+	<td colspan="2">
+	<p>Consider the previous example of the box resting on the elevator's floor. The box has a mass 'm'. What is the magnitude of the normal force, <b>N<sub>bf</sub></b>, if the elevator is:</p>
+	</td>
+</tr>
+
+<tr>
+	<th>
+		<b>1. accelerating upwards with an acceleration of magnitude <i>a</i>?</b> [<a href="javascript:toggleDisplay('ht3','hide','answer')" id="ht3l">answer</a>]
+	 </th>
+	<th>
+	 	<b>2. accelerating downwards with an acceleration of magnitude <i>a</i>?</b> [<a href="javascript:toggleDisplay('ht4','hide','answer')" id="ht4l">answer</a>]
+	 </th>
+</tr>
+
+<tr>
+
+	<td>
+	<div style="display:none" id="ht3">The box is constrained to have the same acceleration as the floor, which is the same acceleration as the elevator. If we consider a coordinate system with the y-axis vertical and positive upwards, then Newton's second law along the vertical direction becomes:
+	<p><font><b>&#931;</b></font><b>F<sub>y</sub> = N<sub>bf</sub> &ndash; F<sub>bE</sub> = ma<sub>y</sub></b></p>
+	<p>where <b>a<sub>y</sub> = a</b> and <b>F<sub>bE</sub> = mg</b>. Therefore we have that the magnitude of the normal force is: 
+	</p><p><br/>
+	<font size="2"><b>N<sub>bf</sub> = m(g + a)</b></font>
+	</p><p><br/>
+	</p><p>The normal force adjusts its magnitude to provide the proper upward acceleration needed for the box to move with the same acceleration as the elevator. Its magnitude is larger than the box's weight. Also, the larger the acceleration, the larger the magnitude of the normal force. 
+	</p></div>
+	</td>
+
+	<td>
+	<div style="display:none" id="ht4">The box is constrained to have the same vertical acceleration as the elevator.  If we consider a coordinate system with the y-axis vertical and positive upwards, Newton's second law along the vertical direction becomes:
+	<p><br/>
+	<br/>
+	<font><b>&#931;</b></font><b>F<sub>y</sub> = N<sub>bf</sub> &ndash; F<sub>bE</sub> = ma<sub>y</sub></b>
+	</p><p><br/>
+	where <b>a<sub>y</sub> = &ndash; a</b> and <b>F<sub>bE</sub> = mg</b>. Therefore we have that the magnitude of the normal force is: 
+	</p><p><br/>
+	<font><b>N<sub>bf</sub>= m(g &ndash; a)</b></font>
+	</p><p><br/>
+	The normal force adjusts its magnitude to provide the proper acceleration to the box constraining the box to move together with the elevator. In this case, its magnitude is smaller than the weight. Also, the larger the magnitude of the acceleration, the smaller the magnitude of the normal force. 
+	Note that when the elevator is in free fall, a = g, the normal force is zero. The box is no longer in contact with the floor. Both the elevator and the box are falling with the same downward acceleration of magnitude g.
+	</p></div>
+	</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+

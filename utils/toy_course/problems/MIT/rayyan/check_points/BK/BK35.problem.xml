@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Special Projectile</title>
+
+        <p>
+A projectile is launched from the ground. The horizontal range of the flight equals the maximum height. What is the launch angle \(\theta\)?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                The problem is impossible to solve; the missing information is the maximum height only. 
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                The problem is impossible to solve; the missing information is the value of g only. 
+
+          </choice>
+          <choice name="foil3" correct="false">
+
+                The problem is impossible to solve; the missing information is the maximum velocity only. 
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                The problem is impossible to solve; the missing information is the maximum height and the initial velocity. 
+
+          </choice>
+          <choice name="foil5" correct="false">
+
+                The problem is impossible to solve; the missing information is the maximum height and the value of g. 
+
+          </choice>
+          <choice name="foil6" correct="false">
+
+                        The problem is impossible to solve; the missing information is the initial velocity and the value of g.
+          </choice>
+          <choice name="foil7" correct="false">
+
+                \(\theta=\) 22.5 degrees
+
+          </choice>
+          <choice name="foil8" correct="false">
+
+                \(\theta=\) 27 degrees
+
+          </choice>
+          <choice name="foil9" correct="false">
+
+                \(\theta=\) 45 degrees
+
+          </choice>
+          <choice name="foil10" correct="false">
+
+                \(\theta=\) 63 degrees
+
+          </choice>
+          <choice name="foil11" correct="true">
+
+                \(\theta=\) 76 degrees
+
+          </choice>
+          <choice name="foil12" correct="false">
+
+                \(\theta=\) 90 degrees
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

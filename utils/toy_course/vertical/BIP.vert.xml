@@ -1,0 +1,12 @@
+<vertical>
+	<problem filename="MIT/analiab/Problems/BIP-1.problem" display_name="Video Tutorial: a Block on an inclined plane" attempts="10"/>
+	<problem filename="MIT/analiab/Problems/BIP-2.problem" display_name="Video Tutorial: a Block on an inclined plane, Part 2" attempts="10"/>
+	<problem filename="MIT/analiab/Problems/BIP-3.problem" display_name="Video Tutorial: a Block on an inclined plane, Part 3" attempts="2"/>
+	<problem filename="MIT/analiab/Problems/BIP-4.problem" display_name="Video Tutorial: a Block on an inclined plane, Part 4" attempts="10"/>
+	<video youtube="1.0:rF-FNJnT7G4" display_name="Measuring the Coefficient of Static Friction"/>
+	<html>
+		<p>Lewin, Walter. 8.01 Physics I: Classical Mechanics, Fall 1999. (Massachusetts Institute of Technology: MIT OpenCourseWare), http://ocw.mit.edu (Accessed 22 Feb, 2012). License: Creative Commons BY-NC-SA</p>
+    	<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Lewin_Measure_Static_Friction.mp4">Click here to download this video.</a></p>
+	</html>
+	<discussion for="Video Tutorial: a Block on an inclined plane" id="MReV_Summer2013_a_block_on_an_incline_plane" discussion_category="Interactions and Forces" />
+</vertical>

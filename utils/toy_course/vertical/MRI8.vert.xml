@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI8-1.problem" display_name="Block and Spring with Friction" attempts="1" weight="1"/>
+	<problem filename="F12/MRI/MRI8-2.problem" display_name="Block and Spring with Friction, Part 2" attempts="2" weight="1"/>
+	<discussion for="Block and Spring with Friction" id="MReV_Summer2013_MRI8" discussion_category="Mechanical Energy and Work" />
+</vertical>

@@ -1,0 +1,10 @@
+<chapter display_name="Quiz 4 and 5">
+	<sequential display_name="Quiz 4 and 5" url_name="Quiz_4_5">
+        <problem display_name="Quiz 4 and 5, Problem # 1" filename="problems/S13/quiz/5-1.problem" attempts="3"/>
+        <problem display_name="Quiz 4 and 5, Problem 2" filename="problems/S13/quiz/5-2.problem" attempts="3"/>
+        <problem display_name="Quiz 4 and 5, Problem 3" filename="problems/S13/quiz/5-3.problem" attempts="3"/>
+        <problem display_name="Quiz 4 and 5, Problem 4" filename="problems/S13/quiz/5-4.problem" attempts="3"/>
+        <problem display_name="Quiz 4 and 5, Problem 5" filename="problems/S13/quiz/5-5.problem" attempts="3"/>
+        <problem display_name="Quiz 4 and 5, Problem 6" filename="MIT/RELATE/Mechanics_Online/Quiz_Problems/switchback_1Dmotion_ds.problem" attempts="3"/>
+	</sequential>
+</chapter>

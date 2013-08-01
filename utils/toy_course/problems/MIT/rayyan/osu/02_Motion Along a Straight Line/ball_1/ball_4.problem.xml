@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/ball_1.png" alt="ball_1" height="300"/>
+
+      <p><br/>
+You throw a ball vertically upward. The ball moves up, reaches its highest point, and then falls down. Which of the following sets of graphs best represents the ball's acceleration (a) and velocity (v) vs time during the process?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+
+              B          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              D          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

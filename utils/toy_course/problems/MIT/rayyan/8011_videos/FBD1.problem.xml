@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem show_answer="never" attempts="0">
+    <title>Static Block</title>
+
+	<table border="1"><tr><td><b>Static Block FBD</b></td></tr><tr><td><iframe height="315" width="560" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/xoDlp-x_SLU?rel=0"/></td></tr></table><br/>
+
+	<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/FBD_blocks.mp4">Click here to download this video.</a></p>
+
+	<p>Did you find this video useful?</p>
+
+      <multiplechoiceresponse type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+      <choicegroup type="MultipleChoice">
+        <choice location="1" name="foil1" correct="true">
+			<text>Too complex</text>
+        </choice>
+        <choice location="2" name="foil2" correct="true">
+			<text>Useful</text>
+        </choice>
+        <choice location="3" name="foil3" correct="true">
+			<text>Too simplistic</text>
+        </choice>
+        <choice location="4" name="foil4" correct="true">
+			<text> Confusing</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

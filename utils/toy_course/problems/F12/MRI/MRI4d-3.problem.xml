@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4d -->
+
+<problem>
+
+	<p>Now, suppose that suddenly the safe shown in the picture above begins to accelerate to the right, and the person follows along maintaining their force on the safe.  Which of the following pairs of forces will now be equal in magnitude?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Friction on the safe and force from person on safe.</choice>
+			<choice location="random" correct="true">Force from person on safe and force from safe on person.</choice>
+			<choice location="random" correct="false">Friction on the person and force from safe on person.</choice>
+			<choice location="random" correct="false">Friction on the safe and friction on the person.</choice>
+			<choice location="random" correct="false">None of the pairs listed will be equal.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

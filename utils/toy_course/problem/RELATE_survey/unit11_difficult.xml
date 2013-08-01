@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Which of the following models did you find to be the most difficult to use? If you found several to be equally difficult, check all of them.</p>
+   <choiceresponse>
+    <checkboxgroup direction="vertical" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="Dynamics"><text>The Dynamics and Net Force model.</text></choice>
+       <choice correct="true" name="Energy"><text>The Momentum and Impulse model.</text></choice>
+       <choice correct="true" name="Momentum"><text>The Mechanical Energy and Work model.</text></choice>
+       <choice correct="true" name="Torque"><text>The Rotational Dynamics and Net Torque model.</text></choice>
+       <choice correct="true" name="AngMom"><text>The Angular Momentum and Angular Impulse model.</text></choice>
+    </checkboxgroup>
+   </choiceresponse>
+  <p>Can you explain <i>why</i> you found this model to be difficult?</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Example: Give it a Kick</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+<h3>Illustrative Example: Give it a Kick</h3>
+<p>Some modern roller coasters are "launched" rather than slowly pulled to the top of a hill. One recent design is a coaster on a U-shaped track like that shown in the figure. Each time the coaster passes through the acceleration zone, it receives a kick from an electric motor. Suppose that for the track shown, the height H is 10 m. The acceleration zone has a width d = 5 m. If a coaster of mass m = 11,000 kg experiences an accelerating horizontal force of magnitude 0.5 mg while it is in the acceleration zone, how many passes through the zone must the coaster make before it will reach the top of the track? (After this, the function of the motor will be reversed to decelerate the coaster.)</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module5/files/LIMcoaster2.png"/></p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Solution</b>
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td> <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay9&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show system]&quot; )" id="toggledisplay9l">[show system]</a><div style="display:none;" id="toggledisplay9">Coaster as point particle, plus the earth as an object of infinite mass.</div><br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay10&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show interactions]&quot; )" id="toggledisplay10l">[show interactions]</a><div style="display:none;" id="toggledisplay10">
+<ol style="list-style-type:decimal">
+  <li>The internal interaction between the coaster and earth create a conservative interaction of gravity, which will be treated as a potential energy in the system.</li>
+  <li>The external interaction between the coaster and the track. Assuming that there is no friction, this interaction results in a normal force that does not do work.</li>
+  <li>The system is also subject to a non-conservative interaction from the the electric motor.</li>
+</ol>
+</div><br/>
+<b>Model:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay11&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show Model]&quot; )" id="toggledisplay11l">[show Model]</a><div style="display:none;" id="toggledisplay11">Mechanical Energy, External Work, and Internal Non-Conservative Work..</div><br/>
+<b>Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay12&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay12l">[show approach]</a><div style="display:none;" id="toggledisplay12"><br/>
+
+	<table>
+	<tr>
+	<td>By treating the Earth as an infinitely massive object we are considering that there is no change of kinetic energy of the Earth during the motion of the block.
+	</td></tr></table>
+	
+	<br/>
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Step 1: Draw an Initial State-Final State Diagram
+	 [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+	<tr style="display:none" id="ht12">
+	<td> The initial and the final state are summarized in the energy diagrams.
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module5/files/CoasterSol2.png"/></p>
+	</td></tr></table>
+	
+	<br/>
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Step 2: Represent the Model Mathematically
+	 [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+	<tr style="display:none" id="ht13">
+	<td> Each time the train passes through the acceleration zone it gains mechanical energy.  The work done by the force of the motor on the train during one pass is:
+		<p>\(W_{motor}^{1 pass} = F_{motor}d = 0.5 mg d\)</p>
+		<p><br/>After n passes the work done by the motor on the system is:</p>
+		<p>\(W_{motor} = n F_{motor} d = n 0.5 mgd\)</p>
+		<p>\(E_f=E_i+W_{motor}\)</p>
+		<p><br/>\(mgh = 0 + n 0.5 mgd\)</p>
+		<br/>
+		
+		<table><tr>All the work done on the system by the motor is being transformed into gravitational potential energy
+		<tr/></table>
+		
+		<p>\(n = \frac{2H}{d} = 4\)</p>
+		<p>which implies the coaster must make 4 complete passes through the acceleration zone to reach the top of the track.</p>
+		
+		<table>
+		<tr>
+		<td>Technically this implies our initial-state final-state diagram was wrong, since we drew the coaster on the wrong side of the track. Remember that diagrams in physics problems are often useful, even if some details of the problem are not completely understood. They are meant to provide a summary of the physics concepts involved, not necessarily a mathematically precise statement of the problem.
+		</td></tr></table>
+	</td></tr></table>
+</div>
+</td></tr></table>
+</body>
+</html>
+

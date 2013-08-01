@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/PE_spring.png" alt="PE_spring" height="200"/>
+
+      <p>The graph shows plots of the magnitude of the spring force versus displacement for three springs. Rank, from largest to smallest, the spring constants k<sub>1</sub>, k<sub>2</sub>, and k<sub>3</sub>.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<text>k<sub>1</sub> &gt; k<sub>2</sub> &gt; k<sub>3</sub></text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>k<sub>3</sub> &gt; k<sub>2</sub> &gt; k<sub>1</sub></text>
+        </choice>
+        <choice location="random" name="foil13" correct="false">
+			<text>k<sub>1</sub> = k<sub>3</sub> &gt; k<sub>2</sub></text>
+        </choice>
+        <choice location="random" name="foil1\4" correct="false">
+			<text>k<sub>2</sub> &gt; k<sub>1</sub> = k<sub>3</sub></text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>k<sub>1</sub> &gt; k<sub>3</sub> &gt; k<sub>2</sub></text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

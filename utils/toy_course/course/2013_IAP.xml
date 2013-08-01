@@ -1,0 +1,50 @@
+<course>
+	<chapter url_name="Introduction"/>
+	<chapter url_name="MRI"/>
+	<chapter url_name="Unit_1"/>
+	<chapter url_name="HWK_1"/>
+	<chapter url_name="Unit_2"/>
+	<chapter url_name="HWK_2"/>
+	<chapter url_name="Unit_3"/>
+	<chapter url_name="HWK_3"/>
+	<chapter url_name="Unit_4"/>
+	<chapter url_name="HWK_4"/>
+	<chapter url_name="Unit_5"/>
+	<chapter url_name="HWK_5"/>
+	<chapter url_name="Unit_6"/>
+	<chapter url_name="HWK_6"/>
+	<chapter url_name="Unit_7"/>
+	<chapter url_name="HWK_7"/>
+	<chapter url_name="Unit_8"/>
+	<chapter url_name="HWK_8"/>
+	<chapter url_name="Unit_9"/>
+	<chapter url_name="HWK_9"/>
+	<chapter url_name="Unit_10"/>
+	<chapter url_name="HWK_10"/>
+	<chapter url_name="Unit_11"/>
+	<chapter url_name="HWK_11"/>
+	<chapter url_name="Unit_12"/>
+	<chapter url_name="HWK_12"/>
+	<chapter url_name="Unit_13"/>
+	<chapter url_name="HWK_13"/>
+	<chapter url_name="Unit_14"/>
+	<chapter url_name="HWK_14"/>
+	<chapter url_name="Rev_Examples"/>
+	<chapter url_name="Rev_Problems"/>
+	<chapter url_name="Testing"/>
+	<chapter url_name="Solutions"/>
+
+<!-- PSets and Reading Questions from ESG course -->
+
+	<chapter url_name="Pset_1"/>
+	<chapter url_name="Pset_2"/>
+	<chapter url_name="Pset_3"/>
+	<chapter url_name="Pset_4"/>
+	<chapter url_name="Pset_5"/>
+	<chapter url_name="Pset_9"/>
+	<chapter url_name="Pset_10"/>
+	<chapter url_name="Pset_11"/>
+
+<!--	<chapter url_name="RQ"/> -->
+
+</course>

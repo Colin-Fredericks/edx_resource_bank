@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Example: Adding Four Forces</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+			Illustrative Example: Adding Four Forces in 2D</h3>
+<p>
+			All of the essential understanding of vector addition and subtraction can be developed using 2D vectors in a plane. Wherever possible, choosing a coordinate system that reduces the vectors to a single plane will simplify your problem solving because you will not need the third set of component equations.</p>
+<p>
+			This example shows how to calculate the net force when the following four forces (2D) act on a single body.&#160;The magnitude and direction of each of the forces are shown in the figure below:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec1.png"/></p>
+<p>
+			The formal expression for the net force should be written down to initiate the analysis that will follow. Include the vector arrows over each force label to distinguish the whole vector \(\vec{F}_1\) from the strength (or magnitude) of that force, <i>F</i><sub>1</sub> written using exactly the same labels without the vector arrow.</p>
+<p>
+\(\vec{F}_{net}= \vec{F}_{1} + \vec{F}_{2} + \vec{F}_{3} + \vec{F}_{4} \)</p>
+<p>
+			The net force is determined by following the steps mentioned before:</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+						1. Choose Coordinates [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+						The first step to summing vectors is to set up your coordinate axes. Unless an origin is specified by the problem, you are free to put your axes anywhere that is not accelerating. The angle of rotation is in general also a matter of preference. However, a clever choice of coordinate system can be <i>extremely useful when problem solving</i>. You might assign one component axis parallel to one of the vectors, such that this vector appears in only one component equation.  For this example, the usual Cartesian coordinate system with the x-axis horizontal and positive to the right is a sound choice.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec2.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+						2. Break Into Components [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+<p>
+							Next, we construct right triangles for each of the vectors such that the <i>legs</i> of the triangles are parallel to the coordinate axes. <i>Be sure to put arrows on the legs such that the two-stage "path" formed by the legs is in the same direction as the one-stage "path" of the hypotenuse.</i> Note that the vectors labeled with 1 and 2 are exactly parallel to one of the axes, therefore we do not need to construct any triangle for them in this step. (This shows a nice choice of coordinate axes, which simplifies the overall mathematical description of this process of addition!)</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec3b.png"/></p>
+<p>
+<br/>
+							For the vectors labeled with 3 and 4 we will use trigonometry to find the sizes of the legs of each of the triangles as shown in the figure below &#8212; where the vectors have been broken into components along the coordinate axes.</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										One-stage or Two-stage "path" to construction of vectors from perpendicular components. [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+										Any vector can be drawn or written as the sum of 2 or 3 mutually perpendicular "components". Using the graphical procedure for adding vectors,
+										<ol style="list-style-type:decimal" >
+<li>
+												First you draw one component (one-stage path starts at the tail and ends at the tip of this one vector).</li>
+<li>
+												Then you draw the second component of the vector so it points away from the tip of the first at a direction perpendicular to the first. That is the "second-stage path": starting from the tail of the 2nd vector and moving to the tip of this vector.</li>
+<li>
+												Then the actual whole vector is the hypotenuse of the right triangle made by these two legs (or the "one-stage path" along the hypotenuse), but the direction of that hypotenuse vector can go one of two ways.</li>
+<li>
+												The correct direction is to lay the tail of the second component on the tip of the first component, aim the second one in the correct direction, and then the actual vector points from tail of first to tip of second.</li>
+</ul>
+<p>
+											This method always creates right triangles, so the size (magnitude) of the resultant vector can now be determined by the Pythagorean theorem, and the angles in the triangle can be determined using trigonometry.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec4.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+						3. Sum the Components [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht7">
+<td>
+						We now add the x components and y components (and z components if in three dimensions) separately, being careful to attach a negative sign to components that <b>point</b> in the negative direction of either axis. Any component or leg of a vector that points in the negative direction along your chosen coordinate system is assigned a negative direction as well as a negative value in that particular dimension (x or y or z dimension). In this way, addition of two legs of vectors that oppose each other, can actually result in the sum of zero. This is a conceptual stumble until you think about it. Two vectors, each of non-zero length, CAN ADD UP TO zero! But only if they are exactly the same length and point in exactly the opposite directions.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec5.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+						4. Assemble the Resultant Vector [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht8">
+<td>
+						We construct a new triangle using these sums as the legs.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec6b.png"/></p>
+<p>
+							The size of the resultant vector can now be determined by the Pythagorean theorem, and the angles in the triangle can be determined using the ratios defined by trigonometry &#8212; we have put the parts back together.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module4/files/Unit1Mod3Vec7.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+			&#160;</p>
+</body>
+</html>
+

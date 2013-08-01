@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/MRI/MRI2-1.problem" display_name="The Crawling Astronaut" attempts="1" weight="0.25"/>
+	<problem filename="F12/MRI/MRI2-2.problem" display_name="Crawling Astronaut, Part 2" attempts="2" weight="0.25"/>
+	<problem filename="F12/MRI/MRI2-3.problem" display_name="Crawling Astronaut, Part 3" attempts="1" weight="0.25"/>
+	<problem filename="F12/MRI/MRI2-4.problem" display_name="Crawling Astronaut, Part 4" attempts="2" weight="0.25"/>
+	<discussion for="The Crawling Astronaut" id="MReV_Summer2013_MRI2" discussion_category="Mechanical Energy and Work" />
+</vertical>

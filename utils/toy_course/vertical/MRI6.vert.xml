@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI6-1.problem" display_name="Block Falls on Spring" attempts="2" weight="0.5"/>
+	<problem filename="F12/MRI/MRI6-2.problem" display_name="Block Falls on Spring, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Block Falls on Spring" id="MReV_Summer2013_MRI6" discussion_category="Mechanical Energy and Work" />
+</vertical>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <p>In the diagram, \(m\), \(F_1\), \(F_2\), angles \(\alpha\) and \(\beta\) are given. The surface is horizontal and frictionless; the strings are ideal. \(F_1\) is small enough that all boxes remain on the surface. Take the positive x-direction to the right and the positive y-direction to be up.  </p>
+    <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/30.png" align="top" texwrap="none" width="500" alt="p1a"/><br/><u><b>Part1:</b></u>What is the magnitude of the normal force acting on block <i>m</i>?</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  <text>\(mg\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  <text>\(mg - F_1\cos\alpha\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\(mg + F_1\cos\alpha\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                  <text>\(mg - F_1\sin\alpha\)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  <text>\(mg + F_1\sin\alpha\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part2:</b></u>What is the magnitude of the normal force acting on block 2m?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  <text>\(2mg\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  <text>\(2mg - F_2cos\beta\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\(2mg + F_2cos\beta\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>\(2mg - F_2sin\beta\)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                  <text>\(2mg + F_2sin\beta\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part3:</b></u>What is the magnitude of the normal force acting on block 3m?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                <text>\(3mg\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  <text>\(mg - F_1sin\alpha\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\(mg + F_2sin\beta\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>\(mg - F_1sin\alpha + F_2sin\beta\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part4:</b></u>For which block(s) is it correct to say that the normal force and the force of gravity acting on the block form a Newton's 3rd law pair?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                <text>For all three blocks</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                <text>For block 3m only</text>
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+                <text>For none of the blocks</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+      <p><u><b>Part5:</b></u>What is the acceleration for block m?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  <text>\(\frac{F_1cos\alpha}{m}\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  <text>\(\frac{F_2cos\beta}{m}\)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\(\frac{F_2sin\beta-F_1sin\alpha}{m}\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>\(\frac{F_2sin\beta-F_1sin\alpha}{6m}\)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  <text>\(\frac{F_2cos\beta-F_1cos\alpha}{m}\)</text>
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                  <text>\(\frac{F_2cos\beta-F_1cos\alpha}{6m}\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

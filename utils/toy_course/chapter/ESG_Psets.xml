@@ -1,0 +1,112 @@
+<chapter display_name="ESG PSets">
+	<sequential display_name="Problems for Pset 1" url_name="Problems_for_Pset_1">
+		<problem display_name="Problem 1. Blocks and Pulleys" filename="MIT/rayyan/check_points/BK/BK28.problem" attempts="4"/>
+		<problem display_name="Problem 2: Pulling a block" filename="MIT/rayyan/Physics801/quizzes/pulling_block1.problem" attempts="2"/>
+		<problem display_name="Problem 3: Pushing a block" filename="MIT/rayyan/Physics801/quizzes/pushing_block.problem" attempts="6"/>
+		<problem display_name="Problem 4: Hammock" filename="MIT/rayyan/Hammock.problem" attempts="10"/>
+		<problem display_name="Problem 5:  A box sliding down a wedge" filename="MIT/analiab/NewProblems/BlockWedgeWall.problem" attempts="1"/>
+	</sequential>
+	<sequential display_name="Problems for Pset 2" url_name="Problems_for_Pset_2">
+		<problem display_name="Problem 1: A moving wedge" filename="MIT/rayyan/problemset/hw1/U1_Problem1.problem" attempts="1"/>
+		<problem display_name="Problem 2: Blocks with friction" filename="MIT/rayyan/problemset/hw1/U1_Problem2.problem" attempts="10"/>
+		<problem display_name="Problem 3: 3 Blocks and a Pulley" filename="MIT/analiab/Problems/3_blocks_and_1_pulley.problem" attempts="10"/>
+		<problem display_name="Problem 4: Pulley Platform" filename="MIT/rayyan/Physics801/Forces/Pulley Platform.problem" attempts="10"/>
+		<problem display_name="Problem 5: Two connected blocks, an inclined plane with friction" filename="MIT/boriskor/Newton_s laws/Two blocks, an inclined plane, friction.problem" attempts="10"/>
+		<problem display_name="Problem 6: Two stacked prisms sliding along a horizontal surface" filename="MIT/boriskor/Newton_s laws/Two stacked prisms sliding horizontally.problem" attempts="3"/>
+		<problem display_name="Problem 7: Two blocks and two pulleys" filename="MIT/analiab/NewProblems/TwoPulleysDifferentAccel.problem" attempts="5"/>
+	</sequential>
+	<sequential display_name="Problems for Pset 3" url_name="Problems_for_Pset_3">
+		<problem display_name="Problem 1: One Person Catch" filename="MIT/rayyan/Physics801/Symbolic/One Person Catch.problem" attempts="10"/>
+		<problem display_name="Problem 2: A particle moving between two plates" filename="MIT/analiab/NewProblems/TimeVaryingForceAndKine.problem" attempts="10"/>
+		<problem display_name="Problem 3: A man running to catch a bus" filename="MIT/analiab/NewProblems/ManRunningToCatchABus.problem" attempts="10"/>
+		<problem display_name="Problem 4: Emergency Landing" filename="MIT/analiab/NewProblems/EmergencyLanding.problem" attempts="10"/>
+		<problem display_name="Problem 5: Projectile Angle" filename="MIT/rayyan/Physics801/Symbolic/Projectile Angle.problem" attempts="10"/>
+		<problem display_name="Problem 6: A man on a flatcar" filename="MIT/analiab/NewProblems/AManOnACart.problem" attempts="3"/>
+	</sequential>
+	<sequential display_name="Problems for Pset 4" url_name="Problems_for_Pset_4">
+		<problem display_name="Problem 1: U-control airplane" filename="MIT/rayyan/problemset/hw2/U2_problem2.problem" attempts="10"/>
+		<problem display_name="Problem 2: Turning two beads" filename="MIT/analiab/NewProblems/TurningTwoBeads.problem" attempts="10"/>
+		<problem display_name="Problem 3: An object in Circular Motion" filename="MIT/analiab/NewProblems/AnObjectInCircularMotion.problem" attempts="10"/>
+		<problem display_name="Problem 4: Car speeding up from rest around a circular track" filename="MIT/boriskor/Multiconcept Problems/Car speeding up on a circular track.problem" attempts="10"/>
+		<problem display_name="Problem 5: Conical Penulum" filename="MIT/analiab/NewProblems/ConicalPendulum.problem" attempts="10"/>
+		<problem display_name="Problem 6: A rotating Cone" filename="MIT/analiab/NewProblems/ARotatingCone.problem" attempts="2"/>
+		<problem display_name="Problem 7: Cylinders on a turntable" filename="MIT/analiab/NewProblems/CylindersOnATurnTable.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="PSet 5: Non-Online submission" url_name="PSet_5:_Non-Online_submission">
+	</sequential>
+	<sequential display_name="ESG PSet 5" url_name="ESG_PSet_5">
+		<problem display_name="PSet 5-1 " filename="S13/ESG/pset5-1.problem"/>
+		<problem display_name="PSet 5-2" filename="S13/ESG/pset5-2.problem" />
+		<problem display_name="PSet 5-3" filename="S13/ESG/pset5-3.problem" />
+		<problem display_name="PSet 5-4" filename="S13/ESG/pset5-4.problem" />
+		<problem display_name="PSet 5-5" filename="S13/ESG/pset5-5.problem" />
+		<problem display_name="PSet 5-6" filename="S13/ESG/pset5-6.problem" />
+		<problem display_name="PSet 5-7" filename="S13/ESG/pset5-7.problem" />
+	</sequential>
+	<sequential display_name="ESG PSet 6" url_name="ESG_PSet_6">
+		<problem display_name="PSet 6-1" filename="S13/ESG/pset6-1.problem" />
+		<problem display_name="PSet 6-2" filename="S13/ESG/pset6-2.problem" />
+<!--
+        This is a Boris'problem
+		<problem display_name="PSet 6-3" filename="S13/ESG/pset6-3.problem" attempts="10"/>
+-->
+		<problem display_name="Pset 6-3" filename="MIT/boriskor/Multiconcept Problems/A two-block swing.problem"/>
+		<problem display_name="PSet 6-4" filename="S13/ESG/pset6-4.problem" />
+<!--
+mass flow transport
+		<problem display_name="PSet 6-5" filename="S13/ESG/pset6-5.problem" attempts="10"/>
+		<problem display_name="PSet 6-6" filename="S13/ESG/pset6-6.problem" attempts="10"/>
+-->
+
+	</sequential>
+	<sequential display_name="ESG PSet 7" url_name="ESG_PSet_7">
+		<problem display_name="PSet 7-1" filename="S13/ESG/pset7-1.problem" />
+		<problem display_name="PSet 7-2" filename="S13/ESG/pset7-2.problem" />
+		<problem display_name="PSet 7-3, author: Alan Guth" filename="S13/ESG/pset7-3.problem" />
+		<problem display_name="PSet 7-4" filename="S13/ESG/pset7-4.problem" />
+		<problem display_name="PSet 7-5" filename="S13/ESG/pset7-5.problem" />
+		<problem display_name="PSet 7-6" filename="S13/ESG/pset7-6.problem" />
+		<problem display_name="PSet 7-7" filename="S13/ESG/pset7-7.problem" />
+	</sequential>
+	<sequential display_name="ESG PSet 8" url_name="ESG_PSet_8">
+	<!--
+	The following are checkpoints and I put them there to be sure the students will do them. 
+	you should not include them in a pset
+	analia
+
+		<problem display_name="PSet 8-1" filename="S13/ESG/pset8-1.problem" attempts="10"/>
+		<problem display_name="PSet 8-2" filename="S13/ESG/pset8-2.problem" attempts="10"/>
+		<problem display_name="PSet 8-3" filename="S13/ESG/pset8-3.problem" attempts="10"/>
+		<problem display_name="PSet 8-4" filename="S13/ESG/pset8-4.problem" attempts="10"/>
+	-->
+		<problem display_name="PSet 8-5" filename="S13/ESG/pset8-5.problem" />
+		<problem display_name="PSet 8-6" filename="S13/ESG/pset8-6.problem" />
+	</sequential>
+	<sequential display_name="Problems for Pset 9" url_name="Problems_for_Pset_9">
+		<problem display_name="Problem 1: Unifrom disc descends two different inclines" filename="MIT/boriskor/Multiconcept Problems/Disc rolling down two inclined planes.problem" attempts="2"/>
+		<problem display_name="Problem 2: Uniform disc swings down being pivoted at the midpoint of a radius" filename="MIT/boriskor/Multiconcept Problems/Uniform disc pivoted off center swings down.problem" attempts="3"/>
+		<problem display_name="Problem 3: Cylinder rolls down an incline and then up the other incline" filename="MIT/boriskor/Multiconcept Problems/Cylinder rolls down then up.problem" attempts="5"/>
+		<problem display_name="Problem 4: Pulling a spool" filename="MIT/rayyan/Physics801/Symbolic/Spool.problem" attempts="10"/>
+		<problem display_name="Problem 5: Rolling away" filename="MIT/boriskor/Multiconcept Problems/Rolling Disc and Descending Block.problem" attempts="2"/>
+		<problem display_name="Problem 6: bar swinging down" filename="MIT/boriskor/Rotation/Bar swinging top to horizontal multipart.problem" attempts="10"/>
+		<problem display_name="Problem 7: Small sphere rolling off the top of a large sphere" filename="MIT/boriskor/Multiconcept Problems/Small sphere rolling off a large sphere.problem" attempts="10"/>
+		<problem display_name="Problem 8: Unwinding Ribbon" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Unwinding Spools.problem" attempts="10"/>
+		<problem display_name="Problem 9: Bicycle Wheel" filename="MIT/analiab/NewProblems/BicycleWheel.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Problems for Pset 10" url_name="Problems_for_Pset_10">
+		<problem display_name="Problem 1: A Spinning stick and a puck" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Spinning rod v4.problem" attempts="10"/>
+		<problem display_name="Problem 2: A moving disc and one at rest" filename="MIT/analiab/NewProblems/Two_discs.problem" attempts="10"/>
+		<problem display_name="Problem 3: Pivoted bar swings up after collision" filename="MIT/boriskor/Rotation/Pivoted bar swinging upward after collision.problem" attempts="10"/>
+		<problem display_name="Problem 4: Two approaching cylinders" filename="MIT/analiab/NewProblems/Two_cylinders.problem" attempts="10"/>
+		<problem display_name="Problem 5: Bicycle Wheel" filename="MIT/analiab/NewProblems/BicycleWheel_2.problem" attempts="2"/>
+		<problem display_name="Problem 6: Center of Percusion" filename="MIT/analiab/NewProblems/CenterOfPercusion.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Problems for Pset 11" url_name="Problems_for_Pset_11">
+		<problem showanswer="attempted" display_name="Problem 1: Physical Pendulum" filename="MIT/rayyan/Physics801/Harmonic Motion/Pendulum.problem" attempts="4"/>
+		<problem showanswer="attempted" display_name="Problem 2: Pivot Square" filename="MIT/rayyan/Physics801/Harmonic Motion/Pivot Square.problem" attempts="4"/>
+		<problem showanswer="attempted" display_name="Problem 3: Physical Pendulum and a Collision" filename="MIT/analiab/NewProblems/PhysicalPendulumCollision.problem" attempts="5"/>
+		<problem showanswer="attempted" display_name="Problem 4: V-shaped object" filename="MIT/analiab/NewProblems/PhysicalPendulumLshape.problem" attempts="6"/>
+		<problem showanswer="attempted" display_name="Problem 5: Two beads and a spring " filename="MIT/analiab/NewProblems/SHOTwoBeadsRail.problem" attempts="6"/>
+	</sequential>
+
+</chapter>

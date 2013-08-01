@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI11-1.problem" display_name="Block on Wedge 2" attempts="2" weight="1"/>
+	<problem filename="F12/MRI/MRI11-2.problem" display_name="Block on Wedge 2, Part 2" attempts="2" weight="1"/>
+	<discussion for="Block on Wedge 2" id="MReV_Summer2013_MRI11" discussion_category="Momentum and Impulse" />
+</vertical>

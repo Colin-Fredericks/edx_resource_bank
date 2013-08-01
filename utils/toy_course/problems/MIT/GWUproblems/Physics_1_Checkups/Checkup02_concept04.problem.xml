@@ -1,0 +1,48 @@
+<html>
+  <problem>
+
+      <p>A block of mass M is sliding down an inclined plane. The block's acceleration is parallel to the incline plane and it is pointing down.
+        Which of the following statements are true?</p>
+
+    <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+            <li>
+
+                <p>The frictional force must be zero</p>
+
+          <optioninput location="random" name="Foil1" options="('True','False')" correct="False">
+          </optioninput>
+          </li>
+          <li>
+
+                    <p>The frictional force must be less than the component of Mg down the plane</p>
+
+          <optioninput location="random" name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+
+                <p>The normal force of the plane is equal to the weight of the block</p>
+
+                      <optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+
+<p>The surface may or may not have friction, even though the block is accelerating</p>
+
+          <optioninput location="random" name="Foil4" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+
+                <p>If the block's mass were doubled, its acceleration would be doubled</p>
+
+                        <optioninput location="random" name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+
+      </li>
+      </ul>
+    </optionresponse>
+  </problem>
+</html>

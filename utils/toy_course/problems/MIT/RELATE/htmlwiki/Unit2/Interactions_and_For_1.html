@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>Interactions and Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h2>Interactions and Force</h2>
+
+<p>Interactions and the forces they produce lie at the heart of Newtonian mechanics because the vector sum of the forces acting on a body accounts for any changes the body's motion. These relationships may be summarized:</p>
+<p>Interactions \(\rightarrow\) Forces \(\rightarrow\) Changes of Motion</p>
+
+<p>This unit is focused on the <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/netforce/">Linear Dynamics and Net Force</a> core model.</p>
+
+<h3>Learning Goals</h3>
+<p>By the end of this unit, you should be able to:</p>
+<ul style="list-style:disc outside none">
+	<li>Identify the interactions present for an object in a given physical situation,</li>
+	<li>Identify and quantify the resulting forces on the object; draw the corresponding free body diagram, checking that the forces satisfy Newton&#8217;s 2nd Law.</li> 
+	<li>Know which interactions obey force laws, and know the force laws for gravity, springs, and  friction</li>
+</ul>
+
+<p>To acknowledge the importance of interactions in mechanics, we give them a central place in our Concept Map shown below:</p>
+
+<p><img width="1200px" src="/static/problems/MIT/RELATE/htmlwiki/Unit2/files/MechanicsFlowChart_Inter.png"/></p>
+
+<h3>Physical Interactions and Forces</h3>
+
+<p>An interaction involves a particular <i>physical mechanism</i> that occurs between two different objects. All interactions generate a third law pair of forces between the two bodies that interact via the particular physical mechanism. In other words, when two objects interact with each other they will exert a force on each other according to Newton's 3rd law.</p>
+
+<h3>Illustrative Examples </h3>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>A book at rest on a horizontal table</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+	<p>The book in the figure interacts with two objects: the Earth and the table.</p>
+	<p>As a result of the <i><b>book &#8211; Earth interaction</b></i> there is a third law pair of forces:</p>
+	<p>\(\mathcal{}\vec{F}_{bE} \): the gravitational force exerted on the book by the Earth,</p>
+	<p>\(\mathcal{}\vec{F}_{Eb} \): the gravitational force exerted on the Earth by the book.</p>
+	<p>The <i><b>book-table interaction</b></i> produces another third law pair:</p>
+	<p>\(\mathcal{}\vec{F}_{bt} \): the normal force exerted on the book by the table,</p>
+	<p>\(\mathcal{}\vec{F}_{tb} \): the normal force exerted on the table by the book.</p>
+	<p>The free body diagram of the book, the right figure, shows the forces applied on the book as a result of its interactions with the Earth and the table. Notice ONLY the forces acting <b>on the book</b> are included in the FBD <b>of the book</b>.</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/files/BookOnTable.png"/></p>
+<ul>
+	<li>Note: The forces \(\mathcal{}\vec{F}_{bE} \) and \(\mathcal{}\vec{F}_{bt} \) are <b>not</b> a third law pair for two reasons:</li>
+</ul>
+<ol>
+	<li>Third law pair forces must act on different bodies</li>
+	<li>Third law pair forces must arise from the same physical interaction</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>A box sliding down a smooth incline</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+	<p>In this example we consider a box sliding down a smooth incline as shown in the figure. During the motion down, the box interacts with two objects: the Earth and the surface of the incline.</p>
+	<p>As a result of the <i><b>box &#8211; Earth interaction</b></i> there is a third law pair of forces:</p>
+	<p>\(\mathcal{}\vec{F}_{bE} \mbox{: }\) the force exerted on the box by the Earth,</p>
+	<p>\(\mathcal{}\vec{F}_{Eb} \mbox{: }\) the force exerted on the Earth by the box.</p>
+	<p>The <i><b>box - surface interaction</b></i> produces another third law pair:</p>
+	<p>\(\mathcal{}\vec{F}_{bS} \mbox{: }\) the normal force exerted on the box by the surface,</p>
+	<p>\(\mathcal{}\vec{F}_{Sb} \mbox{: }\) the normal force exerted on the surface by the box.</p>
+	<p>The above two forces are the result of a direct contact between the surfaces of the box and the incline. Because the box moves along a smooth surface we can neglect friction.The two contact forces, <i><b>F<sub>bS</sub></b></i> and <i><b>F<sub>Sb</sub></b></i>, are perpendicular (also called "normal") to both surfaces.</p>
+	<p>The free body diagram of the box, the right figure, shows the forces applied on the box as a result of its interactions with the Earth and the incline surface, when friction is negligible ("smooth" surfaces usually modeled using this approximation).</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/files/BoxDownIncline.png"/></p>
+	<p>Note: The forces acting on the box would be those shown above if the box were sliding up the plane with decreasing speed or down with increasing speed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Interactions studied in this class </h3>
+
+<p>In this unit, we introduce the four classes of interactions which are frequently encountered in introductory mechanics:</p>
+<ul style="list-style:disc outside none">
+	<li>uniform gravitational force at the surface of the earth (a special case of Newton&#8217;s universal gravitation); commonly called "weight"</li>
+	<li>spring force due to elastic compression or extension of an object (e.g. spring) which attempts to restore its original length.</li>
+	<li>tension force by a solid object like a rod or string when stretched along the linear direction of the rod or string</li>
+	<li>contact forces between solid objects; static and kinetic friction forces as well as "normal" forces</li>
+</ul>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/tossing a ball_1.png" alt="tossing_a_ball_1" height="200"/>
+
+      <p><br/>
+Suppose you are on a cart which is initially at rest that rides on a frictionless track. You throw a ball at a vertical surface that is firmly attached to the cart.  If the ball bounces straight back as shown in the picture, will the cart be put into motion after the ball bounces back from the surface?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              Yes, and it will move to the right.          
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+
+              Yes, and it will move to the left.          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              No, it will remain in place.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

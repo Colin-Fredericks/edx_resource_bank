@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4d -->
+
+<problem>
+
+	<p>Consider the situation shown in the picture below: a person is trying to move a very heavy safe by pushing it along the ground. The force applied by the person to the safe is perfectly horizontal. Neither the person nor the safe is moving. </p>
+
+	<img src="/static/problems/F12/MRI/images/MRI4.png" />
+
+	<h3>Part 1</h3>
+	<p>The friction force acting on the safe from the ground and the friction force acting on the person from the ground are:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Equal in size.</choice>
+			<choice location="random" correct="false">Not equal in size.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Both contact the same ground.</choice>
+			<choice location="random" correct="false">The safe is much heavier than the person.</choice>
+			<choice location="random" correct="false">Every action has an equal and opposite reaction.</choice>
+			<choice location="random" correct="true">The system composed of the person and safe is not accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>Now, suppose that suddenly the safe shown in the picture above begins to accelerate to the right, and the person follows along maintaining their force on the safe.  Which of the following pairs of forces will now be equal?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Friction on the safe and force from person on safe.</choice>
+			<choice location="random" correct="true">Force from person on safe and force from safe on person.</choice>
+			<choice location="random" correct="false">Friction on the person and force from safe on person.</choice>
+			<choice location="random" correct="false">Friction on the safe and friction on the person.</choice>
+			<choice location="random" correct="false">None of the pairs listed will be equal.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Suppose that a person is standing on a scale in an elevator when the elevator begins to accelerate upward.  According to Newton's Third Law, one of the following forces will be equal and opposite to the force the person exerts on the scale (which is what the scale will read).  Choose that force.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<text>The normal force exerted on the person.</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>The person's mass times their acceleration.</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<text>The person's weight.</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<text>None of the choices is the appropriate third law pair.</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>The force exerted on the scale by the elevator.</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

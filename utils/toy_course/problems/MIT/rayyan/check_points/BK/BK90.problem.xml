@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo </title>
+    <script type="loncapa/python">
+from __future__ import division
+from loncapa import *
+
+a=lc_random(1,3,1)
+b=lc_random(1,3,1)
+c=lc_random(1,3,1)
+d=lc_random(1,3,1)
+e=lc_random(1,3,1)
+m=lc_choose(a,2.0,2.5,3.2)
+theta=lc_choose(b,30,40,50)
+M=lc_choose(c,3.0,4.5,6.0)
+
+#T=(2* M*9.8+* m*9.8)/(2*math.sin( deg2rad* theta))
+#alpha=(6* M*9.8+3* m*9.8)/(2* m*1.5)
+
+</script>
+    
+      <p>
+A yo-yo has an external radius R and an internal radius r. The mass of the yo-yo is m and its rotational inertia about its center of mass is I. The yo-yo is being pulled horizontally by force F applied to a light string wrapped around the inner shaft as shown. As a result, the yo-yo rolls along a horizontal surface without slipping, as shown in the diagram. 
+</p>
+      <br/>
+    
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK90.PNG" alt="BK90" encrypturl="no"/>
+    <part loncapaid="11">
+      <p>
+</p><br/>
+Part 1.
+If the magnitude of the force of friction is \(F_f\), what is the correct expression for Newton's 2nd law for the yo-yo? (assume right to be positive)
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="12" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( F = ma  \)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \( F - F_f  = ma \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( Fr - F_f  = ma \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( F - \mu m g  = ma \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( F - rF_f  = ma\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+    <part loncapaid="13">
+      <p>
+</p><br/>
+Part 2.
+What is the net torque acting on the yo-yo with respect to the axis passing through the point touching the ground? (assume clockwise to be positive)
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="14" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( F (R+r) \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( Fr \)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                Zero
+            
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( F R    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( F(r+R)-r F_f \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( F(r+R)+r F_f \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( (F-F_f)R \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+    <part loncapaid="15">
+      <p>
+</p><br/>
+Part 3.
+What is the relationship between the translational acceleration of the yo-yo a and its angular acceleration \(\alpha\)?
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="16" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( a= \alpha R \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( a= \alpha /R \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( a= 2\alpha R    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( a= 2\alpha /R \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( a= \alpha R /2 \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( a= \alpha/(2R) \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+    <part loncapaid="17">
+      <p>
+</p><br/>
+Part 4.
+What is the rotational inertia of the yo-yo with respect to the axis passing through the point touching the ground?
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="18" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( I \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( I+ mr^2    \)
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                  \(  I+ mR^2    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(  I+ m(r+R)^2   \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(  I+ m(R-r)^2     \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+    <part loncapaid="19">
+      <p>
+</p><br/>
+Part 5.
+What is the linear acceleration of the yo-yo?
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="20" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( a = FR(r + R)/(I + mr^2)   \)
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  \( a = FR(r + R)/(I + mR^2)    \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( a = Fr(r + R)/(I + mR^2)    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( a = Fr(r + R)/(I + mr^2)  \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( a = FR2/(I + mR^2)    \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( a = FRr/(I + mR^2)        \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+    <part loncapaid="21">
+      <p>
+</p><br/>
+Part 6.
+What is the magnitude of the force of friction acting on the yo-yo?
+
+      <br/>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="22" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( F_f = F(I + mrR)/(I + mR^2) \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( F_f = F(I - mr^2)/(I + mR2)   \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(F_f = F(I + mr^2)/(I + mR^2)\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(F_f = F(I - mR^2)/(I + mR^2) \)
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                  \( F_f = F(I - mrR)/(I + mR^2)    \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( F_f = F(I + mR^2)/(I + mR^2)        \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </part>
+      </problem>
+</html>

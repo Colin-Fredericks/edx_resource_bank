@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!-- Custom comparison: SHM distance -->
+
+<problem>
+
+	<script type="loncapa/python">
+
+A_a = random.randrange(-50, 50, 1)/10
+A_b = random.randrange(-50, 50, 1)/10
+T_a = random.randrange(1, 20, 1)/10
+T_b = random.randrange(1, 20, 1)/10
+phi_a = random.randrange(0, 30, 1)/10
+phi_b = random.randrange(0, 30, 1)/10
+h_a = random.randrange(0, 100, 1)/10
+h_b = random.randrange(0, 100, 1)/10
+
+t = random.randrange(0, 100, 1)/10
+
+x_a = A_a * math.sin((2*math.pi)/(T_a) * (t - phi_a))
+x_b = A_b * math.sin((2*math.pi)/(T_b) * (t - phi_b))
+
+x_a = math.fabs(x_a)
+x_b = math.fabs(x_b)
+
+if x_a > x_b:
+	ans='A'
+elif x_b > x_a:
+	ans='B'
+elif x_a == x_b:
+	ans='Same'
+
+	</script>
+
+		<p>The equations below show the positions of two oscillators over time:</p>
+		<p>\( \displaystyle A: x_A = $A_a \sin \left( \frac{2\pi}{ $T_a } \left( t - $phi_a \right) \right) + $h_a \)</p>
+		<p>\( \displaystyle B: x_B = $A_b \sin \left( \frac{2\pi}{ $T_b } \left( t - $phi_b \right) \right) - $h_b \)</p>
+		<p>Which oscillator, A or B, is farther from its equilibrium position at time t = $t seconds? You may assume all quantities given are in S.I. units. 
+		Choose A or B. If the distances are perfectly identical, choose "Same".</p>
+
+	<optionresponse direction="vertical" randomize="yes">
+		<optioninput options="('A','B','Same')" correct='$ans'/>
+	</optionresponse>
+
+	<solution>
+
+			<p>Plug the given time into the equation for each oscillator, but ignore the last term. This will give you the distance from the equilibrium point. The numbers are randomized for each student. (The last term only sets the equilibrium position; it tells us nothing about how far the oscillator will be from it.)</p>
+			<p>Note that we are only looking for a distance, and do not care about direction or +/- sign.</p>
+
+	</solution>
+</problem>
+

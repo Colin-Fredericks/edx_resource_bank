@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+<!-- A collision and up the loop -->
+<problem>
+
+<script type="loncapa/python">
+import math
+
+HH="1/2*(m2)^2/(m1)^2*r*(3*cos(theta)+2)"
+</script>
+
+	<h2>A Collision and up the loop.</h2>
+	<p>A block of mass m<sub>1</sub>, suspended by a string as shown in the figure, is released from rest at an unknown height H (point A).
+	 At the bottom of its trajectory, point B, it hits a block of mass m<sub>2</sub> initially at rest. Block m<sub>1</sub> stops 
+	 and block m<sub>2</sub> moves until it encounters a vertical circular track of radius R. There is no friction along block 2's 
+	 trajectory. </p>
+
+	<img src="/static/problems/S13/ESG/images/6-4.png" />
+
+	<p>If block 2 loses contact with the track at the angle \(\theta\), point C in the figure, what is the height H?</p>
+	<p>You may type "theta" for \(\theta\), m1 and m2 for  m<sub>1</sub> and  m<sub>2</sub>.</p>
+
+	<formularesponse samples="m1,m2,r,theta@1,1,1,1:10,10,10,10#2" answer="$HH">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>H=</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

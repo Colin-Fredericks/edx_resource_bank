@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 8 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">a. The work done by all non-conservative forces on the block is easily calculated.</choice>
+			<choice location="random" correct="false">b. There is a collision between the block and the spring.</choice>
+			<choice location="random" correct="false">c. It is necessary to find the force of the block as it hits the spring.</choice>
+			<choice location="random" correct="false">d. The forces on the block are different when the block is in contact with the spring.</choice>
+			<choice location="random" correct="false">e. Statements b, c and d are all needed to explain the decomposition.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

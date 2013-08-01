@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<html>
+<!-- balls sliding on table -->
+<problem>
+
+	<h2>balls sliding on table</h2>
+<p><b>checked: I am not sure where the plots are from. This was a problem I got from Sahana and it might be from a PER paper. It should not go online</b></p>
+	<img src="/static/problems/S13/ESG/images/5-4a.png"/>
+	<p>The figure shows two identical billiard balls sliding on a smooth table. At t=0, ball number 1 is traveling to the right. At <i>t=t<sub>0</sub></i>, it strikes the second stationary ball a glancing blow. Both balls follow paths as shown in the arrows. The coordinate system with positive directions is also specified. </p>
+	<p>Below are a series of graphs with the horizontal axis representing time but with the vertical axis not specified. Choose which graph could represent each of the following quantities given the appropriate scale. A graph can be used once, more than once, or not at all. If none of the graphs is possible, select "none of the graphs".</p>
+	<img src="/static/problems/S13/ESG/images/5-4b.png"/>
+
+	<p>Select the correct options:</p>
+	<optionresponse direction="vertical" randomize="yes">
+
+		<p>
+			<p>The x-component of momentum of ball 2 is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="E"/>
+		</p>
+
+		<p>
+			<p>The y-component of momentum of ball 1 is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="E"/>
+		</p>
+
+		<p>
+			<p>The y-component of momentum of ball 2 is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="C"/>
+		</p>
+
+		<p>
+			<p>The x-component of momentum of ball 1 is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="B"/>
+		</p>
+
+		<p>
+			<p>The x-component of total momentum is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="A"/>
+		</p>
+
+		<p>
+			<p>The y-component of total momentum is represented by: </p>
+			<optioninput inline="1" options="('A','B','C','D','E','F','None of the graphs')" correct="None of the graphs"/>
+		</p>
+
+	</optionresponse>
+
+</problem>
+</html>

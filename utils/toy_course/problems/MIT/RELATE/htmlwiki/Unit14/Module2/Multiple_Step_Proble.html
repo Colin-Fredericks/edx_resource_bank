@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Multiple Step Problems and Consecutive Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<p>This unit involves several <a href="https://courses.edx.org/courses/MITx/8.MReV/2013_Summer/wiki/8.MReV/#coremodels">core models</a> one after another.</p>
+
+<p>In a <b>multiple step problem</b> the interactions that produce changes in the state of the system are not the 
+same during the time span of the problem. In consequence, different models may apply during different phases of 
+the problem. Therefore the problem must be subdivided into temporal or spatial intervals during which the 
+interactions do not change. As a result, the problem must be <i>decomposed</i> into <b>consecutive</b> sub-problems.</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module2/files/multipleStepProblem_timeSplit.png" /></p>
+
+<p>In the figure above, the time interval <font face="times new roman" size="3"><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></font> is divided into 4 sub-intervals, then it is necessary to solve 4 sub-problems. Each of the sub problems are solved by applying one or more models and by matching the final and initial states of the consecutive sub problems. For example, the final speed of a given object in step 2 is the initial speed of the object in step 3.</p>
+
+<p>In kinematics this procedure is referred as <b>motion decomposition</b> (see example <a href="https://staging.mitx.mit.edu/courses/MITx/8.011/2013_Spring/courseware/Unit_6/Changing_Interactions_and_Constraints/2">Fan-Powered Ice Boat</a>). In the illustrative example below, the problem is decomposed into two sub problems: a collision followed by the compression of a spring.</p>
+
+<p>Very often, in a multiple step problem, you will find that it is more convenient to consider different systems 
+for the different time intervals or steps. This idea will be discussed in the illustrative example in the following page.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/integration_1.png" alt="integration_1" height="200"/>
+
+<p><br/>A mass \(M\) is uniformly distributed over the circumference of a thin ring with radius \(r\). The moment of inertia for this ring when rotating about an axis perpendicular to the ring that passes through its center is:</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+                \(Mr\)
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+                \(Mr^2\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(0.5Mr\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(0.5Mr^2\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              Cannot be determined without integrating          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>Two small spheres are made of the same material and have the same radius \(r\). One of the spheres is solid; the other one has a spherical cavity of radius \(r\)/2 (the center of the cavity coincides with the center of the sphere). Both spheres  are placed at the top of the same inclined plane and released. Both spheres then roll down without slipping. The speed of the solid sphere at the bottom of the incline is \(v\). What is the speed \(u\) of the other sphere at the bottom of the incline?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="true">
+			<text>\( u = v \sqrt{\frac{98}{101}} \)</text>
+		</choice>
+		<choice location="random" correct="false">
+			<text>\( u = v \sqrt{\frac{101}{98}} \)</text>
+		</choice>
+		<choice location="random" correct="false">
+			<text>\( u = v \sqrt{\frac{49}{51}} \)</text>
+		</choice>
+		<choice location="random" correct="false">
+			<text>\( u = v \sqrt{\frac{51}{49}} \)</text>
+		</choice>
+		<choice location="random" correct="false">
+			<text>\( u = v \sqrt{\frac{17}{21}} \)</text>
+		</choice>
+		<choice location="random" correct="false">
+			<text>\( u = v \sqrt{\frac{21}{17}} \)</text>
+		</choice>
+	</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

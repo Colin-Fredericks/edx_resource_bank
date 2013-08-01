@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+   <problem>
+          <img src="/static/problems/MIT/boriskor/BKimages/Stacked blocks_bottom_pull.png" alt="Two stacked blocks on a table; bottom block pulled horizontally"/>
+      <br/>
+
+        <p>
+Two blocks of equal masses are placed on a horizontal table as shown. The bottom block is then pulled with a slowly increasing horizontal force \(F\). Both contact surfaces (between the bottom block and the table <b>and</b> between the two blocks) are frictionless. 
+<br/>Select the correct description of the motion of the blocks. <b>Note: "move" or "does not move" refers to the laboratory ("Earth") frame of reference.</b>
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                Both blocks begin to move simultaneously as soon as force F is applied.
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                The top block begins to move as soon as force F  is applied; the bottom block does not move at all. 
+
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+
+                The bottom block begins to move as soon as force F  is applied; the top block does not move at all. 
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                Both blocks begin to move simultaneously as soon as force F  reaches a certain minimum value.
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                The top block begins to move as soon as force F  reaches a certain minimum value; the bottom block does not move at all.
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                The bottom block begins to move as soon as force F  reaches a certain minimum value; the top block does not move at all.
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

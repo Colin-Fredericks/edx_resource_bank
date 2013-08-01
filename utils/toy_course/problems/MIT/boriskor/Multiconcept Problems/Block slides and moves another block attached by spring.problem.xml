@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/23-two blocks connected by spring on horizontal surface.png" alt="Two blocks move on a horizontal surface, connected by a spring"/>
+        <br/>
+
+<p>Two blocks of masses \(m\) and \(2m\) are placed on a horizontal table. The coefficient of friction (both static and kinetic) between each block and the table is \(\mu_s\). The blocks are connected by a spring with a force constant \(k\). Initially, the spring is relaxed. Then the block of mass \(m\) is given a quick push as shown. What is the minimum initial speed of that block that would make the other block move?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(v_0=\mu_s g \sqrt{8m/k}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(v_0=\mu_s g \sqrt{6m/k}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(v_0=\mu_s g \sqrt{4m/k}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(v_0=\mu_s g \sqrt{3m/k}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(v_0=\mu_s g \sqrt{2m/k}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

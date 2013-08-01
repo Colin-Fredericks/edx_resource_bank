@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK72.PNG" alt="BK72.PNG"/>
+
+	<p>The graph above shows the potential energy associated with a single conservative force <i>f</i> acting on an object moving along the x-direction. The potential energy values for some (but not all!) points are shown on the vertical axis of the graph. Use the graph to answer the questions below. </p>
+
+	<p>Part 1. At what points is the object in stable equilibrium? Check all that apply.</p>
+
+	<choiceresponse>
+		<checkboxgroup direction="vertical">
+		<choice correct="false"><text>B</text></choice>
+		<choice correct="false"><text>C</text></choice>
+		<choice correct="true"><text>D</text></choice>
+		<choice correct="false"><text>E</text></choice>
+		<choice correct="false"><text>F</text></choice>
+		<choice correct="false"><text>G</text></choice>
+		<choice correct="true"><text>H</text></choice>
+		<choice correct="false"><text>I</text></choice>
+		<choice correct="false"><text>K</text></choice>
+		<choice correct="true"><text>L</text></choice>
+		</checkboxgroup>
+	</choiceresponse>
+
+      </problem>
+</html>

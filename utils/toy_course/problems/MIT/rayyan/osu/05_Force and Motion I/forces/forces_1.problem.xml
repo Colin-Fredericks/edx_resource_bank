@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/fix.png" alt="forces_1" height="150"/>
+
+	<p>Now, the same block moves with a constant velocity to the right on the frictionless surface. Which of the following could be the correct freebody diagram for all forces acting on the block? Choose all that apply.</p>
+
+	<choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice name="A" correct="true">
+			<text>A</text>
+        </choice>
+        <choice name="B" correct="false">
+			<text>B</text>
+        </choice>
+        <choice name="C" correct="false">
+			<text>C</text>
+        </choice>
+        <choice name="D" correct="false">
+			<text>D</text>
+        </choice>
+        <choice name="E" correct="true">
+			<text>E</text>
+        </choice>
+      </checkboxgroup>
+    </choiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,64 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How <b>demanding</b> is this course compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How <b>time-consuming</b> is this course compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How much <b>independence</b> does this course require compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>Does this course <b>teach good habits</b> compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>Is this course <b>clear and comprehensible</b> compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How much <b>support from the course staff</b> did you feel was available compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>Would you <b>recommend this course</b> compared to other online physics courses?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="more"><text>More</text></choice>
+       <choice correct="true" name="equal"><text>About Equal</text></choice>
+       <choice correct="true" name="less"><text>Less</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Displacement, Speed and Acceleration in SHM </title>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+c=0.025
+amp=random.choice([0.20,0.40,0.60])
+wf=random.choice([10,12,14])
+w =  wf* math.pi
+pshift= w* c
+
+A=2* math.pi/ w
+B= pshift
+C=4* amp
+D= amp* w
+E= amp* w* w
+
+</script>
+
+      <p>The equation of simple harmonic motion for a particle is \(x(t) = $amp \cos ($wf \pi(t + $c))\). 
+Assume that all numeric values have SI units.</p>
+      <br/>
+
+      <p>
+</p><br/>
+Part A. 
+Find the period of motion.
+<br/>
+\(T=\)
+
+      <numericalresponse answer="$A" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+Part B. 
+Find the phase angle in radians.
+<br/>
+\(\phi=\)
+
+      <numericalresponse answer="$B" unit="rad">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+Part C. 
+Find the distance covered by the particle during one period of motion. 
+<br/>
+\(d=\)
+
+      <numericalresponse answer="$C" unit="m">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+Part D. 
+Find the maximum velocity of the particle.
+<br/>
+\(v_{max}=\)
+
+      <numericalresponse answer="$D" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+Part E. 
+Find the acceleration of the particle at the moment its velocity is zero.
+<br/>
+\(a=\)
+
+      <numericalresponse answer="$E" unit="m/s^2">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+  </problem>
+</html>

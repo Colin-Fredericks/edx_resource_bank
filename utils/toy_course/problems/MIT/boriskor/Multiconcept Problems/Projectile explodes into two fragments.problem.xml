@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>A projectile of mass \(3m\) is launched upward from the ground level. The projectile explodes at the top point of its trajectory which is a horizontal distance \(x\) from the launch point. As a result of the explosion, the projectile breaks into two fragments, of masses \(2m\) and \(m\). The larger fragment ends up landing at the launch point. </p>
+
+	<p>How far from the launch point does the smaller fragment land?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true"><p>d = 6x</p></choice>
+			<choice location="random" correct="false"><p>d = 5x</p></choice>
+			<choice location="random" correct="false"><p>d = 4x</p></choice>
+			<choice location="random" correct="false"><p>d = 3x</p></choice>
+			<choice location="random" correct="false"><p>d = 2x</p></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<p>If the speed of the projectile just before the explosion was \(v\), by how much did the kinetic energy of the system increased as the result of the explosion?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true"><p>\(\Delta K = 12mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = 10mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = 8mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = 2mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = \frac{1}{2} mv^2 \)</p></choice>
+			<choice location="random" correct="false"><p>\(\Delta K = \frac{1}{2} 3mv^2 \)</p></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

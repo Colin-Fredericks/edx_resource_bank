@@ -1,0 +1,129 @@
+<html><html>
+<head>
+<title>Multiple Systems and Constraints</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h2>
+			Multiple Systems and Constraints</h2>
+<p>
+			Often it is desirable to consider the relative motion of two objects. (A particularly common problem is to determine when two objects meet.) Because the Dynamics and Net Force Model and its special cases are restricted to describe only a single point particle, the most common approach to tracking the motion of two objects is to treat them as separate systems and apply the appropriate model to each. These descriptions <i>must</i>&#160;however use the same time coordinate.</p>
+<h3>
+Learning Goals</h3>
+<p>
+			After completing this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Solve motion problems that deal with the motion of more than one object.</li>
+<li>
+				Solve problems involving more than one concept.</li>
+</ul>
+<h3>
+			Tracking Two Objects</h3>
+<p>
+			The separate models that are applied to each object will be related to each other first by using the same time and spacial coordinates and second by constraints imposed by the specific motions of the two systems (e.g. the player has to be at the same location as the ball in order to catch it). The basic elements of the approach are summarized in this table:</p>
+<table class="wikitable">
+<tbody>
+<tr>
+<th>
+<b>Steps for Approaching a Problem Involving Motion of Two Objects</b></th>
+</tr>
+<tr>
+<td>
+<ol style="list-style-type:decimal">
+<li>
+								Set up a <i>single</i> coordinate system that is useful to describe the motion of <i>both</i> objects.</li>
+<li>
+								Determine the model that applies to each object independently.</li>
+<li>
+								Constrain the models using what you know about the motion of the two systems (e.g. where are they constrained to start, meet, etc.).</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

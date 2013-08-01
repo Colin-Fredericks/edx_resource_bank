@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Illustrative Example: Two Blocks</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+			Illustrative Example: Block 1 sliding into Block 2</h3>
+<p>
+			As an example, consider the situation shown below. Two blocks labeled 1 and 2 are sliding toward each other on a very slippery (assume frictionless) table (which is resting on the surface of the earth) and gently collide. During the collision, a free body diagram for block 1 might look like the one shown below. Block 1 experiences three forces: one arising from its interaction with the table (contact force), one arising from its interaction with block 2 (another contact force) and one arising from the earth pulling down on the block. Thus, we have labeled the forces as follows:</p>
+<ul style="list-style:disc outside none">
+<li>
+<b>F<sub>1T</sub></b> is the force exerted <b>on</b> block 1 <b>by</b> the table (contact force).</li>
+<li>
+<b>F<sub>12</sub></b> is the force exerted <b>on</b> block 1 <b>by</b> block 2 (contact force).</li>
+<li>
+<b>F<sub>1E</sub></b> is the force exerted <b>on</b> block 1 <b>by</b> the Earth (gravitational force).</li>
+</ul>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module3/files/Unit1Mod2Block1FBD_new2.png"/></p>
+<p>
+			It is important to note several important features of the free body diagram (FBD):</p>
+<ul style="list-style:disc outside none">
+<li>
+				FBDs focus on a <b>single object</b> (or later, a single <i>system</i>) only. Notice that block 1's FBD does not show block 2, the table or the earth. This is the meaning of "free" in free body diagram.</li>
+<li>
+				FBDs are <b>schematic</b>. The body of interest is often represented as a dot. They faithfully represent the directions of the forces acting on an object, but they do not have to be a faithful representation of the location of those forces or the body itself.
+				<ul style="list-style:disc outside none">
+<li>
+						[For advanced readers] When dealing with rotation and torques, it is very important to show the location on the body at which the force acts, thus an extended body sketch is the most useful.</li>
+</ul>
+</li>
+<li>
+<b>All</b> forces appearing in the FBD for block 1 must act on block 1. Forces produced by block 1 do not belong in its FBD. Using double-subscript notation and putting a title on the FBD will help you remember this rule. (Note: <b>All</b> forces in block 1's FBD have "1" as the first subscript!)</li>
+<li>
+<b>All</b> forces appearing in the FBD for block 1 must be the result of an interaction with another identifiable object.
+				<ul style="list-style:disc outside none">
+<li>
+						For each force you identify, ask yourself: "Is this a contact, elastic, tension or gravitational force?" and "What interaction with what other object could be causing it?" Remember Newton's First law: there is no automatic force in the direction of motion. Block 1 is an excellent example of this: it is moving to the right as the collision occurs, but there is no rightward force on it at all. If you are tempted to add such a force, reread this note from the beginning!</li>
+</ul>
+</li>
+<li>
+				The net force <b>F<sub>net</sub></b> is NOT the result of the interaction witha a real object, therefore it is NOT one of the forces included in the FBD. The net force is the sum of the forces appearing in the FBD. Remember: one utility of drawing a FBD is to identify the information necessary to determine <b>F<sub>net</sub></b>.</li>
+<li> The term <b>ma</b> is <b>NOT</b> a force, therefore it is <b>NOT</b> included in the FBD.</li>
+</ul>
+</body>
+</html>
+

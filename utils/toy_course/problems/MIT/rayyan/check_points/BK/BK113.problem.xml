@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Binary Star System </title>
+
+      <p>A binary system contains two stars of equal masses M separated by a distance r which is much greater than the radius of either star. The system revolves about its common center of mass. 
+
+</p>
+      <br/>
+
+        <br/>
+
+      <p>
+Part 1. 
+What are the forces acting on each star?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+
+                the force of gravity only 
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                the force of gravity and the reaction force 
+
+          </choice>
+          <choice name="foil3" correct="false">
+
+                the force of gravity and the centripetal force 
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+the centripetal force and the reaction force 
+
+          </choice>
+          <choice name="foil5" correct="false">
+
+the reaction force only 
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+What is the acceleration of each star?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(GM/r^{2}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(2GM/r^{2}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(4GM/r^{2}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(GM^{2}/ r^{2}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(2GM^{2}/ r^{2}\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+                \(4GM^{2}\)/\(r^{2}\)
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 3. 
+What is the angular speed of each star?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( \sqrt{2GM/r^{3}}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( \sqrt{GM/r^{3}}	\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \( \sqrt{GM/2 r^{3}}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( \sqrt{2GM/r}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( \sqrt{GM/r}\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( \sqrt{GM/2r}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 4. 
+How long does it take each star to complete one full revolution relative to the center of mass?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( \pi  \sqrt{2r^{3}/GM}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( \pi \sqrt{2r^{2}/GM}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \( \pi  \sqrt{2r/GM}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( \pi \sqrt{4r^{3}/GM}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( \pi \sqrt{4r^{2}/GM}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Multi-Body System treated as a Point Particle</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:11pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:11pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Multi-Body Systems Treated as a Single Point Particle</h2>
+<p>Newton's 3rd Law has a profound consequence when applied to a multi-body system.  If we define the "average" position of the system in a special way (as the center of mass of the system) then Newton's 3rd Law guarantees that forces exerted on one member of the system by another system constituent will cancel and have no effect on the system's average position.  Without this fact, the universe would be a far more complicated place.  Even the simplest everyday objects are really systems composed of a trillion trillion atoms.  If the interatomic forces had any impact on the motion of the object as a whole, it would require supercomputers to analyze the motion of a baseball.</p>
+<h3> Learning Goals</h3>
+<p>After completing this module, you should be able to:
+</p>
+<ul style="list-style:disc outside none"><li> Explain why a multi-body system can be treated as a point particle
+</li><li> Relate the internal forces and Newton's 3rd Law pairs
+</li><li> Explain why only the external forces are relevant to calculate the acceleration of the system
+</li></ul>
+</body>
+</html>
+

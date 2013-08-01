@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 1 -->
+
+<problem>
+
+	<p>Which of the following statements accurately describes the mechanical energy of the block-box-spring system during the time interval that starts at the instant at which the rope is cut, and ends at the instant at which the box is moving with speed V<sub>1</sub> and the block is moving with V<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false"><text>The mechanical energy of the block-box-spring system must be conserved.</text></choice>
+			<choice location="random" correct="true"><text>The mechanical energy of the block-box-spring system is not conserved.</text></choice>
+			<choice location="random" correct="false"><text>The mechanical energy of the block-box-spring system is only conserved when m<sub>1</sub> = m<sub>2</sub>.</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

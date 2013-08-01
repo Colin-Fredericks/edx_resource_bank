@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/analiab/NewProblems/files/BlockWedgeWall.fw.png" />
+    <script type="loncapa/python">
+
+
+Fnet="m*g*sin(theta)"
+Fww="m*g*sin(theta)*cos(theta)"
+
+</script>
+
+      <p><br/>
+
+ A wedge with an inclination of angle \(\theta\) rests next to a wall. A box of mass \(m\) is sliding down
+the incline surface, as shown. There is no friction between the wedge and the box, between the wedge and the 
+horizontal surface or the wedge and the wall. You can type \(\theta\) as theta and g for the acceleration due to gravity.
+<br/>
+
+<b>Part a.</b> Find the magnitude, F<sub>net</sub>, of the sum of all forces acting on the box.
+ </p>
+
+    <br/>
+
+        <p>
+          \(F_{net}=\)
+        </p>
+
+      <formularesponse answer="$Fnet" samples="m,theta,g@4,0,6:10,60,12#2">
+        <responseparam default="1%" type="tolerance">
+</responseparam>
+        <textline size="25" math="1">
+</textline>
+      </formularesponse>
+
+       <br/>
+    <hr/>
+
+    <b>Part b.</b>The force exerted on the wedge by the box is directed:
+
+     <multiplechoiceresponse randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+
+              perpendicular to the incline surface          
+        </choice>
+ <choice name="foil2" correct="false">
+
+              perpendicular to the wall          
+        </choice>
+<choice name="foil3" correct="false">
+
+              parallel to the wall          
+        </choice>            
+
+         </choicegroup>
+    </multiplechoiceresponse>
+
+  <hr/>  
+
+        <p>
+       <b>Part c.</b> Find the magnitude, F<sub>ww</sub>, of the force that the wall exerts on the wedge.
+</p>
+<p>
+\(F_{ww}=\)
+</p>
+
+      <formularesponse answer="$Fww" samples="m,theta,g@4,0,6:10,60,12#2">
+        <responseparam default="1%" type="tolerance">
+</responseparam>
+        <textline size="25" math="1">
+</textline>
+      </formularesponse>
+
+  </problem>
+</html>

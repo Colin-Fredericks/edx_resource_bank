@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+x="L/(H+1)"
+
+</script>
+    <img width="500" alt="Dog and Boat" align="top" src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/dogboat.png"/>
+
+      <p><br/>
+A dog sits on the left end of a boat of length L that is initially adjacent to a dock. The dog then runs toward the dock, but stops at the end of the boat. If the boat is H times heavier than the dog, how close does the dog get to the dock?
+<br/>
+Ignore any drag force from the water.
+<br/>
+\(d =\)
+</p>
+
+    <formularesponse answer="$x" samples="L,H@1,1:10,12#5">
+      <responseparam default="1%" type="tolerance">
+</responseparam>
+      <textline size="25" math="1">
+</textline>
+    </formularesponse>
+
+  </problem>
+</html>

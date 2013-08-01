@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Colin problem #4 -->
+
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+r1 = random.randrange(40000000000, 60000000000, 1000000000)
+r1km = r1/1000
+r2 = random.randrange(100000000000, 150000000000, 1000000000)
+r2km = r2/1000
+
+msun = random.randrange(10,30,1) * 10 ** 29
+mcloud = random.randrange(50,90,1) * 10 ** 27
+G = 6.67 * 10 ** (-11)
+
+t1 = math.sqrt( (4*math.pi**2) / (G*msun) * r1**3 )
+t1days = round(t1 / (3600*24), 2)
+t2 = math.sqrt( (4*math.pi**2) / (G*(msun+mcloud)) * r2**3 )
+t2days = round(t2 / (3600*24), 2)
+
+</script>
+
+	<p>A young sun has two planets. One planet is close to the sun, at a distance of $r1km kilometers. Its orbital period is $t1days days. Another is 	farther away, at $r2km km, with an orbital period of $t2days days.</p>
+	<p>This solar system also has a dust cloud. The solar wind and the formation of the inner planet have cleared the dust out from the center of the system, but a substantial amount of it still remains between the two planets. Use the information you have about the orbits of the planets to approximate the mass of the dust cloud, assuming that it is approximately spherically symmetric.</p>
+	<img src="/static/problems/F12/colin/images/CF4.png" width="366" />
+
+	<numericalresponse answer="$mcloud" unit="m/s">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+</problem>
+</html>

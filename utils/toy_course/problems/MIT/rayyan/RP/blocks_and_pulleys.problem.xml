@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Blocks and Pulleys </title>
+    <img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyIncline.png" alt="Two Boxes Connected by Rope on Incline"/>
+          <p>
+</p><br/>
+<p>Consider two blocks connected by an ideal rope that passes through an ideal pulley fixed on the corner of the wedge as shown
+ in the figure. The blocks have masses \(m_1\) and \(m_2\). The block of mass \(m_1\) is on the incline surface (which is 
+ frictionless) while the block of mass \(m_2\) hangs up in the air.  Find the angle \(\theta\) at which the two blocks are 
+ in equilibrium (i.e., not moving)..</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(\theta= \sin^{-1} (\frac{m_2}{m_1})\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(\theta= \cos^{-1} (\frac{m_2}{m_1})\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\theta= \sin^{-1} (\frac{m_1+m_2}{m_1})\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(\theta= \sin^{-1} (\frac{m_1}{m_1+m_2})\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(\theta= \cos^{-1} (\frac{m_1}{m_1+m_2})\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

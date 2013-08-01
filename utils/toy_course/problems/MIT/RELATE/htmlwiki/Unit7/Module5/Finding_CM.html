@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Finding the Center of Mass</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>  The center of mass of a system of N particles  </h3>
+<p>The concept of center of mass can be extended to a system of <i>N</i> particles with masses <font size="3" face="new times roman"><i>m<sub>1</sub>, m<sub>2</sub>,...m<sub>N</sub></i></font> located at the positions \(\vec{r}_1, \vec{r}_2...\vec{r}_N\):
+</p><p>\(\vec{R}_{cm}=\frac{m_1\vec{r}_1+m_2\vec{r}_2+...}{m_! + m_2 +...} = \frac{\sum_{i=1}^Nm_i\vec{r}_i}{\sum_{i=1}^Nm_i}\)
+</p>
+<h3>  The center of mass of a rigid object </h3>
+<p>A rigid object can be thought as a system containing a very large number of particles and the summation of the expression above becomes an integral over the continuous distribution of mass:
+</p><p>\(\vec{R}_{cm}=\frac{\int\vec{r}dm}{\int dm}=\frac{\int\vec{r}dm}{M}\)
+</p><p>where <i>M</i> is the total mass of the object.
+</p><p>To obtain the position of the center of mass of a rigid object, it is necessary to know how the mass is distributed in volume and then solve three integrals, one for each component of the position vector:
+</p><p>\(X_{cm}=\frac{\int x\; dm}{M} \mbox{,  } Y_{cm}=\frac{\int y\; dm}{M} \mbox{,  } Z_{cm}=\frac{\int z\; dm}{M}\)
+</p>
+<h3>Symmetry and the Center of Mass</h3>
+<p>If the object is symmetric and the mass is distributed uniformly throughout the object's volume, then the center of mass lies on an axis of symmetry. For example, the center of mass of a uniform sphere or cube lies at its geometric center.
+</p>
+<h3> Center of Gravity vs. Center of Mass</h3>
+<p>The gravitational force acts on each element of mass within a rigid object. Adding the forces on each element, we obtain the total gravitational force \(M\vec{g}\) on the object of mass <font size="3" face="times new roman"><i>M</i></font>. This force is applied at a given point in the object that is called <b>the center of gravity</b> of the object. If the acceleration of gravity \(\vec{g}\) is the same throughout the object, then the center of gravity coincides with the center of mass.  When such an object is pivoted at its center of gravity, it balances in any orientation (no rotation) to a very high degree.</p>
+<p>In fact, gravity decreases as R<sup>-2</sup>, and hence is not quite uniform. This results in small torques on non-spherical objects that cause them to have small angular accelerations. These can lead to easily observable effects over time scales from hours on up, but this requires that the objects be free from other torques to a high degree &#8212; a degree usually found only in a satellite orbiting the earth well above the atmosphere.</p>
+<p>Consider a dumbbell (two masses connected by a light rod) in orbit whose long axis is oriented at 45 degrees to its radius vector from the earth. The mass nearer the earth is pulled more strongly toward earth than the other mass, so the torque about the center of mass of the dumbbell from this mass is larger than from the other mass &#8212; hence there will be a net torque trying to align the dumbbell with the radius vector. (The torque is also larger because the angle of the force with the axis of the dumbbell is larger for the mass nearer to the earth.) This causes an oscillation of the axis of the dumbbell about the radius vector: it prefers to align its axis to point at the earth. This oscillation has a period comparable to the orbital period of the satellite, independent of the height of the dumbbell from the earth. Satellites typically are far more spherical than dumbbells, and oscillate correspondingly slower.</p>
+</body>
+</html>
+

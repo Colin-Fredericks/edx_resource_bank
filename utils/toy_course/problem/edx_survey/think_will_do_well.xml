@@ -1,0 +1,28 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>Considering the difficulty of the course, the teacher, and my skills, I think I will do well in Mechanics ReView.</p>
+	<multiplechoiceresponse direction="horizontal" >
+    	<choicegroup type="MultipleChoice">
+          <choice correct="true" name="7">
+            <text>7 - Strongly Agree</text>
+          </choice>
+          <choice correct="true" name="6">
+            <text>6</text>
+          </choice>
+          <choice correct="true" name="5">
+            <text>5</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>4 - Neutral</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>3</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>2</text>
+          </choice>
+          <choice correct="true" name="1">
+            <text>1 - Strongly Disagree</text>
+          </choice>
+      	</choicegroup>
+  	</multiplechoiceresponse>
+</problem>

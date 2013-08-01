@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>The Magnitude of the Angular Momentum</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>  The Magnitude of the Angular Momentum Vector</h3>
+Following the definition of cross product, the magnitude of the angular momentum 
+vector about point <i><b>Q</b></i> is given by:
+<p>\[|\vec{L}_Q|= m|\vec{r}_Q \times \vec{v}|=mr_Qv\sin\theta\]
+</p><p>where the angle <i>&#952;</i> is the angle between the position and the velocity vectors as shown in figures A and B. To obtain <i>&#952;</i>, draw a line along the position vector (dotted red line in the figures), the angle between the dotted line and the velocity (or momentum) vector is the angle <i>&#952;</i>.
+</p><p><img src="/static/problems/MIT/analiab/Figures/AngularMomAngle_dd.png"/>
+</p><p>In the examples shown in figures A  the angle between the position and momentum vectors is smaller than 90<sup>o</sup>, in figures B the angle is between 90<sup>o</sup> and 180<sup>o</sup>.
+</p>
+<p>It is easy to see that \(v \sin \theta \) is the component of velocity that
+is perpendicular to the position vector \( \vec{r}_Q\). The magnitude of the
+angular momentum vector can also be found from the moment arm method (in
+which \(r_Q \sin\theta\) is the moment arm.</p>
+
+</body>
+</html>
+

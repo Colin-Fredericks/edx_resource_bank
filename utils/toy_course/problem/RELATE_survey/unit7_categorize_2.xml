@@ -1,0 +1,35 @@
+<problem attempts="0" show_answer="never" display_name="Categorization 2">
+
+<p>Please examine the problem below.</p>
+
+<table border="1">
+<tr>
+	<td>
+
+	<img src="/static/images/survey/categorize_2.png" width="325" />
+
+	<p>The block m<sub>2</sub> moves a distance L up the slope as m<sub>1</sub> moves downward. You may ignore friction and assume that the system is initially at rest.
+What is the final velocity of the system in terms of m<sub>1</sub>, m<sub>2</sub>, g, and \(\theta\)?</p>
+
+	</td>
+</tr>
+</table>
+
+<p>How do you <i>classify</i> this problem in your mind? Write a word or short phrase in each box below. Please put the response with the greatest descriptive power to you in the top box.</p>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+<stringresponse answer="It's a survey. There is no right answer!">
+	<textline size="50"/>
+</stringresponse>
+
+</problem>
+
+
+

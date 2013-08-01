@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="469" alt="Mass and Wheel v2" height="609" src="/static/problems/MIT/rayyan/Physics801/Figures/Mass and Wheel v2.png"/>
+    <hr/>
+    <script type="loncapa/python">
+
+
+</script>
+
+<p>Two engineers are working together in a competition to launch a pumpkin as high as possible using a launching device that must be kept within a certain height. Since the engineers have a height restriction, they want to accelerate the pumpkin to a large speed before releasing it. They decide a good way to get the pumpkin moving fast is to attach the pumpkin to a vertical wheel turned by a motor.</p>
+<p>The first engineer suggests that when the wheel is turning as fast as possible at its constant rate w, the pumpkin can be released so that it goes straight upwards.</p>
+<p>The other engineer gets out a notebook, runs through some physics calculations, and concludes that 
+releasing the pumpkin straight up will not achieve maximum height. If the wheel spins at a constant 
+angular velocity w, at what angle \(\Theta\) should the pumpkin be released to reach the highest 
+distance from the ground?</p>
+<p>In your calculations, use the small angle aproximations for the \(\sin \Theta \) and 
+\(\cos \Theta\), and assume the wheel is spinning quickly. Use g, R, and W in your answer.
+ Hint: what are the necessary terms to keep in your small angle approximation?</p>
+
+    <formularesponse answer="g/(R*W^2)" samples="g,W,R@9.8,10,1:9.8,100,5#4">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+      </problem>
+</html>

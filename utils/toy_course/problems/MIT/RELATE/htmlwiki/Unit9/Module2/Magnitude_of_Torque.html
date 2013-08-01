@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Finding the Magnitude of Torque</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>Finding the Magnitude of the Torque</h3>
+<p>The magnitude of the torque about the axis passing through point <i>Q</i> is given by:</p>
+<p>\(\mathcal{}|\vec{\tau}_Q| = r F \sin\theta\)</p>
+<p>where the angle <i>&#952;</i> is the angle between the position vector and the force vector.</p>
+<p>This angle should technically be found by placing the tail of the position vector on the tail of the force vector, then measuring counter-clockwise from the position vector to the force vector. Equivalently, we can draw a line along the position vector as indicated by the dashed line in the figure. The angle between the dashed line and the force is the angle between <b>r</b> and <b>F</b>. This is summarized in the 3 steps shown in the figure below for the case when the vectors <b>r</b> and <b>F</b> make an angle smaller than 90&deg;.</p>
+<p><br/><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/torqueDefinition1b.png"/></p>
+<p>In the following example, the angle between the position vector and the force is larger than 90&deg;. To find this angle draw the dashed line along the position vector. The angle between the dashed line and the force is the angle <i>&#946;</i> and is the one that should be used in the expression of the magnitude of the torque: <i>&#964;<sub>Q</sub> = rF sin&#946;</i>. However, the angle <i>&#946;</i> is the supplementary angle of the angle <i>&#952;</i>: <i>&#946;</i> + <i>&#952;</i> = 180&deg;. Using the fact that the sine of supplementary angles is the same, sin <i>&#946;</i> = sin <i>&#952;</i>, we have that the magnitude of the torque about the axis is given by: <i>&#964;<sub>Q</sub> = r F sin &#952;</i>. That is, the sine of the smallest angle in the figure.</p>
+<p><br/><img src="/static/problems/MIT/analiab/Figures/Torquedefinition023c.png"/></p>
+<p><br/>In summary: to calculate the magnitude of the torque always take the sine of the smallest angle between the force and the line along the position vector. Then determine the sign of the torque from the sense of rotation (counter-clockwise is positive).</p>
+
+<h3>Parsing the Magnitude</h3>
+<p>It is sometimes useful to associate the sin&#952; portion of the formula for the magnitude of the torque with either the force or the position. 
+These two possible associations lead to two terms that are often used in describing the rotational effects of a force: tangential force and moment arm.</p>
+
+<table border="1" width="100%">
+<tr>
+  <th>
+  <b>Tangential Force: \(F_{\perp} = F \sin\theta \)</b>
+  </th>
+  <th>
+  <b>Moment arm: \(r_{\perp} = r \sin\theta\) </b>
+  </th>
+</tr>
+<tr>
+  <td width="50%">
+  <p>We can group the factors in the magnitude of the torque in the following way:
+  </p>
+  <p>
+  \(\mathcal{}|\vec{\tau}_Q| = r(F \sin\theta) \equiv rF_{\perp} \)
+  </p>
+  <p>where we have defined the tangential component of <i>F</i> as <i>F</i>sin<i>&#952;</i>, 
+  or the component of <i>F</i> perpendicular to <i>r</i>. Note that the perpendicular
+  component of the force is the only component that can produce any rotation.
+  </p>
+  </td>
+  <td width="50%">
+  <p>We may instead group the factors as:
+  </p><br/>
+  <p>
+  \(\mathcal{}|\vec{\tau}_Q| = F (r\sin\theta) \equiv F r_{\perp} \)
+  </p><p>
+  where we have defined a perpendicular component of r, called the moment arm. 
+  The moment arm can be thought of as the perpendicular distance between the axis 
+  of rotation and the line of action of the force. The line of action is the line 
+  along which the force is applied, indicated by the dashed line shown in the figures 
+  below.
+  </p>
+  </td>
+</tr>
+<tr>
+  <td>
+  <img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/Torquedefinition03.png"/>
+  </td>
+  <td>
+  <img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/Torquedefinition04.png"/>
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
+

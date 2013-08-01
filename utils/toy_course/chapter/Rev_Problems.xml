@@ -1,0 +1,17 @@
+<chapter display_name="Problems for Review">   
+	<sequential graded = "true" display_name="Review_Problems">
+		<problem showanswer="attempted" display_name="Problem 1: Pendulum" filename="MIT/rayyan/check_points/BK/BK143.problem"/>
+		<problem showanswer="attempted" display_name="Problem 2" filename="MIT/rayyan/problemset/hw11/U11_problem2.problem"/>
+		<problem showanswer="attempted" display_name="Problem 3: Ranking the heat in inelastic collisions" filename="MIT/boriskor/Momentum/Ranking Heat in Collision.problem"/>
+		<problem showanswer="attempted" display_name="Problem 4: Block slides down one movable prism then slides up the other movable prism" filename="MIT/boriskor/Multiconcept Problems/Block and two sliding prisms.problem"/>
+<!-- This is in Unit 14		<problem showanswer="attempted" display_name="Problem 5:Changing tension in a swinging simple pendulum" filename="MIT/boriskor/Multiconcept Problems/Changing tension in a swinging pendulum.problem"/> -->
+		<problem showanswer="attempted" display_name="Problem 6: Cylinder rolls down an incline and then up the other incline" filename="MIT/boriskor/Multiconcept Problems/Cylinder rolls down then up.problem"/>
+		<problem showanswer="attempted" display_name="Problem 7: Two blocks collide at the bottom of a hemispherical cavity" filename="MIT/boriskor/Multiconcept Problems/Two blocks collide at bottom of a hemispherical cavity.problem"/>
+		<problem showanswer="attempted" display_name="Problem 8: Two blocks slide at right angles and collide" filename="MIT/boriskor/Multiconcept Problems/Two blocks move at right angles and collide.problem"/>
+		<problem showanswer="attempted" display_name="Problem 9: Compressing a spring" filename="MIT/rayyan/Physics801/Symbolic/Compresing a spring.problem"/>
+		<problem showanswer="attempted" display_name="Problem 10: Block slides along a horizontal sliding board" filename="MIT/boriskor/Multiconcept Problems/Block pushed a long a movable board.problem"/>
+		<problem showanswer="attempted" display_name="Problem 11: Horizontal meter stick with almost no strings attached" filename="MIT/boriskor/Multiconcept Problems/Meterstick suspended on two strings.problem"/>
+		<problem showanswer="attempted" display_name="Problem 12: Two light bars with masses at the ends swing down and collide inelastically" filename="MIT/boriskor/Multiconcept Problems/Two weighted light bars swinging down and colliding.problem"/>
+		<problem showanswer="attempted" display_name="Problem 13" filename="MIT/boriskor/Multiconcept Problems/Bullet strikes the midpoint of a pivoted vertical bar.problem"/>
+	</sequential>
+</chapter>

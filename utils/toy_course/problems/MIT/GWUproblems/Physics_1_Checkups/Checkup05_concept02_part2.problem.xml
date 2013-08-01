@@ -1,0 +1,22 @@
+<html>
+  <problem>
+
+      
+
+<p>If the string length is changed to 4<i>L</i>, the frequency will: </p>
+				
+<p>
+      <multiplechoiceresponse direction="vertical" randomize="no">
+      <choicegroup type="MultipleChoice">
+        <choice  correct="false" name="1"> increase by a factor of 4. </choice>
+        <choice  correct="false" name="2"> increase by a factor of 2.</choice>
+        <choice  correct="false" name="3">  decrease by a factor of 4.</choice>
+        <choice  correct="true" name="4"> decrease by a factor of 2.</choice>
+        <choice  correct="fasle" name="5"> none of the above.</choice>  
+      </choicegroup>
+    </multiplechoiceresponse>
+</p>        
+
+     
+  </problem>
+</html>

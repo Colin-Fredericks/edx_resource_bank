@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+One end of a horizontal spring is attached to a wall, while the other end is attached to a box that rests on a frictionless surface. The box is displaced from the equilibrium position and at t = 0 is released from rest. Select how the frequency will be affected if the following quantities are altered as below.
+</p>
+
+    <optionresponse randomize="yes">
+      <ul>
+        <li>
+
+            <p>Doubling the spring constant.</p>
+
+          <optioninput location="random" name="Foil1" options="('Increase','Decrease','Will Not Change')" correct="Increase">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Doubling the mass of the box.</p>
+
+          <optioninput location="random" name="Foil2" options="('Increase','Decrease','Will Not Change')" correct="Decrease">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Decreasing the initial displacement of the box.</p>
+
+          <optioninput location="random" name="Foil3" options="('Increase','Decrease','Will Not Change')" correct="Will Not Change">
+</optioninput>
+        </li>
+        <li>
+
+            <p>Tilting the frictionless surface such that the wall is higher than the box.</p>
+
+          <optioninput location="random" name="Foil4" options="('Increase','Decrease','Will Not Change')" correct="Will Not Change">
+</optioninput>
+        </li>
+      </ul>
+      <hintgroup>
+
+          <br/>
+
+      </hintgroup>
+    </optionresponse>
+  </problem>
+</html>

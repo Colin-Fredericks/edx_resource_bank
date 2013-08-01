@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Standard two-acceleration race problem. -->
+
+<problem>
+
+<script type="loncapa/python">
+import random
+
+a1 = random.randrange(20,26,1)/10
+a2 = random.randrange(27,31,1)/10
+t = random.randrange(3,7,1)
+
+L = (0.5)*a1*((t*math.sqrt(a2))/(math.sqrt(a2)-math.sqrt(a1)))**2
+</script>
+
+<p>Two cyclists are in a race. One cyclist knows that he is slower, so he cheats: he removes the faster cyclist’s bike chain. The cheater starts from rest immediately with acceleration $a1 m/s<sup>2</sup>. The faster cyclist has to take $t seconds to replace her bike chain. She then follows (also from rest) with acceleration $a2 m/s<sup>2</sup>. Assume that both cyclists accelerate smoothly and that they do not reach their maximum speeds during this race.</p>
+
+<p>What is the maximum length that the race can be (in meters) in order for the slower cyclist to win?</p>
+
+<numericalresponse answer="$L">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+<p>Setting up kinematics equations for each cyclist gives \( x_1 = \frac{1}{2} a_1 t^2 \) for the cheater and \( x_2 = \frac{1}{2} a_2 (t-t_0)^2 \) for the faster cyclist. \(t_0\) is the time delay.</p>
+<p>To represent the time when the faster cyclist catches up, set the distances equal to each other. Solve for time, and plug it back into either equation to solve for x. This will be the location where the faster cyclist catches up.</p>
+</div>
+</solution>
+
+</problem>
+
+</html>

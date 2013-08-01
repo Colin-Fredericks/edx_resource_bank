@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+ Trying option response problem x
+<optionresponse direction="vertical" randomize="yes">
+
+<optioninput inline="1" options="('the rubber block','the plastic box','both move at the same time')" correct="the plastic box"/>
+
+b. The location of the earth is: 
+<optioninput inline="1" options="('the rubber block','the plastic box','both move at the same time')" correct="the plastic box"/>
+
+c. The location of the earth is: 
+
+<optioninput inline="1" options="('the rubber block','the plastic box','both move at the same time')" correct="the plastic box"/>
+
+</optionresponse>
+
+</problem>
+</html>
+

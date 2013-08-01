@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Mechanical Energy Model</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Mechanical Energy Model</h2>
+<p>In this module we introduce the Mechanical Energy Model.</p>
+
+<h3> Definition of Mechanical Energy</h3>
+<p>Mechanical energy is defined as the sum of the kinetic and potential energies of a system:</p>
+<p>\(E^{mech} = K + U\)</p>
+<p>The mechanical energy describes the state of the system at a given instant of time. The kinetic energy is the motion descriptor and the potential energy describes the configuration of the system or the relative position of the different system constituents (eg. the height of a ball with respect to the center of the Earth, the distance between two blocks connected by a spring).</p>
+
+<h3> Structure of the Model</h3>
+
+<h4> Mathematical Representation</h4>
+<p>The mechanical energy of a system is changed if there is:</p>
+<ol style="list-style-type:decimal">
+	<li><b>Work</b> done on the system by <b>Internal Non-Conservative Forces</b>: <i><b>W<sub>f,i</sub><sup>Internal NC</sup></b></i></li>
+	<li><b>Work</b> done on the system by <b>External Forces</b>:<i><b>W<sub>f,i</sub><sup>External</sup></b></i></li>
+</ol>
+<p>The mechanical energy changes from its initial value to its final value following the law of change:</p>
+<p><br/>\(E^{mech}_{f} = E^{mech}_{i} + W_{f,i}^{Internal NC} + W_{f,i}^{External}\)</p>
+<p><br/>Note that the <i>internal conservative</i> work does not appear in this equation, because it does not change the total mechanical energy of a system. It merely moves energy from potential to kinetic or vice versa.  Thus, internal conservative work is <i>automatically</i> accounted for by tracking the potential energy. The above equation emphasizes that external forces change the mechanical energy, even if they are conservative. The only exception is when we allow the concept of a gravitational field into our system and then use the potential energy \(mgh\). (Note that this is only possible because the earth is treated as immovable due to its huge mass.)</p>
+<p><b>Traditional form of Mechanical Energy Law</b></p>
+<p>Many authors replace the two types of work in the  equation above by a single one, usually labeled "non-conservative":</p>
+<p><br/>\(W_{f,i}^{NC} =  W_{f,i}^{Internal NC} + W_{f,i}^{External}\)</p>
+<p><br/>The law of change of the mechanical energy becomes:</p>
+<p><br/>\(E^{mech}_{f} = E^{mech}_{i} + W^{NC}_{f,i}\)</p>
+<br/>
+<!--
+<p>We will adopt this shorter representation of the work, <i>W<sub>f,i</sub><sup>NC</sup></i>, 
+but keep in mind that the terms responsible for the change of the mechanical energy of a 
+system are <i>W<sub>f,i</sub><sup>InternalNC</sup></i> and
+ <i>W<sub>f,i</sub><sup>External</sup></i> appearing in the law of change of the 
+ <b>Mechanical Energy, External Work and internal and Non Conservative Work</b> model.</p>
+<p><br/>We also need to be aware that if a conservative force is taken to be an external force, then its work can change the mechanical energy of the system. As a result, it will be included in the term of the non conservative work, <i>W<sub>f,i</sub><sup>NC</sup></i>, despite the fact that its work is independent of the path.</p>
+-->
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>When can a conservative force change mechanical energy
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>Some authors suggest that spring forces are always conservative.  This is not quite true: if a spring is attached to the system at one end and to something outside the system on the other end, the spring force may change the mechanical energy of the system because <b>W<sub>f,i</sub><sup>external</sup></b> is not zero.
+</td></tr></table>
+</body>
+</html>
+

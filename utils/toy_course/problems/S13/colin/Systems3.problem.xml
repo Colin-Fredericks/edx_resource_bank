@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<!-- Systems Problems #3 -->
+<problem>
+
+<img src="/static/problems/S13/colin/images/Systems3.png" width="270" height="180" />
+
+<p>In the image above, a planet orbits a star, and a moon orbits the planet. Assume there are no other planets in this solar system.</p>
+
+<p>Which choice of system will <b>not</b> be accelerating?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">Only the moon.</choice>
+			<choice correct="false">Only the planet.</choice>
+			<choice correct="false">Only the star.</choice>
+			<choice correct="false">A system composed of the planet and moon.</choice>
+			<choice correct="false">A system composed of the star and moon.</choice>
+			<choice correct="false">A system composed of the planet and star.</choice>
+			<choice correct="true">A system composed of all three objects.</choice>
+			<choice correct="false">Every possible system of these objects will be accelerating.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

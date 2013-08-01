@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 2 -->
+
+<problem>
+
+	<p>An astronaut is holding onto a long aluminum antenna attached to a deep-space probe which is floating freely far from any other object. The astronaut is initially at rest, but then begins to climb out along the antenna.</p>
+
+	<h3>Part 1</h3>
+	<p>Which of the following statements accurately describes the linear momentum of the system containing the astronaut, antenna and space-probe during a time interval that starts when the astronaut is at rest and ends when the astronaut is in the process of climbing the antenna?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The linear momentum of the astronaut, antenna and space-probe system is conserved.</choice>
+			<choice location="random" correct="false">The linear momentum of the astronaut, antenna and space-probe system is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">There are no external forces acting on the system.</choice>
+			<choice location="random" correct="false">The astronaut’s work increased the system’s momentum.</choice>
+			<choice location="random" correct="false">Linear momentum is always conserved.</choice>
+			<choice location="random" correct="false">No friction is present.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>Which of the following statements accurately describes the mechanical energy of the astronaut, antenna and space-probe system during a time interval that starts when the astronaut is at rest and ends when the astronaut is in the process of climbing the antenna?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The mechanical energy of the astronaut, antenna and space-probe system is conserved.</choice>
+			<choice location="random" correct="true">The mechanical energy of the astronaut, antenna and space-probe system is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>My answer to part 3 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">There are no external forces acting on the system.</choice>
+			<choice location="random" correct="true">The astronaut’s work increased the system’s mechanical energy.</choice>
+			<choice location="random" correct="false">Mechanical energy is always conserved.</choice>
+			<choice location="random" correct="false">No friction is present.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

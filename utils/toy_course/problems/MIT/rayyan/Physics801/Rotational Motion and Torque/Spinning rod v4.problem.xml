@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/Physics801/Figures/Spinning_rod_v4.png"/>
+    <script type="loncapa/python">
+
+
+</script>
+    <hr/>
+
+      <p>
+      A long narrow uniform stick of length D and mass M lies motionless on a smooth icy surface contained in the (x,y) plane. The moment of inertia of the stick about 
+      its center of mass is \(I_{cm}\). A puck of mass m  slides without spinning on the ice with a speed of v<sub>i</sub> toward the stick. After hitting
+       one end of the stick the puck moves with speed v<sub>f</sub> without changing direction as shown in the picture. The radius of the puck is 
+       much smaller than the length of the stick. (Gravity is into the screen).
+</p>
+
+<b>Part a:</b><br/>
+<p>
+Which of the following statements about the <i>puck-stick system</i> are true or false?
+</p>
+<p>
+1st Statement: The linear momentum of the system is constant.
+</p>
+
+<optionresponse>
+      <optioninput options="('true','false')" correct="true"/>
+    </optionresponse>
+
+<p>
+2nd Statement: The angular momentum with respect to any given point is constant.
+</p>
+
+<optionresponse>
+      <optioninput options="('true','false')" correct="true"/>
+    </optionresponse>
+
+<p>
+3rd Statement: The angular momentum is constant only with respect to the stick-puck’s center of mass.
+</p>
+<optionresponse>
+      <optioninput options="('true','false')" correct="false"/>
+    </optionresponse>
+
+<b>Part b:</b><br/>
+What is \(v_{s}\), the speed of the center of mass of the stick, after the collision? 
+<br/>
+\(v_s=\)    
+    <br/>
+    <formularesponse answer="m*(vi-vf)/M"  samples="vi,vf,m,M@1,1,1,1:30,30,30,30#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+
+<b>Part c:</b><br/>
+If the moment of inertia of the stick about its center of mass is I<sub>cm</sub> =MD<sup>2</sup>/12, what is the angular velocity of the stick after the collision? 
+Enter your answer in terms of some or all of the variables m, M, vi, vf and D.
+<br/>
+\(\omega=\)    
+    <br/>
+    <formularesponse answer="6*m*(vi-vf)/(D*M)"  samples="vi,vf,m,M,D@1,1,1,1,1:30,30,30,30,30#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+
+  </problem>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 2 </title>
+
+<p>With respect to the axis passing through the center of the yo-yo, what is the magnitude of the net torque acting on the yo-yo? Take clockwise rotation to be the positive direction.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \( (mg - T)r \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( (mg + T)r \)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  Zero
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                  \( Tr     \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( mgr \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( 2Tr \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( 2mgr \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+</problem>
+</html>

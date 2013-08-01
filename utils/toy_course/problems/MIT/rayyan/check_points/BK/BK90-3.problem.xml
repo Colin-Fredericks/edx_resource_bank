@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 3 </title>
+
+<p>What is the relationship between the magnitude of the translational acceleration of 
+the yo-yo <i>a</i> and the magnitude of its angular acceleration \(\alpha\)?</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( a= \alpha R \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( a= \alpha /R \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( a= 2\alpha R    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( a= 2\alpha /R \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( a= \alpha R /2 \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( a= \alpha/(2R) \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+      </problem>
+</html>

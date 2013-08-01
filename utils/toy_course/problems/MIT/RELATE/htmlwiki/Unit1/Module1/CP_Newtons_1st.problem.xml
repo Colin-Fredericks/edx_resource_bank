@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Newton's First Law</title>
+
+      <p><h3>Check Your Understanding of Newton's First Law</h3>The pictures below are motion diagrams tracing the motion of a particle over five time steps. You should think of them as strobe pictures or frame-by-frame videos, where the motion is captured at five equally spaced times. Which of the motion diagrams shown could represent an object that is experiencing no interactions? <b>Mark "true" for any object that could be experiencing no interactions.</b></p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ol>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/c/cf/Unit1Mod1Motion1.png/100px-Unit1Mod1Motion1.png"/>  
+          <br/>
+          <optioninput location="random" name="Foil1" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/c/c8/Unit1Mod1Motion2.png/160px-Unit1Mod1Motion2.png"/>
+               <br/>   <br/>
+          <optioninput location="random" name="Foil2" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/3/35/Unit1Mod1Motion3.png/160px-Unit1Mod1Motion3.png"/>
+                <br/>  <br/>
+          <optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/5/5e/Unit1Mod1Motion4.png/100px-Unit1Mod1Motion4.png"/>
+
+          <br/>
+          <optioninput location="random" name="Foil4" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/d/d0/Unit1Mod1Motion5.png/100px-Unit1Mod1Motion5.png"/>
+                  <br/>
+          <optioninput location="random" name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+        </li>
+        <li>
+          <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/e/ec/Unit1Mod1Motion6.png/50px-Unit1Mod1Motion6.png"/>
+          <br/>
+          <optioninput location="random" name="Foil6" options="('True','False')" correct="True">
+</optioninput>
+        </li>
+      </ol>
+
+    </optionresponse>
+                          </problem>
+</html>

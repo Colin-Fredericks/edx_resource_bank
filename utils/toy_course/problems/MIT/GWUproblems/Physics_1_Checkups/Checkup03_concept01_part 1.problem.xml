@@ -1,0 +1,20 @@
+<html>
+<problem>
+
+	<p>You drop a ball (initially at rest) from a height of 12 meters above the ground.  You can neglect air resistance.  Which statements are true about this situation?</p>
+
+	<h3>Part 1</h3>
+
+	<optionresponse texlayout="horizontal" randomize="yes">
+		<p>The kinetic energy of the ball will be twice the gravitational potential energy when the ball is at a height of 2 meters</p>
+		<optioninput location="random" name="OneA" correct="False" options="('True','False')"/>
+		<p>The kinetic energy of the ball will be twice the gravitational potential energy when the ball is at a height of 4 meters</p>
+		<optioninput location="random" name="OneB" correct="True" options="('True','False')"/>
+		<p>The kinetic energy of the ball will be twice the gravitational potential energy when the ball is at a height of 6 meters</p>
+		<optioninput location="random" name="OneC" correct="False" options="('True','False')"/>
+		<p>The kinetic energy of the ball will be twice the gravitational potential energy when the ball is at a height of 8 meters</p>
+		<optioninput location="random" name="" correct="False" options="('True','False')"/>
+	</optionresponse>
+
+</problem>
+</html>

@@ -1,0 +1,20 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What is your highest degree of education?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="PhD"><text>I have a PhD, MD, or equivalent</text></choice>
+      <choice correct="true" name="Master"><text>I have a Masters degree or equivalent</text></choice>
+      <choice correct="true" name="BS"><text>I have graduated from a four-year college or university</text></choice>
+      <choice correct="true" name="AS"><text>I have graduated from a two-year college</text></choice>
+      <choice correct="true" name="College"><text>I am in college, beyond the first year</text></choice>
+      <choice correct="true" name="College_Frosh"><text>I am a college freshman</text></choice>
+      <choice correct="true" name="HS_Grad"><text>I have graduated from high school</text></choice>
+      <choice correct="true" name="HS_Senior"><text>I am in my last year of high school or secondary school</text></choice>
+      <choice correct="true" name="HS"><text>I am in high school or secondary school</text></choice>
+      <choice correct="true" name="middle_school"><text>I am in middle school</text></choice>
+      <choice correct="true" name="elementary_school"><text>I am in elementary or grammar school</text></choice>
+      <choice correct="true" name="no_school"><text>I have no formal schooling</text></choice>
+      <choice correct="true" name="homeschool"><text>I was home-schooled</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

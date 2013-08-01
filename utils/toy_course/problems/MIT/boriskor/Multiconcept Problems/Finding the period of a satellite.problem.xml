@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>The acceleration due to gravity on the surface of a planet of radius \(r\) is equal to \(g\). A satellite is revolving at the altitude \(2r\) above the surface of the planet. Find the orbital period of the satellite.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" loncapaid="1r" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(T=2\pi \sqrt{27r/g}\)
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(T=2\pi \sqrt{3r/2g}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(T=2\pi \sqrt{r/2g}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(T=2\pi \sqrt{2r/3g}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(T=2\pi \sqrt{9r/g}\)
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(T=2\pi \sqrt{r/9g}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

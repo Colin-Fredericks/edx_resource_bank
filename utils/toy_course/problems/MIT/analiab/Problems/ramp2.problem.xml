@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+from __future__ import division
+from loncapa import *
+a= "F-m*g*sin(alpha)"
+
+</script>
+ 
+
+      <p>
+      <b>Part b.</b> Let's assume that the applied force is such that F &gt; \(mg\sin\alpha\). What is the magnitude 
+      of the force of static friction? If needed, to enter \(\mu_s\), \(\mu_k\), \(\sin\alpha\), \(\cos\alpha\) or 
+      \(\tan\alpha\) write mus, muk, sin(alpha), cos(alpha) or tan(alpha), respectively.</p>
+    
+    <br/>
+      <formularesponse answer="$a" samples="mus,m,g,alpha,F,muk@1,1,1,1,1,1:10,10,10,10,10,10#4" loncapaid="15">
+        <responseparam default="0.00001" type="tolerance" name="tol" description="Numerical Tolerance"/>
+        <textline readonly="no" size="25" dojs="math"/>
+        <hintgroup showoncorrect="no">
+          
+            <br/>
+          
+        </hintgroup>
+      </formularesponse>
+ 
+ </problem>
+ </html>

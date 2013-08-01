@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Static friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Gravitational_intera').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Gravitational_intera.html');
+$('#Elastic_restoring_in').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Elastic_restoring_in.html');
+$('#Normal_force').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Normal_force.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>The specific manifestation of friction which attempts to resist efforts to move an object that is currently at rest with respect to a surface. If possible, static friction provides just enough force to keep the object stationary, and no more. When the net force attempting to create sliding motion exceeds a certain limiting value proportional to the <!--<a id="go" rel="leanModal" href="#Normal_force" name="Normal_force" onclick="domath()">-->normal force<!--</a>--> exerted by the surface on the object, static friction will be unable to prevent motion. 
+</p>
+<h2> Static Friction as a Force</h2>
+<h4> Limiting Size of Static Friction</h4>
+<p>Static friction attempts to keep objects in contact from sliding along the surface of contact.  Clearly, friction is incapable of preventing motion if a sufficiently large force attempts to cause slippage.  This implies a limit to the strength of the static friction force.  The limiting behavior is well approximated by the mathematical expression:
+</p><p><m>$ f^{s} \le \mu_{s} N$</m>
+</p><p>where &#956;<sub>s</sub> is the coefficient of static friction and <i>N</i> is the normal force exerted on the object by the surface which is creating the friction, which is a measure of the strength of the contact between the object and the surface.  The coefficient of static friction is a dimensionless number, usually less than 1.0 (but not required to be less than 1.0). Rough or sticky surfaces will yield larger coefficients of friction than smooth surfaces.
+</p>
+<h4> Static Friction as Constraint Force</h4>
+<p>In contrast to <!--<a id="go" rel="leanModal" href="#Gravitational_intera" name="Gravitational_intera" onclick="domath()">-->gravitational<!--</a>--> and <!--<a id="go" rel="leanModal" href="#Elastic_restoring_in" name="Elastic_restoring_in" onclick="domath()">-->elastic restoring<!--</a>--> forces, static friction is not governed by a force law.  Instead, it functions as a constraint, taking whatever size is necessary to prevent motion along a surface (provided it is capable of doing so).  Thus, the exact size of the static friction force in a given situation is generally found by calculating the net force along the surface <i>in the absence of friction</i> and then comparing it to the maximum value of the static friction force.  If the maximum possible static friction force is large enough to reduce the net force in the absence of friction to the appropriate value to prevent slippage, then friction will take on that value.
+</p>
+<h2> Static Friction and Energy</h2>
+<h4> Static Friction is Non-Dissipative</h4>
+<p>Static friction is a non-conservative force, and therefore has no associated potential energy.  When static friction is internal, however, it is a non-dissipative force, performing zero net work on the chosen system.  The reason is that static friction guarantees that the two interacting objects will undergo the same displacement.  Thus, the work done on the two objects will cancel by Newton's Third Law.
+</p>
+<h4> Static Friction can Perform External Work</h4>
+<p>As an internal force, static friction does zero net work.  As an external force, however, static friction can do work.  This may seem odd, since "static" generally implies no motion.  It is important to remember, however, that static in this context means static relative to the surface of contact.  Thus, static friction keeps a child in place on their sled even when the sled itself is moving!  If the system is taken to be the child alone, the static friction of the sled performs positive work on the child.
+</p>
+<!--<div id="Gravitational_intera" class="popup"></div>
+<div id="Elastic_restoring_in" class="popup"></div>
+<div id="Normal_force" class="popup"></div>-->
+</body>
+</html>

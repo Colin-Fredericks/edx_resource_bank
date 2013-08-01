@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Center of mass 2</title>
+
+      <p>A uniform wire is bent as shown. Which of the points shown in the diagram best shows the location of the center of mass of the wire? The dotted line shown connects the midpoints of the straight pieces of the wire.
+
+</p>
+      <br/>
+
+    <img width="450" alt="BK53" src="/static/problems/MIT/rayyan/check_points/Pictures/BK53.png"/>
+        <br/>
+
+      <br/>
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                point A
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                point B
+
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+
+                point C
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+point D
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+point E
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

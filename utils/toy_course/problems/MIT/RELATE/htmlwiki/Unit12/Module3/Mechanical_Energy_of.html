@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Mechanical Energy of Orbits</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>Mechanical Energy of Orbits</h2>
+<h3> Learning Goals</h3>
+
+<ul style="list-style:disc outside none"><li>Write the equation of mechanical energy conservation for a Keplerian orbit.
+</li></ul>
+<h3> Conservation of Mechanical Energy in Keplerian Orbits</h3>
+<p>The only interaction involved in a Keplerian orbit is the internal and conservative gravitational interaction between the planet and the massive sun. Therefore, the conditions for conservation of mechanical energy are met.
+</p>
+
+<h3> Form of the Mechanical Energy</h3>
+
+<p>Since the mass <i>M</i> is fixed at the axis of rotation, it has no kinetic energy. Thus, the mechanical energy of the system can be expressed:
+</p><p>\( E = \frac{1}{2}mv^{2} - \frac{GMm}{r}\)
+</p><p>where <i>v</i> is the speed of <i>m</i>. 
+</p>
+
+<h3> Total Mechanical Energy of Orbit in Terms of Semimajor Axis</h3>
+
+<p>A simple expression for the total mechanical energy of the orbit can be obtained by evaluating the mechanical energy at the apoapsis and periapsis. At these extrema, the mechanical energy and angular momentum have a very simple relationship, which can be seen by multiplying the mechanical energy by <i>r</i><sup>2</sup>:
+</p><p>\( E r^{2}_{\rm ex} = \frac{1}{2}mv^{2}_{\rm ex}r^{2}_{\rm ex} - GMmr_{\rm ex} = \frac{L^{2}}{2m} - GMmr_{\rm ex}\)
+</p><p>We showed in the previous module, however, that angular momentum is a constant of the motion. We can therefore solve the mechanical energy equation for the angular momentum at periapsis and apoapsis and set these equal to obtain:
+</p><p>\( E r^{2}_{a} + GMmr_{a} = E r^{2}_{p} + GMmr_{p} \)
+</p><p>Solving for <i>E</i> gives:
+</p><p>\( E = \frac{GMm (r_{p} - r_{a})}{r^{2}_{a} - r^{2}_{p}} = -\frac{GMm}{r_{a}+r_{p}}\)
+</p><p>Using the fact that the apoapsis distance plus the periapsis distance equals the full major axis distance, we can rewrite this expression to give an expression for the energy as a function of the semi-major axis distance <i>a</i>:
+</p><p>\( E = -\frac{GMm}{2a}\)
+</p><p>Note that the total energy of the bound orbit is negative.
+</p>
+
+<h3> Comparison with Circular Case</h3>
+
+<p>A special case of the Keplerian Orbit Model is a perfectly circular orbit. Because the dynamics of the circular case are very simple, it is enlightening to examine the energy of a circular orbit. 
+</p><p>For a circular orbit, the velocity can be determined using the Uniform Circular Motion model. The motion will necessarily be uniform, since the centripetal force provided by gravity will be constant if the radius of the motion is constant. Thus:
+</p><p>\(F= ma = \frac{mv^{2}_{\rm circ}}{r} = \frac{GMm}{r^{2}} \)
+</p><p>Rearranging the above expression and multiplying by 1/2 gives the kinetic energy of a circular orbit:
+</p><p>\( \frac{1}{2} mv^{2}_{\rm circ} = \frac{GMm}{2r}\)
+</p><p>Of course, since the radius is constant, the potential energy of the motion is simply:
+</p><p>\( U_{\rm circ} = -\frac{GMm}{r} \)
+</p><p>Thus, for a circular orbit, the kinetic energy is 1/2 the size of the potential energy. Adding this kinetic energy to the potential energy, <i>remembering that the potential energy is negative</i>, gives:
+</p><p>\( E = + \frac{GMm}{2r} - \frac{GMm}{r} = - \frac{GMm}{2r}\)
+</p><p>which is consistent with the more general expression derived above.
+</p>
+
+<p>Note: In the elliptical case, a very powerful relationship derived in advanced classical mechanics &mdash; the Virial Theorem &mdash; says that the time-averaged kinetic energy will be exactly half the size of the potential energy. Of course, this is not true at every instant. You can see this because the total energy of an elliptical orbit with semi-major axis <i>a</i> is the same as that of a circular orbit of radius <i>a</i>, but the elliptial orbit will give a potential energy that varies throughout the motion. At the periapsis, the potential energy is larger in size than it would be in a circle of radius <i>a</i>, but at apoapsis the potential energy will be smaller in size than it would be in a circle. 
+</p>
+
+</body>
+</html>
+

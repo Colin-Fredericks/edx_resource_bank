@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Where do you plan to most frequently access the edX website?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="home"><text> At my home</text></choice>
+      <choice correct="true" name="friend_or_family"><text> At the home of a friend or family member</text></choice>
+      <choice correct="true" name="school"><text> At school</text></choice>
+      <choice correct="true" name="public_space"><text> Internet café or other public space</text></choice>
+      <choice correct="true" name="other"><text> Other ______</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <p>If you answered other, where do you plan to most frequently access the edX website?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

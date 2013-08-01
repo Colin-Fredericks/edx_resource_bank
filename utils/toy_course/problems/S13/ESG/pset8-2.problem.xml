@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+<!-- Checkpoint 19 -->
+<problem>
+
+	<h2>Checkpoint 19</h2>
+	<p>The system shown in the diagram contains two blocks, of masses M and 3M, connected by a light string over a pulley of radius r.  The pulley’s rotational inertia about its center is I. The block of mass 3M is free to slide on a horizontal frictionless surface and the pulley is free to rotate on a frictionless fixed horizontal axle passing through its center. The string connecting the blocks does not slip on the pulley. The system is released from rest.</p>
+	<script type="loncapa/python">
+alpha = "M*g/(4*M+(I/r^2))"
+	</script>
+	<img src="/static/problems/S13/ESG/images/8-2.png" />
+
+		<br/>
+		Find the angular acceleration \(\alpha\) of the pulley in terms of M, I, r, and g.
+		<br/>
+
+	<formularesponse samples="M,g,I,r@1,2,1,1:3,4,5,5#10" answer="$alpha">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

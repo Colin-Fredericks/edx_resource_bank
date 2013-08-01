@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/43-two blocks incline and pulley.png" alt="Two blocks, an inclined plane and a pulley"/>
+        <br/>
+
+      <p>
+In the diagram, block \(3M\) slides downward without friction. The string connecting blocks \(3M\) and \(M\) is ideal. The pulley, a uniform solid disc of mass \(M\) and radius \(r\), rotates without slipping. Find the acceleration of block \(3M\).
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                \(a=(2g/9)(3\sin \theta -1)\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(a=(3g/5)(2\sin \theta +1)\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(a=(g/3)(\sin \theta +1)\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \(a=(2g/9)(3\cos \theta -1)\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(a=(3g/5)(2\cos \theta +1)\)
+
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+                \(a=(g/3)(\cos \theta +1)\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

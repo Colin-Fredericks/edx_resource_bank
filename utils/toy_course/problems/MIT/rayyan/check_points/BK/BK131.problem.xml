@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Rod Pendulum </title>
+    <script type="loncapa/python">
+
+#Enter the computations here
+m = random.randrange(4, 12, 1)/10
+L = random.randrange(6, 11, 1)/10
+time = ((3.14159)/2)*math.sqrt((7* L)/(12*9.8))
+
+</script>
+
+<p>A uniform rod of mass m = $m kg and length L=$L meters is pivoted in the vertical plane at the point located a distance L/3 from its center of mass. Initially, the rod is at rest at its stable equilibrium position. Then the bottom end is pulled sideways and released. How long would it take the bottom end of the rod to return to the equilibrium position? The acceleration due to gravity is 9.80 m/s<sup>2</sup>. </p>
+
+      \(t=\)
+
+      <numericalresponse answer="$time" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+<!-- Systems Problems #4 -->
+<problem>
+
+<img src="/static/problems/S13/colin/images/Systems4.png" width="330" height="170" />
+
+<p>In the image above, block 1 is stacked on top of block 2. The blocks are at rest on a flat plane, with gravity present.</p>
+
+<p>We want to choose a system that will allow us to find the normal force (or contact force) between blocks 1 and 2. Assuming we know 
+the masses of the objects and the contact force between the table and block 2, what system will let us do this?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false"><text>Only a system with block 1.</text></choice>
+			<choice correct="false"><text>Only a system with block 2.</text></choice>
+			<choice correct="true"><text>Either a system with block 1 <i>or</i> a system with block 2.</text></choice>
+			<choice correct="false"><text>Only a system with both blocks.</text></choice>
+			<choice correct="false"><text>No choice of system will let us find this.</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

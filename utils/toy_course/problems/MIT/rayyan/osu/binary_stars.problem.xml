@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/binary_stars.png" alt="binary_stars" height="250"/>
+
+      <p><br/>
+The figure shows a binary star system. The mass of star 2 is twice the mass of star 1. Compared to F(1 on 2), the magnitude of the force F(2 on 1) is:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              one quarter as big          
+        </choice>
+        <choice name="foil2" correct="false">
+
+half as big          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              the same size          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              twice as big          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              four  times as big          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

@@ -1,0 +1,268 @@
+<chapter display_name="8: Mechanical Energy and Work">
+	<sequential display_name="Mini Survey 8 - Connections" filename="mini_survey_8" />
+	<sequential display_name="Mechanical Energy and Work" url_name="Mechanical_Energy_and_Work">
+		<vertical display_name="Mechanical Energy and Work">
+			<html display_name="Mechanical Energy and Work" filename="problems/MIT/RELATE/htmlwiki/Unit8/Mechanical_Energy_an_1.html"/>
+			<discussion for="Mechanical Energy and Work" id="MReV_Summer2013_Mechanical_Energy_an_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Work and Kinetic Energy" url_name="Work_and_Kinetic_Energy">
+		<vertical display_name="Work and Kinetic Energy">
+			<html display_name="Work and Kinetic Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module1/Work_and_Kinetic_Ene.html"/>
+			<discussion for="Work and Kinetic Energy" id="MReV_Summer2013_Work_and_Kinetic_Ene" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Kinetic Energy">
+			<problem display_name="Checkpoint 1: Kinetic Energy" filename="MIT/rayyan/check_points/BK/BK62.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Kinetic Energy" id="MReV_Summer2013_BK62" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Work and Energy">
+			<problem display_name="CheckPoint 2: Work and Energy" filename="MIT/rayyan/check_points/BK/BK63.problem" attempts="2"/>
+			<discussion for="CheckPoint 2: Work and Energy" id="MReV_Summer2013_BK63" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Block">
+			<problem display_name="Checkpoint 3: Block" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/Block on Ramp/block_1.problem" attempts="2" weight="1"/>
+			<discussion for="Checkpoint 3: Block" id="MReV_Summer2013_block_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Video: Work Introduction">
+			<html display_name="Video: Work Introduction"  filename="problems/MIT/analiab/Videos/Work_Intro.html"/>
+			<discussion for="Video: Work Introduction" id="MReV_Summer2013_Work_Intro" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Work Done By a Constant Force Along a Straight Line Path" url_name="Work_Done_By_a_Constant_Force_Along_a_Straight_Line_Path">
+		<vertical display_name="Work done by a Constant force on an object moving along a Straight Line Path">
+			<html display_name="Work done by a Constant force on an object moving along a Straight Line Path" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module2/Work_done_by_a_Const_1.html"/>
+			<discussion for="Work done by a Constant force on an object moving along a Straight Line Path" id="MReV_Summer2013_Work_done_by_a_Const_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 5: Two Trucks">
+			<problem display_name="Checkpoint 5: Two Trucks" filename="MIT/rayyan/osu/07_Kinetic Energy and Work/work_KE/work_KE_2.problem" attempts="1"/>
+			<discussion for="Checkpoint 5: Two Trucks" id="MReV_Summer2013_work_KE_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 6: Work">
+			<problem display_name="Checkpoint 6: Work" filename="MIT/rayyan/check_points/BK/BK60.problem" attempts="2"/>
+			<discussion for="Checkpoint 6: Work" id="MReV_Summer2013_BK60" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 7: Work up an incline">
+			<problem display_name="Checkpoint 7: Work up an incline" filename="MIT/rayyan/check_points/BK/BK61.problem" attempts="3"/>
+			<discussion for="Checkpoint 7: Work up an incline" id="MReV_Summer2013_BK61" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="CheckPoint 8: Work by many forces">
+			<problem display_name="CheckPoint 8: Work by many forces" filename="MIT/rayyan/check_points/BK/BK65.problem" attempts="2"/>
+			<discussion for="CheckPoint 8: Work by many forces" id="MReV_Summer2013_BK65" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="CheckPoint 9: Work and Kinetic Energy">
+			<problem display_name="CheckPoint 9: Work and Kinetic Energy" filename="MIT/rayyan/check_points/BK/BK66.problem" attempts="3"/>
+			<discussion for="CheckPoint 9: Work and Kinetic Energy" id="MReV_Summer2013_BK66" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Video: Work - Examples">
+			<html display_name="Video: Work - Examples"  filename="problems/MIT/analiab/Videos/Work_Examples.html"/>
+			<discussion for="Video: Work - Examples" id="MReV_Summer2013_Work_Examples" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Work Done By a Varying Force and Work Along a Changing Path" url_name="Work_Done_By_a_Varying_Force_and_Work_Along_a_Changing_Path">
+		<vertical display_name="Work done by a Varying force and Work along a Changing Path">
+			<html display_name="Work done by a Varying force and Work along a Changing Path" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module3/Work_done_by_a_Varyi_1.html"/>
+			<discussion for="Work done by a Varying force and Work along a Changing Path" id="MReV_Summer2013_Work_done_by_a_Varyi_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Straight Line Path Varying Force">
+			<html display_name="Example: Straight Line Path Varying Force" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module3/IE_Straight_Line_Varying_Force.html"/>
+			<discussion for="Example: Straight Line Path Varying Force" id="MReV_Summer2013_IE_Straight_Line_Varying_Force" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Nonlinear Path Constant Force">
+			<html display_name="Example: Nonlinear Path Constant Force" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module3/IE_Nonlinear_Path_Constant_Force.html"/>
+			<discussion for="Example: Nonlinear Path Constant Force" id="MReV_Summer2013_IE_Nonlinear_Path_Constant_Force" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Work Done by Gravity">
+			<html display_name="Example: Work Done by Gravity" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module3/IE_Work_by_Gravity.html"/>
+			<discussion for="Example: Work Done by Gravity" id="MReV_Summer2013_IE_Work_by_Gravity" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Work Done by a Spring">
+			<html display_name="Example: Work Done by a Spring" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module3/IE_Work_by_Spring.html"/>
+			<discussion for="Example: Work Done by a Spring" id="MReV_Summer2013_IE_Work_by_Spring" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 10: Work by a Varying Force">
+			<problem display_name="Checkpoint 10: Work by a Varying Force" filename="MIT/rayyan/osu/07_Kinetic Energy and Work/work/work_3.problem" attempts="2"/>
+			<discussion for="Checkpoint 10: Work by a Varying Force" id="MReV_Summer2013_work_3" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+<!--		<vertical display_name="Checkpoint 11: Work by a Spring Force">
+			<problem display_name="Checkpoint 11: Work by a Spring Force" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/spring/spring.problem" attempts="2"/>
+			<discussion for="Checkpoint 11: Work by a Spring Force" id="MReV_Summer2013_spring" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 12: Work by a Spring Force">
+			<problem display_name="Checkpoint 12: Work by a Spring Force" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/spring/spring_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 12: Work by a Spring Force" id="MReV_Summer2013_spring_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>-->
+		<vertical display_name="Checkpoint 13: Work and Kinetic Energy">
+			<problem display_name="Checkpoint 13: Work and Kinetic Energy" filename="MIT/rayyan/check_points/BK/BK58.problem" attempts="10"/>
+			<discussion for="Checkpoint 13: Work and Kinetic Energy" id="MReV_Summer2013_BK58" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Video: Work in 3D">
+			<html display_name="Video: Work in 3D"  filename="problems/MIT/analiab/Videos/Work_in_3D.html"/>
+			<discussion for="Video: Work in 3D" id="MReV_Summer2013_Work_in_3D" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Potential Energy" url_name="Potential_Energy">
+		<vertical display_name="Potential Energy">
+			<html display_name="Potential Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module4/Potential_Energy_new.html"/>
+			<discussion for="Potential Energy" id="MReV_Summer2013_Potential_Energy" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Conservative  Forces">
+			<html display_name="Conservative   Forces" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module4/Conservative_Forces.html"/>
+			<discussion for="Conservative  Forces" id="MReV_Summer2013_Conservative_Forces" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		
+         <vertical display_name="Gravitational Potential Energy">
+            <html display_name="Gravitational Potential Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module4/Gravitational_PE.html"/>
+			<discussion for="Gravitational Potential Energy" id="MReV_Summer2013_Gravitational_PE" discussion_category="Mechanical Energy and Work" />
+         </vertical>
+         
+		<vertical display_name="Elastic Potential Energy">
+			<html display_name="Elastic Potential Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module4/Elastic_PE.html"/>
+			<discussion for="Elastic Potential Energy" id="MReV_Summer2013_Elastic_PE" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Potential Energy Curves">
+			<html display_name="Potential Energy Curves" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module4/PE_Curves.html"/>
+			<discussion for="Potential Energy Curves" id="MReV_Summer2013_PE_Curves" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 14: A Child on a Slide">
+			<problem display_name="Checkpoint 14: A Child on a Slide" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/conservation/conservation.problem" attempts="2"/>
+			<discussion for="Checkpoint 14: A Child on a Slide" id="MReV_Summer2013_conservation" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 15: What Quantities are Equal?">
+			<problem display_name="Checkpoint 15: What Quantities are Equal?" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/conservation/conservation_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 15: What Quantities are Equal?" id="MReV_Summer2013_conservation_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 16: What Quantities are Equal?">
+			<problem display_name="Checkpoint 16: What Quantities are Equal?" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/conservation/conservation_2.problem" attempts="3"/>
+			<discussion for="Checkpoint 16: What Quantities are Equal?" id="MReV_Summer2013_conservation_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 17: Snow Slopes">
+			<problem display_name="Checkpoint 17: Snow Slopes" filename="MIT/rayyan/Physics801/Energy/Snow Slopes.problem" attempts="5"/>
+			<discussion for="Checkpoint 17: Snow Slopes" id="MReV_Summer2013_Snow_Slopes" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 18: Spring Potential Energy">
+			<problem display_name="Checkpoint 18: Spring Potential Energy" filename="MIT/rayyan/check_points/BK/BK70.problem" attempts="2"/>
+			<discussion for="Checkpoint 18: Spring Potential Energy" id="MReV_Summer2013_BK70" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Mechanical Energy" url_name="Mechanical_Energy">
+		<vertical display_name="Mechanical Energy">
+			<html display_name="Mechanical Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module5/Mechanical_Energy.html"/>
+			<discussion for="Mechanical Energy" id="MReV_Summer2013_Mechanical_Energy" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Constant Mechanical Energy">
+			<html display_name="Constant Mechanical Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module5/Constant_ME.html"/>
+			<discussion for="Constant Mechanical Energy" id="MReV_Summer2013_Constant_ME" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Video: Wrecking Ball Demo">
+			<html display_name="Video: Wrecking Ball Demo"  filename="problems/MIT/analiab/Videos/Wrecking_Ball_Demo.html"/>
+			<discussion for="Video: Wrecking Ball Demo" id="MReV_Summer2013_Wrecking_Ball_Demo" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Into the Pool">
+			<html display_name="Example: Into the Pool" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module5/IE_Into_the_Pool.html"/>
+			<discussion for="Example: Into the Pool" id="MReV_Summer2013_IE_Into_the_Pool" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Spring has Sprung">
+			<html display_name="Example: Spring has Sprung" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module5/IE_Spring_has_Sprung.html"/>
+			<discussion for="Example: Spring has Sprung" id="MReV_Summer2013_IE_Spring_has_Sprung" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Give it a Kick">
+			<html display_name="Example: Give it a Kick" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module5/IE_Give_it_a_Kick.html"/>
+			<discussion for="Example: Give it a Kick" id="MReV_Summer2013_IE_Give_it_a_Kick" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 19: Dropping Objects">
+			<problem display_name="Checkpoint 19: Dropping Objects" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/PE/PE.problem" attempts="1"/>
+			<discussion for="Checkpoint 19: Dropping Objects" id="MReV_Summer2013_PE" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 20: A Block on a Ramp">
+			<problem display_name="Checkpoint 20: A Block on a Ramp" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/Block on Ramp/block.problem" attempts="2"/>
+			<discussion for="Checkpoint 20: A Block on a Ramp" id="MReV_Summer2013_block" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 21: Final Velocity">
+			<problem display_name="Checkpoint 21: Final Velocity" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/PE/PE_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 21: Final Velocity" id="MReV_Summer2013_PE_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 22: Work by a Pendulum">
+			<problem display_name="Checkpoint 22: Work by a Pendulum" filename="MIT/rayyan/check_points/BK/BK67.problem" attempts="3"/>
+			<discussion for="Checkpoint 22: Work by a Pendulum" id="MReV_Summer2013_BK67" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 23: Work by Friction">
+			<problem display_name="Checkpoint 23: Work by Friction" filename="MIT/rayyan/check_points/BK/BK64.problem" attempts="2"/>
+			<discussion for="Checkpoint 23: Work by Friction" id="MReV_Summer2013_BK64" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 24: Block on Incline">
+			<problem display_name="Checkpoint 24: Block on Incline" filename="MIT/rayyan/check_points/BK/BK73.problem" attempts="3"/>
+			<discussion for="Checkpoint 24: Block on Incline" id="MReV_Summer2013_BK73" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Energy Bar Diagrams" url_name="Energy_Bar_Diagrams">
+		<vertical display_name="Energy Bar Diagrams">
+			<html display_name="Energy Bar Diagrams" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module6/Energy_Bar_Diagrams.html"/>
+			<discussion for="Energy Bar Diagrams" id="MReV_Summer2013_Energy_Bar_Diagrams" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: Mechanical Energy Bar Diagrams">
+			<html display_name="Example: Mechanical Energy Bar Diagrams" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module6/IE_ME_Diagrams.html"/>
+			<discussion for="Example: Mechanical Energy Bar Diagrams" id="MReV_Summer2013_IE_ME_Diagrams" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Energy Bar Diagrams for Constant Mechanical Energy">
+			<html display_name="Energy Bar Diagrams for Constant Mechanical Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module6/ME_Conserved.html"/>
+			<discussion for="Energy Bar Diagrams for Constant Mechanical Energy" id="MReV_Summer2013_ME_Conserved" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Example: What Goes Up">
+			<html display_name="Example: What Goes Up" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module6/IE_What_Goes_Up.html"/>
+			<discussion for="Example: What Goes Up" id="MReV_Summer2013_IE_What_Goes_Up" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 25: Spring-Block System">
+			<problem display_name="Checkpoint 25: Spring-Block System" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/spring_block/spring_block.problem" attempts="2"/>
+			<discussion for="Checkpoint 25: Spring-Block System" id="MReV_Summer2013_spring_block" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 26: Spring-Block System">
+			<problem display_name="Checkpoint 26: Spring-Block System" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/spring_block/spring_block_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 26: Spring-Block System" id="MReV_Summer2013_spring_block_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 27: Spring-Block System">
+			<problem display_name="Checkpoint 27: Spring-Block System" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/spring_block/spring_block_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 27: Spring-Block System" id="MReV_Summer2013_spring_block_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+<!--		<vertical display_name="Checkpoint 28: Which scenario?">
+			<problem display_name="Checkpoint 28: Which scenario?" filename="MIT/GWUproblems/Physics_21_Exams/con05.problem" attempts="2"/>
+			<discussion for="Checkpoint 28: Which scenario?" id="MReV_Summer2013_con05" discussion_category="Mechanical Energy and Work" />
+		</vertical>-->
+		<vertical display_name="Simulation: Energy Skate Park">
+			<html display_name="Simulation: Energy Skate Park" filename="problems/MIT/analiab/Simulations/Energy_Skate_Park.html"/>
+			<discussion for="Simulation: Energy Skate Park" id="MReV_Summer2013_Energy_Skate_Park" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Force and Potential Energy" url_name="Force_and_Potential_Energy">
+		<vertical display_name="Force and Potential Energy">
+			<html display_name="Force and Potential Energy" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module7/Force_and_Potential.html"/>
+			<discussion for="Force and Potential Energy" id="MReV_Summer2013_Force_and_Potential" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Turning Points and Equilibria">
+			<html display_name="Turning Points and Equilibria" filename="problems/MIT/RELATE/htmlwiki/Unit8/Module7/Turning_Points_and_Equilibrium.html"/>
+			<discussion for="Turning Points and Equilibria" id="MReV_Summer2013_Turning_Points_and_Equilibrium" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Checkpoint 29: Potential Energy Plot" filename="BK72.vert" />
+		<vertical display_name="Checkpoint 30: Force and Potential Energy">
+			<problem display_name="Checkpoint 30: Force and Potential Energy" filename="MIT/rayyan/check_points/BK/BK59.problem" attempts="10"/>
+			<discussion for="Checkpoint 30: Force and Potential Energy" id="MReV_Summer2013_BK59" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Elastic collision" url_name="Elastic_collision">
+		<vertical display_name="Introduction: A perfectly elastic collision">
+			<html display_name="Introduction: A perfectly elastic collision" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_perfect_elastic_1.html"/>
+			<discussion for="Introduction: A perfectly elastic collision" id="MReV_Summer2013_IE_perfect_elastic_1" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Illustrative Example: A Collision between two moving objects ">
+			<html display_name="Illustrative Example: A Collision between two moving objects " filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_perfect_elastic_2.html"/>
+			<discussion for="Illustrative Example: A Collision between two moving objects " id="MReV_Summer2013_IE_perfect_elastic_2" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Video: A moving object collides with one at rest">
+			<html display_name="Video: A moving object collides with one at rest" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_perfect_elastic_3.html"/>
+			<discussion for="Video: A moving object collides with one at rest" id="MReV_Summer2013_IE_perfect_elastic_3" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Newton's cradle balls">
+			<html display_name="Illustrative Example: Newton's cradle balls" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_N_cradle.html"/>
+			<discussion for="Illustrative Example: Newton's cradle balls" id="MReV_Summer2013_IE_N_cradle" discussion_category="Mechanical Energy and Work" />
+		</vertical>
+	</sequential>
+</chapter>

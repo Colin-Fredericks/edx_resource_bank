@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A system consists of two blocks, of masses m and 2m, attached to the ends of a spring with a force constant k. The system is placed on a horizontal frictionless surface. The blocks then are pulled an "extra" distance x apart and simultaneously released from the state of rest. During the subsequent motion of the blocks, what is the maximum speed of block m? </p>
+
+<p>Part 1. Which concepts are most useful in solving this problem? </p>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+                  Conservation of energy and constant-acceleration kinematics
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+                  Newton's laws and conservation of mechanical energy
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+                  Conservation of momentum and constant-acceleration kinematics
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+                  Conservation of mechanical energy and kinematics of simple harmonic motion
+            </choice>
+            <choice location="random" name="foil5" correct="true">
+                  Conservation of mechanical energy and conservation of momentum
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+                  Newton's laws and constant-acceleration kinematics
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+                  Conservation of momentum and kinematics of simple harmonic motion
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+  </problem>
+</html>

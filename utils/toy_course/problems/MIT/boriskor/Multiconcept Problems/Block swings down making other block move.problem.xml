@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/36-two connected blocks with swinging.png" alt="Two blocks are connected by a string; one slides, one swings down"/>
+        <br/>
+
+      <p>Two blocks, of masses \(M\) and \(m\), are connected by a light string passing over a 
+      very small frictionless pulley. Initially, both of the blocks are at rest because of 
+      friction between block \(M\) and the horizontal surface. Then block m is pulled sideways 
+      until the string makes angle \(\theta\) with the vertical and then released. At this point, 
+      the length of string between the pulley and the block is \(L\). Block \(M\) begins to slide 
+      at the very moment block \(m\) passes through its original position. Find the coefficient of 
+      static friction \(\mu_s\) between block M and the horizontal surface.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                \(\mu_s=(m/M)(3-2\cos \theta\))          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                \(\mu_s=(m/M)(3+2\cos \theta\))          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(\mu_s=(m/M)(3-2\sin \theta\))          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(\mu_s=(M/m)(3-2\cos \theta\))          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(\mu_s=(M/m)(3+2\cos \theta\))          
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+                \(\mu_s=(M/m)(3-2\sin \theta\))          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

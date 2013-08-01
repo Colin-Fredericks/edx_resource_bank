@@ -1,0 +1,25 @@
+<html>
+  <problem>
+
+      
+<p>Which of the statements below are true about the potential energy of the block-spring system?  Check all that apply.</p>
+
+        <choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice correct="true">
+          <text>The potential energy of the block-spring system is maximum at x = A</text>
+        </choice>
+        <choice correct="false">
+          <text>The potential energy of the block-spring system is maximum at x = 0</text>
+        </choice>
+        <choice correct="true" >
+          <text>The potential energy of the block-spring system is maximum at x = -A</text>
+        </choice>
+        <choice correct="false" >
+          <text>The potential energy of the block-spring system is maximum at x = A/2</text>
+        </choice>
+      </checkboxgroup>
+    </choiceresponse>
+    
+      </problem>
+</html>

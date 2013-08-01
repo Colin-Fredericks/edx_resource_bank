@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Example: Two Extended Objects</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example: A system of two extended objects </h3>
+A child is standing at the left end of a uniform slab of wood of length <i>L</i> that lies on a horizontal surface. The slab has a mass <i>M</i> and the child has a mass <i>m</i>. You can assume that the child's center of mass is at a height <i>h</i> with respect to the surface.
+<p>Calculate the position of the center of mass of the child-slab system as measured with respect to a coordinate system whose origin coincides with the left end of the slab.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmChildSlab.png"/>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td>\(\vec{R}_{cm}=x_{cm}\hat{i}+y_{cm}\hat{j}\)
+<p>where
+</p><p>\(x_{cm}=\frac{L}{2}\frac{M}{m+M}\)
+</p><p>\(y_{cm}=h\frac{m}{m+M}\)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Derivation:</b>
+ [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+<tr style="display:none" id="ht12">
+<td>To calculate the position of the center of mass of a system containing extended objects we will follow the steps described below:
+<p><b>1. Pick a coordinate system:</b>
+</p><p>In this problem we are asked to use a coordinate system whose origin coincides with the left end of the slab as shown in the figure:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmChildSlab1a_ans.png"/>
+</p><p><b>2. Point particle approximation:</b>
+</p><p>To obtain the center of mass of the system we first represent the extended objects in the system as point particles with their masses concentrated at their center of masses. We assume the slab to be uniform, therefore the center of mass of the slab is at its center. The center of mass of the child is at a given height <b>h</b> from the surface. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmChildSlab1b_ans.png"/>
+</p><p><b>3. Calculate the center of mass:</b>
+Applying the definition of the center of mass:
+</p><p>\(\vec{R}_{cm}=\frac{m\vec{r}_1+M\vec{r}_2}{m+M} \)
+</p><p>where:
+</p><p>\(\vec{r}_1=h\hat{j} \mbox{ ,    }\vec{r}_2=L/2\hat{i}\)
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmChildSlab1c_ans.png"/>
+</p><p>Then the position of the center of mass is the red cross shown in the figure above.
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

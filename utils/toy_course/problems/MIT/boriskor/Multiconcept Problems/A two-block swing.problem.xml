@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/Two block swing.png" alt="Two-block swing"/>
+    <script type="loncapa/python">
+
+
+m="k*M/3"
+
+</script>
+
+      	<h2>A Two Block Swing</h2>
+      <p><br/>A box of mass \(M\) is at rest on a horizontal table. The coefficient of static friction between the box and the table is \(k\). The box is connected by a taut string to a block of unknown mass \(m\), initially held horizontally as shown and then released. The box begins to slide at the instant the block reaches the bottom point of its swing. Find the mass \(m\) of the block.
+<br/>
+\(m=\)
+</p>
+
+    <formularesponse answer="$m" samples="k,M@4,5:10,12#2">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+          </problem>
+</html>

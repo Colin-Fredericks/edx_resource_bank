@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Tensions in a pulley setup -->
+
+<problem>
+
+<img src="/static/problems/S13/quiz/images/3-2.png" />
+
+<p>In the image shown, two blocks hang on a pulley. Assume that m<sub>1</sub> is the more massive block, and that the pulley is massless and frictionless.</p>
+
+<p>Take the initial case to be the instant just after m<sub>1</sub> is released from rest, and the final case to be the instant just before m<sub>2</sub> hits the pulley. Compare the magnitudes of the quantities below at those times. Read carefully.</p>
+
+<table>
+<tr>
+<td><p>The initial tension on m<sub>1</sub> is</p></td>
+<td>
+	<optionresponse>
+		<optioninput
+		options="('greater than','less than','equal to')"
+		correct="equal to"/>
+	</optionresponse>
+</td>
+<td><p>the final tension on m<sub>1</sub>.</p></td>
+</tr>
+
+<tr>
+<td><p>The initial tension on m<sub>1</sub> is</p></td>
+<td>
+	<optionresponse>
+		<optioninput
+		options="('greater than','less than','equal to')"
+		correct="greater than"/>
+	</optionresponse>
+</td>
+<td><p>the force of gravity on m<sub>2</sub>.</p></td>
+</tr>
+
+<tr>
+<td><p>The initial tension on m<sub>2</sub> is</p></td>
+<td>
+	<optionresponse>
+		<optioninput
+		options="('greater than','less than','equal to')"
+		correct="equal to"/>
+	</optionresponse>
+</td>
+<td><p>the final tension on m<sub>1</sub>.</p></td>
+</tr>
+
+<tr>
+<td><p>The initial tension on m<sub>2</sub> is</p></td>
+<td>
+	<optionresponse>
+		<optioninput
+		options="('greater than','less than','equal to')"
+		correct="greater than"/>
+	</optionresponse>
+</td>
+<td><p>the force of gravity on m<sub>2</sub>.</p></td>
+</tr>
+</table>
+
+</problem>
+
+</html>

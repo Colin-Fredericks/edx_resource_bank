@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 156 -->
+<problem>
+
+	<p>If the magnitude of the force of tension in the string attached to block m<sub>1</sub> is T, what is the magnitude of the force of tension of the string attached to block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\(T\)</choice>
+			<choice correct="false">\(2T\)</choice>
+			<choice correct="true">\(T/2\)</choice>
+			<choice correct="false">\( T \left( m_1 / m_2 \right) \)</choice>
+			<choice correct="false">\( T \left( m_2 / m_1 \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

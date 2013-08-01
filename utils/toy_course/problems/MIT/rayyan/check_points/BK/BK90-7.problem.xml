@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 7</title>
+
+<p>Consider two cases for a typical yo-yo with a moment of inertia \(I\approx mR^2/2\) about an axis 
+perpendicular to the screen and passing through its center of mass: </p>
+<p><b>Case 1:</b> <i>r</i> is very small so <i>F</i> is applied very near the center of the yo-yo.<br/>
+<b>Case 2:</b> <i>r=R</i> so <i>F</i> is applied very near the top edge of the yo-yo.</p>
+<p>The direction of the friction force will be:</p>
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="20" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  <text>To the right in case 1 and to the right in case 2.</text>
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                  <text>To the left in case 1 and to the right in case 2.</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>To the right in case 1 and to the left in case 2.</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  <text>To the left in case 1 and to the left in case 2.</text>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  <text>Need to know exactly the expression of <i>I</i> to answer.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    
+  </problem>
+</html>

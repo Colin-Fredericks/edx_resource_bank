@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Dynamics and Net Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+
+<!--<script type="text/javascript"> 
+$('#Rigid_body').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rigid_body.html'); 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<h2> Compatible Systems</h2>
+<p>This Model is only capable of describing the translational motion of a single <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particle<!--</a>-->.  <!--<a id="go" rel="leanModal" href="#Rigid_body" name="Rigid_body" onclick="domath()">-->Rigid bodies<!--</a>--> or multi-body systems can be described by this model only if they are treated as a point particle located at the system's center of mass.
+</p>
+<h2> Relevant Interactions</h2>
+<p>As described in Newton's Second Law, the acceleration of a system is determined by taking the net external force acting on the system and dividing by the system's mass.  Thus, only external forces need be considered when finding the acceleration.
+</p>
+<h2> Definitions</h2>
+<h4> Acceleration (Newton's Second Law)</h4>
+<p><m>$\vec{a} = \frac{1}{m} \sum \vec{F}^{ext}$</m>
+</p>
+<h2> Mathematical Representation</h2>
+<h4> Differential Form</h4>
+<p><m>$\frac{d\vec{v}}{dt} = \vec{a}(t) $</m>  
+</p><p><m>$\frac{d\vec{r}}{dt} = \vec{v}(t) $</m>
+</p>
+<h4> Integral Form</h4>
+<p><m>$\vec{v}_{f}=\vec{v}_{i}+\int_{t_{i}}^{t_{f}} \vec{a}(t) dt$</m>  
+</p><p><m>$\vec{r}_{f}=\vec{r}_{i}+\int_{t_{i}}^{t_{f}} \vec{v}(t) dt$</m>
+</p>
+
+<div id="Rigid_body" class="popup"></div>
+<div id="Point_particle" class="popup"></div>
+</body>
+</html>
+

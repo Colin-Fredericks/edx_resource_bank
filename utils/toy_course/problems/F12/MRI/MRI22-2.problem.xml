@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 22 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The object is only translating and not rotating.</choice>
+			<choice location="random" correct="false">An observer in the x-y plane near point A will see the object as changing angle more quickly than one near D.</choice>
+			<choice location="random" correct="true">An observer in the x-y plane near point D will be farther from the line of the object's motion than one at A.</choice>
+			<choice location="random" correct="false">Angular momentum is conserved.</choice>
+			<choice location="random" correct="false">The points shown are not in line with the center of the object.</choice>
+			<choice location="random" correct="false">The x component of the distance from the object to the points is the same for all points.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

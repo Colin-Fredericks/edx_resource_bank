@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Example: Mechanical Energy Bar Diagrams</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+<h3> Illustrative Example: Diagrams and Mechanical Energy</h3>
+<p>Because the Work-Energy Theorem and the Law of Change for the Mechanical Energy, External Work, and Internal Non-Conservative Work model involve only the initial and final energies of the system, it is useful to devote considerable attention to understanding the system's configuration at those times.  It is customary to sketch the system in its initial and final configurations, labeling the quantities that are relevant for the kinetic and potential energies of the system.</p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part A: Initial-State Final-State Diagrams</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td><p>Suppose we were asked to determine the speed of a 0.25 kg block launched vertically from rest by a spring of spring constant 500 N/m that was initially compressed 0.10 m from its natural length when the block reaches a height of 0.50 m above the natural position of the spring.  How would you draw an initial-state final-state diagram for this situation? <br/></p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>System:</b>
+	 [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+	<tr style="display:none" id="ht2">
+	<td>The block as point particle along with the spring (massless object) and the earth (infinitely massive object).
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Interactions:</b>
+	 [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+	<tr style="display:none" id="ht3">
+	<td>Gravity (near-earth), which will be represented as gravitational potential energy, and also an interaction between the ground and the block mediated by the spring that will be represented as elastic potential energy.
+	</td></tr></table>
+	
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Model</b>
+	 [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+	<tr style="display:none" id="ht4">
+	<td>
+	<p>Mechanical Energy and Non-Conservative Work</p>
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Approach
+	 [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+	<tr style="display:none" id="ht5">
+	<td>  We can neatly summarize the given information through a two-panel diagram:
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mecheex1all.png"/></p>
+		<p><br/>You could also choose a different height as a reference point for \(U(h_{ref})=0\), provided you measure the initial and final heights accordingly.</p>
+		<p>The act of drawing the diagram will often clarify the givens, and it will also remind us to choose a zero height for the gravitational potential energy.</p>
+	</td></tr></table>
+<br/>
+</td></tr></table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part B: Energy Bar Graphs</b>
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td> Drawing and labeling the initial-state final-state diagram will give a good idea of where the mechanical energy is in the system.  Thus, once the system is depicted, it is often useful to represent the energy distribution graphically as well.  This is done using a bar graph that contains one bar for each distinct type of energy that will make up the mechanical energy of the system.  This bar graph is not necessarily quantitative, but it should be drawn to reflect conservation of energy if the non-conservative work is zero.
+<p>Continuing with the example from Part A, we can see that in the initial state the energy is divided among spring potential and gravitational potential, with zero kinetic energy present.  In the final state, the energy is divided among gravitational potential and kinetic energy, with the spring (returned to its natural position) contributing zero energy.  Draw a bar graph representation of these distributions.</p>
+
+	<br/>
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>System:</b>
+	 [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+	<tr style="display:none" id="ht7">
+	<td>The block as point particle along with the spring (massless object) and the earth (infinitely massive object).
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Interactions:</b>
+	 [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+	<tr style="display:none" id="ht8">
+	<td>Gravity (near-earth), which will be represented as gravitational potential energy, and also an interaction between the ground and the block mediated by the spring that will be represented as elastic potential energy.
+	</td></tr></table>
+	
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Model</b>
+	 [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+	<tr style="display:none" id="ht9">
+	<td>
+	<p>Mechanical Energy and Non-Conservative Work</p>
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Approach
+	 [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+	<tr style="display:none" id="ht10">
+	<td>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mechebar1i.png"/>
+		<img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mechebar1f.png"/></p>
+		<p><br/>Note that these bar graphs are scaled to show conservation of energy. The sum of the three bars should be the same in each case. We have made a guess, however, about the relative sizes of the kinetic and gravitational potential energies. We cannot know which will be larger until we finish solving the problem. We do know, however, that they add up to equal the initial mechanical energy. Thus, a second reasonable guess would have been:</p>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mechebar1i.png"/>
+		<img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mechebar2f.png"/></p>
+		<p>Either is acceptable as an initial guess at the relative energies.</p>
+	</td></tr></table>
+</td></tr></table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part C: Dealing with Non-Conservative Work</b>
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td>
+	<p>Initial-state final-state diagrams and energy bar graphs are also useful for detecting problems in which mechanical energy is <u>not</u> conserved.  Consider the following example:</p>
+	<p>A 1500 kg roller coaster car is moving at a speed of 10 m/s with no friction when it crests the final hill at a height of 15 m above the end of the ride. It then descends to a level area of track that extends for 20 m before the finish. As soon as the car reaches the level track, it hits the brakes, coming to a stop exactly at the finish line. Determine the effective coefficient of friction experienced by the car during braking.</p>
+	<p>Draw initial-state final-state and energy bar diagrams for this situation.</p>
+	
+	<br/>
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>System:</b>
+	 [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+	<tr style="display:none" id="ht12">
+	<td>Roller coaster car as point particle plus earth as an infinitely massive object.
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Interactions:</b>
+	 [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+	<tr style="display:none" id="ht13">
+	<td>Gravity (near-earth) will be represented as gravitational potential energy. The car also experiences an external interaction from the track (kinetic friction and normal force). The friction part of this interaction will be represented as non-conservative force work, while the normal force is irrelevant to the model as it does no work (being always perpendicular to the direction of travel).
+	</td></tr></table>
+	
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Model</b>
+	 [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+	<tr style="display:none" id="ht14">
+	<td>
+	<p>Mechanical Energy and Non-Conservative Work</p>
+	</td></tr></table>
+	
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Approach
+	 [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+	<tr style="display:none" id="ht15">
+	<td>
+	<p>For simplicity, we combine the initial-state final-state diagram and the energy bar diagram.</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mecheex2i.png"/>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module6/files/Mecheex2f.png"/></p>
+	<p><br/>With our choices of coordinates, it is clear that the mechanical energy is <u>not</u> conserved in this problem. Thus, we look for a source of non-conservative work. This gives us a way to attack the friction force, which is the source of non-conservative work in this case.	</p>
+	</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

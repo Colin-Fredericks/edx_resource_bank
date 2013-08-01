@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+        <div class="thumb tright">
+          <div style="width:259px;" class="thumbinner">
+            <img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmBaseball.png"/>
+            <div class="thumbcaption"/>
+          </div>
+        </div>
+      </p>
+      <p>A baseball bat is cut at the location of its center of mass, as shown by the black line in the figure. Assuming that the density is constant, which piece has the larger mass?</p>
+
+    <br/>
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="right" correct="true">
+
+              The right piece.          
+        </choice>
+        <choice location="random" name="left" correct="false">
+
+              The left piece.          
+        </choice>
+        <choice location="random" name="same" correct="false">
+
+              Both have the same mass.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+    <solution>
+
+        <p>
+</p>
+        <p><b> Answer:</b>The correct answer is that the right piece will have more mass. To see why, replace the right piece by a point particle of mass <i>m<sub>R</sub></i> and the left piece by a point particle of mass <i>m<sub>L</sub></i>. Place each of the masses in their center of mass. Measured with respect to the baseball center of mass, the center of mass of the right mass is at a distance <i>d<sub>R</sub></i> and the one of the left mass is at a distance <i>d<sub>L</sub></i>. Because of the way the mass is distributed throughout the right and left pieces we can say that <i>d<sub>R</sub></i> &lt; <i>d<sub>L</sub></i>. Then the center of mass is closer to the right piece. The right mass is the largest.</p>
+        <img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/CmBaseball2.png"/>
+
+    </solution>
+          </problem>
+</html>
+

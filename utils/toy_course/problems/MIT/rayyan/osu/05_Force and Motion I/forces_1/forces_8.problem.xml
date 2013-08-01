@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/forces_6.png" alt="forces_6" height="150"/>
+
+      <p>Tom pushes two identical books on a horizontal frictionless table from the left. The force that book 1 exerts on book 2 is \(F_{21}\). The force that book 2 exerts on book 1 is \(F_{12}\). Compare the magnitude of \(F_{12}\) and \(F_{21}\).</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			<text>\(F_{12} &lt; F_{21}\)</text>
+        </choice>
+        <choice name="foil2" correct="false">
+			<text>\(F_{12} &gt; F_{21}\)</text>
+        </choice>
+        <choice name="foil3" correct="true">
+			<text>\(F_{12} = F_{21}\)</text>
+        </choice>
+        <choice name="foil4" correct="false">
+			<text>Cannot be determined</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

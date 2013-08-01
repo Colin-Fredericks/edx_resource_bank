@@ -1,0 +1,60 @@
+<html>
+  <problem>
+
+      <p>A mass sits on a frictionless table.  It is attached to a wall by a spring.  The mass is initially located at x = 0 when the spring is unstretched (equilibrium position).  You pull the mass away from the equilibrium position, out to x = A, and then release it.  The mass then oscillates horizontally back and forth in simple harmonic motion.  Which of the statements below are true about this motion?</p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+        <conceptgroup concept="One">
+				<p>The magnitude of the acceleration of the mass is maximum at x = A</p>
+          <optioninput location="random" name="OneA" correct="True" options="('True','False')"></optioninput>
+				<p>The magnitude of the acceleration of the mass is maximum at x = 0</p>
+          <optioninput location="random" name="" correct="False" options="('True','False')"></optioninput>
+				<p>The magnitude of the acceleration of the mass is maximum at x = -A</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>The magnitude of the acceleration of the mass is maximum at x = A/2</p>
+          <optioninput location="random" name="" correct="False" options="('True','False')"></optioninput>
+        </conceptgroup>
+        <conceptgroup concept="Two">
+				<p>The speed of the mass is maximum at x = A</p>
+          <optioninput location="random" name="TwoA" correct="False" options="('True','False')"></optioninput>
+				<p>The speed of the mass is maximum at x = 0</p>
+          <optioninput location="random" name="TwoB" correct="True" options="('True','False')"></optioninput>
+				<p>The speed of the mass is maximum at x = -A</p>
+          <optioninput location="random" name="" correct="False" options="('True','False')"></optioninput>
+				<p>The speed of the mass is maximum at x = A/2</p>
+          <optioninput location="random" name="" correct="False" options="('True','False')"></optioninput>
+        </conceptgroup>
+        <conceptgroup concept="Three">
+				<p>The potential energy of the mass-spring system is maximum at x = A</p>
+          <optioninput location="random" name="ThreeA" correct="True" options="('True','False')"></optioninput>
+				<p>The potential energy of the mass-spring system is maximum at x = 0</p>
+          <optioninput location="random" name="ThreeB" correct="False" options="('True','False')"></optioninput>
+				<p>The potential energy of the mass-spring system is maximum at x = -A</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>The potential energy of the mass-spring system is maximum at x = A/2</p>
+          <optioninput location="random" name="" correct="False" options="('True','False')"></optioninput>
+        </conceptgroup>
+        <conceptgroup concept="Four">
+				<p>The total energy of the mass-spring system at x = A is the same as the total energy at x = 0</p>
+          <optioninput location="random" name="FourA" correct="True" options="('True','False')"></optioninput>
+				<p>The total energy of the mass-spring system at x = A is the same as the total energy at x = -A</p>
+          <optioninput location="random" name="FourB" correct="True" options="('True','False')"></optioninput>
+				<p>The total energy of the mass-spring system at x = A is the same as the total energy at x = A/2</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>The total energy of the mass-spring system at x = A is the same as the total energy at any value of x</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+        </conceptgroup>
+        <conceptgroup concept="">
+				<p>The amplitude (A) is defined as the maximum displacement of the mass  (i.e. greatest distance from the equilibrium point)</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>The period (T) is defined as the time required to complete one cycle</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>The frequency (f) is defined as the number of complete cycles per second</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+				<p>Simple harmonic motion can also be referred to as periodic motion</p>
+          <optioninput location="random" name="" correct="True" options="('True','False')"></optioninput>
+        </conceptgroup>
+
+    </optionresponse>
+  </problem>
+</html>

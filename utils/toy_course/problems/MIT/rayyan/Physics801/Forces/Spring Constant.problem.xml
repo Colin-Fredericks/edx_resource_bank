@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="350" alt="Spring Constants" height="300" src="/static/problems/MIT/rayyan/Physics801/Figures/Spring constants.png"/>
+    <hr/>
+
+      <p>What is the effective spring constant for the system of the two springs, perfect pulley, and string shown on the left for it to be modeled by just one spring (constant k<sub>eff</sub>) as shown on the right? Use only the variables k1 and k2 in your answer.</p>
+
+    <br/>
+    <formularesponse answer="1/(4/k1+1/k2)" samples="k1,k2@1,1:10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

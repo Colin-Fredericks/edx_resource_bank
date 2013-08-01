@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+a = "sqrt(5*G*m1/(4*r1))"
+</script>
+    <img src="/static/problems/MIT/rayyan/problemset/Pictures/p10b.png" alt="p1a" texwrap="none" align="top"/>
+    <br/>
+    <p><b>Launching a Projectile</b></p><br/>
+<p>A spherical non-rotating planet (with no atmosphere) has mass \(m1\) and radius \(r1\) . A 
+projectile of mass \(m2&lt;&lt; m1\) is fired from the surface of the planet at a point A with a speed 
+\(v_A\) at an angle \(\theta=30\) with respect to the radial direction. In its subsequent trajectory the 
+projectile reaches a maximum altitude at point B on the sketch. The distance from the 
+center of the planet to the point B is \(r_2=(5 / 2)r_1\).</p>
+<p>Find the initial speed \(v_A\) in terms of \(G\), \(m1\), and \(r1\).</p>
+
+    <p>\(v_A\)=</p>
+    <formularesponse answer="$a" samples="G,m1,r1@1,1,1:10,10,10#4">
+    	<textline size="25" math="1" />
+    	<responseparam default="0.0001" type="tolerance" />
+	</formularesponse>
+
+  </problem>
+</html>

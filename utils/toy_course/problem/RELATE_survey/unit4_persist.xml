@@ -1,0 +1,16 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>Do you have confidence in your ability to continue in the course?</p>
+    <multiplechoiceresponse>
+		<choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+			<choice correct="true" name="yes"><text>Yes, I am nearly certain that I will be able to continue and finish the course.</text></choice>
+			<choice correct="true" name="probably"><text>Yes, though there has been some difficulty, I think I will be able to finish.</text></choice>
+			<choice correct="true" name="unsure"><text>I am uncertain as to whether I will be able to finish the course.</text></choice>
+			<choice correct="true" name="sometimes"><text>I think I will probably not be able to complete the course, but I will come back from time to time.</text></choice>
+			<choice correct="true" name="no"><text>I think I will probably have to drop out completely soon.</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+	<p>What is getting in your way the most?</p>
+	<stringresponse answer="It's a survey.  There is no right answer!">
+    	<textline size="50"/>
+	</stringresponse>
+</problem>

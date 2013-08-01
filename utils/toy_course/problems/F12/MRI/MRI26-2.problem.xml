@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 26 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">This cylinder’s mass is farther from the center</choice>
+			<choice location="random" correct="false">This cylinder’s mass is closer to the center</choice>
+			<choice location="random" correct="false">This cylinder’s mass is larger</choice>
+			<choice location="random" correct="false">This cylinder’s mass is smaller</choice>
+			<choice location="random" correct="false">The shapes are identical</choice>
+			<choice location="random" correct="false">The axis of rotation is not specified</choice>
+			<choice location="random" correct="true">The relationship between the height and the radius is not specified</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Example: Pulling 2 Boxes</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Examples:  Pulling two boxes connected by a rope</h3>
+
+<p>Two boxes of masses m<sub>1</sub> and m<sub>2</sub> are connected by an ideal rope (Rope A in the figure). A second ideal rope, Rope B, is attached to the box of mass m<sub>2</sub>. A person with non-skid shoes is pulling Rope B with a horizontal force of magnitude F along a horizontal and surface that the boxes slide on without friction.</p>
+
+<div class="center"><div class="floatnone"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/PullingTwoBoxesIntro.png" width="400"/></div></div>
+
+<p>Given this situation you can <i>choose different systems</i> to analyze: one box, the two boxes together, the two boxes and rope A, the two boxes and the person all together, etc. The information you wish to obtain will suggest the best system to select. The choice of the proper system will be discussed in the following modules. </p>
+
+<p>In this module we want to concentrate on identifying the interactions and classifying the resulting forces between the different objects that we have defined as system and the objects in the environment. For that purpose we will consider first a system containing only one box and then a system containing both boxes and the rope. </p>
+
+<p>The procedure that we will use to analyze the systems and interactions is summarized below in 3 steps. These are the steps you should follow when you start solving almost all of the problems we will see in this course.</p>
+
+<ol style="list-style-type:decimal">
+	<li> <b>Select the system</b> (one or several objects) and by selecting the system you are defining the environment.</li>
+	<li> <b>Identify the interactions</b> between the objects in the environment and in the system (external interactions). If there is more than one object in the system, identify the interactions between the objects inside the system (internal interactions).</li>
+	<li> <b>Classify the forces</b> resulting from each of the interactions identified in steps 2 and 3 and draw the corresponding <b>Free Body Diagrams</b>.</li>
+</ol>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Example 1: Single-Body System (box m<sub>1</sub> only)</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 1:  Select the system.</b>
+	 [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+	<tr style="display:none" id="ht2">
+	<td>
+	<p>If the box of mass m<sub>1</sub> is the only element in the system then we isolate the box from the rest of the universe by drawing an imaginary boundary around it (the oval) as shown in the figure below:
+	</p>
+	<div class="center"><div class="floatnone"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/PullingTwoBoxesS1a.png" width="800"/></div></div>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 2:  Identify the interactions.</b>
+	 [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+	<tr style="display:none" id="ht3">
+	<td>
+	<p>The double arrows in the right diagram of the figure in step 1 represent the interactions between the box (system) and the other objects ( environment). The box interacts with:
+	</p>
+	<ul style="list-style:disc outside none"><li> the Earth
+	</li><li> the surface along which it is moving, and 
+	</li><li> Rope A. 
+	</li></ul>
+	<p>Because there is only one object in the system there are no internal interactions. All of the interactions are external. In reality, the box is made of atoms, and the atoms are made of elementary particles (electrons, quarks, etc.). We have already ignored the forces between these particles by making the point particle approximation for the individual boxes.
+	</p>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 3:  Classify forces and draw a Free Body Diagram.</b>
+	 [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+	<tr style="display:none" id="ht4">
+	<td>
+	<p>The forces resulting from the interactions listed in step 2 between the box and the objects in the environment are presented in the following table. To show the directions of the forces, include the free body diagram of the box. 
+	</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/FBDBox_1.png" width="600"/>
+	</p>
+	</td>
+	</tr>
+	</table>
+
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Example 2: Multi-Body System (both boxes and rope A)</b>
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 1: Select the system.</b>
+	 [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+	<tr style="display:none" id="ht6">
+	<td>
+	<p>We will isolate the system with the imaginary boundary indicated by the oval in the figure below. 
+	</p>
+	<div class="center"><div class="floatnone"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/PullingTwoBoxesS2a.png" width="800"/></div></div>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 2: Identify the interactions (external and internal).</b>
+	 [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+	<tr style="display:none" id="ht7">
+	<td>
+	<p>In the right diagram in step 1, the colored double arrows represent <i>internal</i> interactions (between the objects within the system), while the gray ones represent <i>external</i> interactions (between the objects in the system and objects in the environment). 
+	</p>
+	<ul style="list-style:disc outside none"><li><b>Box 1</b> interacts with the Earth, the surface and Rope A. 
+	</li></ul>
+	<ul style="list-style:disc outside none"><li><b>Rope A</b> is assumed to be massless, therefore it does not interact with the Earth; it interacts only with the two boxes. 
+	</li></ul>
+	<ul style="list-style:disc outside none"><li><b>Box 2 </b>interacts with the Earth, the surface, Rope A and Rope B. 
+	</li></ul>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Step 3: Classify forces and draw the Free Body Diagram(s).</b>
+	 [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+	<tr style="display:none" id="ht8">
+	<td>
+	<p>The forces resulting from the interactions identified in step 2 are listed in the following tables for each element of the system. We are including the free body diagrams of each object to show the direction of the forces.
+	</p><p><br/>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module1/files/FBDBox12RopeA.png" width="600"/>
+	</p>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Note 1</b>
+	 [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+	<tr style="display:none" id="ht9">
+	<td>
+	<p>The forces exerted on box 1 (second table) are the same that were acting on the box when the system that we considered was the single box (table in example 1). The difference is that the rope is now an internal force instead of external. 
+	</p>
+	</td>
+	</tr>
+	</table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> <b>Note 2</b>
+	 [<a href="javascript:toggleDisplay('ht0','hide','show')" id="ht0l">show</a>]</th></tr>
+	<tr style="display:none" id="ht0">
+	<td>
+	<p> After you work through a few examples yourself, you will probably be able to skip the drawing of the the system diagram with the ovals and double arrows. It will be enough to start each problem by selecting the system, listing the interactions, and classifying the forces.
+	</p>
+	</td>
+	</tr>
+	</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

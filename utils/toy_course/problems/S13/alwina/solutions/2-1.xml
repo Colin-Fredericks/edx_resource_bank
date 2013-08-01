@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<html>
+<!-- 2-1: run & catch -->
+<problem>
+
+<h2>Solution</h2>
+
+<p>In this problem, there are two objects moving: the person and the ball. The ball undergoes projectile motion so we have the kinematic equations for the ball. The person undergoes two stages of motion. The first stage is constant acceleration and the second stage is constant velocity, so we can write separate equations describing the position for each stage, noting that the final position and velocity at the end of the first stage are the initial conditions at the beginning of the second stage. The constraint is that the ball and the person intersect at the end of the second stage. We first draw a coordinate system and a graph of the motion of the two objects. Let's choose the origin at the point the ball was released and assume that the person catches the ball at the same height above the ground as it was released.
+</p>
+
+<img src="/static/problems/S13/alwina/images/2-1sol-a.png" />
+
+<p><b>System:</b> Ball</p>
+<p><b>Interactions:</b> \(F_{gravity}\)</p>
+<p><b>Model:</b> Constant Velocity (x-direction) and Constant Acceleration (y-direction)</p>
+<h4>Constant Velocity Model</h4>
+<p>\(x_2(t)=v_0 \cos \theta_0 t\)</p>
+<p>At the final instant \(\,t_f = \Delta t_1 + \Delta t_2\), the ball is located at:</p>
+<p>\(x_2(t_f)=v_0 \cos \theta_0 (\Delta t_1 + \Delta t_2)\)</p>
+<h4>Constant Acceleration Model</h4>
+<p>\(y_2(t)=v_0 \sin \theta_0 t - \frac{1}{2} g t^{2}\)</p>
+<p>Note that at \(\,t_f = \Delta t_1 + \Delta t_2\), \(0=y_2(t_f)=v_0 \sin \theta_0 t_f - \frac{1}{2} g t_f^{2} \)</p>
+<p>Solve for \(t_f = \frac{2 v_0 \sin \theta_0}{g}=\Delta t_1 + \Delta t_2\)</p>
+
+<p><b>System:</b> Person</p>
+<p><b>Interactions:</b> None</p>
+<p><b>Model:</b> Constant Acceleration time \(\,t_1\) and Constant acceleration time \(\,t_1\) to \(\,t_f\)</p>
+
+<h4>Stage 1:</h4>
+<p>The equations for position and velocity of the person are:</p>
+<table>
+	<tr>
+		<td>\(x_1(t)=\frac{1}{2} a t^{2}\)</td>
+		<td rowspan="2">Therefore at \(\,t_1\):</td>
+		<td>\(x_1(\Delta t_1)=\frac{1}{2} a (\Delta t_1)^{2}\)</td>
+	</tr>
+	<tr>
+		<td>\(v_{x1}(t)=a t\)</td>
+		<td>\(v_{x1}(\Delta t_1)=a \Delta t_1\)</td>
+	</tr>
+</table>
+
+<h4>Stage 2:</h4>
+<p>Note the initial position and velocity are the values at \(\,t_1\) computed above.
+	<br/>The position of the person for the second stage is then:</p>
+<p>\(x_1(t)=x_{10}+v_{x01} t = \frac{1}{2} a (\Delta t_1)^{2} + a \Delta t_1 t\)</p>
+<p>In particular, after an interval \(\,t = \Delta t_2\) has elapsed, the person is at the position</p>
+<p>\(x_1(\Delta t_2)=\frac{1}{2} a (\Delta t_1)^2 + a \Delta t_1 \Delta t_2\)</p>
+<p>Since the person and the ball are at the same position at \(\,t_f = \Delta t_1 + \Delta t_2\),</p>
+<p>\(v_0 \cos \theta_0(\Delta t_1 + \Delta t_2) = \frac{1}{2} a (\Delta t_1)^2 + a \Delta t_1 \Delta t_2\)</p>
+<p>We can now solve the equation for the acceleration of the person:</p>
+<p>\(a = \frac{v_0 \cos \theta_0(\Delta t_1 + \Delta t_2)}{\frac{1}{2} (\Delta t_1)^2 + \Delta t_1 \Delta t_2}\)</p>
+<p>Finally, \(\,t_f = \frac{2 v_0 \sin \theta_0}{g}=\Delta t_1 + \Delta t_2\), so we can express the final answer without \(\,t_2\)</p>
+<p>\(a=\frac{v_0 \cos \theta_0 (\frac{2 v_0 \sin \theta_0}{g})}{\frac{1}{2}(\Delta t_1)^2+\Delta t_1(\frac{2 v_0 \sin \theta_0}{g}-\Delta t_1)} = \frac{2 v_0^2 \cos \theta_0 \sin \theta_0}{2 v_0 \sin \theta_0 \Delta t_1-\frac{1}{2} g (\Delta t_1)^2}\)</p>
+
+</problem>
+</html>

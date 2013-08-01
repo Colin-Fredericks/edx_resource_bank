@@ -1,0 +1,49 @@
+<html>
+  <problem>
+    <script type="loncapa/python">
+speed=random.randrange(15,59,1)/10
+time=random.randrange(25,42,1)/10
+dist= speed* time+0.5*9.8* time* time
+vel= speed+9.8* time
+</script>
+
+    <p>A ball is thrown straight down from a tall building at an initial speed of $speed m/s.  After $time seconds, what distance has the ball fallen?</p>
+
+      <numericalresponse answer="$dist" unit="m" format="1f">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+
+    <p>What is this speed of the ball after $time seconds?</p>
+
+      <numericalresponse answer="$vel" unit="m/s" format="1f">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+
+    <p>What is the magnitude of the ball's acceleration after $time seconds?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="one" correct="false">
+			<text>zero</text>
+          </choice>
+          <choice location="random" name="two" correct="false">
+			<text>less than <i>g</i>, but not zero</text>
+          </choice>
+          <choice location="random" name="three" correct="true">
+			<text><i>g</i></text>
+          </choice>
+          <choice location="random" name="four" correct="false">
+			<text>greater than <i>g</i>, but less than 2<i>g</i></text>
+          </choice>
+          <choice location="random" name="five" correct="false">
+			<text>greater than 2<i>g</i></text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

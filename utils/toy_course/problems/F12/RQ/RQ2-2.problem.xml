@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<problem>
+
+<!-- Taken from 8.01rq -->
+
+	<p>The amplitude \(A=\)
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">1.5</choice>
+		<choice location="random" correct="true" name="2">3.0</choice>
+		<choice location="random" correct="false" name="3">6.0</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+    </p>
+
+</problem>

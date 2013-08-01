@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/boris/BK151-1.problem" display_name="Pulley Acceleration" attempts="2" weight="0.25"/>
+	<problem filename="F12/boris/BK151-2.problem" display_name="Pulley Acceleration, Part 2" attempts="1" weight="0.25"/>
+	<problem filename="F12/boris/BK151-3.problem" display_name="Pulley Acceleration, Part 3" attempts="1" weight="0.25"/>
+	<problem filename="F12/boris/BK151-4.problem" display_name="Pulley Acceleration, Part 4" attempts="1" weight="0.25"/>
+	<discussion for="Pulley Acceleration" id="MReV_Summer2013_BK151" discussion_category="Applying Newton's Laws" />
+</vertical>

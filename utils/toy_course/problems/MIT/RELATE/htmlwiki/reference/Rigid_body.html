@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Rigid body</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Dynamics_and_Net_For').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Dynamics_and_Net_For.html'); 
+$('#Momentum_and_Externa').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Momentum_and_Externa.html');
+$('#Angular_Momentum_and').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Angular_Momentum_and.html'); 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+$('#Rotational_Dynamics').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rotational_Dynamics.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>Applying the rigid body assumption to an object in the system implies that the object's size and shape are relevant to the motion, and that the size and shape of the object cannot be changed.
+</p>
+<h2> Translational Motion Models and Rigid Bodies</h2>
+<p>The Models describing translational motion (<!--<a id="go" rel="leanModal" href="#Dynamics_and_Net_For" name="Dynamics_and_Net_For" onclick="domath()">-->Velocity<!--</a>-->, <!--<a id="go" rel="leanModal" href="#Momentum_and_Externa" name="Momentum_and_Externa" onclick="domath()">-->Momentum<!--</a>-->, or their sub-Models) require that any rigid bodies be described as a <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particle<!--</a>--> located at the center of mass of the rigid body.  Thus, the rigid body approximation is equivalent to the point particle approximation for translational motion.
+</p>
+<h2> Angular Motion Models and Rigid Bodies</h2>
+<p>The Models describing rotational motion (<!--<a id="go" rel="leanModal" href="#Rotational_Dynamics" name="Rotational_Dynamics" onclick="domath()">-->Angular Velocity<!--</a>-->, <!--<a id="go" rel="leanModal" href="#Angular_Momentum_and" name="Angular_Momentum_and" onclick="domath()">-->Angular Momentum<!--</a>-->, or their sub-Models) must take the spin of a rigid body about its own center of mass into account <i>as well</i> as the motion of the center of mass of the rigid body about the chosen axis of rotation.  Thus, the moment of inertia of the rigid body about its center of mass must be known in order to apply an angular motion model.
+</p>
+<h2> Mechanical Energy and Rigid Bodies</h2>
+<p>The kinetic energy of a rigid body will consist of a translational part due to the motion of the center of mass and a rotational part due to the spin of the body about its own center of mass.  Thus, the moment of inertia of the rigid body about its center of mass must be known in order to apply mechanical energy to describe its motion.
+</p>
+
+<!--<div id="Point_particle" class="popup"></div>
+<div id="Dynamics_and_Net_For" class="popup"></div>
+<div id="Momentum_and_Externa" class="popup"></div>
+<div id="Angular_Momentum_and" class="popup"></div>
+<div id="Mechanical_Energy__E" class="popup"></div>-->
+
+</body>
+</html>
+

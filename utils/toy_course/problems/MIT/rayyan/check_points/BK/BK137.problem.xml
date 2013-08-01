@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Block on Spring </title>
+    <script type="loncapa/python">
+
+#Enter the computations here
+m = random.randrange(75, 160, 5)/100
+k = random.randrange(250, 400, 5)
+F = random.randrange(12, 20, 1)
+vmax = math.sqrt( k/ m)*( F/ k)
+Ft =  F*math.sqrt(3)/2
+
+</script>
+
+<p>A block of mass m = $m kg is attached to a spring with a force constant k = $k N/m. The block is in simple harmonic motion. At the moment that the block has zero instantaneous speed, the magnitude of the force acting on it is F = $F Newtons.</p>
+
+<p>What is the best concept to use in order to find the maximum speed of the block during the vibrations?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                Conservation of Energy
+          </choice>
+          <choice name="foil2" correct="false">
+                Conservation of Momentum
+          </choice>
+          <choice name="foil3" correct="false">
+                Kinematics of Simple Harmonic Motion
+          </choice>
+          <choice name="foil4" correct="false">
+                Kinematics of Motion with Constant Acceleration
+          </choice>
+          <choice name="foil5" correct="false">
+                Newton's 2nd law
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Find the maximum speed of the block during the vibrations.</p>
+
+      <numericalresponse answer="$vmax" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Find the magnitude of the force acting on the block at the moment when the speed is one-half of the maximum speed.</p>
+
+      <numericalresponse answer="$Ft" unit="N">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

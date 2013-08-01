@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+</script>
+
+      <p>
+
+A man is riding on a flatcar traveling at a constant speed of <i>v<sub>1</sub></i>. He wishes to throw a ball through a stationary hoop at <i>h</i> above the height of his 
+hands in such a manner that the ball will move horizontally as it passes through the hoop. He throws the ball with a speed of v2 with respect 
+to himself. The  angle between \(\vec{v}_{2}\) and the horizontal, \(\theta_{cart}\), is unknown.
+</p>
+    <img width="600" height="300" src="/static/problems/MIT/analiab/NewProblems/files/AManOnACart.png"/>
+
+<br/>
+
+<b>Part 1.</b> At what horizontal distance in front of the hoop must he release the ball?
+
+<br/>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+                \([(2gh)^{1/2}/g-v_1^2/g]^{1/2}\;(v_2^2/g)^{1/2}\)
+
+        </choice>
+        <choice name="foil2" correct="false">
+
+                \([(v_2^2-2gh)^{1/2}+v_1]\;(v_1^2/g)\)
+
+        </choice>
+        <choice name="foil3" correct="true">
+
+                \([(v_2^2-2gh)^{1/2}+v_1]\;(2gh)^{1/2}/g\)
+
+        </choice>
+        <choice name="foil4" correct="false">
+
+                \([(2gh)^{1/2}+v_1]\;(2gh)^{1/2}/g\)
+
+        </choice>
+        <choice name="foil5" correct="false">
+
+                None of the Above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+<b>Part 2.</b>When the ball leaves the man's hands, what is the direction of its velocity relative 
+to the frame of reference of the flatcar? To indicate the direction calculate the angle
+ \(\theta_{cart}\) between the velocity vector measured from the flatcar and the horizontal
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+                \(\tan^{-1}(\frac{(2gh)^{1/2}}{v_2})\)
+
+        </choice>
+        <choice name="foil2" correct="false">
+
+                \(\tan^{-1}(\frac{v_1}{(2gh)^{1/2}})\)
+
+        </choice>
+        <choice name="foil3" correct="true">
+
+                \(\tan^{-1}( \frac{(2gh)^{1/2}}{(v_2^2-2gh)^{1/2}} )\)
+
+        </choice>
+        <choice name="foil4" correct="false">
+
+                \( \tan^{-1}(\frac{(2gh)^{1/2}-v_2^2}{v_1})\)
+
+        </choice>
+        <choice name="foil5" correct="false">
+
+                None of the Above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+  </problem>
+</html>

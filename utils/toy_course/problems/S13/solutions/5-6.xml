@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+<!--Two particles colliding-->
+<problem>
+
+<h3>Solution</h3>
+
+<p>Let's consider particle 2 and particle 1 as the system. The system is isolated in that there are no other external forcces acting on it. Therefore the center of mass of the system does not accelerate, hence the velocity of the center of mass is constant. Choose an origin at the location of the particle 1 at t = t<sub>o</sub> as shown in the figure below.</p>
+<img src="/static/problems/S13/solutions/images/5-6.png" />
+<p>Let \(\vec{r}_{1}\)(t) = x<sub>1</sub>(t) \(\hat{i}\) denote the position vector of the particle 1 at time t. Let \(\vec{r}_{2}\)(t) = x<sub>2</sub>(t) \(\hat{i}\) denote the position vector of the particle 2 at time t. At time t = t<sub>o</sub>, the particle 1 has position vectior \(\vec{r}_{1}\)(t=t<sub>o</sub>) = \(\vec{0}\) and the particle 2 has position vector \(\vec{r}_{2}\)(t=t<sub>o</sub>)=d \(\hat{i}\). So at t = t<sub>o</sub> the center of mass is located at</p>
+<p>\(\vec{R}_{cm}\)(t = t<sub>o</sub>) = \({m_{1} \vec{r}_{1} + m_{2} \vec{r}_{2}} \over {m_{1} + m_{2}}\) =\({{m_{2}d} \over {m_{1} + m_{2}}} \hat{i}\)</p>
+<p>The velocity of the center of mass is the derivative with respect to time</p>
+<p>\(\vec{V}_{cm}\) = \({{m_{1} \vec{v}_{1} + m_{2} \vec{v}_{2}} \over {m_{1} + m_{2}}}\) </p>
+<p>The center of mass velocity remains constant because there are no external forces acting on the system. At time t = t<sub>o</sub>, the particle 2 is at rest \(\vec{v}_{1}\)(t=t<sub>o</sub>) = v<sub>1,0</sub> \(\hat{i}\), the center of mass velocity is</p>
+<p>\(\vec{V}_{cm}\) = \({{m_{1} v_{1,0}} \over {m_{1} + m_{2}}} \hat{i}\)</p>
+<p>The position of the center of mass as a funtion of time is therefore </p>
+<p>\(\vec{R}_{cm}\)(t) = \(\vec{R}_{cm}\)(t=t<sub>o</sub>) + \(\vec{V}_{cm}\)(t- t<sub>o</sub>) = [\({{m_{2}d + m_{1} v_{1,0} (t - t_{0})} \over {m_{1} + m_{2}}}\)]\(\hat{i}\)</p>
+<p>The collision takes place at the location of the center of mass at the time t = t<sub>1</sub></p>
+<p>\(\vec{R}_{cm}\)(t<sub>1</sub>) = [\({{m_{2}d + m_{1} v_{1,0} (t - t_{0})} \over {m_{1} + m_{2}}}\)]\(\hat{i}\)</p>
+
+</problem>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<problem>
+
+	<optionresponse texlayout="horizontal" randomize="yes">
+		<p>The kinetic energy and the gravitational potential energy of the ball are equal when the ball is at a height of 4 meters</p>
+		<optioninput location="random" name="TwoA" correct="False" options="('True','False')"/>
+		<p>The kinetic energy and the gravitational potential energy of the ball are equal when the ball is at a height of 6 meters</p>
+		<optioninput location="random" name="TwoB" correct="True" options="('True','False')"/>
+		<p>The kinetic energy and the gravitational potential energy of the ball are equal when the ball is at a height of 8 meters</p>
+		<optioninput location="random" name="" correct="False" options="('True','False')"/>
+	</optionresponse>
+
+</problem>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>A system of effective mass m has a potential energy given by </p>
+
+	<p>\(U(x)=U_0 \bigg( -2\Big(\displaystyle\frac{x}{x_0}\Big)^2+\Big(\displaystyle\frac{x}{x_0}\Big)^4\bigg) \)</p>
+
+	<p>where \(U_0\) and \(x_0\) are positive constants and \(U(0)=0\)</p>
+
+	<p><img src="/static/problems/F12/RQ/images/SHM6.png" width="550"/></p>
+<p>
+Part 1. The particle is in stable equilibrium at the point(s):
+<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">0 </choice>
+		<choice location="random" correct="true" name="2">\(\pm x_0\)</choice>
+		<choice location="random" correct="false" name="3">\( \frac{x_0}{2} \)</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+    </p>
+
+</problem>

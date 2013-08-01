@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+  <problem><font size="4"><b>Given v vs. t obtain x vs. t</b></font><br/>
+
+<script type="loncapa/python">
+
+
+a="1/2*0.75 *t^2"
+</script>
+
+<p>An object is moving along a straight line. Its velocity as a function of time is shown in the
+figure below.
+<br/>
+</p>
+<br/>
+<img src="/static/problems/MIT/analiab/Figures/given_the_plot_of_v_obtain_a.png" align="center" texwrap="none" width="400" alt="given_plot_of_v_find_x"/>
+<br/>
+<b>Part a)</b> Assuming that at t = 0 the object is at the origin answer the following questions:
+<br/>
+1. What is the mathematical representation of the object's position as a function of time for times 0 &lt; t &lt;
+20 s? Use the variable t in your answer.
+<br/>
+
+\(x(t)=\)
+
+<formularesponse answer="$a" samples="t@1:10#4"><textline size="25" math="1">
+</textline></formularesponse>
+
+ yyy Need to add formularesponse
+
+<p>
+2. Where is the object at time t = 30 s? Enter the answer in m.
+</p>\(x=\)
+<numericalresponse answer="300" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+3. Where is the object at time t = 40 s? Enter the answer in m.
+</p>\(x=\)
+<numericalresponse answer="475" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+4. Where is the object at time t = 50 s? Enter the answer in m.
+</p>\(x=\)
+<numericalresponse answer="675" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+5. Where is the object at time t = 80 s? Enter the answer in m.
+</p>\(x=\)
+<numericalresponse answer="600" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<br />
+<b>Part b)</b> In a piece of paper do a qualitative plot of the position as a function of time.<br/>
+<br/>
+<b>Part c)</b> Check your plot. Watch the construction of the plot of x vs. t by Mr Dave Sim
+ <a href="http://www.thephysicscafe.com">The Physics Caf&#xE9;</a>
+<br/>
+<b>Note #1:</b> The variable s is the object's position. <br/>
+<b>Note #2:</b> The gradient of s - t refers to the time derivative of s: \( v = \frac{ds}{dt} \)
+<b>Note #3:</b> The area under the curve of v vs t is the object's position. <br/>
+<br/>
+<table border="1"><tr><td><iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/rW4pvdnpQE0?rel=0"/></td></tr><tr><td>
+<b>This move is part of the Kinematics Lecture &#x2013; <br/>
+Graph Drawing by Mr. Dave Sim of <a href="http://www.thephysicscafe.com"> The Physics Caf&#xE9;</a></b>
+</td></tr></table>
+
+</problem>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Constant Acceleration Model</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		
+</style>
+
+</head>
+<body>
+
+<h2>Introduction to Constant Acceleration with Constant Net Force</h2>
+
+<p>This model applies to a single direction of a particle's motion when the net force, and hence the acceleration, along that direction is <i>constant</i>. It is a one dimensional model since we can choose a coordinate axis which aligns with the direction of motion. Typically this might be a system subject to gravity (along the y-axis) or one that is physically constrained to move in only one direction (e.g. on a straight track). The driving force along this coordinate must be constant in time. This model is a special case of the General One-Dimensional Motion model with the added constraint a(t)=constant (i.e. da/dt = 0 ).</p>
+
+<p>Note: an analogous model applies to rotational motion about an axis under the influence of a constant torque.</p>
+
+<h3>Learning Goals</h3>
+
+<ul style="list-style:disc outside none">
+	<li>Recognize when a motion diagram, graph, equation or table of data represents an object moving with constant acceleration.</li>
+	<li>Describe the motion of the object represented in these ways.</li>
+	<li>Predict the position and velocity at an arbitrary later time given initial velocity and position.</li>
+	<li>Know and apply the time-independent form that relates the initial and final velocity as functions of position (not time) for motion with constant acceleration.</li>
+</ul>
+
+<h2>Model: Constant Acceleration with Constant Net Force</h2>
+
+<h3>Applicable Systems</h3>
+
+<p>Either a single point particle or the center of mass of a rigid body (or rotating body) that is subject to a constant net applied force (or torque), even if this is only the case along one coordinate axis.</p>
+
+<h3>Relevant Interactions</h3>
+
+<p>Constant net force must be present to cause motion with a constant acceleration along that one coordinate.</p>
+
+<h3>Laws of Change</h3>
+
+<p>For motion with constant acceleration <i>a</i>.</p>
+
+<h4>Integral Form</h4>
+
+<p>\[ v(t) = v_{i,x}+ a t \]</p>
+
+<p>\[ x(t) = x_{i}+v_{i,x}t+ \frac{1}{2}a_xt^{2} \]</p>
+
+<p>NOTE: In the above expressions, the initial time - the time when the position and velocity equal \(x_i\) and \(v_{i,x}\) - has been taken to be t=0. Often the initial conditions are given at a later time <i>t</i><sub><i>i</i></sub>, for example if a rocket is fired at <i>t</i><sub><i>i</i></sub> at a target whose motion started at t=0. To accommodate constant acceleration with initial conditions given at <i>t</i><sub><i>i</i></sub>, these equations may be generalized to:</p>
+
+<p>\[ v(t) = v_{i,x}+ a_x (t - t_{i}) \]</p>
+
+<p>\[ x(t) = x_{i}+v_{i,x}(t-t_{i})+ \frac{1}{2}a_x(t-t_{i})^{2} \]</p>
+
+<h4>Differential Form</h4>
+
+<p>\[ \frac{dv_x}{dt}=a_x\]</p>
+
+<h4>Form Without Dependence on Time</h4>
+
+<p>\[ v^{2}(x)= v_{i,x}^{2}+ 2 a_x (x - x_{i}) \]</p>
+
+<p>This is a useful expression, because time has been eliminated as a variable. Thus velocity can be thought of as a function of position. Foreshadowing note: this formula leads the way to kinetic energy and work (multiply by 1/2 m and substitute F for ma).</p>
+
+<h4>Average Velocity Form</h4>
+
+<p>For constant acceleration, the average velocity is exactly the average of the initial and final velocities. Therefore, the position can be expressed in terms of these variables as:</p>
+
+<p>\[ x(t) = x_{i}+\frac{1}{2}(v_{f,x}+v_{i,x})(t - t_{i}) \]</p>
+
+</body>
+</html>

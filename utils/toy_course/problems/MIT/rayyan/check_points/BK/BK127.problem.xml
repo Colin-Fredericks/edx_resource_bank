@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Force and Simple Harmonic Motion</title>
+        <p>Which of the following equations describes simple harmonic motion? <b>Check all that apply.</b> Note that F, x, v, and a stand for, respectively, force, position, velocity, and acceleration. Symbol c is a positive constant.</p>
+
+
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="false"><text>\(F=-cv\)</text></choice>
+      <choice correct="false"><text>\(F=-ca\)</text></choice>
+      <choice correct="true"><text>\(F=-cx\)</text></choice>
+      <choice correct="false"><text>\(F=+cx\)</text></choice>
+      <choice correct="false"><text>\(F=+cv\)</text></choice>
+      <choice correct="false"><text>\(F=+ca\)</text></choice>
+      <choice correct="true"><text>\(F=-x/c\)</text></choice>
+      <choice correct="false"><text>\(F=-x^2/c\)</text></choice>
+      <choice correct="false"><text>\(F=-cv^2\)</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+
+
+  </problem>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+omega="sqrt(mu1*g/R)"
+
+</script>
+
+      <p>
+
+Two metal cylinders of mass m1 and m2 are placed one at the top of the other on a circular turntable that is rotating at a constant 
+speed as illustrated in the diagram. The coefficient of static friction between the lower cylinder and the turntable is  
+\(\mu_1\) and the coefficient of static friction between the cylinders’ surfaces is 
+\(\mu_2\). The cylinders remain at rest with respect to the turntable and are at a distance R from its center.
+What is the maximum angular speed  \(\omega_{max}\) that the turntable can rotate for which 
+the two cylinders remain at rest with respect to the turntable? (Assume that mu1 is smaller than mu2)
+
+</p>
+
+    <img  src="/static/problems/MIT/analiab/NewProblems/files/CylindersOnATurnTable.png"/>
+
+<i>In your solution clearly indicate</i>:
+<br/>
+<p><i>The <b>system</b> that you consider and the <b>interactions</b> between the object(s) in the system and external objects. 
+Draw the resulting forces in a FBD. Indicate the coordinate system that you will use to describe the vectors. Include in your solutions
+the <b>model(s)</b> that you use.
+</i>
+</p>
+
+<br/>
+
+<p>Express your answer in terms of some or all of the variables given: R, m1, m2, \(\mu_1\), 
+and \(\mu_2\). Enter g for the magnitude of the acceleration
+due to gravity and mu1 and mu2 for \(\mu_1\) and \(\mu_2\).
+<br/>
+<br />
+\(\omega_{max}=\) 
+</p>
+
+    <formularesponse type="cs" answer="$omega"  samples="mu1,g,R@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

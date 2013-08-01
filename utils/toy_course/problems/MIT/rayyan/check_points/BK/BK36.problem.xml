@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Reading Graphs </title>
+    <p>The graphs x (t) below represent the motion of two ladybugs, Kyle (K) (solid graph) and Lea (L) (dotted graph), moving along the same straight line. </p>
+    <p><img width="400" alt="BK36a" src="/static/problems/MIT/rayyan/check_points/Pictures/BK36a.png"/></p>
+	
+      <p>Part 1. The initial distance between K and L is</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                4 m
+          </choice>
+          <choice name="foil2" correct="false">
+                5 m
+          </choice>
+          <choice name="foil3" correct="true">
+                9 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 2. At t = 3 s, the distance between K and L is</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                -2 m
+          </choice>
+          <choice name="foil2" correct="false">
+                2 m
+          </choice>
+          <choice name="foil3" correct="false">
+                4 m
+          </choice>
+          <choice name="foil4" correct="true">
+                6 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 3. What is the instantaneous velocity of K at t = 1.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                Zero
+          </choice>
+          <choice name="foil2" correct="false">
+                0.75 m/s
+          </choice>
+          <choice name="foil3" correct="false">
+                1.33 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                4.0 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 4. Which of the following is most nearly the instantaneous velocity of K at t = 6.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                0.67 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                1.4 m/s
+          </choice>
+          <choice name="foil3" correct="true">
+                -1.4 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                Zero
+          </choice>
+          <choice name="foil5" correct="false">
+                -0.75 m/s
+          </choice>
+          <choice name="foil6" correct="false">
+                0.75 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 5. What is the instantaneous velocity of L at t = 6.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                0.33 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                -0.33 m/s
+          </choice>
+          <choice name="foil3" correct="false">
+                -3.0 m/s
+          </choice>
+          <choice name="foil4" correct="true">
+                Zero
+          </choice>
+          <choice name="foil5" correct="false">
+                3.0 m/s
+          </choice>
+          <choice name="foil6" correct="false">
+                0.5 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 6. What is the average velocity of L between t = 0 and t = 10 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                0.2 m/s
+          </choice>
+          <choice name="foil2" correct="false">
+                1.33 m/s
+          </choice>
+          <choice name="foil3" correct="false">
+                9.0 m/s
+          </choice>
+          <choice name="foil4" correct="false">
+                Zero
+          </choice>
+          <choice name="foil5" correct="true">
+                0.9 m/s
+          </choice>
+          <choice name="foil6" correct="false">
+                2.0 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 7. What is the displacement of K between t = 1.0 s and t = 10.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                14 m
+          </choice>
+          <choice name="foil2" correct="false">
+                8 m
+          </choice>
+          <choice name="foil3" correct="false">
+                -14 m
+          </choice>
+          <choice name="foil4" correct="false">
+                -8 m
+          </choice>
+          <choice name="foil5" correct="false">
+                4 m
+          </choice>
+          <choice name="foil6" correct="true">
+                -4 m
+          </choice>
+          <choice name="foil7" correct="false">
+                10 m
+          </choice>
+          <choice name="foil8" correct="false">
+                -10 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 8. What is the distance covered by K between t = 1.0 s and t = 10.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                14 m
+          </choice>
+          <choice name="foil2" correct="false">
+                8 m
+          </choice>
+          <choice name="foil3" correct="false">
+                -14 m
+          </choice>
+          <choice name="foil4" correct="false">
+                -8 m
+          </choice>
+          <choice name="foil5" correct="false">
+                4 m
+          </choice>
+          <choice name="foil6" correct="false">
+                -4 m
+          </choice>
+          <choice name="foil7" correct="true">
+                10 m
+          </choice>
+          <choice name="foil8" correct="false">
+                -10 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 9. How can the position and the velocity of K be described at the moment that L passes through the point x=0?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+			<text>\(x_k &lt; 0; v_k &lt; 0\)</text>
+          </choice>
+          <choice name="foil2" correct="true">
+			<text>\(x_k &lt; 0; v_k &gt; 0\)</text>
+          </choice>
+          <choice name="foil3" correct="false">
+			<text>\(x_k &gt; 0; v_k &lt; 0\)</text>
+          </choice>
+          <choice name="foil4" correct="false">
+			<text>\(x_k &gt; 0; v_k &gt; 0\)</text>
+          </choice>
+          <choice name="foil5" correct="false">
+			<text>\(x_k &lt; 0; v_k = 0\)</text>
+          </choice>
+          <choice name="foil6" correct="false">
+			<text>\(x_k &gt; 0; v_k = 0\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 10. What statement correctly describes the sign of the acceleration of K at 1.6 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                  <text>\(a &gt; 0\)</text>
+          </choice>
+          <choice name="foil2" correct="false">
+                  <text>\(a &lt;&lt; 0\)</text>
+          </choice>
+          <choice name="foil3" correct="true">
+                  <text>\(a = 0\)</text>
+          </choice>
+          <choice name="foil4" correct="false">
+                <text>Not enough information</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 11. What statement correctly describes the sign of the acceleration of K at 5.6 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                 <text>\(a &gt; 0\)</text>
+          </choice>
+          <choice name="foil2" correct="false">
+                 <text>\(a &lt; 0\)</text>
+          </choice>
+          <choice name="foil3" correct="true">
+                 <text>\(a = 0\)</text>
+          </choice>
+          <choice name="foil4" correct="false">
+               <text>Not enough information</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+	  
+      <p>Part 12. What statement correctly describes the sign of the acceleration of K at 9.6 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                  <text>\(a &gt; 0\)</text>
+          </choice>
+          <choice name="foil2" correct="false">
+                  <text>\(a &lt; 0\)</text>
+          </choice>
+          <choice name="foil3" correct="true">
+                  <text>\(a = 0\)</text>
+          </choice>
+          <choice name="foil4" correct="false">
+                <text>Not enough information</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+  </problem>
+</html>

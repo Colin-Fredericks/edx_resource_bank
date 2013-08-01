@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <p><img src="/static/problems/MIT/rayyan/osu/images/linear_2.png" alt="linear_2" height="200"/></p>
+    <p>A cue ball (white) hits another billiards ball (red). The red ball is initially at rest. The white ball's motion is at a 90&#176; angle to the motion of the red ball after the collision. After the collision, the ratio of speed of the white ball to that of the red ball is \(1:\sqrt 3\). What is the ratio of the initial speed to the final speed of the white ball? All balls have the same mass.</p>
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              <text>\(1:\sqrt 3\)</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              <text>\(1:2\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+              <text>\(2:1\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+              <text>\(\sqrt 3:1\)</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              <text>\(1:1\)</text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+              <text>\(1+\sqrt 3:\sqrt 3\)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

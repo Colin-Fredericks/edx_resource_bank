@@ -1,0 +1,80 @@
+<chapter display_name="Quiz Collector">
+	<sequential display_name="Quiz 1 and 2" url_name="Quiz_1_2">
+		<problem display_name="Quiz 1 and 2, Problem 1" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p5.problem" attempts="10" />
+        <problem display_name="Quiz 1 and 2, Problem 2" filename="MIT/rayyan/Physics801/quizzes/components1.problem" attempts="10" />
+        <problem display_name="Quiz 1 and 2, Problem 3" filename="MIT/rayyan/Physics801/quizzes/pulling_block1.problem" attempts="10" />
+        <problem display_name="Quiz 1 and 2, Problem 4" filename="MIT/rayyan/Physics801/quizzes/pushing_block.problem" attempts="10" />
+	</sequential>
+	<sequential display_name="Quiz 3" url_name="Quiz_3">
+        <problem display_name="Quiz 3, Problem 1" filename="problems/S13/quiz/3-1.problem" attempts="10"/>
+        <problem display_name="Quiz 3, Problem 2" filename="problems/S13/quiz/3-2.problem" attempts="10"/>
+        <problem display_name="Quiz 3, Problem 3" filename="MIT/boriskor/Newton_s laws/Two connected blocks, frictionless inclined plane.problem" attempts="10"/>
+        <problem display_name="Quiz 3, Problem 4" filename="MIT/rayyan/check_points/BK/BK30.problem" attempts="10"/>
+        <problem display_name="Quiz 3, Problem 5" filename="MIT/rayyan/problemset/hw1/U1_Problem1.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 4 and 5" url_name="Quiz_4_5">
+        <problem display_name="Quiz 4 and 5, Problem 1" filename="problems/S13/quiz/5-1.problem" attempts="10"/>
+        <problem display_name="Quiz 4 and 5, Problem 2" filename="problems/S13/quiz/5-2.problem" attempts="10"/>
+        <problem display_name="Quiz 4 and 5, Problem 3" filename="problems/S13/quiz/5-3.problem" attempts="10"/>
+        <problem display_name="Quiz 4 and 5, Problem 4" filename="problems/S13/quiz/5-4.problem" attempts="10"/>
+        <problem display_name="Quiz 4 and 5, Problem 5" filename="problems/S13/quiz/5-5.problem" attempts="10"/>
+        <problem display_name="Quiz 4 and 5, Problem 6" filename="MIT/RELATE/Mechanics_Online/Quiz_Problems/switchback_1Dmotion_ds.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 6" url_name="Quiz_6">
+        <problem display_name="Quiz 6, Problem 1" filename="problems/S13/quiz/6-1.problem" attempts="10"/>
+        <problem display_name="Quiz 6, Problem 2" filename="problems/S13/quiz/6-2.problem" attempts="10"/>
+        <problem display_name="Quiz 6, Problem 3" filename="problems/S13/quiz/6-3.problem" attempts="10"/>
+        <problem display_name="Quiz 6, Problem 4" filename="problems/S13/quiz/6-4.problem" attempts="10"/>
+        <problem display_name="Quiz 6, Problem 5" filename="MIT/rayyan/Physics801/Symbolic/Canonical Pendulum_combo12.problem" attempts="10"/>
+        <problem display_name="Quiz 6, Problem 6" filename="MIT/RELATE/Mechanics_Online/Quiz_Problems/emergency_cannon.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 7" url_name="Quiz_7">
+        <problem display_name="Quiz 7, Problem 1" filename="problems/S13/quiz/7-1.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 2" filename="problems/S13/quiz/7-2.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 3" filename="MIT/rayyan/check_points/BK/BK51.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 4" filename="MIT/RELATE/Mechanics_Online/Quiz_Problems/impulse_basketball_players.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 5" filename="problems/S13/quiz/7-3.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 6" filename="MIT/rayyan/Physics801/Momentum/Collision01.problem" attempts="10"/>
+        <problem display_name="Quiz 7, Problem 7" filename="MIT/rayyan/Physics801/Symbolic/Dog on a boat.problem" attempts="10"/>
+    </sequential>
+	<sequential display_name="Quiz 8" url_name="Quiz_8">
+        <problem display_name="Quiz 8, Problem 1" filename="problems/S13/quiz/8-1.problem" attempts="10"/>
+        <problem display_name="Quiz 8, Problem 2" filename="MIT/GWUproblems/HTW_exams/exam1_con12.problem" attempts="10"/>
+        <problem display_name="Quiz 8, Problem 3" filename="problems/S13/quiz/8-2.problem" attempts="10"/>
+        <problem display_name="Quiz 8, Problem 4" filename="MIT/rayyan/check_points/BK/BK74.problem" attempts="10"/>
+        <problem display_name="Quiz 8, Problem 5" filename="MIT/boriskor/Multiconcept Problems/A two-block swing.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 9 and 10" url_name="Quiz_9_10">
+        <problem display_name="Quiz 9 and 10, Problem 1" filename="MIT/GWUproblems/Physics_21_Exams/con04.problem" attempts="10"/>
+        <problem display_name="Quiz 9 and 10, Problem 2" filename="MIT/rayyan/check_points/BK/BK80.problem" attempts="10"/>
+        <problem display_name="Quiz 9 and 10, Problem 3" filename="MIT/boriskor/Multiconcept Problems/Rolling Disc and Descending Block.problem" attempts="10"/>
+        <problem display_name="Quiz 9 and 10, Problem 4" filename="MIT/boriskor/Rotation/Bar swinging top to horizontal multipart.problem" attempts="10"/>
+        <problem display_name="Quiz 9 and 10, Problem 5" filename="MIT/boriskor/Rotation/Ladder against a frictionless wall.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 11" url_name="Quiz_11">
+        <problem display_name="Quiz 11, Problem 1" filename="problems/S13/quiz/11-1.problem" attempts="10"/>
+        <problem display_name="Quiz 11, Problem 2" filename="problems/S13/quiz/11-2.problem" attempts="10"/>
+        <problem display_name="Quiz 11, Problem 3" filename="MIT/rayyan/check_points/BK/BK104.problem" attempts="10"/>
+        <problem display_name="Quiz 11, Problem 4" filename="problems/S13/quiz/11-3.problem" attempts="10"/>
+        <problem display_name="Quiz 11, Problem 5" filename="MIT/rayyan/Physics801/Rotational Motion and Torque/Spinning Rod.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 12" url_name="Quiz_12">
+        <problem display_name="Quiz 12, Problem 1" filename="MIT/rayyan/osu/satellitte.problem" attempts="10"/>
+        <problem display_name="Quiz 12, Problem 2" filename="MIT/rayyan/Physics801/quizzes/satellite_with_drag_cq.problem" attempts="10"/>
+        <problem display_name="Quiz 12, Problem 3" filename="MIT/rayyan/problemset/hw10/U10_problem1.problem" attempts="10"/>
+        <problem display_name="Quiz 12, Problem 4" filename="MIT/rayyan/problemset/hw10/U10_problem2.problem" attempts="10"/>
+        <problem display_name="Quiz 12, Problem 5" filename="MIT/rayyan/Physics801/quizzes/spacejunk.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 13" url_name="Quiz_13">
+        <problem display_name="Quiz 13, Problem 1" filename="MIT/rayyan/check_points/DS/cq_what_changes_frequency.problem" attempts="10"/>
+        <problem display_name="Quiz 13, Problem 2" filename="problems/S13/quiz/13-1.problem" attempts="10"/>
+        <problem display_name="Quiz 13, Problem 3" filename="MIT/rayyan/problemset/hw11/U11_problem1.problem" attempts="10"/>
+        <problem display_name="Quiz 13, Problem 4" filename="MIT/rayyan/problemset/hw11/U11_problem2.problem" attempts="10"/>
+	</sequential>
+	<sequential display_name="Quiz 14" url_name="Quiz_14">
+        <problem display_name="Quiz 14, Problem 1" filename="MIT/rayyan/Physics801/Symbolic/Spool.problem" attempts="10"/>
+        <problem display_name="Quiz 14, Problem 2" filename="problems/S13/quiz/14-1.problem" attempts="10"/>
+        <problem display_name="Quiz 14, Problem 3" filename="MIT/boriskor/Multiconcept Problems/Bullet strikes the midpoint of a pivoted vertical bar.problem" attempts="10"/>
+        <problem display_name="Quiz 14, Problem 4" filename="MIT/rayyan/Physics801/Symbolic/Bowling.problem" attempts="10"/>
+	</sequential>
+</chapter>

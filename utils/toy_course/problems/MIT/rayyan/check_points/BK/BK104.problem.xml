@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Spinning Rod </title>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+l=random.choice([0.6,0.8,1.2])
+m=random.choice([0.08,0.18,0.24])
+v=random.choice([2.5,3.5,4.0])
+
+L=25* m* v* l
+
+</script>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK104.PNG" alt="BK104"/>
+    <br/>
+
+		<p>A light rigid rod of length 3L has small spheres of masses m, 2m, 3m and 4m attached as shown. The rod is spinning in a horizontal plane about a vertical axis passing through m. The linear speed of mass 3m is v = $v m/s. </p>
+		<p>If L = $l meters and m = $m kilograms, find the magnitude of the angular momentum of the rod about this axis.</p>
+		<p>\(L=\)</p>
+
+      <numericalresponse answer="$L" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

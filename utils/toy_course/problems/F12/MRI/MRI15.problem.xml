@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 15 -->
+
+<problem>
+
+	<p>A system consists of two blocks, of masses m and 2m, attached to the ends of a massless spring with a force constant k. The system is placed on a horizontal frictionless surface. Initially, the spring is relaxed. The blocks are then pulled apart an “extra” distance x and released from the state of rest.</p>
+	<img src="/static/problems/F12/MRI/images/MRI14.png" />
+
+	<h3>Part 1</h3>
+	<p>As the blocks are moving toward each other, the center of mass of the system: </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Is moving to the right</choice>
+			<choice location="random" correct="false">Is moving to the left</choice>
+			<choice location="random" correct="true">Is not moving</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The momentum of the system is conserved</choice>
+			<choice location="random" correct="false">The momentum of the system is not conserved</choice>
+			<choice location="random" correct="false">The more massive block experiences greater net force</choice>
+			<choice location="random" correct="false">The less massive block experiences greater net force</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

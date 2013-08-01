@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<html>
+<!-- determining constant acceleration-->
+
+<problem>
+	<p>Determine if the following statements describe something undergoing constant acceleration.</p>
+
+	<optionresponse>
+		<p>The free body diagram looks like this:</p>
+		<img src="/static/problems/S13/alwina/images/constant_accel_1.png"/>
+		<optioninput options="('Yes','No')" correct="Yes"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>A spring moving like this (graphic from Wikimedia Commons):</p>
+		<img src="/static/problems/S13/alwina/images/oscillating_spring.gif"/>
+		<optioninput options="('Yes','No')" correct="No"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>The <b>position</b> with respect to time is \(f(t)=\frac{1}{3}t^3+3t^2+4t+1\), which looks like:</p>
+		<img src="/static/problems/S13/alwina/images/constant_accel_3.png"/>
+		<br/><br/>
+		<optioninput options="('Yes','No')" correct="No"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>The <b>position</b> with respect to time is \(f(t)=t^2-2\), which looks like:</p>
+		<img src="/static/problems/S13/alwina/images/constant_accel_45.png"/>
+		<br/><br/>
+		<optioninput options="('Yes','No')" correct="Yes"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>The <b>velocity</b> with respect to time is \(f(t)=t^2-2\), which looks like:</p>
+		<img src="/static/problems/S13/alwina/images/constant_accel_45.png"/>
+		<br/><br/>
+		<optioninput options="('Yes','No')" correct="No"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>A strobe diagram (graphic from Wikimedia Commons):</p>
+		<img src="/static/problems/S13/alwina/images/strobe_free_fall.png"/>
+		<br/><br/>
+		<optioninput options="('Yes','No')" correct="Yes"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>Another strobe diagram (graphic from Wikimedia Commons):</p>
+		<img src="/static/problems/S13/alwina/images/strobe_parabolic_motion.png"/>
+		<br/><br/>
+		<optioninput options="('Yes','No')" correct="Yes"></optioninput>
+	</optionresponse>
+
+	<optionresponse>
+		<p>A person on a moving Ferris wheel</p>
+		<optioninput options="('Yes','No')" correct="No"></optioninput>
+	</optionresponse>	
+
+</problem>
+</html>

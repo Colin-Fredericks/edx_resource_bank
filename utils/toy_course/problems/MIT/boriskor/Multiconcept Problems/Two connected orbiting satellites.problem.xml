@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/17-two connected satellites.png" alt="Two satellites connected by a string revolve in concentric circular orbits"/>
+        <br/>
+
+      <p>
+Two satellites of equal masses \(m\) revolve around the planet of mass \(M\) (M&gt;&gt;m). The radii of the orbits of the satellites are \(r\) and \(2r\). The satellites are connected by a light string, directed along the radius of the orbit, that keeps their periods of revolution equal. Find the force of tension in the string. </p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                \(F_T = (7/12)GMm/r^2\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(F_T = (3/5)GMm/r^2\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(F_T = (5/3)GMm/r^2\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \(F_T = 2GMm/r^2\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(F_T = (3/2)GMm/r^2\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

@@ -1,0 +1,17 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Are you taking any other courses right now, or using material from a program like <a href="https://www.khanacademy.org/">Khan Academy</a>, <a href="http://www.codecademy.com/">Codecademy</a>, or <a href="http://ocw.mit.edu/index.htm">OCW</a>? Please check all that apply.</p>
+   <choiceresponse>
+    <checkboxgroup direction="vertical" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="physics"><text>Yes, another physics course.</text></choice>
+       <choice correct="true" name="math"><text>Yes, a math course.</text></choice>
+       <choice correct="true" name="sci/eng"><text>Yes, a science, computer, or engineering course.</text></choice>
+       <choice correct="true" name="prof"><text>Yes, a course for professional certification.</text></choice>
+       <choice correct="true" name="other"><text>Yes, a course in a different topic.</text></choice>
+       <choice correct="true" name="no"><text>No, this is the only course I am taking right now.</text></choice>
+    </checkboxgroup>
+   </choiceresponse>
+  <p>If you are, please tell us which of your courses are online, and which are face-to-face.</p>
+  <stringresponse answer="It's a survey. There is no right answer.">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

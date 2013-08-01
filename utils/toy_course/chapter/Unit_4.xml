@@ -1,0 +1,149 @@
+<chapter display_name="4: Describing Motion">
+	<sequential display_name="Mini Survey 4 - Activity" filename="mini_survey_4" />
+	<sequential  display_name="Describing Motion" url_name="Describing_Motion">
+		<vertical display_name="Describing Motion">
+			<html display_name="Describing Motion" filename="problems/MIT/RELATE/htmlwiki/Unit4/Describing_Motion_1.html"/>
+			<discussion for="Describing Motion" id="MReV_Summer2013_Describing_Motion_1" discussion_category="Describing Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Position, Displacement, Distance, and Coordinate systems" url_name="Position_Displacement_Distance_and_Coordinate_systems">
+		<vertical display_name="Position, Displacement, Distance and Coordinate Systems">
+			<html display_name="Position, Displacement, Distance and Coordinate Systems" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module1/Position__Displaceme.html"/>
+			<discussion for="Position, Displacement, Distance and Coordinate Systems" id="MReV_Summer2013_Position__Displaceme" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Example: Late for Physics">
+			<html display_name="Example: Late for Physics" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module1/IE_Late_for_Physics.html"/>
+			<discussion for="Example: Late for Physics" id="MReV_Summer2013_IE_Late_for_Physics" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: An Ant's Displacement">
+			<problem display_name="Checkpoint 1: An Ant's Displacement" filename="MIT/rayyan/osu/03_Vectors/moving/moving.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: An Ant's Displacement" id="MReV_Summer2013_moving" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: 2 Coordinate Systems">
+			<problem display_name="CheckPoint 2: 2 Coordinate Systems" filename="MIT/rayyan/check_points/BK/BK31B.problem" attempts="4"/>
+			<discussion for="CheckPoint 2: 2 Coordinate Systems" id="MReV_Summer2013_BK31B" discussion_category="Describing Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Velocity, Speed and Models in Mechanics" url_name="Velocity_Speed_and_Models_in_Mechanics">
+		<vertical display_name="Velocity, Speed and Models in Mechanics">
+			<html display_name="Velocity, Speed and Models in Mechanics" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/Velocity__Speed_and.html"/>
+			<discussion for="Velocity, Speed and Models in Mechanics" id="MReV_Summer2013_Velocity__Speed_and" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity">
+			<html display_name="Average Velocity" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/Averge_Velocity.html"/>
+			<discussion for="Average Velocity" id="MReV_Summer2013_Averge_Velocity" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Average Velocity and Average Speed">
+			<html display_name="Average Velocity and Average Speed" filename="problems/MIT/analiab/Videos/average_velocity_and_speed_.html"/>
+			<discussion for="Average Velocity and Average Speed" id="MReV_Summer2013_average_velocity_and_speed_" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Summary: Speed, Average Velocity, and Average Speed">
+			<html display_name="Summary: Speed, Average Velocity, and Average Speed" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/Terminology.html"/>
+			<discussion for="Summary: Speed, Average Velocity, and Average Speed" id="MReV_Summer2013_Terminology" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Example: Return to Campus">
+			<html display_name="Example: Return to Campus" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/IE_Return_to_Campus.html"/>
+			<discussion for="Example: Return to Campus" id="MReV_Summer2013_IE_Return_to_Campus" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Instantaneous Velocity">
+			<html display_name="Instantaneous Velocity" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/Instantaneous_Velocity.html"/>
+			<discussion for="Instantaneous Velocity" id="MReV_Summer2013_Instantaneous_Velocity" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Instantaneous Velocity and Instantaneous Speed">
+			<html display_name="Instantaneous Velocity and Instantaneous Speed" filename="problems/MIT/analiab/Videos/Instantaneous_velocity_and_speed.html"/>
+			<discussion for="Instantaneous Velocity and Instantaneous Speed" id="MReV_Summer2013_Instantaneous_velocity_and_speed" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Constant Velocity">
+			<html display_name="Constant Velocity" filename="problems/MIT/analiab/Problems/ConstantVelocity.html"/>
+			<discussion for="Constant Velocity" id="MReV_Summer2013_ConstantVelocity" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Multi-Dimensional Velocity">
+			<html display_name="Multi-Dimensional Velocity" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module2/Multi_Dimensional_Velocity.html"/>
+			<discussion for="Multi-Dimensional Velocity" id="MReV_Summer2013_Multi_Dimensional_Velocity" discussion_category="Describing Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Velocity and Acceleration" url_name="Velocity_and_Acceleration">
+		<vertical display_name="Average and Instantaneous Acceleration">
+			<html display_name="Average and Instantaneous Acceleration" filename="problems/MIT/analiab/Videos/average_and_instantaneous_acceleration.html"/>
+			<discussion for="Average and Instantaneous Acceleration" id="MReV_Summer2013_average_and_instantaneous_acceleration" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Velocity and Acceleration">
+			<html display_name="Velocity and Acceleration" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module3/Velocity_and_Acceler_1.html"/>
+			<discussion for="Velocity and Acceleration" id="MReV_Summer2013_Velocity_and_Acceler_1" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Video: the direction of the acceleration">
+			<problem display_name="Video: the direction of the acceleration" filename="MIT/analiab/Problems/direction_of_the_acceleration.problem" attempts="3"/>
+			<discussion for="Video: the direction of the acceleration" id="MReV_Summer2013_direction_of_the_acceleration" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Equation of motion">
+			<problem display_name="CheckPoint 3: Equation of motion" filename="MIT/rayyan/check_points/BK/BK32.problem" attempts="4"/>
+			<discussion for="CheckPoint 3: Equation of motion" id="MReV_Summer2013_BK32" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: Equation of motion 2">
+			<problem display_name="CheckPoint 4: Equation of motion 2" filename="MIT/rayyan/check_points/BK/BK33.problem" attempts="4"/>
+			<discussion for="CheckPoint 4: Equation of motion 2" id="MReV_Summer2013_BK33" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Video: 3D motion with non constant acceleration">
+			<html display_name="Video: 3D motion with non constant acceleration" filename="problems/MIT/analiab/Videos/example_3D_motion_non_constant_acceleration.html"/>
+			<discussion for="Video: 3D motion with non constant acceleration" id="MReV_Summer2013_example_3D_motion_non_constant_acceleration" discussion_category="Describing Motion" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Graphing Motion, Acceleration vs. Deceleration" url_name="Graphing_Motion_Acceleration_vs._Deceleration">
+		<vertical display_name="Graphing Motion and Acceleration vs Deceleration">
+			<html display_name="Graphing Motion and Acceleration vs Deceleration" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module4/Graphing_Motion_and.html"/>
+			<discussion for="Graphing Motion and Acceleration vs Deceleration" id="MReV_Summer2013_Graphing_Motion_and" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Graphing Accelerated Motion">
+			<html display_name="Graphing Accelerated Motion" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module4/Graphing_Acceleration.html"/>
+			<discussion for="Graphing Accelerated Motion" id="MReV_Summer2013_Graphing_Acceleration" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Reading Graphs">
+			<problem display_name="CheckPoint 5: Reading Graphs" filename="MIT/rayyan/check_points/BK/BK36.problem" attempts="3"/>
+			<discussion for="CheckPoint 5: Reading Graphs" id="MReV_Summer2013_BK36" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Reading Graphs 2">
+			<problem display_name="CheckPoint 6: Reading Graphs 2" filename="MIT/rayyan/check_points/BK/BK37.problem" attempts="3"/>
+			<discussion for="CheckPoint 6: Reading Graphs 2" id="MReV_Summer2013_BK37" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Acceleration vs. Deceleration">
+			<html display_name="Acceleration vs. Deceleration" filename="problems/MIT/RELATE/htmlwiki/Unit4/Module4/Deceleration.html"/>
+			<discussion for="Acceleration vs. Deceleration" id="MReV_Summer2013_Deceleration" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Position versus Time">
+			<problem display_name="CheckPoint 7: Position versus Time" filename="MIT/RELATE/htmlwiki/Unit4/Module4/CP_Accel_Decel.problem" attempts="10"/>
+			<discussion for="CheckPoint 7: Position versus Time" id="MReV_Summer2013_CP_Accel_Decel" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Checkpoint 8: Acceleration and Deceleration">
+			<problem display_name="Checkpoint 8: Acceleration and Deceleration" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/motion/motion_3.problem" attempts="2"/>
+			<discussion for="Checkpoint 8: Acceleration and Deceleration" id="MReV_Summer2013_motion_3" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Checkpoint 9: Graphing Velocity">
+			<problem display_name="Checkpoint 9: Graphing Velocity" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/motion/motion_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 9: Graphing Velocity" id="MReV_Summer2013_motion_1" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Checkpoint 10: Graphing Acceleration">
+			<problem display_name="Checkpoint 10: Graphing Acceleration" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/motion/motion_2.problem" attempts="1"/>
+			<discussion for="Checkpoint 10: Graphing Acceleration" id="MReV_Summer2013_motion_2" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Checkpoint 11: Snapshots">
+			<problem display_name="Checkpoint 11: Snapshots" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/motion/motion.problem" attempts="1"/>
+			<discussion for="Checkpoint 11: Snapshots" id="MReV_Summer2013_motion" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Simulation: The moving man">
+			<html display_name="Simulation: The moving man" filename="problems/MIT/analiab/Videos/simulation_the_moving_man.html"/>
+			<discussion for="Simulation: The moving man" id="MReV_Summer2013_simulation_the_moving_man" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Video: Given v vs. t obtain x(t)">
+			<problem display_name="Video: Given v vs. t obtain x(t)" filename="MIT/analiab/Problems/given_plot_of_v_obtain_x.problem" attempts="10"/>
+			<discussion for="Video: Given v vs. t obtain x(t)" id="MReV_Summer2013_given_plot_of_v_obtain_x" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Video: Given v vs. t obtain a vs. t">
+			<problem display_name="Video: Given v vs. t obtain a vs. t" filename="MIT/analiab/Problems/given_the_plot_of_v_obtain_the_plot_of_a_new.problem" attempts="10"/>
+			<discussion for="Video: Given v vs. t obtain a vs. t" id="MReV_Summer2013_given_the_plot_of_v_obtain_the_plot_of_a_new" discussion_category="Describing Motion" />
+		</vertical>
+		<vertical display_name="Video: Given v vs. t obtain x vs. t">
+			<problem display_name="Video: Given v vs. t obtain x vs. t" filename="MIT/analiab/Problems/given_the_plot_of_v_obtain_the_plot_of_x_new.problem" attempts="10"/>
+			<discussion for="Video: Given v vs. t obtain x vs. t" id="MReV_Summer2013_given_the_plot_of_v_obtain_the_plot_of_x_new" discussion_category="Describing Motion" />
+		</vertical>
+	</sequential>
+</chapter>

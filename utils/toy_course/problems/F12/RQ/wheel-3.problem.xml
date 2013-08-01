@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<problem>
+
+	<p>The wheel is <i>rolling without slipping or skidding</i>:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="true" name="1">\( V_{cm}= R \omega_{cm} \) </choice>
+<choice location="random" correct="false" name="2">\( V_{cm} \gt R \omega_{cm} \) </choice>
+<choice location="random" correct="false" name="3">\( V_{cm} \lt R \omega_{cm} \) </choice>
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

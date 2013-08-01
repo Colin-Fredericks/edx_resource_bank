@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/block.png" alt="block" height="150"/>
+
+      <p><br/>A block of mass m is at rest at the top of a ramp of vertical height h.  The block starts to slide down the frictionless ramp and reaches a speed v at the bottom.  If a block of mass 2m were to reach the same speed v at the bottom, it would need to slide down the ramp starting at the height of _____.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+              h          
+        </choice>
+        <choice name="foil2" correct="false">
+              1.41h          
+        </choice>
+        <choice name="foil13" correct="false">
+
+              2h          
+        </choice>
+        <choice name="foil1\4" correct="false">
+
+              3h          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              4h          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              6h          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

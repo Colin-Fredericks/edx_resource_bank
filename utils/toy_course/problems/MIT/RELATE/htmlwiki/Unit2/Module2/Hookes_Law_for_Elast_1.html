@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Hooke's Law for Elastic Restoring Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+			Elastic Restoring Forces and Hooke's Law</h2>
+<p>
+			Springs are a staple of mechanics problems because they obey a simple force law - the force is proportional to the displacement of the object on which it is acting. In other words, it has a <em>linear restoring force</em>&#160;(a concept with great utility). The ideal springs we consider are themselves massless and their interaction with other objects is modeled by a simple linear function. The force on the object from the spring is: F = -k*(x-x<sub>e</sub>) where x is the displacement of the spring from its equilibrium position: x<sub>e</sub></p>
+<p>
+Learning Goals</p>
+<p>
+			After completing this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				Explain what is meant by the "equilibrium" or "natural" length of a spring.</li>
+<li>
+				State Hooke's Law for an elastic restoring force and explain the coordinate system implied by it.</li>
+<li>
+				Explain the significance of the negative sign in Hooke's Law.</li>
+</ul>
+<h3>
+Properties of an Elastic Restoring Force</h3>
+<p>
+			A summary of the properties of the elastic restoring force exerted by a massless ideal spring that is connected to two objects (one at each of its ends) is:</p>
+<ul style="list-style:disc outside none">
+<li>
+				The spring provides equal and opposite forces on each object.</li>
+<li>
+				If the spring is at its equilibrium or natural length (neither compressed nor expanded), it will exert no force on the objects.</li>
+<li>
+				If the spring is stretched beyond its natural length, the forces exerted by the spring will attempt to bring the objects on either end together.</li>
+<li>
+				If the spring is compressed to less than its natural length, the forces exerted by the spring will attempt to push the objects on either end apart.</li>
+<li>
+				The magnitude of the spring force is directly proportional to the difference between its current length and its natural length; the constant of proportionality is called the "spring constant" and usually designated <em>k</em>. <em>k</em> is large for a stiff spring and small for an easily stretchable spring.</li>
+</ul>
+<h3>
+			Hooke's Law for Elastic Restoring Force</h3>
+<p>
+			In the figure below, an object of mass <i>m</i> is attached to a horizontal spring whose opposite end is fixed to an immovable object such as a wall. The spring is parallel to the x - axis. The key properties of the elastic restoring force can be summarized in a simple force law called Hooke's Law given by the following equation:</p>
+<p>
+\(\mathcal{}F_{ms,x} = -k x \)</p>
+<p>
+			In this equation, <i>F</i><sub><i>m</i><i>s</i>,<i>x</i></sub> is the x-component of the force acting on the object of mass <i>m</i> from the spring, and <i>x</i> represents the position of the object attached to the spring with the origin of the coordinate (<i>x</i>=0) <i>necessarily</i> assigned to the position that leaves the spring at its equilibrium length (indicated by L<sub>o</sub> in the figure). The symbol <i>k</i> is a positive constant that characterizes the individual spring being used. It is important to note that <i>k</i> is constant for a given spring, but different springs can have different <i>k</i> values. The constant <i>k</i> is usually called the <b>spring constant</b> or the <b>force constant</b>. Stiff springs have a large spring constant, while easily stretched springs have a small spring constant. From the form of the equation, we see that the dimensions of&#160;<i>k</i> are force per length, thus Newtons per meter (N/m) is an SI unit for&#160;<i>k</i>.</p>
+<p>
+			The negative sign in this equation is meaningful because <i>F</i> and <i>x</i> are each vectors (or components of a 1-dimensional vector). It indicates that when the spring is either stretched or compressed will try to restore its length to its natural length. When the object moves to a positive <i>x</i> value, the spring is stretched (its length is larger than L<sub>o</sub>), and the force on the object will point back in the negative direction. When the object moves to a negative <i>x</i> value, the spring is compressed (its length is smaller than L<sub>o</sub>), and the force will point in the positive direction. Thus, if the object is released after stretching the spring, it will oscillate back and forth around its equilibrium position (where the spring has its equilibrium length).</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module2/files/Hookeslawb.png"/></p>
+</body>
+</html>
+

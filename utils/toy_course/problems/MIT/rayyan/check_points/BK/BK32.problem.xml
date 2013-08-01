@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Equation of motion </title>
+
+      <p>A robotic bug is moving along the x-axis. Its equation of motion is x(t) = 10\(t^{2}\)- 4\(t\) - 6 (all coefficients are assumed to have SI units).</p>
+    <p>Part 1. Is the acceleration of the bug constant?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                Yes
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                No
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                Not enough information to answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 2. What is the initial velocity of the bug?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                4 m/s 
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                -4 m/s
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                -5 m/s
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                5 m/s
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                6 m/s
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                -6 m/s
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                10 m/s
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                -10 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 3. What is the acceleration of the bug at t = 2.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                <text>-2 m/s<sup>2</sup></text> 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                <text>-4 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                <text>5 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                <text>10 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                <text>20 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                <text>26 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                <text>36 m/s<sup>2</sup></text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 4. Does the bug ever pass through the origin?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                No, the bug is never at the origin
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                The bug starts at the origin but never passes through it again
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+                Yes, at 1.0 s
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                Yes, at 1.5 s
+          </choice>
+          <choice location="bottom" name="foil5" correct="false">
+                There is not enough information to answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 5. What is the x-coordinate of the bug at the instant the bug stops momentarily?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                0.2 m
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                -0.4 m
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+                -6.4 m
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                -2.8 m
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                12 m
+          </choice>
+          <choice location="bottom" name="foil5" correct="false">
+                There is never a moment when the bug stops
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 6. What is the displacement of the bug between t = 0.1 s and t = 0.4 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                -6.3 m 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                -6.0 m
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                -0.5 m
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                -0.3 m
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                0.3 m
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                0.5 m
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                6.0 m
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                6.3 m
+          </choice>
+          <choice location="random" name="foil9" correct="false">
+                12.3 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 7. What is the distance covered by the bug between t = 0.1 s and t = 0.4 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                -6.3 m 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                -6.0 m
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                -0.5 m
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                -0.3 m
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                0.3 m
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                0.5 m
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                6.0 m
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                6.3 m
+          </choice>
+          <choice location="random" name="foil9" correct="false">
+                12.3 m
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 8. What is the average velocity of the bug between t = 2.0 s and t = 4.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                10 m/s 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                30 m/s
+          </choice>
+          <choice location="random" name="foil3" correct="true">
+                56 m/s
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                62 m/s
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                64 m/s
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                124 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

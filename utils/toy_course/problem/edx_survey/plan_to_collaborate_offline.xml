@@ -1,0 +1,15 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Will you work offline with anyone on the material for Mechanics ReView?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="work_with_classmate"><text>I will work with another person who is also completing the class.</text></choice>
+      <choice correct="true" name="work_with_expert"><text>I will work with someone who teaches or has expertise in this area.</text></choice>
+      <choice correct="true" name="work_on_own"><text>I will work completely on my own.</text></choice>
+      <choice correct="true" name="other"><text>Other ______</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+  <p>If you answered other, how do you plan to work with others?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

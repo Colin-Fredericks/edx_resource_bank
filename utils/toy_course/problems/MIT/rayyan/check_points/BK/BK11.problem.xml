@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK11.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+Four blocks are placed on a frictionless table. A single horizontal force is applied to each of them. The masses of the blocks and the magnitudes of the applied forces are shown. Which of the blocks has the greatest rate of change in velocity?
+
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+               block 1          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+               block 2          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+               block 3          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+
+               block 4          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

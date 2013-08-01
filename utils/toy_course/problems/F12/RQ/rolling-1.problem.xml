@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<problem>
+
+<p>A wheel of radius \(R\) is rolling without slipping along a level surface with center-of-mass velocity \(\vec{\mathbf{V}} _{cm}\) (with magnitude \(v_{CM}\)) . What is speed of a point on the rim with respect to the ground in each of the four positions <b>A</b>, <b>B</b>, <b>C</b>, and <b>D</b> as shown in the figure below? </p>
+
+<p><img src="/static/problems/F12/RQ/images/rolling_wheel.png" width="550"/></p>
+
+<h3>Part 1.</h3>
+<p>Speed of point A is:
+<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">Zero </choice>
+		<choice location="random" correct="false" name="2">\( \frac{1}{\sqrt{2}} v_{CM}\) </choice>
+		<choice location="random" correct="true" name="3">\( \sqrt{2} v_{CM}\) </choice>
+		<choice location="random" correct="false" name="4">\( 2 v_{CM}\) </choice>
+	</choicegroup>
+</multiplechoiceresponse>
+</p>
+
+</problem>

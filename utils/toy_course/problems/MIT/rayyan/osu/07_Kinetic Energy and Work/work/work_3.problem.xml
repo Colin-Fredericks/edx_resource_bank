@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/work_3.png" alt="work_3" height="150"/>
+
+      <p><br/>
+The engine of a 1000 kg sports car rotates the tires, creating a net forward force on the car due to friction with the ground that varies as a function of distance.  The force is shown in the figure. If the car starts at rest, what is the speed of the car after traveling 500 meters? </p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              0m/s          
+        </choice>
+        <choice name="foil2" correct="true">
+
+              71m/s          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              100m/s          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              141m/s          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              200m/s          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

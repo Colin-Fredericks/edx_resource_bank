@@ -1,0 +1,244 @@
+<html><html>
+<head>
+<title>Example: Fan-Powered Ice Boat</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Fan-Powered Ice Boat</h3>
+<div class="thumb tleft">
+<div style="width:642px;" class="thumbinner">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Skippy_wiki.jpg"/>
+<div class="thumbcaption">
+					Photo courtesy the <a href="http://www.umanitoba.ca" class="external text" rel="nofollow">University of Manitoba's</a> <a href="http://www.umanitoba.ca/ceos/" class="external text" rel="nofollow">Center for Earth Observation Science</a></div>
+</div>
+</div>
+<br style="clear:both"/>
+
+<p>Pictured above is the <a href="http://www.umanitoba.ca" class="external text" rel="nofollow">University of Manitoba</a> <a href="http://www.umanitoba.ca/ceos" class="external text" rel="nofollow">Center for Earth Observation Science's</a> air/ice boat "Skippy". Skippy has a large fan at the back to allow it to accelerate as it slides across icy surfaces. Suppose you are piloting a similar craft on very slippery ice (assume there is no friction). Suppose also that the fan on your ice boat can be reversed instantaneously, switching the direction of the thrust it produces from forward to backward. Further, assume the action of the fan when it is on always produces an acceleration with the same constant magnitude.</p>
+<p>Suppose you start your fan boat at rest. You point the boat to the east and turn on the fan, which produces an eastward acceleration of 0.50 m/s<sup>2</sup>. After traveling with this constant acceleration for 20.0 seconds, you reverse the fan, switching the direction of the acceleration produced to westward. Plot velocity- and position-time graphs for the first 40.0 seconds of your motion.</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+  <tr>
+	<th><b>Solution</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht1">
+	<td>
+	  <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l" show="">[show system]</a>
+	  <div style="display:none;" id="toggledisplay1">The fan boat will be treated as a point particle.</div>
+	  <br/>
+	  <b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l" show="">[show interactions]</a>
+	  <div style="display:none;" id="toggledisplay2">The thrust of the fan (actually the air pushing on the boat) results in a constant eastward acceleration for the first 20 seconds. The interaction then undergoes a change as the fan is reversed. For the next 20 seconds of the motion the thrust produces a constant westward acceleration.</div>
+	  <br/>
+	  <b>Models:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Models]&quot; )" id="toggledisplay3l" show="">[show Models]</a>
+	  <div style="display:none;" id="toggledisplay3">We will use the One-Dimensional Motion with Constant Acceleration Model, but we will have to apply it twice to allow for the sudden change in acceleration when the fan is reversed. The Model must be applied separately to the first 20 seconds and then to the following 20 seconds.</div>
+	  <br/>
+	  <b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l" show="">[show approach]</a>
+	  <div style="display:none;" id="toggledisplay4">
+	  <br/>
+	  
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Choose a Coordinate System [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht2">
+	<td>The first step toward a quantitative description of the motion must be to set up a coordinate system. The motion takes place along an east-west axis, and so we choose the x-direction to point east. We choose the initial position of the fan boat to be <i>x<sub>i</sub></i> = 0 and we assume that the motion begins at <i>t<sub>i</sub></i>=0.</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Understand the Limitations of the Model [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht3">
+	<td>Even though the acceleration has a size of 0.50 m/s<sup>2</sup> throughout the motion, the direction of the acceleration changes at t = 20.0 s. Therefore, the acceleration is not constant over the first 40.0 seconds of the motion. The acceleration is, however, separately constant in the time intervals from 0 to 20.0 seconds and from 20.0 to 40.0 seconds. We will therefore have to use the Constant Acceleration Model twice: once to describe the motion from t = 0 seconds to t = 20.0 seconds, and once more to describe the motion from t = 20.0 seconds to t = 40.0 seconds.</td>
+  </tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>The First Interval [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht4">
+	<td>For the first portion of the motion where the acceleration is eastward, the givens are:
+
+	<table class="subsubtable">
+<tbody>
+  <tr>
+    <th>First Segment Givens</th>
+  </tr>
+  <tr>
+	<td>\(\mathcal{}t_{i} = 0 \qquad t_{f} = \mbox{20.0 s} \qquad x_{i} = 0 \qquad v_{i,x} = 0 \qquad a_{x} = \mbox{0.50 m/s$^2$}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>We begin by finding the velocity. The simplest mathematical representation of the Model appropriate to our givens is:</p>
+<p>\(\mathcal{}v(t) = v_{i,x} + a_{x}(t-t_{i})\)</p>
+<p>Substituting the givens yields:</p>
+<p>\( \mathcal{}v(t) = (\mbox{0.50 m/s$^2$})t \)</p>
+<p>This is the equation for a line with slope 0.5 and intercept 0, yielding the graph:</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Unit2Mod6Vel1.gif"/></p>
+<p>We then find the position using:</p>
+<p>\(x(t) = x_{i} + v_{i,x}(t-t_{i}) + \frac{1}{2}a_{x}(t-t_{i})^{2} = (\mbox{0.25 m/s$^2$})t^{2}\)</p>
+<p>which corresponds to the parabolic graph:</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Unit2Mod6Pos1.gif"/></p>
+<p>Note that each of these graphs must terminate at <i>t<sub>f</sub></i> = 20 seconds, since the parameters in the Model we are using is only valid during the time interval from 0 seconds to 20 seconds.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>The Second Interval [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht5">
+	<td>During the second time interval (from 20 seconds to 40 seconds) we will employ the same basic Model, but with different given parameters. According to the coordinate system we have chosen, we must now assign the acceleration the value <i>a<sub>x</sub></i> =  &#8722; 0.50 m/s<sup>2</sup>, since it points westward. We also know that for this interval <i>t<sub>i</sub></i>=20.0 s and <i>t<sub>f</sub></i>=40.0 s. These three givens are <i>not</i> enough to solve for the velocity and position during the interval, however. We must have information about the initial position and velocity for the interval.
+		<p>The answer to our need is simple. We have just derived expressions for <i>x</i> and <i>v</i> valid for any time between zero and 20 seconds. We would like to know <i>x</i> and <i>v</i> at <i>t</i> = 20 seconds, which is the initial time for the second interval. Thus, we can use the <i>final</i> time of the first interval to obtain the <i>initial</i> conditions for the second part. Using the results of the first interval allows us to determine a complete set of givens for the second interval:</p>
+		
+<table class="subsubtable">
+<tbody>
+  <tr>
+	<th>Second Interval Givens</th>
+  </tr>
+  <tr>
+	<td>\(t_{i} = \mbox{20.0 s}\qquad x_{i} = \mbox{100 m}\qquad v_{i,x} = \mbox{10 m/s}\)
+	<br/>\( t_{f} = \mbox{40.0 s}\qquad a_{x} = - \mbox{0.50 m/s$^2$}\)</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Essentially, the results of the first interval serve as constraints on the initial conditions of the second interval. With these constraints applied, we can find the appropriate equations for the velocity and the position:</p>
+<p>\(\mathcal{}v(t) = v_{i,x} + a_{x}(t-t_{i}) = \mbox{10 m/s} + (-\mbox{0.50 m/s$^2$})(t-\mbox{20.0 s})\)</p>
+<p>\(x(t) = x_{i} + v_{i,x}(t-t_{i}) + \frac{1}{2}a_{x}(t-t_{i})^{2} = \)</p>
+<p>\(x(t)=\mbox{100 m} + (\mbox{10.0 m/s})(t-\mbox{20.0 s}) + \frac{1}{2}(-\mbox{0.50 m/s$^2$})(t-\mbox{20.0s})^{2}\)</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+  <tr>
+	<th>Putting it Together [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+  </tr>
+  <tr style="display:none" id="ht6">
+	<td>Once we have determined the appropriate expressions to use in the two intervals, we can create composite graphs that illustrate the motion during the entire 40 second motion. For purposes of discussion, we also show the acceleration graph.
+
+<table>
+<tbody>
+  <tr>
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Unit2Mod6Accel.gif"/></td>
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Unit2Mod6VelAll.gif"/></td>
+	<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module3/files/Unit2Mod6PosAll.gif"/></td>
+  </tr>
+</tbody>
+</table>
+
+<p>Here we can see that although the acceleration is discontinuous (has a break in the graph at t = 20 s) the velocity is not discontinuous. The velocity graph is a connected function, though it does display a kink at 20 s, when the graph suddenly takes a sharp bend. This kink is a sign of a discontinuous first derivative (the first derivative of velocity is acceleration, which is discontinuous). We ensured the velocity would be a connected function when we applied the constraint that the final velocity of the first interval be equal to the initial velocity for the second interval. The position graph is completely smooth. It is connected and displays no kinks (the first derivative of position is velocity, which is continuous). We ensured this smoothness by applying the constraint that the final value of interval 1 be equal to the initial value of interval 2 to <i>both</i> the velocity and the position.</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

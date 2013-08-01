@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img width="600" height="300" src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/Acceleration_catchingball.png"/>
+    <br/>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+ans="g/tan(B)"
+</script>
+
+      <p>
+Starting from rest, a child throws a ball of mass <i>m</i> with an initial speed <i>v</i> at <i>B</i> 
+above the horizontal. The child then chases after the ball, accelerating at a constant acceleration 
+<i>a</i>. If the child wants to catch the ball at the same height it was thrown, what must be the 
+child's acceleration <i>a</i>? Express your answer in terms of some or all of the variables <i>v</i>, <i>m</i>, <i>B</i> and  
+g for the gravitational constant. Express the trigonometric functions in terms of the basic sin(B), cos(B) or tan(B).
+</p>
+
+    <br/>
+    <formularesponse answer="$ans" samples="g,B,m@1,0.1,1:10,3,4#2">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+      </problem>
+</html>

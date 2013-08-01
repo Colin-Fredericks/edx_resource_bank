@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>Video Tutorial: Vector Addition</title>
+    <font size="3">
+      <b>Concept question: The magnitude of the sum of two vectors</b>
+    </font>
+    <br/>
+    <p>
+Before answering the questions, watch the following video which is part of <a href="http://ocw.mit.edu/courses/physics/8-01-physics-i-classical-mechanics-fall-1999/video-lectures/lecture-3/">Lecture 3</a> by Prof. W Lewin, MIT OCW.
+</p>
+    <table border="1">
+      <tr>
+        <td>
+          <iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/awuCGCgB750?rel=0"/>
+        </td></tr>
+        <tr><td>
+        	<p>Lewin, Walter. 8.01 Physics I: Classical Mechanics, Fall 1999. (Massachusetts Institute of Technology: MIT <a href="http://ocw.mit.edu">OpenCourseWare</a>), (Accessed 22 Feb, 2012). License: Creative Commons BY-NC-SA</p>
+        	<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/add_scalar_vs_vector_WL.mp4">Click here to download this video.</a></p>
+      </td></tr>
+    </table>
+    <br/>
+
+      <p><font size="3"><b>Questions:</b></font><br/>
+Given the vectors \(\vec{A}\) and \(\vec{B}\) shown in the following figures:
+</p>
+
+    <br/>
+    <img src="/static/problems/MIT/analiab/Figures/Magnitude_vector_addition_concept_question.png" align="top" texwrap="none" height="120" width="500" alt="Magnitude Vector Addition Concept Question"/>
+    <br/>
+
+    <p>Select the correct options:</p>
+    <optionresponse direction="vertical" randomize="yes">
+        <p>The figure for which the magnitude of vector \(\vec{A}+\vec{B}\) is maximum is:
+        <optioninput options="('Figure a','Figure b','Figure c','Figure d')" correct="Figure c"></optioninput></p>
+        <p>The figure for which the magnitude of vector  \(\vec{A}+\vec{B}\) is minimum.      
+        <optioninput options="('Figure a','Figure b','Figure c','Figure d')" correct="Figure a"></optioninput></p>
+    </optionresponse>
+
+      </problem>
+</html>

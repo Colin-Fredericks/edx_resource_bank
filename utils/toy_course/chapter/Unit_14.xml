@@ -1,0 +1,61 @@
+<chapter display_name="14: Optional Unit: Review">
+	<sequential display_name="Mini Survey 14 - Resource Usage" filename="mini_survey_14" />
+	<sequential display_name="One Step Problems and Simultaneous Models" url_name="One_Step_Problems_and_Simultaneous_Models">
+		<vertical display_name="One Step Problems and Simultaneous Models">
+			<html display_name="One Step Problems and Simultaneous Models" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/One_Step_Problems_an_2.html"/>
+			<discussion for="One Step Problems and Simultaneous Models" id="MReV_Summer2013_One_Step_Problems_an_2" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Two Masses Connected by a Spring">
+			<html display_name="Illustrative Example: Two Masses Connected by a Spring" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_two_blocks_spring.html"/>
+			<discussion for="Illustrative Example: Two Masses Connected by a Spring" id="MReV_Summer2013_IE_two_blocks_spring" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Spring and Two Massess" filename="BK144.vert" />
+		<vertical display_name="Illustrative Example: Swing">
+			<html display_name="Illustrative Example: Swing" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_swing_mass.html"/>
+			<discussion for="Illustrative Example: Swing" id="MReV_Summer2013_IE_swing_mass" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: A perfectly elastic collision">
+			<html display_name="Illustrative Example: A perfectly elastic collision" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_perfect_elastic.html"/>
+			<discussion for="Illustrative Example: A perfectly elastic collision" id="MReV_Summer2013_IE_perfect_elastic" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Newton's cradle balls">
+			<html display_name="Illustrative Example: Newton's cradle balls" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_N_cradle.html"/>
+			<discussion for="Illustrative Example: Newton's cradle balls" id="MReV_Summer2013_IE_N_cradle" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Meteor approaching a planet">
+			<html display_name="Illustrative Example: Meteor approaching a planet" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_meteor.html"/>
+			<discussion for="Illustrative Example: Meteor approaching a planet" id="MReV_Summer2013_IE_meteor" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: A ball hits a rod">
+			<html display_name="Illustrative Example: A ball hits a rod" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module1/IE_ball_and_rod.html"/>
+			<discussion for="Illustrative Example: A ball hits a rod" id="MReV_Summer2013_IE_ball_and_rod" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Block Sliding on a Wedge">
+			<problem display_name="CheckPoint 2: Block Sliding on a Wedge" filename="MIT/rayyan/check_points/BK/BK142.problem" attempts="4"/>
+			<discussion for="CheckPoint 2: Block Sliding on a Wedge" id="MReV_Summer2013_BK142" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Pendulum2" filename="BK143.vert" />
+		<vertical display_name="CheckPoint 4: Rolling Up an Incline">
+			<problem display_name="CheckPoint 4: Rolling Up an Incline" filename="MIT/rayyan/check_points/BK/BK146.problem" attempts="3"/>
+			<discussion for="CheckPoint 4: Rolling Up an Incline" id="MReV_Summer2013_BK146" discussion_category="Review" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Multiple Step Problems and Consecutive Models" url_name="Multiple_Step_Problems_and_Consecutive_Models">
+		<vertical display_name="Multiple Step Problems and Consecutive Models">
+			<html display_name="Multiple Step Problems and Consecutive Models" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module2/Multiple_Step_Proble.html"/>
+			<discussion for="Multiple Step Problems and Consecutive Models" id="MReV_Summer2013_Multiple_Step_Proble" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Collision with a Spring">
+			<html display_name="Illustrative Example: Collision with a Spring" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module2/IE_spring_collision.html"/>
+			<discussion for="Illustrative Example: Collision with a Spring" id="MReV_Summer2013_IE_spring_collision" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: A Bouncing Ball">
+			<html display_name="Illustrative Example: A Bouncing Ball" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module2/IE_A_bouncing_ball.html"/>
+			<discussion for="Illustrative Example: A Bouncing Ball" id="MReV_Summer2013_IE_A_bouncing_ball" discussion_category="Review" />
+		</vertical>
+		<vertical display_name="Illustrative Example: A ball hits a bar">
+			<html display_name="Illustrative Example: A ball hits a bar" filename="problems/MIT/RELATE/htmlwiki/Unit14/Module2/IE_bar_ball.html"/>
+			<discussion for="Illustrative Example: A ball hits a bar" id="MReV_Summer2013_IE_bar_ball" discussion_category="Review" />
+		</vertical>
+	</sequential>
+</chapter>

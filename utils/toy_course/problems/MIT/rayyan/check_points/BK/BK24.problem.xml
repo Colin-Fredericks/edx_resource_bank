@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A student is standing on a bathroom scale inside an elevator. The elevator is moving. The magnitude of the normal force acting on the student is 500 N. The reading of the scale must then be: </p>
+
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<text>exactly 500 N</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>less than 500 N</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<text>greater than 500 N</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<text>either less or greater than 500 N, depending on the direction of the elevator's <i>velocity</i></text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>either less or greater than 500 N, depending on the direction of the elevator's <i>acceleration</i></text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

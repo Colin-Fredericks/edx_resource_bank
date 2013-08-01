@@ -1,0 +1,120 @@
+<html><html>
+<head>
+<title>Acceleration in Two-Dimensions</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+The Acceleration Vector</h3>
+<p>
+			The acceleration vector is the derivative of the velocity vector.</p>
+<p>
+\[\vec{a}(t)=\frac{d\vec{v}}{dt}\]</p>
+<p>
+			There is an acceleration whenever there is a change in the velocity. Because velocity is a vector, a change in either its magnitude or its direction constitutes acceleration. It is sometimes difficult to recognize that there can be acceleration when the speed of an object does not change, as when a car travels around a curve at constant speed. The fact is, a car can be made to accelerate either by turning the steering wheel or by depressing the gas pedal.</p>
+<h3>
+Centripetal Acceleration for Circular Motion at Angular Frequency \(\omega\)</h3>
+<p>
+			We now give an expression for the acceleration that a particle must undergo to stay on a circular path of radius \(R\) if it is circling that path at angular frequency \(\omega\). We start by observing that the speed of the circling particle is \(v=\omega R\), in the direction of the green arrow marked v(t).</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module6/files/CircularmotionRed.png"/></p>
+<p>
+			A time \(\Delta t\) later, the particle will have rotated by an angle \(\omega\Delta t\) and the velocity (still perpendicular to the position vector) will have rotated equally. Thus the change in speed will be (angle change of velocity times its magnitude)</p>
+<p>
+\[\Delta v= v \omega\Delta t = \omega^2 R \Delta t\]</p>
+<p>
+			To find the magnitude of the acceleration, we must divide this by \(\Delta t\) (see definition above). We keep track of the sign by noting that the red vector &#916;<i>v</i> determines the direction of \(\vec a\) and points inward. (Remember that this is the acceleration of the particle; it is drawn located at the tip of the velocity vector only to help you visualize its magnitude.)</p>
+<p>
+			Thus the radial component of the acceleration of an object rotating at angular velocity \(\omega\) around a fixed axis at a distance R from the axis is</p>
+<p>
+\[ a_r= -\omega^2 R = -v^2/R\]</p>
+<p>
+			The last equality follows from \(v=\omega R\) and confirms the expression for the centripetal acceleration found in the "circular motion" module.</p>
+<p>
+			NOTE: There is really no more reason to call the acceleration of a particle that is perpendicular to its velocity the <i>centripetal acceleration</i> than there is to call the component of its acceleration that is tangent to its velocity something like the rectilinear acceleration. As long as the word "centripetal" simply reminds you that a particle moving along a circular path must be accelerating inwards all is fine.</p>
+<p>
+			DANGER: However, if you think that there is a special <i>centripetal force</i> associated with this motion and put such a force on your free body diagrams, then you are in trouble. Certainly there must be an inward force, but it is the usual <i>net force</i> acting on the particle - the vector sum of the various forces owing to familiar interactions: tension, gravity, friction of tires on road, component of lift from wings of an airplane banking to make the turn, etc. Put these on your free body diagram, and confine \(a_r\) to the right side of \(F=ma\): there is no interaction force given by&#160;\(ma_r\).</p>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

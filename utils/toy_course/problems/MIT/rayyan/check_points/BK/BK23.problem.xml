@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK23.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+A block of mass 2.0 kg is moving at a constant velocity 3.0 m/s. Three forces are acting on the block. The magnitudes of two of the forces are shown in the diagram. What is the magnitude F of the third force?
+
+    <br/>
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              4 N          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              7 N          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              10 N          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              16 N          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

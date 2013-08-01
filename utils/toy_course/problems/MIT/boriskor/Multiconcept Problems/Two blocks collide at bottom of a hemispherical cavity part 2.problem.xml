@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>What maximum vertical height \(h_{max}\) (measured from the bottom of the cavity) will 
+block \(m\) reach after the collision?</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" loncapaid="1r" type="MultipleChoice">
+	<choicegroup type="MultipleChoice"><choice location="random" name="foil1" correct="true">\(h_{max}=4r\)</choice>
+		<choice location="random" name="foil2" correct="false">\(h_{max}=r/2\)</choice>
+		<choice location="random" name="foil3" correct="false">\(h_{max}=r/3\)</choice>
+		<choice location="random" name="foil4" correct="false">\(h_{max}=0\)</choice>
+		<choice location="random" name="foil5" correct="false">\(h_{max}=3r\)</choice>
+		<choice location="random" name="foil6" correct="false">\(h_{max}=2r\)</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Direction of the Torque</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>Finding the Direction of the Torque</h3>
+<p>	The torque is a vector whose direction (from the definition of vector product) is perpendicular to the position and force vectors. Equivalently, the torque is perpendicular to the plane defined by these two vectors.</p>
+<p>	In this course we will by convention place our rigid bodies at z=0 (in the x-y plane) <i>and</i> apply forces that act only in this plane. Since both the position vector \(\vec{r}\) and the force \(\vec{F}\) lie in the x-y plane, the torque will always point in the <b>z-direction, </b>either along the +z axis or -z axis. The determination is made using the right hand rule for torque:</p>
+
+<table border="1" style="color:blue" cellspacing="0" width="90%">
+<tbody>
+  <tr>
+	<th><b>The Right Hand Rule for Torque</b></th>
+  </tr>
+  <tr>
+	<td>1. Place the fingers of your right hand along the direction of vector \(\vec{r}\),</td>
+  </tr>
+  <tr>
+	<td>2. Curl them towards vector \(\vec{F}\),</td>
+  </tr>
+  <tr>
+	<td>3. Your thumb is now pointing in the direction of the torque.</td>
+  </tr>
+</tbody>
+</table>
+
+<br/>
+<p>	Practice the right hand rule: reproduce the direction of the torque vectors shown in the figures.</p>
+
+<table>
+<tbody>
+  <tr>
+	<td valign="top">
+	
+		<table border="1">
+		<tbody>
+		  <tr>
+			<th width="300"><b>The torque is pointing UP along the +z-axis</b></th>
+		  </tr>
+		  <tr>
+			<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/theTorqueUp4.png"/></td>
+		  </tr>
+		  <tr>
+			<td><b>The torque is pointing OUT of the screen as viewed from above the xy plane</b></td>
+		  </tr>
+		  <tr>
+			<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/CCWRotation3.png"/></td>
+		  </tr>
+		  <tr>
+			<td>Consider a rod initially at rest and that can pivot about one end. If the force is applied to the free end of a rod the torque will cause a counterclockwise rotation of the rod as viewed from above.</td>
+		  </tr>
+		  <tr>
+			<td>As viewed from above the (x,y) plane:
+				<ul style="list-style:disc outside none">
+					<li>The torque is <b>OUT</b> of the screen</li>
+					<li>Counterclockwise rotation</li>
+					<li>Positive torque (along the +z-axis, consistent with the (x,y,z) right handed coordinate system of the figure)</li>
+				</ul>
+			</td>
+		  </tr>
+		</tbody>
+		</table>
+
+	</td>
+	<td valign="top">
+		<table border="1">
+		<tbody>
+		  <tr>
+			<th width="300"><b>The torque is pointing Down along the -z-axis</b></th>
+		  </tr>
+		  <tr>
+			<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/theTorqueDown3.png"/></td>
+		  </tr>
+		  <tr>
+			<td><b>The torque is pointing INTO the screen as viewed from above the xy plane</b></td>
+		  </tr>
+		  <tr>
+			<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module2/files/CWRotation3.png"/></td>
+		  </tr>
+		  <tr>
+			<td>Consider a rod initially at rest and that can pivot about one end. If the force is applied to the free end of a rod the torque will cause a clockwise rotation of the rod as viewed from above.</td>
+		  </tr>
+		  <tr>
+			<td>As viewed from above the (x,y) plane:
+				<ul style="list-style:disc outside none">
+					<li>The torque is INTO of the screen</li>
+					<li>Clockwise rotation</li>
+					<li>Negative torque (along the -z-axis, consistent with the (x,y,z) right handed coordinate system of the figure)</li>
+				</ul>
+			</td>
+		  </tr>
+		</tbody>
+		</table>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p><font size="3"><b>Conventions for the direction of torque</b></font></p>
+<p>Because of our restriction to rotation in a plane, we can describe torque as being "positive" or "negative", meaning that its z-component is positive or negative, as long as we are consistently using an (x,y,z) right handed coordinate system.</p>
+
+<p><font size="3"><b>Why not just say that "counterclockwise" is positive?</b></font></p>
+<p>Whether an object has torque in the clockwise or counterclockwise direction depends on where you are standing. The direction of the torque vector does not. It may help to imagine looking at an analog clock from the back. The hands will be "moving backwards" from your point of view, with each one rotating counterclockwise, but the vector direction of its motion is still the same. Try it with the right-hand rule!</p>
+
+</body>
+</html>
+

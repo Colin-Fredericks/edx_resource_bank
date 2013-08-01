@@ -1,0 +1,25 @@
+<html>
+  <problem>
+
+
+<p>Which of the statements below are true?  Check all that apply.</p>
+
+
+    <choiceresponse>
+      <checkboxgroup direction="vertical">
+        <choice correct="true">
+          <text>The amplitude (A) is defined as the maximum displacement of the block  (i.e. greatest distance from the equilibrium point)</text>
+        </choice>
+        <choice correct="true">
+          <text>The period (T) is defined as the time required to complete one cycle</text>
+        </choice>
+        <choice correct="true" >
+          <text>The frequency (f) is defined as the number of complete cycles per second</text>
+        </choice>
+        <choice correct="true" >
+          <text>Simple harmonic motion can also be referred to as periodic motion</text>
+        </choice>
+      </checkboxgroup>
+    </choiceresponse>
+  </problem>
+</html>

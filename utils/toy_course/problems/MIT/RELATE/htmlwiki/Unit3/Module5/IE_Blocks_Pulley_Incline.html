@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Example: Two Blocks, a Pulley, and an Incline</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h3>Illustrative Example: Two blocks, an ideal pulley, and an incline.</h3>
+<div class="floatright">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyIncline.png"/></div>
+<p>Consider two blocks connected by an ideal rope that passes through an ideal pulley fixed on the corner of the wedge as shown in the figure. The blocks have masses m<sub>1</sub> and m<sub>2</sub>. The block of mass m<sub>1</sub> moves up the incline surface which is frictionless while the block of mass m<sub>2</sub> moves down. The angle of the incline with the horizontal is <b>&#952;</b>. The goal of the problem is to find the acceleration of the blocks and the force of tension in the rope.</p>
+<p>
+<br/>Because the rope is constraining the motion of the blocks, their accelerations will be related but they will not be equal (the direction of the blocks' acceleration is different). Therefore, we will use the same approach as we did in the prior example. This time we will not show the complete solution, but we will discuss the key concepts that will help you to solve the problem.</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 1: What is the constraint on the accelerations?</b> [<a href="javascript:toggleDisplay('ht21','hide','answer')" id="ht21l">answer</a>]</th>
+</tr>
+<tr style="display: none;" id="ht21">
+<td>
+<p>				Because the rope does not stretch or becomes slack, its length has to be constant during the motion of the blocks, therefore when block 2 goes down 1 cm, block 1 moves up the incline the same distance. As a result, the accelerations of the two blocks have the <b>same magnitude</b> but <b>different directions</b>, therefore the accelerations are different.</p>
+<p>				If we call the magnitude of the acceleration 'a', then the <b>Related Acceleration Constrained</b> is given by:</p>
+<table>
+<tbody>
+<tr>
+<td>
+<b>Equal magnitudes</b></td>
+</tr>
+<tr>
+<td>
+\(|\vec{a}_{1}| = |\vec{a}_{2}| = a \)</td>
+</tr>
+<tr>
+<td>
+<b>Different directions</b></td>
+</tr>
+<tr>
+<td>
+\(\vec{a}_{1}\) <font size="3">&#160;&#160;&#160;&#160;</font><b>points up the incline, at an angle &#952; with respect to the horizontal</b></td>
+</tr>
+<tr>
+<td>
+\(\vec{a}_{2}\) <font size="3">&#160;&#160;&#160;&#160;</font><b>points down</b></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 2: Which of the following Cartesian coordinate systems should you use to write Newton's 2nd Law for block 1?</b> [<a href="javascript:toggleDisplay('ht22','hide','show')" id="ht22l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht22">
+<td>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2bocksPulleyInclineCoord.png"/></p>
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer:</b> [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th>
+</tr>
+<tr style="display: none;" id="ht10">
+<td>							You can use any of the three of coordinate systems but the most convenient for this problem is c). By rotating the coordinate system such that the +x - axis is at an angle &#952; with respect to the horizontal you will have that the acceleration of block 1 is pointing in the same direction as the positive x - axis. The constraint in the acceleration of block 1 is a simple expression:							<p>
+<br/>
+<b>a<sub>1,x</sub> = a</b></p>
+<p>
+<b>a<sub>1,y</sub> = 0</b></p>
+<p>								where <b>a</b> is the magnitude of the acceleration of block 1 which is equal to the magnitude of the acceleration of block 2. In addition, in this coordinate system the force of tension on block 1 and the normal force on block 1 are parallel to the x and y axis, respectively. You will have to do vector decomposition in only the gravitational force.</p>
+<p>								On the other hand, if you use either a) or b) the acceleration vector of block 1 will have components in both axis. For example, if you select the coordinate system in a) the constraint in the acceleration of block 1 is given by:</p>
+<p>
+<br/>
+<b>a<sub>1,x</sub> = a cos &#952;</b></p>
+<p>
+<b>a<sub>1,y</sub> = a sin &#952;</b></p>
+<p>								Also, only the gravitational force is parallel to one of the axis (y-axis) therefore, you will have to do vector decomposition for the force of tension and for the normal force. As a result, the x and y components of Newton's second law will have an expression more complicated than those written in consistent with coordinate system c).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 3: Draw the free body diagrams for block 1 and then write Newton's 2nd Law for box 1 using first the coordinate system of Question 2 choice (c) and then the coordinate system of Question 2 choice (a).</b> [<a href="javascript:toggleDisplay('ht23','hide','answer')" id="ht23l">answer</a>]</th>
+</tr>
+<tr style="display: none;" id="ht23">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module5/files/2blocks1PulleyInclineBlock1a.png"/></td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 4: Find the magnitude of the blocks' accelerations and the tension in the rope.</b> [<a href="javascript:toggleDisplay('ht24','hide','answer')" id="ht24l">answer</a>]</th>
+</tr>
+<tr style="display: none;" id="ht24">
+<td>
+<p>				After answering the questions above you are ready to pick the most convenient coordinate system and repeat the procedure done in the previous example: "Two Blocks and an Ideal Pulley". The magnitudes of the blocks' acceleration and of the force of tension are:</p>
+<p>
+<font size="3"><b>a = (m<sub>2</sub> - m<sub>1</sub> sin &#952;)g/(m<sub>1</sub> + m<sub>2</sub>)</b></font></p>
+<p>
+<font size="3"><b>T = m<sub>1</sub>m<sub>2</sub>(1 + sin &#952;)g/(m<sub>1</sub> + m<sub>2</sub>)</b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Question 5: How can you check that your answers are reasonable?</b> [<a href="javascript:toggleDisplay('ht12','hide','one approach')" id="ht12l">one approach</a>]</th>
+</tr>
+<tr style="display: none;" id="ht12">
+<td>			We have already solved the "Two Blocks and an Ideal Pulley" problem in the previous page. Realize that the problem of the blocks on the incline reduces to the previous problem ("Two Blocks and an Ideal Pulley") if we make the surface of the incline to be horizontal, that is when the angle &#952; = 0.			<p>				Replace the value of &#952; = 0 in the expressions of 'a' and 'T' above and check if they become the same expressions obtained in the "Two Blocks and an Ideal Pulley" problem.</p>
+<p>
+<br/>				What other values of &#952;, m<sub>1</sub> and m<sub>2</sub> can you think of that will give you a situation which answer you already know and that you can use to check the results obtained in this example?</p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

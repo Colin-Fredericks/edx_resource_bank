@@ -1,0 +1,51 @@
+<chapter>
+	<sequential display_name="Introduction to the course" url_name="Introduction_to_the_course">	
+		<vertical display_name="Welcome!">
+			<html display_name="Welcome!" filename="intro/welcome.html"/>
+			<discussion for="Welcome!" id="MReV_Summer2013_welcome" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Course Outline">
+			<html display_name="Course Outline" filename="intro/outline.html"/>
+			<discussion for="Course Outline" id="MReV_Summer2013_outline" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Overview of MAPS">
+			<html display_name="Overview of MAPS" filename="intro/maps.html"/>
+			<discussion for="Overview of MAPS" id="MReV_Summer2013_maps" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Models and SIM strategy">
+			<html display_name="Models and SIM strategy" filename="intro/sim.html"/>
+			<discussion for="Models and SIM strategy" id="MReV_Summer2013_sim" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Professor Pritchard Video: Introduction to MAPS">
+			<problem display_name="Professor Pritchard Video: Introduction to MAPS" filename="intro/maps_video" attempts="0"/>
+			<discussion for="Professor Pritchard Video: Introduction to MAPS" id="MReV_Summer2013_maps_video" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Video: An approach to Problem Solving">
+			<html display_name="Video: An approach to Problem Solving" filename="problems/MIT/analiab/Videos/VideoReviewBilly.html"/>
+			<discussion for="Video: An approach to Problem Solving" id="MReV_Summer2013_VideoReviewBilly" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Acknowledgements">
+			<html display_name="Acknowledgements" filename="intro/thankyou.html"/>
+		</vertical>
+	</sequential>
+	<sequential display_name="Learn about Homework" url_name="Homework_Zero">
+		<vertical display_name="Introduction to edX Problems">
+			<html display_name="Introduction to edX Problems" filename="intro/ps0_0" />
+			<discussion for="Introduction to edX Problems" id="MReV_Summer2013_ps0_0" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Multiple Choice">
+			<problem display_name="Multiple Choice" filename="intro/ps0_1" attempts="2" />
+			<discussion for="Multiple Choice" id="MReV_Summer2013_ps0_1" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Numerical Response">
+			<problem display_name="Numerical Response" filename="intro/ps0_2" attempts="10" />
+			<discussion for="Numerical Response" id="MReV_Summer2013_ps0_2" discussion_category="Introduction" />
+		</vertical>
+		<vertical display_name="Symbolic Response">
+			<problem display_name="Symbolic Response" filename="intro/ps0_3" attempts="10" />
+			<discussion for="Symbolic Response" id="MReV_Summer2013_ps0_3" discussion_category="Introduction" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Entrance Survey" filename="entrance_survey" />
+<!-- removed for the rest of summer 2013	<sequential display_name="Quiz Zero" filename="quiz0" /> -->
+</chapter>  

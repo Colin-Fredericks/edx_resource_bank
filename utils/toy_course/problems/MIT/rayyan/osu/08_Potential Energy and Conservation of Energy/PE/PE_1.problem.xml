@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/PE_1.png" alt="PE_1" height="200"/>
+
+      <p>Three balls of equal mass are fired simultaneously with equal speeds from the same height h above the ground. Ball 1 is fired straight up, ball 2 is fired straight down, and ball 3 is fired horizontally. Rank in order from largest to smallest their speeds v1, v2, and v3 at the instant right before each hits the ground. (Neglect friction.)</p>
+
+<multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+			<text>v1&gt; v2&gt; v3</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>v3&gt; v2&gt; v1</text>
+        </choice>
+        <choice location="random" name="foil13" correct="false">
+			<text>v2&gt; v1 &gt;v3</text>
+        </choice>
+        <choice location="random" name="foil1\4" correct="false">
+			<text>v1= v2 &gt;v3</text>
+        </choice>
+        <choice location="random" name="foil5" correct="true">
+            <text>v1= v2= v3</text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+            <text>Need to know height h</text>    
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

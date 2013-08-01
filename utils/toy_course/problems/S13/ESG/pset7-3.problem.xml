@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<!--A collision between carts-->
+<problem>
+
+<h2>A collision between carts</h2>
+<p>Cart 1 collides with Cart 2, which is initially at rest. Cart 2 has a spring attached to it. A graph of the kinetic energies of the two carts is shown below. Assume no loss of energy from the system of the two carts plus the spring. </p>
+
+<img src="/static/problems/S13/ESG/images/7-3.png" />
+
+	<optionresponse direction="vertical" randomize="yes">
+		<p>
+			At t = t<sub>c</sub> , what energy must be stored internally in the spring?
+			<optioninput inline="1" options="('zero','E/4','E/2','3E/4','E')" correct="E/4"/>
+		</p>
+	</optionresponse>
+
+<!--//reminder: "insert question Explain your choice to get full credit. Include in your explanation:
+- assumption about the system, interactions and processes.
+- what model are you using to backup your choice." in some form--> 
+
+</problem>
+</html>

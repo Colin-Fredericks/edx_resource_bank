@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulse_1.png" alt="impulse_1" width="696px"/>
+
+      <p>You observe a satellite moving at 20,000 MPH toward the sun. Some time later, you see that the same satellite is the same distance from the sun as before, but it is now moving at 20,000 MPH away from the sun. You infer that:</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+              An average force was exerted on the satellite, but there was no  net work done on the satellite.          
+        </choice>
+        <choice name="foil2" correct="false">
+              There was zero average net force but non-zero work done on the satellite.          
+        </choice>
+        <choice name="foil3" correct="false">
+              The average net force and work done on the satellite were both zero.          
+        </choice>
+        <choice name="foil4" correct="false">
+              The average net force and work done on the satellite were both non-zero.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

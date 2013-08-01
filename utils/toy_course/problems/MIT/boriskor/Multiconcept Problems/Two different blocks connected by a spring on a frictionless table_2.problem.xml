@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+v_m="x*sqrt((2*k)/(3*m))"
+
+</script>
+
+      <p>A system consists of two blocks, of masses \(m\) and \(2m\), attached to the ends of a spring with a force constant \(k\). The system is placed on a horizontal frictionless surface. Initially, the spring is relaxed. The blocks are then slowly pulled apart an extra distance \(x\) and simultaneously released. What is the maximum speed \(v_m\) of the block of mass \(m\) during the subsequent motion of the blocks?</p>
+
+      <p><b>What physical principles/laws/ideas are best to use to solve this problem?</b></p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+			Conservation of energy, Hooke's law and constant-acceleration kinematics
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+			Newton's laws, conservation of momentum and conservation of energy
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+			Conservation of momentum, Hooke's law and constant-acceleration kinematics
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+			Conservation of energy, conservation of momentum and kinematics of simple harmonic motion
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+			Conservation of energy, conservation of momentum and Hooke's law
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+			Newton's laws, conservation of energy and constant-acceleration kinematics
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+			Conservation of momentum, Hooke's law and kinematics of simple harmonic motion
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+			Conservation of momentum, conservation of energy and constant-acceleration kinematics
+          </choice>
+          <choice location="random" name="foil10" correct="false">
+			Newton's laws and constant-acceleration kinematics
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      \(v_m=\)
+      <formularesponse answer="$v_m" samples="x,m,k@2,4,5:5,10,12#2">
+        <responseparam default="0.01" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+  </problem>
+</html>

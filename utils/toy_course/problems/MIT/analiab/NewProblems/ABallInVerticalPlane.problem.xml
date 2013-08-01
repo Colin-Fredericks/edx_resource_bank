@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<problem>
+
+    <h1>Ball in a Vertical Plane</h1>
+    <p>
+      <b class="bf">Ball in a Vertical Plane</b>
+    </p>
+    <p>
+      <center>
+        <img src="/static/html/C131f1.png" width="187"/>
+      </center>
+    </p>
+    <p>Sally swings a ball of mass \(m\) in a circle of radius \(R\) in a vertical plane by means of a massless string. The speed the ball is constant and it makes one revolution every \(t_0\) seconds. Note that although the ball moves in a circle, Sally's hand can not remain at the center of the circle if a constant speed is to be maintained. Thus the tension in the string will have both radial and tangential components. </p>
+    <ul class="itemize">
+      <li>
+        <p>Find an expression for the radial component of the tension in the string \(T_ r(\theta )\) as a function of the angle \(\theta\) the ball makes with the vertical. Express your answer in terms of some combination of the parameters \(m\), \(R\), \(t_0\) and the acceleration of gravity \(g\). </p>
+        <p>
+          <b class="bf">Solution</b>
+          <br/>
+          <symbolicresponse expect="0">
+            <textline size="80" correct_answer="0" math="1"/>
+          </symbolicresponse>
+        </p>
+          <solution>
+            <font color="blue">Answer: </font>
+            <font color="blue">
+                <text style="width:216.81pt" class="minipage">
+                  <center>
+                    <img  src="/static/problems/MIT/analiab/NewProblems/files/ABallInAVerticalPlane.png" />
+                  </center>
+                </text>
+
+                <text style="width:252.945pt" class="minipage">
+                  <p>
+ \(F=ma\) in the radially inward direction.<br/></p>
+                  <p>
+\(T_ r +mg\cos (\theta ) = m \omega ^2 R\)<br/>\(T_ r = m\omega ^2R -mg\cos (\theta )\)<br/></p>
+                  <p>
+\(\omega = 2\pi \nu = 2\pi /t_0\)<br/></p>
+                  <p>
+\(T_ r = mR(2\pi /t_0)^2 - mg \cos (\theta )\)<br/></p>
+				</text>
+
+              <p>
+                <p>
+Is there a range of values of \(t_0\) for which this type of circular motion can not be maintained? If so, what is that range? </p>
+                <p><b class="bf">Solution</b><br/>\(T_ r\) must always be greater than zero. This will be violated first at \(\theta =0\) where \(mg\) makes the maximum contribution to the required radially inward directed force. Thus to maintain circular motion the period \(t_0\) must be less than a critical value. </p>
+                <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <tr>
+                    <td class="equation">\( mR(2\pi )^2 - mg &gt; 0 \)</td>
+                  </tr>
+                </table>
+                <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <tr>
+                    <td class="equation">\( R &gt; (t_0/2\pi )^2 g \)</td>
+                  </tr>
+                </table>
+                <table id="a0000000004" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <tr>
+                    <td class="equation">\( \underline{2\pi \sqrt {R/g} &gt; t_0} \)</td>
+                  </tr>
+                </table>
+    </p>
+            </font>
+          </solution>
+      </li>
+    </ul>
+
+</problem>

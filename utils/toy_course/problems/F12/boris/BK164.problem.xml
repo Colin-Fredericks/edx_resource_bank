@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #164 -->
+<problem>
+
+	<p><b>checked: <br/>
+	1. Part2. It is hard to differentiate from the plot a number like 0.7 from 0.6 etc. Because part 1 deals with stable eq. we can use something with 
+	unstable equil. I added an alternative part 2.<br/>
+	2. Part 6. WE do not need to check if it is true or false that the K of A is larger than B and the asked if it is true or false that K of B is larger than K of A<br/>
+	3. Part 6. WE can use the names of particles 1 and 2 as we are alreading using A and B to indicate points in the plot.<br/>
+    4. Part 7. I removed the 1.6 option because it is closed to 1.4 	</b></p> 
+	<p>The graph below shows the potential energy associated with a single conservative force F acting on a 0.5-kg particle moving along the x-direction. The potential energy values for some (but not all!) points are shown on the vertical axis of the graph. Use the graph to answer the questions below. </p>
+	<img src="/static/problems/F12/boris/images/BK164_graph.png" />
+
+	<h3>Part 1</h3>
+	<p>At what points is the object in stable equilibrium?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">There are no such points on the diagram</choice>
+			<choice correct="true">Points A and G only</choice>
+			<choice correct="false">Points A, E, and G</choice>
+			<choice correct="false">Points E and H</choice>
+			<choice correct="false">All points where the potential energy is greater than 1 Joule</choice>
+			<choice correct="false">All points where the potential energy is less than 1 Joule</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2. It is hard to read the scale. Not a good idea to put too many 0.xx numbers</h3>
+	<p>At what points is the object in stable equilibrium?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">0.09 Joules</choice>
+			<choice location="random" correct="true">0.91 Joules</choice>
+			<choice location="random" correct="false">0.36 Joules</choice>
+			<choice location="random" correct="false">0.64 Joules</choice>
+			<choice location="random" correct="false">0.18 Joules</choice>
+			<choice location="random" correct="false">0.82 Joules</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+	<h3>Part b - alternative</h3>
+	<p>At what points is the object in unstable equilibrium?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">0.7 Joules</choice>
+			<choice location="random" correct="false">1 Joules</choice>
+			<choice location="random" correct="false">4 Joules</choice>
+			<choice location="random" correct="false">6 Joules</choice>
+			<choice location="random" correct="true">7 Joules</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>At the instant when the particle is at point E its speed is zero. What is the particle’s speed by the time it reaches point C?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">3.46 m/s</choice>
+			<choice location="random" correct="false">4.00 m/s</choice>
+			<choice location="random" correct="false">4.29 m/s</choice>
+			<choice location="random" correct="false">2.45 m/s</choice>
+			<choice location="random" correct="false">2.83 m/s</choice>
+			<choice location="random" correct="false">3.03 m/s</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>The particle is launched to the left from point G. What minimum initial kinetic energy must the particle have in order to be able to reach point C?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">7 Joules</choice>
+			<choice correct="true">6 Joules</choice>
+			<choice correct="false">Between 5 and 6 Joules</choice>
+			<choice correct="false">5 Joules</choice>
+			<choice correct="false">Between 3 and 5 Joules</choice>
+			<choice correct="false">3 Joules</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 5</h3>
+	<p>Rank points D, E and F in the order of decreasing magnitude of the conservative force F acting on the particle. </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">\( D > E > F \)</choice>
+			<choice location="random" correct="false">\( E > F > D \)</choice>
+			<choice location="random" correct="true">\( F > D > E \)</choice>
+			<choice location="random" correct="false">\( E > D > F \)</choice>
+			<choice location="random" correct="false">\( D > F > E \)</choice>
+			<choice location="random" correct="false">\( F > E > D \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 6</h3>
+	<p>Let us assume that the value of U does not depend on the mass of the particle. Two particles, 1 and 2, are released from point D with zero 
+	initial speed. Particle 1 has a mass of 0.5 kg; particle 2 has a mass of 2.0 kg. Both particles reach point C simultaneously. Which statements 
+	regarding the particles would be correct <i>at the instant they reach point C?</i></p>
+	<optionresponse direction="vertical" randomize="yes">
+		<p>
+			Particle 2 must be released earlier than particle 1 in order for them to reach point C simultaneously. 
+			<optioninput inline="1" options="('True','False')" correct="True"/>
+		</p>
+		<p>
+			Both particles would have the same potential energy.
+			<optioninput options="('True','False')" correct="True"/>
+		</p>
+		<p>
+			Particle 1 would have greater kinetic energy than particle 2. 
+			<optioninput options="('True','False')" correct="False"/>
+		</p>
+		<p>
+			Particle 1 would have greater speed than particle 2.
+			<optioninput options="('True','False')" correct="True"/>
+		</p>
+	</optionresponse>
+
+	<h3>Part 7</h3>
+	<p>If points B and C are 2.0 meters apart, what is the approximate magnitude of force F acting on the particle between points B and C?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">1.4 Newtons</choice>
+			<choice correct="false">2.8 Newtons</choice>
+			<choice correct="false">3.2 Newtons</choice>
+			<choice correct="false">5.6 Newtons</choice>
+			<choice correct="false">6.4 Newtons</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

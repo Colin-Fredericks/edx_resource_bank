@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 2 -->
+
+<problem>
+
+	<p>An astronaut is holding onto a long aluminum antenna attached to a deep-space probe which is floating freely far from any other object. The astronaut is initially at rest, but then begins to climb out along the antenna.</p>
+
+	<h3>Part 1</h3>
+	<p>Which of the following statements accurately describes the linear momentum of the system containing the astronaut, antenna and space-probe during a time interval that starts when the astronaut is at rest and ends when the astronaut is in the process of climbing the antenna?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The linear momentum of the astronaut, antenna and space-probe system is conserved.</choice>
+			<choice location="random" correct="false">The linear momentum of the astronaut, antenna and space-probe system is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

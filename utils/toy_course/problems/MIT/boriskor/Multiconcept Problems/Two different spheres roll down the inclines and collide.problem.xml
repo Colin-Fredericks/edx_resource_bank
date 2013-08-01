@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+    <p><img src="/static/problems/MIT/boriskor/BKimages/41-collision of two spheres rolling off two inclines.png" alt="Two different spheres roll down two inclined planes and collide"/></p>
+
+      <p>Two inclined planes have the same vertical height \(H\) and make the same angle \(\theta\) with the horizontal. They are fixed in place a frictionless plane. Two small spheres of equal masses are released from rest at the top of the inclined planes. One of the spheres is thin-walled; the other is uniform. Both spheres roll down without slipping, transition smoothly to the horizontal surface, and collide inelastically and stick together. Find the speed of the spheres immediately after the collision.</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" name="foil1" correct="true">
+			<text>\( v = \frac{1}{2} \left( \sqrt{\frac{10gH}{7}} - \sqrt{\frac{6gH}{5}} \right) \)</text>
+		</choice>
+		<choice location="random" name="foil2" correct="false">
+			<text>\( v = \frac{1}{2} \cos \theta \left( \sqrt{\frac{10gH}{7}} - \sqrt{\frac{6gH}{5}} \right) \)</text>
+		</choice>
+		<choice location="random" name="foil3" correct="false">
+			<text>\( v = \frac{1}{2} \left( \sqrt{\frac{3gH}{2}} - \sqrt{\frac{6gH}{5}} \right) \)</text>
+		</choice>
+		<choice location="random" name="foil4" correct="false">
+			<text>\( v = \frac{1}{2} \cos \theta \left( \sqrt{\frac{3gH}{2}} - \sqrt{\frac{6gH}{5}} \right) \)</text>
+		</choice>
+		<choice location="random" name="foil5" correct="false">
+			<text>\( v = \frac{1}{2} \left( \sqrt{\frac{10gH}{7}} - \sqrt{\frac{2gH}{3}} \right) \)</text>
+		</choice>
+		<choice location="random" name="foil6" correct="false">
+			<text>\( v = \frac{1}{2} \cos \theta \left( \sqrt{\frac{10gH}{7}} - \sqrt{\frac{2gH}{3}} \right ) \)</text>
+		</choice>
+	</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

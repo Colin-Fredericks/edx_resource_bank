@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Illustrative Example: Meteor approaching a planet</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<b>A meteor approaching a planet</b><br/>
+
+<tr style="display:none" id="ht15">
+<td>A meteor of mass <font face="times new roman" size="3"><i><b>m</b></i></font> is approaching a planet of mass <font face="times new roman" size="3"><i><b>M</b></i></font> (<font face="times new roman" size="3"><b><i>M</i> &gt;&gt; <i>m</i></b></font>) and radius <font face="times new roman" size="3"><i><b>R</b></i></font>. When the meteor is very far away from the planet it has a speed <font face="times new roman" size="3"><b><i>v</i><sub>i</sub></b></font>. Suppose the meteor just grazes the planet, find the impact parameter <font face="times new roman" size="3"><i><b>h</b></i></font>, which is the perpendicular distance between the initial meteor's trajectory and the center of the planet as indicated in the figure.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/ImapctParameter.png" />
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution:</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td><font color="purple" size="3"><b>System:</b> </font><a href='javascript:toggleDisplay( "toggledisplay13", "[hide]", "[SHOW System]" )' style="font-size:smaller" id="toggledisplay13l">[SHOW System]</a><div style="display:none;" id="toggledisplay13">
+<p>The meteor treated as a point particle and the planet treated as an infinitely massive object.
+</p>
+<hr />
+</div><br />
+<font color="purple" size="3"><b>Interactions:</b> </font><a href='javascript:toggleDisplay( "toggledisplay14", "[hide]", "[SHOW Interactions]" )' style="font-size:smaller" id="toggledisplay14l">[SHOW Interactions]</a><div style="display:none;" id="toggledisplay14">
+<ul style="list-style:disc outside none"><li><b><u>External</u>:</b> 
+</li></ul>
+<p>We neglect the external influence of other celestial objects.
+</p>
+<ul style="list-style:disc outside none"><li><b><u>Internal</u>:</b>
+</li></ul>
+<p>Meteor <font size="3"> &#8596; </font> Planet. The gravitational forces between the two objects. 
+</p><p>There are <b>no external forces</b> and the <b>internal forces are conservative</b>, then the mechanical energy of the meteor-planet system is constant. 
+</p><p>In addition, there is <b>no external torque</b>, therefore the angular momentum of the system with respect to any point in space is constant. We will pick the point to be the center of mass of the planet ( <i><b>cm</b></i>).
+</p>
+<hr />
+</div><br />
+<font color="purple" size="3"><b>Models:</b> </font><a href='javascript:toggleDisplay( "toggledisplay15", "[hide]", "[SHOW Models]" )' style="font-size:smaller" id="toggledisplay15l">[SHOW Models]</a><div style="display:none;" id="toggledisplay15">
+<p>Constant Mechanical energy and constant angular momentum about the center of mass of the planet. Both applied to the meteor planet system.
+</p>
+<hr />
+</div><br />
+<font color="purple" size="3"><b>Approach:</b> </font><a href='javascript:toggleDisplay( "toggledisplay16", "[hide]", "[SHOW]" )' style="font-size:smaller" id="toggledisplay16l">[SHOW]</a><div style="display:none;" id="toggledisplay16">
+<p>We will consider the time interval, <font face="times new roman" size="3"><b><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></b></font>, that it takes the meteor to move from a distance far away until it grazes the planet. 
+</p><p>The initial and final states are summarized in the figures below. (We will assume that the meteor is moving in the xy-plane as shown in the figure).
+</p>
+<table>
+
+<tr>
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/ImpactParameterInitial.png" />
+</td>
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/ImpactParameterFinal.png" />
+</td></tr>
+<tr>
+<td><font face="times new roman" size="3"><b><i>t</i><sub>i</sub></b></font>: Instant right before the meteor starts to feel the gravitational force of the planet.
+</td>
+<td><font face="times new roman" size="3"><b><i>t</i><sub>f</sub></b></font>: Instant right when the meteor is moving tangent to the planet's surface.
+</td></tr>
+<tr>
+<td>\(\vec{r}(t_i)\): meteor's initial position measured from the planet's <i><b>cm</b></i>.
+</td>
+<td>\(\vec{r}(t_f)\): meteor's final position measured from the planet's <i><b>cm</b></i>.
+</td></tr>
+<tr>
+<td>\(\vec{v}_i\): meteor's initial velocity.
+</td>
+<td>\(\vec{v}_f\): meteor's final velocity.
+</td></tr></table>
+<p><font size="3"><b>Apply the models:</b></font>
+</p>
+<table border="1">
+<tr>
+<th><b><u>Constant Angular Momentum</u>:</b>
+</th></tr>
+<tr>
+<td>The angular momentum about the planet's center of mass of the meteor-planet system is constant:
+<p>\(hmv_i = \;Rmv_f\) &#160;&#160;&#160; (eq. 1)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Show derivation of (eq. 1)</b>
+ [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th></tr>
+<tr style="display:none" id="ht17">
+<td>The total angular momentum of the meteor-planet system is given by the sum of the angular momentum of the meteor and the planet.
+<p><br />
+\(\vec{L}_{cm}^{sys}=\vec{L}_{cm}^{meteor}+\vec{L}_{cm}^{planet}\)
+</p><p><br />
+<b>Planet's angular momentum:</b>
+</p><p>The planet can be translating and rotating. Because we are calculating the angular momentum about the planet's center of mass, then the planet's angular momentum only has a <a href="../../Module3/Angular_Momentum_of_4.html">spin component</a> given by:
+</p><p><br />
+\(\vec{L}_{cm}^{planet}=I_{cm}\vec{\omega}\)
+</p><p><br />
+Noting that the only force acting on the planet is the gravitational force applied at its center of mass, then there is no external torque acting on the planet and its angular velocity \(\vec{\omega}\) will not change during the time interval <font face="times new roman" size="3"><b><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></b></font>. 
+</p><p><br />
+\(\vec{L}_{cm}^{planet}(t_i)=\vec{L}_{cm}^{planet}(t_f)\)
+</p><p><br />
+<b>Meteor's angular momentum:</b>
+</p><p>The meteor is assumed to be a point particle, hence we can neglect any possible spin and its angular momentum only has an <a href="../../Module3/Angular_Momentum_of_4.html">orbital component</a> given by:
+</p><p><br />
+At the initial time, <font face="times new roman" size="3"><b><i>t = t</i><sub>i</sub></b></font>,
+</p><p>\(\vec{L}_{cm}^{meteor}(t_i)=\vec{r}(t_i)\times m\vec{v}_i = -hmv_i\hat{k}\)
+</p><p>where we have used that initially the meteor is moving along a straight line located at a distance <font face="times new roman" size="3"><i><b>h</b></i></font> from the planet's center of mass.
+</p><p><br />
+At the final time <font face="times new roman" size="3"><b><i>t = t</i><sub>f</sub></b></font>,
+</p><p>\(\vec{L}_{cm}^{meteor}(t_f)=\vec{r}(t_f)\times m\vec{v}_f=-Rmv_f\hat{k}\) 
+</p><p>where we have used that the meteor is moving tangent to the planet's surface at the instant when it grazes the planet.
+</p><p><br />
+<b>System's angular momentum:</b>
+</p><p>The angular momentum of the system about the planet's center of mass is constant during the approach of the meteor:
+</p><p>\(\vec{L}_{cm}^{sys}(t_i) =\vec{L}_{cm}^{sys}(t_f)\)
+</p><p>implies:
+</p><p>\(\vec{L}_{cm}^{meteor}(t_i)+\vec{L}_{cm}^{planet}(t_i) = \vec{L}_{cm}^{meteor}(t_f) +\vec{L}_{cm}^{planet}(t_f)\)
+</p><p>After canceling the planet's angular momentum from each side of the above equation we obtain:
+</p><p>\(\vec{L}_{cm}^{meteor}(t_i) = \vec{L}_{cm}^{meteor}(t_f)\)
+</p><p>Then the constant angular momentum equation becomes:
+</p><p>\( mhv_i = \; mRv_f \) &#160;&#160;&#160; (eq. 1)
+</p>
+</td></tr></table>
+</td></tr></table>
+<table border="1">
+<tr>
+<th><b><u>Constant Mechanical Energy</u>:</b>
+</th></tr>
+<tr>
+<td>The mechanical energy of the meteor-planet is constant:
+<p>\(\frac{1}{2}mv_i^2=\frac{1}{2}mv_f^2-G\frac{mM}{R}\)&#160;&#160;&#160;(eq. 2)
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Show derivation of (eq. 2)</b>
+ [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+<tr style="display:none" id="ht18">
+<td>The planet can be translating with a speed <i>V</i><sub><i>c</i><i>m</i></sub> and spinning about its axis with angular speed \(\omega \;\). As a result the planet's kinetic energy will have a translational and a rotational term given by:
+<p>\(K^{planet}=\frac{1}{2}MV_{cm}^2+\frac{1}{2}I_{cm}^{planet}\omega^2\)
+</p><p>We are assuming that the planet has a very large mass then its motion is not affected by the presence of the meteor. Its center of mass will be moving at a constant speed. In addition, no net torque about the planet's center of mass is acting on it, then the planet's angular speed does not change. As a result, the planet's kinetic energy (translational + rotational) remains constant while the meteor is approaching it. 
+</p><p>The meteor is assumed to be a point particle then its kinetic energy is only translational. Considering the gravitational potential energy of the planet-meteor system to be zero at infinity (initial state of the system when the meteor is far away), then 
+</p><p>\(E(t_i) =\; E(t_f)\)
+</p><p>implies,
+</p><p>\(\frac{1}{2}mv_i^2=\frac{1}{2}mv_f^2-G\frac{mM}{R}\)&#160;&#160;&#160;(eq. 2)
+</p><p>where the planet's kinetic energy appearing in both sides of the equation has been canceled because it is constant while the meteor is approaching the planet. The term in the left hand side and the first term in the right hand side are the initial and final kinetic energy of the meteor, respectively.  
+</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>Note:</b> This is an example of one step problem solved by applying two models simultaneously. 
+</p><p><br />
+Using (eq. 1) we solve for <font face="times new roman" size="3"><b><i>v</i><sub>f</sub></b></font> to obtain:
+</p><p>\( v_f=v_i\frac{h}{R}\)
+</p><p>Replacing the above expression in (eq. 2) we obtain:
+</p><p>\(v_i^2=v_i^2(\frac{h}{R})^2-2G\frac{M}{R}\) 
+</p><p>Solving for <font face="times new roman" size="3"><i><b>h</b></i></font> we obtain:
+</p>
+\(h=\sqrt{R^2+\frac{2GMR}{v_i^2}}\)</div>
+</td></tr></table>
+
+
+</body>
+
+</html>
+

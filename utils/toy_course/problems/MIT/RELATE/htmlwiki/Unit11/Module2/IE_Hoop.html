@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Example: Angular Momentum of a Hoop</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Angular Momentum of a Hoop</h3>
+Consider a hoop of mass <i><b>M</b></i> and radius <i><b>R</b></i> contained in the xy-plane as shown below. The mass is distributed uniformly throughout the hoop.
+<p>If the hoop is rotating with angular velocity <i><b>&#969;</b></i>, calculate the angular momentum of the hoop:
+</p>
+<ol style="list-style-type:decimal"><li> about the axis of symmetry (left figure),
+</li><li> about an axis perpendicular to the xy-plane, passing through point <b>Q</b> (right figure).
+</li></ol>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring.png"/>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer:
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>1. About the axis of symmetry:<i><b> L<sub>axis</sub> = MR<sup>2</sup>&#969;</b></i>
+<p>2. About the axis passing through point <i><b>Q</b></i>: <i><b>L<sub>Q</sub> = 2MR<sup>2</sup>&#969;</b></i>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Solution:
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td><u><b>Rotation about axis of symmetry:</b></u>
+<p>We can think the hoop as being formed by a series of small elements of mass <i><b>dm</b></i>.
+ In the figure below a pair of elements placed symmetrically with respect to the axis of rotation
+ are shown. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring_sol.png"/>
+</p><p>The angular momentum of the two elements <b>dm</b> placed in diametrically opposite
+ points in the hoop is the same as the one obtained for the two balls attached by a rod 
+ in a previous page of this module, where the angular momentum about the axis is found to be parallel to the angular velocity. To obtain the angular momentum of all the ring we will have to add the angular momentum of each of the element of masses. This sum becomes an integral:
+</p><p>\(L_{cm}=(\int dmr_{\perp}^2)\omega = (\int dmR^2)\omega  = (\int dm)R^2 \omega = MR^2\omega =  I_{cm}^{hoop}\omega \)
+</p>
+<p><u><b>About the axis passing through <i>Q</i>:</b></u>
+</p><p>The angular momentum about the axis passing through <i><b>Q</b></i>:
+</p><p><i>L</i><sub><i>Q</i></sub> = <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub>&#969;
+</p><p>where the moment of inertia is obtained using the parallel axis theorem as 
+\(I_{axis}=MD^2+I_{cm}=2MR^2 \) &nbsp; since \(D=R \)&nbsp; in this case.
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

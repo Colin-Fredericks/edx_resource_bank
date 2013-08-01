@@ -1,0 +1,12 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What was your background in physics prior to this class? You may check more than one option if you took multiple courses.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="more_advanced"><text>More advanced class than Mechanics ReView, such upper-level college courses</text></choice>
+      <choice correct="true" name="same_level"><text>Same level of study as Mechanics ReView, including any calculus-based physics course</text></choice>
+      <choice correct="true" name="preceeding_class"><text>Class that would precede Mechanics ReView, such as an algebra-based physics course in high school</text></choice>
+      <choice correct="true" name="self_taught"><text>Self-taught in physics - no formal courses in this subject</text></choice>
+      <choice correct="true" name="no_prior_experience"><text>No prior experience with physics</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

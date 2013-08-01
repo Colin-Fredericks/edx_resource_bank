@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/circular_1.png" alt="circular_1" height="150"/>
+
+      <p><br/>
+In a physics lab, you place a block on the top of a low-friction ramp. The block slides down the ramp, around a circular part at the bottom, up a ramp on the other side, and then shoots off the end. At what point (if any) is the net force on the block zero?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              C          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              D          
+        </choice>
+        <choice name="foil5" correct="true">
+
+              None of the above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

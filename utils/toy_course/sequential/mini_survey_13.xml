@@ -1,0 +1,9 @@
+<sequential display_name="Mini Survey 13 - No Survey" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 13 - No Survey">
+			<h2>Mini Survey 13 - No Survey</h2>
+			<p>There is no mini-survey for this unit.</p>
+		</html>
+<!--		<problem url_name="RELATE_survey:unit13_whatever"/> -->
+	</vertical>
+</sequential>

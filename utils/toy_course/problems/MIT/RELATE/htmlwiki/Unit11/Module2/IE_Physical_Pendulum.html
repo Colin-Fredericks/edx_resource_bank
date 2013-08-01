@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Example: Physical Pendulum</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: A Physical Pendulum</h3>
+Consider a uniform rod of mass <i><b>M</b></i> and length <i><b>D</b></i>. The rod rotates 
+with an angular speed <i><b>&#969;</b></i> about an axis perpendicular to the xy-plane and 
+that passes through one of its ends, point <i><b>Q</b></i> in the figure. A uniform disk of
+ mass <i><b>m</b></i> and radius <i><b>R</b></i> is attached to the rod. The center of mass of
+  the disk is at a distance <i><b>d</b></i> with respect to point <i><b>Q</b></i>. Calculate the 
+  angular momentum about 
+   point <i><b>Q</b></i>.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/PhysicalPendulum0.png"/>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer:
+ [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+<tr style="display:none" id="ht13">
+<td><font size="3" face="times new roman"><b><i>L<sub>Q</sub> = </i>(<i> MD<sup>2</sup>/3 </i>+<i> mR<sup>2</sup>/2 </i>+<i> md<sup>2</sup> </i>) <i> &#969;</i></b></font>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Solution
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td>The angular momentum of a composite object is obtained as the sum of the angular momentum of each of its constituents:
+<p>\(L_{Q} = L_{Q}^{rod} + L_{Q}^{disk}\)
+</p>
+
+<p>The rod and the disk are attached they move with the same angular speed <i><b>&#969;</b></i>.
+</p><p><u> For the rod:</u>
+</p><p>\(L_Q=I_Q^{rod}\omega\)
+</p><p>Using the table of moments of inertia we find that the moment of inertia about the axis passing through point <i><b>Q</b></i>:
+</p><p>\(I_{Q}^{rod} = MD^2/3\)
+</p><p><u>For the disk:</u>
+</p><p>\(L_Q=I_Q^{disk}\omega\)
+</p><p>In the table of moment of inertia we find the moment of inertia of the disk about its center of mass to be <i><b>mR<sup>2</sup>/2</b></i>. Using the parallel axis theorem we obtain the moment of inertia about the axis passing through point <i><b>Q</b></i>:
+</p><p>\(I_{Q}^{disk} = I_{cm}^{disk} + md^2 = mR^2/2 + md^2\)
+</p><p>Then, the angular momentum about the axis passing through point <i><b>Q</b></i> is:
+</p><p><font size="3" face="times new roman"><b><i>L<sub>Q</sub> = </i>(<i> MD<sup>2</sup>/3 </i>+<i> mR<sup>2</sup>/2 </i>+<i> md<sup>2</sup> </i>) <i> &#969;</i></b></font>
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

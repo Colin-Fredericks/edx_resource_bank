@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 4c -->
+
+<problem>
+
+	<p>Consider the situation shown in the picture below: a person is trying to move a very heavy safe by pushing it along the ground. The force applied by the person to the safe is perfectly horizontal. Neither the person nor the safe is moving. </p>
+
+	<img src="/static/problems/F12/MRI/images/MRI4.png" />
+
+	<h3>Part 1</h3>
+	<p>The friction force acting on the person from the ground and the force on the person from the safe are:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">Equal in size.</choice>
+			<choice location="random" correct="false">Not equal in size.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

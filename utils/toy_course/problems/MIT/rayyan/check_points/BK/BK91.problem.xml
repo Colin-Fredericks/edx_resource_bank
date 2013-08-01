@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo </title>
+    <p>
+A yo-yo is resting on a horizontal surface. A string tightly wrapped around the central part of the yo-yo. The string can be pulled in one of several possible ways which are shown in the diagram. 
+</p><br/>
+Which of the directions of the pull &#x2013; if any &#x2013; will make the yo-yo rotate clockwise? The "extensions" of the strings are shown as dashed lines. 
+
+<br/>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK91.PNG" alt="BK91"/>
+
+        <p>
+</p>
+        <br/>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                String A only
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                Strings A and B only
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                String C only
+
+          </choice>
+          <choice name="foil5" correct="false">
+
+                String D only
+
+          </choice>
+          <choice name="foil6" correct="true">
+
+                Strings C and D only
+
+          </choice>
+          <choice name="foil7" correct="false">
+
+                None of the strings will make the yo-yo rotate clockwise
+
+          </choice>
+          <choice name="foil8" correct="false">
+
+                Each of the strings will make the yo-yo rotate clockwise
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p><img src="/static/problems/S13/quiz/images/6-4.png" /><br/></p>
+
+<p> A ball is kicked horizontally with speed <i>v</i>1 from the top of a building of height <i>h</i>. A small cart is moving 
+towards the building with a constant speed <i>v</i>2. Right at the instant when the ball is kicked, the cart is at a distance 
+<i>d</i> from the building. What is the distance <i>d</i> so that the ball lands right on top of the cart? You can neglect the dimensions of the cart 
+with respect to the height of the building <i>h</i>.
+Express your answer in terms of some or all of the variables
+<i>h</i>, <i>v</i>1, <i>v</i>2 and <i>g</i></p>
+
+<p>
+<formularesponse type="cs" samples="v1,v2,g,h@1,1,1,1:10,10,10,10#10" answer="(v1+v2)*sqrt(2*h/g)">
+      <responseparam type="tolerance" default="0.00001"/>
+      <textline size="40" math="1"/>
+    </formularesponse>
+
+</p>
+
+</problem>
+
+</html>

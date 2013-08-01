@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 12 -->
+
+<problem>
+
+	<p>A uniform bar of mass \(M\) and length \(D\) is rotating and translating along a horizontal and frictionless surface contained in the x-y plane. The 
+	bar is rotating counterclockwise as viewed from the screen with angular speed \( \omega \) and it is translating with speed \(v\) along the +x axis. At 
+	the instant \(t_2\), the third picture in the figure below, what is the angular momentum about the point <font size="4" color="red"><b><i>Q</i></b></font> on the dashed straight line? You can type "omega" for \( \omega \).</p>
+	<img src="/static/problems/F12/procedures/images/proc12b.png" />
+	<br/>
+
+	<formularesponse answer="(1/12)*M*(D^2)*omega" samples="M,D,omega@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+	</formularesponse>
+<br/>
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('Up','Down','Left','Right','Out of screen','Into screen','N/A')" correct="Out of screen" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

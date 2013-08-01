@@ -1,0 +1,11 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Do you teach Mechanics ReView?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="college_teacher"><text> I teach Mechanics ReView in college/university.</text></choice>
+      <choice correct="true" name="high_school_teacher"><text> I teach Mechanics ReView in high school/secondary </text></choice>school.
+      <choice correct="true" name="elsewhere_teacher"><text> I teach Mechanics ReView elsewhere.</text></choice>
+      <choice correct="true" name="do_not_teach_subject"><text> I do not teach Mechanics ReView.</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

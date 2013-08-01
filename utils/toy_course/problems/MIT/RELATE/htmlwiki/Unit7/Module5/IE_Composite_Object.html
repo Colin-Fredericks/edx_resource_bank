@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Example: Object Composed of Simple Parts</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example:  Hoop and Disk Attached to L-Shaped Object</h3>
+Two thin and uniform rods of length <i>d</i> and mass <i>M</i> are connected to form an L-shaped rigid object. A uniform hoop of mass <i>m<sub>1</sub></i> and a uniform disk of mass <i>m<sub>2</sub></i> are glued to the L-shaped object in such a way that their centers coincide with the free ends of the rods as shown.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLshape.png"/>
+</p><p>Calculate the center of mass of the 2 rods-hoop-disk system with respect to a coordinate system with origin at point <i>Q</i> and with the x-axis along the right rod. The positive x-direction is pointing towards the disk. 
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td>With respect to a coordinate system whose x-axis is along the right rod containing the disk and positive pointing towards the disk, the center of mass of the system is:
+<p>\(\vec{R}_{cm}=\frac{M/2+m_2}{m_1+m_2+2M}d\;\hat{i}-\frac{M/2+m_1}{m_1+m_2+2M}d\;\hat{j}\)
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Solution:</b>
+ [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+<tr style="display:none" id="ht15">
+<td>To obtain the center of mass of the system we will follow the steps described below:
+<p><b>1. Select a coordinate system:</b>
+</p><p>In this problem we are asked to use a coordinate system with origin at the vertex of the L-shaped object. We will pick the orientation of the coordinate system in such a way that the rods coincide with the x and y axis as shown below:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape1.png"/>
+</p><p><br/>
+<b>2. Point particle approximation:</b>
+</p><p>We represent the extended objects in the system as point particles with their masses concentrated at their center of mass. The rods, the disk and the hoop have their masses uniformly distributed, therefore their geometrical centers are their center of mass. The extended objects are represented as point particles in the figure below:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape2.png"/>
+</p><p><br/>
+<b>3. Calculate the position of the center of mass:</b>
+</p><p>As shown below, the advantage of picking this coordinate system is to have all the particles contained in one of the axes, therefore their position vectors only have one component:
+</p>
+<ul style="list-style:disc outside none"><li><b>The hoop of mass <i>m<sub>1</sub></i>:</b>
+</li></ul>
+<p>\(\vec{r}_1=-d\hat{j}\)
+</p>
+<ul style="list-style:disc outside none"><li><b>The disk of mass <i>m<sub>2</sub></i>:</b>
+</li></ul>
+<p>\(\vec{r}_2=+d\hat{i}\)
+</p>
+<ul style="list-style:disc outside none"><li><b>The left rod of mass <i>M</i>:</b>
+</li></ul>
+<p>\(\vec{r}_3=-d/2\hat{j}\)
+</p>
+<ul style="list-style:disc outside none"><li><b>The right rod of mass <i>M</i>:</b>
+</li></ul>
+<p>\(\vec{r}_4=+d/2\hat{i}\)
+</p><p>Now we apply the definition of the center of mass:
+</p><p>\(\vec{R}_{cm} = \frac{m_1\vec{r}_1+m_2\vec{r}_2+M\vec{r}_3+M\vec{r}_4}{m_!+m_2+2M}\)
+</p><p>To obtain:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape3.png"/>
+</p><p>Because there is no information about the values of the masses, we can make the assumption that <i>m<sub>1</sub></i> &gt; <i>m<sub>2</sub></i> . In this case, the center of mass of the system is shifted towards the left as indicated in the figure. The drawing also suggests that we are assuming that the mass of both rods is approximately the same as the mass of the hoop and disk: \(2M \approx m_1+m_2\).
+</p><p>One way to check if your calculation makes sense is to use the following graphical tool:
+</p>
+<table class="subsubtable collapsible collapsed">
+<tr>
+<th><b>Obtain the position of the center of mass graphically</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td><b>1. Consider the system formed by the 2 rods:</b>
+<p>As shown in the figure below, the center of mass of the 2 rod system is the blue circle in the intersection of the vertical and horizontal dash lines. The center of mass of this system is at the midpoint because both rods have the same mass.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape4.png"/>
+</p><p><b>2. Consider the system formed by the hoop and the disk.</b>
+</p><p>Here we do not have information about the masses so we will assume that the hoop is more massive than the disk. Then the center of mass of this system is along the line joining the two particles and shifted towards the left where the hoop is. The center of mass is represented in the figure below by the blue circle of mass <i>m<sub>1</sub> </i> + <i>m<sub>2</sub></i>.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape5.png"/>
+</p><p><br/>
+<b>3. Consider the system formed by two particles of masses <i>2M</i> and <i>m<sub>1</sub> </i> + <i>m<sub>2</sub></i> placed at the locations of the blue circles</b>
+</p><p>Now we have reduced our problem to two point particles of masses <i>2M</i> and <i>m<sub>1</sub> </i> + <i>m<sub>2</sub></i>. Then the center of mass is along the line joining these two particles. Again, we do not have information about the masses so we will assume that they are approximately the same. As a result we obtain the red cross shown in the figure below that represents the center of mass of the system.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmLShape6.png"/>
+</p><p><b>Note:</b> You will obtain the same result if you change the pairs of particles. For example, start with the <i>left rod-hoop system</i>, then continue with the <i>right rod-disk system</i>, etc.
+</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

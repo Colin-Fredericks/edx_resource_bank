@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+  </p>
+  <p>
+    <b class="bfseries">W02D3 Problem Solving 01: Kinematics, Force</b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman: 5.1-5.3 </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W02D3-1 (5 points): </b>
+  </p>
+  <p>
+Consider the following pulley set-up shown in the figure below. </p>
+  <center>
+    <p>
+      <img src="/static/8.01RQx/RQ_W02D3-fig001.png" width="765"/>
+    </p>
+  </center>
+  <p>
+Describe a procedure for finding the relationship between the accelerations of the two blocks. <stringresponse answer="unknown"><textline size="80"/></stringresponse> </p>
+  <p>
+What is your result? </p>
+  <p>
+Acceleration of block 1: <symbolicresponse answer="F / m1"><textline math="1"/></symbolicresponse> </p>
+  <p>
+Acceleration of block 2: <symbolicresponse answer="F / m2"><textline math="1"/></symbolicresponse> </p>
+  <p>
+    <b class="bfseries">Reading Question RQ_W02D3-2 (5 points):</b>
+  </p>
+  <p>
+You throw a small stone in a parabolic trajectory at an given angle \(\theta _{i}\) with respect to the horizontal with an unknown speed \(v_{i}\) . After waiting a short interval of time \(\Delta t\) you accelerate at a given non-constant rate that increases linearly with time in the horizontal direction that you threw the stone and are able to catch the stone at exactly the same height while you are still accelerating. You may neglect air resistance. </p>
+  <p>
+(i) Describe a strategy for finding the unknown speed \(v_{i}\) . You do not have to solve it. <stringresponse answer="unknown"><textline size="80"/></stringresponse> </p>
+  <p>
+(ii) Sketch a graph of the stone and your motion.<stringresponse answer="unknown"><textline size="80"/></stringresponse> </p>
+</problem>

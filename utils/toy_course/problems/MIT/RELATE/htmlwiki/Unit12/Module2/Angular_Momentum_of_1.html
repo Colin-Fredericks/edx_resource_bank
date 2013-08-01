@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Angular Momentum of Orbits</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Angular Momentum of Orbits</h2>
+<h3> Learning Goals</h3>
+
+<ul style="list-style:disc outside none">
+	<li>Explain why the angular momentum of an orbiting object about a central massive body is conserved.</li>
+	<li>Relate the speed at apoapsis to the speed at periapsis.</li>
+</ul>
+
+<h3>Conservation of Angular Momentum about Central Body</h3>
+<p>The Keplerian Orbit Model implies conservation of angular momentum about an axis passing through the sun and perpendicular to the plane of the motion.  The only interaction in the system is the gravitational interaction between the fixed massive object (henceforward "object <i>M</i>") and the point particle (henceforward "object <i>m</i>").  Clearly the system is the single particle <i>m</i> and the gravitational force on <i>m</i> produces no torque because it is collinear with the position vector and therefore the cross product gives zero. Any force that always points toward (or away from) a fixed point is called a "central force" and produces no torque.</p>
+
+<h3> Form of the Angular Momentum</h3>
+<p>Since the mass <i>M</i> is fixed at the axis of rotation, the angular momentum of the system is due entirely to the motion of <i>m</i>, which is considered a point particle.  Thus, the angular momentum of the system is:
+</p><p>\( \vec{L}_M = \vec{r} \times (m\vec{v})\)
+</p><p>where <i>v</i> is the speed of <i>m</i>.  
+</p><p>Realizing that the angular momentum is proportional to r times the tangential component of the velocity gives a general expression for the (z-component of the) angular momentum about M:
+</p><p>\(L_M = r m v_{\theta}\)
+</p><p>As a consequence, at any position on the orbit,
+</p><p>\(r(\theta) v_\theta(\theta) = L_M/m\)
+</p>
+
+<h3>Kepler's Second Law</h3>
+<p>In the definition of the Keplerian Orbit Model, we presented Kepler's First and Third Laws of planetary motion, which were based on the Dynamics and Net Force model. We now show that the angular momentum of the planet is constant about the central star, M (whose motion we neglect). We start by recalling</p>
+<p><b>Kepler's Second Law:</b> A line joining a planet and the Sun sweeps out equal areas during equal intervals of time.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit12/Module2/files/Kepler2L.png"/></p>
+<p>Two equal areas are shown in the figure above. Consider the area swept out in the triangular area at the right. The base of the triangle is r, and the altitude is \(v_\theta \Delta t\). Thus the area is</p>
+<p>\(\Delta A = r v_\theta\)</p>
+<p>so that the area swept out per unit time is</p>
+<p>\(\frac{\Delta A}{\Delta t} = r v_\theta = \frac{L_M}{m}\)</p>
+
+<h3>An Epistemological Note</h3>
+<p>When two theoretical descriptions of an experimental phenomenon both agree with that phenomenon, how does science decide which is more likely to be correct? The best basis for selection is to select the theory that explains a wider range of additional phenomenon. In the case at hand (planetary motion), Newton's Laws clearly explain a lot more additional phenomena than do Kepler's Laws.</p>
+<p>But even if this were not the case, Newton's Laws would be preferable on the basis of Occam's Razor ("entities must not be multiplied beyond necessity"), which was stated earlier by Ptolomey (among others): "We consider it good principle to explain the phenomena by the simplest hypothesis possible". The idea is now frequently stated as something like "The simplest hypothesis is the best, other things being equal".</p>
+<p>In this light, Kepler's Laws are seen to be four, as stated earlier. On the other hand, Newton's Laws rely only on three:</p>
+
+<ul>
+	<li>The sun exerts a force that varies inversely with distance squared</li>
+	<li>This force is directly toward the sun, independent of planetary velocity</li>
+	<li>F = ma (from which conservation of Angular Momentum follows)</li>
+</ul>
+
+<p>Newton's Laws might also seem preferable as they argue from more fundamental mechanisms rather than appearances.</p>
+
+<h3>Velocity at Periapsis</h3>
+<p>At the points of farthest distance and closest approach, the velocity \(\vec{v}\) is perpendicular to the position vector \(\vec{r}\), so the angular momentum takes the simpler form:
+</p><p>\(L_{\rm ex} = mv_{\rm ex}r_{\rm ex}\;\)
+</p><p>where the subscript "ex" denotes an extremum of the separation between <i>M</i> and <i>m</i> (apoapsis or periapsis).  Since <i>m</i> is constant, conservation of angular momentum in the orbit implies the relationship:
+</p><p>\(v_{\rm a}r_{\rm a} = v_{\rm p}r_{\rm p}\;\)
+</p><p>where "a" denotes apoapsis and "p" periapsis.  This relationship implies that the orbiting mass <i>m</i> is moving much slower at apoapsis than at periapsis.  
+</p><p><img width="700px" src="/static/problems/MIT/RELATE/htmlwiki/Unit12/Module2/files/OrbitL.png"/>
+</p>
+
+</body>
+</html>
+

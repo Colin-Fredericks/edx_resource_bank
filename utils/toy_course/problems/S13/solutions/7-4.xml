@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+<!--Loop – the – loop ride with friction-->
+<problem>
+
+<h3>Solution</h3>
+<p>The solution consisted on two steps:</p>
+<p><b>1. The process of the box moving along the track right before reaches point P.</b></p>
+<p><b>2. The box at point P.</b></p>
+<p>1. The motion of the box while it is in contact with the track.</p>
+<p>Interactions:</p>
+<p>External:</p>
+<p>1. the box is in contact with track. As a result, in the region where there is no friction, the contact force is perpendicular to the surface. In the small segment of length L where there is friction, the contact force has two components, the normal perpendicular to the surface and the force of friction in the opposite direction to motion. The normal force does zero work during all the process and the force of friction does negative work.</p>
+<p>2. the wall in contact with the fixed end of the spring: this force does not do work because the end of the spring is not moving (zero displacement).</p>
+<p>Internal:</p>
+<p>1. box and Earth,</p>
+<p>2. cart and spring.</p>
+<p>Because the resulting forces of both interactions are conservative forces we will include them in the potential energy of the system.</p>
+<p>Model: Mechanical Energy and Work</p>
+<p>Choose the reference point for gravitational potential energy at the bottom of the loop. Choose the equilibrium position of the spring as x=0.</p>
+<p>Initial state: is defined at the instant right before releasing the spring. The spring is compressed a distance xo and the box is at rest and at a height h<sub>i</sub> = 0</p>
+<p>Final state: is defined at the instant right before the box looses contact with the loop surface at point P. The speed of the box is vf and the height h<sub>f</sub> = R +T cosθ .</p>
+<p>The work done by the force of friction is \(\displaystyle W_{i,f}^{friction} = \int \! \vec{F}_{f} \, \mathrm{d}\vec{l} = -F_{f} \int_{0}^{L} \! \, \mathrm{d}x = - \mu_{k}mgL, therefore</p>
+<p>E<sub>f</sub> = E<sub>i</sub> + W<sub>i,f</sub><sup>nc</sup> \(\rightarrow\) mghf + \({1 \over 2}\)mv<sub>f</sub><sup>2</sup> = \({1 \over 2}\)kx<sub>o</sub><sup>2</sup> - \(\mu_{k}\)mgL    (1)</p>
+<p>In (eq. 1) we obtained a relationship between xo and the velocity at point P,v<sub>f</sub></p>
+<p>2. At point P:</p>
+<p>Consider the system to be the box. The forces acting on it at point P are the normal and the gravitational force as shown in the free body diagram.</p>
+<p>Model to apply is point particle dynamics and circularmotion. Using the coordinate system as shown in the figure, \(\sum F\) = ma, implies that along the y-direction:</p>
+<p>\({-N-mg\over cos\theta}\) = -m\({v^{2} \over R}\)  (2)</p>
+<p>If at point P the box falls, the normal force is zero, therefore from equation (2) we have that at point P v<sub>f</sub> = \(\sqrt{Rgcos\theta}\). Using (2) in (1) we obtain</p>
+<p>x<sub>o</sub> = \(\sqrt{{mg\over k} (2R(1+cos\theta)+Rcos\theta + 2\mu_{k}L)}\)</p>
+
+</problem>
+</html>

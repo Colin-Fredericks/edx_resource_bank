@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Vector Derivatives</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Conceptualize Vector Derivatives Geometrically</h3>
+	<p>Most people conceptualize vectors using a geometric interpretation. These vectors are represented by arrows, and the difference between vectors is the difference between their tips when their tails are translated to the same origin. This is easy to understand for the velocity vector (the derivative of the position vector) because position vectors share a common origin. Here is a picture:</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module6/files/ThinkgeometricallyRed.png"/></p>
+	<p>To reemphasize that the derivative is independent of the origin, here is a picture using a different origin, labeled O' in the figure below.</p>
+	<p><br/><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module6/files/VelocityfromdifferentRed.png"/></p>
+
+<h3> Same derivative whether magnitude or direction of position changes</h3>
+	<p>From the perspective of the observer O, the magnitude of \(\vec r(t)\) is constant; only the direction changes. From the perspective of the observer O', the direction of \(\vec r(t)\) changes very little, but its magnitude is rapidly decreasing. Yet the change of \(\vec r(t)\) with time, \(\Delta \vec r(t)\), has the same direction and magnitude in both figures above, hence \(\vec v(t)\) is the same with respect to either choice of origin.</p>
+	<p>Understand this: a vector can have a large derivative without changing its magnitude (top figure) just as easily as it can have a large derivative without changing direction (figure directly above).</p>
+	
+<h3> Calculate Vector Derivative by Components</h3>
+	<p>Whereas it's best to conceptualize vectors geometrically, it is usually best to perform calculations involving vectors using components. Remember, a vector relationship such as</p>
+	<p>\[\vec{v}(t)=\frac{d\vec{r}}{dt}\]</p>
+	<p>holds true for each coordinate direction separately (for whatever coordinate system you choose).  Thus for systems moving in the x-y plane, the above is equivalent to:</p>
+	
+[mathjax]
+\begin{eqnarray*}
+v_x(t)&amp;=&amp;\frac{dx(t)}{dt}\\
+v_y(t)&amp;=&amp;\frac{dy(t)}{dt}
+\end{eqnarray*}
+[/mathjax]
+
+</body>
+</html>
+

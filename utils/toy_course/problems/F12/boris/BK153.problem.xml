@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 153 -->
+<problem>
+
+	<p>A tennis ball is dropped from a very large height on the ground. The ball undergoes a perfectly elastic collision. </p>
+
+	<h3>Part 1</h3>
+	<p>What is the direction and the magnitude of the ball’s acceleration immediately <i>after</i> it hits the ground? Assume that the air resistance is <b>negligible</b>.</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">g, directed up</choice>
+			<choice correct="true">g, directed down</choice>
+			<choice correct="false">g/2, directed up</choice>
+			<choice correct="false">g/2, directed down</choice>
+			<choice correct="false">2g, directed up</choice>
+			<choice correct="false">2g, directed down</choice>
+			<choice correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>What is the direction and the magnitude of the ball’s acceleration immediately <i>after</i> it bounces off the ground? Assume that the air 
+	resistance is <b>very substantial</b>.</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">g, directed up</choice>
+			<choice correct="false">g, directed down</choice>
+			<choice correct="false">g/2, directed up</choice>
+			<choice correct="false">g/2, directed down</choice>
+			<choice correct="false">2g, directed up</choice>
+			<choice correct="true">2g, directed down</choice>
+			<choice correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

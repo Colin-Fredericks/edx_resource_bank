@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Statics and Free Choice of Axis</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h2>Statics and Free Choice of Axis</h2>
+<h3>Learning goals</h3>
+<p>	At the end of this module you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Solve problems with objects under static equilibrium.</li>
+	<li>Learn how to choose the axis location when doing statics problems</li>
+</ul>
+
+<h3>Equilibrium Conditions</h3>
+<p>	When we say that an object is in <strong>static equilibrium</strong>, we mean that the object does not rotate or translate. A great fraction of Mechanical and Civil engineering is (very well-developed) statics since many machines and structures have only a few parts designed to move.</p>
+
+<h4>Equilibrium Conditions for a  Point Particle</h4>
+<p>	We can see from Newton's Second Law that a point particle has to experience a zero net force to be in static equilibrium:</p>
+
+<table border="3" style="color:black" cellspacing="0">
+<tbody>
+<tr>
+	<th><b>\( \displaystyle \sum \vec{F}= Zero\)</b></th>
+</tr>
+</tbody>
+</table>
+
+<p><br/>To check if the forces sum to zero, break the forces into components.</p>
+<p>\( \displaystyle \sum F_x= Zero\)</p>
+<p>\( \displaystyle \sum F_y= Zero\)</p>
+<p>\( \displaystyle \sum F_z= Zero\)</p>
+
+<h4>Equilibrium Conditions for a  Rigid Body </h4>
+<p>	When considering rigid bodies, the body must also experience zero net torque to be in static equilibrium. For example, think of a door free to rotate around a hinge. Applying \( \displaystyle\vec{\tau} = I \vec{\alpha} \), we see that if the door has zero net torque it also has zero angular acceleration.</p>
+<p>	In this course, we are only considering rotation in the x-y plane, i.e. only one axis of rotation, the z axis. We can express the conditions for static equilibrium as simply:</p>
+
+<table border="1" style="color:black" cellspacing="0">
+<tbody>
+<tr>
+	<th>
+	<p><b>\( \sum \tau_z = Zero \)</b> about any axis anywhere in the plane</p>
+	<p>	&amp;
+	<br/>\( \displaystyle \sum \vec{F}= Zero\) (for both x and y forces)</p>
+	</th>
+</tr>
+</tbody>
+</table>
+
+<p>	If an object is experiencing no rotation or translation, all points are fixed, and we can choose to label the axis of rotation z anywhere on the object. We customarily choose a location that will make calculating torques easier. Often this is a location that will result in zero moment arms for one or more forces, especially ones that are unknown in the problem.</p>
+
+<blockquote style="background-color: yellow; border: black;">
+<font size="3">In statics problems, choose the axis of rotation so as to make the torque calculation as simple as possible.</font></blockquote>
+
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<problem>
+  <text>
+    <p>Many questions require a symbolic expression for the answer. Here are some examples: </p>
+
+    <p><b>A.</b> What is the magnitude of of the gravitational attraction on \(m\) caused by a mass \(M\) located at distance \(r\)? The distance between the two masses is \(r\). Express your answer in terms of the gravitational constant \(G\), \(M\), \(m\) and \(r\).</p>
+    <p>Examples of valid answers are G*M*m/r^2 , G/r^2*M*m , or (G*M*m)/r^2. </p>
+
+    <formularesponse type="cs" samples="G,m,M,r@1,1,1,1:10,10,10,10#5" answer="G*M*m/r^2">
+    	<textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse> 
+
+    <p>Note that:
+
+    <ul class="itemize">
+      <li>
+        <p>Capitalization is important! For example, if you type g*M*m/r^2, the answer is considered wrong because g and G are different variables.</p>
+      </li>
+      <li>
+        <p>Always use * to indicate multiplication. The system will not accept GMm/r^2 because it will think that "GMm" is a single variable.</p>
+      </li>
+      <li>
+        <p>You can use parentheses in your expression, but make sure you close all of them. An error message will appear if you have mismatched parentheses. You can try this if you would like to see what the error looks like.</p>
+      </li>
+      <li>
+        <p>As you type the answer, you will be able to see the mathematical expression as you type. Look to make sure the expresion looks like the answer that you are trying to enter. Sometimes the display will not be perfect (try typing "m1/m2"), but your answer will still be accepted. You can use extra parentheses to fix this (try "(m1)/(m2)"). </p>
+      </li>
+    </ul>
+    </p>
+
+    <p><b>B.</b> Some equations contain indices, as with variables like "m<sub>1</sub>". Use an underscore "_" to do this. Note that not all problems with indices want the answers entered with indices; you should read the directions for each problem to determine how to enter variables. Example: enter the expression \(x_0 +\frac{1}{2}a(t_1-t_0)^2\) below: Examples of valid answers are x_0+1/2*a*(t_1-t_0)^2, x_0+0.5*a*(t_1-t_0)^2.</p> 
+    <formularesponse type="cs" samples="x_0,a,t_1,t_0@1,1,1,1:10,10,10,10#5" answer="x_0+1/2*a*(t_1-t_0)^2">
+    	<textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse>
+
+    <p><b>C.</b> Some equations will contain greek letters. You can type out the name of the letter in English, like "theta" or "alpha". According to Gauss's Law, express the Electric flux over a given closed surface area in terms of the charge enclosed \(q_\text {e}\), the total charge \(q_\text {t}\) and \(\epsilon _0\). An example of valid answer is q_e/epsilon_0.  </p>
+    <formularesponse type="cs" samples="q_e,epsilon_0@1,1:10,10#5" answer="q_e/epsilon_0">
+    	<textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse>
+
+    <p><b>D.</b> Another example is the following: What is the charge contained on an area \(A\) of a plane with uniform surface density \(\sigma\)? The correct answer can be inserted as sigma*A.  </p>
+    <formularesponse type="cs" samples="sigma,A@1,1:10,10#5" answer="sigma*A"><textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse>
+
+    <p><b>E.</b> Often you will be asked to insert answers that contain functions like square roots, natural logarithms, etc. As an example, the following equation </p>
+
+    <table id="a0000000002" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+      <tr id="a0000000003">
+        <td style="width:40%">&#xA0;</td>
+        <td style="vertical-align:middle; text-align:right">
+	    \(\displaystyle  \sqrt {\frac{3+\ln (r/z)}{4}}\)
+        </td>
+        <td style="width:40%">&#xA0;</td>
+        <td style="width:20%" class="eqnnum">&#xA0;</td>
+      </tr>
+    </table>
+
+    <p> can be inserted as sqrt((3+ln(r/z))/4). </p>
+    <formularesponse type="cs" samples="r,z,omega,t@1,1,1,1:10,10,10,10#5" answer="sqrt((3+ln(r/z))/4)">
+    	<textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse>
+
+    <p><b>F.</b> In the various problem sets, you might need to use <i>natural constants</i>. With that expression we mean any of the following variables: \(\epsilon _0\), \(\mu _0\), the speed of light in vacuum \(c\),\(\pi\), and the gravitational constant \(G\). Try the following string: \(\epsilon _0\, \mu _0\, c\, \pi \, G\). This is realized typing epsilon_0*mu_0*c*pi*G. </p>
+    <formularesponse type="cs" samples="epsilon_0,mu_0,c,G@1,1,1,1:10,10,10,10#5" answer="epsilon_0*mu_0*c*pi*G">
+    <textline size="40" math="1">
+    	<responseparam type="tolerance" default="0.01"/>
+    	</textline>
+    </formularesponse>
+  </text>
+</problem>

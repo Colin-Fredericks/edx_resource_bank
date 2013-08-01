@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulses_1.png" alt="impulses_1" height="75"/>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulses_2.png" alt="impulses_2" height="75"/>
+
+      <p><br/>
+Two identical carts, A and B, are moving on frictionless air tracks. The initial speed of cart A is twice that of cart B. You then exert the same constant force on the two carts over 1 second. One second later, the change in momentum of cart A is:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              Twice the change of the momentum of cart B          
+        </choice>
+        <choice name="foil2" correct="true">
+
+              The same as the change of the momentum of cart B          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              Half the change of the momentum of cart B          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Not enough information to determine          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

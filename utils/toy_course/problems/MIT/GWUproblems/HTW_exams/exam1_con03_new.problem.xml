@@ -1,0 +1,56 @@
+<html>
+  <problem>
+
+      <p>Two steel balls, one weighing twice as much as the other, roll off a horizontal table with the same speed.  The balls will hit the ground at a certain horizontal distance away from the base of the table.  How do these impact positions compare for the two balls, as measured from the base of the table?</p>
+
+    <br/>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+
+          <choice  name="foil2" correct="false">
+
+heavy ball hits the floor at twice the distance of the light ball
+
+          </choice>
+
+          <choice name="foil3" correct="false">
+
+light ball hits the floor at twice the distance of the heavy ball
+
+          </choice>
+
+          <choice name="foil5" correct="true">
+
+both balls hit the floor at the same distance
+
+          </choice>
+
+          <choice  name="foil9" correct="false">
+
+heavy ball hits the floor at about 3/4 the distance of the light ball
+
+          </choice>
+
+          <choice name="foil6" correct="false">
+
+light ball hits the floor at about 3/4 of the distance of the heavy ball
+
+          </choice>
+
+          <choice  name="foil7" correct="false">
+
+heavy ball hits the floor at about 1.5 times the distance of the light ball
+
+          </choice>
+
+          <choice  name="foil8" correct="false">
+
+light ball hits the floor at about 1.5 times the distance of the heavy ball
+
+          </choice>
+
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

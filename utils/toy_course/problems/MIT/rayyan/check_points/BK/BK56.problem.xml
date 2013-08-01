@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Conservation of Momentum 2</title>
+    <p>Pendulum 1 is released from an elevated position at \(t=0\). It swings downward and collides with pendulum 2 which is at rest before the collision. Both pendula stick together (i.e. the collision is "totally inelastic") then swing upward together, reaching the top point of the swing at \(t = t_{3}\).</p>
+
+    <p>Let's define \(t_{1}\) to be the instant right before the collision, and \(t_2\) to be the instant right after the collision. </p>
+
+    <p><img width="400" alt="BK56" src="/static/problems/MIT/rayyan/check_points/Pictures/BK56.png"/></p>
+
+    <p>Assuming that the collision happens nearly instantaneously, \(t_2 \approx t_1 \), for the system that includes both pendula, the momentum is conserved: </p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+            <text>Between 0 and \(t_{1}\) only</text>
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+            <text>Between \(t_{1}\) and \(t_{2}\) only</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+            <text>Between 0 and \(t_{1}\) and between \(t_{2}\) and \(t_{3}\)  but NOT between \(t_{1}\) and \(t_{2}\)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+            <text>Between \(t_{2}\) and \(t_{3}\) only</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+            <text>At any time between 0 and \(t_{3}\)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Torque and Angular Impulse </title>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+m=random.choice([2.0,5.0,8.0])
+r=random.choice([0.25,0.45,0.60])
+o=random.choice([0.60,2.20,4.80])
+w=random.choice([1.60,2.80,3.40])
+
+A= 0.4*( m* r* r)*(  o +  w)
+B= 0.1*( m* r* r)*(  o +  w)
+
+</script>
+
+<p>A solid sphere of mass m = $m kg and radius r = $r m is spinning about the axis passing through the center of the sphere. At t = 0, the angular speed of the sphere is \(\omega_{0}\) = $o rad/s and the sphere rotates clockwise. At t = 4.0 s, the angular speed is \(\omega \) = $w rad/s and the sphere rotates counterclockwise.</p>
+
+<br/>
+<p>Part A. What is the magnitude of the angular impulse about the center of mass applied to the sphere between t = 0 and t = 4.0 s? Enter the answer in [N.m.s].</p>
+
+      <numericalresponse answer="$A">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part B. Assuming that the torque about the center of mass applied to the sphere is constant between t = 0 and t = 4.0 s, what is the magnitude of that torque?</p>
+<p>\(\tau_{axis} \) [N.m] =</p>
+
+      <numericalresponse answer="$B">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

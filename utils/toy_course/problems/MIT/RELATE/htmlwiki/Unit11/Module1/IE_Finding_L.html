@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>Four Examples: Finding Angular Momentum</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Examples: Finding Angular Momentum</h3>
+<table class="wikitable">
+<tr>
+<td><b>Example 1. Satellite moving in an elliptic orbit.</b>
+<p>A satellite of mass <i>m</i> moves under the influence of the gravitational force of a planet of mass <i>M</i> (<i>M</i> &gt;&gt; <i>m</i>). As a result, the satellite follows an elliptical orbit with the planet in one of the foci. The orbit is contained in the x-y plane.  Calculate the direction and the magnitude of the angular momentum vector about the planet at the instant when the satellite is at the farthest distance from the planet. At that instant, the speed of the satellite is <i>v<sub>a</sub></i> and the maximum distance between the planet and the satellite is <i>a</i>.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomentumSatellite.png"/>
+</p><p>Note: In this example we will treat the satellite as a point mass and assume that the planet is fixed in space.
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht23','hide','show')" id="ht23l">show</a>]</th></tr>
+<tr style="display:none" id="ht23">
+<td>Now the point <i><b>Q</b></i> is placed at the center of mass of the planet. At the instant of interest, the satellite is at point <b>A</b>, the farthest point from the planet. Both points are shown in the figure below:
+<p><b>Direction</b>
+</p><p>Following the right hand rule, the angular momentum vector is along the +z axis (out of the screen). This corresponds to a counterclockwise circulation of the satellite about the planet as viewed from above the x-y plane.
+</p><p><b>Magnitude:</b>
+</p><p>At point <b>A</b>, the satellite's position vector measured from the planet and the satellite's velocity are perpendicular to each other:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomentumSatelliteAnswer.png"/>
+</p>
+</td></tr></table>
+</td></tr>
+<tr>
+<td><b>Example 2. Satellite moving in an elliptic orbit.</b>
+<p>When the satellite described in Example 1 is passing through point B in the orbit, at a distance <i>d</i> from the center of the planet, its speed is <b>v</b> as shown in figure (a) below. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomentumSatelliteMC.png"/>
+</p><p>If point <i><b>Q</b></i> is at the center of the planet, which of the following statements about the magnitude of the angular momentum vector about point <i><b>Q</b></i> is true?
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomSatellite_MC_answ.png"/>
+</p><p>where \( v_{\perp}, v_{\parallel}\) are defined in the figure (b) above. 
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht24','hide','show')" id="ht24l">show</a>]</th></tr>
+<tr style="display:none" id="ht24">
+<td>The magnitude of the angular momentum of the satellite about point <i><b>Q</b></i> is:
+<p>\[ L_{Q} = mdv_{\perp}\]
+</p>
+<p>Note:  the component \(v_{\parallel}\)  has zero cross product with the position vector because 
+the \(\sin 180^o = 0\).</p>
+<p>
+The direction is obtained following the right hand rule, in the <b>+z</b> axis (out of the screen)
+</p>
+</td></tr></table>
+</td></tr>
+<tr>
+<td><b>Example 3. A particle moving along a straight line</b>
+<p>A particle is moving with a constant velocity along a straight line as shown. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/StraightLineExample3.png"/>
+</p><p>Which of the following statements about the angular momentum about point Q are true:
+</p>
+<ol style="list-style-type:decimal"><li> the magnitude is constant but its direction is not
+</li><li> the magnitude and the direction  are constant
+</li><li> the direction is constant but the magnitude is not.
+</li></ol>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht25','hide','show')" id="ht25l">show</a>]</th></tr>
+<tr style="display:none" id="ht25">
+<td><b>Options 2: the magnitude and the direction are constant</b>.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/StraightLineExample3_sol.png"/>
+</p><p>Let's consider two instants of time <i>t = t<sub>1</sub></i> and <i>t = t<sub>2</sub></i> as indicated in the figure above. As shown, the particle's position vector depends on time as well as the angle <i>&#952;(t)</i> between the position and velocity vectors.
+</p><p><u><b>Direction:</b></u>
+</p><p>For both instants of time, <i>t<sub>1</sub></i> and <i>t<sub>2</sub></i>, we follow the right hand rule, to find that the direction of the angular momentum is into the screen, along the -z axis. Then <b>the direction of the angular momentum is constant with time</b>.
+</p><p><u><b>Magnitude:</b></u>
+From the definition, the magnitude is given by:
+</p><p>\(L_Q = m r_Q (t) v \sin \theta (t)\)
+</p><p>Both \(r_Q(t)\) and \(\theta(t)\) depend on time but the perpendicular distance is defined as:
+</p><p>\(r_Q(t) \sin \theta(t) = d\) is constant,
+</p><p>then the magnitude of the angular momentum is given by:
+</p><p>\(L_Q = dmv\) which does not depend on time because v does not.
+</p><p><b>The magnitude is constant</b>.
+</p>
+</td></tr></table>
+</td></tr>
+<tr>
+<td><b>Example 4. A particle moving on a plane</b>
+<p>A particle of mass m = 10 kg is moving on the xy plane. At a given instant of time its position measured from a point <b>S</b> is:
+</p><p>\[\vec{r}_S = 2 m\hat{i} - 3 m\hat{j}\]
+</p><p>and its velocity is 
+</p><p>\[\vec{v} = 1 m/s\hat{i} + 5 m/s \hat{j}\]
+</p><p>Calculate the particle's angular momentum with respect to point <i><b>S</b></i>.
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht26','hide','show')" id="ht26l">show</a>]</th></tr>
+<tr style="display:none" id="ht26">
+<td>\(\vec{L}_S=\vec{r}_S\times m\vec{v} \)<p/>
+\(= 10 kg(2 m\hat{i} - 3 m\hat{j})\times(1 m/s\hat{i} + 5 m/s \hat{j}) \)<p/>
+\(= 10(2\hat{i}\times\hat{i} + 10 \hat{i}\times\hat{j} -3\hat{j}\times\hat{i}-15\hat{j}\times\hat{j})kg.m^2/s\)<p/>
+\(= 10(0 + 10\hat{k} +3\hat{k} + 0)kgm^2/s = 130 kg.m^2/s \hat{k} \)<p/>
+</td></tr></table>
+<p><br/>
+</p>
+</td></tr></table>
+</body>
+</html>
+

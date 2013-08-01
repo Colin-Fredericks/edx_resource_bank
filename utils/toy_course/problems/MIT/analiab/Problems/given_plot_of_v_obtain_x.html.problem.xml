@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<html>
+  <problem><font size="3"><b>Given v vs. t obtain information about x(t)</b></font><br/>
+
+A particle is moving along the x-axis. Its velocity as a function of time is given in the plot shown below:
+<br/>
+<img src="/static/problems/MIT/analiab/Figures/given_plot_of_v_find_x.png" align="center" texwrap="none" width="300" alt="given_plot_of_v_find_x"/>
+<br/>
+<b>Part a)</b>  Calculate the object's acceleration in m/s<sup>2</sup> for the different time intervals of the object's motion. (Enter "+" if 
+if the acceleration is pointing along the positive x-axis. Enter "&#x2013;" if it is pointing along the negative x-axis).
+<br/>
+<p>
+For 0&lt; t &lt; 1, what is the acceleration?
+</p><br/>\(a=\)
+<numericalresponse answer="1" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+<p>
+</p><br/>
+For 1&lt; t &lt; 2, what is the acceleration? <br/>
+\(a=\)
+
+<numericalresponse answer="2" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+<p>
+</p><br/>
+For 3&lt; t &lt; 4, what is the acceleration? <br/>
+\(a=\)
+
+<numericalresponse answer="-4" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+<p><b>Part b)</b> At what instant of time t &gt; 0 is the object momentarily at rest? Enter the answer in s.</p><br/>\(t=\)<numericalresponse answer="3.75" unit="s"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+<b>Part c)</b> In which time interval are the velocity and acceleration vectors pointing in the same direction? 
+<optionresponse texlayout="horizontal" randomize="yes"><ul type="none"><li><p>\(0&lt;t&lt;1\) (s)</p><optioninput location="random" name="Foil1" options="('True','False')" correct="True">
+</optioninput></li><li><p>\(1&lt;t&lt;2\) (s)</p><optioninput location="random" name="Foil2" options="('True','False')" correct="True">
+</optioninput></li><li><p>\(2&lt;t&lt;3\) (s)</p><optioninput location="random" name="Foil3" options="('True','False')" correct="False">
+</optioninput></li><li><p>\(3&lt;t&lt;4\) (s)</p><optioninput location="random" name="Foil4" options="('True','False')" correct="False">
+</optioninput></li></ul></optionresponse><solved><p> During the time interval \( 3 s &lt; t &lt;3.75 s\), the velocity and acceleration vectors are in opposite directions. That is the reason for which the object stops momentarily at \(t=3.75 s\). For time \(3.75 &lt; t &lt; 4\), both vectors point in the same direction </p></solved>
+<p><b>Part d)</b> Where is the particle at time t = 4 s? (Enter the answer in m).</p><br/>\(x=\)<numericalresponse answer="6.5" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+<p><b>Part e)</b> Where is the particle at the instance when it is momentarily at rest? (Enter your answer in m).</p><br/>\(x=\)<numericalresponse answer="6.625" unit="m"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse><solved><p>Right after the object is momentarily at rest,  it starts to move towards the &#x2013;x axis, therefore the object is closer to the origin  at t = 4  than at t = 3.75 s.</p></solved>
+<b>Part f)</b> Check out Professor's Walter Lewin's explanation:<br/>
+<br/>
+<table border="1"><tr>
+<td><iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/gcR7XEimX3M?rel=0"/>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/given_plot_of_v_obtain_x.mp4">Click here to download this video.</a></p>
+
+<p>This movie is part of the Learning Activities, Help Session 2, <br/> 
+in the Module <a href="http://ocw.mit.edu/courses/physics/8-01sc-physics-i-classical-mechanics-fall-2010/one-dimensional-kinematics-and-free-fall/">One Dimensional Kinematics and Free Fall</a>,<br/>
+Lewin, Walter. 8.01 Physics I: Classical Mechanics, Fall 1999. <br/>
+Dourmashkin, Peter. 8.01SC Physics I: Classical Mechanics, <br/>
+Fall 2010. <a href="http://ocw.mit.edu">OpenCourseWare</a>. (Accessed 22 Feb, 2012). 
+<br/>
+License: Creative Commons BY-NC-SA
+</p>
+</td></tr></table>
+
+</problem>
+</html>

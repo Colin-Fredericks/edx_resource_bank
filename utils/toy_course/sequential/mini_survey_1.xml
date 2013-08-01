@@ -1,0 +1,13 @@
+<sequential display_name="Mini Survey 1 - General" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 1 - General">
+			<h2>Mini Survey 1 - General</h2>
+			<p>Each week we'll ask just 2-3 quick questions. We hope that you will answer them - our educational research group uses data from the course to improve the experience of future students.</p>
+			<p>Answering these questions is completely voluntary. If there are any questions that you feel uncomfortable answering, you may feel free to skip them and move on to the next question.</p>
+			<p>There are no right or wrong answers. Just answer as accurately as possible and make sure to hit "save" after you enter each answer.</p>
+		</html>
+		<problem url_name="RELATE_survey:time_estimate"/>
+		<problem url_name="RELATE_survey:experience_with_math"/>
+	</vertical>
+
+</sequential>

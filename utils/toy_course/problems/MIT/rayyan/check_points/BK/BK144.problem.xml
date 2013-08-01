@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A system consists of two blocks, of masses m and 2m, attached to the ends of a spring with a force constant k. The system is placed on a horizontal frictionless surface. The blocks then are pulled an "extra" distance x apart and released from the state of rest. 
+During the subsequent motion of the blocks, what is the maximum speed of block m? 
+
+</p>
+      <br/>
+
+          <br/>
+
+        <p>
+Part 1. 
+
+Which concepts are most useful in solving this problem?
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                  Conservation of energy and constant-acceleration kinematics
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                  Newton's laws and conservation of mechanical energy
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  Conservation of momentum and constant-acceleration kinematics
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                  Conservation of mechanical energy and kinematics of simple harmonic motion
+
+            </choice>
+            <choice location="random" name="foil5" correct="true">
+
+                  Conservation of mechanical energy and conservation of momentum
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                  Newton's laws and constant-acceleration kinematics
+
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+
+                  Conservation of momentum and kinematics of simple harmonic motion
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>
+Part 2. 
+What condition is necessary in order for both mechanical energy and momentum of the spring-blocks system to be conserved? 
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+
+                  The surface must be frictionless 
+
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+
+                  The surface must be horizontal
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  The spring must obey Hooke's law
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                  The masses of the blocks must be different from each other
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                  The forces exerted on the blocks by the spring must be proportional to their masses
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+                  The accelerations of the blocks must be equal
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>
+Part 3. 
+At the moment when the speed of block m is at a maximum, what statement is true? 
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                  The speed of block 2m is zero 
+
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+
+                  The speed of block 2m is at a maximum
+
+            </choice>
+            <choice location="random" name="foil3" correct="true">
+
+                  The net force acting on block m is zero
+
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+
+                  The net force acting on block 2m is zero
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                  The elastic potential energy of the system is at a maximum
+
+            </choice>
+            <choice location="random" name="foil6" correct="true">
+
+                  The elastic potential energy of the system is zero
+
+            </choice>
+            <choice location="random" name="foil7" correct="false">
+
+                  The center of mass of the system is moving in the same direction as block m
+
+            </choice>
+            <choice location="random" name="foil8" correct="false">
+
+                  The center of mass of the system is moving in the same direction as block 2m
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>
+Part 4. 
+If the maximum speed of block 2m is u, which equation is correct?
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+
+                  k\(x^{2}\)
+
+ = m\(v^{2}\) + 2m\(u^{2}\) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                  k\(x^{2}\)
+
+ = m\(v^{2}\) - 2m\(u^{2}\)
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  k\(x^{2}\)
+
+ = -m\(v^{2}\) + 2m\(u^{2}\)
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                  k\(x^{2}\)
+
+ = m\(v^{2}\)
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                  k\(x^{2}\)
+
+ =  2m\(u^{2}\)
+
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+
+ m\(v^{2}\) = 2m\(u^{2}\)
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>
+Part 5. 
+If the maximum speed of block 2m is u, which equation is correct?
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="true">
+
+                  mv = 2mu 
+
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+
+                  m/v = 2m/u
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  2m/v = m/u
+
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+
+                  mu = 2mv
+
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+    
+  </problem>
+</html>

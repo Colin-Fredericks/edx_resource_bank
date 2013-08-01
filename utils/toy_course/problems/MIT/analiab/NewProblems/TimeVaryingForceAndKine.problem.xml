@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+time="2*m*g/b"
+constant="sqrt(4*m^2*g^3/(3*h))"
+</script>
+
+      <p>
+A particle of mass <i>m</i> is moving with a constant velocity \(\vec{v}_o = v_o\hat{i}\). At time t = 0 it enters a region between two plates
+that are separated by a distance <i>h</i> and are contained in the x-z plane as shown in the figure. The particle is acting on by both gravity and by a time varying force that points 
+ upward (along the +y - direction) and has a magnitude <i>F = bt</i>, where <i>b</i> is a positive constant and is large enough such that the particle never touches the plates. 
+</p>
+
+<br/>
+    <img width="400" src="/static/problems/MIT/analiab/NewProblems/files/TimeVaryingForce.png"/>
+
+<br/>
+<p> <b>Part 1.</b> Do a qualitative plot of the particle's position as a function of time. This will help you to to visualize the particle's motion and to plan your solution.
+<br/>
+</p> 
+<p><b>Part 2.</b> If the particle is initially at the midpoint between the two plates (as shown in the figure above), how long does it take for the particle to reach its lowest point? <br/>
+</p>
+
+    <formularesponse answer="$time"  samples="m,g,b@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+ <p><b>Part 3.</b> What is the minimum possible value of <i>b</i> such that the particle does not hit the lower plate? <br/>
+</p>
+
+    <formularesponse answer="$constant"  samples="m,h,g@1,1,1:10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

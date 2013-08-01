@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<html>
+<!-- elliptical orbits: periods -->
+<problem>
+
+<h2>Solution</h2>
+
+<p>Kepler's 3rd Law states that the period of an orbit depends only on its semi-major axis (and some universal constants). This is true regardless of the shape of the orbit. Ranking the orbits by their semi-major axis is effectively the same as ranking them by period. You will find that F = D > C = E > B > A.</p>
+
+</problem>
+</html>

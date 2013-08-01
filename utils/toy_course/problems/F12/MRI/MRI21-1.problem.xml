@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 21 -->
+
+<problem>
+
+	<p>Imagine yourself in a grocery store. A shopping cart rests on a flat, slightly rough floor. </p>
+	<img src="/static/problems/F12/MRI/images/MRI21.png" width="138" />
+
+	<h3>Part 1</h3>
+	<p>You give the cart a push and release it. What happens?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The cart travels in a straight line forever.</choice>
+			<choice location="random" correct="true">The cart travels in a straight line and slows down until it stops.</choice>
+			<choice location="random" correct="false">The cart stops moving as soon as you let go of it.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

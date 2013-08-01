@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<problem>
+
+	<p>Part 2. If the particle is given a small displacement from a stable equilibrium point, the angular frequency of small oscillation is :
+<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">\(\displaystyle\sqrt{\frac{U_0}{m x_0^2}}\)</choice>
+		<choice location="random" correct="true" name="2">\(\displaystyle\sqrt{\frac{8 U_0}{m x_0^2}}\)</choice>
+		<choice location="random" correct="false" name="3">\(\displaystyle\sqrt{\frac{U_0}{8 m x_0^2}}\)</choice>
+		<choice location="random" correct="false" name="4">\(\displaystyle\sqrt{\frac{U_0}{m x_0}}\)</choice>
+		<choice location="random" correct="false" name="5">\(\displaystyle\sqrt{\frac{4 U_0}{m x_0^2}}\)</choice>
+	</choicegroup>
+</multiplechoiceresponse>
+    </p>
+
+</problem>

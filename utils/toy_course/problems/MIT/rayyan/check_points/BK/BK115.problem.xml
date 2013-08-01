@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Satellites with different speeds </title>
+<p>Satellite 1 revolves around a planet with an orbit of radius r; its linear speed is v. Satellite 2 revolves around the same planet at a linear speed v/3. Both orbits are circular. How much higher above the surface of the planet is satellite 2 relative to satellite 1?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+            <text>Not enough information to find the answer</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>\(\Delta h = r \sqrt{3}\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<text>\(\Delta h = r (2-\sqrt{3})\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<text>\(\Delta h = r (\sqrt{3}-1)\)</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>\(\Delta h = 3 r\)</text>
+        </choice>
+        <choice location="random" name="foil6" correct="true">
+			<text>\(\Delta h = 8 r\)</text>
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+			<text>\(\Delta h = 8 r/9\)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

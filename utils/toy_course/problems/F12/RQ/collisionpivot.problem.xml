@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A long narrow uniform rod of length \(d\) and mass \(M\) lies motionless on ice. The rod is attached to a frictionless axle that goes through ice. 
+A puck with the same mass \(M\) is sliding on ice with a speed \(v_0\) towards the rod. The puck collides with the rod and sticks to it, and the two objects start 
+spinning around the axle. The rotation is contained within the plane of the screen. Gravity points into the screen.
+  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/collisionpivotb.png" width="350"/>
+    </p>
+<p>
+During the collision, angular momentum of the system of both the puck and the rod is conserved around:
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="true" name="1">A fixed point at the pivot(axle). </choice>
+<choice location="random" correct="false" name="2">The center of mass of the rod and the puck. </choice>
+<choice location="random" correct="false" name="3">The point at the location of the collision. </choice>
+<choice location="random" correct="false" name="4">Any fixed point.</choice> 
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

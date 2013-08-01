@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+	<p>A uniform solid sphere of mass \(m\) and radius \(r\) is given, by a quick push but no spin, a horizontal speed \(v_0\) along a horizontal surface. Due to the friction between the surface and the sphere, the latter eventually begins to roll without slipping. </p>
+
+	<p>What is the best description of the motion of the sphere <i>before</i> slipping ends?</p>
+
+<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+<choicegroup type="MultipleChoice">
+	<choice location="random" name="foil1" correct="false">
+		<text>The translational speed increases while rotational speed increases</text>
+	</choice>
+	<choice location="random" name="foil2" correct="true">
+		<text>The translational speed decreases while rotational speed increases</text>
+	</choice>
+	<choice location="random" name="foil3" correct="false">
+		<text>The translational speed increases while rotational speed decreases</text>
+	</choice>
+	<choice location="random" name="foil4" correct="false">
+		<text>The translational speed decreases while rotational speed decreases</text>
+	</choice>
+</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

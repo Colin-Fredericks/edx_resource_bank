@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>xxx</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Motion with constant velocity</h3>
+<p>
+If the <b>net force acting</b> on an object is <b>zero</b> then there is <b>no change in motion</b> and the object moves with a <b>constant velocity</b>.</p>
+<p>If the velocity is constant, then the magnitude as well as the direction of the velocity are constant. As a result, the object moves along a straight line (1-dimensional motion). Selecting the x-axis to be parallel to the object's motion then its velocity is written as:
+</p><p>
+\(v=\frac{dx}{dt}\)
+</p><p>
+and the position as a function of time is given by (either using common sense or by integrating a constant):
+</p><p>
+\(x(t)=x_i+\int_{t_i}^t v\,dt' = x_i+v(t-t_i)\)
+</p><p>
+where \(x_i=x(t_i)\) is the position of the object at time \(t_i\).  Note that both \(x_i\) and \(t_i\) must be given in order for \(x(t)\) to be well defined. 
+</p>
+<p>The motion of an object moving under the action of a zero net force is described by the <b>Constant Velocity Model.</b></p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Graphical representation of \(x(t)\)
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td>
+<p>If \(v\) = constant then \(x(t)=x(t_i)+v(t_i - t)\)
+</p><p>
+As a result, the position is a linear function of time and the slope of the straight line is the velocity: 
+</p><p>
+\(v=\frac{x(t)-x(t_i)}{t-t_i}\)
+</p>
+<img width="400" src="/static/problems/MIT/analiab/Figures/xvstIntro3.png"/>
+<p>
+<b>Note: </b>Note that the average velocity for any time interval is equal to the instantaneous velocity and is given by the slope of the line.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Derivation of \(x(t)\)
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td><p>If the velocity is known, the position at a given instant of time \(t\) is obtained by integration of \(v(t)=\frac{dx}{dt}\):
+</p><p>
+\(x(t)=x(t_i)+\int_{t_i}^{t}v(t')dt'\)
+</p><p>
+where \(x(t_i)\) is the position of the object at time \(t_i\). To have \(x(t)\) fully determined \(x_i\) and \(t_i\) must be given. They are called the initial conditions.
+</p><p>
+For the case of constant velocity, \(v\) does not depend on time. As a result the above expression becomes:
+</p><p>
+\(x(t)=x(t_i)+v\int_{t_i}^{t}dt' = x(t_i)+v(t - t_i)\)
+</p>
+</td></tr></table>
+</body>
+</html>
+

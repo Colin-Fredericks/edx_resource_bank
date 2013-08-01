@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Angular Momentum and Torque</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Angular Momentum and Torque</h2>
+<h3> Learning Goals </h3>
+<p>After working through this module, you should be able to
+</p>
+<ul style="list-style:disc outside none"><li> Explain why torque changes the angular momentum of a point particle or a rigid object
+</li></ul>
+<ul style="list-style:disc outside none"><li> Decide if the angular momentum of a system of interacting objects remains constant
+</li></ul>
+<ul style="list-style:disc outside none"><li> Apply the short time collision approximation
+</li></ul>
+<hr/>
+<p>In the unit on momentum we have seen that an external force applied to a system changes the linear momentum of the system. In this unit we will learn that an external torque about a point changes the angular momentum of a system about the same point.
+</p>
+<table border="1">
+<tr>
+<td>Linear Momentum is changed by External Forces
+</td>
+<td>Angular Momentum is changed by External Torques
+</td></tr>
+<tr>
+<td><center>\[\frac{d\vec{p}}{dt} = \sum\vec{F}^{ext}\]</center>
+</td>
+<td><center>\[\frac{d\vec{L}_Q}{dt} = \sum\vec{\tau}_Q^{ext}\]</center>
+</td></tr></table>
+<h3>  The Angular Momentum and Torque of a point particle</h3>
+<p>Let's consider a particle of mass <i>m</i> moving with velocity \(\vec{v}\). The rate of change of the angular momentum vector about a given point <i><b>Q</b></i> is equal to the sum of the torques about point <i><b>Q</b></i> due to the forces acting on the particle&#160;:
+</p><p><br/>
+\[\frac{d\vec{L}_Q}{dt} = \sum\vec{\tau}_{Q}\]
+</p><p><br/>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Derivation</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>We will show here the  differential form of the change of the angular momentum:
+<p>\[\frac{d\vec{L}_Q}{dt} = \sum\vec{\tau}_{Q}\]
+</p><p>The angular momentum of the particle about point <i><b>Q</b></i> is given by: 
+</p><p>\[\vec{L}_{Q}=\vec{r}_{Q}\times\vec{p}=\vec{r}_{Q}\times m\vec{v}\]
+</p><p>where \(\vec{r}_Q\) is the particle's position vector measured from point <i><b>Q</b></i>. Taking the derivative with respect to time of the above expression we obtain:
+</p><p>\[\frac{d\vec{L}_{Q}}{dt}=\frac{d\vec{r}_{Q}}{dt}\times m\vec{v} + \vec{r}_{Q}\times m\frac{d\vec{v}}{dt}\]&#160;&#160;&#160;&#160;&#160; (eq. 1)
+</p><p>Because the rate of change of the position vector is the velocity vector, the first term of (eq. 1):
+</p><p>\[\frac{d\vec{r}_{Q}}{dt}\times m\vec{v} = \vec{v} \times m\vec{v} = 0\]
+</p><p><br/>
+Then, (eq. 1) becomes:
+</p><p>\[\frac{d\vec{L}_{Q}}{dt}= \vec{r}_Q\times m\frac{d\vec{v}}{dt} = \vec{r}_Q\times m\vec{a} = \vec{r}_Q\times \sum_{i=1}^n\vec{F}_i\]&#160;&#160;&#160;&#160; (eq. 2)
+</p><p>where we have used Newton's 2<sup>nd</sup> law to substitute for the acceleration. 
+</p><p>Because the forces are acting on a point particle, the position vector of the point particle, \(\vec{r}_Q\), is the position vector of the point of application of all the forces acting on the particle. As a result, the vector \(\vec{r}_Q\) is independent of the subscript <i>i</i> and can be put inside the sum of (eq. 2) to obtain:
+</p><p>\[\frac{d\vec{L}_{Q}}{dt}= \sum_{i=1}^n(\vec{r}_Q\times\vec{F}_i) = \sum_{i=1}^n\vec{\tau}_{Q,i}\]
+</p>
+</td></tr></table>
+<h3> The Angular Momentum and Torque of a System of N Point Particles</h3>
+<p>Let's consider a system formed by N point particles. The rate of change of the angular momentum of the system about a given point <i><b>Q</b></i> is equal to the sum of the external torques acting on the system about that point.
+</p><p>\[\frac{d\vec{L}_Q}{dt}^{system} = \sum\vec{\tau}_Q^{external}\]
+</p><p><b>1.</b> In the expression above the angular momentum of the system is the sum of the angular momentum of each of the N particles composing the system:
+</p><p>\[\vec{L}_Q^{system} = \sum_{i=1}^N\vec{r}_{i,Q\}\times m_i\vec{v}_i\]
+</p><p><b>2.</b> The torques that will produce a change in the angular momentum are only the <b>external torques</b> on the system. The possible internal interactions between particles in the system will cause internal forces. It can be shown that the torque due to the internal forces cancel in pairs (as long as the 3rd law pairs are along the line joining both particles).
+</p>
+<h3>  Angular Momentum and Torque of a Rigid Object</h3>
+<p>The result presented for a system of N particles is also valid for a rigid object. The rate of change of the angular momentum of a rigid object about a given point <i><b>Q</b></i> is equal to the net external torque on the object about point <i><b>Q</b></i>:
+</p><p>\[\frac{d\vec{L}_Q}{dt}^{object} = \sum\vec{\tau}_Q^{external}\]
+</p><p>where now \(\vec{L}_Q^{object}\) is the angular momentum of the rigid object with respect to a point <i><b>Q</b></i>.
+</p><p>This is a general result applied to objects of arbitrary shape rotating about an arbitrary axis, or translating and rotating. 
+</p><p>In this course we will limit the application to the type of examples as those described in Module 2 and Module 3 where
+</p>
+<ul style="list-style:disc outside none"><li> the rotation is about an axis that does not change direction in space, 
+</li><li> planar objects are rotating about an axis perpendicular to the plane where the motion of the object is contained.
+</li><li> symmetrical objects are rotating about an axis of symmetry
+</li></ul>
+</body>
+</html>
+

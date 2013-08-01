@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 7 -->
+
+<problem>
+
+	<p>A disk of mass \(M\) and radius \(R\) is rotating about its axis. A small cylinder of mass \(m\) and very small radius is placed on the surface 
+	of the disk at a distance \(R/2\) from the center. The disk is rotating with angular speed \( \omega \). The cylinder does not move relative to the disk.</p>
+	<img src="/static/problems/F12/procedures/images/proc6.png" />
+	<p>What is the kinetic energy of the object consisting of the disk and the cylinder? Type "omega" for \( \omega \).</p>
+
+	<formularesponse type="cs" answer="(1/2)*(1/2)*M*(R^2)*(omega^2) + (1/2)*m*((R/2)^2)*(omega^2)" samples="m,M,R,omega@1,1,1,1:10,10,10,10#4">
+	<responseparam type="tolerance" default="1%"/>
+		<textline size="25" math="1" />
+	</formularesponse>
+
+</problem>
+
+</html>

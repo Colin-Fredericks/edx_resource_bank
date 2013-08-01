@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Combination centripetal force and projectile motion problem, conceptual -->
+
+<problem>
+
+<p>My little brother has stolen my treasured and expensive electronic device and is whirling it around by the charging cord. The device is moving in a vertical circle. He increases the rotational speed slowly until the cord unplugs from the device.</p>
+
+<p>Where in the path will the cord come unplugged?</p>
+<img src="/static/problems/S13/quiz/images/6-3a.png" />
+<optionresponse>
+	<optioninput
+	options="('1','2','3','4','5','6','7','8','all locations equally likely')"
+	correct="5"/>
+</optionresponse>
+
+<p>What path will the device take when the cord does come unplugged?</p>
+<img src="/static/problems/S13/quiz/images/6-3b.png" />
+<optionresponse>
+	<optioninput
+	options="('A','B','C','D','E','impossible to say')"
+	correct="C"/>
+</optionresponse>
+
+</problem>
+
+</html>

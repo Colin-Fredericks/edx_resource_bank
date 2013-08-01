@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+	<p>What is the speed \(v\) of the cylinder at the bottom of the first inclined plane?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(v=\sqrt{4gh/3}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(v=\sqrt{2gh/3}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(v=\sqrt{2gh}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(v=\sqrt{5gh/7}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(v=\sqrt{4gh/3} \cos \theta\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(v=\sqrt{2gh/3} \cos \theta\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \(v=\sqrt{2gh} \cos \theta\)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                  \(v=\sqrt{5gh/7} \cos \theta\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 34 -->
+
+<problem>
+
+	<p>Two projectiles are launched simultaneously from the same point above the flat terrain. The initial speeds of the projectiles are the 
+	same. Each projectile’s velocity makes the same angle with the horizontal. However, projectile A is launched <b>a</b>bove the horizontal 
+	and projectile B is <b>b</b>elow the horizontal. </p>
+
+	<h3>Part 1</h3>
+	<p>At any given moment while <i>both projectiles are still in the air,</i> state which of the two projectiles has greater: </p>	
+	<p>
+		Horizontal component of the velocity
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="same"/>
+		</optionresponse>
+	</p>
+	<p>
+		Magnitude of the Vertical component of the velocity
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="B"/>
+		</optionresponse>
+	</p>
+	<p>
+		Speed
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="B"/>
+		</optionresponse>
+	</p>
+	<p>
+		Height above the ground
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="A"/>
+		</optionresponse>
+	</p>
+	<p>
+		Horizontal displacement
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="same"/>
+		</optionresponse>
+	</p>
+	<p>
+		Rate of change in velocity
+		<optionresponse>
+		<optioninput inline="1" options="('A','B','same')" correct="same"/>
+		</optionresponse>
+	</p>
+
+</problem>
+</html>

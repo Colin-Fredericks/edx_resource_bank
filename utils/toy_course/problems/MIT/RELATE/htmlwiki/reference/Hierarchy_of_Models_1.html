@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<title>Hierarchy of Models for Mechanics</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>		
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Dynamics_and_Net_For').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Dynamics_and_Net_For.html'); 
+$('#Momentum_and_Externa').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Momentum_and_Externa.html');
+$('#Angular_Momentum_and').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Angular_Momentum_and.html'); 
+$('#Mechanical_Energy__E').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Mechanical_Energy__E.html');
+
+$('#Uniform_Circular_Mot_2').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Uniform_Circular_Mot_2.html');
+$('#Simple_Harmonic_Moti_2').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Simple_Harmonic_Moti_2.html'); 
+$('#Rotational_Dynamics').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Rotational_Dynamics.html');
+$('#OneDimensional_Motio').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/OneDimensional_Motio.html'); 
+$('#Constant_Velocity_Ze').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Constant_Velocity_Ze.html');
+$('#Constant_Momentum_Ze').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Constant_Momentum_Ze.html'); 
+$('#Constant_Mechanical_2').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Constant_Mechanical_2.html'); 
+$('#Angular_Motion_about').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Angular_Motion_about.html'); 
+$('#Constant_Angular_Mom').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Constant_Angular_Mom.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+	</head>
+	<body>
+		<p>
+			The general physical models commonly taught in introductory mechanics are:</p>
+		<h4>
+			Models Describing Linear Motion (Force is Fundamental Description of Interactions)</h4>
+		<ul>
+			<li>
+				<b><!--<a id="go" rel="leanModal" href="#Dynamics_and_Net_For" name="Dynamics_and_Net_For" onclick="domath()">-->Dynamics and Net Force<br />
+				<!--</a>--></b>
+				<ul>
+					<li>
+						Two-Dimensional Motion
+						<ul>
+							<li>
+								<!--<a id="go" rel="leanModal" href="#Uniform_Circular_Mot_2" name="Uniform_Circular_Mot_2" onclick="domath()">-->Uniform Circular Motion (Centripetal Acceleration)<!--</a>--></li>
+							<li>
+								One-Dimensional Motion
+								<ul>
+									<li>
+										<!--<a id="go" rel="leanModal" href="#OneDimensional_Motio" name="OneDimensional_Motio" onclick="domath()">-->One-Dimensional Motion with Constant Acceleration<!--</a>-->
+										<ul>
+											<li>
+												<!--<a id="go" rel="leanModal" href="#Constant_Velocity_Ze" name="Constant_Velocity_Ze" onclick="domath()">-->Constant Velocity (Zero Acceleration)<!--</a>--></li>
+										</ul>
+									</li>
+									<li>
+										<!--<a id="go" rel="leanModal" href="#Simple_Harmonic_Moti_2" name="Simple_Harmonic_Moti_2" onclick="domath()">-->Simple Harmonic Motion (Linear Restoring Acceleration)<!--</a>--></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			&nbsp;</p>
+		<ul>
+			<li>
+				<b><!--<a id="go" rel="leanModal" href="#Momentum_and_Externa" name="Momentum_and_Externa" onclick="domath()">-->Momentum and External Impulse<!--</a>--></b>
+				<ul>
+					<li>
+						<!--<a id="go" rel="leanModal" href="#Constant_Momentum_Ze" name="Constant_Momentum_Ze" onclick="domath()">-->Constant Momentum (Zero External Impulse)<!--</a>--></li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			&nbsp;</p>
+		<h4>
+			Models Describing Angular Motion (Torque is Fundamental Description of Interactions)</h4>
+		<ul>
+			<li>
+				<b><!--<a id="go" rel="leanModal" href="#Rotational_Dynamics" name="Rotational_Dynamics" onclick="domath()">-->Angular Velocity and Angular Acceleration about a Single Axis<!--</a>--></b>
+				<ul>
+					<li>
+						<!--<a id="go" rel="leanModal" href="#Angular_Motion_about" name="Angular_Motion_about" onclick="domath()">-->Angular Motion about a Single Axis with Constant Angular Acceleration<!--</a>--></li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			&nbsp;</p>
+		<ul>
+			<li>
+				<b><!--<a href="Angular_Momentum_and.html">-->Angular Momentum and External Angular Impulse about a Single Axis<!--</a>--></b>
+				<ul>
+					<li>
+						<!--<a id="go" rel="leanModal" href="#Angular_Momentum_and" name="Angular_Momentum_and" onclick="domath()">-->Constant Angular Momentum (Zero External Angular Impulse)<!--</a>--></li>
+				</ul>
+			</li>
+		</ul>
+		<p>
+			&nbsp;</p>
+		<h4>
+			Models Describing both Linear and Angular Motion (Force and Torque each used to calculate Work)</h4>
+		<ul>
+			<li>
+				<b><!--<a id="go" rel="leanModal" href="#Mechanical_Energy__E" name="Mechanical_Energy__E" onclick="domath()">-->Mechanical Energy, External Work, and Internal Non-Conservative Work<!--</a>--></b>
+				<ul>
+					<li>
+						<!--<a id="go" rel="leanModal" href="#Constant_Mechanical_2" name="Constant_Mechanical_2" onclick="domath()">-->Constant Mechanical Energy (Zero Non-Conservative Work)<!--</a>--></li>
+				</ul>
+			</li>
+		</ul>
+
+<div id="Angular_Momentum_and" class="popup"></div>
+<div id="Angular_Motion_about" class="popup"></div>
+<div id="Constant_Angular_Mom" class="popup"></div>
+<div id="Constant_Mechanical_2" class="popup"></div>
+<div id="Constant_Momentum_Ze" class="popup"></div>
+<div id="Constant_Velocity_Ze" class="popup"></div>
+<div id="Dynamics_and_Net_For" class="popup"></div>
+<div id="Mechanical_Energy__E" class="popup"></div>
+<div id="Momentum_and_Externa" class="popup"></div>
+<div id="OneDimensional_Motio" class="popup"></div>
+<div id="Rotational_Dynamics" class="popup"></div>
+<div id="Simple_Harmonic_Moti_2" class="popup"></div>
+<div id="Uniform_Circular_Mot_2" class="popup"></div>
+ </body>
+</html>
+

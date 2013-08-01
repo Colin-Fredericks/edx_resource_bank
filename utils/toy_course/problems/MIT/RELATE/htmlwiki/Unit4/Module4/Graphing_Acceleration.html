@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Graphing Accelerated Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Position vs. Time Graphs and Acceleration</h3>
+<p>The concavity (or equivalently, the second derivative) of a position versus time graph can be used to determine the sign of the acceleration.  A concave up (viewed from positive y) position versus time graph has positive acceleration.  The reason can be seen by considering the case of a system with constant positive acceleration.  The position versus time graph for such a system will be an upward-opening parabola like that shown below.
+</p><p><img width="275px" src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module4/files/ConcaveUp.png"/>
+</p><p>The vertex of this parabola is a point where the slope of the graph goes to zero (at the bottom).  A point of zero slope in a position vs. time graph implies that the velocity goes to zero at that time.  Thus, the system is momentarily at rest at the time corresponding to the vertex of the parabola.  Everywhere to the right of the vertex in the graph, the slope of the parabola is positive and increasing as time increases.  Thus, the velocity is increasing in the positive direction, implying positive acceleration. Everywhere to the left of the vertex, the velocity is negative and approaching zero (becoming smaller in magnitude but larger in value as time increases).  This lessening of a negative speed also corresponds to positive acceleration.
+</p><p>A concave down position versus time graph indicates negative acceleration.  The position versus time for a system experiencing constant negative acceleration is shown below.
+</p><p><img width="275px" src="/static/problems/MIT/RELATE/htmlwiki/Unit4/Module4/files/ConcaveDown.png"/>
+</p><p>Again, the vertex is a point with zero velocity.  This time, however, points to the right of the vertex have negative slope that is growing steeper as time goes on, and points to the left of the vertex have positive slope that is lessening.  Each of these cases correspond to negative acceleration.
+</p><p><br/>
+</p>
+</body>
+</html>
+

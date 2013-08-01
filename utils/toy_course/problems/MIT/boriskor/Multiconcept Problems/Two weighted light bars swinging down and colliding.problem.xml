@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<img src="/static/problems/MIT/boriskor/BKimages/light bars with masses swinging down.png" alt="Two uniform bars of different lengths and masses swing down and collide"/><br/>
+	<p>Two light bars have lengths of \(l\) and \(2l\). There are small masses \(m\) and \(2m\), attached to the free ends of the bars as shown. The bars are pivoted at the common frictionless hinge as shown. Initially, the bars are held horizontally. The bars are released from the horizontal position in such a way that they collide, inelastically, at the bottom position (the mass attached to the shorter bar sticks to the longer bar). After that, the bars swing upward together. Find the maximum angle \(\theta\) the bars would make with the vertical after the collision. </p>
+
+\(\theta=\)
+<numericalresponse answer="59">
+  <responseparam default="5%" type="tolerance"/>
+  <textline math="1"/>
+</numericalresponse> degrees
+</problem>
+</html>

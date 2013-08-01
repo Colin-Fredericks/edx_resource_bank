@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+<!-- Colin problem #7 -->
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+bigm = random.randrange(180, 220, 5)
+bigr = random.randrange(90, 120, 5)
+littler = (bigr - random.randrange(5, 15, 1))
+littlem = random.randrange(8, 12, 1)
+v = random.randrange(18, 22, 1)
+
+I = 0.5 * bigm * bigr * bigr
+
+omega = littler * littlem * v / I
+
+lostE = 0.5 * littlem * v ** 2 - 0.5 * I * omega **2
+
+</script>
+
+	<p>A merry-go-round (pictured) is sitting in a playground. It is free to rotate, but is currently stationary. You can model it as a cylinder of mass $bigm kg and radius $bigr cm. The poles near the edge are $littler cm from the center.</p>
+	<img src="/static/problems/F12/colin/images/CF6.png" width="300" />
+	<p>Someone hits one of the poles with a $littlem kg sledgehammer moving at $v m/s in a direction tangent to the edge of the merry-go-round. The hammer is not moving after it hits the merry-go-round.</p>
+	<p>How much energy is lost in this collision?</p>	
+
+	<numericalresponse answer="$lostE" unit="J">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+</problem>
+</html>

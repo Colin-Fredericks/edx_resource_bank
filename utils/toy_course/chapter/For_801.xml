@@ -1,0 +1,52 @@
+<chapter display_name="Questions for 8.01x">
+
+	<sequential display_name="Questions for early in 801" url_name="801_early">
+
+		<problem display_name="Pulley Platform for 801" filename="U13/Q4801/PullPlat" />
+		<problem display_name="3 blocks and pulley for 801" filename="U13/Q4801/3BP" />
+		<problem display_name="2 blocks with friction for 801" filename="U13/Q4801/2_blocks_friction" />
+		<problem display_name="2 prisms for 801" filename="U13/Q4801/2_prism" />
+
+		<problem display_name="Forces Question 1" filename="U13/Q4801/Force_1" />
+		<vertical>
+			<problem filename="U13/Q4801/Force_2-1" display_name="Forces Question 2" attempts="2" weight="0.25"/>
+			<problem filename="U13/Q4801/Force_2-2" display_name="Forces Question 2, Part 2" attempts="1" weight="0.25"/>
+			<problem filename="U13/Q4801/Force_2-3" display_name="Forces Question 2, Part 3" attempts="1" weight="0.25"/>
+			<problem filename="U13/Q4801/Force_2-4" display_name="Forces Question 2, Part 4" attempts="1" weight="0.25"/>
+			<discussion for="Pulley Acceleration" id="MReV_Summer2013_BK151" discussion_category="Applying Newton's Laws" />
+		</vertical>
+		<problem display_name="Kinematics Question 1" filename="U13/Q4801/Kin_1" />
+		<problem display_name="Kinematics Question 2" filename="U13/Q4801/Kin_2" />
+
+	</sequential>
+
+	<sequential display_name="Questions for 801 T3" url_name="801_T3">
+
+		<problem display_name="Massive Pulley for 801 T3" filename="U13/Q4801/2BIP" />
+		<vertical>
+			<problem filename="U13/Q4801/assembly_1" display_name="Rolling Assembly for 801 T3, part 1" attempts="5" weight="0.5"/>
+			<problem filename="U13/Q4801/assembly_2" display_name="Rolling Assembly for 801 T3, part 2" attempts="5" weight="0.5"/>
+			<problem filename="U13/Q4801/assembly_3" display_name="Rolling Assembly for 801 T3, part 3" attempts="5" weight="0.5"/>
+			<problem filename="U13/Q4801/assembly_4" display_name="Rolling Assembly for 801 T3, part 4" attempts="5" weight="0.5"/>
+		</vertical>
+		<problem display_name="Angular Collision for 801 T3" filename="U13/Q4801/ang_collision" />
+		<problem display_name="Orbit Transfer for 801 T3" filename="U13/Q4801/orbit_transfer" />
+
+		<problem display_name="Torque question for 801 T3" filename="U13/Q4801/Q9102" />
+		<problem display_name="Massed pulley for 801 T3" filename="U13/Q4801/Q9103" />
+		<problem display_name="Angular collision for 801 T3" filename="U13/Q4801/Q114" />
+		<problem display_name="Free rod for 801 T3" filename="U13/Q4801/Q115" />
+		<problem display_name="Ballistic missile for 801 T3" filename="U13/Q4801/Q134" />
+
+	</sequential>
+
+	<sequential display_name="Questions for 801 Final" url_name="801_final">
+
+		<problem display_name="MBT 5" filename="U13/Q4801/MBT_5" attempts="3"/>
+		<problem display_name="MBT 13" filename="U13/Q4801/MBT_13" attempts="2"/>
+		<problem display_name="MBT 8" filename="U13/Q4801/MBT_8" />
+		<problem display_name="MBT 18" filename="U13/Q4801/MBT_18" />
+
+	</sequential>
+
+</chapter>

@@ -1,0 +1,11 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What was your background in physics prior to this class?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="more_advanced"><text>More advanced class than Mechanics ReView</text></choice>
+      <choice correct="true" name="same_level"><text>Same level of study as Mechanics ReView</text></choice>
+      <choice correct="true" name="preceeding_class"><text>Class that would precede Mechanics ReView</text></choice>
+      <choice correct="true" name="no_prior_experience"><text>No prior experience with physics</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

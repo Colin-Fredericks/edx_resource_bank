@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Colin problem #5 -->
+<!-- Also an MRI problem -->
+
+<problem>
+
+	<h3>Part 1</h3>
+	<p>You are building a missile defense system to shoot down Intercontinental Ballistic Missiles armed with multiple nuclear warheads. These missiles are fired on elliptical trajectories that can take them anywhere on Earth. To simplify the problem, you may assume that the missiles do not burn fuel after they leave the atmosphere.</p>
+	<p>It will be easiest to hit the missiles when they are moving slowly. When in their trajectory should you try to hit them?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">Just after the missiles leave the atmosphere.</choice>
+			<choice correct="true">At the missiles' farthest distance from the Earth.</choice>
+			<choice correct="false">Just before the missiles return to Earth.</choice>
+			<choice correct="false">Some other time.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

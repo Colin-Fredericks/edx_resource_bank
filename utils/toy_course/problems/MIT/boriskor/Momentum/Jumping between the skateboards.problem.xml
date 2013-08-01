@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A skateboarder of mass \(M\) is cruising along at a speed \(V\) on a skateboard of mass \(m\). Another skateboard of the same mass \(m\) is placed at rest on the side of the road. As she passes, the skateboarder jumps, landing on the other skateboard. The instant after she lands, she finds herself moving in the opposite direction with the same speed \(V\) as before. What is the speed \(U\) of the first skateboard right after she jumps off from it? Neglect the friction between the skateboards and the road.</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+          <text>\( U = 2 V \frac{M+m}{m} \)</text>      
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+          <text>\( U = V \frac{M+m}{m} \)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+          <text>\( U =  2 V \frac{M}{M+m} \)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+          <text>\( U = 2 V \frac{m}{M+m} \)</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+          <text>\( U = V \frac{M}{M+m} \)</text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+          <text>\( U = 2 V \frac{M+m}{M} \)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

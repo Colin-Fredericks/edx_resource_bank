@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK18.png" alt="p1a" texwrap="none" align="top"/>
+    <br/>
+
+      <p>
+Given the forces acting on the object and the magnitude of its acceleration, find the object's mass (in "kg"). No forces, other than the ones shown, are present.
+</p>
+
+      <numericalresponse answer="2.0" unit="kg">
+        <responseparam default="1%" type="tolerance"/>
+        <responseparam default="0,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+        <textline math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </numericalresponse>
+
+      </problem>
+</html>

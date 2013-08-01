@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+x="(m2*d+m1*v*(t1-t0))/(m1+m2)"
+
+</script>
+    <img src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/twodots.png" align="top" height="250" width="400" alt="two dot masses"/>
+
+      <p><br/>
+Two small particles of mass m1 and mass m2 attract each other with a force that
+varies with the inverse cube of their separation. At time t<sub>0</sub>, m<sub>1</sub> has velocity
+v directed towards m<sub>2</sub>, which is at rest a distance d away. At time t<sub>1</sub>, the particles collide. 
+<br/>
+How far does m<sub>1</sub> travel in the time interval (t<sub>0</sub> and t<sub>1</sub>)? Note: you may use t<sub>1</sub> and t<sub>0</sub> in your answer. Enter m1, m2, t1 and t0 for masses and times.
+<br/>
+\(x =\)
+</p>
+
+    <formularesponse answer="$x" samples="m1,m2,d,v,t1,t0@1,1,1,1,6,1:10,12,8,10,11,5#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+          </problem>
+</html>

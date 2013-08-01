@@ -1,0 +1,30 @@
+<chapter display_name="Office Hours - Units 4 and 5">
+	<sequential display_name="Questions" url_name="Office_Hours_Questions_Units_4_5">
+		<vertical display_name="Submit your Questions for Units 4-5">
+			<html display_name="Submit your Questions for Units 4-5" filename="OfficeHours/OH4_5"/>
+			<discussion for="Submit your Questions for Units 4-5" id="MReV_Summer2013_OH4_5" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Answers" url_name="Office_Hours_Answers_Units_4_5">
+		<vertical display_name="Bicyclist Catches Car">
+			<video youtube="1.0:bs9XTeH4FZo" url_name="Office_Hours_Answers_4_5_1"/>
+			<discussion for="Office Hours Answers for Units 4-5 #1" id="MReV_Summer2013_OH4_5_answer1" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Block Slide">
+			<video youtube="1.0:_zCzf451JA8" url_name="Office_Hours_Answers_4_5_2"/>
+			<discussion for="Office Hours Answers for Units 4-5 #2" id="MReV_Summer2013_OH4_5_answer2" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Cat and Flowerpot">
+			<video youtube="1.0:Pn2ESHjCo60" url_name="Office_Hours_Answers_4_5_3"/>
+			<discussion for="Office Hours Answers for Units 4-5 #3" id="MReV_Summer2013_OH4_5_answer3" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Interactions">
+			<video youtube="1.0:uMDUZ1cvMzY" url_name="Office_Hours_Answers_4_5_4"/>
+			<discussion for="Office Hours Answers for Units 4-5 #4" id="MReV_Summer2013_OH4_5_answer4" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Shopping Cart">
+			<video youtube="1.0:DWIJKX_Dkok" url_name="Office_Hours_Answers_4_5_5"/>
+			<discussion for="Office Hours Answers for Units 4-5 #5" id="MReV_Summer2013_OH4_5_answer5" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+</chapter>

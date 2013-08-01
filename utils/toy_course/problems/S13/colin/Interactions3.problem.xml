@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- Interactions Problems #3 -->
+<problem>
+
+<img src="/static/problems/S13/colin/images/Interactions3.png" width="140" height="290" />
+
+<p>In the diagram above, a ball is swinging through the air on the end of a string. One of the forces drawn on it is inappropriate, inaccurate, or not a real force. Which one is it?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false"><text>T, the force of tension in the rope.</text></choice>
+			<choice location="random" correct="true"><text>F<sub>C</sub>, the centripetal force.</text></choice>
+			<choice location="random" correct="false"><text>F<sub>g</sub>, the force of gravity.</text></choice>
+			<choice location="bottom" correct="false"><text>All of these forces are ok.</text></choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

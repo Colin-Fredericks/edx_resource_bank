@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 16 -->
+
+<problem>
+
+	<p>Which of these quantities is conserved from the moment the first bar is released to the moment immediately before the collision?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Linear momentum of each of the bars only</choice>
+			<choice location="random" correct="false">Angular momentum of each of the bars (about the pivot point) only</choice>
+			<choice location="random" correct="false">Kinetic energy of each of the bars only</choice>
+			<choice location="random" correct="true">Mechanical energy of each of the bar-Earth systems only</choice>
+			<choice location="bottom" correct="false">None of them</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Procedures Test 5 -->
+
+<problem>
+
+	<p><i>Currently done as an examle at <a href="https://qisx.mit.edu/courses/MITx/8.011x/Classical_Mechanics_Online/courseware/Unit_11_Angular_Momentum/Angular_Momentum_of_a_Point_Particle/">https://qisx.mit.edu/courses/MITx/8.011x/Classical_Mechanics_Online/courseware/Unit_11_Angular_Momentum/Angular_Momentum_of_a_Point_Particle/</a> </i></p>
+	<p>A point particle of mass \(m\) is moving along a straight line with speed \(v\) along the +x axis. Consider 
+	the point \(S\) located on the straight line as shown in the figure.</p>
+	<img src="/static/problems/F12/procedures/images/proc4c.png" />
+	<p>What is the angular momentum of the point particle about point \(S\)? Give magnitude and direction.</p>
+
+	<formularesponse answer="0" samples="m,v,b@1,1,1:10,10,10#4">
+		Magnitude:
+		<textline size="25" math="1" />
+	</formularesponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+	<p>
+		Direction:
+		<optioninput inline="1" options="('Up','Down','Left','Right','Out of screen','Into screen','N/A')" correct="N/A" />
+	</p>
+	</optionresponse>
+
+</problem>
+
+</html>

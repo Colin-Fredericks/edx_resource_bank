@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Average Speed</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<p>Suppose that you know only that an object starts from position <i>x</i><sub><i>i</i></sub> at time <i>t</i> = <i>t</i><sub><i>i</i></sub> and has moved to <i>x</i>(<i>t</i>) at time <i>t</i>. In many cases exact details of this motion don&#8217;t matter. In this example there may be a hill in the intervening block, but all we&#8217;re really interested in is, for example, that it took 2 minutes to go two blocks. Under these circumstances, we&#8217;re interested in the "average velocity". This is defined as</p>
+
+<p>\[v_{avg}[t_i, t] = \frac{x(t)-x_{i}}{t-t_{i}}\], and may be thought of as</p>
+
+<p>\[v_{avg} = \frac{\Delta x}{\Delta t}=\frac{displacement}{interval}\].</p>
+
+<p>The notation <i>v</i><sub><i>a</i><i>v</i><i>g</i></sub>[<i>t</i><sub><i>i</i></sub>,<i>t</i>] emphasizes that the average velocity is a function of the particular time interval over which the motion occurs rather than any particular instant of time. In this case the average velocity is +1 block per minute. The "+" sign indicates the direction of the displacement; in this case the positive x direction is east.</p>
+
+</body>
+</html>
+

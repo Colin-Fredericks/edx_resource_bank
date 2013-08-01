@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Example: Rolling Ball</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: A Rolling Ball</h3>
+A uniform ball of mass <i>m</i> and radius <i>R</i> is rolling on a horizontal surface as shown. 
+The ball translates with a speed <i>v<sub>cm</sub></i> and rotates with an angular speed <i>&#969;</i> about an axis 
+passing through its center of mass.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/Ball.png"/>
+</p><p>Calculate the ball's angular momentum about a point <i><b>Q</b></i> on the surface.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer</b>
+ [<a href="javascript:toggleDisplay('ht15','hide','show')" id="ht15l">show</a>]</th></tr>
+<tr style="display:none" id="ht15">
+<td>\(\vec{L}_Q = - mRv_{cm}\hat{k} - \frac{2}{5}mR^2\omega\hat{k}\)
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution</b>
+ [<a href="javascript:toggleDisplay('ht16','hide','show')" id="ht16l">show</a>]</th></tr>
+<tr style="display:none" id="ht16">
+<td>The ball is translating and rotating, therefore its angular momentum with respect to point <i><b>Q</b></i> is given by the sum 
+of the orbital and the spin components:
+<p>\(\vec{L}_Q = \vec{r}_{cm,Q}\times m\vec{v}_{cm} + I_{cm}\vec{\omega}\)
+</p><p>where <font size="3" face="times new roman"> <i>I<sub>cm</sub></i></font>  is the moment 
+of inertia about an axis passing through the center of mass. For a uniform sphere it is equal to 
+<font size="3" face="times new roman"><i>(2/5)mR<sup>2</sup></i></font>. The position of 
+the center of mass measured from point <i><b>Q</b></i>, \(\vec{r}_{cm,Q}\), is shown in the figure below. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/Ball_sol.png"/>
+</p><p><u><b>Orbital:</b></u>
+</p><p>This component represents the angular momentum about point <i><b>Q</b></i> of a <i>point particle</i> of mass <i><b>m</b></i> moving along a straight line with speed <i><b>v<sub>cm</sub></b></i>. 
+This problem was solved in Question 1, Example 1, What's the point? in Module 1:
+</p><p>\(\vec{L}_Q^{orbital} = \vec{r}_{cm,Q}\times m\vec{v}_{cm} = -mv_{cm}R\hat{k}\)
+</p><p>where \(\hat{k}\) is the unit vector parallel the +z-axis. Following the right hand rule, the orbital angular momentum is into the screen pointing towards the negative z-axis, in the \(-\hat{k}\) direction.
+</p><p><u><b>Spin:</b></u>
+</p><p>The spin component corresponds to the angular momentum due to the rotation of all the particles in the rigid object about the axis passing through the center of mass. With respect to a point in the axis of rotation, 
+the angular momentum is the one obtained in Module 2 for the case of rotation about a fixed axis: 
+</p><p>\(\vec{L}_{cm}^{spin}=I_{axis}\vec{\omega}\). 
+</p><p>Following the right hand rule, the angular velocity vector is into the screen, pointing towards the negative z-axis, then:
+</p><p>\(\vec{L}_{cm}^{spin} = -I_{cm}\omega\hat{k}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

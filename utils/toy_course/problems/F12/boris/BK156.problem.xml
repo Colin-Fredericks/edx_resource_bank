@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 156 -->
+<problem>
+
+	<p><b>checked. I have changed the answer to part 3. </b></p>
+	<p>In the system shown, the strings and the pulleys are ideal. There is no friction anywhere in the system. As the system is released, block m<sub>1</sub> slides downward. </p>
+	<img src="/static/problems/F12/boris/images/BK156_assembly.png" width="411" />
+
+	<h3>Part 1</h3>
+	<p>If the magnitude of the acceleration of block m<sub>1</sub> is a, what is the magnitude of the acceleration of block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">a</choice>
+			<choice correct="true">2a</choice>
+			<choice correct="false">a/2</choice>
+			<choice correct="false">a/4</choice>
+			<choice correct="false">\( a \left( m_1 / m_2 \right) \)</choice>
+			<choice correct="false">\( a \left( m_2 / m_1 \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>If the magnitude of the force of tension in the string attached to block m<sub>1</sub> is T, what is the magnitude of the force of tension of the string attached to block m<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">T</choice>
+			<choice correct="false">2T</choice>
+			<choice correct="true">T/2</choice>
+			<choice correct="false">\( T \left( m_1 / m_2 \right) \)</choice>
+			<choice correct="false">\( T \left( m_2 / m_1 \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>Using the results of Parts 1 and 2, use Newton’s laws to find the magnitude of the acceleration of block m<sub>1</sub>. </p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( 2g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( 4g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( g \left( \frac{m_1}{m_1 + 2m_2} \right) \)</choice>
+			<choice correct="true">\( g \left( \frac{m_1}{m_1 + 4m_2} \right) \)</choice>
+			<choice correct="false">\( a \left( \frac{m_1}{2m_1 + m_2} \right) \)</choice>
+			<choice correct="false">\( a \left( \frac{m_1}{4m_1 + m_2} \right) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>What is the magnitude of the acceleration of block m<sub>1</sub> when \( m_2 \gg m_1 \)?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( \frac{g}{4} \)</choice>
+			<choice correct="true">\( g \left( \frac{m_1}{4m_2} \right) \)</choice>
+			<choice correct="false">\( g \)</choice>
+			<choice correct="false">\( 4g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="false">\( \frac{g}{5} \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 5</h3>
+	<p>What is the magnitude of the acceleration of m<sub>1</sub> when \( m_2 = m_1 \)?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( \frac{g}{4} \)</choice>
+			<choice correct="false">\( g \left( \frac{m_1}{4m_2} \right) \)</choice>
+			<choice correct="false">\( g \)</choice>
+			<choice correct="false">\( 4g \left( \frac{m_1}{m_2} \right) \)</choice>
+			<choice correct="true">\( \frac{g}{5} \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

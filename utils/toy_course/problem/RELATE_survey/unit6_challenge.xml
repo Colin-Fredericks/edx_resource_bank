@@ -1,0 +1,20 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What has been the most challenging aspect of the course so far?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="1"><text>The material in Unit 1</text></choice>
+       <choice correct="true" name="2"><text>The material in Unit 2</text></choice>
+       <choice correct="true" name="3"><text>The material in Unit 3</text></choice>
+       <choice correct="true" name="4"><text>The material in Unit 4</text></choice>
+       <choice correct="true" name="5"><text>The material in Unit 5</text></choice>
+       <choice correct="true" name="system"><text>Using the system (entering equations, working with due dates, or other technical issues)</text></choice>
+       <choice correct="true" name="math"><text>The level of mathematics required</text></choice>
+       <choice correct="true" name="time"><text>The amount of time required</text></choice>
+       <choice correct="true" name="other"><text>Other (see below)</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+  <p>If you chose "other", please let us know what has been the most challenging part of the course so far.</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+</problem>

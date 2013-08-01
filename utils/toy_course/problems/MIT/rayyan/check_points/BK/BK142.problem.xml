@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<p>A small block of mass m slides from the top of a wedge of mass M and height h (see the diagram) until it reaches a horizontal surface. The wedge can also slide along the horizontal surface. The slope of the wedge makes angle &#x3B8; with the horizontal. All surfaces are frictionless and you may assume that the block makes a smooth transition from the wedge to the horizontal surface. The acceleration due to gravity is g. </p>
+
+	<p><img width="699" alt="BK142" src="/static/problems/MIT/rayyan/check_points/Pictures/BK142.png"/></p>
+
+	<p>Part 1. In order to find the speed of the block on the horizontal surface, what physical principles/laws/ideas are best to use?</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+				<text>Constant-acceleration kinematics and conservation of energy.</text>
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+				<text>Constant-acceleration kinematics and conservation of momentum.</text>
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+				<text>Variable-acceleration kinematics and conservation of energy.</text>
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+				<text>Variable-acceleration kinematics and conservation of momentum.</text>
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+				<text>Conservation of energy only.</text>
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				<text>Conservation of momentum only.</text>
+            </choice>
+            <choice location="random" name="foil7" correct="true">
+				<text>Conservation of energy and conservation of momentum.</text>
+            </choice>
+            <choice location="random" name="foil8" correct="false">
+				<text>Newton's laws and conservation of energy.</text>
+            </choice>
+            <choice location="random" name="foil9" correct="false">
+				<text>Newton's laws and conservation of momentum.</text>
+            </choice>
+            <choice location="random" name="foil10" correct="false">
+				<text>Newton's laws and constant-acceleration kinematics.</text>
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>Part 2. As the block slides down, the wedge:</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+				<text>First slides to the left, then to the right</text>
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+				<text>First slides to the right, then to the left</text>
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+				<text>Does not move at all</text>
+            </choice>
+            <choice location="random" name="foil4" correct="true">
+				<text>Slides to the right only</text>
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+				<text>Slides to the left only</text>
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+      <!--
+<part id="16">
+<p>
+        <br/>
+The Part That Got Removed. 
+Which of the statements describing the situation are true?
+</p>
+
+<radiobuttonresponse direction="vertical" id="17" randomize="yes">
+    <foilgroup>
+        <foil location="random" value="false" name="foil1">
+            <p>The acceleration of the block is g sin &#952; </p>
+        </foil>
+        <foil location="random" value="false" name="foil2">
+            <p>At any moment, the kinetic energies of the block and the wedge are equal</p>
+        </foil>
+        <foil location="random" value="false" name="foil3">
+            <p>At any moment, the momenta of the block and the wedge are equal</p>
+        </foil>
+        <foil location="random" value="true" name="foil4">
+            <p>At any moment, the horizontal components of the momenta of the wedge and the block are equal</p>
+        </foil>
+        <foil location="random" value="false" name="foil5">
+            <p>At any moment, the vertical components of the momenta of the wedge and the block are equal</p>
+        </foil>
+<foil name="foil6" value="true" location="random">
+<p>
+The force that the block exerts on the wedge has the same magnitude as the force that the wedge exerts on the block
+</p>
+</foil>
+<foil name="foil7" value="false" location="random">
+<p>
+Once the block slides off the wedge, the kinetic energies of the block and the wedge are equal
+</p>
+</foil>
+<foil name="foil8" value="true" location="random">
+<p>
+Once the block slides off the wedge, the momenta of the block and the wedge are equal
+</p>
+</foil>
+
+    </foilgroup>
+</radiobuttonresponse>
+
+-->
+
+          <p>Part 3. If v is the final speed of the block and u is the final speed of the wedge, which equation is correct:</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+				<text>\( mv = Mu \sin \theta \)</text>
+            </choice>
+            <choice location="random" name="foil2" correct="false">
+				<text>\( mv = Mu \cos \theta \)</text>
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+				<text>\( mv = \frac{Mu}{\sin \theta} \)</text>
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+				<text>\( mv = \frac{Mu}{\cos \theta} \)</text>
+            </choice>
+            <choice location="random" name="foil5" correct="true">
+				<text>\( mv = Mu \)</text>
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				<text>\( mv = Mu + mgh \)</text>
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+
+          <p>Part 4. If v is the final speed of the block and u is the final speed of the wedge, which equation is correct:</p>
+
+        <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+				<text>\(2 m g h = m v^{2}\)</text>
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+				<text>\( 2 m g h = M u^{2} + m v^{2}\)</text>
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+				<text>\(2mgh =  Mu \sin \theta^{2} + m v^{2}\)</text>
+            </choice>
+            <choice location="random" name="foil4" correct="false">
+				<text>\(2mgh =  Mu \cos \theta^{2} + m v^{2}\)</text>
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+				<text>\(2mgh =  Mv \sin \theta^{2} + M u^{2}\)</text>
+            </choice>
+            <choice location="random" name="foil6" correct="false">
+				<text>\(2mgh =  Mv \cos \theta^{2} + M u^{2}\)</text>
+            </choice>
+          </choicegroup>
+        </multiplechoiceresponse>
+
+    
+  </problem>
+</html>

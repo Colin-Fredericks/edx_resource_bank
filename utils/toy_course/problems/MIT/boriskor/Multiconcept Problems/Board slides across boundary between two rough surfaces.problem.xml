@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/26-board sliding across boundary between two surfaces.png" alt="Board slides across a boundary between two horizontal surfaces and stops"/>
+        <br/>
+
+<p>The diagram shows the top view of a horizontal table, separated into two surfaces: A and B. A board of mass \(m\) and length \(L\) is at rest on surface A, oriented perpendicular to the boundary between the surfaces. After a quick push, the board slides into surface B and comes to a stop just as it clears the boundary (see the diagram). The coefficients of sliding friction between the board and surfaces are \(\mu_A\) and \(\mu_B\), respectively. What is the initial speed v of the board?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+                <text>\(v=\sqrt{gL(\mu_A+\mu_B)}\)</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+                <text>\(v=2\sqrt{gL(\mu_A+\mu_B)}\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                <text>\(v=\frac{1}{2}\sqrt{gL(\mu_A+\mu_B)}\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                <text>\(v=\sqrt{2gL(\mu_A+\mu_B)}\)</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                <text>\(v=\frac{1}{4}\sqrt{gL(\mu_A+\mu_B)}\)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

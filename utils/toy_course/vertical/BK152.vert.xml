@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/boris/BK152-1.problem" display_name="A Rolling Assembly" attempts="5" weight="0.5"/>
+	<problem filename="F12/boris/BK152-2.problem" display_name="Rolling Assembly, Part 2" attempts="5" weight="0.5"/>
+	<problem filename="F12/boris/BK152-3.problem" display_name="Rolling Assembly, Part 3" attempts="5" weight="0.5"/>
+	<problem filename="F12/boris/BK152-4.problem" display_name="Rolling Assembly, Part 4" attempts="5" weight="0.5"/>
+	<discussion for="A Rolling Assembly" id="MReV_Summer2013_BK152" discussion_category="Describing Rotational and Translational Motion" />
+</vertical>

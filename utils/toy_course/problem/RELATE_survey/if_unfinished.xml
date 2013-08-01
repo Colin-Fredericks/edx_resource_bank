@@ -1,0 +1,6 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>If you believe that you will not receive a certificate, what prevented you from being successful?</p>
+  <stringresponse answer="Anything" type="cs">
+    <textline size="80"/>
+  </stringresponse>
+</problem>

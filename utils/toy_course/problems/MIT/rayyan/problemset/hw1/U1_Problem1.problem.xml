@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+b ="g*tan(theta)"
+c ="g*(m+M)*tan(theta)"
+
+</script>
+    <img src="/static/problems/MIT/rayyan/problemset/Pictures/ds_block_on_wedge.png" alt="ds_block_on_wedge.png" texwrap="none" align="top"/>
+    <br/>
+  <br/>
+<p>  
+A block of mass <i>m</i> rests on a frictionless wedge that has an inclination of \(\theta\) and mass <i>M</i>. 
+<br/>
+a) Find the acceleration of the wedge M to the right such that the block <i>m</i> remains stationary relative to the wedge, type theta for \(\theta\).<br/>
+\(a=\)
+</p>
+
+      <formularesponse answer="$b" samples="g,theta,m,M@1,1,1,1:10,10,10,10#2">
+        <responseparam description="Numerical Tolerance" type="tolerance"
+                   default="0.001" name="tol" /> 
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+<p>
+b) Describe the motion of the block if the wedge had a greater acceleration than the one obtained in a).<br/>
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="up" correct="true">
+                The block will slide up.       
+          </choice>
+          <choice location="random" name="down" correct="false">
+				The block will slide down
+          </choice>
+        </choicegroup>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </multiplechoiceresponse>
+
+    <br/>
+
+<p>
+c) You now find out that a force of magnitude <i>F</i> was exerted (say, by somebody's hand) on the wedge as shown in the picture below. What is the magnitude <i>F</i> for which the block <i>m</i> remains stationary relative to the wedge? Use m, M, g, and theta for \(\theta\).
+<br/>
+<img src="/static/problems/MIT/rayyan/problemset/Pictures/ds_block_on_wedge_w_force.png" alt="ds_block_on_wedge_w_force.png" texwrap="none" align="top"/>
+</p>
+      <br/>
+      \(F=\)
+
+      <formularesponse answer="$c" type="cs" samples="g,theta,m,M@1,1,1,1:10,10,10,10#2">
+        <responseparam description="Numerical Tolerance" type="tolerance"
+                   default="0.001" name="tol" /> 
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+  </problem>
+</html>

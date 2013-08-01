@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+<b>Two balls attached by a rod</b>
+<br/>
+<p>
+			Let's consider a rigid object consisting of two small balls of masses <i><b>m<sub>1</sub></b></i> and <i><b>m<sub>2</sub></b></i> (<i><b>m<sub>1</sub></b></i> < <i><b>m<sub>2</sub></b></i>) 
+			connected by a rod of length <i><b>2R</b></i> and negligible mass. The object is placed on a horizontal and frictionless table 
+			contained in the x-y plane. The object is set to rotate counterclockwise as viewed from above the x-y plane with an angular speed 
+			<i><b>&#969;</b></i>. The axis of rotation passes through the center of the rod, point <i><b>Q</b></i> in the left figure. The point
+			 <i><b>S</b></i> in the right figure is located in the axis of rotation at a distance <i><b>d</b></i> below the point <i><b>Q</b></i>.</p>
+			 <img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/ParticleMOvingCircle3.png"/>
+
+<table width="100%" border="1" valign="top">
+<tr>
+ <td width="50%">
+ <b>1. The angular momentum about point <i>Q</i></b>
+ </td>
+ <td width="50%">
+ <b>2. The angular momentum about point <i>S</i></b>
+ </td>
+</tr>
+<tr>
+ <td height="200" valign="top">
+ <br/>
+ <img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2ballsBar.png"/>
+ </td>
+ <td height="200" valign="top">
+ <br/>
+ <img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS.png"/>
+ </td>
+</tr>
+<tr>
+ <td width="50%">
+ For each particle, the direction of the angular momentum about point <i>Q</i> is best represented by the arrow <br/>
+ <br/>
+<optionresponse>
+<optioninput showanswered="attempted" options="('1 for both','8 for both','8 for m1 and 2 for m2','4 for m1 and 6 form m2 for ','2 for m1 and 8 form m2')" correct="1 for both"/>
+</optionresponse>
+<solution>
+<p>Consider the balls' position vectors measured from point <i><b>Q</b></i> to be 
+\(\vec{r}_1\) and \(\vec{r}_2\), and the balls' velocity vectors to be 
+\(\vec{v}_1\) and \(\vec{v}_2\) as shown in the figure:
+</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol_position2.fw.png"/>
+</p>
+<p>
+Following the right hand rule, the direction of the angular momentum of each particle is along the <b>+z</b> axis. Adding both vectors, 
+the total angular momentum about point <i><b>Q</b></i> is also along the <b>+z</b> axis parallel to <i><b>&#969;</b></i>.
+</p> 
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol1.fw.png"/>
+</p>
+</solution>
+ </td>
+ <td width="50%">
+ For each particle, the direction of the angular momentum about point <i>S</i> is best represented by the arrow <br/>
+<br/>
+<optionresponse>
+    <optioninput showanswer="attempted" options="('1 for both','8 for both','8 for m1 and 2 for m2','4 for m1 and 6 form m2 for ','2 for m1 and 8 form m2')" correct="8 for m1 and 2 for m2"/>
+    </optionresponse>
+ <solution>
+<p>Consider the balls' position vectors measured from point <i><b>S</b></i> to be 
+\(\vec{r}_1\) and \(\vec{r}_2\), and the balls' velocity vectors to be 
+\(\vec{v}_1\) and \(\vec{v}_2\) as shown in the figure:
+</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_answer1cc0.fw.png"/>
+</p>
+<p>
+The angular momentum of each particle is perpendicular to the position and velocity vectors. Following the right hand rule, the angular momentum 
+about point <b>S</b> of particle 1 is best represented by arrow 8 and the one of particle 2 by arrow 2 as shown below.  As a result, the angular momentum vectors about point S are at an angle
+with respect to the angular velocity vector (+z axis).
+</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_answer1cc.fw.png"/>
+</p>
+</solution>
+</td>
+</tr>
+</table>
+
+  </problem>
+</html>

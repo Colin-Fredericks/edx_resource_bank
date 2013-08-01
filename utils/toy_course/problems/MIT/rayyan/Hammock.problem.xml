@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+Your friend of mass m sits in a hammock that is suspended between two vertical posts separated by a distance d. If the hammock dips a distance h below the height l at which the hammock is secured to the posts, what is the horizontal force on each post due to your friend? Use g for the gravitational constant.
+</p>
+
+    <br/>
+    <formularesponse answer="m*g*d/(4*h)" samples="m,g,d,h,l@1,9.8,1,1,1:10,9.8,10,10,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+        <br/>
+        <formulahint answer="m*g*d/4*h" name="multerror">
+</formulahint>
+        <hintpart on="multerror">
+
+            <p>Did you mean ".../(4*h)" not "/4h" or "/4*h"? Check your response.</p>
+
+          <hr/>
+        </hintpart>
+
+          <p> Hint: Check to see if you started with a drawing such as this one.<br/></p>
+
+        <img src="/static/problems/MIT/rayyan/Figures/Hammock Hint.png" alt="HammockHint"/>
+      </hintgroup>
+    </formularesponse>
+    <solution>
+
+        <p><b>Great!</b> You can now see the solution. Reflect on what would happen if h were very, very small.<hr/> </p>
+
+      <img width="450" alt="HammockSolution" height="400" src="/static/problems/MIT/rayyan/Figures/HammockSoln.png"/>
+    </solution>
+          </problem>
+</html>

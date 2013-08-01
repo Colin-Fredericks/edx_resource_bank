@@ -1,0 +1,89 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>How useful did you find the <b>MAPS pedagogy</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>text pages</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>worked examples</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>office hours videos</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>other videos</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>checkpoint problems</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>homework problems</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+
+  <p>How useful did you find the <b>course wiki</b>?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="essential"><text>Essential</text></choice>
+       <choice correct="true" name="very"><text>Very Useful</text></choice>
+       <choice correct="true" name="somewhat"><text>Somewhat Useful</text></choice>
+       <choice correct="true" name="notvery"><text>Not Very Useful</text></choice>
+       <choice correct="true" name="counter"><text>Counterproductive</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+</problem>

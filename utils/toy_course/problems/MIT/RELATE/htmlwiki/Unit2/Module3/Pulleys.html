@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Pulleys</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Idealized Massless Pulleys</h3>
+<p>
+			We will often incorporate pulleys into problems with ropes or strings. For now, when you see a pulley in a picture you should treat it is as&#160;<i>massless</i>. This assumption means it will require no work to rotate or translate (read: move in a straight line) the pulley, such that the sum of the forces on the pulley - typically the tension of each rope - equals zero. Furthermore, later in the course, when we have learned about rotational motion, we will be able to discuss the effects of pulleys with inertia. Pulleys are commonly encountered in two qualitatively different types of situation: fixed pulleys and pulleys attached to moving objects.</p>
+<p>
+			Below are two examples:</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Example 1: Pulley Fixed to a Surface</b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+						In the figure, box 1 is connected to box 2 by rope R passing over a pulley and is moving along a horizontal and smooth table (t). The idealized massless pulley fixed to a surface acts only to change the direction of the rope and, subsequently, the direction of the tension force applied to the objects at either end of the rope.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module3/files/Unit1Mod6Rope6c.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Example 2: Pulley Attached to an Object</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+						An idealized massless pulley fixed to an object whose motion we are analyzing not only changes the direction of the tension in the rope, but <i>also increases the number of effective contact points the object has with the rope </i>. Every point in the rope at which it comes on or off the pulley counts as a <i>separate</i> contact point between the object and the rope in the free body diagram of the object.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module3/files/Unit1Mod6Rope7.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

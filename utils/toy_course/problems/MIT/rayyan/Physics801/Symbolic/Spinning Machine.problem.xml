@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+omega="(s*t*a^2*omega_a)/((s*t+mb)*b^2)"
+
+</script>
+    <img src="/static/problems/MIT801/MIT/rayyan/Physics801/Symbolic/figures/spinning machine.png" alt="Spinning Machine" align="top"/>
+
+      <p><br/>
+A drum of mass ma and radius a rotates freely with initial angular velocity \(\omega_a\) 
+(type in as omega_a). A second drum with mass mb and radius b &gt; a is mounted on the same axle and is
+at rest, although it is free to rotate. A thin layer of sand is distributed on
+the inner surface of the smaller drum. At t = 0, small perforations in the inner drum are
+opened. The sand starts to fly out at a constant rate s kg/s and sticks to the outer drum.
+
+<br/>
+Find the subsequent angular velocity of drum \(\omega_b\) as a function of time. Ignore the transit time of the sand. 
+<br/>
+\(\omega_b =\)
+</p>
+
+    <formularesponse answer="$omega" samples="s,t,a,omega_a,mb,b@1,1,1,1,6,1:10,12,8,10,11,5#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

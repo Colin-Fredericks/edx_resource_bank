@@ -1,0 +1,94 @@
+<sequential display_name="Entrance Survey" format="Survey">
+	<vertical>
+		<html display_name="General Questions">
+			<h2>Entrance Survey</h2>
+			<p>Welcome to edX and thanks for taking the survey!  We use your feedback here to help tailor classes to their student populations and to help make our courses better.  </p>
+			<p>Remember there are no right or wrong answers, and this survey will not affect your course credit. Just answer as accurately as possible and make sure to hit "save" after you enter each answer.</p>
+		</html>
+		<problem url_name="edx_survey:edX_NPS"/>
+		<problem url_name="edx_survey:course_goals"/>
+		<problem url_name="edx_survey:plans_with_community"/>
+		<problem url_name="edx_survey:race_ethnic_group"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Your Aspirations">
+			<h2>Your Aspirations</h2>
+			<p>The following statements concern your aspirations after Mechanics ReView. Indicate your level of agreement or disagreement with each statement. </p>
+		</html>
+		<problem url_name="edx_survey:aspire_to_work_next"/>
+		<problem url_name="edx_survey:aspire_to_work"/>
+		<problem url_name="edx_survey:plan_to_continue"/>
+		<problem url_name="edx_survey:feel_obligated"/>
+		<problem url_name="edx_survey:feel_obligated_family"/>
+	</vertical>
+
+	<vertical >
+		<html display_name="Your Future">
+			<h2>Your Future</h2>
+			<p>The following statements convey beliefs about the relationship between Mechanics ReView and your future. Indicate your level of agreement or disagreement with each statement.</p>
+		</html>
+		<problem url_name="edx_survey:learning_important_for_occupation"/>
+		<problem url_name="edx_survey:certificate_important_for_future"/>
+		<problem url_name="edx_survey:certificate_important_for_future_academics"/>
+		<problem url_name="edx_survey:use_information_in_future"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Your Attitudes">
+			<h2>Your Attitudes</h2>
+			<p>The following statements convey attitudes about Mechanics ReView. Indicate how true each of the statements is for you.</p>
+		</html>
+		<problem url_name="edx_survey:confident_basic_concepts"/>
+		<problem url_name="edx_survey:certain_most_difficult_readings"/>
+		<problem url_name="edx_survey:confident_most_complex_instructor"/>
+		<problem url_name="edx_survey:confident_excellent_on_assignments"/>
+		<problem url_name="edx_survey:certain_master_skills"/>
+		<problem url_name="edx_survey:think_will_do_well"/>
+		<problem url_name="edx_survey:intend_to_complete"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Early Educational Background">
+			<h2>Early Educational Background</h2>
+			<p>The following questions concern your early educational background. They are helpful to understand the previous experiences students on the edX platform have had.</p>
+		</html>
+		<problem url_name="edx_survey:scholarship_secondary"/>
+		<problem url_name="edx_survey:scholarship_college_or_university"/>
+		<problem url_name="edx_survey:how_much_subject_studied"/>
+		<problem url_name="edx_survey:experience_with_prerequisites"/>
+		<problem url_name="edx_survey:background_in_subject"/>
+		<problem url_name="edx_survey:why_taking_class"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Social Learning">
+			<h2>Social Learning</h2>
+			<p>The following questions ask about your attitude towards the social component of Mechanics ReView.  Indicate your level of agreement or disagreement with each statement below.</p>
+		</html>
+		<problem url_name="edx_survey:social_aspect_important"/>
+		<problem url_name="edx_survey:enjoy_helping_others"/>
+		<problem url_name="edx_survey:share_my_expertise"/>
+		<problem url_name="edx_survey:help_as_tutor_in_future"/>
+		<problem url_name="edx_survey:teach_subject"/>
+		<problem url_name="edx_survey:access_edX_from_where"/>
+		<problem url_name="edx_survey:plan_to_collaborate_offline"/>
+		<problem url_name="edx_survey:online_courses_completed"/>
+	</vertical>
+
+	<vertical>
+		<html display_name="Home Environment">
+			<h2>Home Environment</h2>
+			<p>The following questions ask about your home environment while you were growing up. Research has shown the importance of understanding the early home environment in which students spent formative years. Your answers here will help edX to understand the diversity of students taking its classes and how it can better serve this group.</p>		
+		</html>
+		<problem url_name="edx_survey:primary_language_spoken_in_home"/>
+		<problem url_name="edx_survey:primary_language_spoken_by_student"/>
+		<problem url_name="edx_survey:books_in_home"/>
+		<problem url_name="edx_survey:computer_in_home_now"/>
+		<problem url_name="edx_survey:computer_in_home_growing_up"/>
+		<problem url_name="edx_survey:parents_trained_in_subject"/>
+		<problem url_name="edx_survey:parental_schooling"/>
+		<html>From everyone here at edX, thanks for taking the time to complete this survey.  Your responses help us create new and better courses and improve the ones we already offer.</html>
+	</vertical>
+
+</sequential>

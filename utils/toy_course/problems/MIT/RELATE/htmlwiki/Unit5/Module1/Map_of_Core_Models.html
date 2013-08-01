@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Map of Core Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2> Organizing Newtonian Mechanics</h2>
+<p>There are many ways to organize and think about Newtonian Mechanics.  Some useful ways include:
+</p>
+<ul style="list-style:disc outside none"><li>In a chain of derivations starting with the calculus of motion and F=ma (this is the fairly traditional way a majority of textbooks are organized)
+</li><li>Starting from the three core physical concepts: Momentum, Energy, and Angular Momentum
+</li><li>By a concept map (e.g. see <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html" class="external text" rel="nofollow">hyperphysics</a>)
+</li><li>By noting that the core concepts are structurally similar models, which facilitates their application to problem solving ("Modeling Applied to Problem Solving" is the approach taken in this e-text.)
+</li></ul>
+<h3> Map of Core Models</h3>
+<p>Starting from the top, Newtonian Mechanics is about motion, and how interactions generate forces that change this motion.  Our Core Model Map is organized to reflect this central truth.
+</p><p><b>Motion</b> is top and center of our Map (see below).  Since we restrict attention to rigid bodies and point particles, the only types of motion that we must consider are <i>translation</i> (change of position) and <i>rotation</i> (change of orientation).  These types of motion are indicated respectively on the left and right of "Motion".  (Like most calculus-based syllabi, we exclude elastic solids and fluids, which require vector fields to treat their displacement or flow velocity at each point in space respectively.) 
+</p><p>Right below "Motion" is <b>Interactions</b>.  As indicated underneath "Interactions", these interactions arise from various known physical processes, many of which obey force laws that predict their magnitude and direction from variables like the mass, position, and velocity of the interacting objects and various coefficients like those for drag and friction.
+</p><p>According to Newton's Third Law, each interaction generates a force on each of the two interacting bodies.  These forces act as <i>external forces</i> that change translational motion (on the left in blue) and as <i>torques</i> that change rotational motion (on the right in red).
+</p><p>As we discussed in the previous section, each model must:
+</p>
+<ul style="list-style:disc outside none"><li>  apply to a particular type of <i>System</i>, 
+</li><li>  describe the motion of that system in terms of particular state variables (velocity, angular momentum, energy, etc.), 
+</li><li>  identify the <i>Interactions</i> that act as <i>Agents of Change</i> for these variables, and 
+</li><li>  exhibit a mathematical law describing how this change occurs.  
+</li></ul>
+<p>The left column of the core model map indicates the key parts of each model: the various rows of the map contain the: System, Interactions, Agents of Change, and in addition the <i>Model</i>, which gives the name of the model and its law of change, expressed in the (integral or differential) form most frequently used.  The lowest row indicates the <i>physical quantity will remain constant</i> (often described as "be conserved") when the agent of change is zero for that particular model.  The five core models are arranged as columns, blue for translation, red for rotation, and purple for energy. Within translation and rotation the applicable system for the left model corresponds to a single particle (or rigid body), and the right model applies to systems of these objects.
+</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/reference/files/ConceptMapRed.png"/>
+</p>
+</body>
+</html>
+

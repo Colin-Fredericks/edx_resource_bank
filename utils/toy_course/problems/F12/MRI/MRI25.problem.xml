@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 25 -->
+
+<problem>
+
+	<p>Two uniform cylinders of the same height are shown. </p>
+	<img src="/static/problems/F12/MRI/images/MRI25.png" />
+
+	<h3>Part 1</h3>
+	<p>Which of them has the largest moment of inertia?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">A</choice>
+			<choice location="random" correct="true">B</choice>
+			<choice location="random" correct="false">Both have the same moment of inertia</choice>
+			<choice location="random" correct="false">More information is needed</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">This cylinder's mass is distributed farther from the axis of rotation</choice>
+			<choice location="random" correct="false">This cylinder's mass is distributed closer to the center</choice>
+			<choice location="random" correct="false">This cylinder’s mass is larger</choice>
+			<choice location="random" correct="false">This cylinder’s mass is smaller</choice>
+			<choice location="random" correct="false">The shapes are identical</choice>
+			<choice location="random" correct="false">The height is not specified</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

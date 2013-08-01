@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<script type="loncapa/python">
+a = "muk*g*(MB+3*MA)"
+</script>
+
+	<p><img src="/static/problems/MIT/rayyan/problemset/Pictures/ds_two_blocks_pulley.png" alt="p1c" texwrap="none" align="top"/></p>
+
+	<p>Two blocks of masses M<sub>A</sub> and M<sub>B</sub> are connected by a light cord passing around a fixed, frictionless pulley. The coefficient of kinetic friction between all surfaces is  \(\mu_k\). Find the magnitude of the horizontal force  necessary to drag block B to the left at constant speed. Use muk, g, MB, and MA to enter your answer.</p>
+	<p>\(F=\)</p>
+
+	<formularesponse answer="$a" samples="muk,g,MA,MB@1,1,1,1:10,10,10,10#4">
+	<responseparam type="tolerance" default="1%"/>
+		<textline size="25" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

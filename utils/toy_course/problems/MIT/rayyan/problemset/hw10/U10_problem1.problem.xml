@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+</script>
+    <img src="/static/problems/MIT/rayyan/problemset/Pictures/p10a.png" alt="p1a" texwrap="none" align="top"/>
+    <br/>
+    <p><b>Meteor Capture</b></p>
+
+<p>A meteor of mass \(m\) is approaching earth as shown in the sketch. The radius of the earth 
+is \(R_e\) and the mass of the earth is \(M\).  Suppose the meteor has an initial speed of \(v_0\) and 
+starts very far away from the earth. You may ignore all other gravitational forces except the earth. 
+Find the impact parameter \(h\) for the case when the meteor just grazes the Earth: </p>
+
+    <i>h</i>=<br/><multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+    <choicegroup type="MultipleChoice">
+    	<choice location="random" name="A" correct="true">\(\sqrt{R_e^2+\frac{2GMR_e}{v_0^2}}\)</choice>
+		<choice location="random" name="B" correct="false">\(\sqrt{R_e^2+\frac{GMR_e}{2v_0^2}}\)</choice>
+		<choice location="random" name="C" correct="false">\(\sqrt{R_e^2+\frac{v_0^2}{2GMR_e}}\)</choice>
+		<choice location="random" name="D" correct="false">\(\sqrt{R_e^2+\frac{2v_0^2}{GMR_e}}\)</choice>
+		<choice location="random" name="E" correct="false">\(\sqrt{\frac{2GMR_e}{v_0^2}}\)</choice>
+		<choice location="random" name="F" correct="false">\(\sqrt{\frac{GMR_e}{2v_0^2}}\)</choice>
+    </choicegroup>
+    <hintgroup showoncorrect="no"><br/></hintgroup>
+    </multiplechoiceresponse>
+    <br/>
+
+  </problem>
+</html>

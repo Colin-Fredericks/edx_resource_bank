@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> 3 Blocks and a Pulley</title>
+    <script type="loncapa/python">
+a= "mu*(m1+m2)"
+b= "m1*a"
+c= "2*mu*(m1+m2)/(1-mu)"
+</script>
+
+    <img src="/static/problems/MIT/analiab/Figures/3_blocks_and_1_pulley.png" alt="3 blocks and 1 pulley" texwrap="none" align="top"/>
+    <p>A block of mass <i>m1</i> is on top of a block of mass <i>m2</i>. Block 2 is connected by an ideal rope passing through a pulley to a block of unknown mass <i>m3</i> as shown. The pulley is massless and frictionless. There is friction between block 1 and 2 and between the horizontal surface and block 2.  Assume that the coefficient of kinetic friction between block 2 and the surface, <i>\(\mu\)</i>, is equal to the coefficient of static friction between blocks 1 and 2.</p>
+
+      <p>a) What is the value of <i>m3</i> for which <i>m1</i> and <i>m2</i> are moving together at a constant speed? Express your answer in terms of some or all of the variables <i>m1</i>, <i>m2</i>, <i>\(\mu\)</i>, and <i>g</i>. To write <i>\(\mu\)</i>, use mu.</p>
+
+      <formularesponse answer="$a" samples="mu,m1,m2@1,1,1:10,10,10#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+      <p>b) The mass of block 3 has been changed such that block 1 and block 2 are moving together with a given acceleration of magnitude <i>a</i>. What is the magnitude and the direction of the force of friction exerted by block 2 on block 1? Express your answer in terms of some or all of the variables  <i>a</i>, <i>m1</i>, <i>m2</i>, <i>\(\mu\)</i>, and <i>g</i>. To indicate the direction, use a minus sign if the force is pointing to the left. To write \(\mu\), use mu.</p>
+
+      <formularesponse answer="$b" samples="m1,a,m2,g,mu@1,1,1,1,1:10,10,10,10,10#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>c) What is the minimum value of <i>m3</i> for which block 1 will start to move relative to block 2? Express your answer in terms of some or all of the variables <i>m1</i>, <i>m2</i>, <i>\(\mu\)</i>, and <i>g</i>. To write <i>\(\mu\)</i>, use mu.</p>
+
+      <formularesponse answer="$c" samples="mu,m1,m2@0.1,1,1:0.9,10,10#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+      </problem>
+</html>

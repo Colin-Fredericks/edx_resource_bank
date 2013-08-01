@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/ladder_corner.jpg" alt="Ladder leaning against the corner"/>
+    <script type="loncapa/python">
+
+
+K="0.5*m*g*L*cos(theta)-mu*m*g*L*(1-sin(theta))"
+
+</script>
+
+	<p>A uniform ladder of mass \(m\) and length \(L\) rests against the wall as shown.  The wall is frictionless. The coefficient of kinetic friction between the floor and the ladder is \(\mu\) (use mu). The ladder makes the angle \(\theta\) (use theta) with the wall. After the ladder is released, it begins to slide. What is the kinetic energy of the ladder at the instant it becomes horizontal?</p>
+	<p>\(K=\)</p>
+
+    <formularesponse answer="$K" samples="mu,m,g,theta,L@4,5,2,30,5:10,60,4,70,10#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

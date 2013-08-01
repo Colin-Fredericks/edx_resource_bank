@@ -1,0 +1,391 @@
+<html>
+<head>
+<title>Work Done by a Constant Force along a Straight Line Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>Work Done by a Constant Force along a Straight Line</h2>
+
+<h3>Learning Objectives </h3>
+
+<p>After completing this module you should be able to:</p>
+<ul style="list-style:disc outside none">
+	<li>Calculate the work done by a constant force along a straight line.</li>
+	<li>Express the work in terms of the dot product between the force and the displacement vectors.</li>
+	<li>Calculate the change of kinetic energy of an object in terms of the work done by the external forces on the object.</li>
+</ul>
+
+<h3>Only The Component of Force Parallel to the Displacement does Work</h3>
+
+<p>Consider a block of mass <i> m </i> moving along a straight line under the action of a force <i>F</i> at an angle <i>&#952;</i> with respect to the direction of the block's motion.  The block moves from <i>x<sub>i</sub></i> to <i> x<sub>f</sub></i> along the x-axis. </p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/WorkKineticIntro3b.png"/></p>
+
+<p>In this case, the component of the force parallel to the displacement vector, <i>F cos&#952;</i>, is the cause of changing the block's velocity. </p>
+
+<table>
+<tr>
+<th>The work done by a constant force during straight line motion
+</th></tr>
+<tr>
+<td>\( W_{f,i} =  \; F\cos\theta\Delta x\)
+</td></tr></table>
+
+<p><b>Note: </b> The subscripts f,i indicate that the work is calculated between the final and the initial position.</p>
+
+<h3>  Work is a scalar </h3>
+
+<p>Work is a scalar quantity which depends on the magnitude of the applied force, the magnitude of the object's displacement, and on the direction between the force and the displacement. Depending on the angle between the two vectors, the work can be positive, negative or zero.</p>
+
+<table border="1">
+<tr>
+<td>
+	<b><i>W</i><sub>f,i</sub> &gt; 0</b>
+</td>
+<td>
+	<i><b>F</b></i>  has a component in the same direction of the displacement vector (<b>0 &le; <i>&#952;</i> &lt; 90<sup>o</sup></b>).
+</td></tr>
+<tr>
+<td>
+	<b><i>W</i><sub>f,i</sub> &lt; 0</b>
+</td>
+<td>
+	<i><b>F</b></i> has a component in the opposite direction to the displacement vector (<b>90<sup>o</sup> &lt; <i>&#952;</i> &le; 180<sup>o</sup> </b>)
+</td></tr>
+<tr>
+<td valign="top">
+	<b><i>W</i><sub>f,i</sub> = 0</b>
+</td>
+<td>
+	<i><b>F</b></i> is perpendicular to the displacement vector (<b><i>&#952;</i> = 90<sup>o</sup></b>)
+</td></tr></table>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Check your understanding
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> 
+
+	<p>In the figures below a block of mass m moves along a straight line under the action of only one force of constant magnitude F, indicated by the red arrow. In all the cases shown, the block starts at <i>x<sub>i</sub></i> and moves the same distance to a final position <i>x<sub>f</sub></i>. The direction of motion is shown by the direction of the displacement vector <i>&#916;x</i>, the blue arrow.</p>
+
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/QuestionWork01.png"/></p>
+
+	<p>For each of the figures answer the following questions:</p>
+
+	<p><b>QUESTION 1.</b></p>
+	<p>Is the work done by the force between the initial and final position positive, negative or zero?</p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th>Answer a)
+	 [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+	<tr style="display:none" id="ht2">
+	<td><b>ZERO</b>. The force is perpendicular to the displacement vector, therefore it does not have a component in the direction of motion.
+	<p><br/>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/QuestionWorka1.png"/>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer b)</b>
+	 [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+	<tr style="display:none" id="ht3">
+	<td><b>NEGATIVE</b>. The direction of the force is opposite to the direction of the displacement vector.
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/QuestionWorkb1.png"/>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer c)</b>
+	 [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+	<tr style="display:none" id="ht4">
+	<td><b>NEGATIVE</b>. The force has a component in the opposite direction to the displacement vector.
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/QuestionWorkc1.png"/>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer d)</b>
+	 [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+	<tr style="display:none" id="ht5">
+	<td><b>Positive</b>. The force has a component in the same direction of the displacement vector.
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module2/files/QuestionWorkd1.png"/>
+	</p>
+	</td></tr></table>
+
+	<p><b>QUESTION 2.</b></p>
+	<p>If the box has an initial speed <i>V<sub>i</sub></i> when it is at position <i>x<sub>i</sub></i>, what is its kinetic energy at the position <i>x<sub>f</sub>?</i></p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th>Answer a)
+	 [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+	<tr style="display:none" id="ht6">
+	<td>The force is perpendicular to the displacement vector, therefore it does not have a component in the direction of motion and the work done by the force is zero.
+	<p><br/>
+	\(\displaystyle K_{f} = K_{i} + W_{f,i}\)
+	</p><p>implies that the final kinetic energy is given by:
+	</p><p><br/>
+	\(\displaystyle K_{f} = \frac{1}{2}mV_{i}^{2}\)
+	</p><p><b> The kinetic energy is constant because <i>W<sub>f,i</sub></i> = 0</b>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer b)</b>
+	 [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+	<tr style="display:none" id="ht7">
+	<td> The force is in opposite direction to the displacement vector, therefore the work done by the force between the initial and final position is negative and given by:
+	<p><br/>
+	\(\displaystyle W_{f,i} = F cos 180^o \Delta x = -F\Delta x\),
+	</p><p>therefore the final kinetic energy is:
+	</p><p>\(\displaystyle K_{f} =   \frac{1}{2}mV_{i}^{2} - F\Delta x\)
+	</p><p><br/>
+	<b>The kinetic energy has decreased because <i>W<sub>f,i</sub></i> &lt; 0 .</b>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer c)</b>
+	 [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+	<tr style="display:none" id="ht8">
+	<td>The force has a component, <i>F cos 120<sup>o</sup></i>, opposite to the direction of the displacement vector then the work is negative and given by:
+	<p><br/>
+	\(\displaystyle W_{f,i} = F cos 120^o \Delta x = -\frac{F}{2} \Delta x\), 
+	</p><p>therefore the final kinetic energy is given by:
+	</p><p>\(\displaystyle K_{f} =   \frac{1}{2}mV_{i}^{2} - \frac{F}{2}\Delta x\)
+	</p><p><br/>
+	<b>The kinetic energy has decreased because <i>W<sub>f,i</sub></i> &lt; 0.</b>
+	</p>
+	</td></tr></table>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th><b>Answer d)</b>
+	 [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+	<tr style="display:none" id="ht9">
+	<td>The force has a component in the same direction of the displacement vector, <i>F cos 60<sup>o</sup></i>, therefore the work is positive and given by:
+	<p><br/>
+	\(\displaystyle W_{f,i} = F cos 60^o \Delta x = \frac{F}{2} \Delta x\),
+	</p><p>therefore the final kinetic energy is given by:
+	</p><p>\(\displaystyle K_{f} =   \frac{1}{2}mV_{i}^{2} + \frac{F}{2}\Delta x\)
+	</p><p><br/>
+	<b>The kinetic energy has increased because <i>W<sub>f,i</sub></i> &gt; 0.</b>
+	</p><p><br/>
+	</p><p><br/>
+	</p>
+</td>
+</tr>
+</table>
+
+</td>
+</tr></table>
+
+<h3>  Dot Product (or Scalar Product) Representation </h3>
+
+<p>The equation for work which connects the force and the displacement with the cosine of the angle between them is a special case of the <a href="http://en.wikipedia.org/wiki/Dot_product" class="extiw" title="wikipedia:Dot product"> dot product operation </a> between the force vector and the displacement vector.  </p>
+
+<p>In the examples that we have seen so far, both the force and the displacement vector were constant during the motion. The work can be expressed more generally as the dot product between the force vector and the displacement vector.</p>
+
+<table border="1">
+<tr>
+<td>
+	<table>
+	<tr>
+	<th>
+		Work by a Constant Force
+	</th>
+	</tr>
+	<tr>
+	<td>
+		\( W_{f,i} = \vec{F} \cdot \Delta\vec{r}\)
+	</td>
+	</tr>
+	<tr>
+	<td>
+		where
+	</td>
+	</tr>
+	<tr>
+	<td>
+		\(\Delta\vec{r} = \vec{r_{f}} - \vec{r_{i}} \)
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<p>In the example of the block moving along the x-axis, the displacement vector is along the x-axis:</p>
+
+<p>\(\Delta\vec{r}= x_f\hat{i} - x_i\hat{i}= \Delta x \hat{i}\)</p>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Calculating the work done by a constant force using the dot product operation
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<td>There are two ways to calculate the dot product between two vectors. Both are shown in the following examples.
+<hr/>
+
+	<p><b>Question 1 - Obtain the dot product given the components of the two vectors</b>.</p>
+
+	<p>A particle is moving along a straight line. A constant force is applied on the particle between the points C and D of its path. The force is given by:</p>
+
+	<p>\(\vec{F} = 10 N \hat{i}-20 N\hat{j} \)</p>
+
+	<p>And the displacement vector between points C and D is:</p>
+
+	<p>\(\Delta\vec{r} = \vec{r_D} - \vec{r_C} = 3 m \hat{i}+ 8 m \hat{j} \)</p>
+
+	<p>Calculate the work done by the force between the points C and D.</p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> Answer
+	 [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+	<tr style="display:none" id="ht11">
+	<td>
+	
+		<p>Calculate the dot product as the sum of the product of the components of the two vectors.</p>
+	
+		<p>Given two vectors:</p>
+
+		<p>\(\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}\)</p>
+
+		<p>\(\vec{B} = B_x\hat{i} + B_y\hat{j} + B_z\hat{k}\)</p>
+
+		<p>then the dot product is obtained as:</p>
+
+		<p>\(\vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z \)</p>
+
+		<p>In this problem the motion is in the xy plane, therefore: </p>
+
+		<p>\(W_{D,C} = \vec{F} \cdot \Delta\vec{r} = F_{x}x + F_{y}y = 10N.3m + (-20 N)8 m = (30 - 160) Nm = -130 Nm \)</p>
+
+
+	</td>
+	</tr>
+	</table>
+
+	<hr/>
+
+	<p><b>Question 2 - Calculate the dot product given the magnitude of the two vectors and the angle between them</b>. </p>
+
+	<p>A constant force of magnitude 100 N is applied on a particle that is moving along a straight line. The force is at an angle of 30<sup>o</sup> with respect to the particle's motion. What is the work done by the force if the particle has moved a distance of 22 m under the action of that force?</p>
+
+	<table class="subtable collapsible collapsed">
+	<tr>
+	<th> 
+		Answer [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]
+	</th>
+	</tr>
+	<tr style="display:none" id="ht12">
+	<td>
+		<p>Given the magnitude of both vectors and the angle between them, the dot product between the two vectors is obtained as:</p>
+		<p>\[\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}|cos\theta\]</p>
+		<p>where </p>
+		<p>\[\left| \vec{A} \right|, \left| \vec{B} \right| \]</p>
+		<p>are the magnitude of each of the vectors and <i>&#952;</i> is the angle between them.</p>
+		<p>In the present example:</p>
+		<p>\[ W = \vec{F} \cdot \Delta\vec{r}= |\vec{F}||\Delta\vec{r}|\cos\theta = 100\times 22\cos 30^0 Nm= 1100\sqrt{3} Nm\]</p>
+	</td>
+	</tr>
+	</table>
+	
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

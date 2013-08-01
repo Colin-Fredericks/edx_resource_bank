@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+	<p>A block of mass <i>m</i> is at rest on an inclined plane of angle \(\theta\) with respect to the horizontal.  There is friction between the block and the inclined surface (\(\mu_k\) and \(\mu_s\)).</p>
+
+	<p>A) Imagine that you start increasing the angle of the incline, then at some point, the block will start to slide down. The angle at which this will happen is \(\theta=\)</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="1" correct="false">
+                  <text>\(\sin^{-1} (\mu_s)\)</text>
+          </choice>
+          <choice name="2" correct="false">
+                  <text>\(\cos^{-1} (\mu_s)\)</text>
+          </choice>
+          <choice name="3" correct="true">
+                  <text>\(\tan^{-1} (\mu_s)\)</text>
+          </choice>
+          <choice name="4" correct="false">
+                  <text>\(\cot^{-1} (\mu_s)\)</text>
+          </choice>
+          <choice name="5" correct="false">
+                 <text>The Block will never slide down, no matter what the angle is.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <p>B) Now, assume that the value of \(\theta\) is <b><i>less than</i></b> the value in part A) (so that the block will remain stationary if no other forces act on it). What is the maximum magnitude of a horizontal Force \(F\) that can be applied without causing the block to move up the incline?</p>
+
+	<p><img width="300"  src="/static/problems/MIT/rayyan/Physics801/quizzes/figures/block_on_incline.png"/></p>
+
+	<p>\(F&lt;\)</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="1" correct="false">
+                  <text>\(\frac{mg(\sin\theta+\mu_s \cos\theta)}{\cos\theta+\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="2" correct="false">
+                  <text>\(\frac{mg(\sin\theta-\mu_s \cos\theta)}{\cos\theta+\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="3" correct="true">
+                  <text>\(\frac{mg(\sin\theta+\mu_s \cos\theta)}{\cos\theta-\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="4" correct="false">
+                  <text>\(\frac{mg(\sin\theta-\mu_s \cos\theta)}{\cos\theta-\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="5" correct="false">
+                  <text>\(\frac{mg(\cos\theta+\mu_s \sin\theta)}{\sin\theta+\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="6" correct="false">
+                  <text>\(\frac{mg(\cos\theta-\mu_s \sin\theta)}{\sin\theta+\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="7" correct="false">
+                  <text>\(\frac{mg(\cos\theta+\mu_s \sin\theta)}{\sin\theta-\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="8" correct="false">
+                  <text>\(\frac{mg(\cos\theta-\mu_s \sin\theta)}{\sin\theta-\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="9" correct="false">
+                 <text>The Block will never move up, regardless of the value of the force.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <p>C) Finally, assume that the value of \(\theta\) is <b><i>Greater than</i></b> the value in part A) (so that the block will slide down if no other forces act on it). What is the minimum magnitude of a horizontal Force \(F\) that is needed so that the block will not slide down the incline?</p>
+
+	<p>\(F&gt;\)</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="1" correct="false">
+                  <text>\(\frac{mg(\sin\theta+\mu_s \cos\theta)}{\cos\theta+\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="2" correct="true">
+                  <text>\(\frac{mg(\sin\theta-\mu_s \cos\theta)}{\cos\theta+\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="3" correct="false">
+                  <text>\(\frac{mg(\sin\theta+\mu_s \cos\theta)}{\cos\theta-\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="4" correct="false">
+                  <text>\(\frac{mg(\sin\theta-\mu_s \cos\theta)}{\cos\theta-\mu_s \sin\theta}\)</text>
+          </choice>
+          <choice name="5" correct="false">
+                  <text>\(\frac{mg(\cos\theta+\mu_s \sin\theta)}{\sin\theta+\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="6" correct="false">
+                  <text>\(\frac{mg(\cos\theta-\mu_s \sin\theta)}{\sin\theta+\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="7" correct="false">
+                  <text>\(\frac{mg(\cos\theta+\mu_s \sin\theta)}{\sin\theta-\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="8" correct="true">
+                  <text>\(\frac{mg(\cos\theta-\mu_s \sin\theta)}{\sin\theta-\mu_s \cos\theta}\)</text>
+          </choice>
+          <choice name="9" correct="false">
+                 <text>The Block will always slide down, regardless of the value of the force.</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

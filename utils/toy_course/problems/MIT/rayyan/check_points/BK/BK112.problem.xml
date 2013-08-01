@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Circular Orbits </title>
+
+      <p>A satellite of mass \(m\) orbits the planet of mass \(M\) in a circular orbit. The speed of the satellite is \(v\). 
+
+</p>
+      <br/>
+
+        <br/>
+
+      <p>
+Part 1. 
+What are the forces acting on the satellite?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+
+                the force of gravity only 
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                the force of gravity and the reaction force 
+
+          </choice>
+          <choice name="foil3" correct="false">
+
+                the force of gravity and the centripetal force 
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+the centripetal force and the reaction force 
+
+          </choice>
+          <choice name="foil5" correct="false">
+
+the reaction force only 
+
+          </choice>
+          <choice name="foil6" correct="false">
+
+                the tangential force only 
+
+          </choice>
+          <choice name="foil7" correct="false">
+
+the tangential force and the centripetal force
+          </choice>
+          <choice name="foil8" correct="false">
+
+the tangential force and the force of gravity
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+If the radius of the satellite's orbit is r, what is the correct expression for the rate of change in velocity of the satellite?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                Zero
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(Gm/r\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(Gm/r^{2}\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(GM/r\)
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                  \(GM/r^{2}\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(G v^{2}/r\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \(GM/2r\)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                  \(Gm/2r\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 3. 
+The radius of the orbit r is equal to:
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \(Gm/v\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(Gm/v^{2}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(GmM/v\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(GmM/v^{2}\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(GM/v\)
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                  \(GM/v^{2}\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 4. 
+The period of revolutions of the satellite is:
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(2\pi GM/v^{3}\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(2\pi GM/v^{2}\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(2\pi GM/v\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(2\pi GMv\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(v^{2}/2\pi GM\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(v^{3}/2\pi GM\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \(v/2\pi GM\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 5. 
+Another satellite, of mass 2m, revolves around the same planet at the same altitude as the satellite of mass m. Compared to the first satellite, the period of the satellite of mass 2m is:
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                the same
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                greater by a factor of 2
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                greater by a factor of \( \sqrt{2} \)
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                greater by a factor of 4
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                smaller by a factor of 2
+
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+
+smaller by a factor of \( \sqrt{2} \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+
+smaller by a factor of 4
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 6. 
+Using the given information, we can conclude that the radius of the planet:
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                is impossible to find
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                equals \(GM/v^{2}\)
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                equals \(GM/2v^{2}\)
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

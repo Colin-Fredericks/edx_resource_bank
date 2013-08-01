@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Instantaneous Velocity</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Instantaneous Velocity</h3>
+<p>Let's say you wanted to describe the student's motion more realistically and in more detail.  If you were a student at the same school, you might know that there is a hill between the dorm and the physics building; therefore the student certainly moved with less than the average velocity on the first leg up the hill and faster down hill.  Therefore breaking the dorm --&gt; physics building leg into two smaller segments, each with its own average velocity, would certainly provide a better understanding of the student's motion than does the single average velocity used previuosly.  
+</p><p>If we really want to describe the motion of the student most accurately, we could subdivide the journey into an infinite number of segments of duration \(\Delta t\), each with its own average velocity.  This procedure leads  to the concept of <b>instantaneous velocity,</b> which is a function defined at each instant of time t of the journey.  It may be defined as:
+</p><p>\(v(t) \; {=} ^{lim}_{\Delta t \to 0}\;v_{avg}[t, t+\Delta t] \; =\)
+</p><p>\( v(t) \; {=}^{lim}_{\Delta t \to 0}\; \frac {x(t+\Delta t)-x(t)}{(t+\Delta t)-t} =\)
+</p><p/>\(v(t) \; = \; \frac{dx}{dt}\)
+<p>This relationship emphasizes that our definition of instantaneous velocity is identical to the <i>time derivative of position</i>, and that this is the same as the average velocity over shorter and shorter time intervals around time t.  Generally we leave out the word "instantaneous" and simply refer to the above concept as "velocity"
+</p><p>
+<b>Velocity is the defining measure of the translational <i>motion</i> of a particle.</b>
+</p>
+</body>
+</html>
+

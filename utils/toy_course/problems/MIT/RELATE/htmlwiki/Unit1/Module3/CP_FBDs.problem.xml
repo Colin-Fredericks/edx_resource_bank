@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p><h3>Check Your Understanding of Free Body Diagrams</h3>
+Which of the following is an accurate FBD for block 2 from the illustrative example on the previous page?
+	</p>
+
+    <br/>
+    <multiplechoiceresponse texlayout="horizontal" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="Foil1" correct="false">
+
+            <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/4/45/Unit1Mod2F21left.png/150px-Unit1Mod2F21left.png"/>
+
+            <br/>          
+        </choice>
+        <choice location="random" name="Foil2" correct="true">
+
+            <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/5/5f/Unit1Mod2F21right.png/150px-Unit1Mod2F21right.png"/>
+                       <br/>          
+        </choice>
+        <choice location="random" name="Foil3" correct="false">
+
+            <img src="/static/problems/MIT/RELATE/MAPS_course/images/thumb/7/75/Unit1Mod2F212.png/150px-Unit1Mod2F212.png"/>
+            <br/>          
+        </choice>
+      </choicegroup>
+
+    </multiplechoiceresponse>
+              </problem>
+</html>

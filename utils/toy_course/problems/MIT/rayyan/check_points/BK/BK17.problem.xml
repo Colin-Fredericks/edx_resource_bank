@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK17.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+Three forces are acting on a 4-kg block as shown. The acceleration of the block is 5.0 \(m/s^2\). Find the magnitude of the unknown force F. 
+
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              18.3 N          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              20.0 N          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              22.3 N          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              32 N          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              No solution possible since the maximum possible acceleration is about 2.23 \(m/s^2\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

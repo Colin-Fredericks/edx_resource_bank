@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem #163 -->
+<problem>
+
+<script type="loncapa/python">
+
+t1 = random.randrange(0,2,1)
+t2 = random.randrange(3,5,1)
+
+vav = ((2/3)*((t2)**3 - (t1)**3) - (3/2)*((t2)**2-(t1)**2) - 2*(t2-t1))/(t2 - t1)
+
+</script>
+
+	<p>The velocity of a point, moving along a straight line is given by \( v(t) = 2t^2 - 3t - 2 \)  where all coefficients are assumed to have the SI units. </p>
+
+	<h3>Part 1</h3>
+	<p>Find the average velocity of the point between $t1 and $t2.</p>
+	<numericalresponse answer="$vav" unit="m/s">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+	<h3>Part 2</h3>
+	<p>During the first t seconds of motion, the average velocity of the car is zero. Find t. </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">Zero</choice>
+			<choice correct="false">2.11 sec</choice>
+			<choice correct="true">3.19 sec</choice>
+			<choice correct="false">3.35 sec</choice>
+			<choice correct="false">3.67 sec</choice>
+			<choice correct="false">4.02 sec</choice>
+			<choice correct="false">4.88 sec</choice>
+			<choice correct="false">There is no such value of t.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <problem>
+
+      <p>Consider an ideal pendulum consisting of a "bob" of mass <i> m</i> hanging from a light (massless) string of length <i>L</i>.  
+      The pendulum swings back and forth in simple harmonic motion (SHM).  You may assume that the oscillations are small, 
+      so that the motion is "ideal" SHM.  </p>
+
+       
+				<p>If the mass of the pendulum bob is changed to 4<i>m</i>, the frequency will: </p>
+				
+				<p>
+      
+<multiplechoiceresponse direction="vertical" randomize="no">
+      <choicegroup type="MultipleChoice">
+        <choice  correct="false" name="1"> increase by a factor of 4. </choice>
+        <choice  correct="false" name="2"> increase by a factor of 2.</choice>
+        <choice  correct="false" name="3">  decrease by a factor of 4.</choice>
+        <choice  correct="false" name="4"> decrease by a factor of 2.</choice>
+        <choice  correct="true" name="5"> none of the above.</choice>
+        
+      </choicegroup>
+    </multiplechoiceresponse>
+</p>        
+        
+   
+  </problem>
+</html>

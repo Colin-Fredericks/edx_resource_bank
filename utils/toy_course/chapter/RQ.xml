@@ -1,0 +1,33 @@
+<chapter display_name="reading assignments">
+	<sequential display_name="W2D2" url_name="W2D2">
+		<problem display_name="Newton's Second Law1" filename="MIT/rayyan/check_points/BK/BK11.problem" attempts="1"/>
+		<problem display_name="Newton's Second Law2" filename="MIT/rayyan/check_points/BK/BK13.problem" attempts="1"/>
+		<problem display_name="Ball Penetrating Ground1" filename="MIT/rayyan/osu/05_Force and Motion I/3rd/3rd.problem" attempts="1"/>
+		<problem display_name="Ball Penetrating Ground2" filename="MIT/rayyan/osu/05_Force and Motion I/3rd/3rd _1.problem" attempts="1"/>
+		<problem display_name="Ball Penetrating Ground3" filename="MIT/rayyan/osu/05_Force and Motion I/3rd/3rd _2.problem" attempts="1"/>
+		<problem display_name="Two Cars" filename="MIT/rayyan/check_points/BK/BK10.problem" attempts="1"/>
+		<problem display_name="Special Diet" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p5.problem" attempts="2"/>
+		<problem display_name="Forces and Blocks" filename="MIT/rayyan/check_points/BK/BK14.problem" attempts="2"/>
+		<problem display_name="Find the mass" filename="MIT/rayyan/check_points/BK/BK18.problem" attempts="10"/>
+		<problem display_name="What is the force?" filename="MIT/rayyan/check_points/BK/BK23.problem" attempts="1"/>
+		<problem display_name="The net force" filename="MIT/rayyan/check_points/BK/BK7.problem" attempts="10"/>
+		<problem display_name="block hanging from wall" filename="MIT/rayyan/check_points/BK/BK9.problem" attempts="2"/>
+		<problem display_name="Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK20.problem" attempts="1"/>
+		<problem display_name="Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK3.problem" attempts="1"/>
+		<problem display_name="Kinetic Friction1" filename="MIT/rayyan/osu/06_Force and Motion II/friction/friction_1.problem" attempts="1"/>
+		<problem display_name="Kinetic Friction2" filename="MIT/rayyan/osu/06_Force and Motion II/friction/friction_2.problem" attempts="1"/>
+		<problem display_name="Blocks and Pulleys" filename="MIT/rayyan/check_points/BK/BK28.problem" attempts="4"/>
+		<problem display_name="Down the incline" filename="MIT/GWUproblems/Physics_1_Checkups/Checkup02_concept04.problem" attempts="10"/>
+		<problem display_name="Push" filename="MIT/GWUproblems/HTW_exams/exam1_con04.problem" attempts="10"/>
+		<problem display_name="Contact" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p3.problem" attempts="10"/>
+		<problem display_name="More Contact" filename="MIT/RELATE/Unit_1_SIM_Problems/u1_m12_l1_p4.problem" attempts="10"/>
+		<problem display_name="Pushing Books1" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_8.problem" attempts="1"/>
+		<problem display_name="Pushing Books2" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_9.problem" attempts="1"/>
+		<problem display_name="Pushing Books3" filename="MIT/rayyan/osu/05_Force and Motion I/forces_1/forces_10.problem" attempts="2"/>
+		<problem display_name="Stacked blocks, horizontal pull (A)" filename="MIT/boriskor/Newton_s laws/Stacked blocks pulled horizontally_A.problem" attempts="2"/>
+		<problem display_name="Stacked blocks pulled horizontally (B)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally B.problem" attempts="2"/>
+		<problem display_name="Stacked blocks pulled horizontally (F)" filename="MIT/boriskor/Newton_s laws/Stacked Blocks pulled horizontally F.problem" attempts="2"/>
+		<problem display_name="Stacked blocks pulled horizontally (G)" filename="MIT/boriskor/Newton_s laws/Stacked blocks pulled horizontally G.problem" attempts="2"/>
+		<problem display_name="More than one Pulley" filename="MIT/rayyan/check_points/BK/BK26.problem" attempts="3"/>
+	</sequential>
+</chapter>

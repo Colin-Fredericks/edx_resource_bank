@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!-- Custom comparison: SHM speed -->
+
+<problem>
+
+	<script type="loncapa/python">
+
+A_a = random.randrange(-50, 50, 1)/10
+A_b = random.randrange(-50, 50, 1)/10
+T_a = random.randrange(1, 20, 1)/10
+T_b = random.randrange(1, 20, 1)/10
+phi_a = random.randrange(0, 30, 1)/10
+phi_b = random.randrange(0, 30, 1)/10
+h_a = random.randrange(0, 100, 1)/10
+h_b = random.randrange(0, 100, 1)/10
+
+t = random.randrange(0, 100, 10)/10
+
+
+v_a = A_a * (2*math.pi)/(T_a) * math.cos((2*math.pi)/(T_a) * (t - phi_a))
+v_b = A_b * (2*math.pi)/(T_b) * math.cos((2*math.pi)/(T_b) * (t - phi_b))
+
+v_a = math.fabs(v_a)
+v_b = math.fabs(v_b)
+
+if v_a > v_b:
+	ans='A'
+elif v_b > v_a:
+	ans='B'
+elif v_a == v_b:
+	ans='Same'
+
+	</script>
+
+		<p>The equations below show the positions of two oscillators over time:</p>
+		<p>\( \displaystyle A: x_A = $A_a \sin \left( \frac{2\pi}{ $T_a } \left( t - $phi_a \right) \right) + $h_a \)</p>
+		<p>\( \displaystyle B: x_B = $A_b \sin \left( \frac{2\pi}{ $T_b } \left( t - $phi_b \right) \right) - $h_b \)</p>
+		<p>Which oscillator, A or B, has the greater speed at time t = $t seconds? You may assume all quantities given are in S.I. units. 
+		Chose A or B. If the speeds are perfectly identical, choose "Same".</p>
+
+	<optionresponse direction="vertical" randomize="yes">
+		<optioninput options="('A','B','Same')" correct="$ans"/>
+	</optionresponse>
+
+	<solution>
+
+			<p>You can find the speed of any object by taking the derivative of its position with respect to time. Do this for each oscillator, plug in the given time, and you should be able to see which is larger. The numbers are randomized for each student.</p>
+			<p>Note that "speed" is a magnitude, and does not care about direction or +/- sign.</p>
+
+	</solution>
+</problem>
+

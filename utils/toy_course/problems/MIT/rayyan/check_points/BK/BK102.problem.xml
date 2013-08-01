@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Momentum of a rod </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.1,1.2,3.0])
+l=random.choice([0.8,1.2,1.8])
+i=7* m* l* l/48
+o=random.choice([12,30,96])
+L =  i* o*2*3.14/60
+
+</script>
+
+<p>A uniform rod of mass m = $m kg and length l = $l m is pivoted as shown. The rod is held horizontally 
+at rest and then released. The acceleration due to gravity is g = 9.8 m/s<sup>2</sup>.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK102.PNG" alt="BK102"/>
+
+<br/>
+<p>Part 1. Find the rotational inertia of the rod relative to the axis passing through the pivot point (shown as a dashed line in the diagram).</p>
+<p>\(I\)  [kg.m<sup>2</sup>] =</p>
+
+      <numericalresponse answer="$i" unit="kg*m^2">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>Part 2. Find the angular momentum of the rod if it is rotating around that axis at an
+ angular speed \(\omega\) = $o RPM (rounds per minute).</p>
+<p>\(L\)  [kg.m<sup>2</sup>.s<sup>-1</sup>] =</p>
+
+      <numericalresponse answer="$L" unit="kg*m^2/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

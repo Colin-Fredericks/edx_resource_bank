@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- Standard projectile problem, broken into parts. -->
+
+<problem>
+
+<script type="loncapa/python">
+import random
+
+v = random.randrange(1,20,1)
+h = random.randrange(3,12,1)
+g = 9.8
+
+t = (v + math.sqrt(v*v + 2*h*g))/g
+hmax = h + (v*v)/(2*g)
+vf = abs(v - g*t)
+
+</script>
+
+<p>A ball is thrown vertically into the air from a height of $h meters above the ground, at a speed of $v m/s. The ball flies upward and returns to the ground.</p>
+
+<p>How long is the ball in the air?</p>
+<numericalresponse answer="$t">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+<p>What is the maximum height of the ball above the ground?</p>
+<numericalresponse answer="$hmax">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+<p>What is the ball’s speed immediately before it impacts the ground?</p>
+<numericalresponse answer="$vf">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+</problem>
+
+</html>

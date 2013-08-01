@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+    <p><img src="/static/problems/MIT/boriskor/BKimages/ 6-cylinder and two inclines.png" alt="Cylinder rolls down one incline and up the other"/></p>
+      <p>A uniform solid cylinder is held at rest at the top of an inclined plane that has a vertical height \(h\) and makes an angle \(\theta\) with the horizontal. After the cylinder is released, it rolls down without slipping, then encounters a <i>frictionless</i> horizontal surface and then another, <i>frictionless</i> inclined plane that has the same vertical height \(h\) and makes the same angle \(\theta\) with the horizontal.</p>
+
+	<p><b>What is the minimum coefficient of friction \(\mu_{min}\) between the cylinder and the first inclined plane that enables it to roll without slipping?</b></p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(\mu_{min}=(\tan \theta)\)/3
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(\mu_{min}=(\tan \theta)\)/2
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\mu_{min}=(\tan \theta)\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(\mu_{min}=(2\tan \theta)\)/3
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(\mu_{min}=(\tan \theta)\)/6
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(\mu_{min}=(4\tan \theta)\)/9
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+	<p>What is the speed \(v\) of the cylinder at the bottom of the first inclined plane?</p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(v=\sqrt (4gh/3)\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(v=\sqrt (2gh/3)\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(v=\sqrt (2gh)\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(v=\sqrt (5gh/7)\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(v=\sqrt (4gh/3)cos \theta\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(v=\sqrt (2gh/3)cos \theta\)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \(v=\sqrt (2gh)cos \theta\)
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                  \(v=\sqrt (5gh/7)cos \theta\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p><b>Will the cylinder reach the top of the second inclined plane? If yes, what would be its speed \(v_{top}\) at the top of the incline? If not, what is the maximum vertical height \(h_{max}\) that will be reached?</b></p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+			<p>No; \(h_{max}=2h/3\)</p>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+			<p>No; \(h_{max}=3h/4\)</p>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+			<p>No; \(h_{max}=h/2\)</p>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+			<p>Yes; \(v_{top}=\sqrt(gh/3)\)</p>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+			<p>Yes; \(v_{top}=\sqrt(gh/4)\)</p>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+			<p>Yes; \(v_{top}=\sqrt(gh/6)\)</p>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+</problem>
+</html>

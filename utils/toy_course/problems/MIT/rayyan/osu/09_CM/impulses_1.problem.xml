@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulses_1and2_b.png" />
+
+      <p>Two carts, A and B, on frictionless air tracks are initially at rest. Cart A is twice as massive as cart B. Now you exert the same constant force on both carts for 1 second. One second later, the momentum of cart A is:</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+          <text>Twice the momentum of cart B</text>
+        </choice>
+        <choice name="foil2" correct="false">
+          <text>Half the momentum of cart B</text>
+        </choice>
+        <choice name="foil3" correct="true">
+          <text>The same as the momentum of cart B</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

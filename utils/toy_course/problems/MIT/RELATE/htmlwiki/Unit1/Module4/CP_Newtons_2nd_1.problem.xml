@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Newton's 2nd Law 1</title>
+
+    <h3>Check Your Understanding of Newton's Second Law</h3>
+    <p>Suppose an object is initially at rest when it is suddenly acted on by two forces.  A large force acts due north on the object and a smaller force acts due east.  What is the direction of the object's acceleration?</p>
+
+    <multiplechoiceresponse texlayout="horizontal" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="Foil1" correct="false">
+          <text>The object will accelerate due north.</text>
+        </choice>
+        <choice location="random" name="Foil2" correct="false">
+          <text>The object will accelerate due east.</text>
+        </choice>
+        <choice location="random" name="Foil3" correct="true">
+        <text>The object will accelerate north of east, but closer to north than east (&gt; 45&#xB0; N of E).</text>
+        </choice>
+        <choice location="random" name="Foil4" correct="false">
+          <text>The object will accelerate north of east, but closer to east than north (&lt; 45&#xB0; N of E).</text>
+        </choice>
+        <choice location="random" name="Foil5" correct="false">
+          <text>The object will accelerate exactly north-east (exactly 45&#xB0; N of E).</text>
+        </choice>
+      </choicegroup>
+     </multiplechoiceresponse>
+  </problem>
+</html>

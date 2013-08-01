@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Equation of motion 2.</title>
+
+      <p>A robotic bug is moving along the x-axis. Its equation of motion is \(x(t) = 10 t^3 - 6 - 4t^2 \) (all coefficients are assumed to have SI units).</p>
+
+      <p>Part 1. Is the acceleration of the bug constant?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                Yes
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                No
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                Not enough information to answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+        <p>Part 2. What is the initial velocity of the bug?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                -8 m/s 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                -6 m/s
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                -4 m/s
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                0 m/s
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                4 m/s
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				6 m/s
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                8 m/s
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                30 m/s
+          </choice>
+          <choice location="random" name="foil9" correct="false">
+                60 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 3. What is the acceleration of the bug at t = 2.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                <text>5 m/s<sup>2</sup></text> 
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                <text>10 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                <text>20 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                <text>104 m/s<sup>2</sup></text>
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+                <text>112 m/s<sup>2</sup></text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 4. Does the instantaneous velocity of the bug ever equal zero?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                No, never.
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                Yes, at t = 0 only
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                Yes, at t = 0.27 s only
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                Yes, at t = 0.53 s only
+          </choice>
+          <choice location="bottom" name="foil5" correct="true">
+                Yes, at t = 0 and t = 0.27 s
+          </choice>
+          <choice location="bottom" name="foil6" correct="false">
+                Yes, at t = 0 and t = 0.53 s
+          </choice>
+          <choice location="bottom" name="foil7" correct="false">
+                Yes, at t = 0.27 s and t = 0.53 s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>Part 5. What is the average velocity of the bug between t = 2.0 s and t = 5.0 s?</p>
+
+      <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                202 m/s 
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                362 m/s
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                407 m/s
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                601 m/s
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                1086 m/s
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+				3258 m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

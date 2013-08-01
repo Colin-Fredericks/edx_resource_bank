@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+a= "F-m*g*sin(alpha)"
+b= "m*g*(sin(alpha)+mus*cos(alpha))"
+</script>
+        <img width="300" alt="ramp_problem" src="/static/problems/MIT/analiab/Figures/ramp.png"/>
+    <br/>
+
+      <p>
+A person wants to move a file cabinet of mass m up an incline of angle \(\alpha\) with respect to the horizontal. There is friction between the cabinet and the surface (\(\mu_s\), \(\mu_k\)).  
+</p><br/>
+a) When the person applies a force parallel to the incline surface of magnitude F , the box does not move. Which of the following statements are correct?
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="1" correct="false">
+
+                The force of static friction is pointing down the incline
+
+          </choice>
+          <choice location="random" name="2" correct="false">
+
+                The force of static friction is pointing up the incline
+
+          </choice>
+          <choice location="random" name="3" correct="false">
+
+                The force of static friction is zero
+
+          </choice>
+          <choice location="bottom" name="4" correct="true">
+
+                Depending on the value of F, one of the statements shown above  is correct.
+
+          </choice>
+        </choicegroup>
+        <solved>
+
+            <br/>
+            <p>
+
+                <b>Feedback:</b><br/>
+The force of static friction will depend on the magnitude of the applied force, <b>F</b>, and on the component of the cabinet's weight along the surface, \(mg\sin\alpha\). The force of static friction is a <b>constraint force</b> as it keeps the cabinet at rest by changing its magnitude and direction according to Newton's second law (\(\sum\vec{F} =0\)).
+<ul><li> If <b>F</b> &gt; \(mg \sin\alpha\), the force of static friction must be directed downhill, otherwise the cabinet will move up.</li><li> If <b>F</b> = \(mg \sin\alpha\), no force of friction is needed to keep the cabinet at rest.</li><li> If <b>F</b> &lt; \(mg \sin\alpha\), the force of friction must be pointed uphill, otherwise the cabinet will slide down.</li></ul>
+
+  </p>
+
+        </solved>
+      </multiplechoiceresponse>
+
+      <p>b) Let's assume that the applied force is such that F &gt; \(mg\sin\alpha\). What is the magnitude of the force of static friction? If needed, to enter \(\mu_s\), \(\mu_k\), \(\sin\alpha\), \(\cos\alpha\) or \(\tan\alpha\) write mus, muk, sin(alpha), cos(alpha) or tan(alpha), respectively.</p>
+
+    <br/>
+
+      <formularesponse answer="$a" samples="mus,m,g,alpha,F,muk@1,1,1,1,1,1:10,10,10,10,10,10#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </formularesponse>
+
+      <p>c) For which value of F will the cabinet start to move upwards?</p>
+
+    <br/>
+
+      <formularesponse answer="$b" samples="mus,m,g,alpha,F,muk@1,1,1,1,1,1:10,10,10,10,10,10#4">
+        <responseparam default="0.00001" type="tolerance"/>
+        <textline size="25" math="1"/>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </formularesponse>
+
+    <br/>
+    <hr/>
+    <p>The situation of this problem is simulated in the following applet. </p>
+    <ul>
+      <li> Position the file cabinet at the bottom of the incline using the position control in the bottom right menu.</li>
+      <li> Give an angle to the incline with the ramp angle control.</li>
+      <li> By increasing slowly the applied force you will see how the force of static friction changes its magnitude and direction to keep the cabinet at rest.</li>
+    </ul>
+    <p> There is a limit value of the applied force for which the cabinet starts to move up. Do not forget to check the force vectors so you can see the changing free body diagram.</p>
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>
+            <b>The Ramp</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="position: relative; width: 300px; height: 232px;">
+              <a style="text-decoration: none;" href="http://phet.colorado.edu/sims/the-ramp/the-ramp_en.jnlp">
+                <img width="300" alt="The Ramp" height="232" style="border: none;" src="http://phet.colorado.edu/sims/the-ramp/the-ramp-screenshot.png"/>
+                <div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 76px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"/>
+                <table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 76px;">
+                  <tr>
+                    <td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;">Click to Run</td>
+                  </tr>
+                </table>
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+<a href="http://phet.colorado.edu/en/simulations/category/physics">Phet</a>: Interactive simulation of the University of Colorado
+</td>
+        </tr>
+      </tbody>
+    </table>
+      </problem>
+</html>

@@ -1,0 +1,192 @@
+<chapter display_name="7: Momentum and Impulse">
+	<sequential display_name="Mini Survey 7 - Categorizing Problems" filename="mini_survey_7" />
+	<sequential display_name="Momentum and Impulse" url_name="Momentum_and_Impulse">
+		<vertical display_name="Momentum and Multi-Body Systems">
+			<html display_name="Momentum and Multi-Body Systems" filename="problems/MIT/RELATE/htmlwiki/Unit7/Momentum_and_MultiBo_2.html"/>
+			<discussion for="Momentum and Multi-Body Systems" id="MReV_Summer2013_Momentum_and_MultiBo_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Introduction to Momentum and Impulse" url_name="Introduction_to_Momentum_and_Impulse">
+		<vertical display_name="Momentum and Impulse">
+			<html display_name="Momentum and Impulse" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module1/Momentum_and_Impulse v2.html"/>
+			<discussion for="Momentum and Impulse" id="MReV_Summer2013_Momentum_and_Impulse_v2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Momentum of a system">
+			<problem display_name="CheckPoint 1: Momentum of a system" filename="MIT/rayyan/check_points/BK/BK45.problem" attempts="3"/>
+			<discussion for="CheckPoint 1: Momentum of a system" id="MReV_Summer2013_BK45" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Momentum of a system" filename="RQ4.vert"/>
+		<vertical display_name=" Impulse">
+			<html display_name=" Impulse" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module1/Impulse.html"/>
+			<discussion for=" Impulse" id="MReV_Summer2013_Impulse" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Video: Impulse Introduction">
+			<video youtube="1.0:pBZcz1Az45M" display_name="Video: Impulse Introduction"/>
+			<html display_name="" filename="problems/MIT/analiab/Videos/Impulse_Intro.html"/>
+			<discussion for="Video: Impulse Introduction" id="MReV_Summer2013_Impulse_Intro" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Momentum and Impulse">
+			<problem display_name="CheckPoint 3: Momentum and Impulse" filename="MIT/rayyan/osu/09_CM/impulse.problem" attempts="1"/>
+			<discussion for="CheckPoint 3: Momentum and Impulse" id="MReV_Summer2013_impulse" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: Momentum and Impulse">
+			<problem display_name="CheckPoint 4: Momentum and Impulse" filename="MIT/rayyan/check_points/BK/BK44.problem" attempts="3"/>
+			<discussion for="CheckPoint 4: Momentum and Impulse" id="MReV_Summer2013_BK44" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Momentum and Impulse">
+			<problem display_name="CheckPoint 5: Momentum and Impulse" filename="MIT/rayyan/check_points/BK/BK47.problem" attempts="2"/>
+			<discussion for="CheckPoint 5: Momentum and Impulse" id="MReV_Summer2013_BK47" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: A varying force">
+			<problem display_name="CheckPoint 6: A varying force" filename="MIT/rayyan/check_points/BK/BK49.problem" attempts="10"/>
+			<discussion for="CheckPoint 6: A varying force" id="MReV_Summer2013_BK49" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Conservation of Linear Momentum" url_name="Conservation_of_Linear_Momentum">
+		<vertical display_name="Conservation of Momentum and Initial State-Final State Diagrams">
+			<html display_name="Conservation of Momentum and Initial State-Final State Diagrams" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module2/Conservation_of_Mome.html"/>
+			<discussion for="Conservation of Momentum and Initial State-Final State Diagrams" id="MReV_Summer2013_Conservation_of_Mome" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: A Walk on the Pond">
+			<html display_name="Example: A Walk on the Pond" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module2/IE_Walk_on_Pond.html"/>
+			<discussion for="Example: A Walk on the Pond" id="MReV_Summer2013_IE_Walk_on_Pond" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Two Pendula">
+			<problem display_name="CheckPoint 7: Two Pendula" filename="MIT/rayyan/check_points/BK/BK56.problem" attempts="2"/>
+			<discussion for="CheckPoint 7: Two Pendula" id="MReV_Summer2013_BK56" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 8: Two blocks and a spring">
+			<problem display_name="CheckPoint 8: Two blocks and a spring" filename="MIT/rayyan/check_points/BK/BK55.problem" attempts="1"/>
+			<discussion for="CheckPoint 8: Two blocks and a spring" id="MReV_Summer2013_BK55" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 9: Collision in 2D">
+			<problem display_name="CheckPoint 9: Collision in 2D" filename="MIT/rayyan/check_points/BK/BK50.problem" attempts="4"/>
+			<discussion for="CheckPoint 9: Collision in 2D" id="MReV_Summer2013_BK50" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Approximate Conservation of Momentum in Collisions" url_name="Approximate_Conservation_of_Momentum_in_Collisions">
+		<vertical display_name="Approximate Conservation of Momentum in Collisions">
+			<html display_name="Approximate Conservation of Momentum in Collisions" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module3/Approximate_Conserva.html"/>
+			<discussion for="Approximate Conservation of Momentum in Collisions" id="MReV_Summer2013_Approximate_Conserva" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Tennis Ball Dropped onto Wood">
+			<html display_name="Example: Tennis Ball Dropped onto Wood" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module3/IE_Tennis_Ball.html"/>
+			<discussion for="Example: Tennis Ball Dropped onto Wood" id="MReV_Summer2013_IE_Tennis_Ball" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Return to the Pond">
+			<html display_name="Example: Return to the Pond" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module3/IE_Collision_on_Ice.html"/>
+			<discussion for="Example: Return to the Pond" id="MReV_Summer2013_IE_Collision_on_Ice" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Impulse and Average Force" url_name="Impulse_and_Average_Force">
+		<vertical display_name="Impulse and Average Force">
+			<html display_name="Impulse and Average Force" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module4/Impulse_and_Average.html"/>
+			<discussion for="Impulse and Average Force" id="MReV_Summer2013_Impulse_and_Average" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Data: Bouncing Balls">
+			<html display_name="Data: Bouncing Balls" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module4/Data_Bouncing_Ball.html"/>
+			<discussion for="Data: Bouncing Balls" id="MReV_Summer2013_Data_Bouncing_Ball" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Off the Wall">
+			<html display_name="Example: Off the Wall" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module4/IE_Off_the_Wall.html"/>
+			<discussion for="Example: Off the Wall" id="MReV_Summer2013_IE_Off_the_Wall" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 10: Carts on an Airtrack">
+			<problem display_name="Checkpoint 10: Carts on an Airtrack" filename="MIT/rayyan/osu/09_CM/impulses.problem" attempts="2"/>
+			<discussion for="Checkpoint 10: Carts on an Airtrack" id="MReV_Summer2013_impulses" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 11: Carts on an Airtrack">
+			<problem display_name="Checkpoint 11: Carts on an Airtrack" filename="MIT/rayyan/osu/09_CM/impulses_1.problem" attempts="1"/>
+			<discussion for="Checkpoint 11: Carts on an Airtrack" id="MReV_Summer2013_impulses_1" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 12: Carts on an Airtrack">
+			<problem display_name="Checkpoint 12: Carts on an Airtrack" filename="MIT/rayyan/osu/09_CM/impulses_2.problem" attempts="1"/>
+			<discussion for="Checkpoint 12: Carts on an Airtrack" id="MReV_Summer2013_impulses_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Center of Mass: Definition" url_name="Center_of_Mass:_Definition">
+		<vertical display_name="Center of Mass: System of point particles">
+			<html display_name="Center of Mass: System of point particles" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/Center_of_Mass_defin.html"/>
+			<discussion for="Center of Mass: System of point particles" id="MReV_Summer2013_Center_of_Mass_defin" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: CM of Two Point Particles">
+			<html display_name="Example: CM of Two Point Particles" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/IE_2_Point_Masses.html"/>
+			<discussion for="Example: CM of Two Point Particles" id="MReV_Summer2013_IE_2_Point_Masses" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Video: CM of Three Point Particles">
+			<video youtube="1.0:9ajALKhZD1k" display_name="Video: CM of Three Point Particles"/>
+			<html display_name="" filename="problems/MIT/analiab/Videos/CMofThreeParticles.html"/>
+			<discussion for="Video: CM of Three Point Particles" id="MReV_Summer2013_CMofThreeParticles" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 13: Center of Mass of 3 balls">
+			<problem display_name="Checkpoint 13: Center of Mass of 3 balls" filename="MIT/rayyan/osu/09_CM/Center_of_mass_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 13: Center of Mass of 3 balls" id="MReV_Summer2013_Center_of_mass_2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 14: Center of Mass of 4 particles">
+			<problem display_name="CheckPoint 14: Center of Mass of 4 particles" filename="MIT/rayyan/check_points/BK/BK52.problem" attempts="2"/>
+			<discussion for="CheckPoint 14: Center of Mass of 4 particles" id="MReV_Summer2013_BK52" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Center of Mass: System of extended objects">
+			<html display_name="Center of Mass: System of extended objects" filename="problems/MIT/analiab/htmlPages/Cente_of_Mass_System_of_Extended_Objects.html"/>
+			<discussion for="Center of Mass: System of extended objects" id="MReV_Summer2013_Cente_of_Mass_System_of_Extended_Objects" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Two Extended Objects">
+			<html display_name="Example: Two Extended Objects" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/IE_2_Extended_Objects.html"/>
+			<discussion for="Example: Two Extended Objects" id="MReV_Summer2013_IE_2_Extended_Objects" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Object Composed of Simple Parts">
+			<html display_name="Example: Object Composed of Simple Parts" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/IE_Composite_Object.html"/>
+			<discussion for="Example: Object Composed of Simple Parts" id="MReV_Summer2013_IE_Composite_Object" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Calculation of The Center of Mass of a Rigid Object ">
+			<html display_name="Calculation of The Center of Mass of a Rigid Object " filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/Finding_CM.html"/>
+			<discussion for="Calculation of The Center of Mass of a Rigid Object " id="MReV_Summer2013_Finding_CM" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Nonuniform Rod">
+			<html display_name="Example: Nonuniform Rod" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module5/IE_Nonuniform_Rod.html"/>
+			<discussion for="Example: Nonuniform Rod" id="MReV_Summer2013_IE_Nonuniform_Rod" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 15: Center of Mass of a Baseball Bat">
+			<problem display_name="Checkpoint 15: Center of Mass of a Baseball Bat" filename="MIT/RELATE/htmlwiki/Unit7/Module5/CP_Baseball_Bat.problem" attempts="1"/>
+			<discussion for="Checkpoint 15: Center of Mass of a Baseball Bat" id="MReV_Summer2013_CP_Baseball_Bat" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 16: Center of mass of an L-shaped Object">
+			<problem display_name="CheckPoint 16: Center of mass of an L-shaped Object" filename="MIT/rayyan/check_points/BK/BK53.problem" attempts="2"/>
+			<discussion for="CheckPoint 16: Center of mass of an L-shaped Object" id="MReV_Summer2013_BK53" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="CheckPoint 17: Center of Mass of two circles">
+			<problem display_name="CheckPoint 17: Center of Mass of two circles" filename="MIT/rayyan/check_points/BK/BK54.problem" attempts="2"/>
+			<discussion for="CheckPoint 17: Center of Mass of two circles" id="MReV_Summer2013_BK54" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Center of Mass and the Motion of a System" url_name="Center_of_Mass_and_the_Motion_of_a_System">
+		<vertical display_name="Motion of the Center of Mass">
+			<html display_name="Motion of the Center of Mass" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/Center_of_Mass_and_t_part1.html"/>
+			<discussion for="Motion of the Center of Mass" id="MReV_Summer2013_Center_of_Mass_and_t_part1" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="The Center of Mass and the motion of the system">
+			<html display_name="The Center of Mass and the motion of the system" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/Center_of_Mass_and_t_part2.html"/>
+			<discussion for="The Center of Mass and the motion of the system" id="MReV_Summer2013_Center_of_Mass_and_t_part2" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Walking on a Board">
+			<html display_name="Example: Walking on a Board" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/IE_Walking_on_Board_new.html"/>
+			<discussion for="Example: Walking on a Board" id="MReV_Summer2013_IE_Walking_on_Board" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Car on a Barge">
+			<html display_name="Example: Car on a Barge" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/IE_Car_on_Barge.html"/>
+			<discussion for="Example: Car on a Barge" id="MReV_Summer2013_IE_Car_on_Barge" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Two Blocks and a Spring">
+			<html display_name="Example: Two Blocks and a Spring" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/IE_Blocks_and_Spring.html"/>
+			<discussion for="Example: Two Blocks and a Spring" id="MReV_Summer2013_IE_Blocks_and_Spring" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Example: Exploding Projectile">
+			<html display_name="Example: Exploding Projectile" filename="problems/MIT/RELATE/htmlwiki/Unit7/Module6/IE_Midair_Explosion.html"/>
+			<discussion for="Example: Exploding Projectile" id="MReV_Summer2013_IE_Midair_Explosion" discussion_category="Momentum and Impulse" />
+		</vertical>
+		<vertical display_name="Checkpoint 18: Tug-of-War">
+			<problem display_name="Checkpoint 18: Tug-of-War" filename="MIT/rayyan/osu/09_CM/Center_of_mass.problem" attempts="2"/>
+			<discussion for="Checkpoint 18: Tug-of-War" id="MReV_Summer2013_Center_of_mass" discussion_category="Momentum and Impulse" />
+		</vertical>
+	</sequential>
+</chapter>

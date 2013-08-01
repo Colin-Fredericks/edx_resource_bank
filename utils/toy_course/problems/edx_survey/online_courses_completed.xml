@@ -1,0 +1,13 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Excluding this course, how many online classes have you completed?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="0"><text>0</text></choice>
+      <choice correct="true" name="1"><text>1</text></choice>
+      <choice correct="true" name="2"><text>2</text></choice>
+      <choice correct="true" name="3"><text>3</text></choice>
+      <choice correct="true" name="4"><text>4</text></choice>
+      <choice correct="true" name="5_or_more"><text>5 or more</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+        <p>For the right picture, what is the speed of the ball when it reaches the post?</p>
+
+      <formularesponse answer="v*R/r" type="cs" samples="v,r,R@1,1,1:10,10,10#4">
+        <responseparam default="no" type="string_yesno" name="turnoffeditor" description="Hide DragMath-Editor"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    </problem>
+</html>

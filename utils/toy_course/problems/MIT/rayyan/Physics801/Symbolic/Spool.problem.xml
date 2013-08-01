@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+x="L*(I/M/R^2)"
+</script>
+
+    <img src="/static/problems/MIT/rayyan/Physics801/Symbolic/figures/Spool.png" alt="Spool.png" align="top"/>
+    <p>A ribbon of negligible mass and thickness is wound around a spool of mass M, radius R, and moment of inertia I about the center of mass. The ribbon is tightly wound so that it will not slip relative to the spool. The spool lies on its side on a frictionless horizontal surface and is initially at rest. Starting at t = 0 a constant force of magnitude F in the x direction is applied to the free end of the ribbon. Find the displacement x of the center of mass of the spool after a length L of the ribbon has unwound from the spool. Express your answer in terms of M, R, I, and L.</p>
+
+<p>\(x =\)</p>
+
+    <formularesponse answer="$x" samples="L,I,R,M@1,1,1,1:10,12,8,10#4">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+          </problem>
+</html>

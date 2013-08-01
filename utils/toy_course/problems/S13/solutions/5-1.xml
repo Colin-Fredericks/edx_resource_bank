@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+<!-- two balls colliding vertically -->
+<problem>
+
+<h3>Solution</h3>
+
+<p>System: the two balls.</p>
+<p>The initial state of the system is defined at the instant t<sub>i</sub> right before the collision, and the final state is defined at the instant t<sub>f</sub> right after the collision.</p>
+<p>Interactions:</p>
+<p>External: Gravitational interaction between each ball and the Earth,</p>
+<p>Internal: The unknown collision forces that a ball exerts on the other. These forces do not contribute to the change of momentum of the system.</p>
+
+<p>The only external force exerted on the system is the gravitational force on both balls. Use the momentum impulse model to express the momentum of the system at the final state t = t<sub>f</sub> in terms of the momentum of the system at the initial state t = t<sub>i</sub>.</p>
+
+<p>I will assume that the time interval \(\delta\)t = t<sub>f</sub> - t<sub>i</sub> is very small to be able to neglect the impulse due to gravity in the  impulse-momentum equation. With this assumption, the momentum of the system is constant. Because the motion is only in the vertical direction, the momentum of the system is in the vertical direction. We consider to +y axis pointing up.</p>
+
+<p>\(\vec{P}\)(t<sub>f</sub>)=\(\vec{P}\)(t<sub>i</sub>) + \(\int_{t_{i}}^{t_{f}} \vec{F}^{ext} \mathrm{d}t\) \(\Rightarrow\) \(\vec{P}(t_{f})\) = \(\vec{P}t_{i}\).</p>
+
+<p>M<sub>1</sub>v<sub>1,f</sub> - m<sub>2</sub>v<sub>2,f</sub> = - M<sub>1</sub>v<sub>1,i</sub> + m<sub>2</sub>v<sub>2,i</sub></p>
+<p>(3m<sub>2</sub>)*(1m/s) - (m<sub>2</sub>)*v<sub>2,f</sub> = - (3m<sub>2</sub>)*(2m/s) + (m<sub>2</sub>)(4m/s) </p>
+<p>\(\rightarrow\) v<sub>2,f</sub> = 5m/s.</p>
+
+</problem>
+</html>

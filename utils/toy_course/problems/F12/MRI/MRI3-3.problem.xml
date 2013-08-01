@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 3 -->
+
+<problem>
+
+	<p>While the object is in uniform circular motion, which statement correctly describes its mechanical energy?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The mechanical energy of the object is conserved.</choice>
+			<choice location="random" correct="false">The mechanical energy of the object is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

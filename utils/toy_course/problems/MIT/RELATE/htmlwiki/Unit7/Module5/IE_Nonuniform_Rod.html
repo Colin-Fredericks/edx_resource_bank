@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Example: Nonuniform Rod</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Uniform and Non-Uniform Rods</h3>
+<b>a) Uniform rod:</b> Show that if a rod of total mass <i>M</i> and length <i>L</i> has its mass uniformly distributed, then its center of mass is located at the midpoint between its ends.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution </b>
+ [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+<tr style="display:none" id="ht18">
+<td>To calculate the center of mass of an extended object we will follow the steps described below:
+<p><b>1. Select a coordinate system:</b>
+</p><p>Let's consider the rod to be along the x-axis. We will choose a coordinate system with origin at the left end of the rod. 
+</p><p><b>2. Divide the extended object in small elements of mass <i>dm</i>.</b>
+</p><p>The rod can be thought to be formed by a continuous distribution of small particles of mass <i><b>dm</b></i>. Each of these particles are occupying a given volume inside the object. In the case of this problem, where the rod is assumed to be thin, a particle occupies an element of the rod of length <i><b>dx</b></i>. 
+</p><p><b>3. Define the position of the mass element <i>dm</i>.</b>
+</p><p>With respect to our coordinate system, the element of mass <i>dm</i> is located at position:
+</p><p>\(\vec{r}=x\hat{i}\)
+</p><p><br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmRod1.png"/>
+</p><p><br/>
+Because the rod is assumed to be thin, the position of the element of mass has only one component. In the case of a disk or a sphere the position vector of the element of mass will have 2 or 3 components, respectively.
+</p><p><br/>
+<b>4. Use the information about the mass distribution.</b>
+</p><p>To obtain the center of mass of a rigid object, we have to solve the integral \(\int\vec{r}dm\). We realize that we need to have a relationship between the mass element <i><b>dm</b></i> and its position vector \(\vec{r}\). This relationship is obtained from the information about the mass distribution within the object.
+</p><p><br/>
+In the case of the thin rod, all the mass is distributed along the x-axis, therefore the position of the center of mass is also along the x-axis:
+</p><p>\(\vec{R}_{cm}=\frac{\int\vec{r}dm}{M}=\frac{\int x\;dm}{M}\;\;\hat{i}\)
+</p><p><br/>
+We need to find the relationship between <i>dm</i> and <i>x</i>. In this problem, the mass is distributed uniformly along the rod. This statement implies that the amount of mass <i>dm</i> in each element of rod <i>dx</i> is the same and independent of the position. As a result, the ratio <i>dm/dx </i>= constant. 
+</p><p>The ratio <i>dm/dx</i> is called <b>mass density</b> per unit length and is noted with the letter <b><i>&#955;</i>:<i>&#955; = dm/dx.</i></b>.
+</p><p><br/>
+<b>If the mass is distributed along a line in the x-axis then</b> <font size="3"> <b><i>dm = &#955; dx</i></b></font>.
+</p><p><b>If the mass is distributed along a line uniformly, the &#955; = constant.</b>
+</p><p><br/>
+Using this relationship in the integral above we have:
+</p><p>\(x_{cm}=\frac{\int_{0}^L x\; \lambda dx}{M}=\frac{\lambda}{M}\int_{0}^L x\; dx =\frac{\lambda}{M}\frac{x^2}{2}|_0^L=\frac{\lambda}{M}\frac{L^2}{2} \mbox{          (eq. 1)}\)
+</p><p><br/>
+To obtain the value of <i>&#955;</i> we use the fact that the total mass and the length of the rod are <i>M</i> and <i>L</i>, then:
+</p><p>\( M=\int_{0}^{M}dm=\int_{0}^L\lambda\; dx=  \lambda \int_{0}^L dx = \lambda L\)
+</p><p><b>5. Solve the integral.</b>
+Replacing <i>&#955; = M/L</i> in (eq. 1) we obtain:
+</p><p>\(x_{cm}=\frac{M}{LM}\frac{L^2}{2}=\frac{L}{2}\)
+</p>
+</td></tr></table>
+<p><b>b) Non-uniform rod:</b> Consider a rod of total mass <i>M</i> and length <i>L</i> along the x-axis. Calculate the center of mass of the rod if its mass per unit length depends linearly with x.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht19','hide','show')" id="ht19l">show</a>]</th></tr>
+<tr style="display:none" id="ht19">
+<td>\(X_{cm} = \frac{2}{3}L \)
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Derivation:</b>
+ [<a href="javascript:toggleDisplay('ht20','hide','show')" id="ht20l">show</a>]</th></tr>
+<tr style="display:none" id="ht20">
+<td><b>1. Select a coordinate system:</b>
+<p>Let's consider the rod to be along the x-axis. We will choose a coordinate system with origin at the left end of the rod. 
+</p><p><b>2. Divide the extended object in small elements of mass <i>dm</i>.</b>
+</p><p><b>3. Define the position of the mass element <i>dm</i>.</b>
+</p><p>With respect to our coordinate system, the element of mass <i>dm</i> is located at position:
+</p><p>\(\vec{r}=x\hat{i}\)
+</p><p><br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module5/files/cmRod2.png"/>
+</p><p><b>4. Use the information about the mass distribution.</b>
+</p><p>The mass is distributed along a line:
+</p><p>\( dm=\lambda(x)\;dx\)
+</p><p>The mass is not uniformly distributed, because the mass density increases linearly with position.  Therefore we write that:
+</p><p>\(\lambda(x)=\; b\; x\)
+</p><p>where <i>b </i> is a positive constant.
+</p><p><b>5. Solve the integral.</b>
+</p><p>Using this relationship in the integral above we have:
+</p><p>\(X_{cm}=\frac{\int x dm}{M} =\)
+</p><p>\(X_{cm} =\frac{\int_{0}^L x\; \lambda (x) dx}{M}= \frac{1}{M}\int_0^Lx(bx)\;dx= \)
+</p><p>\(X_{cm} =\frac{b}{M}\int_{0}^L x^2\; dx =\frac{b}{M}\frac{x^3}{3}|_0^L=\)
+</p><p>\( X_{cm}=\frac{b}{M}\frac{L^3}{3} \mbox{          (eq. 1)}\)
+</p><p><br/>
+Note that the value of <i>b</i> is not given but it can be obtained using that the total mass of the rod is <i>M</i>:
+</p><p>\(M = \int dm = \int_0^L \lambda (x)\; dx \)
+</p><p>\(M = \int_0^L\;bx\;dx=b\frac{x^2}{2}|_0^L \)
+</p><p>\(M =  b\frac{L^2}{2}\)
+</p><p><br/>
+Then \( b = \frac{2M}{L^2}\)
+</p><p>and the position of the center of mass is:
+</p><p>\(X_{cm} = \frac{2}{3}L \)
+</p><p>The center of mass is now shifted towards the right end. This is reasonable because the further we go from the left end, the more massive the mass elements.
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

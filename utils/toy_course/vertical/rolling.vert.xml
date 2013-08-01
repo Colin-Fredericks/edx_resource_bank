@@ -1,0 +1,7 @@
+<vertical>
+	<problem filename="F12/RQ/rolling-1.problem" display_name="Rolling" attempts="2" weight="0.5"/>
+	<problem filename="F12/RQ/rolling-2.problem" display_name="Rolling, Part 2" attempts="2" weight="0.5"/>
+	<problem filename="F12/RQ/rolling-3.problem" display_name="Rolling, Part 3" attempts="2" weight="0.5"/>
+	<problem filename="F12/RQ/rolling-4.problem" display_name="Rolling, Part 4" attempts="2" weight="0.5"/>
+	<discussion for="Rolling" id="MReV_Summer2013_rolling" discussion_category="Describing Rotational and Translational Motion" />
+</vertical>

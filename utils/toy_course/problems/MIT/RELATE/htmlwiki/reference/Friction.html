@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Static_friction').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Static_friction.html'); 
+$('#Kinetic_friction').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Kinetic_friction.html');
+$('#Contact_interaction').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Contact_interaction.html'); 
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+			<p>The component of the <!--<a id="go" rel="leanModal" href="#Contact_interaction" name="Contact_interaction" onclick="domath()">-->contact force<!--</a>--> from a surface that is parallel to the plane of the surface. Friction forces will arise when an object is sliding along the surface or when an object resting on the surface is subject to forces that would cause it to slide in the absence of friction. The force of friction will always resist the existing or intended sliding motion.  Friction has two basic manifestations that are qualitatively different:
+</p>
+<ul><li> <!--<a id="go" rel="leanModal" href="#Static_friction" name="Static_friction" onclick="domath()">-->Static Friction<!--</a>-->: The specific manifestation of friction which attempts to resist efforts to move an object that is currently at rest with respect to a surface. If possible, static friction provides just enough force to keep the object stationary, and no more. When the net force attempting to create sliding motion exceeds a certain limiting value proportional to the normal force exerted by the surface on the object, static friction will be unable to prevent motion. 
+</li><li> <!--<a id="go" rel="leanModal" href="#Kinetic_friction" name="Kinetic_friction" onclick="domath()">-->Kinetic Friction<!--</a>-->:  The specific manifestation of friction that is directly opposed to an object's sliding motion along a surface. The force of kinetic friction has a size independent of the speed of the object, and proportional to the normal force exerted on the object by the surface.
+</li></ul>
+<div id="Kinetic_friction" class="popup"></div>
+<div id="Static_friction" class="popup"></div>
+<div id="Contact_interaction" class="popup"></div>
+</body>
+</html>
+

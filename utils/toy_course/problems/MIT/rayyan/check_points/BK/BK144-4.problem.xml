@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+          <p>
+Part 4. 
+If the maximum speed of block 2m is u, which equation is correct?
+</p>
+
+        <br/>
+        <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+          <choicegroup type="MultipleChoice">
+            <choice location="random" name="foil1" correct="false">
+
+                  \(kx^{2}\)=  \(2mu^{2}\) 
+
+            </choice>
+            <choice location="random" name="foil2" correct="true">
+
+                  \(kx^{2}\) = \(6mu^{2}\)
+
+            </choice>
+            <choice location="random" name="foil3" correct="false">
+
+                  \(kx^{2}\)= \(3mu^{2}\)
+
+            </choice>
+            <choice location="random" name="foil5" correct="false">
+
+                  \(kx^{2}\)
+
+ =  \(2mu^{2}\)
+
+            </choice>
+            
+          </choicegroup>
+        </multiplechoiceresponse>
+
+    
+  </problem>
+</html>

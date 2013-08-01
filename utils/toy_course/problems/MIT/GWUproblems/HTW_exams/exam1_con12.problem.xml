@@ -1,0 +1,20 @@
+<html>
+  <problem>
+
+      <p>A car starts from rest and accelerates up to 30 mph.  After a minute, the car (at 30 mph) accelerates again up to 60 mph.  What can you say about the work done by the engine to perform these increases in speed?</p>
+
+    <br/>
+
+    <p>The work done during the 0-30 mph increase is...</p>
+	<optionresponse>
+    	<optioninput name="answer" options="('Greater Than','Less Than','Equal To','Cannot Compare')" correct="Less Than"></optioninput>
+	</optionresponse>
+	<p>...the work done during the 30-60 mph increase.</p>
+
+    <p>The work done during each increase is...</p>
+	<optionresponse>
+    	<optioninput name="answer" options="('Positive','Negative','Zero')" correct="Positive"></optioninput>
+	</optionresponse>
+
+  </problem>
+</html>

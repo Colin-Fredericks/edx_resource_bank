@@ -1,0 +1,57 @@
+<chapter display_name="5: Core Models and Planar Dynamics">
+	<sequential display_name="Mini Survey 5 - Favorite Resources" filename="mini_survey_5" />
+	<sequential display_name="Core Models and Planar Dynamics" url_name="Core_Models_and_Planar_Dynamics">
+		<vertical display_name="Core Models">
+			<html display_name="Core Models" filename="problems/MIT/RELATE/htmlwiki/Unit5/Core_Models_and_Plan_1.html"/>
+			<discussion for="Core Models" id="MReV_Summer2013_Core_Models_and_Plan_1" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Map Of Core Models" url_name="Map_Of_Core_Models">
+		<vertical display_name="Map of Core Models">
+			<html display_name="Map of Core Models" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module1/Map_of_Core_Models.html"/>
+			<discussion for="Map of Core Models" id="MReV_Summer2013_Map_of_Core_Models" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Choosing a Model">
+			<html display_name="Choosing a Model" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module1/Choosing_a_Model.html"/>
+			<discussion for="Choosing a Model" id="MReV_Summer2013_Choosing_a_Model" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Hierarchy of Models" url_name="Hierarchy_of_Models">
+		<vertical display_name="Hierarchy of Models">
+			<html display_name="Hierarchy of Models" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module2/Hierarchy_of_Models_2.html"/>
+			<discussion for="Hierarchy of Models" id="MReV_Summer2013_Hierarchy_of_Models_2" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Constant Velocity Model" url_name="Constant_Velocity_Model">
+		<vertical display_name="Constant Velocity Model">
+			<html display_name="Constant Velocity Model" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module3/Constant_Velocity_Mo.html"/>
+			<discussion for="Constant Velocity Model" id="MReV_Summer2013_Constant_Velocity_Mo" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Constant Acceleration Model" url_name="Constant_Acceleration_Model">
+		<vertical display_name="Constant Acceleration Model">
+			<html display_name="Constant Acceleration Model" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module4/Constant_Acceleratio_1.html"/>
+			<discussion for="Constant Acceleration Model" id="MReV_Summer2013_Constant_Acceleratio_1" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: Training Flight">
+			<html display_name="Example: Training Flight" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module4/IE_Training_Flight.html"/>
+			<discussion for="Example: Training Flight" id="MReV_Summer2013_IE_Training_Flight" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Freefall">
+			<html display_name="Freefall" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module4/Freefall.html"/>
+			<discussion for="Freefall" id="MReV_Summer2013_Freefall" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Tossing a Ball">
+			<problem display_name="Checkpoint 1: Tossing a Ball" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/ball_1/ball_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Tossing a Ball" id="MReV_Summer2013_ball_2" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Tossing a Ball">
+			<problem display_name="Checkpoint 2: Tossing a Ball" filename="MIT/rayyan/osu/02_Motion Along a Straight Line/ball_1/ball_4.problem" attempts="1"/>
+			<discussion for="Checkpoint 2: Tossing a Ball" id="MReV_Summer2013_ball_4" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: Keys Please">
+			<html display_name="Example: Keys Please" filename="problems/MIT/RELATE/htmlwiki/Unit5/Module4/IE_Keys_Please.html"/>
+			<discussion for="Example: Keys Please" id="MReV_Summer2013_IE_Keys_Please" discussion_category="Core Models and Planar Dynamics" />
+		</vertical>
+	</sequential>
+</chapter>

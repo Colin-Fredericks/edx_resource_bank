@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 13 -->
+
+<problem>
+
+	<p>A simple pendulum is pulled sideways from the equilibrium position and then released.</p>
+	<img src="/static/problems/F12/MRI/images/MRI13.png" />
+
+	<h3>Part 1</h3>
+	<p>Immediately after the pendulum is released, the net force acting on it is directed:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Straight down</choice>
+			<choice location="random" correct="false">Along the string toward the pivot point</choice>
+			<choice location="random" correct="false">Along the string away from the pivot point</choice>
+			<choice location="random" correct="true">Perpendicular to the string</choice>
+			<choice location="random" correct="false">Direction is undefined</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The centripetal acceleration is zero.</choice>
+			<choice location="random" correct="false">The force of tension is zero.</choice>
+			<choice location="random" correct="false">The net force on the ball is zero.</choice>
+			<choice location="random" correct="false">The normal force on the ball equals the force of tension.</choice>
+			<choice location="random" correct="false">The force of tension equals the weight of the ball.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

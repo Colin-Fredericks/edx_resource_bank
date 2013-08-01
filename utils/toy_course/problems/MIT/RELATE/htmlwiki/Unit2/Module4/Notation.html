@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Normal Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Notation for Normal Forces</h3>
+<p>In this course, we will represent normal forces with the symbol "N."  Where we had previously written <i>F</i> with two subscripts, we will generally write <i>N</i> with two subscripts to indicate a normal foce.  The subscripts will still indicate the target and the source of the force, respectively.  We will discuss the reason for this special notation when we introduce the full form of the contact force. 
+</p>
+<h3> Illustrative Examples</h3>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Horizontal Surface (Floor)
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> Consider a box at rest on a horizontal surface, the normal force exerted on the box by the surface, <b>N<sub>BF</sub></b>, will be vertical.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/Unit1Mod7Floor.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Vertical Surface (Wall)
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> For a book pushed against a wall or other vertical surface, the normal force will be horizontal as shown in the free body diagram below.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/Unit1Mod7Wallc.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Inclined Surface (Ramp)
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> The normal force due to a ramp is always perpendicular to the ramp surface.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/Unit1Mod7Rampc.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Object-Object Interface
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td> When two objects are in contact, they exert equal and opposite normal forces on each other, as required by Newton's Third Law.  Note that the surface under the two objects will still exert a separate normal force, <b>N<sub>1F</sub></b>, on the lower object.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module4/files/Unit1Mod7Twod_correct.png"/>
+</p>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/friction.png" alt="friction" height="119"/>
+
+      <p><br/>
+Two vehicles of mass M and 2M are moving in the same direction and with the same speed on a highway. Both drivers apply their brakes at the same time and both vehicles begin sliding. If the coefficient of kinetic friction \(\mu_k\) is the same for both vehicles, which vehicle stops first?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              The less massive one          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              The more massive one          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              Both stop at the same time          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              Not enough information to determine          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

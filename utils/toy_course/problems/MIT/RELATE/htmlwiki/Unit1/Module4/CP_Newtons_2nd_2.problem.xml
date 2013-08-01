@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Newton's 2nd Law 2</title>
+    <h3>Check Your Understanding of Newton's Second Law</h3>
+      <p>Suppose an object is initially sliding due east at constant speed on very slippery ground (obeying Newton's First Law) when it is suddenly acted on by a force that acts due north.  What is the direction of the object's acceleration?</p>
+
+    <multiplechoiceresponse texlayout="horizontal" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="Foil1" correct="true">
+              <text>The object will accelerate due north.</text>
+        </choice>
+        <choice location="random" name="Foil2" correct="false">
+              <text>The object will accelerate due east.</text>
+        </choice>
+        <choice location="random" name="Foil3" correct="false">
+              <text>The object will accelerate north of east, but closer to north than east (&gt; 45&#xB0; N of E).</text>
+        </choice>
+        <choice location="random" name="Foil4" correct="false">
+             <text> The object will accelerate north of east, but closer to east than north (&lt; 45&#xB0; N of E).</text>
+        </choice>
+        <choice location="random" name="Foil5" correct="false">
+             <text> The object will accelerate exactly north-east (exactly 45&#xB0; N of E).</text>
+        </choice>
+      </choicegroup>
+          </multiplechoiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Describing Simple Harmonic Motion</title>
+
+<p>Which of the following equations describes simple harmonic motion? <b>Check all that apply.</b> Note that x, v, a and t stand for, respectively, position, velocity, acceleration and time. Symbol c is a positive constant.</p>
+
+
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true"><text>\(x=-ac\)</text></choice>
+      <choice correct="true"><text>\(dv/dt = -cx\)</text></choice>
+      <choice correct="false"><text>\(a=c(-dx/dt)\)</text></choice>
+      <choice correct="false"><text>\(dx/dt = -dv/dt\)</text></choice>
+      <choice correct="true"><text>\(c(d^2x/dt^2)=-x\)</text></choice>
+      <choice correct="false"><text>\(c(dv/dt)=(1/x)\)</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+
+  </problem>
+</html>

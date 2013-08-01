@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint: Displacement in Simple Harmonic Motion</title>
+
+
+<p>Which of the following equations describes simple harmonic motion? <b>Check all that apply.</b> Symbols b, c and d stand for positive constants. Symbols x and t stand for,respectively, position and time.</p>
+
+
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="false"><text>\(x(t)=\cos(bt)+ct\)</text></choice>
+      <choice correct="true"><text>\(x(t)=\cos(bt+ct)\)</text></choice>
+      <choice correct="true"><text>\(x(t)=(\cos(bt+ct))/d\)</text></choice>
+      <choice correct="true"><text>\(x(t)=d\cos(bt+ct)\)</text></choice>
+      <choice correct="true"><text>\(x(t)=d\cos(bt+c)\)</text></choice>
+      <choice correct="true"><text>\(x(t)=d\cos(bt/c)\)</text></choice>
+      <choice correct="false"><text>\(x(t)=(d\cos(bt+c))t\)</text></choice>
+      <choice correct="false"><text>\(x(t)=(d\cos(bt+c))/t\)</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+
+
+  </problem>
+</html>

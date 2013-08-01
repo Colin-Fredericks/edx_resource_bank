@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/work_KE_1.png" alt="work_KE_1" height="150"/>
+
+      <p><br/>
+A lighter car and a heavier truck, both initially at rest, are pushed with the same constant force F. After both vehicles travel a distance d, which of the following statements is true? (Ignore friction)
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil2" correct="false">
+
+              The heavier truck will have more kinetic energy          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              They will have the same velocity          
+        </choice>
+        <choice name="foil4" correct="true">
+
+              They will have the same kinetic energy          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              Not enough information to determine          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/sports_1.png" alt="sports_1" height="119"/>
+
+      <p>
+</p>
+      <p><br/>
+	A car of mass m is moving on a highway. The driver applies the brakes and the car starts to slide. Assuming a coefficient of kinetic friction &#x3BC;<sub>k</sub>, what is the car's acceleration? (Take the direction of motion to be the positive direction). </p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+                -\(\mu_{k} m\)
+
+        </choice>
+        <choice name="foil2" correct="true">
+
+                -\(\mu_{k} g\)
+
+        </choice>
+        <choice name="foil3" correct="false">
+
+                -\(\mu_{k} m g \)
+
+        </choice>
+        <choice name="foil4" correct="false">
+
+                \(- m g\)
+
+        </choice>
+        <choice name="foil5" correct="false">
+
+              Not enough information to determine          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

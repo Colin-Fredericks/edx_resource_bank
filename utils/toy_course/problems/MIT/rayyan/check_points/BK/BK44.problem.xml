@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Momentum and Impulse</title>
+
+      <p>In the diagram, a 40-kg block is moving along a horizontal frictionless surface, acted upon by two horizontal forces as shown. 
+
+</p>
+      <br/>
+
+    <img width="400" alt="BK44.png" src="/static/problems/MIT/rayyan/check_points/BK/BK44.png"/>
+        <br/>
+
+      <p>
+Part 1. 
+What is the displacement of the block during a 5-second time interval?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                25 m
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                10 m
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                6.25 m
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+2.5 m
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+
+One needs to know the initial velocity of the block to find the answer
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 2. 
+What is the change in the momentum of the block during a 5-second time interval?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                100 kg m/s 
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                400 kg m/s
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                800 kg m/s
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                2 kg m/s
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                One needs to know the initial velocity of the block to find the answer
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+
+        <p>
+Part 3. 
+What is the net impulse delivered to the block during a 5-second time interval?
+</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+
+                100 kg m/s 
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                400 kg m/s
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                800 kg m/s
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+                2 kg m/s
+
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+
+                One needs to know the initial velocity of the block to find the answer
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      </problem>
+</html>

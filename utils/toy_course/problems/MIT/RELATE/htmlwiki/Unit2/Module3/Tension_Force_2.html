@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Tension Force</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h2>
+			Tension Force</h2>
+<p>
+			Ropes, wires, strings, etc. are commonly used to provide force in everyday situations. A force provided by a rope or string is generally called a tension force.</p>
+<h3>
+Learning Goals</h3>
+<p>
+			After completing this module, you should be able to:</p>
+<ul style="list-style:disc outside none">
+<li>
+				State the two important properties of the tension forces exerted by a segment of a massless rope.</li>
+<li>
+				Describe the tension in a rope with connections at more than two points.</li>
+<li>
+				Describe the tension in a rope that passes over a massless pulley.</li>
+<li>
+				Correctly include tension forces arising from massless ropes in free body diagrams.</li>
+</ul>
+<h3>
+Idealized Ropes</h3>
+<p>
+			When discussing ropes, strings, etc. in this course, it will generally be assumed that they have zero mass and do not stretch. In this case, their behavior is fairly simple and can be summarized with two simple rules:</p>
+<ol style="list-style-type:decimal">
+<li>
+				A segment of a massless rope can only exert a tension force if it is secured between two points of contact on different objects.</li>
+<li>
+				If a massless rope is stretched between two points of contact with other objects, the tension force exerted by a given segment of the rope on the objects on either side will be equal in size and will point directly along the rope segment.</li>
+</ol>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Tension as a Constraint: A box hanging from the ceiling of an elevator</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<p>
+			Consider a box hanging from an ideal rope attached to the ceiling of an elevator. The elevator is accelerating upwards with an acceleration of magnitude <i>a</i>. The circumstance here is that the rope constrains the box to move upwards with the same acceleration as the elevator. We therefore know that the force of tension must be enough to cause this motion. Therefore we'll typically apply Netwon's Second Law to the box which will enable us to find an equation for the tension.</p>
+
+The box of mass <i>m</i> in the figure is interacting with two objects: the rope and the Earth. As a result of these two interactions there are two forces acting on the box (see the free body diagram):
+						<ul style="list-style:disc outside none">
+<li>
+\(\vec{F}_{bE}\) is the gravitational force on the box by the Earth. It points down and has a magnitude of <i>F</i><sub><i>b</i><i>E</i></sub> = <i>m</i><i>g</i>.</li>
+<li>
+\(\vec{F}_{bR}\) is the force of tension on the box by the rope. It points up.</li>
+</ul>
+<p>
+<br/>
+							In this problem, the forces on the box are along the vertical direction, therefore we can write Newton's Second Law  as in terms of just the y-component:</p>
+<p>
+<br/>
+\(\sum F_{y} = F_{bR} - mg = ma\)</p>
+<p>
+<br/>
+							where the signs in the expression above reflect our choice of coordinate system (positive y-axis pointing up). We rearrange to obtain:</p>
+<p>
+<br/>
+\(\mathcal{}F_{bR} = m(a+g)\)</p>
+<p>
+<br/>
+							Note that the magnitude of the force of tension is obtained only after applying Newton's Second Law  and depends on the box's acceleration, while the gravitational force on the box is given by the gravitational force law alone, independent of the acceleration.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit2/Module3/files/BoxElevator1.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

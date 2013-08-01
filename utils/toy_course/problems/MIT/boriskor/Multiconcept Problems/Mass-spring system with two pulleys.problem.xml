@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/19-mass spring two pulleys.png" alt="Mass-spring system with two pulleys"/>
+        <br/>
+
+<p>In the diagram, the strings and the pulleys are light and frictionless. The force constant of the spring is \(k\) and the mass of the suspended block is \(m\). Initially, the system is in equilibrium. Then the block is pulled downward and released. How long would it be before the block returns to the point of release?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+                \(t = 0.5\pi \sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil2" correct="true">
+                \(t = \pi \sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+                \(t = 2\pi \sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+                \(t = 0.25\pi \sqrt{m/k}\)
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+                \(t = 4\pi \sqrt{m/k}\)
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+</problem>
+</html>

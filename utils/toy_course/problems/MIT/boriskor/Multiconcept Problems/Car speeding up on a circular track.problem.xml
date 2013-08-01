@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+F="(4*m*pi*r/(t^2))*sqrt(1+16*pi^2)"
+
+</script>
+
+      <p><br/>A car of mass \(m\) takes off from rest around a circular track of radius \(r\). 
+      Speeding up at a constant rate, the car takes \(t\) seconds to go around the track once. 
+      What is the magnitude of the <i>net</i> force \(F\) acting on the car at the end of the trip? 
+      In your answer, use <b>pi</b> for \(\pi=3.1415...\)
+</p>
+
+    <br/>
+    \(F=\)
+    <formularesponse answer="$F" samples="m,r,t,pi@20,4,5,3:50,10,12,8#2">
+      <responseparam default="0.01" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+  </problem>
+</html>

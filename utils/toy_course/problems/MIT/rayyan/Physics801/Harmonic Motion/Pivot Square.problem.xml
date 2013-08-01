@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/analiab/Figures/SHO/squarePendulum.png"/>
+    <br/>
+
+    <p>A rod of negligible mass and length r has one end attached rigidly to the center of mass of a solid square as shown. The other end of the rod can pivot freely from a pivot point fixed to the ceiling and oscillates with a period \(T_0\).</p>
+	<p>A second rigid pendulum is otherwise the same but the rod has a larger length R. The second pendulum has a period \(T\).</p>
+	<p>How does \(T\) compare to \(T_0\)? Assume the solid square block can have any size dimensions such that it does not hit the ceiling when attached to either rod.</p>
+
+    <optionresponse texlayout="horizontal" randomize="yes">
+      <ul>
+        <li>
+            <p>\(T \ge T_0 \sqrt{r/R}\)</p>
+          <optioninput location="random" name="foil1" options="('Has to be True','May be True','Has to be False')" correct="Has to be True"></optioninput>
+        </li>
+        <li>
+            <p>\(T \le T_0 \sqrt{R/r}\)</p>
+          <optioninput location="random" name="foil2" options="('Has to be True','May be True','Has to be False')" correct="Has to be True"></optioninput>
+        </li>
+        <li>
+            <p>\(T = T_0\)</p>
+          <optioninput location="random" name="foil3" options="('Has to be True','May be True','Has to be False')" correct="May be True"></optioninput>
+        </li>
+        <li>
+            <p>\(T &gt; T_0\)</p>
+          <optioninput location="random" name="foil4" options="('Has to be True','May be True','Has to be False')" correct="May be True"></optioninput>
+        </li>
+        <li>
+            <p>\(T &lt; T_0\)</p>
+          <optioninput location="random" name="foil5" options="('Has to be True','May be True','Has to be False')" correct="May be True"></optioninput>
+        </li>
+      </ul>
+	  
+      <hintgroup showoncorrect="no">
+          <p>If the blocks dimensions are large enough, increasing the length of the rod slightly actually decreases the period. This could only happen if the part of the square was actually above the pivot.
+		  <br/> Call \(I\) the moment of inertia of the square about its center of mass and look at the limiting cases for \(T\) and \(T_0\) based on \(I\).</p>
+      </hintgroup>
+    </optionresponse>
+      </problem>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<!-- Taken from 8.01rq -->
+
+    <title> CheckPoint: Momentum of a system 2</title>
+
+      <p>The masses and the instantaneous velocities of three spheres are shown in the diagram. </p>
+
+	<p><img src="/static/problems/F12/RQ/images/RQ4.png" /></p>
+        <br/>
+
+      <p>
+Part 1. 
+What is the magnitude of the total momentum of the system that includes spheres 1 and 2 only?
+</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+
+                28 kg m/s
+
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+
+                66 kg m/s
+
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                4.0 kg m/s
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+
+8.5 kg m/s
+          </choice>
+          <choice location="random" name="foil5" correct="true">
+
+20 kg m/s
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    </problem>
+</html>

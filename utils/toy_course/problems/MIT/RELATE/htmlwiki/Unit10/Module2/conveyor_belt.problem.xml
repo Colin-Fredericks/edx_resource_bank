@@ -1,0 +1,142 @@
+<<<<<<< HEAD
+<?xml version="1.0"?>
+<html>
+  <problem>
+          <a href="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module2/files/conveyor_belt_detailed.png">
+        <img width="594" alt="sphere on conveyor belt" height="237" src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module2/files/conveyor_belt_detailed.png"/>
+      </a>
+
+        <p>
+</p>
+        <p>A sphere of radius r rolls with center-of-mass velocity \(v_s\) on top of a conveyor belt, which moves with velocity \(v_b\) as shown. From the viewpoint of an outside observer, what is the constraint equation that this sphere's velocity must obey if the sphere is rolling without slipping? (Take counterclockwise rotation as the positive direction.)</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                  \( v_s = r\omega_s \)
+          </choice>
+          <choice name="foil2" correct="false">
+                  \( v_s = -r\omega_s \)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \( v_s = r\omega_s + v_b \)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \( v_s = r\omega_s - v_b \)
+          </choice>
+          <choice name="foil5" correct="true">
+                  \( v_s = -r\omega_s + v_b \)
+          </choice>
+          <choice name="foil6" correct="false">
+                  \( v_s = -r\omega_s - v_b \)
+          </choice>
+          <choice name="foil7" correct="false">
+
+                 None of the above. 
+
+          </choice>
+        </choicegroup>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+            <p>This problem assumes that counterclockwise rotation is positive, and that velocity pointing to the right is positive. It may help to consider the case where the ball is rolling such that it stands still when measured by an outside observer.</p>
+
+        </hintgroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>
+=======
+<?xml version="1.0"?>
+
+<html>
+
+  <problem>
+
+      <a href="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module2/files/conveyor_belt_detailed.png">
+
+        <img width="594" alt="sphere on conveyor belt" height="237" src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module2/files/conveyor_belt_detailed.png"/>
+
+      </a>
+
+        <p>
+
+</p>
+
+        <p>A sphere of radius r rolls with center-of-mass velocity \(v_s\) on top of a conveyor belt, which moves with velocity \(v_b\) as shown. From the viewpoint of an outside observer, what is the constraint equation that this sphere's velocity must obey if the sphere is rolling without slipping? (Take counterclockwise rotation as the positive direction.)</p>
+
+      <br/>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+
+        <choicegroup type="MultipleChoice">
+
+          <choice name="foil1" correct="false">
+                  \( v_s = r\omega_s \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil2" correct="false">
+                  \( v_s = -r\omega_s \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil3" correct="false">
+                  \( v_s = r\omega_s + v_b \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil4" correct="false">
+                  \( v_s = r\omega_s - v_b \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil5" correct="true">
+                  \( v_s = -r\omega_s + v_b \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil6" correct="false">
+                  \( v_s = -r\omega_s - v_b \)
+
+              <br/>
+
+          </choice>
+
+          <choice name="foil7" correct="false">
+
+                 None of the above. 
+
+              <br/>
+
+          </choice>
+
+        </choicegroup>
+
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+            <p>This problem assumes that counterclockwise rotation is positive, and that velocity pointing to the right is positive. It may help to consider the case where the ball is rolling such that it stands still when measured by an outside observer.</p>
+
+        </hintgroup>
+
+      </multiplechoiceresponse>
+
+
+  </problem>
+
+</html>
+
+>>>>>>> f5f7df5110bb2f757a5898b9fec8e24d5b981e9e

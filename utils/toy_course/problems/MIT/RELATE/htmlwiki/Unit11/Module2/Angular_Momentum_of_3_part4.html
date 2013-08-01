@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>Spin Angular Momentum of Planar Objects</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+
+<body>
+
+
+<!--
+<p><b>Summary???????<b></p>
+<p>1. For all cases, the angular momentum is taken about a point in the plane of motion, and 
+therefore the angular momentum is perpendicular to this plane and we can speak about angular
+ momentum about an axis passing through this point in the plane.  Additionally, the angular 
+ momentum is always given by</p>
+<p>\(\vec{L}_{axis}=I_{axis}\vec{\omega}\)</p>
+<p>2. In the three cases above When a planar object is rotating about an axis through its center of mass, its angular 
+momentum about any point in the plane axis is equal to the angular momentum of the object 
+about its center of mass.  (Be sure you understand that the angular momentum can be 
+calculated about any point, not necessarily the point about which it is rotating.)</p>
+<p>\(\vec{L}_{any}=I_{cm}\vec{\omega}\)</p>
+
+-->
+
+
+
+<b> Illustrative Example: Two balls attached to a rod - Rotation about an axis <u>NOT</u> passing through its center of mass</b>
+<br/>
+<br/>
+
+<p>In general, the angular momentum vector of an object about a point in the axis is <b>NOT parallel to ω</b>. However, the <b>component of the angular momentum along the axis</b> of rotation is <b>proportional to ω</b>. This is shown in the following example.</p>
+
+<table class="subtable collapsible collapsed">
+ <tbody>
+ <tr>
+ <th>Two balls attached by a rod: Rotation about an axis Not passing through the center of mass 
+  [<a href="javascript:toggleDisplay('ht45','hide','show')" id="ht45l">show</a>]
+ </th>
+ </tr>
+ <tr style="display:none" id="ht45">
+ <td>
+
+<p>Let's consider the same rigid object used in the previous example. It consists of two small balls of masses \(m_1\) and \(m_2\), <i><b>m<sub>2</sub></b></i> > <i><b>m<sub>1</sub></b></i>, connected by a rod of negligible mass. The object is placed on a horizontal and frictionless table contained in the x-y plane. The object is set to rotate counterclockwise as viewed from above the x-y plane with an angular speed ω. The axis of rotation passes through the center of the rod, point <b>Q</b> in the figure. At the instant shown in the figure, the center of mass of the object is to the right of point <b>Q</b>. The distance between the particles and the axis of rotation is the same and equal to \(R\), the radius of the circle. Consider now the point <b>S</b> located in the axis of rotation at a distance <i>d</i> below the point <b>Q</b>.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_new.png"/></p>
+
+<p><font color="blue"><u><b>Question 1:</b></u></font></p>
+
+<p>At the instant shown in the figure above, which of the arrows below best represents the direction of the angular momentum of each of the particles about point <i>S</i>?</p>
+
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/ParticleMOvingCircle3.png"/></p>
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>Check your answer [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+<p><u>For particle 1:</u> <b>arrow 2</b>. <u>For particle 2:</u> <b> arrow 8</b>.</p>
+<p>Using the definition, the direction of the angular momentum of each particle is shown in the figure below. For a detailed explanation, see the answer to <b>Question 2</b> of the Illustrative Example: "What's the Axis Point? Moving in a Circle" in the previous module.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_new_part4_L.png"/></p>
+<p><b>Direction:</b></p>
+<p>The angular momentum of the object is the sum of the angular momentum of the two particles. From the figure above we can see that addition of the two angular momentum vectors will result in a vector that is not parallel to the angular velocity vector \(\vec{\omega}\). In addition, the direction of the angular momentum vector is not constant with time. The point of the arrow representing the angular momentum vector will describe a circle about the axis of rotation.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_new_part4_L3.png"/></p>
+<p><b>Magnitude:</b></p>
+<p>As explained in detail in the answer to <b>Question 2</b> of the Illustrative Example: "What's the Axis Point? Moving in a Circle" in the previous module, the velocity vector of each particle is perpendicular to the position vector measured from point <b>S</b>.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_new_part4_L2.png"/></p>
+<p>For example, for particle 2: \(\vec{r}_2 \perp \vec{v}_2\). As a result, the magnitude of the angular momentum about point <b>S</b> of particle 2 is given by:</p>
+<p>\(L_S^2=r_2m_2v_2\)</p>
+<p>where \(r_2 \) is the magnitude of the position vector of ball 2 measured with respect to <b>S</b>, \(\vec{r}_2\), and \(v_2\) is the magnitude of the velocity vector of ball 2 which is given by  \(v_2=\omega R\). Therefore, the angular momentum of ball 2 about point <b>S</b> is given by:</p>
+<p>\(L_S^2=r_2m_2\omega R\)&nbsp;&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+<p>Because the particles are at the same distance from the center of rotation, the angle between the positions vectors \(\vec{r}_1\) and \(\vec{r}_2\) and the axis of rotation are the same and indicated by  \(\varphi \) in the figure. As a result, the angular momentum vectors of each particle are at an angle \(\varphi\) with respect to the xy-plane (see figure).</p>
+
+<p>We consider now the triangle formed by  \(\vec{r}_2\), the axis of rotation and the radius of the circle \(R\) (in the lower right corner of the figure), then:</p>
+<p>\(\sin\varphi= R/r_2\) or \(r_2=R/\sin\varphi\)</p>
+<p>Replacing  \(r_2 \) in (eq. 1) we obtain:</p>
+<p>\(L_S^2=m_2R^2\omega/\sin\varphi\)</p>
+<p>multiplying the above equation by \(\sin\varphi\):</p>
+<p>\(L_S^2\sin\varphi=m_2R^2\omega\)</p>
+<p>The above expression tells us that the component of the angular momentum of particle 2 along the axis of rotation, \(L_{S,z}^2=L_S^2\sin\varphi\), is proportional to \(\omega\):</p>
+<p>\(L_{S,z}^2=m_2R^2\omega\)</p>
+<p>If we repeat the same calculations for particle 1, we obtain that the component of the angular momentum of particle 1 about point <b>S</b> along the axis of rotation is \(L_{S,z}^1=m_1R^2\omega\), and the component of the angular momentum of the rigid object about point <b>S</b> along the axis of rotation is expressed as:</p>
+<p>\(L_{S,z}=L_{S,z}^1+L_{S,z}^2=m_1R^2\omega+m_2R^2\omega=(m_1R^2+m_2R^2)\omega\)</p>
+<p>Inside the parenthesis we recognize the moment of inertia of the object about the center of mass, \(I_{cm}=m_1R^2+m_2R^2\). Therefore,</p>
+<p><i>the component of the angular momentum about point</i> <b>S</b> <i>along the axis of rotation is proportional to \(\omega\) and the constant of proportionality is the moment of inertia about the center of mass</i>:</p>
+<p>\(L_{S,z}=I_{cm}\omega\)</p>
+<br/>
+
+<p><b>Summary:</b></p>
+<p>In this example the rigid object rotates about an axis that does NOT pass through its center of mass. As a result, the angular momentum about any point <b>S</b> along the axis of rotation that is <b>not</b> the point of intersection between the axis of rotation and the plane is such that:</p>
+<p>1. &nbsp;\(\vec{L}_S \) is <b>  NOT PARALLEL </b> to \(\omega\)</p>
+<p>2. &nbsp; \( L_{S,z} = I_{cm}\omega\), the component of the angular momentum along the axis of rotation is <b>proportional</b> to \(\omega\), and the constant of proportionality is \(I_{cm}\).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<font color="blue"><u><b>Question 2:</b></u></font> Consider the case when both particles have the same mass, <i><b>m<sub>1</sub> = m<sub>2</sub> = m</b></i>. In this case the center of mass of the system is at the center of the rod. The axis of rotation is passing through the center of mass of the object. For this case, what is the direction and the magnitude of the angular momentum of the object about point <i><b>S</b></i>?			
+
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>Check your answer [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>Direction:<b>+z axis</b>, Magnitude: <i><b>L<sub>S</sub> = 2mR<sup>2</sup>&#969;</b></i>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>Solution: [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+<p>The angular momentum about point <i><b>S</b></i> of each of the particles are shown in the figure below. To obtain the total angular momentum we need to add both vectors.</p>
+<p><b>Direction:</b></p>
+<p>Before doing the calculation, note that <u>for each particle</u>, the angular momentum about point <i><b>S</b></i>:</p>
+<ul style="list-style:disc outside none">
+	<li>is not parallel to <i><b>&#969;</b></i> (see <b>Question 2</b> of the Illustrative Example: "What's the Axis Point? Moving in a Circle" in the previous module).</li>
+	<li>is at an angle <b>\(\varphi\)</b> with respect to the x-y plane. (This angle is the same for both because the particles are placed <b>symmetrically</b> with respect to the axis of rotation).</li>
+	<li>has a projection on the x-y plane (see figure). </li>
+</ul>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_part4_answer.png"/></p>
+<p>If <i><b>m<sub>1</sub> = m<sub>2</sub> = m</b></i> then:</p>
+<ul style="list-style:disc outside none">
+	<li>the magnitudes of the angular momentum of each particle are equal.</li>
+	<li>the projections of the angular momentum vector on the x-y plane are equal in magnitude but opposite in direction.</li>
+</ul>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_part4_answer2.png"/></p>
+<p><b>Magnitude:</b></p>
+<p>When adding the angular momentum of each particle the x-y plane components cancel and the total angular momentum is given by the sum of the z-components. The magnitude of the angular momentum of each particle is:</p>
+<p>\(L_S^1 = L_S^2 = (mR^2\omega)/\sin\varphi\)</p>
+<p>The z-component is obtained by multiplying the above expressions by \(\sin\varphi\):</p>
+<p>\(L_{Sz}^1 = L_{Sz}^2 = mR^2\omega\)</p>
+<p>The total angular momentum is along the z axis and its magnitude is:</p>
+
+<p>\(L_S=2mR^2\omega\)</p>
+<p>recalling that the moment of inertia of the rigid object, neglecting the mass of the rod, is \(I_{cm}=2mR^2\), then the above expression is:</p>
+<p>\(L_S=I_{cm}\omega\)</p>
+<p>This expression is independent of \(d\), the location of the point <b>S</b> in the axis.</p>
+
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<!--
+
+<p>Lesson: In general, the angular momentum vector of the object about a point in the axis 
+is NOT parallel to ω.  (However, the component of the angular momentum along the axis of 
+rotation is proportional to ω.)</p>
+<p>Note that the when the axis of rotation does not pass through the center of mass of the system, 
+the value of Iaxis can be obtained using the parallel axis theorem. (This is generally easier 
+than going back to the definition of the moment of inertia about an arbitrary point.)  </p>
+-->
+</body>
+</html>
+

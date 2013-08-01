@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Elastic restoring interaction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Infinitely_massive_o').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Infinitely_massive_o.html'); 
+$('#Simple_Harmonic_Moti_2').load('/static/content-mit-8011x/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Simple_Harmonic_Moti_2.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+			<p>A mathematical approximation to the restoring behavior of springs and other elastic solids under small deformations.
+</p>
+<h2> Hooke's Law of Elastic Restoring Force</h2>
+<p>The elastic restoring force from a spring acting on a mass <i>m</i> with the other end of the spring braced against an<!--<a id="go" rel="leanModal" href="#Infinitely_massive_o" name="Infinitely_massive_o" onclick="domath()">-->infinitely massive<!--</a>--> wall has the form:
+</p><p>\( F^{e}_{mw} = - kx \)
+</p><p>where <i>x</i> is the displacement of the end of the spring away from its equilibrium position, and <i>k</i> is a constant of proportionality known as the spring constant or the force constant.  The value of <i>k</i> is different for different springs, with stiffer springs having larger <i>k</i> values.  The units of <i>k</i> are Newtons times meters (N m).
+</p>
+<h2> Elastic Restoring Acceleration and Simple Harmonic Motion</h2>
+<p>The defining relationship for <!--<a id="go" rel="leanModal" href="#Simple_Harmonic_Moti_2" name="Simple_Harmonic_Moti_2" onclick="domath()">-->Simple Harmonic Motion<!--</a>--> in the x-direction is:
+</p><p>\[ a_{x} = -\omega^{2} x\; \]
+</p><p>where &#969; (which is the angular frequency of the resulting motion) is a constant.  
+</p><p>It is possible to show that a mass attached to a spring which is fixed to an infinitely massive object at the other end will satisfy this relationship.  Assuming the spring provides the only force on the mass, Newton's Second Law tells us:
+</p><p>\( F_{net,x} = -kx = ma_{x}\;\)
+</p><p>giving:
+</p><p>\( a_{x} = -\frac{k}{m} x \)
+</p><p>which is in the form of the equation for simple harmonic motion provided that we make the identification:
+</p><p>\( \omega = \sqrt{\frac{k}{m}}\)
+</p>
+<h2> Elastic Potential Energy</h2>
+<p>The elastic restoring interaction is conservative.  When an internal elastic restoring interaction is present, it is customary to represent its effects in the Mechanical Energy description of motion by defining an associated elastic potential energy.  The elastic potential energy is generally chosen to be zero when the spring is at its equilibrium length:
+</p><p>\( U(x=0) = 0\;\)
+</p><p>With this choice, the elastic potential energy takes the form:
+</p><p>\( U^{e} = \frac{1}{2}kx^{2}\)
+</p><p>The potential energy curve for the elastic potential energy is therefore parabolic:
+</p><p><img src="files/ElasPot.png" />
+</p><p>This graph indicates the presence of a point of stable equilibrium at <i>x</i>=0.
+</p>
+<div id="Infinitely_massive_o" class="popup"></div>
+<div id="Simple_Harmonic_Moti_2" class="popup"></div>
+</body>
+</html>
+

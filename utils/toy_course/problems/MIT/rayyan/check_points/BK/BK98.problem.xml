@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.12,0.25,0.8])
+II=random.choice([0.064,0.096,0.12])
+r=random.choice([0.02,0.03,0.035])
+dd=random.choice([0.8,1.1,1.4])
+
+v= r* math.sqrt(2* m* dd*9.8/( II+ m* r* r))
+
+</script>
+
+<p>A yo-yo has mass $m kg and rotational inertia $II kg m<sup>2</sup> measured about
+an axis perpendicular to the screen and passing through its center of mass. A light thin string is wrapped around the central part of the yo-yo that has radius $r m. The string is attached to the ceiling as shown. The yo-yo is released from rest and begins to descend as the string unwraps.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK98.PNG" alt="BK98"/>
+
+<br/>
+<p>Part 1. Describe the major energy transformation that takes place.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+				<text>kinetic rotational into kinetic translational</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                <text>kinetic translational into kinetic rotational</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                <text>gravitational potential into kinetic rotational</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                <text>gravitational potential into kinetic translational</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                <text>kinetic translational into kinetic rotational and gravitational potential</text>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                <text>kinetic rotational into kinetic translational and gravitational potential</text>
+          </choice>
+          <choice location="random" name="foil7" correct="true">
+                <text>gravitational potential into kinetic translational and kinetic rotational</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 2. What is the relationship between the linear speed  \(v\) of the center of mass of the yo-yo and its angular speed \(\omega\)?</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  <text>\( v = \omega r\)</text>
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  <text>\( v = \omega / r \)</text>
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  <text>\( v = 2 \omega r \)</text>
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  <text>\( v = 2 \omega / r \)</text>
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  <text>\( v = \omega r/2 \)</text>
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  <text> \( v = \omega / (2 r) \)</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<p>Part 3. Use conservation of energy to find the linear speed of the yo-yo by the time it descended a distance $dd m. Use g = 9.8 m/s<sup>2</sup>.</p>
+
+	<p>\(v =\)</p>
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

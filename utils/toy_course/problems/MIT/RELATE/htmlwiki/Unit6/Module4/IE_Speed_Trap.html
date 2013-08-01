@@ -1,0 +1,394 @@
+<html><html>
+<head>
+<title>Example: Speed Trap</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Illustrative Example: Speed Trap</h3>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Version 1:</b> A speeder driving with a constant speed of 24.5 m/s approaches a (hidden) stationary police car on a long, straight road. The police officer detects the speeder, and at the instant the speeder passes, the police car begins accelerating after the speeder at a rate of 5.00 m/s<sup>2</sup>. How long will it take for the police car to catch up to the speeder from the instant its acceleration begins? [<a href="javascript:toggleDisplay('ht1','hide','solution')" id="ht1l">solution</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+<b>Systems:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show systems]&quot; )" id="toggledisplay1l" show="">[show systems]</a>
+<div style="display:none;" id="toggledisplay1">
+							There are two separate systems to consider in this problem. The police car and the speeder's car will be treated as separate point particle systems.</div>
+<br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l" show="">[show interactions]</a>
+<div style="display:none;" id="toggledisplay2">
+							The speeder is traveling with a constant velocity, implying that the speeder's car experiences zero net force (the forward force from the pavement on the tires is balanced by the resistive forces). The police car, on the other hand, experiences a constant forward acceleration (and hence a constant forward net force) implying the forward force of the pavement on the tires is larger than the resistive forces acting on the police car.</div>
+<br/>
+<b>Models:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Models]&quot; )" id="toggledisplay3l" show="">[show Models]</a>
+<div style="display:none;" id="toggledisplay3">
+							The motion of the speeder's car will be modeled as "Constant Velocity (Zero Acceleration)". The motion of the police car will be modeled as "One-Dimensional Motion with Constant Acceleration".</div>
+<br/>
+<p>
+<b>Quantitative Approach:</b></p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Choose a Coordinate System that applies to <i>Both</i> Systems [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+										Although we are treating the speeder and police car as separate systems, if we wish to relate the motion of those systems, we must define a single coordinate system that will be used to describe the motion of <i>both</i> systems. A simple choice is to take the positive x-axis to point in the direction of the speeder's motion and to select <i>x</i> = 0 and <i>t</i> = 0 at the location and instant that the speeder passes the police car.</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Describe the Speeder's Motion [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+										The speeder's motion is approximated by the "Constant Velocity" Model, so the speeder's position will be governed by the equation:
+										<p>
+\(\mathcal{}x_{s}(t) = x_{s,i} + v_{s}(t-t_{i})\)</p>
+<p>
+											where we have labeled the quantities with the subscript "s" to designate "speeder".</p>
+<p>
+											Taking the initial time and position to be when the speeder passes the police car, the equation for the speeder's position as a function of time becomes:</p>
+<p>
+\(\mathcal{}x_{s}(t) = v_{s}t\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Describe the Police Car's Motion [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+										The police car's motion is approximated by the "One-Dimensional Motion with Constant Acceleration" Model, which means we have several equations to choose from when describing the police car's motion. As we will see when we attempt to apply the constraints in this problem, however, it is important to find the police car's position as a function of time. The appropriate function is:
+										<p>
+\(\mathcal{}x_{p}(t) = x_{p,i} + v_{p,i}(t-t_{i}) + \frac{1}{2}a_{p}(t-t_{i})^{2}\)</p>
+<p>
+											where we have labeled the quantities with the subscript "p" for "police".</p>
+<p>
+											We now apply our <b>first constraint</b>: the time coordinate must match for each system. Thus, if we choose t<sub>i</sub> = 0 for the speeder, we <b>must</b> also choose t<sub>i</sub> = 0 for the police car. Thus, based upon our choices for the speeder, we must write the position of the police car in the form:</p>
+<p>
+\(\mathcal{}x_{p}(t) = x_{p,i} + v_{p,i}t + \frac{1}{2}a_{p}t^{2} \)</p>
+<p>
+											We also know that the police car has zero speed and zero position (according to our choice of coordinate system) at the time t = 0. Thus, we have:</p>
+<p>
+\(\mathcal{}x_{p}(t) = \frac{1}{2}a_{p}t^{2} \)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Apply Constraints [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+										Having established equations that give the position of each car as a function of time, we now wish to find the time when the police car catches the speeder. To determine this time mathematically, we apply the <b>constraint</b> that the position of <i>both</i> cars must be equal at the time the police car catches the speeder (this is the definition of "catching"). To realize this constraint, we define a time t<sub>catch</sub> and a position x<sub>catch</sub>. This mathematical constraint (like many aspects of motion) is best represented pictorially, as in the figure below.
+										<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap1b.png"/></p>
+<p>
+											To realize the constraint in our equations, we make use of the position functions we established above. Both the speeder and the police car reach position x<sub>catch</sub> at time t<sub>catch</sub> meaning:</p>
+<p>
+\(\mathcal{}x_{catch} = v_{s}t_{catch}\)</p>
+<p>
+<i>and</i></p>
+<p>
+\(\mathcal{}x_{catch} = \frac{1}{2}a_{p}t_{catch}^{2}\)</p>
+<p>
+											Setting these two different expressions for x<sub>catch</sub> equal to each other will allow us to find t<sub>catch</sub></p>
+<p>
+\(\mathcal{}v_{s}t_{catch} = \frac{1}{2}a_{p}t_{catch}^{2}\)</p>
+<p>
+											This is a quadratic equation in t<sub>catch</sub> with the constant term equal to zero. Thus, we can solve by first rearranging into the standard form for a quadratic equation</p>
+<p>
+\(\mathcal{} \frac{1}{2}a_{p}t_{catch}^{2} - v_{s}t_{catch} = 0\)</p>
+<p>
+											and then factoring:</p>
+<p>
+\(\mathcal{} \left(\frac{1}{2}a_{p}t_{catch} - v_{s}\right)t_{catch} = 0\)</p>
+<p>
+											which yields the two roots:</p>
+<p>
+\(\mathcal{} t_{catch} = 0 \)</p>
+<p>
+											or</p>
+<p>
+\( \mathcal{}t_{catch} = \frac{2v_{s}}{a_{p}}\)</p>
+<p>
+											The root t = 0 is not the one we are looking for, but it does make sense that this root emerged as a possible solution. We have been trying to construct an equation that tells us when the police car and the speeder share the same position. Clearly, they <i>do</i> share the same position at t = 0, since that was when the speeder initially passed the stationary police car. This is not the root we seek, however, since we want to find the time after the initial pass that the police car again comes even with the speeder. Thus, we select the second root</p>
+<p>
+\(\mathcal{} t_{catch} = \frac{2v_{s}}{a_{p}} = 9.8 \mbox{ s}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Graphical Representation [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+										Although we have already solved the problem, it is useful to revisit the solution and demonstrate a powerful graphical technique that will help you remember the mathematical form of the solution. Suppose we graphed the equations we found for the position of the speeder and the position of the police car as functions of time. The speeder's position versus time graph is linear, while the police car's is parabolic.
+										<p>
+											&#160;</p>
+<table cellpadding="0" rules="cols" frame="void" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap1speeder.gif"/></td>
+<td width="10px" rowspan="2">
+														&#160;</td>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap1police.gif"/></td>
+</tr>
+<tr>
+<td>
+														Graph showing speeder's position</td>
+<td>
+														Graph showing police car's position</td>
+</tr>
+</tbody>
+</table>
+<p>
+											The meeting times can then be found by plotting both these graphs on the same set of axes and looking for intersections. Doing so (see below) yields the same result we found by algebra: one intersection is at t = 0, when the speeder first passes the police car, and the second is at t = 9.8 s, when the police car catches up to the speeder.</p>
+<table cellpadding="0" rules="cols" frame="void" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap1both.gif"/></td>
+</tr>
+<tr>
+<td>
+														Superposition of the speeder's and police car's position functions</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Version 2:</b> Again, a speeder driving with a constant speed of 24.5 m/s approaches a (hidden) stationary police car on a long, straight road. The police officer detects the speeder, but this time the police officer begins accelerating at a rate of 5.00 m/s<sup>2</sup> only after the speeder has progressed 100 m down the road (the speeder has a 100 m head start). How long will it take for the police car to catch up to the speeder from the instant it begins to accelerate? [<a href="javascript:toggleDisplay('ht7','hide','solution')" id="ht7l">solution</a>]</th>
+</tr>
+<tr style="display:none" id="ht7">
+<td>
+<b>Systems:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show systems]&quot; )" id="toggledisplay4l" show="">[show systems]</a>
+<div style="display:none;" id="toggledisplay4">
+							Again, we will have to treat the speeder's car and the police car as separate point particle systems.</div>
+<br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay5l" show="">[show interactions]</a>
+<div style="display:none;" id="toggledisplay5">
+							As in version 1, the speeder is traveling with a constant velocity, implying that the speeder's car experiences zero net force (the forward force from the pavement on the tires is balanced by losses due to air resistance and friction), and the police car experiences a constant forward acceleration (and hence a constant forward net force) implying the forward force of the pavement on the tires is larger than the resistive forces acting on the police car.</div>
+<br/>
+<b>Models:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay6&quot;, &quot;[hide]&quot;, &quot;[show Models]&quot; )" id="toggledisplay6l" show="">[show Models]</a>
+<div style="display:none;" id="toggledisplay6">
+							As in version 1, the motion of the speeder's car will be modeled as "Constant Velocity (Zero Acceleration)" and the motion of the police car will be modeled as "One-Dimensional Motion with Constant Acceleration".</div>
+<br/>
+<p>
+<b>Quantitative Approach:</b></p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Choose a Coordinate System that applies to <i>Both</i> Systems [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht8">
+<td>
+										Having worked Version 1 of this problem, we know that the coordinate system and the associated constraints on the locations of the police car and the speeder is the key idea in this problem. Thus, we must define a single coordinate system that will be used to describe the motion of <i>both</i> systems. We again choose the positive x-axis to point in the direction of the speeder's motion and to select <i>x</i> = 0, but in this problem it is <i>not</i> a good plan to choose <i>t</i> = 0 at the instant the speeder and police car pass for the first time. The reason is subtle: we are describing the police car with the "Constant Acceleration" Model, but the police car does not actually begin accelerating until the speeder has gone past. Thus, we <i>cannot</i> begin applying the "Constant Acceleration" Model until the speeder is 100 m past the police car. It will therefore be advantageous to set <i>t</i> = 0 at the instant the speeder is 100 m past the police car. This choice is also convenient from the perspective of the problem statement, which asks us for the elapsed time from the moment the police car begins its acceleration. A pictorial representation of these choices is:
+										<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap2b.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Describe the Speeder's Motion [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht9">
+<td>
+										The speeder's motion is again approximated by the "Constant Velocity" Model, so the speeder's position will be governed by the equation:
+										<p>
+\(\mathcal{}x_{s}(t) = x_{s,i} + v_{s}(t-t_{i})\)</p>
+<p>
+											where we have labeled the quantities with the subscript "s" to designate "speeder".</p>
+<p>
+											One important difference from version 1, however, was noted in the choice of coordinate system above. We will <b>not</b> assume that x<sub>s,i</sub> is zero in this problem. Instead, we will take</p>
+<p>
+\(\mathcal{}x_{s,i} = \mbox{100 m}\)</p>
+<p>
+											for the reasons given above. Thus, the equation for the speeder's motion will have the form:</p>
+<p>
+\(\mathcal{}x_{s}(t) = x_{s,i} + v_{s}t\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Describe the Police Car's Motion [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht10">
+<td>
+										The police car's motion is approximated by the "One-Dimensional Motion with Constant Acceleration" Model, which means we have several equations to choose from when describing the police car's motion. We learned in Version 1, however, that it is important to find the police car's position as a function of time. The appropriate function is:
+										<p>
+\(\mathcal{}x_{p}(t) = x_{p,i} + v_{p,i}(t-t_{i}) + \frac{1}{2}a_{p}(t-t_{i})^{2}\)</p>
+<p>
+											Using the coordinate system developed above, we can write this in the form:</p>
+<p>
+\(\mathcal{}x_{p}(t) = \frac{1}{2}a_{p}t^{2} \)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Apply Constraints or Solve Graphically [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht11">
+<td>
+										As discussed in Version 1 of the problem, one mathematical approach to solving is to plot our functions describing the position of the speeder and police car on the same axes and look for intersections. The resulting plot is shown below. Note that this time the speeder's graph does not begin at <i>x</i> = 0, thus there is no second intersection at <i>positive</i> times. If you were to extend each graph to negative times, there would be a second intersection. (<b>Challenge:</b> does this second potential intersection have a physical meaning, like the intersection at <i>t</i> = 0 did in Version 1?)
+										<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module4/files/Speedtrap2both.gif"/></p>
+<p>
+											We can also solve the problem purely using equations if we simply set the position of the speeder equal to the position of the police car. This results in the quadratic equation for t<sub>catch</sub>:</p>
+<p>
+\(\mathcal{} x_{s,i} + v_{s}t_{catch} = \frac{1}{2}a_{p}t_{catch}^{2}\)</p>
+<p>
+											which we can put into canonical form:</p>
+<p>
+\( \mathcal{}\frac{1}{2}a_{p} t_{catch}^{2} - v_{s}t_{catch} - x_{s,i} = 0\)</p>
+<p>
+											This time, we cannot solve for the roots by simply factoring out a <i>t</i>, because of the constant term provided by the nonzero initial position of the speeder. Instead, we apply the quadratic equation:</p>
+<p>
+\(\mathcal{}t_{catch} = \frac{ v_{s} \pm \sqrt{v_{s}^{2} + 2 a_{p} x_{s,i}}}{a_{p}}\)</p>
+<p>
+											which evaluates to:</p>
+<p>
+\(\mathcal{}t_{catch} = -\mbox{3.1 s}\)</p>
+<p>
+											or</p>
+<p>
+\(\mathcal{}t_{catch} = \mbox{12.9 s}\)</p>
+<p>
+											We must choose the positive root, since the Models we have chosen are <i>not valid descriptions of the motion</i> before <i>t</i> = 0 in our coordinates. Thus, the police car will catch the speeder 12.9 seconds after the police car begins accelerating. This solution is consistent with the point of intersection in the graph above.</p>
+<p>
+											&#160;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

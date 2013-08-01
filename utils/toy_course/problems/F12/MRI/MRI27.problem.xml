@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 27 -->
+
+<problem>
+
+	<p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 7 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI27.png" width="465" />
+
+	<br/>
+	<h3>Part 1</h3>
+	<p>A spherical ball of radius R and mass m is released from rest and slides down a frictionless slope of height h. The slope ends with a horizontal surface, which leads to a flat region with friction. The ball begins rotating when it reaches this patch, and eventually rolls without slipping. The goal is to determine the speed of the ball when it reaches the end of area 6. What is the most appropriate way to decompose this problem? </p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">One problem: regions 1-6</choice>
+			<choice correct="false">One problem: regions 1-4 (can ignore 5 and 6)</choice>
+			<choice correct="false">Two problems: 1-2 and 3-6</choice>
+			<choice correct="false">Two problems: 1-4 and 5-6</choice>
+			<choice correct="true">Two problems: 1-2 and 3-4 (can ignore 5 and 6)</choice>
+			<choice correct="false">Three problems: 1-2, 3-4, and 5-6</choice>
+			<choice correct="false">Three problems: 1-2, the 2/3 boundary, and 3-4 (can ignore 5 and 6)</choice>
+			<choice correct="false">Four problems: 1-2, the 2/3 boundary, 3-4, and 5-6</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Mechanical energy is conserved in all areas in this problem.</choice>
+			<choice location="random" correct="false">Mechanical energy is conserved in areas without friction.</choice>
+			<choice location="random" correct="true">Mechanical energy is conserved in areas without friction and in areas where the ball is rolling without slipping.</choice>
+			<choice location="random" correct="false">When the ball moves from the frictionless slope to the flat area with friction, the transition can be modeled as a collision.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

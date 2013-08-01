@@ -1,0 +1,179 @@
+<chapter display_name="1: Newton's Laws">
+	<sequential display_name="Mini Survey 1 - General" filename="mini_survey_1" />
+	<sequential display_name="Newton's Laws" url_name="Newtons_Laws">
+		<vertical display_name="Newton's Laws">
+			<html display_name="Newton's Laws" filename="Unit1/Newtons_Laws.html"/>
+			<discussion for="Newton's Laws" id="MReV_Summer2013_Newtons_Laws" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Newton's First Law" url_name="Newtons_First_Law">
+		<vertical display_name="Newton's First Law">
+			<html display_name="Newton's First Law" filename="Unit1/Module1/Newtons_First_Law.html"/>
+			<discussion for="Newton's First Law" id="MReV_Summer2013_Newtons_First_Law" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Newton's First Law">
+			<problem display_name="CheckPoint 1: Newton's First Law" filename="Unit1/Module1/CP_Newtons_1st.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Newton's First Law" id="MReV_Summer2013_CP_Newtons_1st" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Inertial and Non Inertial Frame of References">
+			<html display_name="Inertial and Non Inertial Frame of References" filename="Unit1/Module1/Inertial_Non_Inertial_frames.html"/>
+			<discussion for="Inertial and Non Inertial Frame of References" id="MReV_Summer2013_Inertial_Non_Inertial_frames" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Newton's Second Law" url_name="Newtons_Second_Law">
+		<vertical display_name="Newton's Second Law">
+			<html display_name="Newton's Second Law" filename="Unit1/Module2/Newtons_Second_Law_2.html"/>
+			<discussion for="Newton's Second Law" id="MReV_Summer2013_Newtons_Second_Law_2" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Motion vs Change">
+			<html display_name="Motion vs Change" filename="Unit1/Module2/Motion_vs_Change.html"/>
+			<discussion for="Motion vs Change" id="MReV_Summer2013_Motion_vs_Change" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Mathematical Form of Newton's 2nd Law">
+			<html display_name="Mathematical Form of Newton's 2nd Law" filename="Unit1/Module2/Mathematical_Form.html"/>
+			<discussion for="Mathematical Form of Newton's 2nd Law" id="MReV_Summer2013_Mathematical_Form" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Drawing Freebody Diagrams">
+			<problem display_name="Checkpoint 1: Drawing Freebody Diagrams" filename="Unit1/Module2/forces.problem" attempts="1"/>
+			<discussion for="Checkpoint 1: Drawing Freebody Diagrams" id="MReV_Summer2013_forces" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Drawing Freebody Diagrams">
+			<problem display_name="Checkpoint 2: Drawing Freebody Diagrams" filename="Unit1/Module2/forces_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 2: Drawing Freebody Diagrams" id="MReV_Summer2013_forces_1" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Drawing Freebody Diagrams">
+			<problem display_name="Checkpoint 3: Drawing Freebody Diagrams" filename="Unit1/Module2/forces_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 3: Drawing Freebody Diagrams" id="MReV_Summer2013_forces_2" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: Newton's Second Law">
+			<problem display_name="CheckPoint 4: Newton's Second Law" filename="Unit1/Module2/BK11.problem" attempts="2"/>
+			<discussion for="CheckPoint 4: Newton's Second Law" id="MReV_Summer2013_BK11" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Newton's Second Law">
+			<problem display_name="CheckPoint 5: Newton's Second Law" filename="Unit1/Module2/BK13.problem" attempts="2"/>
+			<discussion for="CheckPoint 5: Newton's Second Law" id="MReV_Summer2013_BK13" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="The Two Body Rule and Newton's Third Law" url_name="The_Two_Body_Rule_and_Newtons_Third_Law">
+		<vertical display_name="The Two-body Rule and Newton's Third Law">
+			<html display_name="The Two-body Rule and Newton's Third Law" filename="Unit1/Module3/The_Twobody_Rule_and_1.html"/>
+			<discussion for="The Two-body Rule and Newton's Third Law" id="MReV_Summer2013_The_Twobody_Rule_and_1" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Interactions and Force">
+			<html display_name="Interactions and Force" filename="Unit1/Module3/Interactions_and_Force.html"/>
+			<discussion for="Interactions and Force" id="MReV_Summer2013_Interactions_and_Force" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Force Diagrams and Free Body Diagrams">
+			<html display_name="Force Diagrams and Free Body Diagrams" filename="Unit1/Module3/Free_Body_Diagrams.html"/>
+			<discussion for="Force Diagrams and Free Body Diagrams" id="MReV_Summer2013_Free_Body_Diagrams" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checking Free Body Diagrams with Newton's Laws">
+			<html display_name="Checking Free Body Diagrams with Newton's Laws" filename="Unit1/Module3/Checking_FBDs.html"/>
+			<discussion for="Checking Free Body Diagrams with Newton's Laws" id="MReV_Summer2013_Checking_FBDs" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Illustrative Example: Two Blocks">
+			<html display_name="Illustrative Example: Two Blocks" filename="Unit1/Module3/IE_Block1_into_Block2.html"/>
+			<discussion for="Illustrative Example: Two Blocks" id="MReV_Summer2013_IE_Block1_into_Block2" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Force Diagram">
+			<problem display_name="Checkpoint 1: Force Diagram" filename="Unit1/Module3/CP_FBDs.problem" attempts="1"/>
+			<discussion for="Checkpoint 1: Force Diagram" id="MReV_Summer2013_CP_FBDs" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Ball Penetrating Ground">
+			<problem display_name="Checkpoint 2: Ball Penetrating Ground" filename="Unit1/Module3/3rd.problem" attempts="1"/>
+			<discussion for="Checkpoint 2: Ball Penetrating Ground" id="MReV_Summer2013_3rd" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Ball Penetrating Ground">
+			<problem display_name="Checkpoint 3: Ball Penetrating Ground" filename="Unit1/Module3/3rd_1.problem" attempts="1"/>
+			<discussion for="Checkpoint 3: Ball Penetrating Ground" id="MReV_Summer2013_3rd__1" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Checkpoint 4: Ball Penetrating Ground">
+			<problem display_name="Checkpoint 4: Ball Penetrating Ground" filename="Unit1/Module3/3rd_2.problem" attempts="1"/>
+			<discussion for="Checkpoint 4: Ball Penetrating Ground" id="MReV_Summer2013_3rd__2" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Two Cars">
+			<problem display_name="CheckPoint 5: Two Cars" filename="Unit1/Module3/BK10.problem" attempts="2"/>
+			<discussion for="CheckPoint 5: Two Cars" id="MReV_Summer2013_BK10" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Satellite">
+			<problem display_name="CheckPoint 6: Satellite" filename="Unit1/Module3/BK8.problem" attempts="1"/>
+			<discussion for="CheckPoint 6: Satellite" id="MReV_Summer2013_BK8" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name=" Check Point 7: Special Diet">
+			<problem display_name="Check Point 7: Special Diet" filename="Unit1/Module3/u1_m12_l1_p5.problem" attempts="2"/>
+			<discussion for="Check Point 7: Special Diet" id="MReV_Summer2013_u1_m12_l1_p5" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Net Force and Vector Addition" url_name="Net_Force_and_Vector_Addition">
+		<vertical display_name="Net Force and Vector Addition">
+			<html display_name="Net Force and Vector Addition" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module4/Net_Force_and_Vector.html"/>
+			<discussion for="Net Force and Vector Addition" id="MReV_Summer2013_Net_Force_and_Vector" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Video Tutorial: Vector Addition">
+			<problem display_name="Video Tutorial: Vector Addition" filename="MIT/analiab/Problems/Magnitude_vector_addition_concept_question.problem" attempts="1"/>
+			<discussion for="Video Tutorial: Vector Addition" id="MReV_Summer2013_Magnitude_vector_addition_concept_question" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 1: Newton's 2nd Law 2">
+			<problem display_name="CheckPoint 1: Newton's 2nd Law 2" filename="MIT/RELATE/htmlwiki/Unit1/Module4/CP_Newtons_2nd_2.problem" attempts="2"/>
+			<discussion for="CheckPoint 1: Newton's 2nd Law 2" id="MReV_Summer2013_CP_Newtons_2nd_2" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Newton's 2nd Law 1">
+			<problem display_name="CheckPoint 2: Newton's 2nd Law 1" filename="MIT/RELATE/htmlwiki/Unit1/Module4/CP_Newtons_2nd_1.problem" attempts="2"/>
+			<discussion for="CheckPoint 2: Newton's 2nd Law 1" id="MReV_Summer2013_CP_Newtons_2nd_1" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Vector Decomposition">
+			<html display_name="Vector Decomposition" filename="problems/MIT/analiab/Videos/vector_decomposition.html"/>
+			<discussion for="Vector Decomposition" id="MReV_Summer2013_vector_decomposition" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Adding Geometrically">
+			<html display_name="Adding Geometrically" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module4/Adding_Geometrically.html"/>
+			<discussion for="Adding Geometrically" id="MReV_Summer2013_Adding_Geometrically" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Adding Components">
+			<html display_name="Adding Components" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module4/Adding_Components.html"/>
+			<discussion for="Adding Components" id="MReV_Summer2013_Adding_Components" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Video: Adding and Subtracting Vectors">
+			<html display_name="Video: Adding and Subtracting Vectors" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module4/Video_Adding_and_Subtracting_Vectors.html"/>
+			<discussion for="Video: Adding and Subtracting Vectors" id="MReV_Summer2013_Video_Adding_and_Subtracting_Vectors" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Example: Adding Four Forces">
+			<html display_name="Example: Adding Four Forces" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module4/IE_Adding_Forces.html"/>
+			<discussion for="Example: Adding Four Forces" id="MReV_Summer2013_IE_Adding_Forces" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 3 : Forces and Blocks">
+			<problem display_name="CheckPoint 3 : Forces and Blocks" filename="MIT/rayyan/check_points/BK/BK15.problem" attempts="2"/>
+			<discussion for="CheckPoint 3 : Forces and Blocks" id="MReV_Summer2013_BK15" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 4 : Forces and Blocks">
+			<problem display_name="CheckPoint 4 : Forces and Blocks" filename="MIT/rayyan/check_points/BK/BK14.problem" attempts="2"/>
+			<discussion for="CheckPoint 4 : Forces and Blocks" id="MReV_Summer2013_BK14" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 5 : Find the mass">
+			<problem display_name="CheckPoint 5 : Find the mass" filename="MIT/rayyan/check_points/BK/BK18.problem" attempts="10"/>
+			<discussion for="CheckPoint 5 : Find the mass" id="MReV_Summer2013_BK18" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 6 : What is the force?">
+			<problem display_name="CheckPoint 6 : What is the force?" filename="MIT/rayyan/check_points/BK/BK23.problem" attempts="1"/>
+			<discussion for="CheckPoint 6 : What is the force?" id="MReV_Summer2013_BK23" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Sum of Forces">
+			<problem display_name="CheckPoint 7: Sum of Forces" filename="MIT/rayyan/check_points/BK/BK29.problem" attempts="4"/>
+			<discussion for="CheckPoint 7: Sum of Forces" id="MReV_Summer2013_BK29" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Equilibrium" url_name="Equilibrium">
+		<vertical display_name="Equilibrium">
+			<html display_name="Equilibrium" filename="problems/MIT/RELATE/htmlwiki/Unit1/Module5/Equilibrium.html"/>
+			<discussion for="Equilibrium" id="MReV_Summer2013_Equilibrium" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="CheckPoint: Equilibrium">
+			<problem display_name="CheckPoint: Equilibrium" filename="MIT/RELATE/htmlwiki/Unit1/Module5/CP_Equilibrium.problem" attempts="2"/>
+			<discussion for="CheckPoint: Equilibrium" id="MReV_Summer2013_CP_Equilibrium" discussion_category="Newton's Laws" />
+		</vertical>
+		<vertical display_name="Video Tutorial: Block suspended by two strings">
+			<problem display_name="Video Tutorial: Block suspended by two strings" filename="MIT/analiab/Problems/block_on_two_strings_problem.problem" attempts="10"/>
+			<discussion for="Video Tutorial: Block suspended by two strings" id="MReV_Summer2013_block_on_two_strings_problem" discussion_category="Newton's Laws" />
+		</vertical>
+	</sequential>
+</chapter>

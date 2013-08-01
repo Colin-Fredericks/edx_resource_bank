@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<html>
+<!-- circular orbits: forces -->
+<problem>
+
+<h2>Solution</h2>
+
+<p>This is an application of Newton's Law of Universal Gravity:</p>
+<p>\(\vec{F} = -G \frac{M m}{r^2} \hat{r}\)</p>
+<p>If you plug in the given masses and distances to see the relative forces, you will find that B = C > D > A > E.</p>
+
+</problem>
+</html>

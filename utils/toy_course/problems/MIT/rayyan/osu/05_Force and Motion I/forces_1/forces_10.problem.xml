@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/forces_7.png" alt="forces_7" height="150"/>
+
+      <p>Tom now pushes eight identical books on the horizontal and frictionless table (he's compulsive). The force that book 1 exerts on book 2 is \(F_{21}\); the force that book 7 exerts on book 8 is \(F_{87}\). What is the ratio \(F_{21}/ F_{87}\)?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			<text>1/8</text>
+        </choice>
+        <choice name="foil2" correct="false">
+			<text>1/7</text>
+        </choice>
+        <choice name="foil3" correct="false">
+			<text>1</text>
+        </choice>
+        <choice name="foil4" correct="true">
+			<text>7</text>
+        </choice>
+        <choice name="foil5" correct="false">
+			<text>8</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

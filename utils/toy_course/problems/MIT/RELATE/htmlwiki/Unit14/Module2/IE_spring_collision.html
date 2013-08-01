@@ -1,0 +1,466 @@
+<html>
+<head>
+<title>Multiple Step Problems and Consecutive Models</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Example </h3>
+
+<table border="1">
+<tr>
+<td colspan="2" align="left">
+<p>A box of mass <i><b>m</b></i> is moving with speed  <b><i>v</i><sub>i</sub></b> along a horizontal and frictionless surface. It encounters a second box with the same mass that is attached to one end of a massless spring of constant <i>k</i>. The other end of the spring is attached to a fixed wall. Box 2 is initially at rest and the spring is at equilibrium. After the collision the boxes move together. What is the value of <i>v</i><sub>i</sub> if the spring is compressed a distance <i>d</i> from its equilibrium position?</p>
+<p>The initial and the final state of the problem are summarized below:</p>
+</td>
+</tr>
+<tr>
+<td>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module2/files/2BlocksSpring2Initialb.png" />
+</td>
+<td>
+	<img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module2/files/2BlocksSpring2Finalb.png" />
+</td></tr>
+<tr valign="top">
+<td>
+	<b><i>t</i><sub>i</sub></b><b>&nbsp;: instant right before 1 hits 2.</b>
+</td>
+<td>
+	<b><i>t</i><sub>f</sub></b><b>&nbsp;: instant right when the spring is at maximum compression</b>
+</td>
+</tr>
+</table>
+
+<p>This problem is an example of a <b>two step problem</b>. The time interval <b><i>t</i><sub>i</sub> &lt; <i>t</i> &lt; <i>t</i><sub>f</sub></b> is divided in two sub-intervals corresponding to the two consecutive events that occur in the problem: *first event: the collision,</p>
+
+<ul style="list-style:disc outside none"><li>second event: the compression of the spring. </li>
+</ul>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module2/files/2BlocksSpring2_sol1.png" /></p>
+<p>These two events are fundamentally different because the type of interaction producing the changes in the system are different: first, non-conservative collision forces, second, conservative elastic force. </p>
+
+<h4>Solution </h4>
+<p>After dividing the problems in stages, solving a multiple step problem requires specifying the system, interactions, and model(s) for each stage:</p>
+<p><b>1.</b> chose a system for each step or to keep the same system throughout all the sub problems.</p>
+
+<b>2.</b> define the initial and final state of each of the steps: the initial and final time, etc. <i><b>Note:</b></i><a href='javascript:toggleDisplay( "toggledisplay1", "[hide]", "[show note]" )' style="font-size:smaller" id="toggledisplay1l">[show note]</a><div style="display:none;" id="toggledisplay1"> 
+
+<table border="1">
+<tr>
+<td><i><b>Note:</b></i>
+<ul style="list-style:disc outside none">
+	<li> Each step has its own initial and final states. </li>
+	<li> The final state of one step coincides with the initial state of the following step.</li>
+	<li> The initial state of the first step coincides with the initial state of the problem (<b><i>t</i><sub>i</sub></b>).</li>
+	<li> The final state of the last step coincides with the final state of the problem (<b><i>t</i><sub>f</sub></b>).  </li>
+</ul>
+</td>
+</tr>
+</table>
+
+</div>
+
+<p><b>3.</b> describe the interactions of each of the time steps </p>
+
+<p><b>4.</b> pick the proper model or models consistent with the system and the interactions of each of the steps.</p>
+
+<p><b>5.</b> apply the model on each of the steps.</p>
+
+<p><i><b>For each of the steps we will follow the procedures described in 1 to 5.</b></i></p>
+
+<p>Before continuing with the solution, we remark that in the present example, we can either use the same system for both steps: <i>2 boxes + spring</i>, or we can use a different system for each step: the <i>2 boxes</i> in step 1, and the <i>2 boxes + spring</i> in step2.</p>
+
+<p>Picking one system or the other is your choice. It will only change the classification of the interactions (eg., internal will change to external, etc). We will show the solution using both approaches: 1. keeping the same system throughout the problem and 2. changing the system in each step.</p>
+
+<h4> <b><u>First Step</u>:</b> Collision of box 1 and 2</h4>
+<p><b>1. Choosing the system:</b>
+
+As mentioned before, in this step both system are possible:</p>
+
+<ul style="list-style:disc outside none">
+	<li>2 boxes+spring</li>
+	<li>2 boxes</li>
+</ul>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>2. Define the initial and the final state of step 1:</b>
+	 [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+	<tr style="display:none" id="ht1">
+	<td>
+	<table border="1">
+
+<tr>
+<th width="200">
+	<b>Initial State</b>
+</th>
+<th width="200">
+	<b>Final State</b>
+</th></tr>
+<tr>
+<td valign="top">
+	<b><i>t</i><sub>i</sub></b>&nbsp;: instant right before box 1 hits box 2
+</td>
+<td valign="top">
+	<b><i>t</i><sub>1</sub></b>&nbsp;: instant right after the collision when both boxes start to move together
+</td>
+</tr>
+<tr>
+<td>
+	<b>Box 1</b> moves with speed <b><i>v</i><sub>i</sub></b> to the right
+</td>
+<td>
+	<b>Box 1</b> moves with speed <i><b>V</b></i> to the right
+</td>
+</tr>
+<tr>
+<td valign="top">
+	<b>Box 2</b> is at rest
+</td>
+<td>
+	<b>Box 2</b> moves with speed <i><b>V</b></i> to the right
+</td>
+</tr>
+<tr>
+<td>
+	<b>Spring</b> is at equilibrium
+</td>
+<td>
+	<b>Spring</b> is at equilibrium<b>*</b>
+</td>
+</tr>
+</table>
+
+<p><b>*</b> We will assume a short time collision. Under this assumption, the two boxes do not have time to move during the collision and there is no compression of the spring. </p>
+
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>3. Describe the interactions in step 1.</b>
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td>
+	<p>We will describe the interactions for the two possible systems that can be selected in step 1.</p>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th width="400">
+		<b>2 Boxes + Spring</b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]
+	</th>
+	</tr>
+	<tr style="display:none" id="ht3">
+	<td>
+		<p><u><b>External:</b></u></p>
+		<ul style="list-style:disc outside none">
+			<li> <b>Box 1 &amp; 2 &#8596; Earth:</b> gravitational force on both boxes.(The spring is massless so it does not interact with the Earth.)</li>
+			<li> <b>Box 1 &amp; 2 &#8596; surface:</b> normal force on both boxes (there is no friction). </li>
+			<li> <b>Spring &#8596; Wall:</b> We will assume a short time collision, therefore the length of the spring will not change during the collision. As a result, there will be no force exerted by the wall on the spring along the horizontal direction. (The contact force of the wall on the spring in the vertical direction is zero, because the spring is assumed to be massless).</li>
+		</ul>
+		<p>The sum of the external forces (normal + gravity) is zero:</p>
+		<ul style="list-style:disc outside none">
+			<li> \(\sum \vec{F}^{ext} = 0\) </li>
+		</ul>
+		<p><u><b>Internal:</b></u></p>
+	<ul style="list-style:disc outside none">
+		<li><b>Box 1 &#8596; Box 2:</b> the resulting forces are the unknown collision forces. </li>
+		<li><b>Box 2 &#8596; Spring:</b> We assume a short time collision so the spring remains in equilibrium and it does not exerted any force on box 2.</li>
+	</ul>
+	</td>
+	</tr>
+	</table>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th width="400"> 
+		<b>2 Boxes </b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]
+	</th>
+	</tr>
+	<tr style="display:none" id="ht4">
+	<td>
+		<p><u><b>External:</b></u></p>
+	<ul style="list-style:disc outside none">
+		<li><b>Box 1 &amp; 2 &#8596; Earth:</b> gravitational force on both boxes.</li>
+		<li><b>Box 1 &amp; 2 &#8596; Surface:</b> normal force on both boxes (no friction). </li>
+		<li><b>Box 2 &#8596; Spring:</b> We will assume a short time collision, therefore the length of the spring will not change during the collision. As a result, there will be no force exerted by the spring on box 2.</li>
+	</ul>
+	<p>These sum of the external forces (gravity and normal) is zero:</p>
+	<ul style="list-style:disc outside none">
+		<li> \(\sum \vec{F}^{ext} = 0\) </li>
+	</ul>
+	<p><u><b>Internal:</b></u></p>
+	<ul style="list-style:disc outside none">
+		<li> <b>Box1 &#8596; Box 2:</b> the resulting forces are the unknown collision forces. </li>
+	</ul>
+	</td>
+	</tr>
+	</table>
+	
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>
+	<b>4. Pick the model in step 1:</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+	<p>The sum of the external forces in both systems is zero:</p>
+	<p>\(\sum \vec{F}^{ext} = 0\) </p>
+	<p>As a result, the linear momentum is constant during the first time interval <b><i>t<sub>i</sub> &lt; </i>t<i> &lt; </i>t<sub>1</sub></b>.</p>
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>
+	<b>5. Apply the model in step 1:</b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+	<p><b>Initial Momentum:</b> Initially only box 1 is moving. Taking the x-axis parallel to the surface and positive to the right, the initial momentum of the system is the momentum of box 1:</p>
+	<p>\(\vec{p}^{sys}(t_i)=m v_i\;\hat{i}\)</p>
+	<p><b>Final Momentum:</b> At the instant <b><i>t = t</i><sub>1</sub></b>, right after the collision, both boxes are moving together, then the final momentum of the system:</p>
+	<p>\(\vec{p}^{sys}(t_1)=2m V\;\hat{i}\)</p>
+	<p>Because the linear momentum is constant, then:</p>
+	<p>\(m\; v_i = 2m\;V\)&nbsp;&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+	<p>The above expression is valid for the two possible systems that you might select (2 boxes + spring or the 2 boxes). Note that the spring is massless then it does not have any momentum, also it is assumed to remain in equilibrium during the short time of the collision.</p>
+</td>
+</tr>
+</table>
+
+<h4> <b><u>Second step</u>:</b> Compression of the spring</h4>
+
+<p><b>1. System:</b> In this step the system is formed by the 2 boxes and the spring.</p>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>2. Define the initial and the final state of step 2:</b>
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>
+
+	<table border="1">
+	<tr>
+	<th width="200">
+		<b>Initial State</b>
+	</th>
+	<th width="200">
+		<b>Final State</b>
+	</th></tr>
+	<tr>
+	<td valign="top">
+		<b><i>t</i><sub>1</sub></b>&nbsp;: instant right after the collision when both boxes start moving together
+	</td>
+	<td valign="top">
+		<b><i>t</i><sub>f</sub></b>&nbsp;: instant right when the spring is at a maximum compression of <i>d</i>
+	</td></tr>
+	<tr>
+	<td>
+		<b>Box 1</b> moves with speed <i><b>V</b></i> to the right
+	</td>
+	<td valign="top">
+		<b>Box 1</b> is at rest
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<b>Box 2</b> moves with speed <i><b>V</b></i> to the right
+	</td>
+	<td valign="top">
+		<b>Box 2</b> is at rest
+	</td>
+	</tr>
+	<tr>
+	<td valign="top">
+		<b>Spring</b> is at equilibrium
+	</td>
+	<td><b>Spring</b> is compressed a distance <i><b>d</b></i>
+	</td>
+	</tr>
+	</table>
+	
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>3. Describe the interactions in step 2:</b>
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td>
+	<u><b>External:</b></u>
+	<ul style="list-style:disc outside none">
+		<li><b>Box 1 &amp; 2 &#8596; Earth:</b> gravitational force on both boxes. (The spring is massless so it does not interact with the Earth.)</li>
+		<li><b>Box 1 &amp; 2 &#8596; Surface:</b> normal force on both boxes (there is no friction).</li>
+		<li><b>Spring &#8596; Wall:</b> contact force exerted by the wall on the right end of the spring. Because the right end of the spring does not move relative to the wall, the contact force exerted by the wall on the spring does not do work (there is not displacement).</li>
+	</ul>
+	<p>In this step, the net external force is not equal to zero but equal to the force exerted by the wall on the spring:</p>
+	
+	<ul style="list-style:disc outside none">
+		<li> \(\sum \vec{F}^{ext} \neq 0\) </li>
+	</ul>
+	<p>so the linear momentum of the system is <b>not constant</b>. But the work done by the external forces during <b><i>t</i><sub>1</sub> &lt; <i>t</i> &lt;<i>t</i><sub>f</sub></b> is zero:</p>
+	
+	<ul style="list-style:disc outside none">
+		<li> \(W_{1,f}^{ext} = 0\)</li>
+	</ul>
+	<p><u><b>Internal:</b></u> </p>
+	
+	<ul style="list-style:disc outside none">
+		<li><b>Box 1 &amp; 2 &#8596; Spring:</b> The result of this interaction is a conservative force that can be represented as elastic potential energy.</li>
+	</ul>
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>
+	<b>4. Pick the model in step 2:</b> [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht9">
+<td>
+<ul style="list-style:disc outside none">
+	<li>The work done by the external forces is zero:</li>
+</ul>
+<p>\(W_{1,f}^{ext} = 0\)</p>
+<ul style="list-style:disc outside none">
+	<li>The internal force is conservative</li>
+</ul>
+<p>Then the mechanical energy of the system during the time interval <b><i>t</i><sub>1</sub> &lt; <i>t</i> &lt;<i>t</i><sub>f</sub></b> is constant.</p>
+</td>
+</tr>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>
+	<b>5. Apply the model in step 2:</b> [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht10">
+<td>
+	<p><b>Initial mechanical energy:</b> At the instant <b><i>t = t</i><sub>1</sub></b>, the boxes are moving and the spring is at equilibrium, so the mechanical energy of the system is only the kinetic of both boxes:</p>
+	<p>\(E(t_1) = K_1 + U_1 = \frac{1}{2}2mV^2 + 0\)</p>
+	<p><b>Final mechanical energy:</b> At the instant <b><i>t = t</i><sub>f</sub></b>, the boxes are at rest and the spring compress. The mechanical energy is only potential:</p>
+	<p>\(E(t_f) = U_f + K+f = \frac{1}{2}kd^2 + 0\)</p>
+	<p>Because the mechanical energy is constant then:</p>
+	<p>\( \frac{1}{2}2mV^2 = \frac{1}{2}kd^2 \)&nbsp;&nbsp;&nbsp;&nbsp; (eq. 2)</p>
+</td>
+</tr>
+</table>
+
+<h4> <u>First Step</u> + <u>Second Step</u>: finish the problem</h4>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>
+	<b>Combine the consecutive models to obtain the answer</b> [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]
+</th>
+</tr>
+<tr style="display:none" id="ht11">
+<td>
+	<p>During step 1, linear momentum is constant:</p>
+	<p>\(m\; v_i = 2m\;V\)&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+	<p>during step 2, mechanical energy is constant</p>
+	<p>\( \frac{1}{2}2mV^2 = \frac{1}{2}kd^2 \)&nbsp;&nbsp;&nbsp;&nbsp; (eq. 2)</p>
+	<p>combining (eq. 1) and (eq. 2) the value of <i>v</i><sub>i</sub> is:</p>
+	<p>\( v_i = 2\;V =2\;\sqrt{\frac{k}{2m}}\; d\)</p>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

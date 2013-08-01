@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: A Swinging Cylinder </title>
+    <script type="loncapa/python">
+
+m = random.randrange(8, 18, 1)/10
+r = random.randrange(30, 65, 5)/100
+g = 9.8
+t = 3.14159*math.sqrt((3/2* r)/( g))
+
+</script>
+
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK132.PNG" alt="BK132.PNG"/>
+<p>A uniform disc of mass m = $m kg and radius r = $r meters is pivoted in the vertical plane at the point located halfway between its center and the edge of the disc as shown. Initially, the disc is at rest at its stable equilibrium position. Then the disc is pulled a small amount sideways and released. How long would it take the disc to come to the opposite extreme point? The acceleration due to gravity is 9.80 m/s<sup>2</sup>.</p>
+      
+	  \(t=\)
+
+      <numericalresponse answer="$t" unit="s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

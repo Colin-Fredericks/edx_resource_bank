@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Example: Pivoted Rod</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}	
+	</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h3>Illustrative Example: Pulling a Yo-Yo</h3>
+
+<p>Consider a yo-yo consisting of two solid disks, each of the same mass and radius <i>a</i>, connected by a central spindle of radius <i>b</i> and negligible mass. The total mass of the yo-yo is <i>M</i>. A light string is coiled around the central spindle; we shall assume that its thickness is sufficiently small that winding or unwinding has no effect on the effective radius of the spindle. The moment of inertia of the yo-yo about an axis passing through its center of mass and perpendicular to the screen is \(I_{cm}\).</p>
+<p>In figures 1 and 2 the yo-yo is placed upright on a horizontal and frictionless surface, gravity is parallel to the screen pointing down. In figure 3, the yo-yo is placed flat on the surface, with gravity into the screen. The string is pulled with a constant force of magnitude <i>T</i> with the direction shown in the figures.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module1/files/IE_yoyo.png"/></p>
+<p>For each of the three situations, What is the acceleration of the center of mass and the angular acceleration? Give the magnitude and the direction of each of the vectors. Consider the +x axis to be in the direction of the tension.</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer: </b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+
+<p><b>Center of mass acceleration:</b></p>
+<p>Is the same for the three cases. Its magnitude is \(T/M\), and its direction is in the same direction as the force of tension (along the +x axis).</p>
+<p><b>Angular acceleration:</b></p>
+<p>The magnitude is the same for the three cases and equal to \(bT/I_{cm}\). <br/>
+The direction is out of the screen, counter-clockwise rotation, for cases 1 and 3, and is into the screen, clockwise rotation, for case 2.</p>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Case 1 - Explanation: </b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+
+<p><b>System:</b> yo-yo</p>
+<p><b>Interactions:</b></p>
+
+<ul>
+<li>yo-yo \(\leftrightarrow\) string: force of tension of magnitude <i>T</i></li>
+<li>yo-yo \(\leftrightarrow\) Earth: gravitational force of magnitude <i>Mg</i></li>
+<li>yo-yo \(\leftrightarrow\) surface: normal force of magnitude <i>N</i> (there is no friction)</li>
+</ul>
+
+<p><b>Models:</b><i> Dynamics and Net Force</i>, and <i>Rotational Dynamics and Net Torque (about the center of mass)</p>
+<p>The forces acting on the yo-yo are shown in the following force diagram:</p> 
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module1/files/IE_yoyo1_sol.png"/>
+
+<p><b>Dynamics and net force:</b></p>
+<p>\(\sum\vec{F}^{ext}=M\vec{a}_{cm}\)</p>
+<p>Considering the coordinate system in the figure, the component of the above equation along the x-axis is:</p>
+<p>\(T=Ma_{cm}\)</p>
+<p>\(\vec{a}_{cm}=T/M \hat{x}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+
+<p><b>Rotational Dynamics and net torque:</b></p>
+<p>We will apply the torque equation about the yo-yo's center of mass:</p>
+<p>\(\sum\vec{\tau}_{cm}^{ext}=I_{cm}\vec{\alpha}\)</p>
+<p>Only the force of tension does torque about the center of mass, the normal and gravitational forces do not do torque about the center of mass because they have zero moment arm. Therefore, the above equation becomes:</p>
+
+<p>\(bT\hat{z}=I_{cm}\vec{\alpha} \)</p>
+<p>After applying the right hand rule we obtain that the torque due to tension is pointing out of the screen, along the +z-axis. Hence, the angular acceleration is also pointing out of the screen:</p>
+<p>\( \vec{\alpha}=bT/I_{cm} \hat{z}\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 2)</p>
+
+<p><b>REMARK:</b>  Relationship between center of mass acceleration and angular acceleration.</p>
+<p>Let \(a_{cm}\) be the component of the center of mass acceleration vector along the x-axis, and let \(\alpha\) be the component of the angular acceleration vector along the axis of rotation. Using these definitions, the center of mass acceleration vector is given by: \(\vec{a}_{cm}=a_{cm}\hat{x}\), and the angular acceleration vector by: \(\vec{\alpha}=\alpha\hat{z}\).</p>
+
+<p>From (eq. 1) and (eq. 2) we obtain that the components of the center of mass and angular acceleration vectors are:</p>
+<p>\(a_{cm}=T/M \) and \(\alpha = bT/I_{cm}\)</p>
+<p>After combining the above equations the relationship between the components of the center of mass and the angular acceleration vectors is expressed as:</p>
+<p>\(a_{cm}=\frac{I_{cm}}{bM}\alpha\)</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Case 2 - Explanation: </b> [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+<p>The system, interaction and models are the same as in case 1. The only difference is the point of application of the force of tension with respect to the yo-yo's center of mass.</p>
+<p>The forces acting on the yo-yo are shown in the following force diagram:</p> 
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module1/files/IE_yoyo2_sol.png"/></p>
+
+<p><b>Dynamics and net force:</b><br/><br/>
+ \(\sum\vec{F}^{ext}=M\vec{a}_{cm}\)</p>
+<p>Considering the coordinate system in the figure, the component of the above equation along the x-axis is:</p>
+<p>\(T=Ma_{cm}\)</p>
+<p>\(\vec{a}_{cm}=T/M \hat{x}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+
+<p><b>Rotational Dynamics and net torque:</b></p>
+<p>We will apply the torque equation about the yo-yo's center of mass:</p>
+<p>\(\sum\vec{\tau}_{cm}^{ext}=I_{cm}\vec{\alpha}\)</p>
+<p>As in case 1, only the force of tension does torque about the center of mass, the normal and gravitational forces do not do torque about the center of mass because they have zero moment arm. Therefore, the above equation becomes:</p>
+
+<p>\(-bT\hat{z}=I_{cm}\vec{\alpha} \)</p>
+<p>After applying the right hand rule, we obtain that the torque due to tension is pointing into the screen, along the negative z-axis. Hence, the angular acceleration is also pointing into the screen:</p>
+<p>\( \vec{\alpha}=- bT/I_{cm} \hat{z}\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 2) </p>
+
+<p><b>REMARK:</b>  Relationship between center of mass acceleration and angular acceleration.</p>
+<p>Let \(a_{cm}\) be the component of the center of mass acceleration vector along the x-axis, and let \(\alpha\) be the component of the angular acceleration vector along the axis of rotation. Using these definitions, the center of mass acceleration vector is given by: \(\vec{a}_{cm}=a_{cm}\hat{x}\),and the angular acceleration vector by: \(\vec{\alpha}=\alpha\hat{z}\).</p>
+<p>From (eq. 1) and (eq. 2) we obtain that the components of the center of mass and angular acceleration vectors are:</p>
+<p>\(a_{cm}=T/M \) and \(\alpha = - bT/I_{cm}\)</p>
+<p>After combining the above equations the relationship between the components of the center of mass and the angular acceleration vectors is expressed as:</p>
+<p>\(a_{cm}=- \frac{I_{cm}}{bM}\alpha\)</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Case 3 - Explanation: </b> [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+
+<p>The systems, interactions and models are the same as in cases 1 and 2. Now, the normal force and the weight are perpendicular to the surface as shown in the side view of the force diagram:</p> 
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit10/Module1/files/IE_yoyo3_sol.png"/></p>
+
+<p><b>Dynamics and net force:</b></p>
+<p>\(\sum\vec{F}^{ext}=M\vec{a}_{cm}\)</p>
+<p>Considering the coordinate system in the figure, the component of the above equation along the x-axis is:</p>
+<p>\(T=Ma_{cm}\)</p>
+<p>\(\vec{a}_{cm}=T/M \hat{x}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 1)</p>
+
+<p><b>Rotational Dynamics and net torque:</b></p>
+<p>We will apply the torque equation about the yo-yo's center of mass:</p>
+<p>\(\sum\vec{\tau}_{cm}^{ext}=I_{cm}\vec{\alpha}\)</p>
+<p>As in cases 1 and 2, only the force of tension does torque about the center of mass, the normal and gravitational forces do not do torque about the center of mass because they have zero moment arm. Therefore, the above equation becomes:</p>
+
+<p>\(bT\hat{y}=I_{cm}\vec{\alpha} \)</p>
+<p>After applying the right hand rule, we obtain that the torque due to tension is pointing out of the screen, along the +y-axis. Hence, the angular acceleration is also pointing out of the screen:</p>
+<p>\( \vec{\alpha}=bT/I_{cm} \hat{y}\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (eq. 2)</p>
+
+<p><b>REMARK:</b>  Relationship between center of mass acceleration and angular acceleration.</p>
+<p>Let \(a_{cm}\) be the component of the center of mass acceleration vector along the x-axis, and let \(\alpha\) be the component of the angular acceleration vector along the axis of rotation. Using these definitions, the center of mass acceleration vector is given by: \(\vec{a}_{cm}=a_{cm}\hat{x}\), and the angular acceleration vector by: \(\vec{\alpha}=\alpha\hat{y}\).</p>
+<p>From (eq. 1) and (eq. 2) we obtain that the components of the center of mass and angular acceleration vectors are:</p>
+<p>\(a_{cm}=T/M \) and \(\alpha = bT/I_{cm}\)</p>
+<p>After combining the above equations the relationship between the components of the center of mass and the angular  acceleration vectors is expressed as:</p>
+<p>\(a_{cm}=\frac{I_{cm}}{bM}\alpha\)</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 12 -->
+
+<problem>
+
+	<p>A small block of mass m slides on a long horizontal table when it encounters a wedge of mass 2m and height h (see the diagram).</p>
+	<img src="/static/problems/F12/MRI/images/MRI10.png" />
+	<p>The wedge can also slide along the table. The mass slides up the wedge all the way to the top and then slides back down, never getting over the top. All surfaces are frictionless.</p>
+	<p>Consider three moments in time: 
+	<ul>
+		<li>t1 – when the block is on the table, before sliding up the wedge; </li>
+		<li>t2 – when the block is at the top of the wedge;</li>
+		<li>t3 – when the block is on the table, after sliding down the wedge.</li>
+	</ul>
+	</p>
+
+	<h3>Part 1</h3>
+	<p>As the block is sliding up the wedge, what happens to the kinetic energy of the block; the potential energy of the block; 
+	the mechanical energy of the block+Earth system; the kinetic energy of the wedge (respectively)?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">decreases; increases; decreases; increases</choice>
+			<choice location="random" correct="false">decreases; increases; stays the same; increases</choice>
+			<choice location="random" correct="false">decreases; increases; stays the same; stays the same</choice>
+			<choice location="random" correct="false">increases; decreases; stays the same; stays the same</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

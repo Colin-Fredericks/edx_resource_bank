@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<html>
+<!--An asteroid and a star-->
+<problem>
+
+<h3>Solution</h3>
+
+<p>System : asteroid, the only force on it is the gravitational force due to the star.</p>
+<img src="/static/problems/S13/solutions/images/7-1.png" />
+<img src="/static/problems/S13/solutions/images/7-1(2).png" />
+
+<p>In the figure above (not in scale):</p>
+<p>\(\vec{ds}\): is the element of the displacement along the asteroid’s path between points A and B.</p>
+<p>\(\vec{F}_{G}\) = - \({GmM\over r^{2}} \hat{r}\) is the gravitational force exerted on the asteroid by the star.</p>
+<p>r =|\(\vec{r}\)| is the distance between the star and the asteroid.</p>
+<p>\(\hat{r}\) is the unit vector along the line joining the star and the asteroid and \(\hat{\theta}\) is the unit vector
+perpendicular to \(\hat{r}\). Note that \(\hat{\theta}\) is not necessarily tangent to the orbot because the path is
+not a circle. As a result the element of displacement \(\vec{ds}\) has two components along the polar coordinate system: \(\vec{ds}\) = dr\(\hat{r}\) + ds<sub>\(\theta\)</sub>\(\hat{\theta}\) (where ds<sub>\(\theta\)</sub> = rd\(\theta\). Therefore, the dot product between the gravitational force and \(\vec{ds}\) becomes:</p>
+<p>\(\vec{F}_{G}\) \(\vec{ds}\) = \({-GmM\over r^{2}} \hat{r} *dr \hat{r}\) + ds<sub>\(\theta\)</sub> \(\hat{\theta} =  {-GmM\over r^{2}}\) dr</p>
+<p>We now calculate the work done by the gravitational force on the asteroid to move from
+point A to point B:</p>
+<p>\(\displaystyle W_{AB} = \int_{\vec{r}_{A}}^{\vec{r}_{B}} \! \vec{F}_{G} \, \mathrm{d}\vec{s}\) =  \(\int_{\vec{r}_{B}}^{\vec{r}_{A}} \! {-GmM\over r^{2}} \, \mathrm{d}r\) = \({GMm\over r}\)]<sub>\(\vec{r}\)<sub>A</sub></sub><sup>\(\vec{r}\)<sub>B</sub></sup> = GMm(\({1\over r_{B}} - {1\over r_{A}}\))</p>
+<p>where r<sub>A</sub> = |r<sub>A</sub>| amd r<sub>B</sub> = |r<sub>B</sub>| are the distances between the star and the asteroid at points A and B</p>
+<p>The work done by the gravitational force on the asteroid is given by:</p>
+<p>W<sub>AB</sub> = GMm(\({1\over r_{B}}\) - \({1\over r_{A}}\))     (eq.1)</p>
+<p>Note that the work is positive (W<sub>AB</sub>> 0) if r<sub>A</sub> > r<sub>B</sub>, the asteroid is getting closer to the star, and it is negative (W<sub>AB</sub>0) if r<sub>A</sub> &#60; r<sub>B</sub> , the asteroid is moving away from the star.</p>
+<p>ii) Consider the system to be the asteroid, the only force acting on it is external(gravitational), then the work kinetic energy theorem applied to the asteroid implies:</p>
+<p>K<sub>B</sub> = K<sub>A</sub> + W<sub>AB</sub><sup>external</sup> \(\Rightarrow\) K<sub>B</sub> - K<sub>A</sub> = GMm(\({1\over r_{B}}\) - \({1\over r_{A}}\))</p>
+<p>If r<sub>A</sub> > r<sub>B</sub> then W<sub>AB</sub> > 0, the kinetic energy increases and the asteroid moves faster when
+approaches the star</p>
+<p>If r<sub>A</sub> &#60; r<sub>B</sub> then W<sub>AB</sub> &#60; 0, the kinetic energy decreases and the asteroid moves slower when
+moves away from the star.</p>
+<p>The kinetic energy of the asteroid changes because of the work done by the gravitational
+force on the asteroid</p>
+<p>b) System: Asteroid+Star.</p>
+<p>i) Interactions: there is only one internal interaction between the star and the asteroid.
+Because it is conservative then its work is represented by the gravitational potential
+energy. (No external interactions).</p>
+<p>Use the mechanical energy and work principle:</p>
+<p>E<sub>B</sub> = E<sub>A</sub> + W<sub>AB</sub><sup>ext</sup> + W<sub>AB</sub><sup>internal, NC</sup>, for the asteroid star system there is only an internal and conservative interaction, therefore both works are zero and the mechanical energy is constant between points A and B.</p>
+<p>E<sub>B</sub> = E<sub>A</sub> + W<sub>AB</sub><sup>ext</sup> + W<sub>AB</sub><sup>internal, NC</sup> \(\Rightarrow\)</p>
+<p>E<sub>B</sub> = E<sub>A</sub> \(\Rightarrow\)</p>
+<p>K<sub>B</sub> + U<sub>B</sub> = K<sub>A</sub> + U<sub>A</sub> \(\Rightarrow\)</p>
+<p>K<sub>B</sub> - K<sub>A</sub> = -(U<sub>B</sub> - U<sub>A</sub>) = W<sub>AB</sub> \(\Rightarrow\)</p>
+<p>Using eq. 1 in the expression above:</p>
+<p>K<sub>B</sub> - K<sub>A</sub> = GMm(\({1\over r_{B}} - {1\over r_{A}}\))</p>
+<p>Using eq. 1 in the expression above:</p>
+<p>Assumptions:</p>
+<p>1. Infinite massive object assumptions: M >> m, therefore there is no change of
+kinetic energy of the star while the asteroid is interacting with it.</p>
+<p>2. Only the interaction between the asteroid and the star is considered. We neglect all
+possible interactions with other celestial objects.</p>
+<p>Another way to calculate the work is to use the fact that the gravitational force is
+conservative therefore its work is independent of the path. Then, instead of moving along
+the orbit to go from point A to point B we can choose another path easier to do the
+integral.</p>
+<p>Consider two circles. One circle of radius r<sub>A</sub>, passing through point A, and another circle of radius r<sub>B</sub>, passing through point B, as shown. The center of each circle coincides with the star. Instead of moving along the orbit to go from point A to point B we can move along the line joining point A and the star, from point A to point C, and then move along the circle of radius rB, from points C to point B.</p>
+<p>\(\displaystyle W_{AB} = W_{AC} + W_{CB} = \int_{A}^{C} \! \vec{F}_{G} \, \mathrm{d}\vec{s} + \int_{C}^{B} \! \vec{F}_{G} \, \mathrm{d}\vec{s}\)</p>
+<p>The integral along the circle of radius r<sub>B</sub> is zero because \(\vec{F}_{G}\) \(\bot\) d\(\vec{s}\)</p>
+<p>To evaluate \(\int_{A}^{C} \! \vec{F}_{G} \, \mathrm{d}\vec{s} = \int_{C}^{B} \! \vec{F}_{G} \, \mathrm{d} \hat{r}\), which is the integral we have already solved in the first part.</p>
+
+</problem>
+</html>

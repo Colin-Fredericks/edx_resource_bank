@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem show_answer="never" attempts="0">
+    <title>What is MAPS?</title>
+
+	<p><table border="1"><tr><td><b>What is MAPS</b></td></tr><tr><td><iframe width="560" height="315" src="http://www.youtube.com/embed/qH_Da8YONo0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></td></tr></table></p>
+	<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Introduction_to_MAPS.mp4">Click here to download this video.</a></p>
+
+
+	<p>How did you find the level of this video?</p>
+
+    <multiplechoiceresponse type="MultipleChoice">
+      <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+        <choice location="1" name="foil1" correct="true"><text>It was at too high a level.</text></choice>
+        <choice location="2" name="foil2" correct="true"><text>It was at the right level.</text></choice>
+        <choice location="3" name="foil3" correct="true"><text>It was at too low a level.</text></choice>
+        <choice location="4" name="foil4" correct="true"><text>It was just confusing.</text></choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI18-1.problem" display_name="Disc Drop Energy" attempts="1" weight="0.5"/>
+	<problem filename="F12/MRI/MRI18-2.problem" display_name="Disc Drop Energy, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Disc Drop Energy" id="MReV_Summer2013_MRI18" discussion_category="Mechanical Energy and Work" />
+</vertical>

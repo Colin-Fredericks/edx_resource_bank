@@ -1,0 +1,13 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>What is your current educational status? You may check more than one option.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+	  <choice correct="true" name="face_to_face"><text>I currently attend a face-to-face school, or will be attending in the fall.</text></choice>
+	  <choice correct="true" name="online"><text>I currently attend an online school, or will be attending in the fall.</text></choice>
+	  <choice correct="true" name="full_time"><text>I am currently a full-time student, or will be one in the fall.</text></choice>
+	  <choice correct="true" name="part_time"><text>I am currently a part-time student, or will be one in the fall.</text></choice>
+	  <choice correct="true" name="one_year"><text>I am a recent graduate (less than one year ago).</text></choice>
+	  <choice correct="true" name="many_years"><text>My last degree was more than one year ago.</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

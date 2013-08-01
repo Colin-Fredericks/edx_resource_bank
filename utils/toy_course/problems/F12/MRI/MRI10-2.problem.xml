@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 10 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The block-wedge system's total kinetic energy 
+			increases during that time interval.</choice>
+			<choice location="random" correct="false">The block-wedge system's total kinetic 
+			energy is constant during that time interval.</choice>
+			<choice location="random" correct="true">The mechanical energy of the block-wedge-Earth 
+			system is constant during that time interval.</choice>
+			<choice location="random" correct="false">There is no friction, therefore the mechanical 
+			energy of the block-Earth system is conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>
+
+
+

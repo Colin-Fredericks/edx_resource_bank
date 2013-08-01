@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo - Part 2 </title>
+
+<p>Part 2. What is the net torque acting on the yo-yo with respect to the axis passing through the point touching the ground? (assume clockwise to be positive)</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( F (R+r) \)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( Fr \)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+
+                Zero
+
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( F R    \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( F(r+R)-r F_f \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( F(r+R)+r F_f \)
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                  \( (F-F_f)R \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>
+</p><br/>
+
+
+      </problem>
+</html>

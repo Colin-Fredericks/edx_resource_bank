@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- conservation of momentum with three objects -->
+
+<problem>
+
+<script type="loncapa/python">
+import random
+
+theta = random.randrange(10,30,1)
+phi = random.randrange(20,40,1)
+
+Vx = 100*math.cos(math.radians(theta)) + 30*math.sin(math.radians(phi))
+Vy = 100*math.sin(math.radians(theta)) - 30*math.cos(math.radians(phi))
+</script>
+
+<img src="/static/problems/S13/quiz/images/7-3.png" />
+
+<p>A firecracker explodes, sending pieces of equal mass in three directions as shown in the diagram. Angle \(\theta\) is $theta degrees, and angle \(\phi\) is $phi degrees. Assume that the firecracker is initially at rest, and take upward and rightward as the positive directions.</p>
+
+<p>What are the components of the right-hand piece’s velocity?</p>
+
+<p>Horizontal component:</p>
+<numericalresponse answer="$Vx">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+<p>Vertical component:</p>
+<numericalresponse answer="$Vy">
+	<responseparam type="tolerance" default="5%" />
+	<textline math="1" />
+</numericalresponse>
+
+<solution>
+<div class="detailed-solution">
+
+<p>Conserve momentum in the vertical and horizontal directions separately. Don't forget which direction is considered positive, and mind the degree/radian setting on your calculator.</p>
+
+<p>\[ v_horiz = 100 \cos ( \theta ) + 30 \sin ( \phi ) \]</p>
+<p>\[ v_vert = 100 \sin ( \theta ) - 30 \cos ( \phi ) \]</p>
+
+</div>
+</solution>
+
+</problem>
+
+</html>

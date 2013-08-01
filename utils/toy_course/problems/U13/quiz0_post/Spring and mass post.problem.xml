@@ -1,0 +1,14 @@
+<problem>    
+
+<p>Consider an ideal spring that has an unstretched length l and a spring constant k. Suppose the spring is attached to a mass m that lies on a horizontal
+frictionless surface. The spring-mass system is compressed a distance of x_0 from
+equilibrium and then released with an initial speed v_0 toward the equilibrium position.</p>
+
+<p>What is the maximum distance the spring will be stretched?</p>
+<p>\(x =\)</p>
+
+    <formularesponse answer="sqrt((x_0)^2+m/k*(v_0)^2)" samples="k,m,x_0,v_0@1,1,1,1:10,12,8,10#4">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+</problem>

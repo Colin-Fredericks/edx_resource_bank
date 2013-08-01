@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 3 -->
+
+<problem>
+
+	<p>An object with mass m is attached to a string and the other end of the string is attached to a peg at the center of a level table.  The object is set into uniform circular motion around the peg.  The radius of the motion remains constant (the string does NOT wind up on the peg). The table and the peg are frictionless.</p>
+
+	<h3>Part 1</h3>
+	<p>While the object is in uniform circular motion, which statement correctly describes its linear momentum?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The linear momentum of the object is conserved.</choice>
+			<choice location="random" correct="true">The linear momentum of the object is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

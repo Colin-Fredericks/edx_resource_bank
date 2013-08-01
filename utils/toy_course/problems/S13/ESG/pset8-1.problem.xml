@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+<!-- Checkpoint 17 -->
+<problem>
+
+	<h2>Checkpoint 17</h2>
+	<p>A uniform rod of mass <i>m</i> and length <i>d</i> is acted upon by two forces of given magnitudes applied as shown. Point A is the midpoint of the rod; point B divides the rod in 2:1 ratio.</p>
+
+	<img src="/static/problems/S13/ESG/images/8-1.png" />
+
+	<h3>Part 1</h3>
+	<script type="loncapa/python">
+alpha = "3*F/m"
+	</script>
+
+		<br/>
+		 Find the angular acceleration of the rod if it rotates about the axis passing through point A, perpendicular to the page.
+		<br/>
+
+	<formularesponse samples="m,F@1,1:5,5#10" answer="$alpha">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 2</h3>
+	<script type="loncapa/python">
+alpha2 = "3*F/(2*m*d)"
+	</script>
+
+		<br/>
+		 Find the angular acceleration of the rod if it rotates about the axis passing through point B, perpendicular to the page.
+		 <br/>
+
+	<formularesponse samples="m,F,d@1,2,1:2,5,5#10" answer="$alpha2">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 3</h3>
+	<script type="loncapa/python">
+alpha3 = "9*F/(2*m*d)"
+	</script>
+
+		<br/>
+		Find the angular acceleration of the rod if it rotates about the axis passing through the point of application of force F, perpendicular to the page.  
+		<br/>
+
+	<formularesponse samples="F,m,d@1,1,1:5,5,5#10" answer="$alpha3">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<br/>
+		\(\alpha\) =
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

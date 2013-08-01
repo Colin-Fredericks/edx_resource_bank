@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Bead on a Wire- conceptual -->
+<problem>
+
+	<h2>A Bead on a Wire- conceptual</h2>
+	<p>A bead of mass <i>m</i> can slide without friction on a double-curved wire. Both curve portions consist on a section of a circle, the first one, of radius <i>r</i>, is contained in the y-z plane and the second one, of radius <i>R</i>, is contained in the x-y plane (<i>z=0</i>). The two curved sections are connected by a straight wire parallel to the y-axis. The bead is released from a height <i>z = H</i>. The goal of the problem is to find the force exerted by the wire on the bead at point Q in the second curve. </p>
+
+	<img src="/static/problems/S13/ESG/images/7-5.png" />
+
+	<p>Which of the following strategies could you employ to solve this problem?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true" name="conservationE, sum of forces">Use conservation of mechanical energy of the bead-earth system between points H and Q to find the velocity of the bead at Q, and then use \(\vec{F}\) = m\(\vec{a}\) of the bead at point Q to find the normal force from the wire.</choice>
+			<choice location="random" correct="false" name="conservationKE, sum of forces">Use conservation of kinetic energy of the bead between points H and Q to find the velocity of the bead at Q, and then use centripetal acceleration to find the normal force on the bead from the wire.</choice>
+			<choice location="random" correct="false" name="conservationMomentum, conservationKE">Use conservation of momentum of the bead-wire system between points H and Q to find the final velocity, and then use the conservation of kinetic energy to find the work done by non-conservative forces.  Use this work to find the force of the wire of the bead.</choice>
+			<choice location="random" correct="false" name="conservationMomentus, sum of forces">Use conservation of momentum of the wire-bead system between points H and Q to find the velocity of the bead at point Q, and then use centripetal acceleration to find the normal force of the wire on the bead.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 5 -->
+
+<problem>
+
+    <p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 7 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI5.png" />
+
+	<h3>Part 1</h3>
+	<p>The block of mass M is released from rest at the top of a frictionless slide at height H above the ground (see figure above). The block slides smoothly down the slide and leaves the slide moving perfectly horizontally at a height h. The block is supposed to land in the water, a distance d from the end of the slide. The goal of the problem would be to find the minimum height H for the slide, assuming that h, d and M are known. What is the most appropriate way to decompose the problem?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">One problem</choice>
+			<choice location="random" correct="true">Two sub-problems: intervals 1-5 and 5-7.</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-5, 5-7, and 7.</choice>
+			<choice location="random" correct="false">Three sub-problems: intervals 1-5, 5, and 5-7.</choice>
+			<choice location="random" correct="false">Four sub-problems: intervals 1-5, 5, 5-7, and 7.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

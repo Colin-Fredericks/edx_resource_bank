@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Applying SIM to Problems in Planar Dynamics</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>The S.I.M. Approach to Problem Solving</h2>
+
+<p>The heart of the Modeling Applied to Problem Solving pedagogy is the strategic process whereby the problem is described in a way that provides the problem solver with insight about which of the core models can be applied to solve it.  We use "System, Interactions, Model" as a mnemonic for this strategic procedure.  The SIM procedure is the key step in the general approach to problem solving outlined by Polya.</p>
+
+<h3> Polya's General Problem Solving Approach</h3>
+
+<p>In 1945 G. Polya published <i>How to Solve It</i>.  This short book started with a description of the mental stages of solving a problem; Understand, Plan a Solution, Carry Out the Solution, Check that it Makes Sense.  </p>
+
+<h3> Modeling Applied to Understand the Problem</h3>
+
+<p>Polya's "understand the problem" primarily involves representing all the information you know about the problem compactly in your head - the situation, the given information, and the goal or unknown that represents the solved problem.  Representing the given information must be begun before applying the SIM methodology to plan the solution.</p>
+
+<p>In Mechanics, understanding the problem involves representing the given information and visualizing the motion and the changes it undergoes through the course of the problem. Research shows that drawing graphs, figures with arrows, sketches with numbers or symbols on them greatly aids understanding.  Our ancestors' brains have dealt with images, maps, and motion for 1,000 times longer than they've dealt with words or letters, and these representations provide more intuition and insight.</p>
+
+<h3> The S.I.M. Strategy for Planning a Solution</h3>
+
+<p>Modeling primarily addresses the most difficult steps of Polya's plan - it provides a way to understand and then plan a solution, almost always the hardest step for those new to physics.  We have developed the SIM strategy to help you through this stage in a systematic manner.  It also helps with understanding the physical situation.  SIM stands for three things - System, Interactions, and Model.  To elaborate:</p>
+
+<p><b>S.</b>  Choose a <b>system</b> to consider.</p>
+
+<p>In every mechanics problem, you will choose to focus on the motion of one or more objects.  These objects will make up the system under consideration.  Sometimes this choice will be easy.  For problems involving the motion of a single car or baseball or box, the car or baseball or box will be the system.  Other times, the choice can be harder, but also give you more flexibility about how to solve it.  When two boxes are tied together with a string and pulled, you can consider each box as a system (and deal explicitly with the forces between the boxes) or you can consider both boxes together as one system since they have no relative motion.  Neither is "correct" but these different choices will allow you to determine different physical quantities and therefore each problem may be more naturally treated one way or the other.  Sometimes you'll have to use both approaches in the solution to one problem.</p>
+
+<p><b>I.</b>  Describe the <b>interactions</b> this system experiences.</p><p>Interactions are influences that change the motion of the system.  The most common way to describe interactions is to think of the forces that they generate, but later you will become familiar with work and torque as alternate agents of change.  There are only a few types of interactions that we will study in this course, including gravity, spring forces, drag forces, and contact forces (pushes, pulls, friction, etc.).  It is important to recognize that interactions always occur between two objects (N's 3rd law).  For instance, if your system is subject to a gravitational interaction, it must be near another object (most likely the earth).  If your system is subject to a contact force, there must be another object nearby to do the pushing or pulling.  Two very important characterizations of a force acting on your system are:</p>
+
+<ul style="list-style:disc outside none">
+	<li><b>Internal </b>vs. <b>External</b> depending on whether the interaction causing the force is inside or outside of your system.</li>
+	<li><b>Conservative (vs. Non-Conservative)</b> if the interaction causing the force is represented by using a potential energy.</li>
+</ul>
+
+<p><b>M.</b>  Choose a <b>model</b> that will help you to solve the problem.</p>
+
+<p>Models summarize the core physical content of the course, and have a mathematical law of change.  For example, if you know that your system experiences a constant acceleration, there are specific equations that you can use to describe the system's position and velocity as time elapses.  To help you get a big picture overview of the course, we have organized the most important models that you will learn in two ways: as a Map of Core Models, and into a Hierarchy of Models. More discussion can be found in the illustrative examples presented in this course:</p>
+
+<h3>The S.I.M. Procedure</h3>
+
+<ul style="list-style:disc outside none">
+	<li> Identify the <b>system</b> under consideration.</li>
+	<li> Identify the relevant <b>interactions</b> experienced by the system.</li>
+	<li> Identify the <b>Model</b> you will use to describe the motion of the system.</li>
+</ul>
+
+<h3> Strategy and the S.I.M.</h3>
+
+<p>Understand that the S.I.M. approach is not a "1, 2, 3" prescription that solves any problem. Choosing the most advantageous system when solving a problem will usually require you to first understand the interactions in the problem. However, the choice of system determines whether some of the interactions are internal or external and therefore strongly influences the choice of Model.  Even when SIM leads straightforwardly to a particular model, that model might not enable you to determine the unknown that you seek.  In the end, you will learn that applying this prescription is sometimes an art. This explains why you will have to <b>practice using it</b>.</p>
+
+<h3> Using the S.I.M.</h3>
+
+<p>We recommend that you begin every problem with the S.I.M., so it is important that it be brief.</p>
+
+<ul style="list-style:disc outside none">
+	<li> The system description can be a phrase (S: both colliding cars), or perhaps just a clear dashed circle on your sketch.</li>
+	<li> Describing the interactions is the most important part.  It will often help to draw each force on a free body diagram, but you still must indicate whether each force is conservative or which forces are external. </li>
+	<li> Choosing the Model is simplified by using the map of models and the hierarchy. Write down the general form of the law of change which indicates which of the forces are relevant to the change of motion in this model.  Only then should you substitute the variables and numbers for the specific problem into the general law.</li>
+</ul>
+
+</body>
+</html>
+

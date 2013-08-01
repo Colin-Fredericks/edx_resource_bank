@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+</script>
+
+      <p>
+A small block with mass <i>m</i> is placed inside an inverted cone that is rotating about a vertical axis such that the time for one
+ revolution of the cone is T as shown in the figure. The walls of the cone make an angle \(\beta\)  with the vertical. The coefficient
+  of static friction between the block and the cone is \(\mu_s\). The goal of the problem is to find the magnitude of the force of
+   friction \(F_{fr}\) between the block and the cone's wall if the block is to remain at a constant height  h above the apex
+   of the cone.
+
+</p>
+    <img  src="/static/problems/MIT/analiab/NewProblems/files/ARotatingCone.png"/>
+
+<br/>
+In your solution clearly indicate:
+<br/>
+<p>The <b>system</b> that you consider and the <b>interactions</b> between the object(s) in the system and external objects. 
+Draw the resulting forces in a FBD. Indicate the coordinate system that you will use to describe the vectors. Include in your solutions the <b>model(s)</b> that you use.
+</p>
+
+ <p>
+What is the magnitude of the force of friction? (Note: the double bars in the expressions below indicate the absolute value).
+ </p>
+
+<br/>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+                \(F_{fr}=m\| \frac{v^2}{R}\sin\beta+g\cos\beta \| \)
+
+        </choice>
+        <choice name="foil2" correct="false">
+
+                \(F_{fr}=m\|\frac{v^2}{R}\cos\beta+g\sin\beta \|\)
+
+        </choice>
+        <choice name="foil3" correct="true">
+
+                \(F_{fr}=m\|\frac{v^2}{R}\sin\beta-g\cos\beta \|\)
+
+        </choice>
+        <choice name="foil4" correct="false">
+
+                \(F_{fr}=m\|\frac{v^2}{R}\cos\beta-g\sin\beta \|\)
+
+        </choice>
+        <choice name="foil5" correct="false">
+
+                None of the Above          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+
+  </problem>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Pendulums and the Ubiquity of SHM</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h2>Pendulums and the Ubiquity of SHM</h2>
+<h3> Learning Goals</h3>
+<ul style="list-style:disc outside none"><li>State the form of the differential equation that gives rise to simple harmonic oscillation.
+</li><li>Explain why pendulums only produce harmonic oscillation when the amplitude is small.
+</li></ul>
+<h3> Same Differential Equation Equals Same Solution</h3>
+<p>Before we discuss pendulums, it is important to take a step back and discuss the reasons for taking a course in classical mechanics.  Most people with a vested interest in the curriculum cite the development of "problem solving skills" as a major focus of this course.  One great advantage of this course for teaching problem solving skills is that many students have a physical intuition about the behavior of the systems studied in mechanics.  Thus, when we present the various equations of the One-Dimensional Motion with Constant Acceleration
+ Model, for example, students can use their physical intuition to understand the mathematical structure of these equations.  This is valuable, because 
+ the equations of the Models we present in this course are all solutions to differential equations.  In the case of the 
+ One-Dimensional Motion with Constant Acceleration Model, the relevant differential equation is:
+</p><p>\[\frac{d^{2}x}{dt^{2}} = {\rm constant}\]
+</p><p>Once a physical interpretation is put to these solutions, it can be used to understand other processes that are <i>physically</i> completely 
+different but have the same mathematical form.  We have already done this when we studied the topic of
+Angular Motion about a Single Axis with Constant Angular Acceleration.  Physically, this is not the same as linear motion with constant acceleration.  If 
+you showed the two motions to children, they would never notice a similarity.  Mathematically, however, the motions are nearly identical.  We simply write:
+</p><p>\[\frac{d^{2}\theta_{a}}{dt^{2}} = {\rm constant}\]
+</p><p>in place of the equation above.  Thus, our study of angular motion with constant acceleration was almost an afterthought.  Having developed a familiarity with the governing equation at the beginning of the course, the resulting intuition makes it much easier to understand the analogous motion in an angular system.
+</p>
+</body>
+</html>
+

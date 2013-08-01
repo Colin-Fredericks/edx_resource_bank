@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+omega="sqrt(6*g/L)"
+v_e="sqrt(6*g*L)"
+a_xe=0
+v_m="sqrt(3*g*L/2)"
+alpha=0
+a_ye="6*g"
+a_xm=0
+a_ym="3*g"
+F_x=0
+F_y="4*m*g"
+
+</script>
+
+	<p>At the instant the bar is <b>at the bottom of the swing</b>, find the magnitudes of the following quantities: </p>
+
+ 
+        <p>The horizontal component of the force exerted on the bar by the hinge \(F_x=\)</p>
+
+      <formularesponse answer="$F_x" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+		<hr/>
+
+        <p>The vertical component of the force exerted on the bar by the hinge \(F_y=\)</p>
+
+      <formularesponse answer="$F_y" samples="m,g,L@4,5,2:10,60,4#2">
+        <responseparam default="1%" type="tolerance"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+      </problem>
+</html>

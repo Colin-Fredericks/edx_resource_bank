@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: comparing various times for satellites in various conditions-->
+
+<problem>
+  <customresponse>
+    <text>
+      <h4>Here is a list of times. Assume the same central body in all cases and treat it as a point mass.</h4>
+	  <br/>
+
+		<p>A: the time it takes a satellite to orbit its central body at a constant distance r.
+		<br/>B: the time it takes a satellite to orbit its central body at a constant distance 2r.
+		<br/>C: the time it takes a satellite to orbit its central body at a constant distance 4r.
+		<br/>D: the time it takes a satellite with v = 0 to fall into its central body from a distance r.
+		<br/>E: the time it takes a satellite with v = 0 to fall into its central body from a distance 2r.
+		<br/>F: the time it takes a satellite with v = 0 to fall into its central body from a distance 4r.
+		</p>
+    </text>
+
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="A" label="A" can_reuse="false"/>
+      <draggable id="B" label="B" can_reuse="false"/>
+      <draggable id="C" label="C" can_reuse="false"/>
+      <draggable id="D" label="D" can_reuse="false"/>
+      <draggable id="E" label="E" can_reuse="false"/>
+      <draggable id="F" label="F" can_reuse="false"/>	  
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <target id="sign3" x="250" y="25" w="45" h="35"/>
+	  <target id="item4" x="300" y="25" w="45" h="35"/>
+	  <target id="sign4" x="350" y="25" w="45" h="35"/>
+	  <target id="item5" x="400" y="25" w="45" h="35"/>
+	  <target id="sign5" x="450" y="25" w="45" h="35"/>
+	  <target id="item6" x="500" y="25" w="45" h="35"/>
+	  <br/>
+	  <target id="norank" x="200" y="70" w="145" h="35"/>
+    </drag_and_drop_input>
+    <text>
+	  <h4>Rank <b>the times listed above</b> from greatest to least.</h4>
+	  <br/>
+	  <p>To rank them: use the letters A-F and the symbols = and >. For example, A = B > C means "A and B are the same, and they are both greater than C."</p>
+
+    </text>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['C'],'targets': ['item1'],'rule':'unordered_equal'},
+	{'draggables': ['B'],'targets': ['item2'],'rule':'unordered_equal'},	
+	{'draggables': ['A','F'],'targets': ['item3','item4'],'rule':'unordered_equal'},
+	{'draggables': ['E'],'targets': ['item5'],'rule':'unordered_equal'},
+	{'draggables': ['D'],'targets': ['item6'],'rule':'unordered_equal'},	
+	{'draggables': ['eq'],'targets': ['sign3'],'rule':'unordered_equal'},
+	{'draggables': ['gt'],'targets': ['sign1','sign2','sign4','sign5'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

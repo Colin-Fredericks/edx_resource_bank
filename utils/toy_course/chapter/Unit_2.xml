@@ -1,0 +1,202 @@
+<chapter display_name="2: Interactions and Forces">
+	<sequential display_name="Mini Survey 2 - Teachers" filename="mini_survey_2" />
+	<sequential display_name="Interactions and Forces" url_name="Interactions_and_Forces">
+		<vertical display_name="Interactions and Forces">
+			<html display_name="Interactions and Forces" filename="problems/MIT/RELATE/htmlwiki/Unit2/Interactions_and_For_1.html"/>
+			<discussion for="Interactions and Forces" id="MReV_Summer2013_Interactions_and_For_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Professor Pritchard Video: How to draw free body diagrams: A Static Block">
+			<problem display_name="Professor Pritchard Video: How to draw free body diagrams: A Static Block" filename="MIT/rayyan/8011_videos/FBD1.problem" attempts="0"/>
+			<discussion for="Professor Pritchard Video: How to draw free body diagrams: A Static Block" id="MReV_Summer2013_FBD1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Professor Pritchard Video: How to draw free body diagrams: A block on accelerating plank ">
+			<problem display_name="Professor Pritchard Video: How to draw free body diagrams: A block on accelerating plank " filename="MIT/rayyan/8011_videos/12b.problem" attempts="0"/>
+			<discussion for="Professor Pritchard Video: How to draw free body diagrams: A block on accelerating plank " id="MReV_Summer2013_12b" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Gravitational Force" url_name="Gravitational_Force">
+		<vertical display_name="Gravitational Force">
+			<html display_name="Gravitational Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module1/Gravitational_Force.html"/>
+			<discussion for="Gravitational Force" id="MReV_Summer2013_Gravitational_Force" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Near-Earth Gravity">
+			<html display_name="Near-Earth Gravity" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module1/Near_Earth_Gravity.html"/>
+			<discussion for="Near-Earth Gravity" id="MReV_Summer2013_Near_Earth_Gravity" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Universal Gravity">
+			<html display_name="Universal Gravity" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module1/Universal_Gravity.html"/>
+			<discussion for="Universal Gravity" id="MReV_Summer2013_Universal_Gravity" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Example: Lunar Gravity">
+			<html display_name="Example: Lunar Gravity" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module1/IE_Lunar_Gravity.html"/>
+			<discussion for="Example: Lunar Gravity" id="MReV_Summer2013_IE_Lunar_Gravity" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Gravity Inside the Earth">
+			<problem display_name="Checkpoint 1: Gravity Inside the Earth" filename="F12/RQ/RQ1.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Gravity Inside the Earth" id="MReV_Summer2013_RQ1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Jupiter">
+			<problem display_name="CheckPoint 2: Jupiter" filename="MIT/rayyan/RP/Jupiter.problem" attempts="1"/>
+			<discussion for="CheckPoint 2: Jupiter" id="MReV_Summer2013_Jupiter" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Simulation: gravitational force between objects of small masses">
+			<problem display_name="Simulation: gravitational force between objects of small masses" filename="MIT/analiab/Problems/gravitational_force_between_small_masses.problem" attempts="10"/>
+			<discussion for="Simulation: gravitational force between objects of small masses" id="MReV_Summer2013_gravitational_force_between_small_masses" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Hooke's Law for Elastic Restoring Force" url_name="Hookes_Law_for_Elastic_Restoring_Force">
+		<vertical display_name="Hooke's Law for Elastic Restoring Force">
+			<html display_name="Hooke's Law for Elastic Restoring Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module2/Hookes_Law_for_Elast_1.html"/>
+			<discussion for="Hooke's Law for Elastic Restoring Force" id="MReV_Summer2013_Hookes_Law_for_Elast_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Hooke's Law">
+			<html display_name="Hooke's Law" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module2/Hook_law.html"/>
+			<discussion for="Hooke's Law" id="MReV_Summer2013_Hook_law" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Finding k">
+			<problem display_name="Checkpoint 1: Finding k" filename="MIT/rayyan/osu/08_Potential Energy and Conservation of Energy/PE_spring/PE_spring.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Finding k" id="MReV_Summer2013_PE_spring" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 2: Effective Spring Constant">
+			<problem display_name="CheckPoint 2: Effective Spring Constant" filename="MIT/rayyan/Physics801/Symbolic/Effective Spring Constant.problem" attempts="10"/>
+			<discussion for="CheckPoint 2: Effective Spring Constant" id="MReV_Summer2013_Effective_Spring_Constant" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 3: Hooke's Law Spring Configurations">
+			<problem display_name="CheckPoint 3: Hooke's Law Spring Configurations" filename="MIT/rayyan/Physics801/Symbolic/Hooke_Law_Forces.problem" attempts="10"/>
+			<discussion for="CheckPoint 3: Hooke's Law Spring Configurations" id="MReV_Summer2013_Hooke_Law_Forces" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Tension Force" url_name="Tension_Force">
+		<vertical display_name="Tension Force">
+			<html display_name="Tension Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module3/Tension_Force_2.html"/>
+			<discussion for="Tension Force" id="MReV_Summer2013_Tension_Force_2" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Example: Tug of War">
+			<html display_name="Example: Tug of War" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module3/IE_Tug_of_War.html"/>
+			<discussion for="Example: Tug of War" id="MReV_Summer2013_IE_Tug_of_War" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Two Men on a Rope">
+			<problem display_name="Checkpoint 1: Two Men on a Rope" filename="MIT/rayyan/osu/05_Force and Motion I/hanging/hanging.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Two Men on a Rope" id="MReV_Summer2013_hanging" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 2 : Two men on a Rope">
+			<problem display_name="Checkpoint 2 : Two men on a Rope" filename="MIT/rayyan/osu/05_Force and Motion I/hanging/hanging_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 2 : Two men on a Rope" id="MReV_Summer2013_hanging_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 3 : Two men on a Rope">
+			<problem display_name="Checkpoint 3 : Two men on a Rope" filename="MIT/rayyan/osu/05_Force and Motion I/hanging/hanging_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 3 : Two men on a Rope" id="MReV_Summer2013_hanging_2" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: Accelerating Block">
+			<problem display_name="CheckPoint 4: Accelerating Block" filename="MIT/rayyan/check_points/BK/BK19.problem" attempts="2"/>
+			<discussion for="CheckPoint 4: Accelerating Block" id="MReV_Summer2013_BK19" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Block going down">
+			<problem display_name="CheckPoint 5: Block going down" filename="MIT/rayyan/check_points/BK/BK21.problem" attempts="1"/>
+			<discussion for="CheckPoint 5: Block going down" id="MReV_Summer2013_BK21" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Free Body Diagrams">
+			<problem display_name="CheckPoint 6: Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK4.problem" attempts="1"/>
+			<discussion for="CheckPoint 6: Free Body Diagrams" id="MReV_Summer2013_BK4" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Free Body Diagrams">
+			<problem display_name="CheckPoint 7: Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK5.problem" attempts="2"/>
+			<discussion for="CheckPoint 7: Free Body Diagrams" id="MReV_Summer2013_BK5" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Pulleys">
+			<html display_name="Pulleys" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module3/Pulleys.html"/>
+			<discussion for="Pulleys" id="MReV_Summer2013_Pulleys" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Normal Force" url_name="Normal_Force">
+		<vertical display_name="Normal Force">
+			<html display_name="Normal Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module4/Normal_Force_1.html"/>
+			<discussion for="Normal Force" id="MReV_Summer2013_Normal_Force_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Notation for Normal Force">
+			<html display_name="Notation for Normal Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module4/Notation.html"/>
+			<discussion for="Notation for Normal Force" id="MReV_Summer2013_Notation" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Normal Force as Constraint">
+			<html display_name="Normal Force as Constraint" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module4/Constraint.html"/>
+			<discussion for="Normal Force as Constraint" id="MReV_Summer2013_Constraint" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Elevator">
+			<problem display_name="Checkpoint 1: Elevator" filename="MIT/rayyan/osu/05_Force and Motion I/elevator/elevator.problem" attempts="1"/>
+			<discussion for="Checkpoint 1: Elevator" id="MReV_Summer2013_elevator" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Elevator">
+			<problem display_name="Checkpoint 2: Elevator" filename="MIT/rayyan/osu/05_Force and Motion I/elevator/elevator_1.problem" attempts="1"/>
+			<discussion for="Checkpoint 2: Elevator" id="MReV_Summer2013_elevator_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Elevator">
+			<problem display_name="Checkpoint 3: Elevator" filename="MIT/rayyan/osu/05_Force and Motion I/elevator/elevator_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 3: Elevator" id="MReV_Summer2013_elevator_2" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 4: Free Body Diagrams">
+			<problem display_name="CheckPoint 4: Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK20.problem" attempts="1"/>
+			<discussion for="CheckPoint 4: Free Body Diagrams" id="MReV_Summer2013_BK20" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 5 : Free Body Diagrams">
+			<problem display_name="CheckPoint 5 : Free Body Diagrams" filename="MIT/rayyan/check_points/BK/BK3.problem" attempts="1"/>
+			<discussion for="CheckPoint 5 : Free Body Diagrams" id="MReV_Summer2013_BK3" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Weight in Elevator">
+			<problem display_name="CheckPoint 6: Weight in Elevator" filename="MIT/rayyan/check_points/BK/BK24.problem" attempts="2"/>
+			<discussion for="CheckPoint 6: Weight in Elevator" id="MReV_Summer2013_BK24" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Kinetic Friction" url_name="Kinetic_Friction">
+		<vertical display_name="Kinetic Friction">
+			<html display_name="Kinetic Friction" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module5/Kinetic_Friction_1.html"/>
+			<discussion for="Kinetic Friction" id="MReV_Summer2013_Kinetic_Friction_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Introduction to friction">
+			<html display_name="Introduction to friction" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module5/Friction_Introduction.html"/>
+			<discussion for="Introduction to friction" id="MReV_Summer2013_Friction_Introduction" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Kinetic Friction">
+			<problem display_name="Checkpoint 1: Kinetic Friction" filename="MIT/rayyan/osu/06_Force and Motion II/friction/friction.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Kinetic Friction" id="MReV_Summer2013_friction" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Kinetic Friction">
+			<problem display_name="Checkpoint 2: Kinetic Friction" filename="MIT/rayyan/osu/06_Force and Motion II/friction/friction_1.problem" attempts="1"/>
+			<discussion for="Checkpoint 2: Kinetic Friction" id="MReV_Summer2013_friction_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Kinetic Friction">
+			<problem display_name="Checkpoint 3: Kinetic Friction" filename="MIT/rayyan/osu/06_Force and Motion II/friction/friction_2.problem" attempts="1"/>
+			<discussion for="Checkpoint 3: Kinetic Friction" id="MReV_Summer2013_friction_2" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Static Friction" url_name="Static_Friction">
+		<vertical display_name="Static Friction">
+			<html display_name="Static Friction" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module6/Static_Friction_1.html"/>
+			<discussion for="Static Friction" id="MReV_Summer2013_Static_Friction_1" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Static Friction as Constraint">
+			<html display_name="Static Friction as Constraint" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module6/Constraint.html"/>
+			<discussion for="Static Friction as Constraint" id="MReV_Summer2013_Constraint" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Video Tutorial: Which will slide first?">
+			<problem display_name="Video Tutorial: Which will slide first?" filename="MIT/analiab/Problems/blocks_incline_question.problem" attempts="10"/>
+			<discussion for="Video Tutorial: Which will slide first?" id="MReV_Summer2013_blocks_incline_question" discussion_category="Interactions and Forces" />
+		</vertical>
+		<!-- After current course ends, and replace the vertical that follows with this one.
+		<vertical display_name="Video Tutorial: a Block on an inclined plane" filename="BIP.vert" /> 
+		-->
+		<vertical display_name="Video Tutorial: a Block on an inclined plane">
+			<problem display_name="Video Tutorial: a Block on an inclined plane" filename="MIT/analiab/Problems/a_block_on_an_incline_plane.problem" attempts="10"/>
+			<discussion for="Video Tutorial: a Block on an inclined plane" id="MReV_Summer2013_a_block_on_an_incline_plane" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Contact Force and Applied Force" url_name="Contact_Force_and_Applied_Force">
+		<vertical display_name="Contact Force and Applied Force">
+			<html display_name="Contact Force and Applied Force" filename="problems/MIT/RELATE/htmlwiki/Unit2/Module7/Contact_Force_and_Ap_2.html"/>
+			<discussion for="Contact Force and Applied Force" id="MReV_Summer2013_Contact_Force_and_Ap_2" discussion_category="Interactions and Forces" />
+		</vertical>
+		<vertical display_name="Link to Useful Resource: Contact Forces">
+			<html display_name="Link to Useful Resource: Contact Forces" filename="problems/MIT/analiab/Videos/Summary_of_weight_and_contact_forces.html"/>
+			<discussion for="Link to Useful Resource: Contact Forces" id="MReV_Summer2013_Summary_of_weight_and_contact_forces" discussion_category="Interactions and Forces" />
+		</vertical>
+	</sequential>
+</chapter>

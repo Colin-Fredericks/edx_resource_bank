@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- BK problem 151 -->
+<problem>
+
+	<p>If \( m_1 \gg m_2 \), what is the acceleration a<sub>2</sub>?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">g</choice>
+			<choice location="random" correct="false">2g</choice>
+			<choice location="random" correct="true">g/2</choice>
+			<choice location="random" correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

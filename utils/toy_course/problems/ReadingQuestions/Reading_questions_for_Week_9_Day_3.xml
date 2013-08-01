@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Question Week 9 Day 3</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">For each day's reading question, write your name, section, table, and group number on the upper right hand corner of your answer and hand it in at the start of class that day</b>
+  </p>
+  <p>
+    <b class="bfseries">Nov 4 W09D3 Problem Solving 06: Two Dimensional Rotational Dynamics </b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman: 1.10 (Vector Product), 10.1-10.2, 10.4, 11.1-11.3 </p>
+  <p>
+    <b class="bfseries">Reading Question </b>
+  </p>
+  <p>
+(1) What re the two conditions for static equilibrium of a rigid body? </p>
+  <p>
+(2) When applying the torque equation when there is fixed axis rotation about the z-axis, both torque and angular acceleration are vectors. The \(z\) -component of angular acceleration is defined to be \(\alpha _{z} =d^{2} \theta /dt^{2} =d\omega _{z} /dt\) . How does your choice of direction (clockwise or counterclockwise) for increasing angle \(\theta\) determine which direction you choose for the positive \(z\) -axis? Keep in mind that these choices will determine the sign of the \(z\) -component of the torque. </p>
+</problem>

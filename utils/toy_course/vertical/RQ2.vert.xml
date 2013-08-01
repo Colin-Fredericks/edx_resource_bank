@@ -1,0 +1,8 @@
+<vertical>
+	<problem filename="F12/RQ/RQ2-1.problem" display_name="Checkpoint 1: SHM Quantities" attempts="1"/>
+	<problem filename="F12/RQ/RQ2-2.problem" display_name="Checkpoint 1: SHM Quantities, Part 2" attempts="1"/>
+	<problem filename="F12/RQ/RQ2-3.problem" display_name="Checkpoint 1: SHM Quantities, Part 3" attempts="2"/>
+	<problem filename="F12/RQ/RQ2-4.problem" display_name="Checkpoint 1: SHM Quantities, Part 4" attempts="2"/>
+	<problem filename="F12/RQ/RQ2-5.problem" display_name="Checkpoint 1: SHM Quantities, Part 5" attempts="2"/>
+	<discussion for="Checkpoint 1: SHM Quantities" id="MReV_Summer2013_RQ2" discussion_category="Harmonic Oscillation" />
+</vertical>

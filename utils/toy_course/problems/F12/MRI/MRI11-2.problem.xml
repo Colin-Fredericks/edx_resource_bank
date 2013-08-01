@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 11 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The momentum of the wedge-and-block system is conserved.</choice>
+			<choice location="random" correct="false">The momentum of the wedge-and-block system is not conserved.</choice>
+			<choice location="random" correct="false">The mass of the wedge is greater than the mass of the block.</choice>
+			<choice location="random" correct="false">The block has zero velocity relative to the table when it reaches the top of the wedge.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

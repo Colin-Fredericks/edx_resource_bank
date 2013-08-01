@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Center of Mass and the motion of a system</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h2>The Motion of the Center of Mass</h2>
+<p>In this module we will understand the relevance of the concept of the center of mass in the description of the translational motion of a system. By knowing the net force on a system we can determine the acceleration of the system's center of mass; hence the position of the center of mass as a function of time. Applying these results to an extended object, we will justify the point particle approximation that we have been using in the the previous units.</p>
+
+<h3>Learning Objectives </h3>
+<p>After the end of this module you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li> Explain why only a net external force can change the translational motion of the center of mass of a system</li>
+	<li> Determine the motion of the center of mass of a system knowing the external forces acting on the system</li>
+</ul>
+
+<h3>Motion of a Multi Body System </h3>
+<p>We will start by studying a system of N particles and generalize the results to a single extended object and then to a system of extended objects. The close relationship between the velocity of the center of mass of a system and its momentum allows us to quickly find the acceleration of the center of mass.</p>
+
+<h3> Velocity and Acceleration of the Center of Mass</h3>
+<p>In this section we will calculate the velocity and the acceleration of the center of mass of a system consisting of <i>N</i> point particles. If the velocity, the acceleration and the mass of the <i>i-th </i> particle is \(\vec{v}_i\), \(\vec{a}_i\) and <font size="4" face="times new roman"> <i> m<sub>i</sub></i></font>, respectively, and the total mass of the system is <font size="4" face="times new roman"><i>M = m<sub>1</sub> + m<sub>2</sub> + .. + m<sub>N</sub></i></font>, then we have:</p>
+
+<table>
+<tr>
+<th width="400" align="center">
+	<b>Velocity of the CM</b>
+</th>
+</tr>
+<tr>
+<td><br/> \(\vec{V}_{cm}=\frac{d}{dt}\vec{R}_{cm}=\)
+<p>\(\vec{V}_{cm} = \frac{1}{M}\sum_{i=1}^N m_i\vec{v}_i = \frac{1}{M} \vec{P}^{system}\)
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th width="400" align="center"><b>Derivation</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> Take the derivative with respect to time of the position of the center of mass:
+<p>\(\vec{V}_{cm}=\frac{d}{dt}(\vec{R}_{cm})= \)
+</p><p>\(\vec{V}_{cm}= \frac{d}{dt}(\frac{1}{M}\sum_{i=1}^N m_i\vec{r}_i)= \)
+</p><p>\( \vec{V}_{cm} = \frac{1}{M}\sum_{i=1}^N m_i\frac{d\vec{r}_i}{dt}=\)
+</p><p>\(\vec{V}_{cm} =\frac{1}{M}\sum_{i=1}^N m_i\vec{v}_i\)
+</p>
+</td></tr></table>
+</td></tr></table>
+
+<table>
+<tr>
+<th width="400" align="center">
+	<b> Acceleration of the CM</b>
+</th></tr>
+<tr>
+<td> <br/>\(\vec{A}_{cm}=\frac{d}{dt}\vec{V}_{cm}=\)
+<p>\(\vec{A}_{cm}=\frac{1}{M}\sum_{i=1}^N m_i\vec{a}_i\)
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th width="400"> <b>Derivation</b>
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td>Take the derivative with respect to time of the velocity of the center of mass:
+<p>\(\vec{A}_{cm} = \frac{d}{dt}(\vec{V}_{cm}) = \)
+</p><p>\(\vec{A}_{cm} = \frac{d}{dt}(\frac{1}{M}\sum_{i=1}^N m_i\vec{v}_i)= \)
+</p><p>\( \vec{A}_{cm} = \frac{1}{M}\sum_{i=1}^N m_i\frac{d\vec{v}_i}{dt}=\)
+</p><p>\(\vec{A}_{cm} =\frac{1}{M}\sum_{i=1}^N m_i\vec{a}_i \)
+</p>
+</td></tr></table>
+</td></tr></table>
+
+<h3>  Total Momentum, Net External Force, and the Motion of the Center of Mass </h3>
+
+<table>
+<tr>
+<th width="400" align="center">
+	<b> Total Momentum</b>
+</th></tr>
+<tr>
+<td align="center">&#160;&#160;&#160;&#160;&#160;<br/>\(\vec{P}^{sys} = M\vec{V}_{cm}\)&#160;&#160;&#160;&#160;&#160;
+</td></tr>
+<tr>
+<td><br/>The total linear momentum of the system is equal to that of a single particle of mass <i>M</i> moving with the velocity of the center of mass.
+<p><br/>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th width="400"><b>Derivation</b>
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td>The velocity of the center of mass of the system is:
+<p><br/>
+\(\vec{V}_{cm} =\frac{1}{M}\sum_{i=1}^N m_i\vec{v}_i \mbox{   (1)}\)
+</p><p>where
+</p><p>\(m_i\vec{v}_i =\vec{p}_i\) is the linear momentum vector of the <i>i-th</i> particle. 
+</p><p>Adding the linear momentum of the system constituents we obtain the total momentum of the system:
+</p><p>\(\sum_{i=1}^N \vec{p}_i =\vec{P}^{sys} \mbox{   (2)}\)
+</p><p>From (1) and (2) we obtain:
+</p><p>\( \vec{P}^{sys} = M\vec{V}_{cm}\;\;\;\;\;\;\;\)
+</p>
+</td></tr></table>
+</td></tr></table>
+
+<table>
+<tr>
+<th width="400" align="center">
+	<b>Total External Force</b>
+</th></tr>
+<tr>
+<td align="center"> <br/>\(M\vec{A}_{cm}=M \frac{d \vec{V}_{cm}}{dt} = \frac{d}{dt} \vec{P}^{system} = \sum \vec{F}^{ext}\)
+</td></tr>
+<tr>
+<td><br/>The center of mass of a system of particles of mass <i>M</i> moves like an equivalent particle of mass <i>M</i> would move under the influence of the net external force on the system.
+<table class="subtable collapsible collapsed">
+<tr>
+<th width="400"><b>Derivation</b>
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td>The acceleration of the center of mass of the system is:
+<p>\( \vec{A}_{cm}=\frac{1}{M}\sum_{i=1}^N m_i\vec{a}_i \)
+</p><p>where \(\vec{f}_i=m_i\vec{a}_i\) is the <b>net force acting on the <i>i-th</i></b> particle.
+</p><p>The <i>i-th</i> particle may interact with particles inside the system and with objects outside the system, therefore the net force on the <i>i-th</i> particle may include <b>internal forces</b> and <b>external forces</b>. When adding all the forces acting on the N particles, the <font color="red"> Newton's 3rd law pairs between the system constituents will cancel each other</font> and <b>only</b> the sum of the external forces acting on each of the particles within the system will be different from zero:
+</p><p>\(\sum \vec{F}^{ext}\neq 0\)
+</p><p>Then, the acceleration of the center of mass is given by:
+</p><p>\(\vec{A}_{cm} =\frac{1}{M}\sum \vec{F}^{ext}\)
+</p><p>Rearranging this equation we obtain:
+</p><p><br/>
+\(\sum \vec{F}^{ext} = M\vec{A}_{cm}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+
+<p><b>Review the above derivations by watching two short movies:</b></p>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>1. Only the external forces are relevant (~ 2 min long)</b> &#160;&#160;&#160;
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td>
+	<p>Click the little play button by <b>Newton's laws &amp; center of mass</b> under the title <b>8. Center of mass</b> at the right of the window in <a href="http://www.animations.physics.unsw.edu.au/mechanics/chapter8_centreofmass.html" class="external text" rel="nofollow">the PHYSCLIPS</a> to show that:</p>
+	<p>\[\sum \vec{F}^{ext} = M\vec{A}_{cm}\]</p>
+	<p>You need to wait for about 1 min to load.</p>
+</td></tr></table>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>2. Part of Prof. Lewin's video lecture (~ 6 min long)</b>&#160;&#160;
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td>
+	<p><b>Start the movie at <font color="red"><b>35:40</b></font> and stop it at <font color="red">41:30</font> - we will see the rest of the video later in this module.</b></p>
+	<p><iframe width="640" height="360" src="http://www.youtube.com/embed/0DR8emfSsF0?rel=0&start=2140&autoplay=0" frameborder="0" allowfullscreen></iframe></p>
+	<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/Center_of_Mass_Lecture.mp4">Click here to download this video.</a></p>
+</td></tr></table>
+</body>
+</html>
+

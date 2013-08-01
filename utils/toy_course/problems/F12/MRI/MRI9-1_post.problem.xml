@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 9 -->
+
+<problem>
+
+	<p><i>This question presents a complex problem that may need to be broken into smaller sections in order to be solved. The diagram for the problem is broken into 7 arbitrary parts, or intervals. After the problem is presented, there will be several options for breaking the problem into manageable sub-problems. Choose the one answer that best describes how the problem should be divided.</i></p>
+
+	<img src="/static/problems/F12/MRI/images/MRI9.png" />
+
+	<h3>Part 1</h3>
+	<p>The pendulum shown in the figure above (a ball of mass \(m \) at the end of a string of length \(L\) ) is released from rest when the string is perfectly horizontal and swings down to hit the box (mass \( M > m \) ). The pendulum string is vertical when the collision occurs. The pendulum stops after it hits the box, and the box slides a distance \(d \) along a rough horizontal surface until it stops. The drawing above shows the beginning and end of the motion of the pendulum and the box. You are asked to find the coefficient of kinetic friction between the box and the surface using the quantities described in the problem plus the gravitational acceleration \( g\). What is the most appropriate way to decompose this problem? </p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">One problem: intervals 1-7</choice>
+			<choice location="random" correct="false">Two sub-problems: intervals 1-3 and 3-7</choice>
+			<choice location="random" correct="true">Three sub-problems: intervals 1-3, 3, and 3-7</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

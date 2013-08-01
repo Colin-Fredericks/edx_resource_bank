@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Simple Harmonic Motion Linear Restoring Acceleration</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<script type="text/javascript"> $(function(){ $('a[rel*=leanModal]').leanModal(); }); </script>
+<!--<script type="text/javascript"> 
+$('#Point_particle').load('/static/content-mit-8011x/MIT/RELATE/htmlwiki/reference/Point_particle.html');
+
+function domath(){ MathJax.Hub.Queue(["Typeset",MathJax.Hub]); // force all math to retypeset 
+} </script>-->
+
+<style type="text/css">
+#go { 
+margin: 0 auto; width: 200px; 
+}
+
+.popup{
+    width: 80%;
+	height: 400px;
+	padding: 30px; 
+    display:none;
+	overflow:auto;
+    background: #FFF;
+    border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);       
+}
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Special Case of the Dynamics and Net Force Model</h3>
+
+<p>Simple Harmonic Motion is a sub-model of the Dynamics and Net Force Model. This model applies to a <!--<a id="go" rel="leanModal" href="#Point_particle" name="Point_particle" onclick="domath()">-->point particle<!--</a>--> that meets all of the following criteria:</p>
+
+<ol>
+	<li>The particle has a particular equilibrium location at which the net force on the point particle (and hence its acceleration) is zero.</li>
+	<li>The particle is subject to a linear restoring force if it moves away from this equilibrium location. A linear restoring force is defined as a force that points toward the equilibrium location and has a size that is directly proportional to the distance of the point particle from its equilibrium position. (Newton's Second Law implies that we can equivalently say that the point particle is subject to a linear restoring <i>acceleration</i>.) A linear restoring force in one dimension is said to obey Hooke's Law.)</li>
+</ol>
+
+<h2> Definitions</h2>
+
+<h4> Oscillating Frequency</h4>
+
+<p>A linear restoring force in one dimension is generally written in the form of Hooke's Law:</p>
+
+<p><m>$\mathcal{F}_{x}=-kx$</m></p>
+
+<p>where <i>k</i> is a constant of proportionality. By using Newton's second law to substitute for <i>F</i>, this can be brought into the standard form for harmonic motion:</p>
+
+<p><m>$a_{x} = - \frac{k}{m} x$</m></p>
+
+<p>or, equivalently,</p>
+
+<p><m>$\frac{d^{2}x}{dt^{2}} = - \frac{k}{m} x$</m></p>
+
+<p>We rewrite <m>$\frac{k}{m}$</m> as a new constant:</p>
+
+<p><m>$\frac{d^{2}x}{dt^{2}} = - \omega_{osc}^{2} x$</m></p>
+
+<p>where <m>$\omega_{osc}^2$</m> is a constant of proportionality, and <m>$\omega_{osc} = \sqrt{\frac{k}{m}}$</m> is the natural frequency of oscillation.</p>
+
+<p>This natural frequency is sometimes called the resonant frequency, since applying a driving force to the system that has this frequency will result in an a large increase in the amplitude of the motion, a phenomenon known as "resonance."</p>
+
+<h4> Amplitude</h4>
+
+<p>The maximum displacement of the point particle from its equilibrium location is known as the amplitude of the motion. The amplitude (<i>A</i>) can be defined in terms of the initial position and velocity of the motion by using the fact that the velocity will go to zero when the displacement is maximum. Alternatively, one can use conservation of energy.</p>
+
+<p><m>$A = \sqrt{x_{0}^{2} + \frac{v_{0,x}^{2}}{\omega_{osc}^{2}}}$</m></p>
+
+<p><br /></p>
+
+<h2> Mathematical Representation</h2>
+
+<p>One generic form of the mathematical solution to the harmonic oscillator equation is the following:</p>
+
+<p><m>$x(t) = A\cos\left(\omega_{osc}t\right) + B\sin\left(\omega_{osc}t\right)$</m></p>
+
+<p>By using our initial conditions, we can find A and B, giving us the equation below for position as a function of time. We can find the velocity and acceleration equations using derivatives with respect to time.</p>
+
+<p><m>$x(t) = x_{0}\cos\left(\omega_{osc}t\right) + \frac{v_{0,x}}{\omega_{osc}}\sin\left(\omega_{osc}t\right)$</m></p>
+
+<p><m>$v(t) = -x_{0}\, \omega_{osc}\sin\left(\omega_{osc}t\right) + v_{0,x}\cos\left(\omega_{osc}t\right)$</m></p>
+
+<p><m>$a(t) = -x_{0}\, \omega_{osc}^{2}\cos\left(\omega_{osc}t\right) - v_{0,x}\, \omega_{osc}\sin\left(\omega_{osc}t\right) = -\omega_{osc}^{2}\, x(t)$</m></p>
+<!--<div id="Point_particle" class="popup"></div>-->
+</body>
+</html>

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Block on Incline</title>
+      <p>A small block of mass m is placed at the bottom of an inclined plane that has a length of d and vertical height of h. The block is being pulled all the way to the top at a constant velocity v by an applied force F.</p>
+      <br/>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK73.PNG" alt="BK73.PNG"/>
+        <br/>
+
+    <p>Part 1. What is the initial potential energy of the block?</p>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                Zero 
+          </choice>
+          <choice name="foil2" correct="false">
+                  \(mgh\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \(-mgh\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(mgd\)
+          </choice>
+          <choice name="foil5" correct="false">
+                  \(-mgd\)
+          </choice>
+          <choice name="foil6" correct="true">
+                 There is no correct answer; the value of potential energy at any point can be always shifted by a constant. One has to assign a value of the potential energy at some reference point.
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <p>Part 2. What is the final potential energy of the block?</p>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                Zero 
+          </choice>
+          <choice name="foil2" correct="false">
+                  \(mgh\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \(-mgh\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(mgd\)
+          </choice>
+          <choice name="foil5" correct="false">
+                  \(-mgd\)
+          </choice>
+          <choice name="foil6" correct="true">
+                 There is no correct answer, the value of potential energy at any point can be always shifted by a constant. One has to assign a value of the potential energy at some reference point.
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <p>Part 3. What is the change in the potential energy of the block \((U_f-U_i)\)?</p>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+                Zero 
+          </choice>
+          <choice name="foil2" correct="true">
+                  \(mgh\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \(-mgh\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(mgd\)
+          </choice>
+          <choice name="foil5" correct="false">
+                  \(-mgd\)
+          </choice>
+          <choice name="foil6" correct="false">
+                 There is no correct answer, the change of potential energy depends on your choice of the coordinate system  and on the assigned value at some reference point.
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <p>Part 4. What is the change in the kinetic energy of the block?</p>
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="true">
+                Zero 
+          </choice>
+          <choice name="foil2" correct="false">
+                  \(mgh-Fd\)
+          </choice>
+          <choice name="foil3" correct="false">
+                  \(-mgh+ Fd\)
+          </choice>
+          <choice name="foil4" correct="false">
+                  \(mgh+ Fd\)
+          </choice>
+          <choice name="foil5" correct="false">
+                  \(mgh\)
+          </choice>
+          <choice name="foil6" correct="false">
+                  \(-mgh\)
+          </choice>
+          <choice name="foil7" correct="false">
+                   \(Fd\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+  </problem>
+</html>

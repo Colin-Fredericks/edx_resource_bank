@@ -1,0 +1,10 @@
+List of problems that have extraneous information:
+
+\MIT\rayyan\Hammock																			height at which the hammock is secured
+\MIT\boriskor\Multiconcept Problems\Jumping on a sliding board								mass of you and board
+\MIT\rayyan\Physics801\Forces\Pulley Platform												initial distance
+\MIT\rayyan\osu\05_Force and Motion I\hanging\hanging_3										mass of platform
+\MIT\rayyan\osu\08_Potential Energy and Conservation of Energy\PE_spring\PE_spring_1		mass of ball
+\MIT\boriskor\Rotation\Ladder resting againsta a wall with friction							mass and length of ladder
+\MIT\rayyan\check_points\BK\BK40															mass of projectile
+\MIT\rayyan\Physics801\Symbolic\One Person Catch											mass of ball

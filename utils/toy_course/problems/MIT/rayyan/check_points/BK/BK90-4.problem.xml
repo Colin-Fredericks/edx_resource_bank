@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Yo-Yo = Part 4</title>
+    
+<p>What is the moment of inertia of the yo-yo with respect to the axis perpendicular to the screen and 
+passing through the
+ contact point between the yo-yo and the ground?</p>
+
+      <multiplechoiceresponse max="10" direction="vertical" randomize="no" loncapaid="18" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                  \(I\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(I+ mr^2\)
+          </choice>
+          <choice location="random" name="foil4" correct="true">
+                  \(I+ mR^2\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(I+ m(r+R)^2\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(I+ m(R-r)^2\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

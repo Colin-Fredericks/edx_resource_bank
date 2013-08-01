@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+ans = "d"
+
+</script>
+
+      <p>
+xxA car is stopped at an intersection with a red light and a biker (in a bike lane) with velocity v is approaching the car. When the biker is a distance d from the intersection, the light turns green and the car begins to accelerate at a constant acceleration a. If biker just barely catches up to the car as the car accelerates, how far from the intersection will the biker just catch up to the car?
+<br/>
+Put your answer only using the variable d, not v and a. <br/>
+</p>
+
+    <formularesponse answer="$ans">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+  </problem>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>Video by Jonathan Abbot (MIT): Physics of Unicycling </title>
+
+        <p><table border="1"><tr><td><b>Physics Of Unicycling</b></td></tr><tr><td><iframe height="480" width="853" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/UzG9_8NgngI?rel=0"/></td></tr></table><br/>
+As described in the video, the three forces primarily involved with unicycling are gravity, a normal force, and friction. In order to turn, a unicyclist (or a biker) may try a technique called countersteering. Which of the following offers a correct explanation for the process of by which a unicyclist can countersteer to make a turn?
+</p>
+      <multiplechoiceresponse randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="1" name="foil1" correct="false">
+                First steer towards the desired direction so that friction primarily acts towards the correct direction.
+          </choice>
+          <choice location="2" name="foil2" correct="true">
+                First steer opposite the desired direction so that friction primarily acts radially inward.
+          </choice>
+          <choice location="3" name="foil3" correct="false">
+                First steer towards the desired direction so that friction primarily acts radially inward.
+          </choice>
+          <choice location="4" name="foil4" correct="false">
+                First steer opposite the desired direction so that friction primarily acts towards the correct direction.
+          </choice>
+        </choicegroup>
+		
+     </multiplechoiceresponse>
+
+	         <solution>
+<p>Explanation: countersteering involves steering in the opposite direction to begin a turn. This moves the wheel, leaving the unicyclist leaning to the inside of the turn (radially inward). Friction then acts as a centripetal force, but this also causes a large torque about the center of mass (i.e. the rider). The leaning is necessary to make torque from the normal force offset the torque due to friction.</p>
+        </solution>
+	 
+  </problem>
+</html>

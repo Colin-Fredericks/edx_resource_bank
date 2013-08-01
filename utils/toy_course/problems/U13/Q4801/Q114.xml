@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<!--
+<p><b>Strange behavior - after clicking check answer, the problem disappears and it is displayed the ''holding p11-3 "</b></p>
+Fixed - "true" rather than "correct"
+-->
+
+<p><img src="/static/problems/S13/quiz/images/11-3.png" /></p>
+
+<p>  A uniform rod of mass \(M\) and length \(d\) is initially at rest on a horizontal and frictionless table contained
+in the xy plane. The rod is free to rotate about an axis perpendicular to the plane and passing 
+through the pivot point at a distance \(d/3\) measured from one of its ends as shown. A small disc of mass <i>m</i>,
+moving with speed \(v_o\), hits the rod and stick to it at the point of impact at a distance \(d/3\) from the pivot. (Gravity 
+is pointing into the screen).
+</p>
+
+<p>If the mass of the rod is \(M = 4m\), what is the magnitude of the angular velocity of the rod+disc system after the collision?
+</p> 
+
+     <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="foil1">
+            <text>\(\omega=2v_o/(3d)\)</text>
+          </choice>
+          <choice correct="false" name="foil2">
+            <text> \(\omega=3v_o/(2d)\)</text>
+          </choice>
+          <choice correct="false" name="foil3">
+            <text> \(\omega=4v_o/(3d)\)</text>
+          </choice>
+          <choice correct="false" name="foil4">
+            <text> \(\omega=3v_o/(4d)\)</text>
+          </choice>
+          <choice correct="false" name="foil5">
+            <text> \(\omega=8v_o/(3d)\)</text>
+          </choice>
+          <choice correct="false" name="foil6">
+            <text> \(\omega=3v_o/(8d)\)</text>
+          </choice>
+            <choice correct="false" name="foil7">
+            <text> \(\omega=5v_o/(3d)\)</text>
+          </choice>
+          <choice correct="true" name="foil8">
+            <text> \(\omega=3v_o/(5d)\)</text>
+          </choice>
+
+       </choicegroup>
+      </multiplechoiceresponse> 
+
+</problem>
+
+</html>

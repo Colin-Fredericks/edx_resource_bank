@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>Example: Angular Momentum of a Hoop</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<p>We will start by calculating the angular momentum of an object consisting of two point masses and then we will 
+generalize our result to the angular momentum of a rigid object whose mass is distributed continuously within the body.</p>
+
+<h3> Angular momentum of a system of point particles </h3>
+<table style="font-size:10pt" border="1">
+<tr>
+<td><b>The angular momentum of a system of particles is obtained by adding the angular momentum of each of the constituents.</b>
+</td></tr></table>
+
+<h3> Example: The Angular Momentum of Two Balls Attached by a Rod</h3>
+<p>Consider a rigid object consisting of two small balls of  mass <i><b>m<sub>1</sub></b></i> and <i><b>m<sub>2</sub></b></i>, <i><b>m<sub>2</sub></b></i> > <i><b>m<sub>1</sub></b></i>, connected by a rod of negligible mass. The object is placed on a horizontal and frictionless table contained in the x-y plane. The object is set to rotate counterclockwise as viewed from above the x-y plane with an angular speed <i><b>&omega;</b></i> hence its axis of rotation is perpendicular to the plane of rotation and passing through the center of the rod, point <b>Q</b> in the figure.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2ballsBar_update.png"/>
+<p>Calculate the magnitude and the direction of angular momentum of the rigid object about point <b>Q</b>.</p>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer:
+ [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th></tr>
+<tr style="display:none" id="ht17">
+<td><p><u>Magnitude</u>: \(L_Q=(m_1R^2+m_2R^2)\omega\). &nbsp; &nbsp;<u>Direction</u>: along the positive z-axis.</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Solution:
+ [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th></tr>
+<tr style="display:none" id="ht18">
+<td>
+<p>Consider the system to be the rigid object. The angular momentum of the system about point <i><b>Q</b></i> 
+is the sum of the angular momentum of its constituents. There is no angular momentum associated to the rod because we consider it to be massless, then</p>
+<p>\(\vec{L}_{Q} = \vec{L}_{Q}^{1} + \vec{L}_{Q}^{2}\)</p>
+<p><b>Direction:</b></p>
+<p>Consider the balls' position vectors measured from point <i><b>Q</b></i> to be \(\vec{r}_{1Q}\) and \(\vec{r}_{2Q}\), and 
+the balls' velocity vectors to be \(\vec{v}_1\) and \(\vec{v}_2\) as shown in the figure:</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol_position_update.png"/></p>
+<p>Following the right hand rule, the direction of the angular momentum of each particle is along the <b>+z</b> axis
+and is shown in the figure below. Adding both vectors, the total angular momentum about point <i><b>Q</b></i> is also along the <b>+z</b> axis parallel to <i><b>&#969;</b></i>.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol1.png"/></p>
+<p><b>Magnitude:</b></p>
+<p>The angular momentum of ball 1 with respect to point <i><b>Q</b></i> is:</p>
+<p>\(\vec{L}_{Q}^{1} = m_1\vec{r}_{1Q}\times \vec{v}_{1} \)</p>
+<p>and, the angular momentum of ball 2 with respect to point <i><b>Q</b></i> is:</p>
+<p>\(\vec{L}_{Q}^{2} = m_2\vec{r}_{2Q} \times \vec{v}_{2} \)</p>
+<p>where the position vectors of both balls measured from point <i><b>Q</b></i> have the same magnitude and equal to the radius of the circle:</p>
+<p><font size="4">\( |\vec{r}_{1Q}| = |\vec{r}_{2Q}| = R\)</font></p>
+<p>Because the particles are connected by the rod they both have the same angular velocity of magnitude <i>&#969;</i>. As a result, their speeds are equal: <i><b>v<sub>1</sub> = v<sub>2</sub> = R&#969;</b></i>. The position and velocity vectors are perpendicular to each other, therefore the magnitude of the angular momentum vector of ball 1 is</p>
+<p>\( L_{Q}^{1} = m_1|\vec{r}_{1Q}| |\vec{v}_1|\sin 90^o = m_1Rv_1 = m_1R^2\omega\)</p>
+<p>and for ball 2:</p>
+<p>\( L_{Q}^{2} = m_2|\vec{r}_{2Q} ||\vec{v}_2|\sin 90^o = m_2Rv_2 = m_2R^2\omega\)</p>
+<p><br/>The total angular momentum about point <i><b>Q</b></i> is:</p>
+<p>\(L_Q=m_1R^2\omega+m_2R^2\omega = (m_1R^2+m_2R^2)\omega\)</p>
+<p>The term inside the parenthesis is the moment of inertia of the rigid object about point <b>Q</b>, \(I_Q=m_1R^2+m_2R^2\).</p>
+
+<p><b>Note:</b></p>
+<p>In this particular example, the angular momentum of each ball about point <i><b>Q</b></i> is parallel to the angular velocity vector. Consequently, the angular momentum of the rigid object, which is the sum of the particles' angular momentum, is also parallel to the angular velocity:</p>
+<p>\(\vec{L}_Q \parallel \vec{\omega}\)</p>
+
+</td></tr></table>
+</td></tr></table>
+
+<h3>Angular Momentum of a rigid object</h3>
+<p>If \(\vec{L}_Q^i\) is the angular momentum about a point <b>Q</b> of a particle 'i', then the angular momentum about point <b>Q</b> of a system of N particles is given by:&nbsp; \(\vec{L}_Q=\sum_{i=1}^N\vec{L}_Q^i\). If the system is a rigid object then the sum over the particles will become an integral as shown in the following example.</p>
+
+<h3>Example: The Angular Momentum of a Hoop</h3>
+<p>Consider a hoop of mass <i><b>M</b></i> and radius <i><b>R</b></i> contained in the xy-plane as shown below. The mass is distributed uniformly throughout the hoop. The hoop is rotating with angular velocity <i><b>&#969;</b></i> about an axis perpendicular to the plane of rotation and passing through the center of mass, point <b>Q</b> in the figure.</p>
+<p>Calculate the angular momentum of the hoop about point <b>Q</b>.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring_update.png"/></p>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer:
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>
+<p><u>Magnitude</u>: \(L_Q=MR^2\omega\). &nbsp; <u>Direction</u>: along the +z axis.</p>
+
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Solution:
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td>
+<p>We can think the hoop as being formed by a series of small elements of mass \(dm\). In the figure below a pair of elements of mass \(dm\) placed symmetrically with respect to the axis of rotation are shown. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring_sol_update.png"/>
+</p><p>Because we are assuming that the mass is uniformly distributed along the hoop, the two elements represent the point particles of the previous example with masses \(m_1=m_2=dm\). The angular momentum of each of the two elements <b>dm</b> are equal in magnitude and direction.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring_sol_update_2.png"/></p>
+<p>Following the steps of the previous example, the angular momentum about point <b>Q</b> of the element of mass \(dm\) in the right side of the hoop is equal to:</p>
+<p>\(\vec{L}_Q^{dm}=dmR^2\omega\hat{z}\)</p>
+<p>To obtain the angular momentum of the hoop we will add the angular momentum of each of the elements \(dm\) in the hoop. Because the mass is distributed continuously the sum becomes an integral:</p>
+<p>\(L_{Q}=\int_0^M (dmR^2\omega )  = (\int_0^M dm)R^2 \omega = MR^2\omega =  I_{Q}^{hoop}\omega \)</p>
+<p>As we will see in the next page there will be no need to calculate any integral for the type of rigid objects that we will use in this course.</p>
+ 
+<!--
+<p><b>Note:</b></p>
+<p>If the mass is not uniformly distributed but depends on the position along the hoop the way to 
+approach the problem is to write the element of mass in terms of the variables that determine the position 
+along the hoop. This is done through the mass density. For a hoop the mass is distributed along a line,
+therefore we will use the mass density per unit length, \(\lambda\). If the mass is not uniformly distributed
+means that the mass density depends on the position. In this problem the position is defined in terms
+of the angular position \(\theta\). Therefore, \(\lambda\) depends on \(\theta\): \(\lambda(\theta)\).
+An element of mass can be expressed as:</p>
+<p>\(dm=\lambda(\theta) Rd\theta\)</p>
+<p>Then the angular momentum about point <b>Q</b> will also depend on the angular position \(\theta\):</p>
+<p>\(\vec{L}_Q^{dm}=dm R^2\omega = \lambda(\theta) R^3 \omega d\theta\)</p>
+ <p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/ring_sol_update_lambda.png"/>
+-->
+</td>
+</tr></table>
+</td></tr></table>
+</body>
+</html>
+

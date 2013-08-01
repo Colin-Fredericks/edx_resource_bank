@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/block_1.png" alt="block_1" height="150"/>
+
+      <p><br/>
+A block is launched up a frictionless 40&#176; slope with an initial speed v and reaches a maximum vertical height h.  The same block is launched up a frictionless 20&#176; slope with the same initial speed v. On this slope, the block reaches a maximum vertical height of:
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              h/2          
+        </choice>
+        <choice name="foil2" correct="true">
+
+              h          
+        </choice>
+        <choice name="foil13" correct="false">
+
+              2h          
+        </choice>
+        <choice name="foil1\4" correct="false">
+
+              A height greater than h but less than 2h          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              A height greater than h/2 but less than h          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

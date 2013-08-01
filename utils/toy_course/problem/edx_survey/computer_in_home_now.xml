@@ -1,0 +1,9 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Do you have a computer in your home now?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="yes"><text> Yes</text></choice>
+      <choice correct="true" name="no"><text> No</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Data: Bouncing Balls</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Visualize the time profile of a collision force with data from an AJP article by <a href="http://fmx01whs.ucc.usyd.edu.au:8080/physics/staff_details.jsp?ID=11">Rod Cross</a></h3>
+<p>In an <a href="http://scitation.aip.org/ajp/" class="external text" rel="nofollow"><i>American Journal of Physics</i></a> article entitled "The bounce of a ball" (<a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=AJPIAS000067000003000222000001&amp;idtype=cvips&amp;gifs=Yes" class="external text" rel="nofollow">AJP <b>67</b> (3), March 1999, p. 222</a>), Rod Cross presented force versus time profiles for collisions of several different kinds of balls with a brass surface.  The data is shown in the table and figures below.
+</p>
+<table class="wikitable">
+<tr>
+<th> <b>Data from <a href="http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&amp;id=AJPIAS000067000003000222000001&amp;idtype=cvips&amp;gifs=Yes" class="external text" rel="nofollow">Am. J. Phys. 67, 222 (1999)</a> by <a href="http://www.physics.usyd.edu.au/~cross" class="external text" rel="nofollow">Rod Cross</a>.<br/>&#169; <a href="http://aapt.org" class="external text" rel="nofollow">American Association of Physics Teachers</a>, used with permission.</b>
+</th></tr>
+<tr>
+<td>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Data:  Impact data for various balls bouncing on a brass surface.
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> <img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module4/files/RodCross.png"/>
+</td></tr></table>
+</td></tr></table>
+<h4> Properties of the data.</h4>
+<p>The graphs of force vs. time for the various collisions show some important common features that confirm our discussion of collision forces:
+</p>
+<ul style="list-style:disc outside none"><li> The peak value of the collision force is generally hundreds of times the weight of the object.
+</li><li> The duration of the collision is at <i>maximum</i> a few milliseconds.
+</li><li> The curves have structure.  They are not straight lines.  They are certainly not flat horizontal lines (which would indicate constant force).  They have asymmetries (less force on the rebound part of the collision).
+</li></ul>
+<h4> Comparison of force profile with time-averaged force.</h4>
+<p>Using the collision data provided in the table, we can compute the time-averaged force experienced by the tennis ball and compare it with the force profile.  In the table, <i>v</i><sub>1</sub> is the tennis ball's speed just before the collision (it is traveling downward) and <i>v</i><sub>2</sub> is the tennis ball's speed just after the collision (it is traveling upward).  If we define a y-axis pointing upward, then we can find the average force exerted on the tennis ball in the y-direction during the collision by using:
+</p><p>\(\langle F_{y}\rangle = \frac{p_{f,y}-p_{i,y}}{t_{f}-t_{i}}\)
+</p><p>Based upon the data in the graph, we approximate the duration of the collision (<i>t<sub>f</sub> - t<sub>i</sub></i>) to be approximately 5.75 ms.  Thus, we can substitute to find:
+</p><p>\( \langle F_{y} \rangle = \frac{(\mbox{0.056 kg})(\mbox{2.38 m/s})-(\mbox{0.056 kg})(-\mbox{2.95 m/s})}{\mbox{0.00575 s}} = \mbox{52 N}\)
+</p><p>Looking at the graph shows that the peak force on the tennis ball is between 80 and 85 N.  The average force in this case is more than half of the peak value.  Can you explain why by looking at the shape of the profile?
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Explanation: What profile gives an average value equal to exactly half the peak value?
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> A perfectly triangular force profile would give an average force of exactly half the peak value.  The reason is that a triangle has an area equal to the base times 1/2 the height.  The average force is found by taking the area under the force vs. time curve and dividing by the time (the base of the triangle in this case).  Thus, the average force for a triangular profile is 1/2 the height, and the height is simply the peak force.  A profile with a rounded cap, like the one for the tennis ball, spends more of its time near the peak than a triangle would.  Thus, the average value is higher.  To get an average value less than half, you would need a profile that is sharper than a triangle (spending more time at low values).  None of the profiles in figure 2 are clearly sharper than a triangle, though the baseball or steel ball might possibly be.
+</td></tr></table>
+</body>
+</html>
+

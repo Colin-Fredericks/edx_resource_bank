@@ -1,0 +1,10 @@
+<sequential display_name="Mini Survey 9 - How Do You Work" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 9 - How Do You Work">
+			<h2>Mini Survey 9 - How Do You Work</h2>
+			<p>This week we are asking about how you work on physics problems, whether alone or with others.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit9_teamwork"/>
+		<problem url_name="RELATE_survey:unit9_checkwork"/>
+	</vertical>
+</sequential>

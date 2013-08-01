@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Describing Rotational Motion</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Describing the Rotational Motion of a Rigid Body Rotating About a Fixed Axis</h3>
+<p>Consider a disk rotating about a fixed axis that passes through its center. A point <b>B</b> in the disk, a distance <b>r</b> from the center will be moving in a circular path of radius <b>r</b>, the dashed circle in figure a). 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module1/files/AngularVelocity01b.png"/>
+</p>
+<h4>  Angular Position </h4>
+<p>The position of point <b>B</b> can be described in terms of the angle <i><b>&#952;</b></i>(t) measured from the +x axis. 
+The angle <i><b>&#952;</b></i> is called the angular position of the point. 
+</p>
+<table border="1">
+<tr>
+<td><b>Convention</b>: the angle is defined to be positive when measured counterclockwise with respect to the +x axis.
+</td></tr></table>
+<h4>  Angular Velocity </h4>
+<p>The <i>angular speed </i> of the disk is a property of the disk (or any rigid body) as a whole.  If the disk rotates an angle d&#952; = 270<sup>o</sup> counterclockwise in a time interval dt =1.5 sec, the angular speed is \(\pi\) radians per second.  Both point <b>B</b> and point <b>C</b> will rotate at this rate with respect to the center (figure c).  In fact, <b>any point</b> will rotate around <b>any other</b> point at this same rate of change within the disk as you can see by drawing a line between these two points and noting that it rotates at the same rate as the disk overall. </p>
+<p><br/>
+The angular velocity is defined as the rate of change of the angular position and is noted by the letter <i>&#969;</i>:
+</p>
+<table border="1">
+<tr>
+<td>
+<table>
+<tr>
+<td>\(\omega(t) = \frac{d\theta(t)}{dt}\)
+</td>
+<td>   Units: [&#969;] = rad.s<sup>-1</sup>
+</td>
+</tr></table>
+
+</td></tr></table>
+<h4>  Angular acceleration </h4>
+<p>The angular acceleration is the rate of change of the angular velocity.
+</p>
+<table border="1">
+<tr>
+<td>
+<table>
+<tr>
+<td>\(\alpha(t) = \frac{d\omega(t)}{dt} = \frac{d^{2}\theta(t)}{dt}\)
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>    Units: [&#945;] = rad.s<sup>-2</sup>
+</td></tr></table>
+</td></tr></table>
+<h3> Direction and Rotational Motion</h3>
+<p>Merely specifying an axis and the speed of rotation is not enough to fully describe rotational motion.  We also need to discuss the direction.  Once an axis is chosen, the possible directions of rotation have been reduced to two possibilities - the object may spin <b>counterclockwise</b> or <b>clockwise</b> as viewed from above the plane (conventionally from a + z location). These two situations are described in the figures below.  It is important to <b>be careful</b> here, however, since the counterclockwise or clockwise sense of the rotation <b>depends upon the observer's position</b>.  A disk that spins counterclockwise when viewed from above will spin clockwise when viewed from below.
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module1/files/Convention.png"/>
+<br/>
+</p><p>As we work toward a mathematical description of rotation, we will describe rotation in terms of a vector.  It turns out (as we shall see) that a very useful convention is to assign the +z coordinate axes to lie along the axis of rotation and to think of the two possibilities of <b>counterclockwise</b> and <b>clockwise</b> as <b>positive</b> and <b>negative</b> rotations about this axis.  Thus the angular velocity vector corresponding to the rotation of the disk in the situation shown in the figures above will be:
+</p><p>\( \vec{\omega} = \omega \hat{k} \)
+</p>
+<table style="font-size:10pt" border="1">
+<tr>
+<td><b>For counterclockwise rotation:</b>
+<p><b>&#952;</b> increases with time, <b>&#969; = d&#952;/dt</b> &gt; 0 then the angular velocity points towards the +z axis.
+</p>
+</td></tr>
+<tr>
+<td><b>For clockwise rotation:</b>
+<p><b>&#952;</b> decreases with time, <b>&#969; = d&#952;/dt</b> &lt; 0 then the angular velocity points towards the -z axis:
+</p>
+</td></tr></table>
+<br/>
+<h3>  The Right Hand Rule </h3>
+<p>This convention is called the right-hand rule.  To use it, imagine wrapping your the right hand around the axis of rotation such that your fingers curl in the direction of rotation.  Your thumb will then point in the "direction" of the angular velocity.  
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>The Right Hand Rule and (x,y,z)</b>
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td>When using a Cartesian coordinate to describe motion in a plane, it is important to use a right handed coordinate system in order for the definition of various rotational quantities to be defined in terms of the <a href="http://en.wikipedia.org/wiki/Cross_product" class="extiw" title="wikipedia:Cross product">vector product</a>.  In the example above, this means that if you place your right hand so the extended fingers coincide with the + x axis, then twist your wrist so that your fingers move toward the y axis as you close your hand into a fist, the result will be that your thumb points along +z.  This will be consistent with the usual convention to measure the angle starting with the x axis and considering an angular displacement in the counter-clockwise direction to be positive.
+</td></tr></table>
+</body>
+</html>
+

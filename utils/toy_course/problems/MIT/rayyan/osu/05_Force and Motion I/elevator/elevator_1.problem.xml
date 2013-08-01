@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/elevator_1.png" alt="elevator_1" height="150"/>
+
+      <p><br/>
+A student steps onto a bathroom scale in a stationary elevator on the first floor of the Acme Building.  The elevator accelerates until it reaches the second floor and then continues at constant speed until the 5th floor, where it starts slowing and stops on the 6th floor.  Which sketch of the apparent weight (reading of the scale) vs. time during the entire process is most likely to be correct?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              C          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              D          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

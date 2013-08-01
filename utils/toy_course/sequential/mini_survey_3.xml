@@ -1,0 +1,12 @@
+<sequential display_name="Mini Survey 3 - Educational Background" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 3 - Educational Background">
+			<h2>Mini Survey 3 - Educational Background</h2>
+			<p>This week we are asking for more detail about your educational background.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit3_ed_degree"/>
+		<problem url_name="RELATE_survey:unit3_ed_status"/>
+		<problem url_name="RELATE_survey:unit3_background_in_subject"/>
+	</vertical>
+
+</sequential>

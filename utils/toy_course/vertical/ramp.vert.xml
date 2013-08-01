@@ -1,0 +1,13 @@
+<vertical>
+	<problem filename="MIT/analiab/Problems/ramp1a.problem" display_name="Part a" attempts="1" />
+	<problem filename="MIT/analiab/Problems/ramp2.problem" display_name="Part b" attempts="5" />
+	<problem filename="MIT/analiab/Problems/ramp3.problem" display_name="Part c" attempts="5" />
+    <html filename="problems/MIT/analiab/htmlPages/The_ramp_simulation" />
+<!--
+	<problem filename="MIT/analiab/Problems/ramp2.problem" display_name="ramp 2" attempts="1" weight="0.25"/>
+	<problem filename="MIT/analiab/Problems/ramp3.problem" display_name="ramp 3" attempts="1" weight="0.25"/>
+	<problem filename="F12/boris/BK151-4.problem" display_name="Pulley Acceleration, Part 4" attempts="1" weight="0.25"/>
+	<discussion for="Pulley Acceleration" id="MReV_Summer2013_BK151" discussion_category="Applying Newton's Laws" />
+-->
+	
+</vertical>

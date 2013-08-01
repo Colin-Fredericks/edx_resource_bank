@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/acceleration_2.png" alt="acceleration_2" height="200"/>
+
+<p><br/>You are given a small wheel of radius R = 0.5 m and mass M = 1 kg. The mass is concentrated in the wheel -- i.e. the spokes and hub are virtually massless. What is the magnitude of the wheel's angular acceleration about its central axle given that a force of 1 N is applied at the top edge of the wheel at the angle shown?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			  <text>&#xBC; rad/s<sup>2</sup></text>
+        </choice>
+        <choice name="foil2" correct="false">
+			  <text>&#xBD;  rad/s<sup>2</sup></text>
+        </choice>
+        <choice name="foil3" correct="true">
+              <text>1 rad/s<sup>2</sup> </text>
+        </choice>
+        <choice name="foil4" correct="false">
+              <text>2 rad/s<sup>2</sup></text>
+        </choice>
+        <choice name="foil5" correct="false">
+              <text>4 rad/s<sup>2</sup></text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

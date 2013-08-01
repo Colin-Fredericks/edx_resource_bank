@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img  src="/static/problems/MIT/rayyan/Physics801/Figures/Spinning_rod_3.png"/>
+
+    <hr/>
+
+<p>A thin rod of length D and mass M is at rest on a horizontal and frictionless table contained in the (x,y) plane. The rod is pivoted at one end. A small ball of mass M, traveling with a speed v perpendicular to the rod's axis collides and sticks to the other end of the rod. What is the rod's angular velocity after the collision? (Gravity is into the screen).</p>
+
+    <br/>
+    <formularesponse answer="3/4*v/D" samples="v,D,M@1,1,1:30,30,30#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+      <hintgroup showoncorrect="no">
+
+          <p> Hint: consider where should you put your axis.</p>
+
+      </hintgroup>
+    </formularesponse>
+  </problem>
+</html>

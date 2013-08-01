@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <p>Consider a pendulum swinging in the vertical plane.</p>
+	<p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5a.png" alt="p1a" texwrap="none" align="top"/></p>
+	<p>When the pendulum is in the "left-most" position, what diagram correctly shows the forces acting on it?</p>
+
+    <br/>
+    <multiplechoiceresponse type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5b.png" />          
+        </choice>
+        <choice name="foil2" correct="true">
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5c.png" />          
+        </choice>
+        <choice name="foil3" correct="false">
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5d.png" />          
+        </choice>
+        <choice name="foil4" correct="false">
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5e.png" />          
+        </choice>
+        <choice name="foil5" correct="false">
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK5f.png" />          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

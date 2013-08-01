@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/PE_spring_1.png" alt="PE_spring_1" height="150"/>
+
+      <p><br/>
+A spring-loaded gun shoots a dart of mass 0.1 kg with a speed of 4 m/s. If the spring is compressed twice as far, the dart's speed will be
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              1 m/s          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              2 m/s          
+        </choice>
+        <choice name="foil13" correct="false">
+
+              4m/s          
+        </choice>
+        <choice name="foil1\4" correct="true">
+
+              8 m/s          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              16 m/s          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

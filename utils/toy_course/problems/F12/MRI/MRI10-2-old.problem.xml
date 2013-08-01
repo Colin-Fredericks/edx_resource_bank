@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 10 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The horizontal component of the momentum of the block-wedge system and the mechanical energy of the block-wedge-Earth system are conserved.</choice>
+			<choice location="random" correct="false">The energy of the block-wedge-Earth system is conserved but the momentum of the block-wedge system is not.</choice>
+			<choice location="random" correct="false">The momentum of the block-wedge system is conserved but the energy is not</choice>
+			<choice location="random" correct="false">There is no friction between the wedge and the block.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

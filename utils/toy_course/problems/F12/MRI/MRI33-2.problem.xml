@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 33 -->
+
+<problem>
+
+	<p>My answer to the previous part is justified because:</p>
+
+	<p>
+		Acceleration due to gravity affects only the vertical components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="True"/>
+		</optionresponse>
+	</p>
+	<p>
+		Acceleration due to gravity affects only the horizontal components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="False"/>
+		</optionresponse>
+	</p>
+	<p>
+		Acceleration due to gravity affects both the vertical and the horizontal components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="False"/>
+		</optionresponse>
+	</p>
+	<p>
+		Relative to each other, the projectiles move at constant velocity	
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="True"/>
+		</optionresponse>
+	</p>
+
+</problem>
+</html>

@@ -1,0 +1,22 @@
+<chapter display_name="Office Hours - Unit 10">
+	<sequential display_name="Questions" url_name="Office_Hours_Questions_Unit_10">
+		<vertical display_name="Submit your Questions for Unit 10">
+			<html display_name="Submit your Questions for Unit 10" filename="OfficeHours/OH10"/>
+			<discussion for="Submit your Questions for Unit 10" id="MReV_Summer2013_OH10" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Answers" url_name="Office_Hours_Answers_Unit_10">
+		<vertical display_name="Answer #1">
+			<video youtube="" url_name="Office_Hours_Answers_10_1"/>
+			<discussion for="Office Hours Answers for Unit 10 #1" id="MReV_Summer2013_OH10_answer1" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Answer #2">
+			<video youtube="" url_name="Office_Hours_Answers_10_2"/>
+			<discussion for="Office Hours Answers for Unit 10 #2" id="MReV_Summer2013_OH10_answer2" discussion_category="Office Hours" />
+		</vertical>
+		<vertical display_name="Answer #3">
+			<video youtube="" url_name="Office_Hours_Answers_10_3"/>
+			<discussion for="Office Hours Answers for Unit 10 #3" id="MReV_Summer2013_OH10_answer3" discussion_category="Office Hours" />
+		</vertical>
+	</sequential>
+</chapter>

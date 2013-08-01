@@ -1,0 +1,11 @@
+<sequential display_name="Mini Survey 7 - Categorizing Problems" format="Survey">
+	<vertical>
+		<html display_name="Mini Survey 7 - Categorizing Problems">
+			<h2>Mini Survey 7 - Categorizing Problems</h2>
+			<p>This week we are asking how you would categorize certain problems You don't need to solve the problems, just describe them.</p>
+		</html>
+		<problem url_name="RELATE_survey:unit7_categorize_1"/>
+		<problem url_name="RELATE_survey:unit7_categorize_2"/>
+		<problem url_name="RELATE_survey:unit7_categorize_3"/>
+	</vertical>
+</sequential>

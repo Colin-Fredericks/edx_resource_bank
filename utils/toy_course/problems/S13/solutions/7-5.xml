@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<!-- A Bead on a Wire- Conceptual -->
+<problem>
+
+<h3>Solution</h3>
+
+<img src="/static/problems/S13/ESG/images/7-5.png"/>
+
+<h3>First Stage</h3>
+<p>Between points H and Q</p>
+<p><b>System</b>: bead + Earth</p>
+<p><b>External Interactions</b>: the bead moves down the wire.  Because there is no friction, the wire does not exert a force on the bead.</p>
+<p><b>Internal Interactions</b>: block 1 and Earth, the work done by this force is treated as a potential energy and is conservative</p>
+<p><b>Physical Principle</b>: Mechanical Energy and Work</p>
+
+<p>Because the only force acting on the system during this time is the force of gravity, which is conservative, no work is done on the system and mechanical energy is conserved.  This will allow you to find the velocity of the bead at point Q.</p>
+<p>(Momentum is not conserved between points H and Q because gravity is acting on the bead.)</p>
+
+<h3>Second Stage</h3> 
+<p>At point Q</p>
+<p><b>System</b>: bead</p>
+<p><b>External interactions</b>: normal force on bead from wire.</p>
+<p><b>Physical principle</b>: \(\vec{F}\) = m\(\vec{a}\)</p>
+
+<p>At point Q, the wire exerts a normal force on the bead, so there is work being done by a non-conservative force.  Therefore, it is easier to stop using conservation of mechanical energy.  Because the bead is moving along a circular path, it has acceleration <i>v<sup>2</sup>/r</i>.  The only force acting on the bead in the xy-plane is the normal force of the wire.  So it must be causing this centripetal acceleration.  Drawing a free body diagram and using \(\vec{F}\) = m\(\vec{a}\) will therefore allow you to calculate the normal force of the wire on the bead.</p>
+
+</problem>
+</html>

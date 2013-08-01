@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI19-1.problem" display_name="Projectile Angular Momentum" attempts="1" weight="1"/>
+	<problem filename="F12/MRI/MRI19-2.problem" display_name="Projectile Angular Momentum, Part 2" attempts="2" weight="1"/>
+	<discussion for="Projectile Angular Momentum" id="MReV_Summer2013_MRI19" discussion_category="Angular Momentum" />
+</vertical>

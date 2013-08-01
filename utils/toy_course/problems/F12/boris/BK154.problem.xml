@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 154 -->
+<problem>
+
+	<p>Block 1, of mass m<sub>1</sub>, collides elastically head-on with a resting block 2 of mass m<sub>2</sub>. Before the collision, the speed of block 1 is v. </p>
+
+	<h3>Part 1</h3>
+	<p>If m<sub>1</sub> = m<sub>2</sub>, what are the speeds of blocks 1 and 2 after the collision, respectively?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="true">zero; v</choice>
+			<choice correct="false">v/2; v/2</choice>
+			<choice correct="false">v/2; v</choice>
+			<choice correct="false">v; v/2</choice>
+			<choice correct="false">v; zero</choice>
+			<choice correct="false">v; 2v</choice>
+			<choice correct="false">2v; v</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>If \( m_1 \gg m_2 \), what are the speeds of blocks 1 and 2 after the collision, respectively?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">zero; v</choice>
+			<choice correct="false">v/2; v/2</choice>
+			<choice correct="false">v/2; v</choice>
+			<choice correct="false">v; v/2</choice>
+			<choice correct="false">v; zero</choice>
+			<choice correct="true">v; 2v</choice>
+			<choice correct="false">2v; v</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>If \( m_1 \ll m_2 \), what are the speeds of blocks 1 and 2 after the collision, respectively?</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">zero; v</choice>
+			<choice correct="false">v/2; v/2</choice>
+			<choice correct="false">v/2; v</choice>
+			<choice correct="false">v; v/2</choice>
+			<choice correct="true">v; zero</choice>
+			<choice correct="false">v; 2v</choice>
+			<choice correct="false">2v; v</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

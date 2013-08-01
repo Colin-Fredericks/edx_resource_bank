@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+        <p>
+The following survey will help us gauge your overall attitude and feelings regarding problem solving in physics.  This survey will not affect the overall grade for Quiz 1 and 2, but will count toward your overall participation in the course.
+</p>
+
+      <br/>
+      <meta content="1331237288" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ05\%2eproblem" name="isbasedonres"/>
+
+        <p>1.)  After I study a topic in physics and feel that I understand it, I have difficulty solving problems on the same topic.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237340" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ13\%2eproblem" name="isbasedonres"/>
+
+        <p>2.)  I do not expect physics equations to help my understanding of the ideas; they are just for doing calculations.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237363" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ15\%2eproblem" name="isbasedonres"/>
+
+        <p>3.)  If I get stuck on a physics problem on my first try, I usually try to figure out a different way that works.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237379" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ16\%2eproblem" name="isbasedonres"/>
+
+        <p>4.)  Nearly everyone is capable of understanding physics if they work at it.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237397" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ21\%2eproblem" name="isbasedonres"/>
+
+        <p>5.)  If I don't remember a particular equation needed to solve a problem on an exam, there's nothing much I can do (legally!) to come up with it.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237411" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ22\%2eproblem" name="isbasedonres"/>
+
+        <p>6.)  If I want to apply a method used for solving one physics problem to another problem, the problems must involve very similar situations.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237429" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ25\%2eproblem" name="isbasedonres"/>
+
+        <p>7.)  I enjoy solving physics problems.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237448" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ26\%2eproblem" name="isbasedonres"/>
+
+        <p>8.)  In physics, mathematical formulas express meaningful relationships among measurable quantities.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237464" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ34\%2eproblem" name="isbasedonres"/>
+
+        <p>9.)  I can usually figure out a way to solve physics problems.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237478" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ40\%2eproblem" name="isbasedonres"/>
+
+        <p>10.)  If I get stuck on a physics problem, there is no chance I'll figure it out on my own.</p>
+
+      <import>AgreeRadio.library</import>
+      <br/>
+      <meta content="1331237493" name="isbasedontime"/>
+      <meta content="\%2fres\%2fcsm\%2fcsmphyslib\%2fattitude_survey_CLASS\%2fSQ42\%2eproblem" name="isbasedonres"/>
+
+        <p>11.)  When studying physics, I relate the important information to what I already know rather than just memorizing it the way it is presented.</p>
+
+      <import>AgreeRadio.library</import>
+
+  </problem>
+</html>

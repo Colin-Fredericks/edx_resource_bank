@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>The Direction of the Angular Momentum</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h3>
+The Direction of the Angular Momentum Vector </h3>
+<p>
+			The angular momentum is a vector <em>perpendicular</em> to the position and the linear momentum vectors. This follows from its definition using the vector product just like the definition for torque.</p>
+<center>
+<table border="1">
+<tbody>
+<tr>
+<td>
+<p>
+\[\vec{L}_{Q} \perp \vec{r}_{Q},\; \; \vec{L}_{Q} \perp \vec{v}\]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p>
+<br/>
+			Equivalently, angular momentum is perpendicular to the <em>plane</em> defined 
+			by both vectors in the vector product (shown as the x-y plane in the figures below), 
+			and the right hand rule determines the sign convention.</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>The RIGHT HAND RULE</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+<table border="1" style="color:blue" cellspacing="0">
+<tbody>
+<tr>
+<td>
+										1. Place the fingers of your right hand along the direction of vector \(\vec{r}_Q\),</td>
+</tr>
+<tr>
+<td>
+										&#160;</td>
+</tr>
+<tr>
+<td>
+										2. Curl them towards vector \(\vec{v}\),</td>
+</tr>
+<tr>
+<td>
+										&#160;</td>
+</tr>
+<tr>
+<td>
+										3. Your thumb is now pointing in the direction of the angular momentum.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+			If the position vector and the velocity are contained in the x-y plane then the angular momentum is either along the <b>+z</b>&#160;axis or along the <b>-z</b>&#160;axis. These two situations are shown in the figures below. Practice the right hand rule to reproduce the direction of the angular momentum vector shown in the figures.</p>
+<table>
+<tbody>
+<tr>
+<td valign="top">
+<table border="1">
+<tbody>
+<tr>
+<th width="300">
+<b>The angular momentum is pointing UP along the +z-axis</b></th>
+</tr>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngMomentumUp_a.png"/></td>
+</tr>
+<tr>
+<td>
+<b>As viewed from above the xy plane, the angular momentum is pointing OUT of the screen.</b></td>
+</tr>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/CCWCirculation_b.png"/></td>
+</tr>
+<tr>
+<td>
+<b>The circulation of the particle about the point <i>Q</i> is counterclockwise. Hence, \(\vec{L}_Q\) is out of the screen. </b> </td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table border="1">
+<tbody>
+<tr>
+<th width="300">
+<b>The angular momentum is pointing Down along the -z-axis</b></th>
+</tr>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomDown_a.png"/></td>
+</tr>
+<tr>
+<td>
+<b>As viewed from above the xy plane, the angular momentum is pointing INTO the screen.</b></td>
+</tr>
+<tr>
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/CWCirculation.png"/></td>
+</tr>
+<tr>
+<td>
+<b>The circulation of the particle about the point <i>Q</i> is clockwise. Hence, \(\vec{L}_Q\) is into the screen.</b></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

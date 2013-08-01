@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Driving a car in the positive x direction at a speed of 60 MPH (88 ft/sec), Mary tests her brakes by coming to a complete stop at a constant rate of deceleration in 4 seconds. Then, she accelerates to her previous speed of 60 MPH in 8 seconds. What is her acceleration while she is braking?</p>
+
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+              <text>88 ft/sec<sup>2</sup></text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+              <text>44 ft/sec<sup>2</sup></text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+              <text>22 ft/sec<sup>2</sup></text>
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+              <text>-22 ft/sec<sup>2</sup></text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+              <text>-44 ft/sec<sup>2</sup></text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+              <text>-88 ft/sec<sup>2</sup></text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

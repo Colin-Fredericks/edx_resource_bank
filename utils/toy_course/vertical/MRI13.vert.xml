@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI13-1.problem" display_name="Pendulum" attempts="2" weight="0.5"/>
+	<problem filename="F12/MRI/MRI13-2.problem" display_name="Pendulum, Part 2" attempts="2" weight="0.5"/>
+	<discussion for="Pendulum" id="MReV_Summer2013_MRI13" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+</vertical>

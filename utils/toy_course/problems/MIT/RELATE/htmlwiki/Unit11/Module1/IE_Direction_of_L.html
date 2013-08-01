@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Example: Direction of the Angular Momentum</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: The Direction of the Angular Momentum</h3>In the following examples, a particle of mass <i>m</i> is moving with speed <i>v</i> following different paths as shown. Use the Right Hand Rule to find the direction of the angular momentum vector about the point <i><b>Q</b></i>.
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/AngularMomentumDirection_1.png"/>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th>Answer
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Case a)
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td>Following the right hand rule, the angular momentum vector about point <i><b>Q</b></i> is along the <b>+z</b> - axis
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/DirectionA.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Case b)
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td>Following the right hand rule, the angular momentum vector about point <i><b>Q</b></i> is along the <b>-z</b> - axis
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/DirectionB.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Case c)
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>Following the right hand rule, the angular momentum vector about point <i><b>Q</b></i> is along the <b>-z</b> - axis
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/DirectionC.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Case d)
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td>Following the right hand rule, the angular momentum vector about point <i><b>Q</b></i> is along the <b>+z</b> - axis
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/DirectionD.png"/>
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

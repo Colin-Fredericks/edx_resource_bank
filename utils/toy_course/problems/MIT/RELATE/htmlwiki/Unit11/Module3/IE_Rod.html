@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>Example: Pivoted Rod</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h3>
+			Illustrative Example: Pivoted Rod - Angular Momentum Computed in Two Ways</h3>
+<p>
+			A rod of mass <i>m</i> and length <i>D</i> is pivoted about one end. As shown in the figure, the rod rotates in the x-y plane counterclockwise as viewed from the +z axis with speed <i>&#969;</i>.</p>
+<p>
+			Let <font size="3" face="times new roman"><i>I<sub>cm</sub></i></font> be the moment of inertia about an axis passing through the rod's center of mass, perpendicular to the x-y plane, and <font size="3" face="times new roman"><i>I<sub>pivot</sub></i></font> the moment of inertia about an axis passing through the pivot point perpendicular to the x-y plane.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/PivotRod.png"/></p>
+<p>
+			If \(\vec{r}_{cm,pivot}\) is the position vector of the rod's center of mass measured from the pivot, the angular momentum of the rod about the pivot point is:</p>
+<p>
+			1. \(\vec{L}_{pivot} = I_{cm}\vec\omega\)</p>
+<p>
+			2. \(\vec{L}_{pivot} = \vec{r}_{cm,pivot}\times m\vec{v}_{cm} + I_{cm}\vec\omega\)</p>
+<p>
+			3. \(\vec{L}_{pivot} = \vec{r}_{cm,pivot}\times m\vec{v}_{cm} + I_{pivot}\vec\omega\)</p>
+<p>
+			4. \(\vec{L}_{pivot} = I_{pivot}\vec\omega\)</p>
+<p>
+			5. Both 2 and 4</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Answer</b> [<a href="javascript:toggleDisplay('ht17','hide','show')" id="ht17l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht17">
+<td>
+<b>5</b>. Both <b>2</b> and <b>4</b> are correct
+						<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Explanation</b> [<a href="javascript:toggleDisplay('ht18','hide','show')" id="ht18l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht18">
+<td>
+<u><b>Fixed axis rotation (option 4):</b></u>
+<p>
+The rod rotates about a <b>fixed axis</b> passing through the pivot point. The motion of 
+the rod is contained in the x-y plane, perpendicular to the axis of rotation. As seen in  
+this module, the angular momentum about the axis passing through the pivot is:</p>
+<p>
+\(\vec{L}_{pivot} = I_{pivot}\vec{\omega}\)&#160;&#160;&#160;&#160; (eq. 1)</p>
+<p>
+											where <font size="3" face="times new roman"><i>I<sub>pivot</sub></i></font> is the moment of inertia of the rod about the axis passing through the pivot point (<font size="3" face="times new roman"><i>I<sub>pivot</sub>=mD<sup>2</sup>/3</i></font>).</p>
+<p>
+<u><b>Another point of view (option 2):</b></u></p>
+<p>
+											We can also think that the rod is rotating and translating and calculate the angular momentum of the rod about the pivot point as the sum of the orbital and spin components:</p>
+<p>
+\(\vec{L}_{pivot}=\vec{r}_{cm,pivot}\times m\vec{v}_{cm}+I_{cm}\vec{\omega}\)&#160;&#160;&#160;&#160; (eq. 2)</p>
+<p>
+											where \(\vec{r}_{cm,pivot}\) is the position vector of the rod's center of mass measured from the pivot point and \(\vec{v}_{cm}\) is the velocity of the center of mass.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module3/files/pivotRod_sol.png"/></p>
+<p>
+<br/>
+<u><b>Prove that options 2 and 4 are the same</b></u></p>
+<p>
+											We can show that (eq. 1) and (eq. 2) are the same by using the following facts:</p>
+<p>
+<br/>
+<b>1.</b> The axis passing through the pivot point and through the center of mass are parallel and are separated a distance <i>D/2</i>. Then, the parallel axis theorem implies:</p>
+<p>
+<font size="3" face="times new roman"><i>I<sub>pivot</sub> = I<sub>cm</sub> + m(D/2)<sup>2</sup></i></font>&#160;&#160;&#160;&#160; (eq. 3)</p>
+<p>
+<br/>
+<b>2.</b> The center of mass is a point of the rigid object therefore, as any other point of the rod, it rotates about the pivot with angular speed <i>&#969;</i>. The speed of the center of mass can be expressed as:</p>
+<p>
+<font size="3" face="times new roman"><i>v<sub>cm</sub> =&#969;D/2</i></font>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; (eq. 4)</p>
+<p>
+<br/>
+<b>3.</b> The position and velocity vectors are perpendicular:&#160;\(\vec{r}_{cm,pivot}\perp\vec{v}_{cm} \)</p>
+<p>
+											As a result,</p>
+<p>
+\(\vec{r}_{cm,pivot}\times\vec{v}_{cm}=|\vec{r}_{cm,pivot}||\vec{v}_{cm}|\sin90^0 \hat{k} =(D/2)v_{cm}\hat{k}\)&#160;&#160;&#160;&#160; (eq. 5)</p>
+<p>
+											&#160;</p>
+<p>
+											Starting with option 2 and using (eq. 5) we obtain:</p>
+<p>
+\(\vec{L}_{pivot}=\vec{r}_{cm,pivot}\times m\vec{v}_{cm}+I_{cm}\vec{\omega}= (D/2)mv_{cm}\hat{k} + I_{cm}\omega\hat{k}\)</p>
+<p>
+<br/>
+											Using (eq.4) the above expression becomes:</p>
+<p>
+\(\vec{L}_{pivot}=(m(D/2)^2 + I_{cm})\omega\hat{k}\)
+</p>
+<p>
+
+											The term between the outer parenthesis is (eq. 3), 
+											then the above expression is the same as option <b>4</b>:</p>
+<p>
+\(\vec{L}_{pivot}=I_{pivot}\vec{\omega}\)
+</p>
+
+<p><b>Note:</b> This solution may be regarded as a proof of the parallel axis theorem.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

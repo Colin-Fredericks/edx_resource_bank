@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint:multiple axes </title>
+
+      <p>
+Part 1. 
+A particle of mass 3.0 kg is passing through point (4 m; 5 m) in the x-y coordinate plane. 
+Its velocity is 4.0 m/s in the +x direction. Sketch the diagram and find the magnitude of the angular momentum of 
+the particle with respect to the axis passing through the points indicated below. Enter your answers in [kg.m<sup>2</sup>.s<sup>-1</sup>]. 
+
+</p>
+
+    <br/>
+
+      <p>
+</p><br/>
+A. The origin (0 m; 0 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="60" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+B.  (-2 m; 3 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="24" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+C. (2 m; -3 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="96" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+    <br/>
+
+      <p>
+Part 2.
+A particle of mass 3.0 kg is passing through point (4 m; 5 m) in the x-y coordinate plane. Its velocity is 4.0 m/s in the +y direction. Sketch the diagram and find the magnitude of the angular momentum of the particle with respect to the axis passing through the following points: 
+</p>
+
+    <br/>
+
+      <p>
+</p><br/>
+A. The origin (0 m; 0 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="48" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+B.  (-2 m; 3 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="72" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      <p>
+</p><br/>
+C.  (2 m; -3 m)
+
+<br/>
+\(L=\)
+
+      <numericalresponse answer="24" unit="kg*m^2/s">
+        <responseparam default="1%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+  </problem>
+</html>

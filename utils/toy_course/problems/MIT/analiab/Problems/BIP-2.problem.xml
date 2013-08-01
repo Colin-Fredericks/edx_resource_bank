@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+<p>What is the value of the force of friction exerted by the surface on the block? Express your answer in terms of some or all of the variables <i>m</i>, <i>g</i>, <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, and <i>\(\alpha\)</i>. To write <i>\(\mu\)</i>s, <i>\(\mu\)</i>k, or <i>\(\alpha\)</i>, use mus, muk, or alpha.<br/></p>
+
+      <formularesponse answer="m*g*cos(alpha)" samples="mus,muk,m,g,alpha@1,1,1,1,1:10,10,10,10,89#4">
+        <textline size="25" math="1"/>
+        <responseparam default="0.00000000001" type="tolerance"/>
+      </formularesponse>
+
+</html>

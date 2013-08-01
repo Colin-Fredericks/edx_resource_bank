@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<img src="/static/problems/S13/quiz/images/5-2.png" />
+
+<p>The graph above shows the position of an object over time.</p>
+
+<p>What is the displacement (in meters) of the object from t = 3 to t = 11 seconds?</p>
+<numericalresponse answer="-1">
+	<responseparam type="tolerance" default="5%" />
+	<textline />
+</numericalresponse>
+
+<p>What is the velocity (in m/s) of the object at t = 5 seconds?</p>
+<numericalresponse answer="-0.3333333">
+	<responseparam type="tolerance" default="5%" />
+	<textline />
+</numericalresponse>
+
+<p>What is the average velocity (in m/s) of the object from t = 2 to t = 10 seconds?</p>
+<numericalresponse answer="0.375">
+	<responseparam type="tolerance" default="5%" />
+	<textline />
+</numericalresponse>
+
+</problem>
+
+</html>

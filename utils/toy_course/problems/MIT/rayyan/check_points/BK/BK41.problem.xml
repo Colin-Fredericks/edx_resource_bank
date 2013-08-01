@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Acceleration and Velocity in Uniform Circular Motion </title>
+
+      <p>
+Which of the diagrams shows possible directions of tangential velocity (v) and acceleration (a) vectors for an object moving at a constant speed in a circular trajectory?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="horizontal" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice align="middle" location="random" name="foil1" correct="false">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41A.PNG"/>          
+        </choice>
+        <choice align="middle" location="random" name="foil2" correct="false">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41B.PNG"/>          
+        </choice>
+        <choice align="middle" location="random" name="foil3" correct="false">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41C.PNG"/>          
+        </choice>
+        <choice align="middle" location="random" name="foil4" correct="true">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41D.PNG"/>          
+        </choice>
+        <choice align="middle" location="random" name="foil5" correct="false">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41E.PNG"/>          
+        </choice>
+        <choice align="middle" location="random" name="foil6" correct="false">
+
+                <img width="180" align="middle" src="/static/problems/MIT/rayyan/check_points/Pictures/41F.PNG"/>          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+                          </problem>
+</html>

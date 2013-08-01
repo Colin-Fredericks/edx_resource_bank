@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Static Friction</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Static Friction as a Constraint</h3>
+<p>
+			Static friction is determined by dynamical constraints in a manner similar to the normal force. The normal force takes on whatever value is necessary to prevent two objects from moving into one another. Similarly, the static friction force takes on whatever value is necessary to prevent two objects from sliding along one another <i>unless</i> <em>the force required to realize this constraint is larger than a certain limiting value</em>. The limiting nature of the value is an important difference between the normal force and the static friction force. Importantly, it is only the limiting&#8211;not the actual&#8211;value of the static friction force that is proportional to the normal force between the objects. In general, the static friction force is determined solely by Newton's Second Law acting to satisfy the constraint.</p>
+<p>
+			If you are told or you suspect that two objects will remain stationary with respect to a common surface of contact, you can use the following procedures to determine the force of static friction acting on the objects:</p>
+<ol style="list-style-type:decimal">
+<li>
+<b>Assuming there is no friction</b>, compute the component of the net force acting on each object that is parallel to the surface of contact.</li>
+<li>
+				Find the friction force that would be needed to ensure that the acceleration of each object in the direction parallel to the surface is the same. (Hint: use Newton's Second Law)</li>
+<li>
+<b>Check that the size of the friction force you computed in step 2 is less than or equal to the maximum possible static friction force.</b> Note that this step will require you to analyze the forces perpendicular to the surface so that you can determine the normal force between the objects.</li>
+</ol>
+</body>
+</html>
+

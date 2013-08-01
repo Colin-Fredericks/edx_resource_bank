@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK10a.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+Two toy cars collide as shown in the diagram. Car 1 has a greater mass than car 2. Which statement best describes the magnitudes of the collision forces experienced by the cars during the collision?
+
+    <br/>
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              Car 1 experiences greater force.          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              Car 2 experiences greater force.          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              The collision forces acting on the cars have equal magnitudes.          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              The answer depends on the speeds of the cars before the collisions.          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

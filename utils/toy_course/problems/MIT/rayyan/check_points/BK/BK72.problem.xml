@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK72.PNG" alt="BK72.PNG"/>
+    <title> CheckPoint: Potential Energy Plot </title>
+
+      <p>The graph above shows the potential energy associated with a single conservative force F acting on an object moving along the x-direction. The potential energy values for some (but not all!) points are shown on the vertical axis of the graph. Use the graph to answer the questions below. </p>
+
+      <p>Part 1. At what points is the object in stable equilibrium?</p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>G</p>
+
+            <optioninput name="Foil7" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>H</p>
+
+            <optioninput name="Foil8" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>I</p>
+
+            <optioninput name="Foil9" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>K</p>
+
+            <optioninput name="Foil10" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>L</p>
+
+            <optioninput name="Foil11" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+
+      <p>Part 2. At what points is the object in unstable equilibrium?</p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>G</p>
+
+            <optioninput name="Foil7" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>H</p>
+
+            <optioninput name="Foil8" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>I</p>
+
+            <optioninput name="Foil9" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>K</p>
+
+            <optioninput name="Foil10" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>L</p>
+
+            <optioninput name="Foil11" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+        </ul>
+        <hintgroup showoncorrect="no">
+
+            <br/>
+
+        </hintgroup>
+      </optionresponse>
+
+      <p>Part 3. At what points is force F non zero and directed to the right?</p>
+
+      <optionresponse texlayout="horizontal" randomize="no">
+        <ul>
+          <li>
+
+              <p>B</p>
+
+            <optioninput name="Foil2" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>C</p>
+
+            <optioninput name="Foil3" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>D</p>
+
+            <optioninput name="Foil4" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>E</p>
+
+            <optioninput name="Foil5" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>F</p>
+
+            <optioninput name="Foil6" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>G</p>
+
+            <optioninput name="Foil7" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>H</p>
+
+            <optioninput name="Foil8" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>I</p>
+
+            <optioninput name="Foil9" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+          <li>
+
+              <p>K</p>
+
+            <optioninput name="Foil10" options="('True','False')" correct="True">
+</optioninput>
+          </li>
+          <li>
+
+              <p>L</p>
+
+            <optioninput name="Foil11" options="('True','False')" correct="False">
+</optioninput>
+          </li>
+        </ul>
+      </optionresponse>
+
+
+      <p>Part 4. Which statement about points E and K is correct?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                At point E, force F has a greater magnitude than at point K; the two forces have opposite directions
+
+          </choice>
+          <choice name="foil2" correct="true">
+
+                At point K, force F has a greater magnitude than at point E; the two forces have opposite directions 
+
+          </choice>
+          <choice name="foil3" correct="false">
+
+                At point E, force F has a greater magnitude than at point K; the two forces have the same direction
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                At point K, force F has a greater magnitude than at point E; the two forces have the same direction
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+      <p>Part 5. If an object at point A is moving to the right with kinetic energy of 18 J, what is its kinetic energy of that object at point L?</p>
+
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice name="foil1" correct="false">
+
+                14 J
+
+          </choice>
+          <choice name="foil2" correct="false">
+
+                18 J 
+
+          </choice>
+          <choice name="foil3" correct="true">
+
+                22 J
+
+          </choice>
+          <choice name="foil4" correct="false">
+
+                4 J
+
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK72.PNG" alt="BK72.PNG"/>
+      </problem>
+</html>

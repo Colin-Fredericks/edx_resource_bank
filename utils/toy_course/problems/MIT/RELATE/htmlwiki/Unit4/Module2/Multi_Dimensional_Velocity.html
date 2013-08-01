@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Multi-Dimensional Velocity</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:11pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Multi-dimensional Velocity</h3>
+<p>
+			To describe velocity in a general direction that is not aligned with your coordinate x-axis, you must use vector components. Essentially, we add another copy of the model for each direction that is needed. Thus, for a two dimensional motion in the xy-plane the velocity vector is \(\vec{v}=v_x\hat{i}+v_y\hat{j}\) and we would use two equations simultaneously:</p>
+<p>
+\(\mathcal{}x(t) = x_{i} + v_{x}(t-t_{i})\)</p>
+<p>
+\(\mathcal{}y(t) = y_{i} + v_{y}(t-t_{i})\)</p>
+<br />
+<p>where \( x_{i}=x(t_i)\) and \( y_{i}=y(t_i)\) are the x and y components of the position vector at the time \( t=t_i\). 
+</p>
+<p>
+			The total velocity would then be found by combining the x and y components of the velocity using the standard rules for vector components.</p>
+<p>
+			A more interesting case arises when the motion along one coordinate has constant velocity while there is accelerated motion in a perpendicular direction; projectile motion is an example.</p>
+</body>
+</html>
+

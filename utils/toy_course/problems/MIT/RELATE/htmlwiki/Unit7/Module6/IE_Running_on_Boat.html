@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>Example: Running on a Boat</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Illustrative Example: Speeding up a boat.</h3>
+You are in a boat. Because you want to arrive earlier to your destination you decide to speed up the boat 
+by going to the front of it and the run fast towards the back.
+<p>The speeds in the following questions and in your answers are measured with respect to a frame of reference fixed to shore.
+</p><p><b>a)</b> What is the speed of the center of mass of the boat when you are not moving relative to the boat and the speed of the boat is measured to be <i>U</i>?
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>a) Answer:</b>
+ [<a href="javascript:toggleDisplay('ht44','hide','show')" id="ht44l">show</a>]</th></tr>
+<tr style="display:none" id="ht44">
+<td><i>V<sub>cm</sub></i> = <i>U</i>.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht45','hide','show')" id="ht45l">show</a>]</th></tr>
+<tr style="display:none" id="ht45">
+<td><p>Let <font face="times new roman" size="3"><i>M<sub>b</sub></i></font> be the boat's mass and
+<font face="times new roman" size="3"><i>m</i></font> be your mass<font face="times new roman" size="3">.Let
+\(\vec{V}_b\) be the boat's velocity and [mathjaxinlene]\vec{v}\) 
+be your velocity, both measured with respect to shore.
+</p>
+<p>
+The velocity of the center of mass of the system at a given instant of time <i>t</i> is:
+<p>\(\vec{V}_{cm}(t)=\frac{M_b\vec{V}_b(t) + m\vec{v}(t)}{M_b + m}\)
+</p><p>If you are <b>not</b> moving relative to the boat then the boat and you are moving together with the same velocity of magnitude <i>U</i> 
+measured with respect to shore:
+</p><p>\(\vec{V}_b = \vec{v} = \vec{U}\)
+</p><p>Replacing these values in the definition of the velocity of the center of mass we obtain
+</p><p>\(\vec{V}_{cm}(t)=\frac{M_b\vec{U} + m\vec{U}}{M_b + m} = \vec{U}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+<p><b>b)</b> While you are running towards the back, is the speed of the boat:
+</p>
+<ol style="list-style-type:decimal"><li> higher than <i>U</i> ,
+</li><li> the same as <i>U</i>,
+</li><li> lower than <i>U</i>?
+</li></ol>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>b) Answer:</b>
+ [<a href="javascript:toggleDisplay('ht46','hide','show')" id="ht46l">show</a>]</th></tr>
+<tr style="display:none" id="ht46">
+<td>While you are running, the speed of the boat measured with respect to the frame of reference fixed to shore <b>is higher than <i>U</i></b>.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation</b>
+ [<a href="javascript:toggleDisplay('ht47','hide','show')" id="ht47l">show</a>]</th></tr>
+<tr style="display:none" id="ht47">
+<td><u><b>System:</b></u>: Boat + You. Both treated as point particles:
+<p><u><b>Interactions:</b></u>
+</p>
+<ul style="list-style:disc outside none"><li><b>External:</b> Because the boat is moving at a constant speed we can assume that the net external force on the system is zero. 
+</li><li><b>Internal:</b> The contact force between the boat and you. The resulting forces are internal and do not contribute to the change in momentum of the system.
+</li></ul>
+<p>If the net external forces is zero then the linear momentum of the system is constant. 
+While you are running towards the back you are exerting a force on the boat towards the front. This force accelerates the boat resulting in an increase of the boat's speed. There is a change in momentum of the elements within the system but the momentum of the system remains constant.
+</p><p><b>Follow up question:</b>Is the following statement true or false?
+</p><p><i>In order to speed up the boat you can repeat the running process from front to back several times.</i>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht48','hide','show')" id="ht48l">show</a>]</th></tr>
+<tr style="display:none" id="ht48">
+<td>The statement is <b>false</b>. Any time you move from the back to the front to repeat the process you are applying a force on the boat in the opposite direction of the boat's motion that will decrease the boat's speed. No matter what you do inside the boat, the center of mass will move at a constant speed.
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<p><b>c)</b> When you reach the end of the boat you stop running. After you stop running, is the speed of the boat
+</p>
+<ul style="list-style:disc outside none"><li>  higher than it was before you start running,
+</li><li>  the same as before you start running,
+</li><li>  lower than before you start running?
+</li></ul>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>c) Answer:</b>
+ [<a href="javascript:toggleDisplay('ht49','hide','show')" id="ht49l">show</a>]</th></tr>
+<tr style="display:none" id="ht49">
+<td>The speed of the boat is the same as before you start running.
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht50','hide','show')" id="ht50l">show</a>]</th></tr>
+<tr style="display:none" id="ht50">
+<td>Consider the system formed by the boat and you. At the instant when you stop walking relative to the boat, you are moving at the same speed of the boat  which is the speed of the center of mass.  Because the net external force acting on the system is zero, then the velocity of the center of mass is constant, therefore the boat has the same speed as before you start running.
+<p><b>Follow up question:</b>. From parts a) and b) we found that before start running the speed of the boat is <i>U</i> = <i>V<sub>cm</sub></i>. When you start running the speed of the boat increases and when you stop it is equal to <i>V<sub>cm</sub></i> again.
+</p><p>Why does the boat slows down? 
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Answer:</b>
+ [<a href="javascript:toggleDisplay('ht51','hide','show')" id="ht51l">show</a>]</th></tr>
+<tr style="display:none" id="ht51">
+<td>In order to stop at the back, the boat exerts a force on you in opposite direction of your motion. The action reaction pair of this force is the force exerted by you on the boat in the same direction as your motion. Because you were moving towards the back, you will apply a force on the boat directed towards its back producing the boat to slow down.
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<p><b>d)</b> Let's assume that in part a) you run from the front to the back with a well known speed <i>v</i>(<i>t</i> ). Your mass is <i>m</i> and the boat's mass is <i>M<sub>b</sub></i>. Find the speed, <i>V<sub>b</sub></i>(<i>t</i> ), that the boat has while you are running. Answer the question for the following two cases:
+</p><p><b>1.</b> relative to the boat, you are running with a speed smaller than the speed of the boat.
+</p><p><b>2.</b> relative to the boat, you are running with a speed larger than the speed of the boat
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>d) Answer:</b>
+ [<a href="javascript:toggleDisplay('ht52','hide','show')" id="ht52l">show</a>]</th></tr>
+<tr style="display:none" id="ht52">
+<td><u><b>Case 1</b></u>: <font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  <i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)(<i>U</i> - <i>v</i>(<i>t</i>))</font>
+<p><u><b>Case 2</b></u>: <font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  <i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)(<i>U</i> + <i>v</i>(<i>t</i>))</font>
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Explanation:</b>
+ [<a href="javascript:toggleDisplay('ht53','hide','show')" id="ht53l">show</a>]</th></tr>
+<tr style="display:none" id="ht53">
+<td>To answer this question we will use the concept of center of mass.
+<p><u><b>System:</b></u> Boat + You. Both treated as point particles:
+</p><p><u><b>Interactions:</b></u>
+</p>
+<ul style="list-style:disc outside none"><li><b>External:</b> Because the boat is moving at a constant speed we can assume that the net external force on the system is zero. 
+</li><li><b>Internal:</b> The contact force between the boat and you. The resulting forces are internal and do not contribute to the change in momentum of the system.
+</li></ul>
+<h5>  Velocity of the center of mass </h5>
+<p>Let's <font face="times new roman" size="3"><i>M</i></font> and <font face="times new roman" size="3"><i>m<sub>b</sub></i></font> to be the boat's mass and your mass, and <font face="times new roman" size="3"><i>V<sub>b</sub></i></font> and <font face="times new roman" size="3"><i>v</i></font>  to be the boat's speed and your speed, both measured with respect to a frame of reference fixed to shore. At a given instant of time <i>t</i>, the velocity of the center of mass of the system measured with respect to the frame of reference fixed to shore is:
+</p><p>\(\vec{V}_{cm}(t)=\frac{M_b\vec{V}_b(t) + m\vec{v}(t)}{M_b + m}\)
+</p><p>Rearranging the above equation we have:
+</p><p><br/>
+\(M_b\vec{V}_b(t) + m\vec{v}(t)= (M_b +m)\vec{V}_{cm} \mbox{     (eq. 1)}\)
+</p><p><br/>
+From part a) we know that when you are at rest relative to the boat the velocity of the center of mass is the velocity of the boat:
+</p><p>\(\vec{V}_{cm} =\vec{U} \mbox{     (eq. 2)}\)
+</p><p><br/>
+Because the net external force is zero, then velocity of the center of mass is constant, independent of your motion relative to the boat.
+</p><p>Let's assume that the boat is moving along the +x- axis. Then the boat's and center of mass velocities are also along the +x-axis. 
+</p><p>Below is the derivation of the answer to the 1<sup>st</sup> question.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>1. Find <font face="times new roman" size="3"><i>V<sub>b</sub></i>(<i>t</i>)</font> if your speed relative to the boat is smaller than the speed of the boat:</b>
+ [<a href="javascript:toggleDisplay('ht54','hide','show')" id="ht54l">show</a>]</th></tr>
+<tr style="display:none" id="ht54">
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/cmSpeedBoat1.png"/>
+<p>As shown in the figure above, if with respect to the boat you are running towards the back with a speed smaller than <i>V<sub>b</sub></i> , then with respect to an observer at shore you are moving towards the front with a velocity of magnitude <i>v</i>(<i>t</i> ) directed along the +x - axis. As a result, (eq. 1) becomes:
+</p><p>\(M_bV_b(t)\hat{i} + mv(t)\hat{i}= (M_b +m)V_{cm}\hat{i}\)
+</p><p><br/>
+Using (eq. 2) in the above expression and solving for the speed of the boat we obtain:
+</p><p><br/>
+<font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  [(<i>M<sub>b</sub></i> + <i>m</i>)/<i>M<sub>b</sub></i>]<i>U</i> - (<i>m</i>/<i>M<sub>b</sub></i>)<i>v</i>(<i>t</i>) </font>
+</p><p><br/>
+While you are running, the speed of the boat relative to shore depends on time as:
+</p><p><br/>
+<font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  <i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)(<i>U</i> - <i>v</i>(<i>t</i>)) </font> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; (eq. 3)
+</p><p><b>Checking the answer:</b>
+</p><p><b>Check 1:</b> If relative to the boat you are at rest, then relative to shore you are moving with speed <i>U</i>. Replacing <i>v</i>(<i>t</i> ) by <i>U</i> in the expression above we obtain that <i>V<sub>b</sub></i> =<i>U</i> as shown in part a). 
+</p><p><b>Check 2:</b> It can be shown that if relative to the boat your speed is smaller than the boat's speed then your speed relative to shore,<i>v</i>(<i>t</i> ), is smaller than <i>U</i>&#160;: <font face="times new roman" size="3"> <i>U</i> &gt; <i>v</i>(<i>t</i>)</font>.
+</p><p>As a result, the second term in the right hand side of (eq. 3) is positive then we can show that when you are running the speed of the boat is larger than <i>U</i>: 
+</p><p><font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) &gt;  <i>U</i> </font>
+</p><p>which is the conclusion reached in part b) of this problem.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>show that if your speed relative to the boat is smaller than <i>V<sub>b</sub></i>(<i>t</i> ) then <i>v</i>(<i>t</i> ) &lt; <i>U</i></b>.
+ [<a href="javascript:toggleDisplay('ht55','hide','show')" id="ht55l">show</a>]</th></tr>
+<tr style="display:none" id="ht55">
+<td>If relative to the boat your speed is smaller than the speed of the boat, then your velocity with respect to shore is along the +x axis with a magnitude <i>v</i> ( <i>t</i> ) such that:
+<p><font face="times new roman" size="4"> 0 <u>&lt;</u><i>v</i> (<i>t</i>) <u>&lt;</u> <i>V<sub>b</sub></i>(<i>t</i>) </font>
+</p><p>Note that <i>v</i>(<i>t</i> ) = 0 when you are running towards the back with a speed relative to the boat <i>v</i>(t) = <i>V<sub>b</sub></i>. You do not move relative to an observer at shore.
+</p><p><font face="times new roman" size="4"> <i>v</i> (<i>t</i>) &lt; <i>V<sub>b</sub></i>(<i>t</i>) &#8596; <i>M<sub>b</sub>'<b>v</b></i><b> (<i>t</i>) &lt; <i>M<sub>b</sub>'</i></b><i>V<sub>b</sub></i>(<i>t</i>)</font>
+</p><p><br/>
+Adding and subtracting <font face="times new roman" size="4"> <i>mv</i> (<i>t</i>)</font> in the last inequality:
+</p><p><br/>
+<font face="times new roman" size="4"> (<i>M<sub>b</sub> + </i>m<i>)'<b>v</b></i><b> (<i>t</i>)  -<i>m'</i></b>v<i> (</i>t<i>)&lt; </i>M<sub>b</sub>'<b>V<sub>b</sub><i>(</i>t<i>) &#8596; (</i>M<sub>b</sub> + <i>m</i>)'</b>v<i> (</i>t<i>)  &lt;  </i>M<sub>b</sub>'<b>V<sub>b</sub><i>(</i>t<i>) + </i>m'</b><i>v</i> (<i>t</i>)</font>
+</p><p>dividing the last inequality by <i>M<sub>b</sub> + m</i>:
+</p><p><br/>
+\( v(t) &lt; \frac{M_bV_b(t) + m v(t)}{M_b+m}=U \Leftrightarrow v(t) &lt; U \)
+</p>
+</td></tr></table>
+</td></tr></table>
+<p>Below is the derivation of the answer to the 2<sup>nd</sup> question.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>2. Find <font face="times new roman" size="3"><i>V<sub>b</sub></i>(<i>t</i>)</font> if your speed relative to the boat is larger than the speed of the boat:</b>
+ [<a href="javascript:toggleDisplay('ht56','hide','show')" id="ht56l">show</a>]</th></tr>
+<tr style="display:none" id="ht56">
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module6/files/cmSpeedBoat2.png"/>
+<p>As shown in the figure above, if with respect to the boat you are running towards the back with a speed larger than <i>V<sub>b</sub></i> , then with respect to an observer at shore you are moving towards the back with a velocity of magnitude <i>v</i>(<i>t</i> ) directed along the -x - axis. As a result, (eq. 1) becomes:
+</p><p>\(M_bV_b(t)\hat{i} - mv(t)\hat{i}= (M_b +m)V_{cm}\hat{i}\)
+</p><p><br/>
+Using (eq. 2) in the above expression and solving for the speed of the boat we obtain:
+</p><p><br/>
+<font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  [(<i>M<sub>b</sub></i> + <i>m</i>)/<i>M<sub>b</sub></i>]<i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)<i>v</i>(<i>t</i>) </font>
+</p><p><br/>
+While you are running, the speed of the boat relative to shore depends on time as:
+</p><p><br/>
+<font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  <i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)(<i>U</i> + <i>v</i>(<i>t</i>)) </font> &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; (eq. 4)
+</p><p><br/>
+<b>Checking the answer:</b>
+</p><p>Note that the second term in the right hand side of (eq. 4) is positive, then:
+</p><p><font face="times new roman" size="4"> <i>V<sub>b</sub></i>(<i>t</i>) =  <i>U</i> + (<i>m</i>/<i>M<sub>b</sub></i>)(<i>U</i> + <i>v</i>(<i>t</i>)) &gt; <i>U</i> &#8658;   <i>V<sub>b</sub></i>(<i>t</i>)  &gt;  <i>U</i></font>
+</p><p>which is the conclusion reached in part b) of this problem.
+</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

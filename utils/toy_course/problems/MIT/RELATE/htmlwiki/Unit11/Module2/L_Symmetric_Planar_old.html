@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>Angular Momentum of a Symmetric and Planar Objects</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="12" href="data:text/css," type="text/css" rel="stylesheet"/>
+<link index="13" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h3>
+Symmetric Objects</h3>
+<p>
+			Our analysis of the angular momentum in a rigid body formed by two particles led us to the following result:</p>
+<p>
+<i>If the masses are equal, then the angular momenta about points <b>Q</b> and <b>S</b>&#160;along the axis of rotation are equal. </i></p>
+<p>
+\(\vec{L}_Q = \vec{L}_S \)</p>
+<p>
+			In other words, the angular momentum is independent of the location of the point as long as the point is in the axis of rotation. In this situation, we can refer to the angular momentum to be calculated <i>about the axis</i> rather than&#160;<i>about a point</i>.</p>
+<center>
+<p>
+\( \vec{L}_{axis} = I_{axis}\vec\omega\)</p>
+</center>
+<p>
+			where <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub> is the moment of inertia of the object calculated about the axis. (Here we are using the label axis because the z-axis used in the example is arbitrary. )</p>
+<p>
+<font size="2"><b><u>Symmetric Objects Rotating about an Axis of Symmetry</u></b></font></p>
+<p>
+			The result above is a direct consequence of a <em>symmetric</em>&#160;distribution of the masses with respect to the axis of rotation. In this situation the axis of rotation is an <b>axis of symmetry</b> of the object.</p>
+<table border="1">
+<tbody>
+<tr>
+<td>
+						For a symmetric object rotating about an axis of symmetry, the angular momentum calculated about any point in the axis is:
+						<center>
+</center><p>
+\( \vec{L}_{axis} = I_{axis}\vec\omega\)</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<font size="2"><b><u>Symmetric Objects Rotating about an Axis that is Not an Axis of Symmetry</u></b></font></p>
+<p>
+			If a symmetric objects rotates about an axis that is <em>not</em> an axis of symmetry then:</p>
+<p>
+<b>1.</b> In general, the angular momentum vector of the object about a point in the axis is <b>NOT</b> parallel to <i>&#969;</i>,</p>
+<p>
+\(\vec{L}_Q \not\parallel \vec{\omega}\)</p>
+<p>
+<b>2.</b> The component of the angular momentum along the axis of rotation is proportional to <i>&#969;</i> and given by:</p>
+<p>
+<i>L</i><sub><i>Q</i>,<i>a</i><i>x</i><i>i</i><i>s</i></sub> = <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub>&#969;</p>
+<p>
+			This result is derived below. We can see from this expression that the component along the axis of rotation is independent of the location of the point along the axis. We can then drop the subscript <i>Q</i> such that:</p>
+<table border="1">
+<tbody>
+<tr>
+<td>
+						For a symmetric body rotating about an axis that is not an axis of symmetry, the component of the angular momentum about the axis of rotation is:
+						<center>
+</center><p>
+<i>L</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub> = <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub>&#969;</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Derivation: </b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+						Let's consider again the object consisting on the two balls attached to the rod. This time the object rotates with speed <i><b>&#969;</b></i> about the z- axis as shown in the figure.
+						<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/NoSymm_0.png"/></p>
+<p>
+							Each particle moves with angular speed <i><b>&#969;</b></i> in a circle of different radius. The radius of each circle are the perpendicular distance between the particles' position and the axis of rotation.</p>
+<p>
+<b>Calculate the angular momentum of ball 1 measured from a point </b><i>Q</i><b> in the axis of rotation.</b></p>
+<p>
+<u>The position vector</u> of ball 1 measured from point <i><b>Q</b></i>, <i><b>r<sub>Q</sub></b></i>, is at an angle \(\varphi\) with respect to the axis of rotation as shown in the figure below. The radius of the circle described by ball 1 is:</p>
+<p>
+\( r_{\perp} = r_Q\sin\varphi\)</p>
+<p>
+<u>The velocity vector</u>, not shown in the figure, is tangent to the circle. At the instant shown in the figure, the velocity vector of ball 1 is pointing into the screen and has a magnitude:</p>
+<p>
+\( v=\omega r_{\perp}\)</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/NoSymm.png"/></p>
+<p>
+							The angular momentum of ball 1 about point <i><b>Q</b></i>:</p>
+<p>
+\(\vec{L}_Q = \vec{r}_Q \times m_1\vec{v}\)</p>
+<p>
+<u>Magnitude</u></p>
+<p>
+							The position and velocity vectors are perpendicular to each other, therefore the magnitude of the angular momentum about point <i><b>Q</b></i> is:</p>
+<p>
+<font size="3" face="times new roman"><i>L<sub>Q</sub> = m<sub>1</sub>r<sub>Q</sub>v</i>sin 90<sup>o</sup>=<i>m<sub>1</sub>r<sub>Q</sub>v</i> </font>.</p>
+<p>
+<u>Direction</u>:</p>
+<p>
+							The angular momentum is perpendicular to <i><b>r<sub>Q</sub></b></i> and <i><b>v</b></i> vectors, then it is at an angle \(90^o - \varphi\) with respect to the axis of rotation as shown in the figure below.</p>
+<p>
+							The component of the angular momentum about the axis of rotation, <font size="3" face="times new roman"><i>L<sub>Q,z</sub></i></font>, can be obtained by multiplying its magnitude by \(\sin\varphi\), as shown:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/NoSymm_sol_zComponent.png"/></p>
+<p>
+<br/>
+<b>The component of the angular momentum along the axis of ball 1 is independent of the point <i>Q</i>.</b></p>
+<p>
+							By adding the components along the z-axis of the angular momentum of each of the particles, the total component of the angular momentum of the object is:</p>
+<p>
+\(L_{Q,z} = (m_1r_{\perp,1}^2 + m_2r_{\perp,2}^2)\omega = I_{axis}\omega\)</p>
+<p>
+							where <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub> is the moment of inertia about the axis of rotation. (In the expression above we have used the labels 1 and 2 for each ball).</p>
+<p>
+<b>Remarks:</b></p>
+<p>
+							The component of the angular momentum about the axis of rotation:</p>
+<p>
+<b>1.</b> is proportional to <i>&#969;</i>.</p>
+<p>
+<b>2.</b> is independent of the point <i><b>Q</b></i>.</p>
+<p>
+							Because <i>L</i><sub><i>Q</i>,<i>z</i></sub> is independent of the point <i><b>Q</b></i>, we will use the notation <i>L</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub> to indicate the component of the angular momentum along the axis of rotation.</p>
+<p>
+<br/>
+							If the object has the mass distributed symmetrically with respect to the axis of rotation, then the angular momentum vector lies on the axis of rotation and we recover the result of Example 2. This case is represented in the left figure. The right figure corresponds to the case of an object rotating about an axis that is not the axis of symmetry where the component along the axis of rotation is proportional to <i><b>&#969;</b></i>.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/NoSymm_1.png"/></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>
+Planar Objects </h3>
+<p>
+			When a plane object, as those in the figure below, rotates about an axis perpendicular to the plane where it is contained, then the angular momentum about the point of intersection between the axis and the body, point <i><b>Q</b></i> in the figure, is parallel to <i><b>&#969;</b></i> and is equal to:</p>
+<p>
+\(\vec{L}_Q = I_{axis}\vec\omega\)</p>
+<p>
+			where <font size="3" face="times new roman"><i>I<sub>axis</sub></i></font> is the moment of inertia measured about the axis of rotation.</p>
+<p>
+			In the examples shown in the figure, the object is contained in the x-y plane and the axis of rotation is parallel to <i><b>&#969;</b></i>, perpendicular to the x-y plane. Note that the axis of rotation in the examples below does not necessarily pass through the center of mass of the system, therefore the <i>I<sub>axis</sub></i> must be obtained using the parallel axis theorem. If the mass of the object is M and the distance between the axis of rotation and the axis that passes through the center of mass is D, then:</p>
+<p>
+\(I_{axis}= MD^2 + I_{cm}\),</p>
+<p>
+			where \(I_{cm}\) is the moment of inertia of the object about its center of mass.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/planarObjects.png"/></p>
+</body>
+</html>
+

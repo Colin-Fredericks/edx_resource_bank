@@ -1,0 +1,271 @@
+<html>
+<head>
+<title>Constrained Multi-Particle Systems</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Constraints in Systems with Multiple Objects</h3>
+<p>
+			When the system contains multiple objects that move with the same velocity and acceleration, you may choose to analyze the entire system as one point particle. Constraint forces that act to maintain the relative positions of two system constituents (such as contact forces between the objects, tension forces from a rope joining them, etc.) will occur in Newton's Third Law pairs, hence these <b>internal</b> constraint forces will cancel out. Thus they need not appear in the free body diagram for the system.</p>
+<table class="wikitable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Illustrative Example: Two Boxes in an Elevator</b> [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht12">
+<td>
+<p>
+							Imagine now one box stacked on top of the other. The lower box is on an elevator's floor. The elevator is accelerating upwards with an acceleration of magnitude a. Now it is clear that the motion of the upper box is constrained by the motion of the lower box. Both boxes have the same acceleration (a<sub>u,y</sub> = a<sub>l,y</sub>), and as before, the lower box is moving with the same acceleration as the elevator (a<sub>l,y</sub> = a).</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3TwoBoxElevator.png"/></p>
+<p>
+							In this example, the normal forces resulting from the interaction between both boxes and the normal force due to the interaction between the lower box and the elevator's floor constrain both boxes to move with the elevator's acceleration:</p>
+<p>
+<font size="3"><b>a<sub>u,y</sub> = a<sub> l,y</sub> = a</b></font></p>
+<p>
+							The normal forces, shown in the free body diagram above, are the <b>constraint forces</b>. They will adjust their magnitudes according to Newton's second law to provide the proper acceleration to both boxes. Note: <b>N<sub>ul</sub></b> and <b>N<sub>lu</sub></b> are Newton's 3<sup>rd</sup> law pair, and are therefore drawn with the same magnitude.</p>
+<p>
+							&#160;</p>
+<h3>
+Calculating the normal forces </h3>
+<p>
+							Given the masses of the upper and lower boxes, m<sub>u</sub> and m<sub>l</sub>, we want to find the three normal forces for a given acceleration <b>a</b>. For that purpose we will use two different approaches:</p>
+<ol style="list-style-type:decimal">
+<li>
+								Select two separate systems: one containing the upper box, the other one containing the lower box.</li>
+<li>
+								Select the combined system consisting of both boxes.</li>
+</ol>
+<p>
+							&#160;</p>
+<p>
+							&#160;</p>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>1. Two Separate Systems</b> [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht13">
+<td>
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Identify the interactions and classify the resulting forces</b> [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3TwoBoxElevatorInterReduced.png"/></td>
+</tr>
+</tbody>
+</table>
+<p>
+											The force diagrams of each box are shown again in the following figure. Below each force diagram is the vertical component of Newton's Second Law in a coordinate system with the vertical y-axis positive upwards.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/MultiSystemTwoBoxesElevator1Reduced.png"/></p>
+<p>
+<br/>
+											Note that for each system we have two independent equations, (eq.1) and (eq. 2), with 5 unknowns:</p>
+<ul style="list-style:disc outside none">
+<li>
+												the three normal forces (N<sub>ul</sub>, N<sub>lf</sub> and N<sub>lu</sub>), and</li>
+<li>
+												the box's accelerations, a<sub>l,y</sub> and a<sub>u,y</sub>.</li>
+</ul>
+<p>
+											The constraint that <i> the boxes move together with the elevator </i> provides us with two extra equations: a<sub>l,y</sub> = a and a<sub>u,y</sub> = a, (eq. 3 and 4). The last equation needed is the equality of the magnitudes of the box-box contact forces, which are a <b>Newton's third law pair</b> (eq. 5 in the figure).</p>
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Solve the above equations to obtain N<sub>ul</sub> and N<sub>lf</sub>:</b> [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht6">
+<td>
+<b>Obtain N<sub>ul</sub>:</b>
+<p>
+															In (eq. 1) use the gravitational force F<sub>uE</sub> = m<sub>u</sub>g and the constraint about the accelerations a<sub>u,y</sub> = a (eq. 3) to obtain:</p>
+<p>
+<font size="3"><b>N<sub>ul</sub> = m<sub>u</sub>(g + a)</b></font></p>
+<p>
+															&#160;</p>
+<p>
+															Note the similarity between this solution and the one obtained in the previous example, a single box on the elevator's floor. This result is expected because now the lower box is moving with the same acceleration as the elevator, therefore the lower box acts like the elevator's floor.</p>
+<p>
+<br/>
+<b>Obtain N<sub>lf</sub>:</b></p>
+<p>
+															Starting with (eq. 2) we will solve for N<sub>lf</sub> by using that F<sub>lE</sub> = m<sub>l</sub>g and the constraint on the acceleration, a<sub>l,y</sub> = a:</p>
+<p>
+<br/>
+<font size="3"><b>N<sub>lf</sub> - N<sub>lu</sub> - m<sub>l</sub>g = m<sub>l</sub>a</b> </font></p>
+<p>
+<br/>
+															Using that N<sub>lu</sub> = N<sub>ul</sub> (eq, 5) we obtain that the normal force on the lower box by the elevator's floor is:</p>
+<p>
+<font size="3"><b>N<sub>lf</sub> = (m<sub>l</sub>+m<sub>u</sub>)(g + a) </b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+											The normal force on the upper box due to the lower one is:</p>
+<p align="center">
+<font size="3"><b>N<sub>ul</sub> = m<sub>u</sub>(g + a)</b></font></p>
+<p>
+											and, the normal force on the lower box due to the floor is:</p>
+<p align="center">
+<font size="3"><b>N<sub>lf</sub> = (m<sub>l</sub>+m<sub>u</sub>)(g + a) </b></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>2. Combined System: Upper Box + Lower Box</b> [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht14">
+<td>
+<p>
+											The expression obtained above for <b>N<sub>lf</sub></b>, the normal force exerted on the lower box by the floor, makes sense. If we think that both boxes are constrained to move with the same acceleration, then both boxes can be treated as a system consisting of a point particle of total mass (m<sub>u</sub> + m<sub>l</sub>) moving under the action of the gravitational force acting on the total mass and the external normal force exerted on the lower box by the floor. To justify this result we first identify and classify the interactions in the combined system:</p>
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Identify the interactions and classify the resulting forces </b> [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht7">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3TwoBoxElevatorCombinedInter.png"/>
+<p>
+															The internal normal forces between the two boxes, N<sub>ul</sub> and N<sub>lu</sub>, are a Newton's 3rd law pair, so they will cancel when adding up all the forces on and within the system. They will not affect the acceleration of the system. Only the external forces are relevant for the acceleration of the system.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="subsubtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Only external forces are relevant to the system's acceleration </b> [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht8">
+<td>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3TwoBoxesElevatorEquations2.png"/></td>
+</tr>
+</tbody>
+</table>
+<p>
+<br/>
+											The free body diagram of the of the combined 'upper-lower boxes' system is shown below.</p>
+<p>
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit3/Module3/files/Mod3TwoBoxElevatorCombineda.png"/></p>
+<p>
+<br/>
+											Now the procedure to solve for the normal force exerted on the lower box by the floor is the same as the one we followed to answer the first concept question in this module. We start by writing Newton's Second Law for the system as shown below the free body diagram. Note that only the external forces appear in the terms of the net force. The signs on each term of the equation are consistent with a y-axis positive upwards. Substituting in the gravitational force on the combined system, F<sub>(l+u)E</sub> = (m<sub>u</sub>+m<sub>l</sub>)g, we recover the same result obtained by considering two independent systems:</p>
+<p>
+											&#160;</p>
+<p align="center">
+<font size="3"><b>N<sub>lf</sub> = (m<sub>l</sub>+m<sub>u</sub>)(g + a)</b></font></p>
+<p>
+<br/>
+											In the combined system, the normal forces between the boxes are now internal forces, and they are not included in the free body diagram of the combined system. As mentioned in the previous module, this cancellation is fundamentally a result of the constraint imposed by Newton's Third Law. The internal forces come in opposing pairs and cancel. Because of this cancellation, we say that internal forces are irrelevant to the acceleration of the system. Only the external forces, in this case the gravitational on the system and the normal on the lower box by the floor, will contribute to the acceleration of the system.</p>
+<p>
+											The advantage of considering the combined system is that it is the most straightforward way to calculate the external normal force N<sub>lf</sub>. On the other hand, it does not provide any information about the internal contact force N<sub>ul</sub>. For that purpose we must choose a system for which this force is an external force: the upper box by itself.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p>
+A block is sliding down an incline at a constant velocity. 
+</p><br/><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK20.png" alt="p1a" texwrap="none" align="top"/><br/> 
+Which force diagram correctly represents the forces applied to the block?
+
+    <br/>
+    <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3b.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3c.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3d.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+
+                <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK3e.png" alt="p1a" texwrap="none" align="middle"/>          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+                      </problem>
+</html>

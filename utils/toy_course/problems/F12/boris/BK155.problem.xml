@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 155 -->
+<problem>
+
+	<p>A uniform bar is propped against the corner of a room as shown. The bar slides so that point A is sliding downward and point B is sliding to the right. At the moment when the bar makes the angle \(\theta\) with the horizontal, the speed of point A is v. Hint: consider the fact that the bar is a rigid object.</p>
+	<img src="/static/problems/F12/boris/images/BK155_bar.png" width="300" />
+
+	<p>Find the speed of point B at the moment described.</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">\( v \)</choice>
+			<choice correct="false">\( v \cos (\theta) \)</choice>
+			<choice correct="false">\( v / \cos (\theta) \)</choice>
+			<choice correct="false">\( v \sin (\theta) \)</choice>
+			<choice correct="false">\( v / \sin (\theta) \)</choice>
+			<choice correct="true">\( v \tan (\theta) \)</choice>
+			<choice correct="false">\( v / \tan (\theta) \)</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

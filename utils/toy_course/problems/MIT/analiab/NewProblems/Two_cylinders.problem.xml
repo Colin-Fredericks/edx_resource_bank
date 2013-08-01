@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+<!--
+w="(wo)/(I2*R1/(I1*R2)+(R2/R1))"
+-->
+w1="3*w/2"
+</script>
+    <img src="/static/problems/MIT/analiab/NewProblems/files/Two_approaching_disks.png"/> 
+    <br/>
+
+      <p>
+
+Two cylinders of radius and moment of inertia \(R_1\), \(R_2\), \(I_1\) and \(I_2\), respectively, are supported by their axes perpendicular to the plane. The large 
+cylinder is initially rotating with angular velocity \(\omega\). The small cylinder is moved to the right against the larger cylinder and after 
+slipping stops they both start to rotate in opposite direction at a constant rate.
+
+Find \(\omega_1\), the angular velocity of the smaller cylinder, at the instant when the cylinders are rotating without slipping.
+Assume that \(R_2 = 2R_1\) and that the mass of the large disk is 3 times larger than the mass of the smaller one. In your answer enter w for \(\omega\).
+<br/>
+\(\omega_1=\)
+</p>
+
+    <formularesponse answer="$w1" samples="w@1:10#3">
+      <responseparam default="1%" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

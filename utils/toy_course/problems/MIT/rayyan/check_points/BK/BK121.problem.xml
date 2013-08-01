@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Angular Momentum in Circular Orbits </title>
+
+      <p>
+A satellite of mass m revolves around a planet of mass M in a circular orbit of radius r. What is the magnitude of the angular momentum of the satellite?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                \( m \sqrt{GMr}\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(M \sqrt{Gmr}\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(m \sqrt{GM/r}\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \(M \sqrt{Gm/r}\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(\sqrt{GMmr}\)
+
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+
+                \(\sqrt{GMm/r}\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

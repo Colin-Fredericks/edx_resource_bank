@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<html>
+  <problem><font size="4"><b>Given v vs. t obtain a vs. t</b></font><br/>
+
+An object is moving along a straight line. The velocity as a function of time is shown in the figure below.
+The positive axis represents a vector pointing to the right.<br/>
+<br/>
+<img src="/static/problems/MIT/analiab/Figures/given_the_plot_of_v_obtain_a.png" align="center" texwrap="none" width="400" alt="given_plot_of_v_find_x"/>
+<br/>
+<p>
+<b>Part a)</b> Use the graph to calculate the acceleration of the of the object (m/s<sup>2</sup>) during the following time intervals. (Indicate negative acceleration with a "-" sign).
+</p>
+<p>
+1. The object's acceleration during the time interval 0 &lt; t &lt; 20 is: 
+</p>\(a=\)
+<numericalresponse answer="0.75" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+2. The object's acceleration during the time interval 20 &lt; t &lt; 30 is: 
+</p>\(a=\)
+<numericalresponse answer="0" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+3 . The object's acceleration during the time interval 30 &lt; t &lt; 40 is:
+</p>\(a=\)
+<numericalresponse answer="0.5" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+4. The object's acceleration during the time interval 40 &lt; t &lt; 50 is:
+</p>\(a=\)
+<numericalresponse answer="0.0" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+5 . The object's acceleration during the time interval 50 &lt; t &lt; 65 is:
+</p>\(a=\)
+<numericalresponse answer="-2" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<p>
+6. The object's acceleration during the time interval 65 &lt; t &lt; 80 is:
+</p>\(a=\)
+<numericalresponse answer="0" unit="m/s^2"><responseparam default="5%" type="tolerance"/><responseparam default="0,15" name="sig" description="Significant Figures"/><textline math="1"/></numericalresponse>
+
+<b>Part b)</b> On a piece of paper do a plot of the acceleration as a function of time.<br/>
+<br/>
+<b>Part c)</b> Watch the construction of the plot of a vs. t by Mr Dave Sim
+ <a href="http://www.thephysicscafe.com">The Physics Caf&#xE9;</a>
+<br/>
+<b>Note</b>: The gradient of v - t refers to the time derivative of v: \( a = \frac{dv}{dt} \) .
+<table border="1"><tr><td>
+<iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/sQx_2NmzOUE?rel=0"/>
+
+</td></tr>
+<tr><td>
+<p>This movie is part of the Kinematics Lecture &#x2013; Graph Drawing  by Mr. Dave Sim of <a href="http://www.thephysicscafe.com">The Physics Caf&#xE9;</a></p>
+<p><a href="https://s3.amazonaws.com/edx-course-videos/mit-8MREV/The_Physics_Cafe_Given_v_vs_t_obtain_a_vs_t.mp4">Click here to download this video.</a></p>
+</td></tr>
+</table>
+
+</problem>
+</html>

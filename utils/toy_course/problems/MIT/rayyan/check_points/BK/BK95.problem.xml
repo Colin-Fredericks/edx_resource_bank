@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Rolling Down an Incline </title>
+    <script type="loncapa/python">
+
+h=random.choice([0.80,1.40,2.5])
+v= math.sqrt(10* h*9.8/7)
+v2= math.sqrt(2.0* h*9.8)
+
+</script>
+
+<p>A small solid sphere is released from the top of an inclined plane of vertical height of $h m . The sphere rolls down without slipping.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK95.PNG" alt="BK95"/>
+<br/>
+
+<p>Part 1. Describe the major energy transformation that takes place as the sphere rolls down the incline.</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+				kinetic rotational into kinetic translational
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                kinetic translational into kinetic rotational
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                gravitational potential into kinetic rotational
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                gravitational potential into kinetic translational
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                kinetic translational into kinetic rotational and gravitational potential
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                kinetic rotational into kinetic translational and gravitational potential
+          </choice>
+          <choice location="random" name="foil7" correct="true">
+                gravitational potential into kinetic translational and kinetic rotational   
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 2. As the sphere rolls down the incline, what is the relationship between the
+ linear speed \(v\) of the center of mass and the angular speed \(\omega\)
+ relative to axis passing through the center of mass? (The radius of the sphere is \(r\)).</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \( v = \omega r\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \( v = \omega / r \)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \( v = 2 \omega r \)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \( v = 2 \omega / r \)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \( v = \omega r/2 \)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \( v = \omega / (2 r) \)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 3. Find the linear speed of the sphere at the bottom of the incline. Use g = 9.8 m/s<sup>2</sup>.</p>
+
+\(v =\)
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 4. What would be the speed of the sphere at the bottom if the incline were frictionless?</p>
+
+\(v =\)
+
+	  <numericalresponse answer="$v2" unit="m/s">
+		<responseparam default="5%" type="tolerance"/>
+		<textline math="1"/>
+	  </numericalresponse>
+
+</problem>
+</html>

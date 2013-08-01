@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Pendulum SHM</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Simple Harmonic Motion of a Pendulum</h3>
+<p>Watching a pendulum should quickly convince you that the motion resembles SHM.  In particular, there is a defined equilibrium point (hanging straight down) about which the motion is symmetric, and the energy of the motion appears approximately conserved.  The one big complication is that the natural position variable for a pendulum is angle.  Thus, the dynamics of the pendulum should really be governed by the 
+Rotational Dynamics about a Fixed Axis and Net Torque Model.  We could create a new sub-Model of rotational dynamics to handle pendulums, or we can try to limit the growth of our Hierarchy of Models by understanding that the SHM Model has taught us the solutions of the differential equation:
+</p><p>\[\frac{d^{2}x}{dt^{2}} = -\omega_{\rm osc}^{2} x\]
+</p><p>where &#969; is a constant.  Any process that is governed by a differential equation of this form is, in a sense, a "Simple Harmonic Motion".  With the pendulum, the analogy is already familiar:  we will simply replace x with &#952;.  Thus, we want an equation of the form:
+</p><p>\[\frac{d^{2}\theta_{a}}{dt^{2}} = -\omega_{\rm osc}^{2} \theta_{a}\]
+</p><p>Note that the second time derivative of &#952; is simply the angular acceleration.  This leads us to the angular form of Newton's 2nd Law:
+</p><p>\[ \tau_{a} = I\alpha_{a}\]
+</p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit13/Module2/files/PendulumRed.png"/>
+<p>For a pendulum, the torque is provided by gravity.  If we define &#952; to be zero at the equilibrium position of the pendulum (straight down) then we have:
+</p><p>\[ \tau_{a} = - mgL_{\rm cm} \sin(\theta_{a})\]
+</p><p>where <i>L</i> is the length of the string and <i>m</i> is the mass of the pendulum bob.  Thus, the angular form of Newton's Second Law for the pendulum becomes:
+</p><p>\[ - mgL_{\rm cm}\sin(\theta_{a}) = I\alpha_{a}\; = I \frac{d^{2}\theta_{a}}{dt^{2}}\]
+</p><p>We are almost to the form of the SHM differential equation, except that we have a sine function on the left hand side instead of simply &#952;.  Of course, it is well known that for small angles 
+</p><p>\[\sin(\theta_{a}) = \theta_{a} + \mathcal{O}(\theta^{3})\]
+</p><p>thus, <b>if</b> we restrict the motion of the pendulum so that:
+</p><p>\[\theta_{a}^{3} \ll \theta_{a}\]
+</p><p>where &#952; is measured in radians, we can write:
+</p><p>\[ -mgL_{\rm cm}\theta_{a} \approx I\frac{d^{2}\theta_{a}}{dt^{2}}\]
+</p><p>which can be rearranged to give:
+</p><p>\[ \frac{d^{2}\theta_{a}}{dt^{2}} \approx - \frac{mgL_{\rm cm}}{I} \theta_{a}\]
+</p><p>which has the form of the Simple Harmonic Motion differential equation with
+</p><p>\[\omega_{\rm osc} = \sqrt{\frac{mgL_{\rm cm}}{I}}\]
+</p><p>but if we are considering only a simple pendulum (a small, massive bob on a very light string of length <i>L</i>), the moment of inertia is approximately <i>mL</i><sup>2</sup> and the center of mass is at a distance <i>L</i> from the axis so we can simplify this to:
+</p><p>\[\omega_{\rm osc} = \sqrt{\frac{mgL}{mL^{2}}} = \sqrt{\frac{g}{L}}\]
+</p><p><br/>
+</p>
+<h2> Ubiquity of Simple Harmonic "Motion"</h2>
+<p>As is implied by the case of the pendulum, any physical system in <i>stable equilibrium</i> can be set into harmonic oscillation, provided that the initial perturbation from equilibrium is small, where the exact meaning of "small" depends on the specifics of the system.  Thus, a vast array of physical systems ranging from the deck of a suspension bridge to atoms in a solid lattice can exhibit SHM.  
+</p><p>Additionally, the general form of the differential equation for SHM is fundamental to wave propagation.  Thus, the transverse location of a portion of a string undergoes harmonic oscillation in a typical string wave, the air pressure undergoes harmonic oscillation in a sound wave, and so on.  In this way, familiarity with the differential equation governing SHM has figured in many of the major advances of physics since Newton.  In 1865 <a href="http://en.wikipedia.org/wiki/James_Clerk_Maxwell" class="extiw" title="wikipedia:James Clerk Maxwell">James Clerk Maxwell</a> published a unified theory of electricity and magnetism that showed free electric and magnetic fields oscillate harmonically to create electromagnetic waves.  In 1916 <a href="http://en.wikipedia.org/wiki/Einstein" class="extiw" title="wikipedia:Einstein">Albert Einstein</a> completed his general theory of relativity which predicts that the fabric of spacetime can oscillate harmonically to create gravity waves.  In 1926 <a href="http://en.wikipedia.org/wiki/Schrodinger" class="extiw" title="wikipedia:Schrodinger">Erwin Schrodinger</a> proposed a theory of quantum mechanics in which the quantum probability density of free particles fluctuates harmonically.
+</p>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/spring.png" alt="spring" height="150"/>
+
+      <p><br/>A block attached to a spring is oscillating between point X (fully compressed) and point Y (fully stretched). At point X, which of the following quantities would reach its maximum value?</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+              <text>The block's kinetic energy</text>
+        </choice>
+        <choice name="foil2" correct="false">
+              <text>The spring potential energy</text>
+        </choice>
+        <choice name="foil3" correct="false">
+              <text>The magnitude of the block's momentum</text>
+        </choice>
+        <choice name="foil4" correct="false">
+              <text>The magnitude of the block's acceleration</text>
+        </choice>
+        <choice name="foil5" correct="false">
+			  <text>The block's kinetic energy &amp; the block's momentum</text>
+        </choice>
+        <choice name="foil6" correct="true">
+			  <text>The spring potential energy &amp; the block's acceleration</text>
+        </choice>
+        <choice name="foil7" correct="false">
+              <text>None of the above</text>      
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

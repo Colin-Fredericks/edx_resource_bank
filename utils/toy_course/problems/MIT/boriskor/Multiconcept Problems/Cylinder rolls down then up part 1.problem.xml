@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+    <p><img src="/static/problems/MIT/boriskor/BKimages/6-cylinder and two inclines.png" alt="Cylinder rolls down one incline and up the other"/></p>
+
+    <p>A uniform solid cylinder is held at rest at the top of an inclined plane that has a vertical height \(h\) and makes an angle \(\theta\) with the horizontal. After the cylinder is released, it rolls down without slipping, then encounters a <i>frictionless</i> horizontal surface and then another, <i>frictionless</i> inclined plane that has the same vertical height \(h\) and makes the same angle \(\theta\) with the horizontal.</p>
+
+	<p><b>What is the minimum coefficient of friction \(\mu_{min}\) between the cylinder and the first inclined plane that enables it to roll without slipping?</b></p>
+
+	<multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(\mu_{min}=(\tan \theta)/3\)
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                  \(\mu_{min}=(\tan \theta)/2\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(\mu_{min}=(\tan \theta)\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(\mu_{min}=(2\tan \theta)/3\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(\mu_{min}=(\tan \theta)/6\)
+          </choice>
+          <choice location="random" name="foil6" correct="false">
+                  \(\mu_{min}=(4\tan \theta)/9\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+</problem>
+</html>

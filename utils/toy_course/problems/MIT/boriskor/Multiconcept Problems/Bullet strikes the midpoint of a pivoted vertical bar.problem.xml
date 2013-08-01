@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/boriskor/BKimages/50-bullet strikes midpoint of bar.png" alt="Horizontally flying bullet strikes the midpoint of a vertical pivoted bar"/>
+        <br/>
+
+      <p>
+A thick uniform bar of mass \(m\) and length \(d\) is suspended vertically, pivoted at the top. A bullet of the same mass \(m\), flying horizontally at an unknown speed, strikes the midpoint of the bar and gets stuck in it. The bar swings upward and comes to a momentary stop in the horizontal position. Find the speed of the bullet before it strikes the bar.
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+			<p>\(v=\sqrt{14gd/3}\)</p>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<p>\(v=\sqrt{2gd/5}\)</p>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<p>\(v=\sqrt{4gd/3}\)</p>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<p>\(v=\sqrt{7gd/4}\)</p>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<p>\(v=\sqrt{11gd/4}\)</p>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+			<p>\(v=\sqrt{14gd/5}\)</p>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Motion vs Change</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+font-size:10pt;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:0 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+font-size:10pt;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3>Motion vs. Change in Motion</h3>
+<p>Newton's 2nd Law does <i>not</i> state what is required for something to be in motion; the 1st Law addresses that.  The 2nd Law specifically quantifies the <i>rate of change</i> of motion (acceleration) any object will undergo as a consequence of all of the forces on it.  Because the law is describing changes in translational motion, any path deviating from a straight line occurs because of some net force; any change in <i>speed</i> also occurs because of some net force. The actual size of the acceleration depends on internal properties of the object and the external interactions imposed upon it. To move means that the position changes as time "ticks" on.  Both velocity and acceleration characterize the motion; but they describe two very different aspects of motion.</p>
+<h3>Velocity Quantifies Motion</h3>
+<div class="floatleft"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module2/files/U1Mod2graphs_slope_vel.png"/></div>
+<p><b>Velocity</b> is defined as the <i>rate of change of position</i>.  
+In one dimension, or straight line motion, if <i>x</i> indicates the position then <i>v</i> = <i>d</i><i>x</i> / <i>d</i><i>t</i>.  Alternately the velocity at a particular moment can be represented by the slope of the graph of the object's position vs. time, evaluated at the particular moment of interest.
+</p>
+<h3>Acceleration Quantifies Change in Motion</h3>
+<div class="floatright"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit1/Module2/files/U1Mod2graphs_slope_acc.png"/></div><b>Acceleration</b> of a moving object is defined as the <i>rate of change of velocity</i>.
+<p>This is the second derivative of position or, in one dimension, <i>a</i> = <i>d</i><sup>2</sup><i>x</i> / <i>d</i><i>t</i><sup>2</sup> = <i>d</i><i>v</i> / <i>d</i><i>t</i>.  Considering the graphical representation again, the acceleration of an object moving in the x-direction can be determined by finding the slope of the velocity vs. time graph at the moment of interest.
+</p>
+</body>
+</html>
+

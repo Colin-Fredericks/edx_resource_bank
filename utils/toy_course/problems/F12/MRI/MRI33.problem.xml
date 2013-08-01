@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 33 -->
+
+<problem>
+
+	<p>Two projectiles are launched at different velocities from the same spot on the ground level simultaneously. The initial speeds and the launch angles for both projectiles are given but the acceleration due to gravity is not. Neglect resistive forces.</p>
+
+	<h3>Part 1</h3>
+	<p>For the time interval when both projectiles are in the air, it is possible to find:</p>	
+	<p>
+		The vertical displacement of each projectile as function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="No"/>
+		</optionresponse>
+	</p>
+	<p>
+		The horizontal displacement of each projectile as function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The distance between the projectiles as function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The horizontal component of each projectile’s velocity as function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="Yes"/>
+		</optionresponse>
+	</p>
+	<p>
+		The vertical component of each projectile’s velocity as function of time
+		<optionresponse>
+		<optioninput inline="1" options="('Yes','No')" correct="No"/>
+		</optionresponse>
+	</p>
+
+	<h3>Part 2</h3>
+	<p>My answer to the previous part is justified because:</p>
+
+	<p>
+		Acceleration due to gravity affects only the vertical components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="True"/>
+		</optionresponse>
+	</p>
+	<p>
+		Acceleration due to gravity affects only the horizontal components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="False"/>
+		</optionresponse>
+	</p>
+	<p>
+		Acceleration due to gravity affects both the vertical and the horizontal components of the velocities of the projectiles
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="False"/>
+		</optionresponse>
+	</p>
+	<p>
+		Relative to each other, the projectiles move at constant velocity	
+		<optionresponse>
+		<optioninput inline="1" options="('True','False')" correct="True"/>
+		</optionresponse>
+	</p>
+
+</problem>
+</html>

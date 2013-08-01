@@ -1,0 +1,127 @@
+<html><html>
+<head>
+<title>SHM with Springs</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+<h3>
+Simple Harmonic Motion with Springs: Linear Restoring Force</h3>
+<p>
+			A mass connected to a spring experiences a linear restoring interaction: the force of the spring on the mass is \( \displaystyle F_{spring}=-k x \)&#160;The minus sign (important!) means that the force is always opposite in direction to the displacement. If the mass has moved to the right, the spring will pull it left and vice versa. The force always tries to "restore" the mass to its equilibrium position, which is taken to be at x = 0 above.</p>
+<p>
+			If the mass is pulled to the right and released, the force is leftward until the mass reaches the origin. Hence it will be moving towards the left when it arrives at the origin and will continue moving left until its velocity goes to zero and changes direction (due to the now rightward restoring force). As we shall see, the mass will move as far to the left as it was to the right when originally released. Since there is no friction force in the above equation, this oscillitory motion will continue indefinitely. To figure out the frequency of the oscillations, we apply Newton's Second Law:</p>
+<p>
+\[ F^{net}=ma\]</p>
+<p>
+			The only force is the force of the spring</p>
+<p>
+\[ F_{spring}=-k x\]</p>
+<p>
+			This means that:</p>
+<p>
+\[ -k x = m a \]</p>
+<p>
+			rearranging the terms gives us:</p>
+<p>
+\[ a(t)= -\frac{k}{m} x(t)\]</p>
+<p>
+			where we have exhibited the time dependence explicitly. x(t) can not be found until after a(t) is known (and integrated twice), but a(t) can't be found until x(t) is known.&#160;Thus the equation is really a <i>differential equation</i> because it contains both an unknown function as well as its derivative.</p>
+<p>
+\[ a(t)=\frac{d^2x}{dt^2}= -\frac{k}{m} x(t)\]</p>
+<p>
+			This looks pretty much like the equation of a restoring acceleration:</p>
+<p>
+\[ a(t)= -\omega_{osc}^2 x(t)\]</p>
+<p>
+			Matching the two equations, we see that:</p>
+<p>
+\[ \omega_{osc}=\sqrt{\frac{k}{m}} \]</p>
+<p>
+			&#160;</p>
+<p>
+			NOTE: we did&#160;<b>not</b>&#160;at any point attempt to find the acceleration from this equation</p>
+<p>
+\[ a(t)= \frac{1}{m} F(t)\]</p></body>
+</html>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</html>

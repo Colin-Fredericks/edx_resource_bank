@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<html>
+  <problem><p><font size="3"><b>Given v vs. t obtain a vs. t</b></font><br/>
+An object is moving along a straight line. The velocity as a function of time is shown in the figure below.
+The positive axis represents a vector pointing to the right.<br/>
+</p><img src="/static/problems/MIT/analiab/Figures/given_the_plot_of_v_obtain_a.png" align="center" texwrap="none" width="400&quot;" alt="given_plot_of_v_find_x"/>
+<br/><b><u>Part a)</u></b> To answer the following questions, indicate with a + or - if the acceleration vector is pointing to
+the right or left.
+<br/><p>
+1. The object's acceleration during the time interval 0 &lt; t &lt; 20 is ___ m/s^2  
+</p><br/>\(a=\)<numericalresponse answer="0.75"><responseparam default="5%" type="tolerance" >
+</responseparam><textline/>
+<!--  DS:  Two things have changed:  1.  I have commented out the second "responseparam", and 2. added the "answer attribute to the numerical response element.  Number 
+2 seems to be the biggest issues, while I am not sure that number 1 is required, or how it will affect the problem.  If this fixes it, make the above correction to 
+the remaining problem parts.
+<responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1"></textline>
+-->
+</numericalresponse>
+
+<!--
+<p>
+-->
+
+<!--
+2. The object's acceleration during the time interval 20 &lt; t &lt; 30 is ___ m/s^2 
+</p><br/>\(a=\)<numericalresponse><responseparam default="5%" type="tolerance">
+</responseparam><responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1">
+</textline></numericalresponse><p>
+3 . The object's acceleration during the time interval 30 &lt; t &lt; 40 is ___ m/s^2 
+</p><br/>\(a=\)<numericalresponse><responseparam default="5%" type="tolerance">
+</responseparam><responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1">
+</textline></numericalresponse><p>
+4. The object's acceleration during the time interval 40 &lt; t &lt; 50 is ___ m/s^2 
+</p><br/>\(a=\)<numericalresponse><responseparam default="5%" type="tolerance">
+</responseparam><responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1">
+</textline></numericalresponse><p>
+5 . The object's acceleration during the time interval 50 &lt; t &lt;65 is ___ m/s^2 
+</p><br/>\(a=\)<numericalresponse><responseparam default="5%" type="tolerance">
+</responseparam><responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1">
+</textline></numericalresponse><p>
+6. The object's acceleration during the time interval 65&lt; t &lt; 80 is ___ m/s^2 
+</p><br/>\(a=\)<numericalresponse><responseparam default="5%" type="tolerance">
+</responseparam><responseparam default="0,15" name="sig" description="Significant Figures">
+</responseparam><textline math="1">
+</textline></numericalresponse><br/><br/><b><u>Part b)</u></b> In a piece of paper do a plot of the acceleration as a function of time.<br/>
+<br/>
+<b><u>Part c)</u></b> Watch the construction of the plot of a vs. t by Mr Dave Sim <a www.thephysicscafe.com="www.thephysicscafe.com" href=""http://">The Physics Caf&#xE9;</a>
+<br/>
+<b>Note</b>: The gradient of v - t refers to the time derivative of v: \( a = \frac{dv}{dt}\).
+<br/>
+<table border="1"><tr><td><iframe height="315" width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/sQx_2NmzOUE?rel=0"/></td></tr><tr><td>
+This movie is part of the Kinematics Lecture &#x2013; Graph Drawing  by <br/>
+Mr. Dave Sim of <a href="http://www.thephysicscafe.com">The Physics Caf&#xE9;</a>
+</td></tr></table>
+
+-->
+</problem>
+</html>

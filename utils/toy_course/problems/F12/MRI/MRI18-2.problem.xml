@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 18 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">Mechanical energy is always conserved.</choice>
+			<choice location="random" correct="false">Frictional forces conserve mechanical energy.</choice>
+			<choice location="random" correct="true">Friction removes mechanical energy from the system.</choice>
+			<choice location="random" correct="false">Objects naturally lose energy as time goes on.</choice>
+			<choice location="random" correct="false">Friction provides the same torque on the sand and the disc.</choice>
+			<choice location="random" correct="false">All the torques in this problem are internal to the system of disc, bowl, and sand.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

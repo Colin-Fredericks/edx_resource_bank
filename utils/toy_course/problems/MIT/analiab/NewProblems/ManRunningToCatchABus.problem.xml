@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+speed="sqrt(2*a*b)"
+
+</script>
+
+      <p>
+
+A man is running at speed <i>v</i> to catch a bus already at a stop. When he is at a distance <i>b</i> from the door of the bus, the bus starts moving
+with a constant acceleration of magnitude <i>a</i>. The goal of the problem is to find the minimum speed needed to catch the bus?
+<br/>
+<i>In your solution, clearly indicate the system(s) that you will consider, the coordinate system to describe the motion
+and the kinematic model(s) you will use. </i>
+
+</p>
+
+<br/>
+
+<p><i>v<sub>min</sub></i> =
+</p>
+
+    <formularesponse answer="$speed"  samples="a,b@1,1:10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

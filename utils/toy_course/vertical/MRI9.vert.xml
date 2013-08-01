@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI9-1.problem" display_name="Pendulum Collision with Friction" attempts="1"/>
+	<problem filename="F12/MRI/MRI9-2.problem" display_name="Pendulum Collision with Friction, Part 2" attempts="2"/>
+<!-- Used in quiz, removing discussion	<discussion for="Pendulum Collision with Friction" id="MReV_Summer2013_MRI9" discussion_category="Mechanical Energy and Work" /> -->
+</vertical>

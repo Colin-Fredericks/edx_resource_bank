@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+
+<!--  -->
+
+<problem>
+<p>Direction of the velocity vector</p>
+<img src="/static/problems/S13/quiz/images/5-3.png" />
+
+<p>
+A car is moving along the positive x-axis. The plot of the car's position as a function of time is 
+shown in figure 1. Use the arrows in figure 2 to indicate the vector that best represents the 
+direction of the car's velocity vector at the times t<sub>A</sub>, t<sub>B</sub>, t<sub>C</sub>, t<sub>D</sub>, and t<sub>E</sub>. 
+Use 0 if none of the arrows apply.
+</p>
+
+<p>The direction of [mathjaxinline] \vec{v}_A[/mathjaxinline]is:</p>
+<optionresponse>
+	<optioninput
+	options="('0','1','2','3','4','5','6')"
+	correct="2"/>
+</optionresponse>
+
+<p>The direction of [mathjaxinline] \vec{v}_B[/mathjaxinline] is:</p>
+<optionresponse>
+	<optioninput
+	options="('0','1','2','3','4','5','6')"
+	correct="0"/>
+</optionresponse>
+
+<p>The direction of [mathjaxinline] \vec{v}_C [/mathjaxinline] is:</p>
+<optionresponse>
+	<optioninput
+	options="('0','1','2','3','4','5','6')"
+	correct="5"/>
+</optionresponse>
+
+<p>The direction of [mathjaxinline] \vec{v}_D[/mathjaxinline] is:</p>
+<optionresponse>
+	<optioninput
+	options="('0','1','2','3','4','5','6')"
+	correct="5"/>
+</optionresponse>
+
+<p>The direction of [mathjaxinline] \vec{v}_E[/mathjaxinline] is:</p>
+<optionresponse>
+	<optioninput
+	options="('0','1','2','3','4','5','6')"
+	correct="0"/>
+</optionresponse>
+
+</problem>
+
+</html>

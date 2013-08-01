@@ -1,0 +1,23 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Why are you taking this class?  Check all that apply.</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true" name="personal_challenge"><text>Personal challenge</text></choice>
+      <choice correct="true" name="certificate"><text>Certificate/credential given for successful completion</text></choice>
+      <choice correct="true" name="knowledge_and_skills"><text>Increase in knowledge and skills</text></choice>
+      <choice correct="true" name="social_community"><text>Social community of the course</text></choice>
+      <choice correct="true" name="interest_in_topic"><text>Interest in topic only</text></choice>
+      <choice correct="true" name="entertainment_value"><text>Entertainment value of the class</text></choice>
+      <choice correct="true" name="AP_exam_prep"><text>Preparation for advanced placement exam</text></choice>
+      <choice correct="true" name="advanced_standing_prep"><text>Preparation for advanced standing exam</text></choice>
+      <choice correct="true" name="review_of_concepts"><text>Review of introductory physics concepts</text></choice>
+      <choice correct="true" name="employment_opportunities"><text>Employment/job advancement opportunities</text></choice>
+      <choice correct="true" name="other"><text>Other ____________</text></choice>
+    </checkboxgroup>
+  </choiceresponse>
+  <p>If you answered other, why are you taking this class?</p>
+  <stringresponse answer="It's a survey.  There is no right answer!">
+    <textline size="50"/>
+  </stringresponse>
+
+</problem>

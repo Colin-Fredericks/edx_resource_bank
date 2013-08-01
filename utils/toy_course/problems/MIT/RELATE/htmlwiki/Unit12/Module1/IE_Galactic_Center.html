@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Example: The Galactic Center</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example:  The Galactic Center</h3>
+<div class="thumb tleft"><div style="width:502px;" class="thumbinner"><img src="/static/problems/MIT/RELATE/htmlwiki/Unit12/Module1/files/GalacticCenter.gif"/> <div class="thumbcaption">This animation was created by Prof. Andrea Ghez and her research team at UCLA and are from data sets obtained with the W.M. Keck Telescopes.</div></div></div><br style="clear:both"/>
+<p>The animation above was constructed by the <a href="http://www.astro.ucla.edu/~ghezgroup/gc/index.shtml" class="external text" rel="nofollow">UCLA Galactic Center Group</a>.  It shows the positions of stars near the center of our own Milky Way Galaxy.  Several of the stars are clearly following orbital paths with periods on the order of the total observation time (15 years).  The star shape at the center of the animation is the best fit to the position of the very massive object whose gravitational attraction is causing the orbital motion, assuming Keplerian orbits.  Data for several of these orbits was presented in a 2005 paper by the group and is shown below.  In the words of the group:
+</p><p>"These orbits, and a simple application of Kepler's Laws, provide the best evidence yet for a supermassive black hole, which has a mass of 4 million times the mass of the Sun."
+</p>
+<table class="subtable">
+<tr>
+<th> <b>Star</b> </th>
+<th> <b>Period (yr)</b> </th>
+<th> <b>Semi-Major Axis (AU)</b>
+</th></tr>
+<tr>
+<td> S0-2 </td>
+<td> 14.53&#177;0.65 </td>
+<td> 919&#177;223
+</td></tr>
+<tr>
+<td> S0-16 </td>
+<td> 36&#177;17  </td>
+<td> 1680&#177;510
+</td></tr>
+<tr>
+<td> S0-19 </td>
+<td> 37.3&#177;3.8  </td>
+<td> 1720&#177;110
+</td></tr>
+<tr>
+<td> S0-20 </td>
+<td>43&#177;45 </td>
+<td> 1900&#177;1400
+</td></tr>
+<tr>
+<td> S0-1 </td>
+<td> 190&#177;180 </td>
+<td> 5100&#177;3200
+</td></tr></table>
+<div style="font-size:smaller;margin:1px 0px 0px 1px;width:550px;line-height:100%">From <a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005ApJ...620..744G&amp;db_key=AST&amp;data_type=HTML&amp;format=&amp;high=421632d27a04011%7C" class="external text" rel="nofollow">A.M. Ghez, S. Salim, S.D. Hornstein, A. Tanner, J.R. Lu, M. Morris, E.E. Becklin and G. Duchene, "Stellar Orbits Around the Galactic Center Black Hole", <i>Ap. J.</i> <b>620</b>, 744-757 (2005)</a>.</div>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Challenge:</b>  Using the data in the table above confirm that the mass of the central object has a mass approximately 4 million times that of our Sun.  To do this, you will need to know that 1 AU is the mean Earth-Sun separation (1.50&#215;10<sup>11</sup> m) and that the mass of the sun is 2.0&#215;10<sup>30</sup> kg.
+ [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th></tr>
+<tr style="display:none" id="ht1">
+<td> <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1">Each of the stars will be treated as a point particle.  The presumed black hole will be treated as an infinitely massive object.</div><br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2">We will assume that the gravity of the black hole is the only relevant interaction experienced by any of the stars.</div><br/>
+<b>Model:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&#xA0;&#xA0;&quot;, &quot;[show Model]&quot; )" id="toggledisplay3l">[show Model]</a><div style="display:none;" id="toggledisplay3">Keplerian Orbit</div><br/>
+<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4"><br/>
+<p>We simply evaluate Newton's predictive form of Kepler's Third Law for each of the stars in the table solving for <i>M</i>, the mass of the presumed black hole. 
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Step 1: Convert Units
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> The hardest part of this problem is keeping the unit conversions straight.  Below we summarize the SI unit values for each of the orbital parameters.  For this exercise we will not attempt to propagate errors, so they have been dropped from the table.
+<table class="wikitable">
+<tr>
+<th> <b>Star</b> </th>
+<th> <b>Period (s)</b> </th>
+<th> <b>Semi-Major Axis (m)</b>
+</th></tr>
+<tr>
+<td> S0-2 </td>
+<td> 4.59&#215;10<sup>8</sup> </td>
+<td> 1.37&#215;10<sup>14</sup>
+</td></tr>
+<tr>
+<td> S0-16 </td>
+<td> 1.14&#215;10<sup>9</sup> </td>
+<td> 2.51&#215;10<sup>14</sup>
+</td></tr>
+<tr>
+<td> S0-19 </td>
+<td> 1.18&#215;10<sup>9</sup> </td>
+<td> 2.57&#215;10<sup>14</sup>
+</td></tr>
+<tr>
+<td> S0-20 </td>
+<td>1.36&#215;10<sup>9</sup> </td>
+<td> 2.84&#215;10<sup>14</sup>
+</td></tr>
+<tr>
+<td> S0-1 </td>
+<td> 6.00&#215;10<sup>9</sup> </td>
+<td> 7.63&#215;10<sup>14</sup>
+</td></tr></table>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Step 2:  Solve the Equation
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> We can now rearrange the Third Law to solve for the mass <i>M</i> of the black hole:
+<p>\( M = \frac{4\pi^{2}a^{3}}{T^{2}G}\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Step 3: Substitute Numbers
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td> For S0-2, the calculation of <i>M</i> proceeds as:
+<p>\( M = \frac{4\times(3.1416)^{2}\times(1.37\times 10^{14}\;{\rm m})^{3}}{(4.59\times 10^{8}\;{\rm s})^{2}\times (6.67\times10^{-11} \frac{{\rm Nm}^{2}}{{\rm kg}^{2}})}=7.3\times 10^{36}\;kg\)
+</p><p>This answer can be converted to solar masses, giving:
+</p><p>\(7.3\times 10^{36}\;kg \times \frac{1 M_{\odot}}{2.0\times 10^{30}\;kg} \sim 4\times 10^{6}\;M_{\odot}\)
+</p><p>Repeating this process for all the stars confirms the estimate of S0-2.
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+</body>
+</html>
+

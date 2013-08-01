@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Compressing a Spring </title>
+    <script type="loncapa/python">
+
+m=random.choice([2.0,4.0,5.0])
+k=random.choice([200,300,600])
+h=random.choice([0.8,1.5,2.5])
+x=random.choice([0.12,0.15,0.19])
+
+q= m*9.8* h-0.5* k* x* x
+
+</script>
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK69.PNG" alt="BK69.PNG"/>
+    <p>A small block of mass $m kg slides down from the top of a rough inclined plane that has a vertical height $h m. The block strikes a horizontal spring with force constant $k N/m and compresses it a distance $x m before it comes to a momentary stop. How much energy is lost in this process (due to friction)? Use g = 9.8 m/s<sup>2</sup>.</p>
+
+        <p>\(E_{lost}=\)</p>
+
+      <numericalresponse answer="$q" unit="J">
+        <responseparam default="2%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+      </problem>
+</html>

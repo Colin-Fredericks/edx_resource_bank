@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+<!-- Colin problem #6 -->
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+bigm = random.randrange(180, 220, 5)
+bigr = random.randrange(90, 120, 5)
+littler = (bigr - random.randrange(5, 15, 1))
+littlem = random.randrange(8, 12, 1)
+v = random.randrange(18, 22, 1)
+
+I = 0.5 * bigm * bigr/100 * bigr/100
+
+omega = littler/100 * littlem * v / I
+
+</script>
+
+	<p>A merry-go-round (pictured) is sitting in a playground. It is free to rotate, but is currently stationary. You can model it as a cylinder of mass $bigm kg and radius $bigr cm. The poles near the edge are $littler cm from the center.</p>
+	<img src="/static/problems/F12/colin/images/CF6.png" width="300" />
+	<p>Someone hits one of the poles with a $littlem kg sledgehammer moving at $v m/s in a direction tangent to the edge of the merry-go-round. The hammer is not moving with respect to the ground after it hits the merry-go-round.</p>
+	<p>Find the angular velocity of the merry-go-round after it is struck.</p>	
+
+	<numericalresponse answer="$omega" unit="1/s">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+
+</problem>
+</html>

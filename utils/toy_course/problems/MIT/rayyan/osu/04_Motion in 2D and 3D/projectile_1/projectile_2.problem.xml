@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/projectile_1.png" alt="projectile_1" height="150"/>
+
+      <p><br/>
+A battleship simultaneously fires two shells with different initial speeds at enemy ships. If the shells follow the parabolic trajectories with same maximum height as shown below, which ship gets hit first?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              B          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              Both are hit simultaneously.          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Not enough information is given          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

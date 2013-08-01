@@ -1,0 +1,16 @@
+<html>
+<problem>
+
+	<optionresponse texlayout="horizontal" randomize="yes">
+		<p>The maximum value of gravitational potential energy occurs when the ball is at a height of 12 meters</p>
+		<optioninput location="random" name="" correct="True" options="('True','False')"/>
+		<p>The maximum value of kinetic energy occurs when the ball is at a height of 0 meters</p>
+		<optioninput location="random" name="" correct="True" options="('True','False')"/>
+		<p>The minimum value of gravitational potential energy occurs when the ball is at a height of 0 meters</p>
+		<optioninput location="random" name="" correct="True" options="('True','False')"/>
+		<p>The minimum value of kinetic energy occurs when the ball is at a height of 12 meters</p>
+		<optioninput location="random" name="" correct="True" options="('True','False')"/>
+	</optionresponse>
+
+</problem>
+</html>

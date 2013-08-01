@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<problem>
+  <p>
+    <h1>
+      <b class="bfseries">Reading Question Week 5 Day 2</b>
+    </h1>
+  </p>
+  <p>
+    <b class="bfseries">Write your name, section, table number, and group on the upper right hand corner of your answer and hand it in at the start of class that day.</b>
+  </p>
+  <p>
+    <b class="bfseries">Oct 5/6 W05D2 Conservation of Energy, Experiment 3: Energy </b>
+  </p>
+  <p>
+Reading Assignment: Young and Freedman 7.1-7.5, 13.3, 13.6, <a>link text</a>http://web.mit.edu/8.01t/www/materials/Experiments/exp03.pdf ENDHREF </p>
+  <p>
+    <b class="bfseries">Reading Questions </b>
+  </p>
+  <p><b class="bfseries">(1) </b>Explain the difference between a conservative force and a non-conservative force. Give one example of each type and explain why. </p>
+  <p><b class="bfseries">(2) </b>In section 13.3, gravitational potential energy difference \(U(r_{2} )-U(r_{1} )\) is defined as the negative of the work done by the earth's gravitational force in moving an object from one point, a distance \(r=r_{1}\) from the center of the earth, to another point, a distance \(r=r_{2}\) from the center of the earth. Eq. 13.9 gives a general expression for the gravitational potential energy. At what point have we chosen \(U=0\) in order for Eq. 13.9 to give a general expression for the gravitational potential energy? </p>
+</problem>

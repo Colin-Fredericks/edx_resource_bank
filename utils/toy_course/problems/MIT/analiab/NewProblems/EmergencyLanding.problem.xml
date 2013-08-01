@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+
+#Enter the computations here
+
+distance="Fo/(2*m)*ts^2-B/(3*m)*ts^3"
+
+</script>
+
+      <p>
+
+An airliner made an emergency landing at the Los Angeles airport with its nose wheel locked in a position perpendicular to its normal rolling
+position. The horizontal component of the plane’s velocity at touchdown is an unknown quantity <i>vo</i> . The forces acting to stop 
+the airliner arose from friction due to the nose wheel and the braking  effort of the engine in reverse thrust mode. The sum of horizontal forces
+can be modeled as
+<br/>
+
+\( F_{horiz}(t) = -Fo + Bt\)
+<br/>
+from touchdown at t = 0 until the plane comes to rest at  t = <i>ts</i> . Assume the mass of the plane is <i>m</i>. The goal of this problem is 
+to figure how far the plane traveled from touchdown until it came to a stop. Express your answer in terms of some or all of the known quantities: 
+<i> Fo</i> , <i>B</i>, <i>ts</i> , <i>m</i> but not in terms of <i>vo</i>. For Fo type (Fo).
+<br/>
+<i>In your solution, clearly indicate the system(s) that you will consider, the coordinate system to describe the motion
+and the kinematic model(s) you will use. </i>
+
+</p>
+
+<br/>
+
+<p>distance =
+</p>
+
+    <formularesponse type="cs" answer="$distance"  samples="Fo,m,ts,B@1,1,1,1:10,10,10,10#2">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+
+    </formularesponse>
+
+  </problem>
+</html>

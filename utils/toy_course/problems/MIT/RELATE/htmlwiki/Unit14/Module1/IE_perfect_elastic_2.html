@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>A perfectly elastic collision</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+
+<body>
+<h3>Illustrative Example: A collision of two moving objects</h3>
+<br/>
+<p>Consider two objects of mass \(m_1\) and \(m_2\) moving on a horizontal surface with velocities \(\vec{v}_1\) and \(\vec{v}_2\), \((|\vec{v}_1|>|\vec{v}_2|)\). What are the velocities of the the objects \(\vec{v}_1^'\) and \(\vec{v}_2^'\) right after the collision? Assume the collision is perfectly elastic.</p>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/1DElasticCollision.png"/></p>
+
+<table border="2">
+<p><b>Note:</b> It can be shown that in a perfect elastic collision, the relative velocity of object 2 with respect to object 1 before the collision 
+is equal to minus the the relative velocity of object 2 with respect to object 1 after the collision:
+\(\vec{v}_2-\vec{v_1}=-(\vec{v}_2^'-\vec{v}_1')\)<br/></p>
+</table>
+
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution:</b>
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td><font color="purple" size="3"><b>System:</b> </font><a href='javascript:toggleDisplay( "toggledisplay5", "[hide]", "[SHOW System]" )' style="font-size:smaller" id="toggledisplay5l">[SHOW System]</a><div style="display:none;" id="toggledisplay5">The two objects</div><br />
+<font color="purple" size="3"><b>Interactions:</b> </font><a href='javascript:toggleDisplay( "toggledisplay6", "[hide]", "[SHOW Interactions]" )' style="font-size:smaller" id="toggledisplay6l">[SHOW Interactions]</a><div style="display:none;" id="toggledisplay6">
+	<p><b><u>External</u>:</b></p>
+	<ul style="list-style:disc outside none">
+	  <li> Object 1 &amp; 2 <font size="3"> &#8596; </font> Earth.</li>
+	  <li> Object 1 &amp; 2 <font size="3"> &#8596; </font> surface.</li>
+	</ul>
+	<p>The resulting external forces in the vertical direction are gravity and normal. These forces cancel each other. In addition, these forces do not do work on the system because they are perpendicular to the objects' displacement.</p>
+	<p><b>Short time collision:</b> We will assume that the collision lasts a short time, therefore if there is any friction along the surface we will neglect its impulse. Under the same assumption, if the time interval of the collision is small, there is no time for the objects to move while they are in contact (no displacement), then the external friction will not do work.</p>
+	<p>We can then assume that:</p>
+	<ul style="list-style:disc outside none">
+	  <li> the net external impulse is zero, then the <b>linear momentum of the system is constant</b>, and</li>
+	  <li> the external forces do not do work.</li>
+	</ul>
+	
+	<p><b><u>Internal</u>:</b>
+	</p><p>Object 1 <font size="3"> &#8596; </font> Object 2. The resulting collision forces are assumed to be conservative.  
+	</p>
+	<ul style="list-style:disc outside none"><li> Internal forces are conservative and the external forces do not do work, then the <b>mechanical energy of the system is constant</b>.
+	</li></ul>
+	
+	<hr />
+	</div><br />
+	<font color="purple" size="3"><b>Models:</b></font> <a href='javascript:toggleDisplay( "toggledisplay7", "[hide]", "[SHOW Models]" )' style="font-size:smaller" id="toggledisplay7l">[SHOW Models]</a><div style="display:none;" id="toggledisplay7"> Constant Linear Momentum and Constant Mechanical Energy.
+
+	<hr />
+	</div><br />
+	<font color="purple" size="3"> <b>Approach:</b></font><a href='javascript:toggleDisplay( "toggledisplay8", "[hide]", "[SHOW]" )' style="font-size:smaller" id="toggledisplay8l">[SHOW]</a><div style="display:none;" id="toggledisplay8"> 
+	<p>We will consider the time interval \(t_i < t < t_f\). The initial and final state of the system are represented diagrammatically in the figures below, where the primes denote the velocity of the objects at time \(t_f\).</p>
+
+	<table>
+	<tr>
+		<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/1DElasticCollisionInitial.png"/></td>
+		<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/1DElasticCollisionFinal.png"/></td>
+	</tr>
+	<tr>
+		<td><b>Initial Momentum</b></td>
+		<td><b>Final Momentum</b></td>
+	</tr>
+	<tr>
+		<td>\(p(t_i)=m_1\;v_1+m_2\;v_2\)</td>
+		<td>\(p(t_f)=m_1\;v_1^' + m_2\;v_2^'\)</td>
+	</tr>
+	<tr>
+		<td><b>Initial Kinetic Energy</b></td>
+		<td><b>Final Kinetic Energy</b></td>
+	</tr>
+	<tr>
+		<td>\(K(t_i)=\frac{1}{2}m_1v_1^2+\frac{1}{2}m_2v_2^2\)</td>
+		<td>\(K(t_f)=\frac{1}{2}m_1v_1^{'2}+\frac{1}{2}m_2v_2^{'2}\)</td>
+	</tr></table>
+
+	<p>Note that in the momentum equation we are not using the arrow notation. The motion is in 1 dimension, therefore the direction of the velocities is going to be indicated by the algebraic sign in the equations.</p>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Question 1:</b> After the collision object 2 is:
+		<ul style="list-style:disc outside none">
+		  <li> moving faster</li>
+		  <li> moving slower</li>
+		  <li> at rest</li>
+		  <li> there is not enough information to decide about its motion</li>
+		</ul>
+	 [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+	<tr style="display:none" id="ht8">
+	<td><b>Answer: Object 2 is moving faster</b>
+	<p>During the collision the force exerted on object 2 by object 1, <font face="times new roman" size="3"><b><i>F</i><sub>21</sub></b></font>, is pointing to the right, therefore its associated impulse is to the right. As a result, the final momentum of object 2 is to the right and larger than the initial one as shown in the momentum diagram below.</p>
+	<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/Object2FBDMomD.png" /></p>
+	</td></tr></table>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Question 2:</b> After the collision object 1 is:
+		<ul style="list-style:disc outside none">
+		  <li> moving to the left</li>
+		  <li> moving to the right</li>
+		  <li> at rest</li>
+		  <li> not enough information to decide about its motion.</li>
+		</ul>
+	 [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+	<tr style="display:none" id="ht9">
+	<td><b>Answer: There is not enough information to decide</b>
+		<p>During the collision the force exerted on object 1 by object 2, <font face="times new roman" size="3"><b><i>F</i><sub>12</sub></b></font>, is pointing to the left, therefore its associated impulse is also pointing to the left. The final momentum of object 1 is obtained as:</p>
+		<p>\(\vec{p}_1(t_f)=\vec{p}_1(t_i) + \int_{t_i}^{t_f}\vec{F}_{12} dt\)</p>
+		<p>Considering that the +x axis is pointing to the right and that object 1 is initially moving to the right then the above equation becomes:</p>
+		<p>\(p_1(t_f)=p_1(t_i) - \int_{t_i}^{t_f}F_{12} dt\)</p>
+		<p>We note that the right hand side can be positive, zero or negative depending on the magnitudes of the initial  momentum and the external impulse on object 1. The possible situations are sketched in the momentum diagram below.</p>
+		<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit14/Module1/files/Object1FBDMomD.png" /></p>
+	</td></tr></table>
+
+	<p><font size="3"><b>Apply the models:</b></font></p>
+	<p>Using that the momentum and energy are constant during the collision:</p>
+	<p>\(m_1\;v_1+m_2\;v_2 = m_1\;v_1^'+m_2\;v_2^'\)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160; (eq. 1)</p>
+	<p>\(\frac{1}{2}m_1v_1^2+\frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1v_1^{'2}+\frac{1}{2}m_2v_2^{'2}\) &#160;&#160; (eq. 2)</p>
+	<p>Equations (1) and (2) are the two equations needed to solve for the two unknowns \(v_1^'\) and \(v_2^'\).</p>
+	<p>The algebra to solve this 2x2 system is shown below. The energy equation is quadratic; however, we use a math trick that reduces the quadratic equation to a linear one.</p>
+
+	<table class="wikitable collapsible collapsed">
+	<tr>
+	<th><b>Show algebra:</b>
+	 [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+	<tr style="display:none" id="ht10">
+	<td>The trick consists of grouping on the same side of the equations the velocities corresponding to the same object. For example, let's group on the left hand side the velocities corresponding to object 1 and on the right hand side the velocities corresponding to object 2:
+		<p>\(m_1\; (v_1-v_1^') = m_2 (\;v_2^' - v_2)\)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; (eq. 3)</p>
+		<p>\(\frac{1}{2}m_1(v_1^2-v_1^{'2}) = \frac{1}{2}m_2(v_2^{'2}-v_2^2)\) &#160;&#160; (eq. 4)</p>
+		<p>The trick continues by realizing that there is a difference of two squares on each side of (eq. 4), therefore we can factor (eq. 4) as:</p>
+		<p>\(m_1(v_1-v_1^')(v_1+v_1^') = m_2(v_2^'- v_2)(v_2' + v_2)\) &#160;&#160;(eq. 5)</p>
+		<p>where we have canceled the 1/2. Using (eq. 3) on the left hand side of (eq. 5) we obtain:</p>
+		<p>\(m_2(v_2^' - v_2)(v_1+v_1^') = m_2(v_2^'-v_2)(v_2' + v_2)\) &#160;&#160;(eq. 6)</p>
+		
+		<p><br/>After canceling \(m_2(v_2^'- v_2)\) from both sides, (eq. 6) becomes a linear equation:</p>
+		<p>\(v_1+v_1^' = v_2' + v_2 \) &#160;&#160;&#160;&#160;(eq. 7)</p>
+		<p>Now we have to solve a system of two linear equations, the transformed momentum equation, (eq. 3), and the transformed energy equation given by (eq. 7):</p>
+		<p>\(m_1(v_1-v_1^') = m_2(v_2^'- v_2)\)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  (eq. 3)</p>
+		<p>\(v_1+v_1^' = v_2' + v_2 \) &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;(eq. 7)</p>
+		
+		<br/>
+		<p><font size="3"><u><b>Solve (eq. 3) and (eq. 7):</b></u></font></p>
+		<p><br/><b>For final velocity of object 1:</b></p>
+		<p>Multiply (eq. 7) by <b><i>m</i><sub>2</sub></b> and subtract it to (eq. 3):</p>
+		<p>\(m_2\times\mbox{(eq. 7)}-\mbox{(eq. 3)}\)</p>
+		<p>After rearranging we obtain: \((m_2-m_1)v_1+(m_2+m_1)v_1^'= 2m_2v_2\)</p>
+		<p>and,</p>
+		<p>\(v_1^' =\frac{m_1-m_2}{m_1+m_2}v_1+\frac{2m_2}{m_1+m_2}v_2\)</p>
+		<p><br/><b>For the final velocity of object 2:</b></p>
+		<p>Multiply (eq. 7) by <b><i>m</i><sub>1</sub></b> and add it to (eq. 3):</p>
+		<p>\(m_1\times\mbox{(eq. 7)}+\mbox{(eq. 3)}\)</p>
+		<p>After rearranging we obtain:</p>
+		<p>\(2m_1v_1=(m_1+m_2)v_2^'+(m_1-m_2)v_2\)</p>
+		<p>and,</p>
+		<p>\(v_2^'=\frac{2m_1}{m_1+m_2}v_1+\frac{m_2-m_1}{m_1+m_2}v_2\)</p>
+		
+		<b> Relative velocities before and after the collision:</b>
+		<p>Moving around the terms of (eq. 7) we obtain:</p>
+		<p>\(v_2 - v_1 = -( v_2' - v_1^') \)</p>
+		<p><i>The relative velocity of 2 with respect to 1 before the collision is minus the relative velocity of 2 with respect to 1 after the collision.</i></p>
+	</td></tr></table>
+
+	<p>After solving the equations (open the window above) we obtain:</p>
+
+	<table>
+	<tr>
+		<td><b>Object 1</b></td>
+		<td>\(v_{1}^'=\frac{m_1-m_2}{m_1+m_2}v_1+\frac{2m_2}{m_1+m_2}v_2\)</td>
+	</tr>
+	<tr>
+		<td><b>Object 2</b></td>
+		<td>\(v_{2}^' =\frac{2m_1}{m_1+m_2}v_1+\frac{m_2-m_1}{m_1+m_2}v_2\)</td>
+	</tr>
+	<tr>
+		<td colspan="2"><b>Note 1:</b> To apply the above equations remember to use the proper sign for the initial velocities of the objects 
+		to indicate the direction of motion.</td>
+	</tr>
+	<tr>
+		<td><b>Relative velocities</b></td>
+		<td>\(v_2 - v_1 = -( v_2' - v_1^') \)</td>
+	</tr>
+	<tr>
+		<td colspan="2"><b>Note 2:</b> The relative velocity of 2 with respect to 1 before the collision is minus the relative velocity of 2 with 
+		respect to 1 after the collision.</td>
+	</tr>
+	</table>
+	</div>
+</td></tr></table>
+
+<!--
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Problem 2: A moving object colliding with an object at rest</b>
+[<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td> Consider object 1 moving to the right with speed \(v_1\) and object 2 to be at rest (\(v_2\)= 0). What are the final velocities of objects 1 and 2, 
+\(\vec{v}_1^'\) and \(\vec{v}_2^'\), after the collision? Assume the collision to be elastic.<br />
+
+<img src="/static/problems/MIT/analiab/Figures/1DElasticCollisionOneAtRest.png" /><br />
+
+<br />
+<br />
+
+<br />
+
+<table border="1">
+	<tbody>
+		<tr>
+			<td>
+				<b>Check your answer</b>
+			</td>
+			<td>
+				<b>Discussion of the special cases</b>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<iframe width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/P_2HZDjYaV8?rel=0" height="315"></iframe>
+			</td>
+			<td>
+				<iframe width="420" allowfullscreen="allowfullscreen" frameborder="0" src="http://www.youtube.com/embed/ptF9qAjYwxo?rel=0" height="315"></iframe>
+			</td>
+		</tr>
+</tbody>
+</table>
+<br />
+
+<p>These videos are part of Prof. Lewin's Lecture 15, <a href="http://ocw.mit.edu/courses/physics/8-01sc-physics-i-classical-mechanics-fall-2010/collision-theory/">8.01 Physics I: Classic Mechanics, Fall 1999.</a>(Massachusetts Institute of Technology: MIT OpenCourseWare), (Accessed 20 Mar, 2012). License: Creative Commons BY-NC-SA.
+</p>
+</td></tr></table>
+-->
+
+</td></tr>
+
+</body>
+</html>
+

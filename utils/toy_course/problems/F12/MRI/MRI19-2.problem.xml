@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 19 -->
+
+<problem>
+
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The ball is not spinning.</choice>
+			<choice location="random" correct="false">The ball’s velocity is perfectly in line with the origin.</choice>
+			<choice location="random" correct="false">The ball can be treated as a point mass.</choice>
+			<choice location="random" correct="false">Only conservative external forces are involved.</choice>
+			<choice location="random" correct="true">External torque is applied on the ball.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

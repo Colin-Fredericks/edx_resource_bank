@@ -1,0 +1,9 @@
+<problem attempts="0" show_answer="never" display_name="Final Question">
+  <p>May we have your permission to use anonymized comments in publications and course promotion?</p>
+    <multiplechoiceresponse>
+     <choicegroup type="MultipleChoice" show_correctness="never" submitted_message="Thank you for submitting your response.">
+       <choice correct="true" name="yes"><text>Yes</text></choice>
+       <choice correct="true" name="no"><text>No</text></choice>
+     </choicegroup>
+    </multiplechoiceresponse>
+</problem>

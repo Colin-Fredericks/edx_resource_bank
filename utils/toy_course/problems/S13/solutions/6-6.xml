@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+<!--ROCKET PROBLEM-->
+<problem>
+
+<h3>Solution</h3>
+<p>System: rocket and an element of fuel that is learning the rocket </p>
+<p>Initial state is at time t, the rocket and the element of fuel are coming together</p>
+<img src="/static/problems/S13/solutions/images/6-6.png" />
+<p>Final state at time t + dt, the rocket is moving with v<sub>r</sub> + dr and the element of fuel as just left the rocket with a relative speed u with respect to the rocket</p>
+<img src="/static/problems/S13/solutions/images/6-6(2).png" />
+<p>P<sub>f</sub> = P<sub>i</sub> + impulse</p>
+<p>m<sub>r</sub>(t)(v<sub>r</sub>+dv) + dm<sub>f</sub>(-u + v<sub>r</sub> + dv) = m<sub>r</sub>(t)v<sub>r</sub> + dm<sub>f</sub>v<sub>r</sub> + impulse</p>
+<p>impulse = \(\int_{t}^{d+dt} \! -bm_{r}v_{r} - m_{r}g - dm_{r} \, \mathrm{d}t\)</p>
+<p>g = (bm<sub>r</sub>v<sub>r</sub>dt + m<sub>r</sub>gdt + dm<sub>r</sub>gdt)</p>
+<p>\(\Rightarrow\) dv = -bv<sub>r</sub>dt -gdt +u\(\gamma\)dt</p>
+<p>dv = dt(-bv<sub>r</sub> -g + u\(\gamma\))</p>
+<p>\(\int_{v(o)}^{v(t)} {{dV} \over {-b_{r}-g+uy}}\) = \(\int_0^t dt\)</p>
+<p>V(0)= 0 starts at rest</p>
+<p> - \({1 \over b}\) \(\int_{v(o)=0}^v {{-bdV} \over {-bv_{r}-g+uy}}\)=\(\int_{0}^t dt\)</p>
+<p>- \({1 \over b}\) ln(-bv<sub>r</sub> -g + uy ]<sub>0</sub><sup>v</sup> = t</p>
+<p>ln|\({-bv - g + uy \over -g+uy}\)| = -bt</p>
+<p>-bv -g +uy - \(e^{-bt}\) (-g +uy)</p>
+<p>v = \({e^{-bt} (-g +uy) + (g-uy) \over b}\)</p>
+<p>v = \({(g-u\gamma)(1- e^{-bt}) \over -b}\)</p>
+<p>v(t) = \({(\gamma-g) \over b} (1- e^{-bt}\))</p>
+<p>Note 1: Looking at the solution we see that when t\(\rightarrow \infty\) then v(t)\(\rightarrow {\gamma-g \over b}\). This value corresponds to the terminal velocity reached by the rocket under the action of air resistance and gravity. The terminal velocity is defined at the instant when the net force on the rocket is zero. In other words when dv/dt = 0:</p>
+<p>\({dv_{r} \over dt} = \gamma u\) - bv<sub>r</sub> -g = 0 \(\Rightarrow\) v<sub>terminal</sub> = \({\gamma u -g \over b}\) In this problem the terminal speed is never reached.</p>
+<p>Note 2</p>
+<p>The key point in considering the result we obtained is in the model used for the rate at which the fuel is exhausted: \({dm_{f} \over dt} = - {dm_{r} \over dt} = \gamma\)m<sub>r</sub>(t)    (53)</p>
+<p>Solving Equation (53) would yield that the mass of the rocket and remaining fuel is</p>
+<p>m<sub>r</sub>(t) = m<sub>o</sub>\(e -\gamma t\)          (54)</p>
+<p>where m<sub>0</sub> = m<sub>r,0</sub> + m<sub>f,0</sub>  The mass being accerlerated decreases exponetially, the gravitation force and the air resistance forece, being proportianl to the mass, decrease as well, and so the rocket can continue to accelerate indefinitely.</p>
+<p>The product u\({dm_{f,out}\over dt}\) is sometimes called the "thrust" (ask your course XVI friends); check to see that the thrust has dimentsions of force. In the model for this problem, we would have that the "thrust force" is</p>
+<p>F<sub>thrust</sub> =u\({dm_{f,out}\over dt}\) = \(\gamma\)um<sub>r</sub>,   (55)</p>
+<p>an unlikely feature of realistic rocket design. At best, even if Equation(55) were an approximate model, the thrust would have to vanish when the fuel runs out.</p>
+<p>The bottom line is that the model for the fuel burn rate was given in the form it was in order to make solving for the velocity as a function of time possible. Maybe a neat mathe problem , but the physics was done once we found the rate of change of momentum.</p>
+
+</problem>
+</html>

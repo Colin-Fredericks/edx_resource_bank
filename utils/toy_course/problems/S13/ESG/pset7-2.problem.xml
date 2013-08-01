@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<html>
+<!--A cart and a spring on an incline-->
+<problem>
+
+	<script type="loncapa/python"> 
+import math
+
+l = "l_o+m*g*sin(theta)/k" 
+vf1 = "sqrt(2*g*x_1*sin(theta) + (k/m)*(x_1)^2 )" 
+vf2 = "(2*g*x_1*sin(theta) + (k/m)*(x_1)^2  - 2*muk*g*cos(theta)*x_1)^(1/2)"
+vv=  "(2*g*x_1*sin(theta) + (k/m)*(x_1)^2 )^(1/2)"
+	</script>
+
+	<h2> A cart and a spring on an incline.</h2>
+
+	<p>An ideal spring is attached to a support at the upper end of a ramp. The spring constant of the spring is <i>k</i>. 
+	The unstretched length of the spring (without the cart attached to it) is <i>l<sub>o</sub></i>. The other end of the spring 
+	is now attached to a cart of mass <i>m</i> that can move on the ramp. The ramp is inclined at an angle \(\theta\) from the horizontal.</p>
+	<p>In your answers you can type "l_o" for \(l_o\), "theta" for \(\theta\), "x_1" for \(x_1\), and "muk" for \(\mu\)<sub>k</sub>.</p>
+
+	<img src="/static/problems/S13/ESG/images/7-2b.png" />
+
+	<h3>Part 1</h3>
+
+	<p>When the cart is attached to the spring, the spring stretches slightly to a new length \(l > l_o\) to hold the cart in 
+	equilibrium. Find the length \(l \) in terms of the given quantities: \(l_o\), \(m\), \(k\), \(\theta\) and \(g\).</p>
+
+	<formularesponse type="cs" samples="l_o,m,g,theta,k@1,1,8,1,1:10,10,10,10,10#10" answer="$l">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>l =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+<p>
+</p>
+	<h3>Part 2</h3>
+
+	<p>Now the cart is moved up the ramp so that the spring is compressed a distance \(x_1\) from the unstretched length 
+	\(l_o\). Then the cart is released from rest. As the cart moves down the ramp, the spring stretches a maximum distance 
+	of \(x_2\)  from its starting compressed position after which the cart turns around and comes back up the ramp. </p>
+
+	<p>Assuming there is no friction between the cart and the ramp, what is the speed of the cart when the spring has  
+	returned to its unstretched length \(l_o\) for the <b>second</b> time? (At the instant when the car is moving up and passing through 
+	the spring equilibrium position for the 2nd time after it was released). </p>
+
+	<formularesponse type="cs" samples="x_1,m,g,theta,k@20,1,8,0,100:40,10,10,1.5,100#4" answer="$vf1">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>v<sub>f</sub> =</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+	<h3>Part 3</h3>
+
+	<p>Assuming there is a constant coefficient of friction \( \mu_k \) between the cart and the ramp, what is the speed of the cart 
+	when when the spring has returned to its unstretched length \(l_o\) for the <b>first</b> time? (At the instant when the car is moving down
+	and passing through the spring's equilibrium position for the 1st time after it was released).</p>
+
+	<formularesponse type="cs" samples="x_1,m,g,theta,k,muk@20,1,8,0,100,0.1:40,10,10,1.5,100,0.5#4" answer="$vf2">
+		<responseparam description="Numerical Tolerance" type="tolerance" default="0.00001" name="tol"/>
+		<p>\(v =\)</p>
+		<textline size="40" math="1"/>
+	</formularesponse>
+
+</problem>
+</html>

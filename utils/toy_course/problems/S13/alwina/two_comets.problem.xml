@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<html>
+<!-- ranking task: speeds of two comets at various locations in orbit-->
+
+<problem>
+  <customresponse>
+
+	<img src="/static/problems/S13/alwina/images/two_intersecting_comets.png"/>
+
+    <text>
+	  <p>Comets A and B have the same perihelion distance. The aphelion distance for B is such that the aphelion for comet A passes through the midway point of B's orbit, as shown on the diagram above.</p>
+      <p>There are five locations marked: comet A at perihelion (location 1), comet B at perihelion (location 2), comet A at the orbit intersection (location 3), comet B at the orbit intersection (location 3), and comet B at aphelion (location 4). The options below are labeled by comet and then location; for example, A1 refers to comet A at location 1.</p>
+      <br/>
+    </text>
+
+    <drag_and_drop_input img="/static/problems/S13/alwina/images/completelyblank.png" target_outline="true" one_per_target="true" no_labels="true">
+      <draggable id="gt" label=">" can_reuse="true"/>
+      <draggable id="eq" label="=" can_reuse="true"/>
+      <draggable id="A1" label="A1" can_reuse="false"/>
+      <draggable id="A3" label="A3" can_reuse="false"/>
+      <draggable id="B2" label="B2" can_reuse="false"/>
+      <draggable id="B3" label="B3" can_reuse="false"/>
+      <draggable id="B4" label="B4" can_reuse="false"/>
+	  <draggable id="1" label="Reason 1" can_reuse="false"/>
+	  <draggable id="2" label="Reason 2" can_reuse="false"/>
+	  <draggable id="3" label="Reason 3" can_reuse="false"/>
+
+      <target id="item1" x="0" y="25" w="45" h="35"/>
+      <target id="sign1" x="50" y="25" w="45" h="35"/>
+      <target id="item2" x="100" y="25" w="45" h="35"/>
+	  <target id="sign2" x="150" y="25" w="45" h="35"/>
+	  <target id="item3" x="200" y="25" w="45" h="35"/>
+	  <target id="sign3" x="250" y="25" w="45" h="35"/>
+	  <target id="item4" x="300" y="25" w="45" h="35"/>
+	  <target id="sign4" x="350" y="25" w="45" h="35"/>
+	  <target id="item5" x="400" y="25" w="45" h="35"/>
+	  <br/>
+	  <target id="norank" x="150" y="70" w="145" h="35"/>
+    </drag_and_drop_input>
+
+    <text>
+	  <h4>Rank the <b>speeds</b> of the comets at the given locations from greatest to least.</h4>
+	  <br/>
+	  <p>To rank them: use the letters A1, A3, B2, B3, and B4 and the symbols = and >. For example, A1 = A3 > B2 means "A1 and A3 have the same speed, and they both have a greater speed than B2." If you believe that they cannot all be ranked, select from one of the reasons below and put the corresponding reason number into the bottom row (be sure to leave the top row blank).</p>
+
+      <p>Reason 1: More information about the masses is needed.
+	  <br/>Reason 2: More information about the distances involved is needed.
+	  <br/>Reason 3: 
+	  </p>
+    </text>
+
+    <answer type="loncapa/python">
+correct_answer = [
+	{'draggables': ['B','C'],'targets': ['item1','item2'],'rule':'unordered_equal'},
+	{'draggables': ['D'],'targets': ['item3'],'rule':'unordered_equal'},	
+	{'draggables': ['A'],'targets': ['item4'],'rule':'unordered_equal'},
+	{'draggables': ['E'],'targets': ['item5'],'rule':'unordered_equal'},
+	{'draggables': ['eq'],'targets': ['sign1'],'rule':'unordered_equal'},
+	{'draggables': ['gt'],'targets': ['sign2','sign3','sign4'],'rule':'unordered_equal'}]
+
+if draganddrop.grade(submission[0], correct_answer):
+    correct = ['correct']
+else:
+    correct = ['incorrect']
+
+        </answer>
+  </customresponse>
+</problem>
+</html>

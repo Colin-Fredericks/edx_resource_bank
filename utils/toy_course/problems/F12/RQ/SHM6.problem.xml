@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<problem>
+
+  <p>
+A physical pendulum consists of a body of mass \(m\) and moment of inertia \(I_{cm}\) around an axis that passes through its center of mass. The body is 
+pivoted about a point \(S\) as shown. The center of mass is at a distance \(d\) from the pivot point. What is the period of the pendulum for small 
+angle oscillations (\(\sin(\theta)\approx \theta\))?  </p>
+  <p>
+      <img src="/static/problems/F12/RQ/images/SHM8b.png" width="250"/>
+    </p>
+<p>
+\(T =\)
+<multiplechoiceresponse direction="vertical" randomize="no"><choicegroup type="MultipleChoice">
+<choice location="random" correct="false" name="1">\(2\pi\sqrt{\frac{I_{cm}}{dmg}}\) </choice>
+
+<choice location="random" correct="false" name="2">\(2\pi\sqrt{\frac{d}{g}}\) </choice>
+
+<choice location="random" correct="true" name="3">\(2\pi\sqrt{\frac{d}{g}+\frac{I_{cm}}{dmg}}\)</choice>
+
+<choice location="random" correct="false" name="4">\(2\pi\sqrt{\frac{dmg}{I_{cm}}}\)</choice>
+
+</choicegroup></multiplechoiceresponse>
+    </p>
+
+</problem>

@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Example: Work Done by a Spring</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example: Work done by a spring on an object</h3>
+<p>The force of a spring is not constant but rather dependent on the position of its endpoints. Consider a horizontal spring of spring constant <i>k</i>. One end is attached to the wall and the other to a block of mass <i>m</i> as shown in the figure.  Calculate the work done by the spring on the block as it moves to the right away from the spring's equilibrium position, from some initial position to some final position.</p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/SpringPotential.png"/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th>Answer
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td><img src="/static/problems/MIT/RELATE/htmlwiki/Unit8/Module3/files/SpringPotentialSol.png"/>
+<p>Consider the coordinate system with an origin at the equilibrium position of the spring, labeled in the figure as <i>x = 0</i>. When the block is moving towards the right at a given <i>x &gt; 0</i>, the force on the block exerted by the spring points to the left:
+</p><p>\(\vec{F} = -kx\hat{i}\),
+</p><p>and the displacement vector 
+</p><p>\(d\vec{r}=dx\hat{i}\)
+</p><p>The dot product between both vectors is: 
+</p><p>\(\vec{F} \cdot d\vec{r} = -kx dx\). 
+</p><p>The work done by the spring between the initial and final position is:
+</p><p>\( \displaystyle W_{f,i} = \int_{x_i}^{x_f}\vec{F}.d\vec{r} = -\int_{x_i}^{x_f}kxdx = -\frac{1}{2}(kx^2)|_{x_i}^{x_f} = -\frac{1}{2}k(x_f^2-x_i^2)\)
+</p>
+<ul style="list-style:disc outside none"><li> If <i>x</i><sub><i>f</i></sub> &gt; <i>x</i><sub><i>i</i></sub> then <i>W<sub>f,i</sub> &lt; 0 </i>, which is consistent with the fact that the spring force points in the opposite direction as the displacement vector. The work by the spring decreases the kinetic energy of the block.
+</li></ul>
+<ul style="list-style:disc outside none"><li> If the block is moving towards the equilibrium position, then <i>x</i><sub><i>f</i></sub> &lt; <i>x</i><sub><i>i</i></sub> and <i>W<sub>f,i</sub> &gt; 0 </i>. The spring force points in the same direction as the displacement vector, and there will be an increase of kinetic energy from the work by the spring.
+</li></ul>
+<ul style="list-style:disc outside none"><li> The result above is also valid for the case when the block is moving towards the left or right in the region of <i>x &lt; 0</i>. Explain why.
+</li></ul>
+</td></tr></table>
+<br/>
+<p>
+<b> Note:</b> In this example we use the elastic force as another force to illustrate the procedure for calculating work. Because the elastic force is 
+<b>conservative</b> it is more common to use the change of elastic 
+<b>potential energy</b> instead of the work.
+</p>
+<br/>
+</body>
+</html>
+

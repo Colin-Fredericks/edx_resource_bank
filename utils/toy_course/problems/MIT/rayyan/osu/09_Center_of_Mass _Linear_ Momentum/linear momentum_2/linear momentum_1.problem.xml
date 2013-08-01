@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/linear_1.png" alt="linear_1" height="150"/>
+
+      <p><br/>
+Two cars, masses m and 2m, are initially at rest on a frictionless surface. They are blown apart by an explosion. The one with mass 2m ends up moving to the right at 10 meters/second. The less massive car ends up moving to the left at what speed?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              5m/s          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              7m/s          
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+              10m/s          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              14m/s          
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+              15m/s          
+        </choice>
+        <choice location="random" name="foil6" correct="true">
+
+              20m/s          
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+
+              25m/s          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

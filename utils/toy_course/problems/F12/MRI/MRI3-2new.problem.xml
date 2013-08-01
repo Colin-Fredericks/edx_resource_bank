@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 3 -->
+
+<problem>
+	<p>An object with mass m is attached to a string and the other end of the string is attached to a peg at the 
+	center of a level table.  The object is set into uniform circular motion around the peg.  The radius of the 
+	motion remains constant (the string does NOT wind up on the peg). The table and the peg are frictionless.</p>
+
+	<h3>Part 1</h3>
+
+	<p>While the object is in uniform circular motion, the linear momentum of the object is conserved because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">All the forces acting on it are internal.</choice>
+			<choice location="random" correct="false">All the forces acting on it are conservative.</choice>
+			<choice location="random" correct="false"> All the forces acting on it are at right angles to its direction of motion.</choice>
+			<choice location="random" correct="false">The net force acting on the object is zero.</choice>
+			<choice location="random" correct="true">The statement is false. The momentum of the object is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

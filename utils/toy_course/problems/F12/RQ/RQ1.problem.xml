@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<problem>
+
+<!-- Taken from 8.01rq -->
+
+    <p>Consider a point half way to the center of the earth. Assume that Earth has a uniform density. Compared to the force of gravity at the earth's surface, the force of gravity on a mass at this point is:</p>
+	<p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+	<choicegroup type="MultipleChoice">
+		<choice location="random" correct="false" name="1">Twice as strong</choice>
+		<choice location="random" correct="false" name="2">Equal</choice>
+		<choice location="random" correct="true" name="3">1/2 as strong</choice>
+		<choice location="bottom" correct="false" name="4">1/4 as strong</choice>
+		<choice location="bottom" correct="false" name="5">1/8 as strong</choice>
+	</choicegroup>
+	</multiplechoiceresponse>
+	</p>
+
+</problem>

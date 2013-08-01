@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>A satellite in low Earth orbit experiences a slight air drag that acts over many months. Assume that the drag acts so slowly that the orbit of the satellite remains essentially circular. State whether each physical quantity Increases, Remains constant, or Decreases, giving reasons (e.g. the linear momentum remains constant because no external forces act on the system of satellite plus earth.)</p>
+
+    <optionresponse randomize="yes">
+      <ul>
+        <li>
+			<p>The angular momentum of the satellite about the center of the earth.</p>
+			<optioninput location="random" name="Foil1" options="('Increases','Remains Constant','Decreases')" correct="Decreases"></optioninput>
+        </li>
+        <li>
+			<p>The total mechanical energy of the satellite.</p>
+			<optioninput location="random" name="Foil2" options="('Increases','Remains Constant','Decreases')" correct="Decreases"></optioninput>
+        </li>
+        <li>
+			<p>The value (not magnitude) of the gravitational potential energy of the satellite.</p>
+			<optioninput location="random" name="Foil3" options="('Increases','Remains Constant','Decreases')" correct="Decreases"></optioninput>
+        </li>
+        <li>
+			<p>The angular momentum of the earth, atmosphere, and satellite about the center of mass of this system.</p>
+			<optioninput location="random" name="Foil4" options="('Increases','Remains Constant','Decreases')" correct="Remains Constant"></optioninput>
+        </li>
+        <li>
+			<p>The kinetic energy of the satellite (Increases, Remains constant, or Decreases).</p>
+			<optioninput location="random" name="Foil5" options="('Increases','Remains Constant','Decreases')" correct="Increases"></optioninput>
+        </li>
+      </ul>
+
+    </optionresponse>
+  </problem>
+</html>

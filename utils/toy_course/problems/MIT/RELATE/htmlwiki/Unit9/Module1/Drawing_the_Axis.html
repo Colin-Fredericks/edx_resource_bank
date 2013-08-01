@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Drawing a Rotating System</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Drawing a Rotating System</h3>
+<h4> Point of view should be aligned with the axis of rotation.</h4>
+<p>When drawing a rotating system it is important to align your point of view with the axis of rotation.  In other words, you should draw the system as if you were looking right along the axis.  
+</p>
+<h4> Representing vectors that point straight at or straight away from you.</h4>
+<p>Because we draw rotating systems as if we are looking along the axis, it is impossible to draw an arrow representing the axis.  The linear axis will look like a dot from our point of view.  For this reason, there is a convention for drawing an arrow that points directly at or directly away from the observer.  The convention is that an arrow pointing directly at the observer is drawn as a circled dot.  An arrow pointing directly away is drawn as a circled "x".  Think of it as a real arrow: if the point is coming at you, it is a dot; if the arrow is going away from you, then you see the feathers.
+</p>
+<h4> Picturing vectors aligned with the viewer:  door from above and from below.</h4>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Image:</b> A door is shown along with the chosen axis of rotation from various perspectives.
+ [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th></tr>
+<tr style="display:none" id="ht2">
+<td> <img src="/static/problems/MIT/RELATE/htmlwiki/Unit9/Module1/files/DoorAxes.png"/>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/projectiles.png" alt="projectiles" height="150"/>
+
+      <p><br/>
+A battleship simultaneously fires two shells at enemy ships. If the shells follow the parabolic trajectories shown, which trajectory corresponds to the shell fired with a higher initial vertical velocity?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="true">
+
+              Shell A          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              Shell B          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              Both shells have the same initial velocity          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Not enough information is given          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

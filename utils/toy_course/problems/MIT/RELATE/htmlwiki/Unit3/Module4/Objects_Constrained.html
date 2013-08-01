@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Objects Constrained to Move with Equal Acceleration</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h2>Objects Constrained to Move with Equal Accelerations</h2>
+
+<p>In this module we will discuss several examples where two or more objects are interacting through <b>constraint forces</b> such as ropes and contact forces. The constraint forces will restrict the motion of the objects involved in the system so that they move together, almost as if they were a single object. Examples include two boxes, one at the top of the other, on an accelerating elevator as discussed in the previous module. In this situation the constraint forces are the normal forces between the boxes and the normal force between the lower box and the elevator's floor. As a result, the boxes are constrained to move with the same acceleration as the elevator. In this example and in the three examples we will see in this module, the relationship between the accelerations of the different objects in the problem is very simple: the accelerations are equal in magnitude and direction.</p>
+
+<h3>Learning Goals</h3>
+
+<p>After completing this module, you should be able to:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Recognize different types of constraints.</li>
+	<li>Solve problems where more than one object is constrained to move with the same acceleration.</li>
+</ul>
+
+<h3>Related Acceleration Constraint</h3>
+
+<p>The&#160;<b>Related Accelerations Constraint</b> identifies the relationship between the accelerations of two or more objects moving under constraint forces. We will see three types of relationships:</p>
+
+<ul style="list-style:disc outside none">
+	<li>Accelerations with equal magnitude and equal direction (see examples in this module)</li>
+	<li>Accelerations with equal magnitude but different direction (next module: e.g. two objects connected via a string through a single pulley)</li>
+	<li>Accelerations with different magnitude and different directions (e.g several connected objects with more than one pulley, an object sliding down a moving wedge, etc.)</li>
+</ul>
+
+<p>For the problems in this module and in the following modules, the "standard approach" when applying Newton's laws is:</p>
+
+<ol>
+	<li> Isolate each body and treat it as a point particle.</li>
+	<li> Identify the interactions between each object and other objects.</li>
+	<li> Classify the resulting forces and draw free body diagrams for each object.</li>
+	<li> Pick a convenient coordinate system for each object.</li>
+	<li> Write down Newton's Second Law for vector components consistent with the coordinate system chosen in step 4.</li>
+	<li> Express any new mathematical relations that exist due to motion constraints (Related Acceleration Constraint) &#160;or Newton's 3<sup>rd</sup> law pairs</li>
+	<li> Solve the equations from steps 5 and 6.</li>
+</ol>
+
+<p>Note that in step 1. we start by selecting separate systems, one per object involved in the problem. <b>Only</b> in the case when all the objects are restricted to move with the <b>same acceleration</b>, as in the examples of this module, can we consider a multiple object system as a point particle of mass equal to the combined masses of the objects. If we start the solution of the problem by selecting the multi-object system then we do not need to go through step 6. In that case we are already using the fact that the accelerations are equal by treating all the objects as one; the Newton's 3<sup>rd</sup> law pairs are the internal forces which we ignore.</p>
+</body>
+</html>
+

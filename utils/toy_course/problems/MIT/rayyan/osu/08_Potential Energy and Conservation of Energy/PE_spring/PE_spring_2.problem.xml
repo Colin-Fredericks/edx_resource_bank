@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/PE_spring_2.png" alt="PE_spring_2" height="150"/>
+
+      <p>A spring-loaded toy dart gun shoots a dart to a maximum height of 24 meters. The same dart is again shot upward, but this time the spring is compressed only half as far before firing. Neglecting friction and assuming an ideal spring, how far up does the dart go this time? You may assume the compression of the spring is negligible compared to the height the dart travels.</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+			<text>3 m</text>
+        </choice>
+        <choice name="foil2" correct="true">
+			<text>6 m</text>
+        </choice>
+        <choice name="foil13" correct="false">
+			<text>12 m</text>
+        </choice>
+        <choice name="foil1\4" correct="false">
+			<text>24 m</text>
+        </choice>
+        <choice name="foil5" correct="false">
+			<text>48 m</text>
+        </choice>
+        <choice name="foil6" correct="false">
+			<text>96 m</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

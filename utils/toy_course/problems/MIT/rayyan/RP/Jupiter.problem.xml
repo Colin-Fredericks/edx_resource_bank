@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> Jupiter </title>
+
+        <p>
+Consider an object of mass m=2.7 kg falling through Jupiter's atmosphere.  If the planet's mass is \(1.9 * 10^{27} kg\)  and its radius is \(7.0 * 10^7 m\), what is the acceleration of this falling object?
+</p>
+
+      <br/>
+      <multiplechoiceresponse randomize="yes" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="true">
+                  \(25.9 m/s^2\)
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                  \(13.0 m/s^2\)
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                  \(38.9 m/s^2\)
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                  \(69.8 m/s^2\)
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+  </problem>
+</html>

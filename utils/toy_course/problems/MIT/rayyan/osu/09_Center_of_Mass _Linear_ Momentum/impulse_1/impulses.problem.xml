@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/impulses.png" alt="impulses" height="75"/>
+
+      <p><br/>
+A constant force is exerted on a cart that is initially at rest on a frictionless air track. The force acts for a short time interval and gives the cart a final speed. To reach the same speed using a force that is half as big, the force must be exerted for a time interval that is
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              Four times as long          
+        </choice>
+        <choice name="foil2" correct="true">
+
+              Twice as long          
+        </choice>
+        <choice name="foil3" correct="false">
+
+              The same length          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Half as long          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              One quarter as long          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

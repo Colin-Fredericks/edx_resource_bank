@@ -1,0 +1,337 @@
+<html>
+<head>
+<title>Angular Momentum of 2 particles Rotating about a Fixed Axis</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> <style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+<link index="11" href="data:text/css," type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h2>
+			Angular Momentum of Two Particles Rotating about a Fixed Axis</h2>
+<p>
+			In the following examples you will see that:</p>
+<ul style="list-style:disc outside none">
+<li>
+<b>For symmetric objects:</b>
+<ul style="list-style:disc outside none">
+<li>
+						The angular momentum vector is parallel to the angular velocity vector</li>
+<li>
+						The angular momentum vector does not depend on the location of the point along the axis</li>
+<li>
+\(\vec{L}_S = I_{axis}\;\vec{\omega}\) where <i><b>S</b></i> is any point along the axis and \(I_{axis}\) is the moment of inertia of the object about the axis of rotation.</li>
+</ul>
+</li>
+<li>
+<b>For asymmetric objects:</b>
+<ul style="list-style:disc outside none">
+<li>
+						The angular momentum vector is not parallel to the angular velocity vector</li>
+</ul>
+</li>
+</ul>
+<h3>
+Two balls attached by a rod</h3>
+<p>
+			Let's consider a rigid object consisting of two small balls of masses <i><b>m<sub>1</sub></b></i> and <i><b>m<sub>2</sub></b></i> connected by a rod of length <i><b>2R</b></i> and negligible mass. The object is placed on a horizontal and frictionless table contained in the x-y plane. The object is set to rotate counterclockwise as viewed from above the x-y plane with an angular speed <i><b>&#969;</b></i>. The axis of rotation passes through the center of the rod, point <i><b>Q</b></i> in the left figure. The point <i><b>S</b></i> in the right figure is located in the axis of rotation at a distance <i><b>d</b></i> below the point <i><b>Q</b></i>.</p>
+<table width="100%" border="1" valign="top">
+<tbody>
+<tr>
+<td width="50%">
+<b>Example 1. The angular momentum about point <i>Q</i></b></td>
+<td width="50%">
+<b>Example 2. The angular momentum about point <i>S</i></b></td>
+</tr>
+<tr>
+<td height="200" valign="top">
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2ballsBar.png"/></td>
+<td height="200" valign="top">
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS.png"/></td>
+</tr>
+<tr>
+<td valign="top">
+<font color="blue"><b><u>Question:</u></b></font><font> What is the direction and the magnitude of the angular momentum vector about point <i>Q</i>?</font>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Check your answer</b> [<a href="javascript:toggleDisplay('ht1','hide','show')" id="ht1l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht1">
+<td>
+										Direction: <b>+z axis, parallel to <i>&#969;</i></b>, Magnitude: <b><i>L</i><sub><i>Q</i></sub> = (<i>m</i><sub>1</sub><i>R</i><sup>2</sup> + <i>m</i><sub>2</sub><i>R</i><sup>2</sup>)&#969;</b>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+<b>Solution</b> [<a href="javascript:toggleDisplay('ht2','hide','show')" id="ht2l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht2">
+<td>
+The angular momentum of the system about point <i><b>Q</b></i> is the sum of the angular momentum of the constituents. There is no angular momentum associated to the rod because we consider it to be massless, then
+														<p>
+\(\vec{L}_{Q} = \vec{L}_{Q}^{1} + \vec{L}_{Q}^{2}\)</p>
+<p>
+<br/>
+<b>Direction:</b></p>
+<p>
+															Consider the balls' position vectors measured from point <i><b>Q</b></i> to be \(\vec{r}_Q^1\) and \(\vec{r}_Q^2\), and the balls' velocity vectors to be \(\vec{v}_1\) and \(\vec{v}_2\) as shown in the figure:</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol_position.png"/></p>
+<p>
+															Following the right hand rule, the direction of the angular momentum of each particle is along the <b>+z</b> axis. Adding both vectors, the total angular momentum about point <i><b>Q</b></i> is also along the <b>+z</b> axis parallel to <i><b>&#969;</b></i>.</p>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBar_sol1.png"/></p>
+<p>
+<b>Magnitude:</b></p>
+<p>
+															The angular momentum of ball 1 with respect to point <i><b>Q</b></i> is:</p>
+<p>
+\(\vec{L}_{Q}^{1} = m_1\vec{r}_Q^1\times \vec{v}_{1} \)</p>
+<p>
+															and, the angular momentum of ball 2 with respect to point <i><b>Q</b></i> is:</p>
+<p>
+\(\vec{L}_{Q}^{2} = m_2\vec{r}_Q^2\times \vec{v}_{2} \)</p>
+<p>
+															where, the position vectors of both balls measured from point <i><b>Q</b></i> have the same magnitude and equal to the radius of the circle:</p>
+<p>
+<font size="4">\( |\vec{r}_Q^1| = |\vec{r}_Q^2| = R\)</font></p>
+<p>
+															Because the particles are connected by he rod they both have the same angular velocity of magnitude <i>&#969;</i>. As a result, their speeds are equal: <i><b>v<sub>1</sub> = v<sub>2</sub> = R&#969;</b></i>. The position and velocity vectors are perpendicular to each other, therefore the magnitude of the angular momentum vector of ball 1 is</p>
+<p>
+\( L_{Q}^{1} = m_1|\vec{r}_Q^1| |\vec{v}_1|\sin 90^o = m_1Rv_1 = m_1R^2\omega\)</p>
+<p>
+															and for ball 2:</p>
+<p>
+\( L_{Q}^{2} = m_2|\vec{r}_Q^2 ||\vec{v}_2|\sin 90^o = m_2Rv_2 = m_2R^2\omega\)</p>
+<p>
+<br/>
+															The total angular momentum about point <i><b>Q</b></i> is:</p>
+<p>
+<font size="4"><i>L</i><sub><i>Q</i></sub> = <i>m</i><sub>1</sub><i>R</i><sup>2</sup>&#969; + <i>m</i><sub>2</sub><i>R</i><sup>2</sup>&#969; = <i>I</i><sub><i>a</i><i>x</i><i>i</i><i>s</i></sub>&#969;</font></p>
+<p>
+															where we have identified the terms multiplying <i><b>&#969;</b></i> as the moment of inertia of the two particles about the axis passing through point <i><b>Q</b></i>.</p>
+<p>
+<b>Note:</b></p>
+<p>
+															In this particular example, the angular momentum of each ball about point <i><b>Q</b></i> and consequently the angular momentum of the rigid object are parallel to the angular velocity:</p>
+<p>
+\(\vec{L}_Q \parallel \vec{\omega}\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<font color="blue"><u><b>Question 1:</b></u></font> At the instant shown in the figure above, which of the arrows below best represents the direction of the angular momentum of each of the particles about point <i>S</i>?
+						<div class="floatleft">
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module1/files/ParticleMOvingCircle3.png"/></div>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Check your answer [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht3">
+<td>
+<u>For particle 1:</u> <b>arrow 8</b>. <u>For particle 2:</u> <b>arrow 2</b>.
+										<p>
+											For an explanation, see the answer to <b>Question 2 of Example 2</b> in the <a href="/res/MIT/RELATE/htmlwiki/Unit11/Module1/IE_Whats_the_Point.html">previous module.</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<font color="blue"><u><b>Question 2:</b></u></font> What is the direction and the magnitude of the total angular momentum about point <i><b>S</b></i> if both particles have the same mass, <i><b>m<sub>1</sub> = m<sub>2</sub> = m</b></i>?
+						<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+										Check your answer [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht4">
+<td>
+										Direction:<b>+z axis</b>, Magnitude: <i><b>L<sub>S</sub> = 2mR<sup>2</sup>&#969;</b></i>
+<table class="subtable collapsible collapsed">
+<tbody>
+<tr>
+<th>
+														Solution: [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th>
+</tr>
+<tr style="display:none" id="ht5">
+<td>
+														The angular momentum about point <i><b>S</b></i> of both balls are shown in the figure below. To obtain the total angular momentum we need to add both vectors.
+														<p>
+<b>Direction:</b></p>
+<p>
+<u>For each particle</u>, the angular momentum about point <i><b>S</b></i>:</p>
+<ul style="list-style:disc outside none">
+<li>
+																is not parallel to <i><b>&#969;</b></i> (see <b>Question 2 of Example 2</b> of the <a href="../Module1/IE_Whats_the_Point.html">previous module</a>).</li>
+</ul>
+<ul style="list-style:disc outside none">
+<li>
+																is at an angle <b>\(\varphi\)</b> with respect to the x-y plane. (This angle is the same for both because the particles are placed <b>symmetrically</b> with respect to the axis of rotation).</li>
+</ul>
+<ul style="list-style:disc outside none">
+<li>
+																has a projection on the x-y plane (see figure).</li>
+</ul>
+<p>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_answer1bb.png"/></p>
+<p>
+															If <i><b>m<sub>1</sub> = m<sub>2</sub> = m</b></i> then:</p>
+<ul style="list-style:disc outside none">
+<li>
+																the magnitude of the angular momentum of each particle are equal.</li>
+<li>
+																the projection of the angular momentum vector on the x-y plane are equal in magnitude but opposite in direction.</li>
+</ul>
+<p>
+<br/>
+<img src="/static/problems/MIT/RELATE/htmlwiki/Unit11/Module2/files/2BallsBarS_answerdd.png"/></p>
+<p>
+															&#160;</p>
+<p>
+<b>Magnitude:</b></p>
+<p>
+															When adding the angular momentum of each particle the x-y plane components cancel and the total angular momentum is given by the sum of the z-components. As shown in <b>Question 3 of Example 2</b> in the <a href="../Module1/IE_Whats_the_Point.html">previous module</a>, the magnitude of the angular momentum of each particle is:</p>
+<p>
+\(L_S^1 = L_S^2 = (mR^2\omega)/\sin\varphi\)</p>
+<p>
+															The z-component is obtained by multiplying the above expression by \(\sin\varphi\):</p>
+<p>
+\(L_{Sz}^1 = L_{Sz}^2 = mR^2\omega\)</p>
+<p>
+															The total angular momentum is along the z axis and has a magnitude of:</p>
+<center>
+<table border="1">
+<tbody>
+<tr>
+<td>
+<font size="4" face="times new roman"><b><i>L<sub>S</sub> = 2mR<sup>2</sup>&#969;</i></b></font></td>
+</tr>
+</tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<b>Remarks:</b></p>
+<p>
+			From the results obtained in examples 1 and 2 we conclude that:</p>
+<ul style="list-style:disc outside none">
+<li>
+				If \(m_1 \neq m_2 \Longrightarrow \vec{L}_Q \neq \vec{L}_S\) (the angular momentum vector depends on the point)</li>
+<li>
+				If \(m_1 \neq m_2 \Longrightarrow \vec{L}_S\) is not parallel to \(\vec{\omega}\), (where <b><i>S</i></b> is any point along the axis except the center of the circle).</li>
+<li>
+				If \(m_1 = m_2 \Longrightarrow \vec{L}_Q = \vec{L}_S = 2mR^2\; \vec{\omega}\).</li>
+</ul>
+<p>
+			When the masses are equal the angular momentum vector is independent of the location of the point S along the axis. In addition, it is parallel to the angular velocity vector:</p>
+<p>
+\(\vec{L}_S \;=\;2mR^2\vec{\omega}\)</p>
+<p>
+			Note that the coefficient in the expression above is the moment of inertia of the rigid object about its axis of rotation: \(I_{axis}=2mR^2\):</p>
+<p>
+			For symmetric objects, object whose mass is distributed symmetrically about their axis of rotation, the angular momentum about any point along the axis is:</p>
+<p>
+\(\vec{L}_S=I_{axis}\;\vec{\omega}\)</p>
+</body>
+</html>
+

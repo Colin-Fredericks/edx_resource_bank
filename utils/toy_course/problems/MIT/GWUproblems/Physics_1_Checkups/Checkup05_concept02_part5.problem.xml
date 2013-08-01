@@ -1,0 +1,17 @@
+<html>
+  <problem>
+<p>To deduce the value of g (accel. due to gravity), you would need to:</p>
+<p>
+<multiplechoiceresponse direction="vertical" randomize="no">
+      <choicegroup type="MultipleChoice">
+        <choice  correct="true" name="1">   know the length and the period of the pendulum. </choice>
+        <choice  correct="false" name="2">  know the amplitude and the frequency of the pendulum.</choice>
+        <choice  correct="false" name="3">  know the mass of the pendulum bob.</choice>
+        <choice  correct="false" name="4">  none of the above.</choice>
+        
+      </choicegroup>
+    </multiplechoiceresponse>
+</p>        
+
+  </problem>
+</html>

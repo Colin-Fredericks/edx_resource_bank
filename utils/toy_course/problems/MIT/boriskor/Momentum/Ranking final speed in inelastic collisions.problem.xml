@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>Two particles have masses \(3m\) and \(2m\) and speeds \(v\) and \(2v\), respectively. In each of the three different scenarios, the particles collide <i>inelastically</i> and stick together after the collision.<br/>
+<b>Scenario A.</b> The particles move toward each other and collide head-on.<br/>
+<b>Scenario B.</b> Particle \(2m\) chases particle \(3m\) and collides with from behind.<br/>
+<b>Scenario C.</b> The particles move at right angles before the collision.<br/> 
+Rank these three scenarios from highest to lowest speed after the collision .</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+			<text>B&gt;A&gt;C</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>C&gt;A&gt;B</text>
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+			<text>C&gt;B&gt;A</text>
+        </choice>
+        <choice location="random" name="foil4" correct="true">
+			<text>B&gt;C&gt;A</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>A&gt;B&gt;C</text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+			<text>A&gt;C&gt;B</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+A satellite of mass \(m\) revolves in a circular orbit around a planet of mass \(M\). The period of the satellite is \(T\). How much work must the engines perform on the satellite in order to move it to a different circular orbit with a period of \(2T\)?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="true">
+
+                \(W=0.294m(\pi GM/T)^{2/3}\)
+
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+                \(W=0.562m (\pi GM/T)^{2/3}\)
+
+        </choice>
+        <choice location="random" name="foil3" correct="false">
+
+                \(W=0.147m ( \pi GM/T)^{2/3}\)
+
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+                \(W=0.588m ( \pi GM/T)^{2/3}\)
+
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+
+                \(W=0.706m ( \pi GM/T)^{2/3}\)
+
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+  </problem>
+</html>

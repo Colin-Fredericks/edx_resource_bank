@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Ranking Moments of Inertia about different axes </title>
+
+    <p>Several objects, numbered 1-4, are made of small massive balls attached to light rigid rods. The masses of the balls and the lengths of the rods are shown in the diagram. Rank the rotational inertia of the objects with respect to the axis passing through the end of each rod as shown. Consider the masses to be point particles.</p>
+
+    <img src="/static/problems/MIT/rayyan/check_points/Pictures/BK79.png" alt="BK79"/>
+
+    <multiplechoiceresponse direction="vertical" randomize="yes" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+			<text>\(I_{4}&gt; I_{2}&gt; I_{1}= I_{3}\)</text>
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+			<text>\(I_{1}&gt; I_{2}&gt; I_{3}&gt; I_{4}\)</text>
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+			<text>\(I_{4}&gt; I_{2}&gt; I_{3}&gt; I_{1}\)</text>
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+			<text>\(I_{2}&gt; I_{4}&gt; I_{3}&gt; I_{1}\)</text>
+        </choice>
+        <choice location="random" name="foil5" correct="false">
+			<text>\(I_{2}&gt; I_{3}&gt; I_{4}= I_{1}\)</text>
+        </choice>
+        <choice location="random" name="foil6" correct="false">
+			<text>\(I_{4}= I_{2}&gt; I_{1}= I_{3}\)</text>
+        </choice>
+        <choice location="random" name="foil7" correct="false">
+			<text>\(I_{3}&gt; I_{2}&gt; I_{4}&gt; I_{1}\)</text>
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

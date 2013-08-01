@@ -1,0 +1,40 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>On a scale of 1-10, how likely are you to recommend edX to a friend?</p>
+	<multiplechoiceresponse direction="horizontal" >
+    	<choicegroup type="MultipleChoice">
+      		<choice correct="true" name="10">
+        		<text>10 - Extremely likely</text>
+      		</choice>
+      		<choice correct="true" name="9">
+        		<text>9</text>
+      		</choice>
+      		<choice correct="true" name="8">
+        		<text>8</text>
+      		</choice>
+      		<choice correct="true" name="7">
+        		<text>7</text>
+      		</choice>
+      		<choice correct="true" name="6">
+        		<text>6</text>
+      		</choice>
+      		<choice correct="true" name="5">
+        		<text>5 - Neutral</text>
+      		</choice>
+      		<choice correct="true" name="4">
+        		<text>4</text>
+      		</choice>
+      		<choice correct="true" name="3">
+        		<text>3</text>
+      		</choice>
+      		<choice correct="true" name="2">
+        		<text>2</text>
+      		</choice>
+      		<choice correct="true" name="1">
+        		<text>1</text>
+      		</choice>
+      		<choice correct="true" name="0">
+        		<text>0 - Not at all likely</text>
+      		</choice>
+      	</choicegroup>
+  	</multiplechoiceresponse>
+</problem>

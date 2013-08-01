@@ -1,0 +1,10 @@
+<problem attempts="0" show_answer="never" display_name="">
+  <p>Do either of your parents have training in or experience in introductory physics?</p>
+  <multiplechoiceresponse>
+    <choicegroup direction="vertical">
+      <choice correct="true" name="yes"><text> Yes</text></choice>
+      <choice correct="true" name="no"><text> No</text></choice>
+      <choice correct="true" name="dont_know"><text> Don't Know</text></choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

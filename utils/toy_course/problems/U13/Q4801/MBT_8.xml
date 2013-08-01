@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<html>
+<problem>
+
+<p>Although there is no final exam (that covers the whole course) in 8.MReV, we have added some Review problems to this quiz and the next. They cover material from previous weeks. Some questions are from quiz zero (which has been removed so you can't use it as a reference.</p>
+<p>Dave Pritchard and the 8.MReV staff</p>
+<br/><br/>
+
+<p>Suppose the metal cylinder shown below has a mass of 0.10 kg and that the coefficient of static friction between the surface and the cylinder is 0.12.</p>
+
+<img src="/static/problems/U13/images/cylinder_turntable.png"/>
+
+<p>If the cylinder is 0.20 m from the center of the turntable, what is the maximum speed that the cylinder can move along its circular path without slipping off the turntable?</p>
+
+<multiplechoiceresponse>
+	<choicegroup type="MultipleChoice">
+		<choice correct="true" name="choice1"><text>0 &lt; v &#8804; 0.5 m/s</text></choice>
+		<choice correct="false" name="choice2"><text>0.5 &lt; v &#8804; 1.0 m/s</text></choice>
+		<choice correct="false" name="choice3"><text>1.0 &lt; v &#8804; 1.5 m/s</text></choice>
+		<choice correct="false" name="choice4"><text>1.5 &lt; v &#8804; 2.0 m/s</text></choice>
+		<choice correct="false" name="choice5"><text>2.0 &lt; v &#8804; 2.5 m/s</text></choice>
+	</choicegroup>
+</multiplechoiceresponse>
+
+</problem>
+</html>

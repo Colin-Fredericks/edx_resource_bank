@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/gravity_superposition_1.png" alt="gravity_superposition" height="150"/>
+    <img src="/static/problems/MIT/rayyan/osu/images/gravity_superposition_2.png" alt="gravity_superposition_1" height="150"/>
+    <img src="/static/problems/MIT/rayyan/osu/images/gravity_superposition_3.png" alt="gravity_superposition_2" height="30"/>
+
+      <p><br/>
+Three balls of masses M, 2M, and 5M are arranged as shown below.  What is the direction of the net gravitational force on the ball of mass 5M due to the balls of mass M and 2M?
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              Choice 1          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              Choice 2          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              Choice 3          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              Choice 4          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              Choice 5          
+        </choice>
+        <choice name="foil6" correct="false">
+
+              Choice 6          
+        </choice>
+        <choice name="foil7" correct="false">
+
+              Choice 7          
+        </choice>
+        <choice name="foil8" correct="false">
+
+              Choice 8          
+        </choice>
+        <choice name="foil9" correct="false">
+
+              Choice 9          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+              </problem>
+</html>

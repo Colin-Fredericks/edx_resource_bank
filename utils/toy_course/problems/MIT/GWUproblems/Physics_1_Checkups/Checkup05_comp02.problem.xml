@@ -1,0 +1,19 @@
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+#Enter the computations here
+time=random.randrange(500,999,1)/100
+length=(9.8* time* time)/(4.0*3.14159*3.14159)
+</script>
+
+      <p>A visitor to a lighthouse wishes to determine the height of the tower. She ties a spool of thread to a small rock to make a simple pendulum, which she hangs down the center of a spiral staircase of the tower. The period of oscillation is $time seconds. What is the height of the tower, assuming that the rock just misses the ground and the other end is tied near the top of the tower?</p>
+
+    <numericalresponse answer="$length" unit="m" format="2f">
+      <responseparam default="2%" type="tolerance"/>
+      <responseparam default="0,15" type="int_range,0-16" name="sig" description="Significant Figures"/>
+      <textline math="1"/>
+
+    </numericalresponse>
+  </problem>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<html>
+<!-- two balls colliding vertically -->
+<problem>
+
+<script type = "loncapa/python">
+import math
+dt=0.001
+M1 = random.randrange(720,1200,60)
+M2 = M1/3
+velocity = abs(3*M1-4*M2)/M2
+impulse=(M1+M2)*9.8*dt
+Pbefore=abs(2*M1-4*M2)
+</script>
+
+	<h2>Two balls colliding vertically</h2>
+
+	<p>You first throw a ball of mass M<sub>1</sub> = $M1 kg vertically upwards. Immediately afterwards, you throw a second ball 
+	of mass M<sub>2</sub> = $M2 kg (M<sub>2</sub> = M<sub>1</sub>/3), also vertically upwards. Just before the two balls collide, 
+	the heavier ball is moving down with speed 2 m/s and the lighter ball is moving upwards with a speed of 4 m/s. Right after the 
+	collision, the heavier ball is moving up with speed 1 m/sec. </p>
+
+	<p>Find the velocity of the lighter ball right after the collision. Remember to start with clearly chosen co-ordinate system
+	(mainly +/- directions).</p>
+<p><b>Part a.</b> </p>
+
+<p>The speed in m/s =</p>
+
+      <numericalresponse answer="$velocity" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline/>
+      </numericalresponse>
+
+	<optionresponse direction="vertical" randomize="yes">
+		<p>
+			<p>The direction of the velocity</p>
+			<optioninput inline="1" options="('Up','Down')" correct="Down"/>
+		</p>
+	</optionresponse>
+
+<p><b>Part b.</b></p>
+<p>Consider the system to be both balls. Assuming that the collision takes place during a time interval of 1 ms (10<sup>-3</sup> s), 
+calculate the magnitude of the impulse due to the gravitational force on the system during the time interval of the collision. Use 
+g = 9.8 m/s<sup>2</sup> in your calculations.
+</p>
+ <p>The magnitude of the <b>External Impulse</b> in N.s =</p>
+
+      <numericalresponse answer="$impulse" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline/>
+      </numericalresponse>
+	<br/>
+
+<p><b>Part c.</b></p>
+<p>Consider the system to be both balls. Calculate the magnitude of the momentum of the system at the instant right before 
+the collision, P<sub>before</sub></p>
+ <p><b>P<sub>before</sub></b> in N.s =</p>
+      <numericalresponse answer="$Pbefore" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline/>
+      </numericalresponse>
+	<br/>
+<p><b>Part d.</b></p>
+<p>Compare the magnitude of the external impulse with the magnitude of the momentum of the system before the collision by doing
+doing the ratio <b>(External Impulse)/(P<sub>before</sub>)</b>. What is this result useful for?
+</p>
+<ol>
+<li>To show that the gravitational force always provides an external impulse to the system</li>
+<li>I can justify the assumption that the linear momentum of the 2 balls system is constant during the collision as done in part a.</li>
+<li>To estimate the impulse of the collision forces.</li>
+</ol>
+	<optionresponse direction="vertical" randomize="no">
+		<p>
+
+			<optioninput inline="1" options="('1','2','3')" correct="2"/>
+		</p>
+	</optionresponse>
+
+</problem>
+</html>
+

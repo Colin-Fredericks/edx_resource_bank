@@ -1,0 +1,5 @@
+<vertical>
+	<problem filename="F12/MRI/MRI30-1.problem" display_name="Car Crash Investigation" attempts="1" weight="0.5"/>
+	<problem filename="F12/MRI/MRI30-2.problem" display_name="Car Crash Investigation, Part 2" attempts="2" weight="0.5"/>
+<!-- Currently used in a quiz, removing discussion.	<discussion for="Car Crash Investigation" id="MReV_Summer2013_MRI30" discussion_category="Mechanical Energy and Work" /> -->
+</vertical>

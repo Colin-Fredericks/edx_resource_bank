@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title>CheckPoint</title>
+        <p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK21.png" alt="p1a" texwrap="none" align="top"/></p><br/> 
+A 10-kg block is lowered by an attached string at a constant speed of 3 m/s. Therefore, the force of tension in the string is about
+
+    <br/>
+    <multiplechoiceresponse randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice location="random" name="foil1" correct="false">
+
+              30 N          
+        </choice>
+        <choice location="random" name="foil2" correct="false">
+
+              70 N          
+        </choice>
+        <choice location="random" name="foil3" correct="true">
+
+              100 N          
+        </choice>
+        <choice location="random" name="foil4" correct="false">
+
+              130 N          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+      </problem>
+</html>

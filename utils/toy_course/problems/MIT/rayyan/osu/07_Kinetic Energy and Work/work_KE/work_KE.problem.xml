@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/osu/images/work.png" alt="work" height="150"/>
+
+      <p><br/>
+A car traveling to the right with a speed v brakes to a stop in a distance d. The work done on the car by the frictional force F is:   (Assume that the frictional force is constant).
+</p>
+
+    <br/>
+    <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+      <choicegroup type="MultipleChoice">
+        <choice name="foil1" correct="false">
+
+              W = 0          
+        </choice>
+        <choice name="foil2" correct="false">
+
+              W = F*d          
+        </choice>
+        <choice name="foil3" correct="true">
+
+              W = -F*d          
+        </choice>
+        <choice name="foil4" correct="false">
+
+              W = F*v          
+        </choice>
+        <choice name="foil5" correct="false">
+
+              W = -F*v          
+        </choice>
+      </choicegroup>
+    </multiplechoiceresponse>
+          </problem>
+</html>

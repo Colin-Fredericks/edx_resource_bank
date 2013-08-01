@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+omega="sqrt(2*k/m)*sin(theta)"
+</script>
+
+        <img src="/static/problems/MIT/analiab/NewProblems/files/SHOTwoBeadsRail.fw.png"/>
+        <br/>
+<p>
+
+Two beads of mass \(m\) are constrained to move along two horizontal frictionless rails that make an angle  \(2\theta \) with respect to each other. They 
+are connected by a spring with spring constant k. What is the frequency of oscillations for the motion where the two beads always stay parallel to each 
+other (ie: the distance between the meeting point of the rails and each particle is equal)?
+In your answer type theta for \(\theta\).
+
+</p><br/>
+
+    <br/>
+    \(\omega\)=<formularesponse answer="$omega" samples="k,m,theta@1,1,1:10,10,10#4"><textline size="25" math="1">
+</textline></formularesponse>
+
+  </problem>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <script type="loncapa/python">
+
+a= "(m*v^2)/L-m*g*sin(theta)"
+b= "arcsin(v^2/(L*g))"
+c= "sqrt(L*g)"
+
+</script>
+
+<img src="/static/problems/MIT/rayyan/problemset/Pictures/p2.PNG" alt="p1a" texwrap="none" align="top"/>
+
+<p>A u-control airplane of mass m is attached by control wires of length L and negligible mass to the "pilot" who controls the lift provided by the wing \(F_L\). The wires control the plane's elevator or angle of attack. The plane's engine keeps it moving at constant speed v in a horizontal circle.</p>
+
+<p>a) Find the magnitude of the total force of tension T in the wires when the plane is flying in a circle at an altitude such that the wires make an angle \(\theta\) with the ground. Remember that the wings can provide lift only in the direction <b>perpendicular</b> to their area, i.e. in a direction perpendicular to the wires. Think carefully before selecting the angle of your coordinate system. Use variables m, v, L, theta, and g in your answer.</p>
+    <br/>
+
+      <formularesponse answer="$a" samples="g,theta,m,v,L@1,1,1,1,1:10,10,10,10,10#4">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>
+b) The plane will go out of control and crash if the tension is not maintained in the control wires. Given a particular speed of the plane, v, what is the angle \(\theta\) at which you would advise the pilot not to exceed? (For inverse trig function, use "arcsin" for arcsin, "arccos" for arccos, and "arctan" for arctan.) Use the variables v, L, and g, in your answer. <br/>
+</p>
+
+      <formularesponse answer="$b" samples="v,L,g@.1,1,1:.9,10,10#4">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+
+      <p>
+c) Is there a minimum speed, v_safe, at which the plane would be safe at any angle? If not, explain why not. If yes, find v_safe. Use L and g in your answer.
+</p>
+
+      <formularesponse answer="$c" samples="L,g@1,1:10,10#3">
+		<responseparam type="tolerance" default="1%"/>
+        <textline size="25" math="1"/>
+      </formularesponse>
+
+    <br/>
+              </problem>
+</html>

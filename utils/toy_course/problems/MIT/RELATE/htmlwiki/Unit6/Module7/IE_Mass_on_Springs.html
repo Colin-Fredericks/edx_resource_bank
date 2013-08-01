@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>Example: Mass on Springs</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<h3> Illustrative Example:  Mass between two springs on a frictionless surface </h3>
+<p>Consider a mass between two springs.  
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module7/files/Mass_Between_Two_Springs.png"/>
+</p><p>Write an expression to describe the motion of the mass as a function of time.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th><b>Solution</b>
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>System:</b>
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td>The Mass is treated as a point particle.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Interactions:</b>
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td>Interactions between the mass and the two springs.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th><b>Model:</b>
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td>Simple Harmonic Motion (Linear Restoring Acceleration)
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Diagramatic Representation
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td>
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module7/files/Mass_With_Two_Springs_Displaced.png"/>
+</p><p>The mass <b>m</b> is subjected to force from the springs on each side. Whether or not the springs are in their relaxed state, when the mass is midway between them, it is at equilibrium. Displacement of the mass to the right (as shown) compresses the spring on the right and extends the spring on the left. this results in restoring force to the left from both springs. 
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit6/Module7/files/Mass_With_Two_Springs_Displaced_with_forces.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Mathematical Representation
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td>
+<p>Displacing the mass a distance *x* to the right results in restoring force from _both_ springs. The spring to the right is compressed while the spring on the left is extended. The force from the spring on the right will be directed to the left (the spring is compressed, so it will push the mass away) 
+</p><p>\( F_{\text{m, right spring}}=-kx \)
+</p><p>The force from the spring on the left will also be to the left (this spring is stretched, so it will pull the mass to the left):
+</p><p>\(  F_{\text{m, left spring}}=-kx \)
+</p><p>The sum of these two forces is \( F^{\text{net}}=-2kx\)
+</p><p>Applying Newton's Second Law:
+</p><p>\(  F^{\text{net}}=-2kx=ma \)
+</p><p>rearranging terms:
+</p><p>\(  a=-\frac{2k}{m} x \)
+</p><p>This is a linear restoring acceleration, giving rise to oscillations at \(\displaystyle \omega_{osc} \) with \(\displaystyle \sqrt{\frac{2k}{m}} \)
+</p><p>For an object experiencing oscillations, the general equation of motion is:
+</p><p>\(  x = C cos(\omega_{osc} t) + S sin(\omega_{osc} t)  \)
+</p><p>All we need is to figure out what all the constants are. What we have done above is to find \(\displaystyle \omega_{osc} = \displaystyle \sqrt{\frac{2k}{m}}\)
+</p><p>To find C and S, we need more information about the initial conditions: the initial position and initial velocity of the mass (usually this is given in a problem, or you are able to figure it out)
+</p><p>\(  C = x_{i} \)
+</p><p>\(  S = {\frac{v_{i}}{\omega_{osc}}} \)
+</p><p>We have assumed that the springs are in their relaxed state when the mass is at <i>x</i> = 0, but this is not necessary. The springs can both be under tension or under compression. as long as they have not gone past their linear ranges of motion, the above expressions will still hold. 
+</p>
+</td></tr></table>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Challenge Question
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td>
+<p>What would happen if we were to make the springs have different spring constants? Call them <i>k</i><sub>1</sub> and <i>k</i><sub>2</sub>
+</p>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Answer
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<td>
+<p>The mass will re-adjust to a new equilibrium position. When displaced from this position the net force on the mass is:
+</p><p>\(F^{net} = -  \displaystyle ( k_{1} x + k_{2} x ) \)
+</p><p><br/>
+This is similar to what we have done above, and the calculation is the same except that you should replace \(\displaystyle 2k\)  with \(\displaystyle k_1+k_2\)
+This makes the frequency of oscillation
+</p><p>\( \omega_{osc} = \displaystyle \sqrt{\frac{k_1+k_2}{m}}\)
+</p>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+
+      <p>
+The shapes below represent objects that each have the same mass. The black outlined shapes have all of their mass concentrated evenly around their perimeter. The gray shaded shapes have their mass evenly distributed.
+</p>
+
+    <imageresponse max="1">
+      <imageinput src="/static/problems/MIT/rayyan/Physics801/Figures/Moments of Inertia.jpg" width="350" height="580" rectangle="(1,300)-(152,452)"/>
+      Click on the shape with the greatest moment of inertia about an axis "out of the screen" that goes through the center of the shape.
+      <imageinput src="/static/problems/MIT/rayyan/Physics801/Figures/Moments of Inertia.jpg" width="350" height="580" rectangle="(216,184)-(299,267)"/>
+      Click on the shape with the least moment of inertia about an axis "out of the screen" that goes through the center of the shape.
+      <imageinput src="/static/problems/MIT/rayyan/Physics801/Figures/Moments of Inertia.jpg" width="350" height="580" rectangle="(2,6)-(160,168)"/>
+      Click on the shape with the second greatest moment of inertia about an axis "out of the screen" that goes through the center of the shape.
+      <hintgroup showoncorrect="no">
+
+          <p>dI = dm * r^2</p>
+
+      </hintgroup>
+    </imageresponse>
+          </problem>
+</html>

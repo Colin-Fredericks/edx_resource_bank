@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Example: Return to the Pond</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script>
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+font-size:10pt; 
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}
+</style>
+</head>
+<body>
+<h3> Illustrative Example:  Return to the Pond</h3>
+<p>The same family mentioned in the previous module is out on the frozen pond again.  This time, the pond is characterized by a coefficient of kinetic friction equal to 0.15.  Once again, the young girl and her brother are playing and manage to run into each other.  At the instant of the collision, the 20 kg girl is moving due east at 1.75 m/s and the 15 kg boy is moving due north at 1.75 m/s.  After the collision, the boy and girl become entangled and slide off as one "object".  The following parts refer to this situation.
+</p>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part A:</b> What is the impulse delivered to the boy during the collision?
+ [<a href="javascript:toggleDisplay('ht3','hide','show')" id="ht3l">show</a>]</th></tr>
+<tr style="display:none" id="ht3">
+<td> <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay1&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay1l">[show system]</a><div style="display:none;" id="toggledisplay1"> This problem will be analyzed in two separate ways.  First, we will take the system to consist of the boy and the girl treated as separate point particles.  Second, we will revisit the collision with the system taken to consist of the boy alone treated as a point particle.</div><br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay2&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay2l">[show interactions]</a><div style="display:none;" id="toggledisplay2"> Both the boy and the girl are subject to external interactions with the earth (gravity) and with the ice (normal force and friction).  Gravity and the normal force cancel in each case.  Friction will be neglected during the collision (which is assumed to be extremely brief).  The collision forces are internal to the boy+girl system, but when we reanalyze the problem with the boy alone as our system, the collision force acting on the boy from the girl will be an external force.</div><br/>
+<b>Models:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay3&quot;, &quot;[hide]&quot;, &quot;[show Models]&quot; )" id="toggledisplay3l">[show Models]</a><div style="display:none;" id="toggledisplay3">During our first analysis of the collision, we will use the Constant Momentum (Zero External Impulse) Model, since the collision forces are internal to the system consisting of the boy <i>and</i> the girl. This will determine the boy's (and the girl's) velocity after they collide. Our second analysis will require the more general Momentum and External Impulse Model, since the collision forces will produce a nonzero external impulse on the system consisting of the boy alone.</div><br/>
+<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay4&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay4l">[show approach]</a><div style="display:none;" id="toggledisplay4"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Understand the Givens
+ [<a href="javascript:toggleDisplay('ht4','hide','show')" id="ht4l">show</a>]</th></tr>
+<tr style="display:none" id="ht4">
+<td> We want the impulse delivered to the boy during the collision.  As we stated in the S.I.M. above, we will make the usual assumption:  the impulse delivered by friction during the extremely brief collision is negligible, so essentially all the impulse comes from the contact force from the girl acting on the boy.  Unfortunately, we have no information about the size of this force.  Thus, the only way to find the impulse acting on the boy is to use the change in the boy's momentum.  We know that:
+<p>\( \vec{J}_{bg} = \vec{p}_{b,f} - \vec{p}_{b,i}\)
+</p><p>where <i>J<sub>bg</sub></i> is the impulse from the girl on the boy.  There is a problem here, however.  We know the boy's initial momentum, but we do not know his final momentum.  We will have to solve for it.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Solve for the Boy's Final Velocity
+ [<a href="javascript:toggleDisplay('ht5','hide','show')" id="ht5l">show</a>]</th></tr>
+<tr style="display:none" id="ht5">
+<td> Since we have deduced that we will need the boy's velocity, we have to find a way to solve for it.  The boy's final velocity can be found by using the fact that the momentum of the boy plus the girl treated as a single system is conserved during the collision.  For this composite system, the collision forces are internal and so they do not contribute to the net <i>external</i> impulse.  Since we are neglecting the small external impulse contributed by friction, momentum is conserved.  We can therefore solve using exactly the same procedure as we did in Part B of the example in the previous module, finding the same answer for the final velocity of the system:
+<p>\(\vec{v}_{f} = \mbox{1.25 m/s at 37}^{\circ}\mbox{ N of E}\)
+</p><p>Since the entire system has this velocity immediately after the collision, and the boy is part of the system, this is his velocity after the collision.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Switch Systems to Find the Change in the Boy's Momentum
+ [<a href="javascript:toggleDisplay('ht6','hide','show')" id="ht6l">show</a>]</th></tr>
+<tr style="display:none" id="ht6">
+<td> We now have to shift our focus.  In the previous part of the problem, we treated the boy plus the girl as a single system.  This allowed us to conserve momentum and learn about the velocity immediately after the collision.  Now, we want to find the impulse on the boy.  This requires us to find the change in his momentum during the collision.  We can only find that by considering the boy as an independent system.  If we look at the collision from this point of view, we can see that the boy's momentum has certainly changed.  As usual, we compute the change in components:
+<p>\(\mathcal{}J_{bg,x}= p_{b,f,x} - p_{b,i,x} = m_{b}v_{f,x} - m_{b}v_{b,i,x} \)
+</p><p>and
+</p><p>\(\mathcal{}J_{bg,y} = p_{b,f,y} - p_{b,i,y} = m_{b}v_{f,y} - m_{b}v_{b,i,y} \)
+</p><p>The boy's final velocity was found above, and so we can substitute to find:
+</p><p>\(\mathcal{}J_{bg,x} = (\mbox{15 kg})(\mbox{1.0 m/s}) - (\mbox{15 kg})(\mbox{0 m/s}) = \mbox{15 kg m/s}\)
+</p><p>and
+</p><p>\(\mathcal{}J_{bg,y} = (\mbox{15 kg})(\mbox{0.75 m/s}) - (\mbox{15 kg})(\mbox{1.75 m/s}) = - \mbox{15 kg m/s}\)
+</p><p>Thus, the vector triangle for the impulse delivered to the boy looks like:
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/BoyImpulseVec.png"/>
+</p><p>and the Pythagorean theorem plus trigonometry tells us that the total impulse delivered to him in the collision is:
+</p><p>\( \vec{J}_{bg} = \mbox{21 kg m/s at 45}^{\circ}\mbox{ S of E}\)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Understand the Answer
+ [<a href="javascript:toggleDisplay('ht7','hide','show')" id="ht7l">show</a>]</th></tr>
+<tr style="display:none" id="ht7">
+<td> To understand the direction associated with this momentum, it is good to consider a pictorial representation of the change in the boy's momentum during the collision:
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/BoyMomChange.png"/>
+</p><p>Note:  The change in the girl's momentum during the collision would be the same size as the boy's but directed in exactly the opposite direction (45&#176; N of W).  Can you explain why?  Consider how we solved for the boy's final velocity.
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+<table class="wikitable collapsible collapsed">
+<tr>
+<th> <b>Part B:</b> How far do the boy and girl slide after the collision before coming to rest?
+ [<a href="javascript:toggleDisplay('ht8','hide','show')" id="ht8l">show</a>]</th></tr>
+<tr style="display:none" id="ht8">
+<td> <b>System:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay5&quot;, &quot;[hide]&quot;, &quot;[show system]&quot; )" id="toggledisplay5l">[show system]</a><div style="display:none;" id="toggledisplay5"> This problem consists of two stages (if we were to solve it using only the information in the problem statement above).  For both stages, we will choose the system to consist of the boy and the girl, each treated as point particles</a>.</div><br/>
+<b>Interactions:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay6&quot;, &quot;[hide]&quot;, &quot;[show interactions]&quot; )" id="toggledisplay6l">[show interactions]</a><div style="display:none;" id="toggledisplay6"> Both the boy and the girl are subject to external interactions with the earth (gravity) and with the ice (normal force and friction).  Gravity and the normal force cancel in each case.  Friction will be neglected during the collision (which is assumed to be extremely brief).  After the collision, the friction force will be a relevant external force.  The collision forces are internal to the boy+girl system, and therefore not relevant to the overall motion of the system.</div><br/>
+<b>Models:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay7&quot;, &quot;[hide]&quot;, &quot;[show Models]&quot; )" id="toggledisplay7l">[show Models]</a><div style="display:none;" id="toggledisplay7">The first step in solving this problem is the analysis of the collision.  For this, we will use the Constant Momentum (Zero External Impulse) Model, since we are neglecting the impulse due to friction during the brief collision.  The second stage of the problem will use the One-Dimensional Motion with Constant Acceleration Model to analyze the motion of the boy + girl "object" after the collision has completed.  (The acceleration will be due to the friction force acting on the system.)</div><br/>
+<b>Quantitative Approach:</b> <a style="font-size:smaller" href="javascript:toggleDisplay( &quot;toggledisplay8&quot;, &quot;[hide]&quot;, &quot;[show approach]&quot; )" id="toggledisplay8l">[show approach]</a><div style="display:none;" id="toggledisplay8"><br/>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Decompose the Problem
+ [<a href="javascript:toggleDisplay('ht9','hide','show')" id="ht9l">show</a>]</th></tr>
+<tr style="display:none" id="ht9">
+<td> If we start with only the information contained in the problem statement above, this problem must be decomposed into two stages.  The first stage is the almost-instantaneous collision.  This part will be analyzed by assuming the momentum of the boy plus girl system is conserved.  The second stage is the sliding motion of the boy + girl "object" after the collision.  During this stage, momentum is not conserved, since friction will gradually slow the system to rest.  The initial velocity for the second stage of the motion will be equal to the final velocity of the first stage.
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Analyze the Collision
+ [<a href="javascript:toggleDisplay('ht10','hide','show')" id="ht10l">show</a>]</th></tr>
+<tr style="display:none" id="ht10">
+<td> Normally, if we were solving this problem from scratch, we would have to analyze the collision using conservation of momentum to find the velocity of the boy plus girl system after the collision.  In this particular case, however, we have already solved this collision in the previous module.  Thus, we know that the velocity of the boy plus girl system after the collision is:
+<p>\(\vec{v}_{f} = \mbox{1.25 m/s at 37}^{\circ}\mbox{ N of E}\)
+</p><p>This will be equal to the initial velocity for the next stage of the motion:  the boy and girl sliding across the ice and slowing down due to friction.
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Apply Constraints and Recognize a Freedom (Redefine the Coordinates)
+ [<a href="javascript:toggleDisplay('ht11','hide','show')" id="ht11l">show</a>]</th></tr>
+<tr style="display:none" id="ht11">
+<td> In this problem, we will be applying two separate Models at different times:  Constant Momentum first, then Motion with Constant Acceleration.  Because the Models are not applied simultaneously, we have the freedom to redefine the coordinates when we switch to the Constant Acceleration Model.  In this case, we can help ourselves out by defining a new x-axis that points in the same direction as the post-collision velocity of the boy and girl, since we must recognize the constraint that the post-collision velocity will be the initial velocity of the subsequent motion.  We will keep the origin of the coordinates right at the collision point, since then the initial position for the subsequent motion will be zero.  With these choices, the motion of the boy and girl after the collision will occur entirely along the x-axis since friction will just work to slow down the speed of the boy and girl (it will not cause them to turn at all).
+<p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/BoyGirlCoordinates.png"/>
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Understand the Givens
+ [<a href="javascript:toggleDisplay('ht12','hide','show')" id="ht12l">show</a>]</th></tr>
+<tr style="display:none" id="ht12">
+<td> The givens that apply to the second stage of this problem are:
+<table class="subsubtable">
+<tr>
+<th> Givens for the <i>Motion with Constant Acceleration</i> Portion of the Problem
+</th></tr>
+<tr>
+<td> \(x_{i} = \mbox{0 m} \qquad t_{i} = 0 \qquad v_{i,x} = \mbox{1.25 m/s} \qquad v_{f,x} = 0\)
+</td></tr></table>
+<p>We are seeking the final position of the boy and the girl, so that we can determine how far they traveled in coming to rest.  Unfortunately, we do not currently have enough information to solve for <i>x<sub>f</sub></i>.  We need another piece of information.  
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Determine the Acceleration
+ [<a href="javascript:toggleDisplay('ht13','hide','show')" id="ht13l">show</a>]</th></tr>
+<tr style="display:none" id="ht13">
+<td>
+<p>We can supply one more given by using our knowledge of the interactions experienced by the system composed of the boy and the girl.  A free body diagram is shown below.  
+</p><p><img src="/static/problems/MIT/RELATE/htmlwiki/Unit7/Module3/files/BoyGirlFBD.png"/>
+</p><p>The only horizontal force acting on the system is friction.  We can find the size of the friction force by using the relationship:
+</p><p>\(\mathcal{} f_{(b+g)I} = \mu_{k}N_{(b+g)I}\)
+</p><p>where the subscript "I" denotes the ice surface.  Based upon the fact that the boy and girl are not accelerating in the vertical direction, which we will call the <i>z</i> direction, we know that:
+</p><p>\( \mathcal{}N_{(b+g)I} - (m_{b}+m_{g})g = (m_{b}+m_{g})a_{z} = 0\)
+</p><p>so:
+</p><p>\( \mathcal{}N_{(b+g)I} = (m_{b}+m_{g})g\)
+</p><p>and 
+</p><p>\( \mathcal{}f_{(b+g)I} = \mu_{k}(m_{b}+m_{g})g\)
+</p><p>We can then use Newton's Second Law to find the acceleration in the x direction:
+</p><p>\( \mathcal{}F_{Net,x} = - f_{(b+g)I} = (m_{b} + m_{g})a_{x}\)
+</p><p>Thus:
+</p><p>\( a_{x} = - \frac{\mu_{k}(m_{b}+m_{g})g}{(m_{b}+m_{g})} = - \mu_{k}g \)
+</p>
+</td></tr></table>
+<table class="subtable collapsible collapsed">
+<tr>
+<th> Represent the Model Mathematically
+ [<a href="javascript:toggleDisplay('ht14','hide','show')" id="ht14l">show</a>]</th></tr>
+<tr style="display:none" id="ht14">
+<td> Now that we have the acceleration in hand, we have enough information to solve for the final position.  The Motion with Constant Acceleration Model has many possible mathematical representations, but the simplest for this purpose is:
+<p>\( v_{f,x}^{2} = v_{i,x}^{2} + 2a_{x}(x_{f}-x_{i}) \)
+</p><p>After substituting zeros, this equation becomes:
+</p><p>\( 0 = v_{i,x}^{2} + 2a_{x}x_{f}\)
+</p><p>giving:
+</p><p>\( x_{f} = -\frac{v_{i,x}^{2}}{2 a_{x}} = -\frac{v_{i,x}^{2}}{- 2\mu_{k}g} =\)<br/>
+</p><p>\( x_{f} = -\frac{(\mbox{1.25 m/s})^{2}}{-2(0.15)(\mbox{9.8 m/s}^{2})} = \mbox{0.53 m}\)
+</p><p>Since the position of the boy and girl just after the collision was at the origin, this implies that they move a total distance of 0.53 m before coming to rest.
+</p>
+</td></tr></table>
+</div>
+</td></tr></table>
+</body>
+</html>
+

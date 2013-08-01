@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Constant Velocity Model</title>
+<script type="text/javascript"> 
+function toggleDisplay( id, hidetext, showtext )
+{
+  link = document.getElementById( id + "l" ).childNodes[0];
+
+  with( document.getElementById( id ).style )
+    {
+      if( display == "none" )
+	{
+	  display = "inline";
+	  link.nodeValue = hidetext;
+	}
+      else
+	{
+	  display = "none";
+	  link.nodeValue = showtext;
+	}
+    }
+}
+</script> 
+<style type="text/css">
+.collapseButton {
+float:right;
+font-weight:400;
+text-align:right;
+width:auto;
+}
+
+.wikitable th,.prettytable th {
+background:#f2f2f2;
+text-align:left;
+font-weight:400;
+}
+
+table.subtable {
+background:#fff;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.subtable th {
+color:#555;
+background:#fff;
+text-align:left;
+font-weight:700;
+}
+
+.subsubtable th {
+background:#f2f2f2;
+color:#000;
+text-align:left;
+font-weight:700;
+}
+
+img.tex.inlinemath {
+height:1.1em;
+vertical-align:0;
+}
+
+img.tex.inlinesub {
+height:1.4em;
+vertical-align:-3px;
+}
+
+table.wikitable,table.prettytable,.subsubtable {
+background:#f9f9f9;
+border:1px #aaa solid;
+border-collapse:collapse;
+margin:1em 1em 1em 0;
+}
+
+.wikitable th,.wikitable td,.prettytable th,.prettytable td,.subtable th,.subtable td,.subsubtable th,.subsubtable td {
+border:1px #aaa solid;
+padding:.2em;
+}
+
+.wikitable caption,.prettytable caption,.subtable caption,.subsubtable caption {
+font-weight:700;
+}		</style>
+</head>
+<body>
+
+<h2>Model: Constant Velocity and Zero Net Force</h2>
+
+<p>This is the simplest model: No net force results in no acceleration.</p>
+
+<h3>Applicable Systems</h3>
+
+<p>Either a single point particle or the center of mass of a rigid body, provided the system is subject to zero net applied force.</p>
+
+<h3>Relevant Interactions</h3>
+
+<p>The net force must be zero. This does <em>not</em> imply the absence of any force, only that the vector sum of all forces acting on the particle must be zero. In other words any external forces, if present, must cancel each other out.</p>
+
+<h3>Laws of Change</h3>
+
+<p>For motion with constant velocity, the acceleration is \(a=0\).</p>
+
+<h4>Differential Form</h4>
+
+<p>\[\frac{dv_x}{dt}=0\]</p>
+
+<h4>Integral Form</h4>
+
+<p>The corresponding integral is rather trivial, \[v_x(t) = v_{i,x}= \text{constant}\]</p>
+
+<p>Therefore it is customary to consider the position vs. time - the integral of the velocity - as the integral form of this model: \[x(t) = x_{i}+v_{i,x}t\]</p>
+
+<p>NOTE: In the above expressions, the initial time - the time when the position and velocity equal \(x_i \) and \(v_{i,x}\) - has been taken to be \(t=0\). Often the initial conditions are given at an arbitrary time \(t_i\), for example if a bullet moving with constant velocity is fired at time \(t_i\) at a target whose motion started at \(t=0\). To accommodate constant velocity with initial conditions given at \(t_i \), this equation may be generalized to: \[x(t) = x_{i}+v_{i,x}(t-t_{i})\]</p>
+
+<p>NOTE: An analogous relationship applies to the <b>angular velocity</b> when the net torque is zero (we take the initial time \(t_i=0 \) for simplicity): \[\omega(t) = \omega_{i}= \text{constant}\] which means that the orientation angle of the rigid body increases linearly with time, \[\theta(t) = \theta_{i}+\omega_{i}t\]</p>
+
+</body>
+</html>

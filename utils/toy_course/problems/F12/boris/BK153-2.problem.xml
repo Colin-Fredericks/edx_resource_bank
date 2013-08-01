@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<html>
+<!-- BK problem 153 -->
+<problem>
+
+	<p>What is the direction and the magnitude of the ball’s acceleration immediately <i>after</i> it bounces off the ground? Assume for this part that the air resistance is <b>very substantial</b> both before and after the bounce.</p>
+	<multiplechoiceresponse direction="vertical" randomize="no">
+		<choicegroup type="MultipleChoice">
+			<choice correct="false">g, directed up</choice>
+			<choice correct="false">g, directed down</choice>
+			<choice correct="false">g/2, directed up</choice>
+			<choice correct="false">g/2, directed down</choice>
+			<choice correct="false">2g, directed up</choice>
+			<choice correct="true">2g, directed down</choice>
+			<choice correct="false">Zero</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+</html>

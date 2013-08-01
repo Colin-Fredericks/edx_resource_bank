@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Falling Plate </title>
+    <script type="loncapa/python">
+
+m=random.choice([0.80,2.50,4.0])
+d=random.choice([0.40,0.80,1.2])
+
+I=2* m* d* d/3
+
+o1= math.sqrt(3/ d*9.8/2)
+
+v= math.sqrt(3* d*9.8)
+v2= math.sqrt(3*(1+ math.sqrt(2))* d*9.8)
+
+</script>
+
+<p>A uniform square plate ABCD has mass $m kg and side length $d m. The square is pivoted
+ at vertex D and initially held at rest so that sides AB and CD are horizontal 
+ (see the diagram).  After it is released, the plate swings downward, rotating about the pivot point. 
+ Resistive force can be neglected. The acceleration due to gravity is g = 9.8 m/s<sup>2</sup>. 
+ The rotational inertia of a square plate of side \(d\) relative to the axis perpendicular 
+ to the plate and passing through the center of mass is \(m d^2/6\).</p>
+
+<br/>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK97a.PNG" alt="BK97a"/>
+<br/>
+
+<p>Part 1. Consider the motion of the plate from the initial moment until the moment when line BD becomes horizontal (see the diagram).</p>
+<p><img src="/static/problems/MIT/rayyan/check_points/Pictures/BK97b.PNG" alt="BK97b"/></p>
+<br/>
+
+<p>Between these two moments, the angular speed of the plate and the magnitude of the
+angular acceleration of the plate, respectively:</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                stays the same; increases  
+          </choice>
+          <choice location="random" name="foil2" correct="false">
+                stays the same; decreases
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                stays the same; stays the same
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                increases; stays the same
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                increases; decreases
+          </choice>
+          <choice location="random" name="foil6" correct="true">
+                increases; increases
+          </choice>
+          <choice location="random" name="foil7" correct="false">
+                decreases; stays the same
+          </choice>
+          <choice location="random" name="foil8" correct="false">
+                decreases; decreases
+          </choice>
+          <choice location="random" name="foil9" correct="false">
+                decreases; increases
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 2. The most useful  approach in solving this problem is:</p>
+
+      <br/>
+      <multiplechoiceresponse direction="vertical" randomize="no" type="MultipleChoice">
+        <choicegroup type="MultipleChoice">
+          <choice location="random" name="foil1" correct="false">
+                Newton's 2nd law for rotation
+          </choice>
+          <choice location="random" name="foil2" correct="true">
+                Conservation of energy   
+          </choice>
+          <choice location="random" name="foil3" correct="false">
+                Conservation of momentum
+          </choice>
+          <choice location="random" name="foil4" correct="false">
+                Kinematics of circular motion
+          </choice>
+          <choice location="random" name="foil5" correct="false">
+                Kinematics of translational motion
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+
+<br/>
+<p>Part 3. Find the rotational inertia of the plate relative to the axis of rotation.</p>
+
+\(I=\)
+
+      <numericalresponse answer="$I" unit="kg*m^2">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 4. Find the angular speed of the plate at the moment when BD is horizontal.</p>
+
+\(\omega=\)
+
+      <numericalresponse answer="$o1" unit="rad/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 5. Find the linear speed of B at the moment when BD is horizontal.</p>
+
+\(v=\)
+
+      <numericalresponse answer="$v" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+
+<p>Part 6. Find the linear speed of B at the moment when B is at the bottom position.</p>
+
+\(v=\)
+
+      <numericalresponse answer="$v2" unit="m/s">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

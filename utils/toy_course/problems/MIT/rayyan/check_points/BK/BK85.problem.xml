@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <title> CheckPoint: Balance </title>
+    <script type="loncapa/python">
+
+m=random.choice([30,40,60])
+r=random.choice([0.15,0.20,0.24])
+M=random.choice([180,220,260])
+
+fa=( M*9.8-2* m*9.8)/3
+fb=(2* M*9.8+5* m*9.8)/3
+m2=0.5* M
+
+</script>
+
+<p>A horizontal uniform bar of mass $M kg and length L = 3.0 m is placed on two supports, labeled A and B, located as shown in the 
+diagram. A block of mass $m kg is placed on the right end of the bar.</p>
+<img src="/static/problems/MIT/rayyan/check_points/Pictures/BK85.png" alt="BK85"/>
+<br/>
+
+<p>Part 1. Find the normal forces \(F_A \) and \(F_B\) exerted on the bar by the supports. Enter your answer in Newtons (N). Use g = 9.8 m/s<sup>2</sup>.</p>
+<br/>
+<p>\(F_A =\)</p>
+
+      <numericalresponse answer="$fa" unit="N"> 
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<br/>
+<p>\(F_B =\)</p>
+
+      <numericalresponse answer="$fb" unit="N">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+<p>Part 2. If the $m kg block is to be replaced with another mass, what is the minimum mass m that would cause the bar to tip over? Enter your answer in kg.</p>
+<p>\(m=\)</p>
+
+      <numericalresponse answer="$m2" unit="kg">
+        <responseparam default="5%" type="tolerance"/>
+        <textline math="1"/>
+      </numericalresponse>
+
+</problem>
+</html>

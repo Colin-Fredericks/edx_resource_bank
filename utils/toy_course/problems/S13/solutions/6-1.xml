@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<html>
+<!--TWO ROTATING BALLS-->
+<problem>
+
+<h3>Solution</h3>
+
+<p>The system is the block, spring, Earth and the surface.</p>
+<p>Interactions:</p>
+<p>External: box and surface, wall and the fixed end of the spring. As a result of these interactions, there is a normal force on the box (no work on the box), friction and the force exerted by the wall
+on the fixed end of the spring that does no work because the displacement is zero.</p>
+<p>Internal:</p>
+<p>- spring and block</p>
+<p>- Earth and block</p>
+<p>These two interactions are conservative therefore are included as potential energies.</p>
+<p>Model: Energy and work. We can evaluate the work done by friction.</p>
+<p>Initial state is right before the block hits the spring with v<sub>o</sub> and the spring is at its natural length.</p>
+<p>Final state is at the instant when the block is at rest and the spring is compressed a distance x<sub>f</sub> with respect to its equilibrium position.</p>
+<p>Choose x=0 when the block first hits the spring and let x<sub>f</sub> denote the position where the block comes to rest.</p>
+<img src="/static/problems/S13/solutions/images/6-1mig.png" />
+
+<p>The energy bar chart for the process, and the work-energy equations are shown below:</p>
+<img src="/static/problems/S13/solutions/images/6-1(2).png" />
+
+<p>E<sup>f</sup> = E<sup>i</sup> + E<sub>1,f</sub><sup>friction</sup></p>
+<p>\({1\over 2}\)mv<sub>o</sub><sup>2</sup> = \({1\over 2}\)kx<sub>f</sub><sup>2</sup> + W<sub>i,f</sub><sup>friction</sup></p>
+<p>The frictional force exerted on the block does work which cause loss in mechanical energy. The force is towards the –x direction, while the displacement of the block is towards the +x direction.
+Note that the force is not constant (so we have to integrate the force over the displacement to determine the work done).</p>
+<p>W<sub>by friction</sub> = \(\int_{x=0}^{x=x_{f}} \! -F_{friction} \, \mathrm{d} x = \int_{x=0}^{x=x_{f}} \! -\mu F_{N} \, \mathrm{d} x = \int_{x=0}^{x=x_{f}} \! bxmg \, \mathrm{d} x\) = \({-bmgx_{f}^{2}\over 2}\)   (1.1)</p>
+<p>From the work-energy equation, and the expression for work, we have:</p>
+<p>\({1\over 2}\)kx<sub>f</sub><sup>2</sup> - \({1\over 2}\)mv<sub>o</sub><sup>2</sup> = - \({1\over 2}\)bmgx<sub>f</sub><sup>2</sup>     (1.2)</p>
+<p>Solving the last of these equations for x<sub>f</sub><sup>2</sup> gives</p>
+<p>x<sub>f</sub><sup>2</sup> = \({mv_{o}^{2}\over k + bmg}\)        (1.3)</p>
+<p>and substitution into Equation(1.1) gives the result</p>
+<p>E<sup>f</sup> - E<sup>i</sup> = W<sup>friction</sup><sub>i,f</sub> = - \({bmg\over 2}\)\({mv_{o}^{2}\over k+bmg}\) = - \({{mv_{o}^{2}\over 2}\over 1+{k\over bmg}}\)</p>
+<p>Check if the above equation is dimensionally correct. From the model, the parameter b must have dimensions of inverse length (the coefficient of friction \(\mu\) must be dimensionless), and so the product bmg has dimensions of force per length, as does the spring constant k ; the result is dimensionally consistent.</p>
+<p>Limiting case: for zero friction, m<sub>k</sub>=0, we should get that work</p>
+
+</problem>
+</html>

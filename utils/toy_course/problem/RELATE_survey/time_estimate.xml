@@ -1,0 +1,34 @@
+<problem attempts="0" show_answer="never" display_name="">
+	<p>How much time do you expect to spend in this course each week?.</p>
+	<multiplechoiceresponse direction="horizontal" >
+    	<choicegroup type="MultipleChoice">
+          <choice correct="true" name="12">
+            <text>12 or more hours</text>
+          </choice>
+          <choice correct="true" name="10">
+            <text>10-12 hours</text>
+          </choice>
+          <choice correct="true" name="8">
+            <text>8-10 hours</text>
+          </choice>
+          <choice correct="true" name="6">
+            <text>6-8 hours</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>4-6 hours</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>2-4 hours</text>
+          </choice>
+          <choice correct="true" name="1">
+            <text>1-2 hours</text>
+          </choice>
+          <choice correct="true" name="0">
+            <text>Less than one hour</text>
+          </choice>
+          <choice correct="true" name="na">
+            <text>I am only interested in taking a peek</text>
+          </choice>
+      	</choicegroup>
+  	</multiplechoiceresponse>
+</problem>

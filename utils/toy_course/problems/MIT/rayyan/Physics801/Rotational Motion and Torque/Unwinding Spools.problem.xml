@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<html>
+  <problem>
+    <img src="/static/problems/MIT/rayyan/Physics801/Figures/Unwinding Ribbon.png"/>
+    <br/>
+
+      <p>
+Red ribbon wound around a red spool (above) is taped to blue ribbon wound around a blue spool (below). The ribbon is essentially massless, but the solid cylindrical spools each have mass m and radius R. If the red spool can freely rotate on a fixed axle and the blue spool is positioned directly underneath with the ribbon taut, what is the downward acceleration of the blue spool? Gravity is downward. <br/>
+Enter your answer in terms of some or all of the variables m, R and g.
+</p>
+
+    <br/>
+    <formularesponse answer="4/5*g" samples="m,g,R@1,9.8,1:10,9.8,10#4">
+      <responseparam default="0.00001" type="tolerance"/>
+      <textline size="25" math="1"/>
+    </formularesponse>
+      </problem>
+</html>

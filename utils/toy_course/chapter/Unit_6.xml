@@ -1,0 +1,133 @@
+<chapter display_name="6: Applying SIM to Problems in Planar Dynamics">
+	<sequential display_name="Mini Survey 6 - Challenge Level" filename="mini_survey_6" />
+	<sequential display_name="Applying SIM to Problems in Planar Dynamics" url_name="Applying_SIM_to_Problems_in_Planar_Dynamics">
+		<vertical display_name="Applying SIM to Problems in Planar Dynamics">
+			<html display_name="Applying SIM to Problems in Planar Dynamics" filename="problems/MIT/RELATE/htmlwiki/Unit6/Applying_SIM_to_Prob.html"/>
+			<discussion for="Applying SIM to Problems in Planar Dynamics" id="MReV_Summer2013_Applying_SIM_to_Prob" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="1-D Motion with Time-Varying Net Force" url_name="1-D_Motion_with_Time-Varying_Net_Force">
+		<vertical display_name="1-D Motion with Time-varying Net Force">
+			<html display_name="1-D Motion with Time-varying Net Force" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module1/1D_Motion_with_Timev.html"/>
+			<discussion for="1-D Motion with Time-varying Net Force" id="MReV_Summer2013_1D_Motion_with_Timev" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Visualizing 1-D Motion">
+			<html display_name="Visualizing 1-D Motion" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module1/Visualizing_Motion.html"/>
+			<discussion for="Visualizing 1-D Motion" id="MReV_Summer2013_Visualizing_Motion" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Multiple Models, Constraints and Two-Dimensional Projectile Motion" url_name="Multiple_Models_Constraints_and_Two-Dimensional_Projectile_Motion">
+		<vertical display_name="Multiple Models, Constraints and Two-Dimensional Projectile Motion">
+			<html display_name="Multiple Models, Constraints and Two-Dimensional Projectile Motion" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module2/Multiple_Models__Con.html"/>
+			<discussion for="Multiple Models, Constraints and Two-Dimensional Projectile Motion" id="MReV_Summer2013_Multiple_Models__Con" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Simulation: Projectile Motion">
+			<html display_name="Simulation: Projectile Motion" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module2/Simulation_Projectiles.html"/>
+			<discussion for="Simulation: Projectile Motion" id="MReV_Summer2013_Simulation_Projectiles" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: Throwing a Baseball">
+			<html display_name="Example: Throwing a Baseball" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module2/IE_Baseball.html"/>
+			<discussion for="Example: Throwing a Baseball" id="MReV_Summer2013_IE_Baseball" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Battleships">
+			<problem display_name="Checkpoint 1: Battleships" filename="MIT/rayyan/osu/04_Motion in 2D and 3D/projectile_1/projectile.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Battleships" id="MReV_Summer2013_projectile" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Battleships">
+			<problem display_name="Checkpoint 2: Battleships" filename="MIT/rayyan/osu/04_Motion in 2D and 3D/projectile_1/projectile_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 2: Battleships" id="MReV_Summer2013_projectile_1" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Battleships">
+			<problem display_name="Checkpoint 3: Battleships" filename="MIT/rayyan/osu/04_Motion in 2D and 3D/projectile_1/projectile_2.problem" attempts="2"/>
+			<discussion for="Checkpoint 3: Battleships" id="MReV_Summer2013_projectile_2" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 4: Two balls falling">
+			<problem display_name="Checkpoint 4: Two balls falling" filename="MIT/GWUproblems/HTW_exams/exam1_con03_new.problem" attempts="3"/>
+			<discussion for="Checkpoint 4: Two balls falling" id="MReV_Summer2013_exam1_con03_new" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Different Projectiles">
+			<problem display_name="CheckPoint 5: Different Projectiles" filename="MIT/rayyan/check_points/BK/BK38.problem" attempts="3"/>
+			<discussion for="CheckPoint 5: Different Projectiles" id="MReV_Summer2013_BK38" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Projectile on a distant planet">
+			<problem display_name="CheckPoint 6: Projectile on a distant planet" filename="MIT/rayyan/check_points/BK/BK39.problem" attempts="20"/>
+			<discussion for="CheckPoint 6: Projectile on a distant planet" id="MReV_Summer2013_BK39" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Changing Interactions and Constraints" url_name="Changing_Interactions_and_Constraints">
+		<vertical display_name="Changing Interactions and Constraints">
+			<html display_name="Changing Interactions and Constraints" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module3/Changing_Interaction.html"/>
+			<discussion for="Changing Interactions and Constraints" id="MReV_Summer2013_Changing_Interaction" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: Fan-Powered Ice Boat">
+			<html display_name="Example: Fan-Powered Ice Boat" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module3/IE_Ice_Boat.html"/>
+			<discussion for="Example: Fan-Powered Ice Boat" id="MReV_Summer2013_IE_Ice_Boat" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Multiple Systems and Constraints" url_name="Multiple_Systems_and_Constraints">
+		<vertical display_name="Multiple Systems and Constraints">
+			<html display_name="Multiple Systems and Constraints" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module4/Multiple_Systems_and.html"/>
+			<discussion for="Multiple Systems and Constraints" id="MReV_Summer2013_Multiple_Systems_and" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: Speed Trap">
+			<html display_name="Example: Speed Trap" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module4/IE_Speed_Trap.html"/>
+			<discussion for="Example: Speed Trap" id="MReV_Summer2013_IE_Speed_Trap" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Uniform Circular Motion" url_name="Uniform_Circular_Motion">
+		<vertical display_name="Uniform Circular Motion">
+			<html display_name="Uniform Circular Motion" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module5/Uniform_Circular_Mot_1.html"/>
+			<discussion for="Uniform Circular Motion" id="MReV_Summer2013_Uniform_Circular_Mot_1" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Centripetal Acceleration">
+			<html display_name="Centripetal Acceleration" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module5/Centripetal_Acceleration.html"/>
+			<discussion for="Centripetal Acceleration" id="MReV_Summer2013_Centripetal_Acceleration" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Example: International Space Station">
+			<html display_name="Example: International Space Station" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module5/IE_ISS.html"/>
+			<discussion for="Example: International Space Station" id="MReV_Summer2013_IE_ISS" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 1: Uniform Circular Motion FBD">
+			<problem display_name="Checkpoint 1: Uniform Circular Motion FBD" filename="MIT/rayyan/osu/06_Force and Motion II/circular/circular.problem" attempts="2"/>
+			<discussion for="Checkpoint 1: Uniform Circular Motion FBD" id="MReV_Summer2013_circular" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 2: Net Force?">
+			<problem display_name="Checkpoint 2: Net Force?" filename="MIT/rayyan/osu/06_Force and Motion II/circular/circular_1.problem" attempts="2"/>
+			<discussion for="Checkpoint 2: Net Force?" id="MReV_Summer2013_circular_1" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 3: Turning Car">
+			<problem display_name="Checkpoint 3: Turning Car" filename="MIT/rayyan/osu/04_Motion in 2D and 3D/car/car.problem" attempts="1"/>
+			<discussion for="Checkpoint 3: Turning Car" id="MReV_Summer2013_car" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Checkpoint 4: Turning Car">
+			<problem display_name="Checkpoint 4: Turning Car" filename="MIT/rayyan/osu/04_Motion in 2D and 3D/car/car_1.problem" attempts="3"/>
+			<discussion for="Checkpoint 4: Turning Car" id="MReV_Summer2013_car_1" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="CheckPoint 5: Force in Uniform Circular Motion">
+			<problem display_name="CheckPoint 5: Force in Uniform Circular Motion" filename="MIT/rayyan/check_points/BK/BK42.problem" attempts="2"/>
+			<discussion for="CheckPoint 5: Force in Uniform Circular Motion" id="MReV_Summer2013_BK42" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="CheckPoint 6: Acceleration and Velocity in Uniform Circular Motion">
+			<problem display_name="CheckPoint 6: Acceleration and Velocity in Uniform Circular Motion" filename="MIT/rayyan/check_points/BK/BK41.problem" attempts="2"/>
+			<discussion for="CheckPoint 6: Acceleration and Velocity in Uniform Circular Motion" id="MReV_Summer2013_BK41" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="CheckPoint 7: Moving on a circle">
+			<problem display_name="CheckPoint 7: Moving on a circle" filename="MIT/rayyan/check_points/BK/BK43.problem" attempts="10"/>
+			<discussion for="CheckPoint 7: Moving on a circle" id="MReV_Summer2013_BK43" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+	<sequential display_name="Calculus of Two Dimensional Motion" url_name="Calculus_of_Two_Dimensional_Motion">
+		<vertical display_name="Calculus of Two-Dimensional Motion">
+			<html display_name="Calculus of Two-Dimensional Motion" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module6/Calculus_of_TwoDimen.html"/>
+			<discussion for="Calculus of Two-Dimensional Motion" id="MReV_Summer2013_Calculus_of_TwoDimen" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Vector Derivatives">
+			<html display_name="Vector Derivatives" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module6/Vector_Derivatives.html"/>
+			<discussion for="Vector Derivatives" id="MReV_Summer2013_Vector_Derivatives" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+		<vertical display_name="Acceleration in Two-Dimensions">
+			<html display_name="Acceleration in Two-Dimensions" filename="problems/MIT/RELATE/htmlwiki/Unit6/Module6/2D_Acceleration.html"/>
+			<discussion for="Acceleration in Two-Dimensions" id="MReV_Summer2013_2D_Acceleration" discussion_category="Applying SIM to Problems in Planar Dynamics" />
+		</vertical>
+	</sequential>
+</chapter>

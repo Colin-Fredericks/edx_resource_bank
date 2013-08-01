@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<html>
+<!-- Colin problem #1 -->
+<problem>
+
+<script type="loncapa/python">
+
+import math
+
+r1 = 150000000000
+r1disp = 1.5
+r2 = random.randrange(200000000000,400000000000,1000000000)
+r2disp = r2 / 100000000000
+
+G = 6.67 * 10 ** (-11)
+M = 2 * 10 ** 30
+
+time = 0.5 * math.sqrt( (4*math.pi**2) / (G*M) * ((r1 + r2)/2)**3 ) / (60*60*24)
+
+</script>
+
+	<p>The Earth orbits the sun at a distance of \( $r1disp \times 10^{11} \) meters. (Approximate the Earth's orbit as a circle for this problem.) You are part of a team that is launching a satellite that will orbit the sun at a distance of \( $r2disp \times 10^{11} \) meters.</p>
+	<p>One way to do this is a very quick burn of the engines near Earth, putting the satellite into an elliptical orbit with the sun at one focus. When the sattelite reaches the aphelion of that orbit, a second quick burn corrects its velocity and puts it into a circular orbit at the new radial distance. You can see this on the picture below.</p>
+
+	<img src="/static/problems/F12/colin/images/CF1.png" width="300" />
+
+	<p>Using this type of transfer, how long (in days) will it take for the satellite to reach its new orbit?</p>
+	<numericalresponse answer="$time" unit="s">
+		<responseparam default="5%" type="tolerance" />
+		<textline math="1" />
+	</numericalresponse>
+	
+	<p>Note: This double burn results in an orbit called the Hohmann transfer orbit. It is the most fuel-efficient orbit to achieve the transfer between two circular orbits.</p>
+
+</problem>
+</html>

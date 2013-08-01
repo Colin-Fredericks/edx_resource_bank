@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 3 -->
+
+<problem>
+
+	<p>An object with mass m is attached to a string and the other end of the string is attached to a peg at the center of a level table.  The object is set into uniform circular motion around the peg.  The radius of the motion remains constant (the string does NOT wind up on the peg). The table and the peg are frictionless.</p>
+
+	<h3>Part 1</h3>
+	<p>While the object is in uniform circular motion, which statement correctly describes its linear momentum?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">The linear momentum of the object is conserved.</choice>
+			<choice location="random" correct="true">The linear momentum of the object is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 2</h3>
+	<p>My answer to part 1 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">There is no friction.</choice>
+			<choice location="random" correct="false">The object maintains a constant speed.</choice>
+			<choice location="random" correct="true">The direction of the object’s motion is continually changing.</choice>
+			<choice location="random" correct="false">The net force acting on the object is zero.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 3</h3>
+	<p>While the object is in uniform circular motion, which statement correctly describes its mechanical energy?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The mechanical energy of the object is conserved.</choice>
+			<choice location="random" correct="false">The mechanical energy of the object is not conserved.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+	<h3>Part 4</h3>
+	<p>My answer to part 3 is justified because:</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="false">There is no friction.</choice>
+			<choice location="random" correct="true">The object maintains a constant speed.</choice>
+			<choice location="random" correct="false">The direction of the object’s motion is continually changing.</choice>
+			<choice location="random" correct="false">The net force acting on the object is zero.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>

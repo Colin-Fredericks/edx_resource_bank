@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<html>
+
+<!-- MRI problem 35 -->
+
+<problem>
+
+	<p>Two bugs ride on a bicycle wheel as the bike travels. One is near the center; the other is near the edge of the wheel. Because of this, they take paths as shown below:</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Cykloida_prosta.png" />
+	<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cykloida_zkracena.png" />
+	<p><i><small>Images from Wikimedia Commons, in the public domain.</small></i></p>
+
+	<h3>Part 1</h3>
+	<p>Over the course of a single turn of the wheel, which bug experiences the force with the greater average magnitude?</p>
+	<multiplechoiceresponse direction="vertical" randomize="yes">
+		<choicegroup type="MultipleChoice">
+			<choice location="random" correct="true">The bug on the outer edge.</choice>
+			<choice location="random" correct="false">The bug near the center.</choice>
+			<choice location="random" correct="false">Both experience the same force.</choice>
+		</choicegroup>
+	</multiplechoiceresponse>
+
+</problem>
+
+</html>
