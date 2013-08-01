@@ -98,8 +98,10 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 							display_name = ''
 
 						# Correct the filename - add folder and .xml if needed.
-						if re.search('<problem ', line):
-							filepath = 'problems/' + filepath + '.xml'   # Note the s.
+						if '<problem ' in line:
+							if filepath.find("problems/") != 0:
+								filepath = 'problems/' + filepath   # Note the s.
+							filepath = filepath + '.xml'
 						else:
 							filepath = FixPath(filepath, line)
 					
@@ -121,9 +123,11 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 							display_name = ''
 					
 						# Correct the filepath. Swap out colons, add folder and .xml if needed.
-						filepath.replace(':','/')
-						if re.search('<problem ', line):
-							filepath = 'problem/' + filepath + '.xml'   # Note the lack of s.
+						filepath = filepath.replace(':','/')
+						if '<problem ' in line:
+							if filepath.find("problem/") != 0:
+								filepath = 'problem/' + filepath   # Note the lack of s.
+							filepath = filepath + '.xml'
 						else:
 							filepath = FixPath(filepath, line)
 				
@@ -147,16 +151,16 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 				is_deprecated = False
 
 				# Use the tag type to set the resource_type to html or problem.
-				if tag_type = 'html':
+				if tag_type == 'html':
 					resource_type = 'html'
-				elif tag_type = 'problem'
+				elif tag_type == 'problem':
 					resource_type = 'problem'
-				else
+				else:
 					resource_type = 'other'
 					# (What to do with videos?)
 
 				# If the resource type is problem:
-				if resource_type = 'problem':
+				if resource_type == 'problem':
 					
 					# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
 					if re.search('<multiplechoice',text):
@@ -172,8 +176,8 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 					elif re.search('<custom', text):
 						problem_type = 'custom'
 					else:
-						problem type = 'other'
-				else 
+						problem_type = 'other'
+				else:
 					problem_type = 'not_a_problem'
 
 					# If no problem_type found, go back and set the resource_type to "other"
@@ -204,7 +208,10 @@ def FixPath(filepath, line):
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
 	if re.search('<html ', line):
-		filepath = 'html/' + filepath
+		if "problems/" not in filepath and "html/" not in filepath:
+			filepath = 'html/' + filepath
+		if ".html" not in filepath:
+			filepath = filepath + ".html"
 	elif re.search('<vertical ', line):
 		filepath = 'vertical/' + filepath + '.xml'
 	elif re.search('<sequential ', line):
