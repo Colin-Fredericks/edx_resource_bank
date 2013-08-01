@@ -43,12 +43,16 @@ def main(argv):
 	# Delete the line below when we're ready to use the database.
 	"""
 	cur = ""
+	
+	collection_collection = [filename, ]
 		
-	BigLoop(filename, "", "", 0, cur)
+	BigLoop(filename, "", "", collection_collection, 0, cur)
 
 
 # This is the recursive function that does most of our work.
-def BigLoop(filepath, tag_type, display_name, depth, cur):
+def BigLoop(filepath, tag_type, display_name, cc, depth, cur):
+
+	collection_collection = cc[:]
 
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
@@ -68,17 +72,24 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 			# For every line in this file:
 			for line in xmlfile:
 			
-				"""		Skipping this in early testing.
-						I'm also concerned that we're only keeping one collection.
-						Resources should belong to multiple collections, and I think this only adds it to the last one found.
+				"""    Still working on this section. Commented out for clean upload.
+				# I'm concerned that we're only keeping one collection.
+				# Resources should belong to multiple collections, and I think this only adds it to the last one found.
 				# If this line has a <chapter> or <sequential> or <vertical> tag...
-				if re.search('<chapter', line) or re.search('<sequential', line) or re.search('<vertical', line):
+				if '<chapter' in line or '<sequential' in line or '<vertical' in line:
 
 					# Escape the display_name and dump it in current_collection.
-					display_name = re.search('display_name="(.*?)"', line).group(1)
-					current_collection = re.escape(display_name)
-					print "Found collection " + current_collection
+					dn = re.search('display_name="(.*?)"', line)
+					if dn:
+						if re.escape(dn.group(1)) not in collection_collection:
+							collection_collection = collection_collection + [re.escape(dn.group(1))]
+					else:
+						if re.escape(xmlfile.name) not in collection_collection:
+							collection_collection = collection_collection + [re.escape(xmlfile.name)]
+					
+					print collection_collection
 				"""
+
 
 				# If the tag on this line closes on the same line, attempt to open the file it links to and traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
@@ -106,8 +117,8 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 							filepath = FixPath(filepath, line)
 					
 						# Run this function with those three things as arguments.
-						print "opening filename " + filepath
-						BigLoop(filepath, tag_type, display_name, depth+1, cur)
+						# print "opening filename " + filepath
+						BigLoop(filepath, tag_type, display_name, collection_collection, depth+1, cur)
 				
 
 					# If this line has a url_name="" attribute, things work slightly differently:
@@ -132,8 +143,9 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 							filepath = FixPath(filepath, line)
 				
 						# Run this function with those three things as arguments.
-						print "opening urlname " + filepath
-						BigLoop(filepath, tag_type, display_name, depth+1, cur)
+						# print "opening urlname " + filepath
+						BigLoop(filepath, tag_type, display_name, collection_collection, depth+1, cur)
+
 				# Move to next line (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
@@ -142,6 +154,14 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 				# We're going to INSERT a new resource into the database.
 				# Take the current display_name, escape it, and dump it into the "name" field.
 				name = re.escape(display_name)
+				
+				# It is possible for the display_name to be blank. If it is:
+				if not name:
+					# Auto-name the resource in some sort of reasonable and hopefully unique manner.
+					name = re.escape(xmlfile.name)
+
+				print name
+				""" This check is important. We're still getting some duplicates once in a while - why?"""
 
 				# Take the entire text of this file, escape it, and dump it into the "text" field.
 				text = re.escape(xmlfile.read())
@@ -187,7 +207,9 @@ def BigLoop(filepath, tag_type, display_name, depth, cur):
 				# Run the MySQL INSERT command.
 				# Link this resource to the current_collection, creating the collection if necessary.
 					# (The Collection_Creator function does this just how I want.)
+
 		# Close the file - should be done automatically using the "with open" approach.
+
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
 
