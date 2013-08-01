@@ -102,6 +102,7 @@ class Resource(models.Model):
 		('exam', 'exam'),
 		('exploration', 'exploration'),
 		('homework', 'homework'), 
+		('class_prep', 'class_prep'),
 		('reference', 'reference'), 
 		('test', 'test'),
 		('other', 'other'),
