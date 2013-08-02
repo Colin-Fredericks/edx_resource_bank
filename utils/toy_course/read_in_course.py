@@ -62,7 +62,7 @@ def BigLoop(filepath, tag_type, display_name, cc, depth, cur):
 	# added_resources = 0
 	# added_collections = 0
 	# linked_objectives = 0 
-	# filepaths_found = 0
+	filepaths_found = 0
 
 	# open the file
 	try:
@@ -119,6 +119,7 @@ def BigLoop(filepath, tag_type, display_name, cc, depth, cur):
 						# Run this function with those three things as arguments.
 						# print "opening filename " + filepath
 						BigLoop(filepath, tag_type, display_name, collection_collection, depth+1, cur)
+						filepaths_found += 1
 				
 
 					# If this line has a url_name="" attribute, things work slightly differently:
@@ -145,23 +146,24 @@ def BigLoop(filepath, tag_type, display_name, cc, depth, cur):
 						# Run this function with those three things as arguments.
 						# print "opening urlname " + filepath
 						BigLoop(filepath, tag_type, display_name, collection_collection, depth+1, cur)
+						filepaths_found += 1
 
 				# Move to next line (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
-			else:
+			if filepaths_found == 0:
 
 				# We're going to INSERT a new resource into the database.
-				# Take the current display_name, escape it, and dump it into the "name" field.
-				name = re.escape(display_name)
-				
-				# It is possible for the display_name to be blank. If it is:
-				if not name:
+							
+				# It is possible for the display_name to be blank. If not:
+				if display_name:
+					# Take the current display_name, escape it, and dump it into the "name" field.
+					name = re.escape(display_name)
+				else:
 					# Auto-name the resource in some sort of reasonable and hopefully unique manner.
 					name = re.escape(xmlfile.name)
 
 				print name
-				""" This check is important. We're still getting some duplicates once in a while - why?"""
 
 				# Take the entire text of this file, escape it, and dump it into the "text" field.
 				text = re.escape(xmlfile.read())
@@ -181,7 +183,7 @@ def BigLoop(filepath, tag_type, display_name, cc, depth, cur):
 
 				# If the resource type is problem:
 				if resource_type == 'problem':
-					
+				
 					# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
 					if re.search('<multiplechoice',text):
 						problem_type = "multiple_choice"
