@@ -44,10 +44,10 @@ def main(argv):
 	"""
 	cur = ""
 	
-	collection_list = [filename]
+	collection_list = ['null']
 	depth = 0
 		
-	BigLoop(filename, "", "", collection_list, depth, cur)
+	BigLoop(filename, '', filename, collection_list, depth, cur)
 
 
 # This is the recursive function that does most of our work.
@@ -58,6 +58,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
+
 
 	# trackers so that we can give some output
 	# I just realized these will all need to get passed if we're going to actually use them.
@@ -79,16 +80,17 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 					# If the display name doesn't match the current display_name variable, update the variable.
 					d_n = re.search('display_name="(.*?)"', firstline)
 					if d_n != display_name:
-						display_name = d_n
+						display_name = d_n.group(1)
 
 				# If all else fails, this file's name should be its actual filename.
-				elif display_name == 'unknown collection'
+				elif display_name == 'unknown collection':
 					display_name = xmlfile.name
 
 			# For every line in this file:
 			for line in xmlfile:
 					
-				# If the tag on this line closes on the same line, attempt to open the file it links to and traverse the file tree.
+				# If the tag on this line closes on the same line, attempt to open the file it links to 
+				# and recursively traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
 
 				if '/>' in line:
@@ -96,22 +98,25 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 					# If this line has a filename or url_name attribute, use that and go there:
 					if 'filename' in line or 'url_name' in line:
 
-						# Get info from this link in preparation for descent.
+						# Get info from the tag for this link.
 						tag_type = re.search('<(\S+?) ',line).group(1)
 
-						# Add the current display_name to the collection list.
-						collection_list += display_name
+						# Add the current file's display_name to the collection list.
+						collection_list.pop()
+						collection_list += [display_name]
 
 						# Get the display_name from this line to pass lower.
 						if 'display_name' in line:
-							display_name = re.search('display_name="(.*?)"', line)
+							display_name = re.search('display_name="(.*?)"', line).group(1)
 						else:
-							if "filename" in line:
-								display_name = re.search('filename="(.*?)"', line)
-							elif "url_name" in line:
-								display_name = re.search('url_name="(.*?)"', line)
+							if 'filename' in line:
+								display_name = re.search('filename="(.*?)"', line).group(1)
+							elif 'url_name' in line:
+								display_name = re.search('url_name="(.*?)"', line).group(1)
 							else:
 								display_name = 'unknown collection'
+
+						# Need to treat filename="" and url_name="" links slightly differently.
 
 						if 'filename' in line:
 
@@ -131,7 +136,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 							# Get the filepath
 							filepath = re.search('url_name="(.*?)"', line).group(1)
 
-							# Correct the filepath. Swap out colons, add folder and .xml if needed.
+							# Correct the filepath - swap out colons, add folder and .xml if needed.
 							filepath = filepath.replace(':','/')
 							if '<problem ' in line:
 								if filepath.find("problem/") != 0:
@@ -145,15 +150,19 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 						# Pop the last collection from the list, unless it's empty. 
 						# (Which it should never be after coming back from recursing.)
-						if len(collection_list) > 0:
-							collection_list.pop()
+						# if len(collection_list) > 0:
+						# 	collection_list.pop()
+
 						filepaths_found += 1
+						
 						
 				# Move to next line (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
 			if filepaths_found == 0:
-			
+
+				print "Part of collections " + str(collection_list)
+
 				# We're going to INSERT a new resource into the database.
 
 				# Use the display_name that was passed (as ammended above) to name this resource.
@@ -292,12 +301,12 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 
 				"""
-							
 				
 		# Close the file - should be done automatically using the "with open" approach.
 
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
+		collection_list += ['null collection']
 
 
 # What if the resource already exists in the database? 
