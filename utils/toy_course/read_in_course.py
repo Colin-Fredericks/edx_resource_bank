@@ -11,6 +11,7 @@
 
 
 import sys
+import os
 import re			# regular expressions for searching and escaping
 import MySQLdb		# python-to-mySQL translator
 # May need to import some sort of XML parser? 
@@ -44,7 +45,7 @@ def main(argv):
 	"""
 	cur = ""
 	
-	collection_list = ['null']
+	collection_list = []
 	depth = 0
 		
 	BigLoop(filename, '', filename, collection_list, depth, cur)
@@ -59,14 +60,13 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
 
-
 	# trackers so that we can give some output
 	# I just realized these will all need to get passed if we're going to actually use them.
 	# added_resources = 0
 	# linked_objectives = 0 
 	added_collections = 0
 	filepaths_found = 0
-	
+	container_type = []
 
 	# open the file
 	try:
@@ -76,19 +76,44 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 			if depth > 0:
 				firstline = xmlfile.readline()
 				if 'display_name' in firstline:
-
+				
 					# If the display name doesn't match the current display_name variable, update the variable.
 					d_n = re.search('display_name="(.*?)"', firstline)
-					if d_n != display_name:
-						display_name = d_n.group(1)
+					if d_n:
+						if d_n != display_name:
+							display_name = d_n.group(1)
 
 				# If all else fails, this file's name should be its actual filename.
-				elif display_name == 'unknown collection':
-					display_name = xmlfile.name
+				elif 'unknown' in display_name:
+					display_name = os.path.basename(xmlfile.name)
+			
+				# Add the current page's name as if it were a collection.
+				# We need to remove it when...
+				# - returning from an inline container
+				# - discovering that this page is a resource
+				# We also need to add more collections when running into the appropriate kind of tag, 
+				# and remove them when the tag closes.
+				collection_list += [display_name]
+
 
 			# For every line in this file:
 			for line in xmlfile:
-					
+
+				# If this line starts an inline container:
+				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line) and ('/>' not in line):
+					# Get the display_name and add it to the collection list.
+					if 'display_name' in line:
+						collection_list += [re.search('display_name="(.*?)"', line).group(1)]
+					else:
+						coll_type = re.search('<(\S+)[ >\/]',line).group(1)
+						collection_list += ['unknown ' + coll_type]
+
+				
+				# If this line ends an inline container, remove the last item on the collection list.
+				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line):
+					collection_list.pop()
+					pass
+				
 				# If the tag on this line closes on the same line, attempt to open the file it links to 
 				# and recursively traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
@@ -100,10 +125,6 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 						# Get info from the tag for this link.
 						tag_type = re.search('<(\S+?) ',line).group(1)
-
-						# Add the current file's display_name to the collection list.
-						collection_list.pop()
-						collection_list += [display_name]
 
 						# Get the display_name from this line to pass lower.
 						if 'display_name' in line:
@@ -147,12 +168,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 						# Recursion happens here.
 						BigLoop(filepath, tag_type, display_name, collection_list, depth+1, cur)
-
-						# Pop the last collection from the list, unless it's empty. 
-						# (Which it should never be after coming back from recursing.)
-						# if len(collection_list) > 0:
-						# 	collection_list.pop()
-
+						
 						filepaths_found += 1
 						
 						
@@ -161,11 +177,15 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 			# If there are no self-closing tags with filepaths found in this whole file:
 			if filepaths_found == 0:
 
-				print "Part of collections " + str(collection_list)
+				# This page is a resource. Remove its name from the collection list.
+				collection_list.pop()
 
 				# We're going to INSERT a new resource into the database.
 
 				# Use the display_name that was passed (as ammended above) to name this resource.
+				# If that name is blank, use the filename.
+				if not display_name:
+					display_name = os.path.basename(xmlfile.name)
 				name = re.escape(display_name)
 
 				# Take the entire text of this file, escape it, and dump it into the "text" field.
@@ -306,7 +326,6 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
-		collection_list += ['null collection']
 
 
 # What if the resource already exists in the database? 
