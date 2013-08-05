@@ -71,41 +71,22 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 	try:
 		with open(filepath, 'rbU') as xmlfile:
 
-			"""  Commenting out non-working section for clean upload.
-			# Use the first line of all but the first file to double-check the display_name.
+			# Use the first line to double-check the display_name. (But not for the first file.)
 			if depth > 0:
 				firstline = xmlfile.readline()
 				if 'display_name' in firstline:
 
-					# If the display name doesn't match the last item in the collection list, update the list.
+					# If the display name doesn't match the current display_name variable, update the variable.
 					d_n = re.search('display_name="(.*?)"', firstline)
-					if d_n != collection_list[len(collection_list)-1]:
-						collection_list[len(collection_list)-1] = d_n.group(1)
-			"""
+					if d_n != display_name:
+						display_name = d_n
+
+				# If all else fails, this file's name should be its actual filename.
+				elif display_name == 'unknown collection'
+					display_name = xmlfile.name
 
 			# For every line in this file:
 			for line in xmlfile:
-
-				"""  More non-working stuff.
-				# If this line points to a container:
-				if '<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line:
-
-					# Get the display name from this line so we can pass it to the next file.
-					if 'display_name' in line:
-						d_n = re.search('display_name="(.*?)"', line)
-						collection_list += [d_n.group(1)]
-					else:
-						# If there's no display name for this element, use the linked filepath instead.
-						# Will probably want to do some processing on this to fix up or strip down the path.
-						if "filename" in line:
-							f_n = re.search('filename="(.*?)"', line)
-							collection_list += [f_n.group(1)]
-						elif "url_name" in line:
-							u_n = re.search('url_name="(.*?)"', line)
-							collection_list += [u_n.group(1)]
-						else:
-							collection_list += ['unknown collection']
-				"""
 					
 				# If the tag on this line closes on the same line, attempt to open the file it links to and traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
@@ -115,12 +96,22 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 					# If this line has a filename or url_name attribute, use that and go there:
 					if 'filename' in line or 'url_name' in line:
 
+						# Get info from this link in preparation for descent.
 						tag_type = re.search('<(\S+?) ',line).group(1)
 
+						# Add the current display_name to the collection list.
+						collection_list += display_name
+
+						# Get the display_name from this line to pass lower.
 						if 'display_name' in line:
-							dn = re.search('display_name="(.*?)"', line)
+							display_name = re.search('display_name="(.*?)"', line)
 						else:
-							display_name = ''
+							if "filename" in line:
+								display_name = re.search('filename="(.*?)"', line)
+							elif "url_name" in line:
+								display_name = re.search('url_name="(.*?)"', line)
+							else:
+								display_name = 'unknown collection'
 
 						if 'filename' in line:
 
@@ -153,7 +144,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 						BigLoop(filepath, tag_type, display_name, collection_list, depth+1, cur)
 
 						# Pop the last collection from the list, unless it's empty. 
-						# Which it should never be after coming back from recursing.
+						# (Which it should never be after coming back from recursing.)
 						if len(collection_list) > 0:
 							collection_list.pop()
 						filepaths_found += 1
@@ -164,17 +155,9 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 			if filepaths_found == 0:
 			
 				# We're going to INSERT a new resource into the database.
-							
-				# It is possible for the display_name to be blank. If not:
-				if display_name:
-					# Take the current display_name, escape it, and dump it into the "name" field.
-					name = re.escape(display_name)
-				else:
-					# If there's no display_name, auto-name the resource in some sort of reasonable and hopefully unique manner.
-					name = re.escape(xmlfile.name)
 
-				# Just testing
-				print name
+				# Use the display_name that was passed (as ammended above) to name this resource.
+				name = re.escape(display_name)
 
 				# Take the entire text of this file, escape it, and dump it into the "text" field.
 				text = re.escape(xmlfile.read())
