@@ -93,14 +93,14 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 				# If all else fails, this file's name should be its actual filename.
 				elif 'unknown' in display_name:
 					display_name = os.path.basename(xmlfile.name)
-			
+							
 				# Add the current page's name as if it were a collection.
 				# We need to remove it when...
 				# - returning from an inline container
 				# - discovering that this page is a resource
 				# We also need to add more collections when running into the appropriate kind of tag, 
 				# and remove them when the tag closes.
-				collection_list += [display_name]
+				collection_list += [AddWithoutDuplicates(collection_list, display_name, tag_type)]
 
 
 			# For every line in this file:
@@ -110,18 +110,16 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line) and ('/>' not in line):
 
 					# What kind of collection is this?
-					coll_type = re.search('<(\S+)[ >\/]',line).group(1)
+					tag_type = re.search('<(\S+)[ >\/]',line).group(1)
 
 					# Get the display_name and add it to the collection list.
 					if 'display_name' in line:
-						collection_list += [re.search('display_name="(.*?)"', line).group(1)]
+						tempname = re.search('display_name="(.*?)"', line).group(1)
 					else:
-						collection_list += ['unknown ' + coll_type]
+						tempname = 'unknown ' + tag_type
 
 					# Avoids duplicating collections (common with exams and other single-sequence chapters)
-					if collection_list[len(collection_list)-1] == collection_list[len(collection_list)-2]:
-						collection_list[len(collection_list)-1] += ' ' + coll_type
-
+					collection_list += [AddWithoutDuplicates(collection_list, tempname, tag_type)]
 				
 				# If this line ends an inline container, remove the last item on the collection list.
 				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line):
@@ -212,7 +210,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 					resource_type = 'other'
 					# (What to do with videos?)
 
-				# Take the entire text of this file, escape it, and dump it into the "text" field.
+				# Take the entire text of this file and dump it into the "text" field.
 				with open(filepath, 'rbU') as tempfile:
 					text = tempfile.read()
 
@@ -330,7 +328,6 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 					# The Collection_Creator function returns the number of new collections that were added. Add 'em up.
 					###############
 
-					print 'Linking collections for ' + name
 					added_collections += Collection_Creator(collection_list, cur, resource_id)
 					db.commit()
 
@@ -340,6 +337,19 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
 
+
+####################################################
+# Add something to the collection list and avoid duplicates.
+# Uses lowercase to avoid database case issues.
+####################################################
+
+def AddWithoutDuplicates(collection_list, collection, tag_type):
+
+	for x in collection_list:
+		if x.lower() == collection.lower():
+			collection += ' ' + tag_type
+
+	return collection
 
 
 ####################################################
@@ -376,7 +386,6 @@ def FixPath(filepath, line):
 def Collection_Creator(collection_list, cur, resource_id):
 
 	added_collections = 0
-	print collection_list
 
 	for collection in collection_list:
 
@@ -402,7 +411,17 @@ def Collection_Creator(collection_list, cur, resource_id):
 			except TypeError:
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
-
+		
+		if collection_list.index(collection) == 0:
+			collection_type = 'course'
+		elif collection_list.index(collection) == 1:
+			collection_type = 'chapter'
+		elif collection_list.index(collection) == 2:
+			collection_type = 'sequence'
+		elif collection_list.index(collection) == 3:
+			collection_type = 'vertical'
+		else:
+			collection_type = 'other' 
 
 		# If the collection does not already exist, create it.
 		if not collection_id:
@@ -419,12 +438,11 @@ def Collection_Creator(collection_list, cur, resource_id):
 			collection_query += "VALUES ('"
 
 			collection_query += re.escape(collection) + "', '" 
-			collection_query += "other" + "', '" 
+			collection_query += collection_type + "', '" 
 			collection_query += "0"  + "', '" # is_sequential set to false
 			collection_query += "0"  + "', '" # is_deprecated set to false
 			collection_query += "2001-01-01" + "')" # creation_date
 
-			print 'Creating collection ' + collection + ' for resource ' + str(resource_id)
 			cur.execute(collection_query)
 			added_collections += 1
 	
