@@ -8,10 +8,17 @@
 # The general approach is recursive.
 #########
 
+#########
+# Various concerns:
+# What if the resource already exists in the database? 
+# How to find the appropriate resource? Display_name seems to be all we have.
+# May need to have existing resources include a "link to source" field and use those instead.
+# Probably need to do a this-to-that table by hand.
+#########
 
 
 import sys
-import os
+import os			# For getting file name
 import re			# regular expressions for searching and escaping
 import MySQLdb		# python-to-mySQL translator
 # May need to import some sort of XML parser? 
@@ -31,7 +38,6 @@ def main(argv):
 	# Take in a filename from the command line
 	filename = str(sys.argv[1])
 
-	"""   Leaving out database for now.
 	# Connect to the database
 	db = MySQLdb.connect(host="localhost",
 		user="resource_mangler",
@@ -41,18 +47,19 @@ def main(argv):
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
 	
-	# Delete the line below when we're ready to use the database.
-	"""
-	cur = ""
 	
 	collection_list = []
 	depth = 0
 		
-	BigLoop(filename, '', filename, collection_list, depth, cur)
+	BigLoop(filename, '', filename, collection_list, depth, cur, db)
 
+	# Clean up the database stuff: Commit all changes, close cursor and database.
+	db.commit()
+	cur.close()
+	db.close()
 
 # This is the recursive function that does most of our work.
-def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
+def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 
 	# Note: The collection_list is being passed by REFERENCE, not by value.
 	# We need to manually remove entries.
@@ -62,8 +69,8 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 	# trackers so that we can give some output
 	# I just realized these will all need to get passed if we're going to actually use them.
-	# added_resources = 0
 	# linked_objectives = 0 
+	added_resources = 0
 	added_collections = 0
 	filepaths_found = 0
 	container_type = []
@@ -101,12 +108,19 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 
 				# If this line starts an inline container:
 				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line) and ('/>' not in line):
+
+					# What kind of collection is this?
+					coll_type = re.search('<(\S+)[ >\/]',line).group(1)
+
 					# Get the display_name and add it to the collection list.
 					if 'display_name' in line:
 						collection_list += [re.search('display_name="(.*?)"', line).group(1)]
 					else:
-						coll_type = re.search('<(\S+)[ >\/]',line).group(1)
 						collection_list += ['unknown ' + coll_type]
+
+					# Avoids duplicating collections (common with exams and other single-sequence chapters)
+					if collection_list[len(collection_list)-1] == collection_list[len(collection_list)-2]:
+						collection_list[len(collection_list)-1] += ' ' + coll_type
 
 				
 				# If this line ends an inline container, remove the last item on the collection list.
@@ -167,7 +181,8 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 								filepath = FixPath(filepath, line)
 
 						# Recursion happens here.
-						BigLoop(filepath, tag_type, display_name, collection_list, depth+1, cur)
+						BigLoop(filepath, tag_type, display_name, collection_list, depth+1, cur, db)
+						db.commit()
 						
 						filepaths_found += 1
 						
@@ -186,14 +201,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 				# If that name is blank, use the filename.
 				if not display_name:
 					display_name = os.path.basename(xmlfile.name)
-				name = re.escape(display_name)
-
-				# Take the entire text of this file, escape it, and dump it into the "text" field.
-				text = re.escape(xmlfile.read())
-
-				# Set hide_info and is_deprecated both = False by default
-				hide_info = False
-				is_deprecated = False
+				name = display_name
 
 				# Use the tag type to set the resource_type to html or problem.
 				if tag_type == 'html':
@@ -203,6 +211,10 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 				else:
 					resource_type = 'other'
 					# (What to do with videos?)
+
+				# Take the entire text of this file, escape it, and dump it into the "text" field.
+				with open(filepath, 'rbU') as tempfile:
+					text = tempfile.read()
 
 				# If the resource type is problem:
 				if resource_type == 'problem':
@@ -226,11 +238,11 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 				else:
 					problem_type = 'not_a_problem'
 
-				""" Commented out for testing. This is the SQL insert block.
-
 				# Placeholder values.
 				# Note that we'll need to link learning objectives later.
 				description = ''
+				is_deprecated = '0'		# 0 for false in SQL
+				hide_info = '0'			# 0 for false in SQL
 				resource_file = ''
 				grade_level = ''
 				intended_use = ''
@@ -304,6 +316,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 					sql_middle = "VALUES ('" 
 
 					sql_query = sql_start + sql_left + sql_middle + sql_right
+
 					cur.execute(sql_query)
 					added_resources += 1
 
@@ -317,21 +330,16 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur):
 					# The Collection_Creator function returns the number of new collections that were added. Add 'em up.
 					###############
 
+					print 'Linking collections for ' + name
 					added_collections += Collection_Creator(collection_list, cur, resource_id)
+					db.commit()
 
 
-				"""
-				
-		# Close the file - should be done automatically using the "with open" approach.
+		# Close the file -- done automatically via the "with" command
 
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
 
-
-# What if the resource already exists in the database? 
-# How to find the appropriate resource? Display_name seems to be all we have.
-# May need to have existing resources include a "link to source" field and use those instead.
-# Probably need to do a this-to-that table by hand.
 
 
 ####################################################
@@ -368,21 +376,35 @@ def FixPath(filepath, line):
 def Collection_Creator(collection_list, cur, resource_id):
 
 	added_collections = 0
+	print collection_list
 
-	# 
 	for collection in collection_list:
 
 		# Check to see if a collection with this name already exists. 
-		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
+		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(collection))
 
 		try:
-			# Set the collection id to that.
+			# If it does exist, get the id for that collection.
 			collection_id = cur.fetchone()[0]
 		except TypeError:
-			# Unless it's null or something, in which case set it to zero.
-			collection_id = 0
+			# If it does not exist, say there's no collection with that ID.
+			collection_id = False
 
-		# If not, create the collection.
+		# If we don't find it, we're doing to double-check with the unescaped name.
+		# I have no idea why this stage is necessary but it is.
+		if collection_id == False:
+		
+			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
+
+			try:
+				# If it does exist, get the id for that collection.
+				collection_id = cur.fetchone()[0]
+			except TypeError:
+				# If it does not exist, say there's no collection with that ID.
+				collection_id = False
+
+
+		# If the collection does not already exist, create it.
 		if not collection_id:
 
 			# A big INSERT command to create the collection.
@@ -398,17 +420,18 @@ def Collection_Creator(collection_list, cur, resource_id):
 
 			collection_query += re.escape(collection) + "', '" 
 			collection_query += "other" + "', '" 
-			collection_query += "0"  + "', '" # is_sequential
-			collection_query += "0"  + "', '" # is_deprecated
+			collection_query += "0"  + "', '" # is_sequential set to false
+			collection_query += "0"  + "', '" # is_deprecated set to false
 			collection_query += "2001-01-01" + "')" # creation_date
 
+			print 'Creating collection ' + collection + ' for resource ' + str(resource_id)
 			cur.execute(collection_query)
 			added_collections += 1
 	
 			# Get the ID of the collection I just created.
 			collection_id = cur.lastrowid
 	
-		# Add this resource to the collection.
+		# Link this resource to the collection.
 		resource_insert_query = "INSERT INTO RDB_collection_included_resources "
 		resource_insert_query += "(collection_id, "
 		resource_insert_query += "resource_id) "
