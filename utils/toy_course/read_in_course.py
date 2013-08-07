@@ -75,7 +75,30 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 	filepaths_found = 0
 	container_type = []
 
-	# open the file
+	# try to open the file, to double-check filepath
+	try:
+		# If it works, carry on.
+		with open(filepath, 'rbU') as trial:
+			pass
+	except IOError:
+		# edX is sloppy with filenames; html and xml may get mixed. Try swapping.
+		print filepath
+		if filepath.endswith('.html'):
+			newfilepath = filepath[:len(filepath)-5] + '.xml'
+		elif filepath.endswith('xml'):
+			newfilepath = filepath[:len(filepath)-4] + '.html'			
+		else:
+			newfilepath = filepath + '.xml'
+		print newfilepath
+		try:
+			# If it works, use the new path.
+			with open(newfilepath, 'rbU') as trial:
+				filepath = newfilepath
+		except IOError:
+			# This error will get caught in a minute anyway.
+			pass
+	
+	# open the file for real
 	try:
 		with open(filepath, 'rbU') as xmlfile:
 
@@ -130,7 +153,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 				# and recursively traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
 
-				if '/>' in line:
+				if '/>' in line and '<' in line:
 
 					# If this line has a filename or url_name attribute, use that and go there:
 					if 'filename' in line or 'url_name' in line:
