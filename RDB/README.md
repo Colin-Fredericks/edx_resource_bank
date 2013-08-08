@@ -3,6 +3,10 @@ Resource Database
 
 You can read what's in the database in the models.py file. In case you don't read django yet, this ReadMe is a summary of that and how it's set up.
 
+As for how the database is actually created, it's through django. You run this command
+    python manage.py syncdb
+in the root directory for this project, and a database is created. You really need to read up on django to understand more about that and how it works; I can't explain it better here than it's explained on [the django website](https://docs.djangoproject.com/en/1.5/intro/).
+
 The main items in the database are:
 * **Resources**
 * Items that hold descriptors for resources, such as:
@@ -50,7 +54,7 @@ Resource-Linked Items
 * Code Dependencies
 * Analytics
 
-Each of these is a separate database sheet.
+Each of these is a separate database sheet. The idea is that multiple objects can share the same keyword (for example) and that other new objects can be categorized with the same list.
 
 
 Collections

@@ -10,12 +10,12 @@ Folders
 
 * *resource_bank* is the project.
 
-* *RDB* is the app. Stands for Resource DataBase.
+* *RDB* is the app. Stands for Resource DataBase. There's another ReadMe file in there, you should check it out.
 
 * *uploads* is where uploaded files go by default. Nothing there at the moment.
 
 * *utils* is where the import-from-csv scripts are, as well as sample files.
- * Within *utils* is *toy_course*, which has a bare-bones framework of Mechanics ReView and a script to read it in.
+ * Within *utils* is *toy_course*, which has a bare-bones framework of Mechanics ReView and a script to read it in. There's yet another ReadMe file there that explains how it works.
 
 Dependencies
 --------------
