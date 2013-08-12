@@ -18,11 +18,13 @@
 
 
 import sys
-import os			# For getting file name
-import re			# regular expressions for searching and escaping
-import MySQLdb		# python-to-mySQL translator
+import os								# For getting file name
+import re								# regular expressions for searching and escaping
+import MySQLdb							# python-to-mySQL translator
+from collections import OrderedDict
 # May need to import some sort of XML parser? 
 # What I'm doing is fairly simple, so perhaps not.
+
 
 # Main takes in arguments, connects to the database, and runs BigLoop.
 def main(argv):
@@ -48,10 +50,10 @@ def main(argv):
 	cur = db.cursor() 
 	
 	
-	collection_list = []
+	containers = OrderedDict([])
 	depth = 0
 		
-	BigLoop(filename, '', filename, collection_list, depth, cur, db)
+	BigLoop(filename, '', filename, containers, depth, cur, db)
 
 	# Clean up the database stuff: Commit all changes, close cursor and database.
 	db.commit()
@@ -59,21 +61,19 @@ def main(argv):
 	db.close()
 
 # This is the recursive function that does most of our work.
-def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
+def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
-	# Note: The collection_list is being passed by REFERENCE, not by value.
+	# Note: The containers are being passed by REFERENCE, not by value.
 	# We need to manually remove entries.
 
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
 
-	# trackers so that we can give some output
-	# I just realized these will all need to get passed if we're going to actually use them.
+	# Various trackers
 	# linked_objectives = 0 
 	added_resources = 0
 	added_collections = 0
 	filepaths_found = 0
-	container_type = []
 
 	# try to open the file, to double-check filepath
 	try:
@@ -81,21 +81,19 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 		with open(filepath, 'rbU') as trial:
 			pass
 	except IOError:
-		# edX is sloppy with filenames; html and xml may get mixed. Try swapping.
-		print filepath
+		# edX is sloppy with filenames; html and xml may get mixed. Try swapping and/or adding.
 		if filepath.endswith('.html'):
 			newfilepath = filepath[:len(filepath)-5] + '.xml'
 		elif filepath.endswith('xml'):
 			newfilepath = filepath[:len(filepath)-4] + '.html'			
 		else:
 			newfilepath = filepath + '.xml'
-		print newfilepath
 		try:
 			# If it works, use the new path.
 			with open(newfilepath, 'rbU') as trial:
 				filepath = newfilepath
 		except IOError:
-			# This error will get caught in a minute anyway.
+			# File likely doesn't exist. This error will get caught in a minute anyway.
 			pass
 	
 	# open the file for real
@@ -123,14 +121,14 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 				# - discovering that this page is a resource
 				# We also need to add more collections when running into the appropriate kind of tag, 
 				# and remove them when the tag closes.
-				collection_list += [AddWithoutDuplicates(collection_list, display_name, tag_type)]
+				AddWithoutDuplicates(containers, display_name, tag_type)
 
 
 			# For every line in this file:
 			for line in xmlfile:
 
 				# If this line starts an inline container:
-				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line) and ('/>' not in line):
+				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line or '<conditional' in line) and ('/>' not in line):
 
 					# What kind of collection is this?
 					tag_type = re.search('<(\S+)[ >\/]',line).group(1)
@@ -142,18 +140,18 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 						tempname = 'unknown ' + tag_type
 
 					# Avoids duplicating collections (common with exams and other single-sequence chapters)
-					collection_list += [AddWithoutDuplicates(collection_list, tempname, tag_type)]
+					AddWithoutDuplicates(containers, tempname, tag_type)
 				
 				# If this line ends an inline container, remove the last item on the collection list.
-				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line):
-					collection_list.pop()
+				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line or '</conditional>' in line):
+					containers.popitem()
 					pass
+				
 				
 				# If the tag on this line closes on the same line, attempt to open the file it links to 
 				# and recursively traverse the file tree.
 				# If it's not self-closing, it doesn't actually link to a file. Move on.
-
-				if '/>' in line and '<' in line:
+				if '<' in line and '/>' in line:
 
 					# If this line has a filename or url_name attribute, use that and go there:
 					if 'filename' in line or 'url_name' in line:
@@ -202,7 +200,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 								filepath = FixPath(filepath, line)
 
 						# Recursion happens here.
-						BigLoop(filepath, tag_type, display_name, collection_list, depth+1, cur, db)
+						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
 						db.commit()
 						
 						filepaths_found += 1
@@ -214,7 +212,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 			if filepaths_found == 0:
 
 				# This page is a resource. Remove its name from the collection list.
-				collection_list.pop()
+				containers.popitem()
 
 				# We're going to INSERT a new resource into the database.
 
@@ -323,6 +321,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 				sql_right += problem_type  + "', '"
 				sql_right += re.escape(solutions_hints_etc)  + "')"
 
+				print containers
 				sql_query = sql_start + sql_left + sql_middle + sql_right
 
 				# If this exact resource already exists, skip it.
@@ -351,7 +350,7 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 					# The Collection_Creator function returns the number of new collections that were added. Add 'em up.
 					###############
 
-					added_collections += Collection_Creator(collection_list, cur, resource_id)
+					added_collections += Collection_Creator(containers, cur, resource_id)
 					db.commit()
 
 
@@ -366,13 +365,13 @@ def BigLoop(filepath, tag_type, display_name, collection_list, depth, cur, db):
 # Uses lowercase to avoid database case issues.
 ####################################################
 
-def AddWithoutDuplicates(collection_list, collection, tag_type):
+def AddWithoutDuplicates(containers, collection, tag_type):
 
-	for x in collection_list:
+	for x in containers:
 		if x.lower() == collection.lower():
 			collection += ' ' + tag_type
 
-	return collection
+	containers[collection] = tag_type
 
 
 ####################################################
@@ -406,11 +405,11 @@ def FixPath(filepath, line):
 # Now with Multiple Collections!
 ####################################################
 
-def Collection_Creator(collection_list, cur, resource_id):
+def Collection_Creator(containers, cur, resource_id):
 
 	added_collections = 0
 
-	for collection in collection_list:
+	for collection in containers:
 
 		# Check to see if a collection with this name already exists. 
 		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(collection))
@@ -435,17 +434,6 @@ def Collection_Creator(collection_list, cur, resource_id):
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
 		
-		if collection_list.index(collection) == 0:
-			collection_type = 'course'
-		elif collection_list.index(collection) == 1:
-			collection_type = 'chapter'
-		elif collection_list.index(collection) == 2:
-			collection_type = 'sequence'
-		elif collection_list.index(collection) == 3:
-			collection_type = 'vertical'
-		else:
-			collection_type = 'other' 
-
 		# If the collection does not already exist, create it.
 		if not collection_id:
 
@@ -461,7 +449,7 @@ def Collection_Creator(collection_list, cur, resource_id):
 			collection_query += "VALUES ('"
 
 			collection_query += re.escape(collection) + "', '" 
-			collection_query += collection_type + "', '" 
+			collection_query += containers[collection] + "', '" 
 			collection_query += "0"  + "', '" # is_sequential set to false
 			collection_query += "0"  + "', '" # is_deprecated set to false
 			collection_query += "2001-01-01" + "')" # creation_date
