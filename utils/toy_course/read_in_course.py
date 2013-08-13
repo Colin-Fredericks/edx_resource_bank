@@ -103,6 +103,11 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 			# Use the first line to double-check the display_name. (But not for the first file.)
 			if depth > 0:
 				firstline = xmlfile.readline()
+				
+				# If the file starts with whitespace, find the first non-blank line.
+				while firstline.strip() == '':
+					firstline = xmlfile.readline()
+				
 				if 'display_name' in firstline:
 				
 					# If the display name doesn't match the current display_name variable, update the variable.
@@ -192,12 +197,14 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 							# Correct the filepath - swap out colons, add folder and .xml if needed.
 							filepath = filepath.replace(':','/')
+							print filepath
 							if '<problem ' in line:
 								if filepath.find("problem/") != 0:
 									filepath = 'problem/' + filepath   # Note the lack of s.
 								filepath = filepath + '.xml'
 							else:
 								filepath = FixPath(filepath, line)
+							print filepath
 
 						# Recursion happens here.
 						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
@@ -220,7 +227,9 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				# If that name is blank, use the filename.
 				if not display_name:
 					display_name = os.path.basename(xmlfile.name)
+					print display_name
 				name = display_name
+				
 
 				# Use the tag type to set the resource_type to html or problem.
 				if tag_type == 'html':
@@ -321,7 +330,6 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				sql_right += problem_type  + "', '"
 				sql_right += re.escape(solutions_hints_etc)  + "')"
 
-				print containers
 				sql_query = sql_start + sql_left + sql_middle + sql_right
 
 				# If this exact resource already exists, skip it.
