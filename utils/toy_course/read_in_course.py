@@ -197,14 +197,12 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 							# Correct the filepath - swap out colons, add folder and .xml if needed.
 							filepath = filepath.replace(':','/')
-							print filepath
 							if '<problem ' in line:
 								if filepath.find("problem/") != 0:
 									filepath = 'problem/' + filepath   # Note the lack of s.
 								filepath = filepath + '.xml'
 							else:
 								filepath = FixPath(filepath, line)
-							print filepath
 
 						# Recursion happens here.
 						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
@@ -227,9 +225,7 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				# If that name is blank, use the filename.
 				if not display_name:
 					display_name = os.path.basename(xmlfile.name)
-					print display_name
 				name = display_name
-				
 
 				# Use the tag type to set the resource_type to html or problem.
 				if tag_type == 'html':
