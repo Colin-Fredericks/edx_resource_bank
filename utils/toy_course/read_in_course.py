@@ -146,64 +146,65 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 					tag_type = x.tag
 				
 					# If it's an inline container, get its info and add it to the container list.
-					# An inline container has stuff other than whitespace inside the tag.
-					if not x.text.strip() == '':
+					if x.text:
+						# An inline container has stuff other than whitespace inside the tag.
+						if not x.text.strip() == '':
 					
-						# Get the display_name or say that we don't know it.
-						if tag.get('display_name'):
-							tempname = tag.get('display_nme')
-						else:
-							tempname = 'unknown' + tag_type
+							# Get the display_name or say that we don't know it.
+							if tag.get('display_name'):
+								tempname = tag.get('display_nme')
+							else:
+								tempname = 'unknown' + tag_type
 
-						# Add this item to the container dictionary.
-						AddWithoutDuplicates(containers, tempname, tag_type)
+							# Add this item to the container dictionary.
+							AddWithoutDuplicates(containers, tempname, tag_type)
 					
 					# If it's a self-closing container (no stuff in tag), attempt to follow the file it links to.
 					# We're recursively traversing the file tree.
 					else:
 
 						# If this tag has a filename or url_name attribute, use that and go there:
-						if x.tag.get('filename') or x.tag.get('url_name'):
+						if x.get('filename') or x.get('url_name'):
 
 							# Get the display_name from this line to pass lower.
-							if x.tag.get('display_name'):
-								display_name = x.tag.get('display_name')
+							if x.get('display_name'):
+								display_name = x.get('display_name')
 							else:
-								if x.tag.get('filename'):
-									display_name = x.tag.get('filename')
-								elif 'url_name' in line:
-									display_name = x.tag.get('url_name')
+								if x.get('filename'):
+									display_name = x.get('filename')
+								elif x.get('url_name'):
+									display_name = x.get('url_name')
 								else:
 									display_name = 'unknown' + tag_type
 
 							# Need to treat filename="" and url_name="" links slightly differently.
 
-							if x.tag.get('filename'):
+							if x.get('filename'):
 
 								# Get the filepath
-								filepath = x.tag.get('filename')
+								filepath = x.get('filename')
 
 								# Correct the filename - add folder and .xml if needed.
-								if tag_type = 'problem':
+								if tag_type == 'problem':
 									if filepath.find("problems/") != 0:
 										filepath = 'problems/' + filepath   # Note the s.
 									filepath = filepath + '.xml'
 								else:
-									filepath = FixPath(filepath, line)
+									filepath = FixPath(filepath, tag_type)
 
-							if x.tag.get('url_name'):
+							if x.get('url_name'):
 
 								# Get the filepath
-								filepath = re.search('url_name="(.*?)"', line).group(1)
+								filepath = x.get('url_name')
 
 								# Correct the filepath - swap out colons, add folder and .xml if needed.
 								filepath = filepath.replace(':','/')
-								if tag_type = 'problem':
+								if tag_type == 'problem':
 									if filepath.find("problem/") != 0:
 										filepath = 'problem/' + filepath   # Note the lack of s.
 									filepath = filepath + '.xml'
 								else:
-									filepath = FixPath(filepath, line)
+									filepath = FixPath(filepath, tag_type)
 
 							# Add the file we're headed towards to the list.
 							AddWithoutDuplicates(containers, display_name, tag_type)
@@ -211,9 +212,9 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 							# Recursion happens here.
 							BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
 							db.commit()
-						
+					
 							filepaths_found += 1						
-						
+
 				# Move to next tag (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
@@ -388,23 +389,23 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 # Filepath fixer
 ####################################################
 
-def FixPath(filepath, line):
+def FixPath(filepath, tag_type):
 
 	# Filepaths as given in edXML files are incorrect. This touches them up.
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
-	if re.search('<html ', line):
+	if tag_type == 'html':
 		if "problems/" not in filepath and "html/" not in filepath:
 			filepath = 'html/' + filepath
 		if ".html" not in filepath:
 			filepath = filepath + ".html"
-	elif re.search('<vertical ', line):
+	elif tag_type == 'vertical':
 		filepath = 'vertical/' + filepath + '.xml'
-	elif re.search('<sequential ', line):
+	elif tag_type == 'sequential':
 		filepath = 'sequential/' + filepath + '.xml'
-	elif re.search('<chapter ', line):
+	elif tag_type == 'chapter':
 		filepath = 'chapter/' + filepath + '.xml'
-	elif re.search('<course ', line):
+	elif tag_type == 'course':
 		filepath = 'course/' + filepath + '.xml'
 	
 	return filepath
