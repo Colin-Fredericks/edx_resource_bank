@@ -115,10 +115,16 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 					if d_n:
 						if d_n != display_name:
 							display_name = d_n.group(1)
+							# Remove the existing one if we're going to replace it.
+							containers.popitem()
+							AddWithoutDuplicates(containers, display_name, tag_type)
 
 				# If all else fails, this file's name should be its actual filename.
 				elif 'unknown' in display_name:
 					display_name = os.path.basename(xmlfile.name)
+					# Remove the existing one if we're going to replace it.
+					containers.popitem()
+					AddWithoutDuplicates(containers, display_name, tag_type)
 							
 				# Add the current page's name as if it were a collection.
 				# We need to remove it when...
@@ -126,7 +132,7 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				# - discovering that this page is a resource
 				# We also need to add more collections when running into the appropriate kind of tag, 
 				# and remove them when the tag closes.
-				AddWithoutDuplicates(containers, display_name, tag_type)
+				# AddWithoutDuplicates(containers, display_name, tag_type)
 
 
 			# For every line in this file:
@@ -203,6 +209,9 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 								filepath = filepath + '.xml'
 							else:
 								filepath = FixPath(filepath, line)
+
+						# Add the file we're headed towards to the list.
+						AddWithoutDuplicates(containers, display_name, tag_type)
 
 						# Recursion happens here.
 						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
@@ -362,6 +371,8 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
+		# This is not a real item, so remove it from the collection list.
+		containers.popitem()
 
 
 ####################################################
