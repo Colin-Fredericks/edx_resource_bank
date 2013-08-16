@@ -21,8 +21,9 @@ import sys
 import os								# For getting file name
 import re								# regular expressions for searching and escaping
 import MySQLdb							# python-to-mySQL translator
-from collections import OrderedDict		# Ordered dictionary
-from lxml import etree					# XML parser
+from collections import OrderedDict
+# May need to import some sort of XML parser? 
+# What I'm doing is fairly simple, so perhaps not.
 
 
 # Main takes in arguments, connects to the database, and runs BigLoop.
@@ -30,11 +31,11 @@ def main(argv):
 
 	# Check for correct usage
 	if not argv:
-		sys.exit("Please specify an input course.xml file.")
+		sys.exit("Please specify an input file in csv format.")
 	if len(argv) == 1:
-		sys.exit("Usage: python read_in_course.py course.xml")
+		sys.exit("Usage: python read_in_file.py whatever.csv")
 	if argv[1] == "-h":
-		sys.exit("Usage: python read_in_course.py course.xml")
+		sys.exit("Usage: python read_in_file.py whatever.csv")
 
 	# Take in a filename from the command line
 	filename = str(sys.argv[1])
@@ -47,11 +48,11 @@ def main(argv):
 
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
-	
-	
+
+
 	containers = OrderedDict([])
 	depth = 0
-		
+
 	BigLoop(filename, '', filename, containers, depth, cur, db)
 
 	# Clean up the database stuff: Commit all changes, close cursor and database.
@@ -94,39 +95,37 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 		except IOError:
 			# File likely doesn't exist. This error will get caught in a minute anyway.
 			pass
-	
+
 	# open the file for real
 	try:
 		with open(filepath, 'rbU') as xmlfile:
 
-			# Interpret the file as XML
-			xmltree = etree.parse(xmlfile)
-			
-			# Start with the root of this XML document
-			root = xmltree.getroot()
-
-			# Use the first tag in the file to double-check the display_name. (But not for the first file.)
+			# Use the first line to double-check the display_name. (But not for the first file.)
 			if depth > 0:
-				firsttag = root[0]
-				
-				if firsttag.get('display_name'):
-				
+				firstline = xmlfile.readline()
+
+				# If the file starts with whitespace, find the first non-blank line.
+				while firstline.strip() == '':
+					firstline = xmlfile.readline()
+
+				if 'display_name' in firstline:
+
 					# If the display name doesn't match the current display_name variable, update the variable.
-					d_n = firsttag.get('display_name')
+					d_n = re.search('display_name="(.*?)"', firstline)
 					if d_n:
 						if d_n != display_name:
-							display_name = d_n
+							display_name = d_n.group(1)
 							# Remove the existing one if we're going to replace it.
 							containers.popitem()
 							AddWithoutDuplicates(containers, display_name, tag_type)
 
-				# If an "unknown" display name was passed, and we can't find one here, this file's name should be its actual filename.
-				elif 'unknown' in firsttag.get('display_name'):
+				# If all else fails, this file's name should be its actual filename.
+				elif 'unknown' in display_name:
 					display_name = os.path.basename(xmlfile.name)
 					# Remove the existing one if we're going to replace it.
 					containers.popitem()
 					AddWithoutDuplicates(containers, display_name, tag_type)
-							
+
 				# Add the current page's name as if it were a collection.
 				# We need to remove it when...
 				# - returning from an inline container
@@ -136,86 +135,92 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				# AddWithoutDuplicates(containers, display_name, tag_type)
 
 
-			# For every tag in this XML tree:
-			for x in root.iter():
+			# For every line in this file:
+			for line in xmlfile:
 
-				# If this tag is a container:
-				if x.tag == ('course' or 'chapter' or 'sequential' or 'vertical' or 'conditional'):
-				
-					# What kind of container is it?
-					tag_type = x.tag
-				
-					# If it's an inline container, get its info and add it to the container list.
-					if x.text:
-						# An inline container has stuff other than whitespace inside the tag.
-						if not x.text.strip() == '':
-					
-							# Get the display_name or say that we don't know it.
-							if tag.get('display_name'):
-								tempname = tag.get('display_nme')
-							else:
-								tempname = 'unknown' + tag_type
+				# If this line starts an inline container:
+				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line or '<conditional' in line) and ('/>' not in line):
 
-							# Add this item to the container dictionary.
-							AddWithoutDuplicates(containers, tempname, tag_type)
-					
-					# If it's a self-closing container (no stuff in tag), attempt to follow the file it links to.
-					# We're recursively traversing the file tree.
+					# What kind of collection is this?
+					tag_type = re.search('<(\S+)[ >\/]',line).group(1)
+
+					# Get the display_name and add it to the collection list.
+					if 'display_name' in line:
+						tempname = re.search('display_name="(.*?)"', line).group(1)
 					else:
+						tempname = 'unknown ' + tag_type
 
-						# If this tag has a filename or url_name attribute, use that and go there:
-						if x.get('filename') or x.get('url_name'):
+					# Avoids duplicating collections (common with exams and other single-sequence chapters)
+					AddWithoutDuplicates(containers, tempname, tag_type)
 
-							# Get the display_name from this line to pass lower.
-							if x.get('display_name'):
-								display_name = x.get('display_name')
+				# If this line ends an inline container, remove the last item on the collection list.
+				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line or '</conditional>' in line):
+					containers.popitem()
+					pass
+
+
+				# If the tag on this line closes on the same line, attempt to open the file it links to 
+				# and recursively traverse the file tree.
+				# If it's not self-closing, it doesn't actually link to a file. Move on.
+				if '<' in line and '/>' in line:
+
+					# If this line has a filename or url_name attribute, use that and go there:
+					if 'filename' in line or 'url_name' in line:
+
+						# Get info from the tag for this link.
+						tag_type = re.search('<(\S+?) ',line).group(1)
+
+						# Get the display_name from this line to pass lower.
+						if 'display_name' in line:
+							display_name = re.search('display_name="(.*?)"', line).group(1)
+						else:
+							if 'filename' in line:
+								display_name = re.search('filename="(.*?)"', line).group(1)
+							elif 'url_name' in line:
+								display_name = re.search('url_name="(.*?)"', line).group(1)
 							else:
-								if x.get('filename'):
-									display_name = x.get('filename')
-								elif x.get('url_name'):
-									display_name = x.get('url_name')
-								else:
-									display_name = 'unknown' + tag_type
+								display_name = 'unknown collection'
 
-							# Need to treat filename="" and url_name="" links slightly differently.
+						# Need to treat filename="" and url_name="" links slightly differently.
 
-							if x.get('filename'):
+						if 'filename' in line:
 
-								# Get the filepath
-								filepath = x.get('filename')
+							# Get the filepath
+							filepath = re.search('filename="(.*?)"', line).group(1)
 
-								# Correct the filename - add folder and .xml if needed.
-								if tag_type == 'problem':
-									if filepath.find("problems/") != 0:
-										filepath = 'problems/' + filepath   # Note the s.
-									filepath = filepath + '.xml'
-								else:
-									filepath = FixPath(filepath, tag_type)
+							# Correct the filename - add folder and .xml if needed.
+							if '<problem ' in line:
+								if filepath.find("problems/") != 0:
+									filepath = 'problems/' + filepath   # Note the s.
+								filepath = filepath + '.xml'
+							else:
+								filepath = FixPath(filepath, line)
 
-							if x.get('url_name'):
+						if 'url_name' in line:
 
-								# Get the filepath
-								filepath = x.get('url_name')
+							# Get the filepath
+							filepath = re.search('url_name="(.*?)"', line).group(1)
 
-								# Correct the filepath - swap out colons, add folder and .xml if needed.
-								filepath = filepath.replace(':','/')
-								if tag_type == 'problem':
-									if filepath.find("problem/") != 0:
-										filepath = 'problem/' + filepath   # Note the lack of s.
-									filepath = filepath + '.xml'
-								else:
-									filepath = FixPath(filepath, tag_type)
+							# Correct the filepath - swap out colons, add folder and .xml if needed.
+							filepath = filepath.replace(':','/')
+							if '<problem ' in line:
+								if filepath.find("problem/") != 0:
+									filepath = 'problem/' + filepath   # Note the lack of s.
+								filepath = filepath + '.xml'
+							else:
+								filepath = FixPath(filepath, line)
 
-							# Add the file we're headed towards to the list.
-							AddWithoutDuplicates(containers, display_name, tag_type)
+						# Add the file we're headed towards to the list.
+						AddWithoutDuplicates(containers, display_name, tag_type)
 
-							# Recursion happens here.
-							BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
-							db.commit()
-					
-							filepaths_found += 1						
+						# Recursion happens here.
+						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
+						db.commit()
 
-				# Move to next tag (done automatically by the for loop)
+						filepaths_found += 1
+
+
+				# Move to next line (done automatically by the for loop)
 
 			# If there are no self-closing tags with filepaths found in this whole file:
 			if filepaths_found == 0:
@@ -246,7 +251,7 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 				# If the resource type is problem:
 				if resource_type == 'problem':
-				
+
 					# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
 					if re.search('<multiplechoice',text):
 						problem_type = "multiple_choice"
@@ -287,7 +292,7 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 				# Assemble the MySQL INSERT command.
 				sql_start = "SELECT * FROM RDB_resource  WHERE"
-			
+
 				sql_left = "(name, "
 				sql_left += "resource_type, "
 				sql_left += "description, "
@@ -307,9 +312,9 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 				sql_left += "creation_date, "
 				sql_left += "problem_type, "
 				sql_left += "solutions_hints_etc) "
-			
+
 				sql_middle = "= ('"
-			
+
 				sql_right = re.escape(name) + "', '" 
 				sql_right += resource_type  + "', '" 
 				sql_right += re.escape(description)  + "', '" 
@@ -372,7 +377,6 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
 ####################################################
 # Add something to the collection list and avoid duplicates.
-# (Common with single-sequence chapters, e.g. quizzes.)
 # Uses lowercase to avoid database case issues.
 ####################################################
 
@@ -389,25 +393,25 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 # Filepath fixer
 ####################################################
 
-def FixPath(filepath, tag_type):
+def FixPath(filepath, line):
 
 	# Filepaths as given in edXML files are incorrect. This touches them up.
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
-	if tag_type == 'html':
+	if re.search('<html ', line):
 		if "problems/" not in filepath and "html/" not in filepath:
 			filepath = 'html/' + filepath
 		if ".html" not in filepath:
 			filepath = filepath + ".html"
-	elif tag_type == 'vertical':
+	elif re.search('<vertical ', line):
 		filepath = 'vertical/' + filepath + '.xml'
-	elif tag_type == 'sequential':
+	elif re.search('<sequential ', line):
 		filepath = 'sequential/' + filepath + '.xml'
-	elif tag_type == 'chapter':
+	elif re.search('<chapter ', line):
 		filepath = 'chapter/' + filepath + '.xml'
-	elif tag_type == 'course':
+	elif re.search('<course ', line):
 		filepath = 'course/' + filepath + '.xml'
-	
+
 	return filepath
 
 
@@ -435,7 +439,7 @@ def Collection_Creator(containers, cur, resource_id):
 		# If we don't find it, we're doing to double-check with the unescaped name.
 		# I have no idea why this stage is necessary but it is.
 		if collection_id == False:
-		
+
 			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
 
 			try:
@@ -444,7 +448,7 @@ def Collection_Creator(containers, cur, resource_id):
 			except TypeError:
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
-		
+
 		# If the collection does not already exist, create it.
 		if not collection_id:
 
@@ -467,10 +471,10 @@ def Collection_Creator(containers, cur, resource_id):
 
 			cur.execute(collection_query)
 			added_collections += 1
-	
+
 			# Get the ID of the collection I just created.
 			collection_id = cur.lastrowid
-	
+
 		# Link this resource to the collection.
 		resource_insert_query = "INSERT INTO RDB_collection_included_resources "
 		resource_insert_query += "(collection_id, "
