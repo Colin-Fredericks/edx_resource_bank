@@ -37,7 +37,16 @@ def TheLoop(xmltext):
 	# Turn the xml we've been passed into an etree
 	root = etree.fromstring(xmltext)
 	
-	print etree.tostring(root, pretty_print=True)
+	# prints all the tags in the file.
+	# for x in root.iter():
+	#	print x.tag + ' ' + str(x.attrib)
+	
+	# Prints whole file
+	# print etree.tostring(root, pretty_print=True)
+	
+	# prints the fist five tags in the file.
+	print root.tag
+	print root[0].tag + ' ' + str(root[0].attrib)
 
 
 
