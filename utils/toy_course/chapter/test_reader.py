@@ -22,25 +22,23 @@ def main(argv):
 		# Open the file
 		with open(filename, 'rbU') as xmlfile:
 		
-			# Interpret the file as XML
-			xmltree = etree.parse(xmlfile)
-			
-			# Start with the root of this XML document
-			root = xmltree.getroot()
-			
-			# Print the first tag
-			print root[0].tag + ' ' + root.get('display_name')
-			
-			# Find all the self-closing tags.
-			for x in root.iter():
-				if not x.text:
-					if x.get('display_name'):
-						print x.tag + ' ' + x.get('display_name') + ' is self-closing.'
+			xmltext = xmlfile.read()
+		
+			TheLoop(xmltext)
 		
 		# File closed automatically via "with"
 
 	except IOError:
 		print filename + ' not found.'
+
+
+def TheLoop(xmltext):
+
+	# Turn the xml we've been passed into an etree
+	root = etree.fromstring(xmltext)
+	
+	print etree.tostring(root, pretty_print=True)
+
 
 
 
