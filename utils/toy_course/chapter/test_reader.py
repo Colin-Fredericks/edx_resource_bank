@@ -45,9 +45,21 @@ def TheLoop(xmltext):
 	# print etree.tostring(root, pretty_print=True)
 	
 	# prints the fist five tags in the file.
+	"""
 	print root.tag
 	print root[0].tag + ' ' + str(root[0].attrib)
-
+	print root[1].tag + ' ' + str(root[1].attrib)
+	print root[2].tag + ' ' + str(root[2].attrib)
+	print root[3].tag + ' ' + str(root[3].attrib)
+	"""
+	
+	# How many items in this tree?
+	# print len(root)
+	
+	# How many items in each part of the tree?
+	for x in root:
+		print x.tag + ' ' + str(x.attrib)
+		print len(x)
 
 
 

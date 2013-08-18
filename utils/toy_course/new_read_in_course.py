@@ -10,7 +10,7 @@
 
 #########
 # Various concerns:
-# What if the resource already exists in the database? 
+# What if the resource already exists in the database with minor differences?
 # How to find the appropriate resource? Display_name seems to be all we have.
 # May need to have existing resources include a "link to source" field and use those instead.
 # Probably need to do a this-to-that table by hand.
@@ -68,13 +68,13 @@ def main(argv):
 ####################################################
 def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 
-	# try to open the file, to double-check filepath
+	# edX is sloppy with filenames; html and xml may get mixed. 
+	# To double-check filepath, try to open the file. Try swapping and/or adding.
 	try:
 		# If it works, carry on.
 		with open(filepath, 'rbU') as trial:
 			pass
 	except IOError:
-		# edX is sloppy with filenames; html and xml may get mixed. Try swapping and/or adding.
 		if filepath.endswith('.html'):
 			newfilepath = filepath[:len(filepath)-5] + '.xml'
 		elif filepath.endswith('xml'):
@@ -86,45 +86,22 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 			with open(newfilepath, 'rbU') as trial:
 				filepath = newfilepath
 		except IOError:
-			# File likely doesn't exist. This error will get caught in a minute anyway.
+			# File likely doesn't exist. This error will get caught in the next "try" statement anyway.
 			pass
 	
-	# open the file for real
+	# Open the file for real
 	try:
 		with open(filepath, 'rbU') as xmlfile:
 
-			# Use the first tag in the file to double-check the display_name. (But not for the first file.)
-			if depth > 0:
-		
-				if root.get('display_name'):
-		
-					# If the display name doesn't match the current display_name variable, update the variable.
-					d_n = root.get('display_name')
-					if d_n:
-						if d_n != display_name:
-							display_name = d_n
-							# Remove the existing one if we're going to replace it.
-							containers.popitem()
-							AddWithoutDuplicates(containers, display_name, root.tag)
-
-				# If an "unknown" display name was passed, and we can't find one here, this file's name should be its actual filename.
-				elif 'unknown' in display_name:
-					display_name = os.path.basename(xmlfile.name)
-					# Remove the existing one if we're going to replace it.
-					containers.popitem()
-					AddWithoutDuplicates(containers, display_name, root.tag)
-
-			print 'New file: ' + filepath
-			
 			# Get the text from this file.
 			xmltext = xmlfile.read()
 			
-			# If this file is a resource, send it to the Resource Muncher.
-			# Otherwise, it's a container. Send it to the XML processor. 
-			if 'html' in tag_type or 'problem' in tag_type:
-				ResourceMuncher(xmltext, filepath, tag_type, display_name, containers, depth, cur, db)
+			# If this file is a resource, send its text to the Resource Muncher.
+			# Otherwise, it's part of the course structure. Send its text to the XML processor. 
+			if tag_type == 'html' or tag_type == 'problem':
+				ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
 			else:
-				XMLProcessor(xmltext, filepath, tag_type, display_name, containers, depth, cur, db)
+				XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
 
 		# Close file - done automatically via "with"
 	
@@ -138,23 +115,51 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 ####################################################
 # This does the work of examining the XML and traversing it.
 ####################################################
-def XMLProcessor(xmltext, filepath, tag_type, display_name, containers, depth, cur, db):
+def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
 
 	# Keep track of how deep we are so we can exit if we're stuck in a loop.
 	depth += 1
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
 
+	# If we've been passed no actual text, we're done here. Return.
+	if xmltext.strip() == '':
+		return
+
 	# Turn the xml we've been passed into an etree
-	root = etree.fromstring(xmltext)
-	# print etree.tostring(root, pretty_print=True)
-	
+	try:
+		root = etree.fromstring(xmltext)
+	except:
+		print 'Cannot extract XML. Skipping.'
+		return
+		
+	# Use the root tag for this XML to double-check the display_name. (But not for the first file.)
+	if depth > 0:
+
+		if root.get('display_name'):
+
+			# If the display name doesn't match the current display_name variable, update the variable.
+			d_n = root.get('display_name')
+			if d_n:
+				if d_n != display_name:
+					display_name = d_n
+					# Remove the existing one if we're going to replace it.
+					containers.popitem()
+					AddWithoutDuplicates(containers, display_name, root.tag)
+
+		# If an "unknown" display name was passed, and we can't find one here, this file's name should be its actual filename.
+		elif 'unknown' in display_name:
+			display_name = os.path.basename(xmlfile.name)
+			# Remove the existing one if we're going to replace it.
+			containers.popitem()
+			AddWithoutDuplicates(containers, display_name, root.tag)
+
 	# For every tag in this XML tree:
 	for x in root.iter():
 	
-		# Skip comments.
+		# Skip the comments.
 		if x.tag is not etree.Comment:
-
+		
 			# If this is the kind of tag you built edX courses from...
 			if 'course' in x.tag \
 				or 'chapter' in x.tag \
@@ -164,95 +169,101 @@ def XMLProcessor(xmltext, filepath, tag_type, display_name, containers, depth, c
 				or 'problem' in x.tag \
 				or 'html' in x.tag:
 		
-				print x.tag
-	
-				# If it's an inline definition, get its info and add it to the container list.
+				# Are there other tags inside this one? It must be an inline definition rather than a link.
+				# Get this tag's info and add it to the container list.
 				# Then run this function again with the text inside the container.
-				if x.text:
-					print '...is an inline container'
-					# An inline container has stuff other than whitespace inside the tag.
-					if not x.text.strip() == '':
+				if len(x) > 0:
+
+					# Get the display_name or say that we don't know it.
+					if x.get('display_name'):
+						display_name = x.get('display_nme')
+					else:
+						display_name = 'unknown ' + x.tag
 				
-						# Get the display_name or say that we don't know it.
-						if x.get('display_name'):
-							display_name = x.get('display_nme')
-						else:
-							display_name = 'unknown' + x.tag
-						
-						# If this is an HTML snippet or a problem defined inline,
-						# skip it.
-						if 'html' in x.tag or 'problem' in x.tag:
-							print 'Skipping inline ' + x.tag + ' item in file  ' +  + '.'
-						
-						# Add this item to the container dictionary.
-						AddWithoutDuplicates(containers, display_name, x.tag)
-						
-						# Run this routine on the text inside the tag as if it were a file.
-						XMLProcessor(x.text, filepath, x.tag, display_name, containers, depth, cur, db)
+					# If this is an HTML snippet or a problem defined inline, skip it.
+					# Eventually we might want to keep it, but right now I'm not sure how to name it.
+					if 'html' in x.tag or 'problem' in x.tag:
+						print 'Skipping inline ' + x.tag + ' item in file  ' + filepath + '.'
+				
+					# Add this item to the container dictionary.
+					AddWithoutDuplicates(containers, display_name, x.tag)
+				
+					# Run this routine on the text inside the tag as if it were a file.
+					XMLProcessor(x.text, xmlfile, filepath, x.tag, display_name, containers, depth, cur, db)
+				
+					# Once we're done with that, we'll need to strip off the last container.
+					containers.popitem()
 			
-				# If it's a self-closing container (no stuff in tag), attempt to follow the file it links to.
-				# We're recursively traversing the file tree.
+				# If there are no other tags inside this one, attempt to follow the file it links to.
 				else:
-			
-					print '...is a self-closing container'
-
-					# If this tag has a filename or url_name attribute, use that and go there:
-					if x.get('filename') or x.get('url_name'):
-
-						# Get the display_name from this line to pass lower.
-						if x.get('display_name'):
-							display_name = x.get('display_name')
-						else:
-							if x.get('filename'):
-								display_name = x.get('filename')
-							elif x.get('url_name'):
-								display_name = x.get('url_name')
-							else:
-								display_name = 'unknown' + x.tag
-
-						# Need to treat filename="" and url_name="" links slightly differently.
-
-						if x.get('filename'):
-
-							# Get the filepath
-							filepath = x.get('filename')
-
-							# Correct the filename - add folder and .xml if needed.
-							if x.tag == 'problem':
-								if filepath.find("problems/") != 0:
-									filepath = 'problems/' + filepath   # Note the s.
-								filepath = filepath + '.xml'
-							else:
-								filepath = FixPath(filepath, x.tag)
-
-						if x.get('url_name'):
-
-							# Get the filepath
-							filepath = x.get('url_name')
-
-							# Correct the filepath - swap out colons, add folder and .xml if needed.
-							filepath = filepath.replace(':','/')
-							if x.tag == 'problem':
-								if filepath.find("problem/") != 0:
-									filepath = 'problem/' + filepath   # Note the lack of s.
-								filepath = filepath + '.xml'
-							else:
-								filepath = FixPath(filepath, x.tag)
-
-						# Add the file we're headed towards to the list.
-						AddWithoutDuplicates(containers, display_name, x.tag)
-
-						# Recursion happens here, but we need to open the file first.
-						TheOpener(filepath, x.tag, display_name, containers, depth, cur, db)
-						db.commit()
+				
+					FollowFilepath(filepath, x.tag, display_name, containers, depth, cur, db, x)
 
 	# Move to next tag (done automatically by the for loop)
 
 
 ####################################################
+# Fix up the filepath in this tag, and send it to The Opener.
+####################################################
+def FollowFilepath(filepath, tag_name, display_name, containers, depth, cur, db, XMLtag):
+
+	# If this tag has a filename or url_name attribute, use that and go there:
+	if XMLtag.get('filename') or XMLtag.get('url_name'):
+
+		# Get the display_name from this line to pass lower.
+		if XMLtag.get('display_name'):
+			display_name = XMLtag.get('display_name')
+		else:
+			if XMLtag.get('filename'):
+				display_name = XMLtag.get('filename')
+			elif XMLtag.get('url_name'):
+				display_name = XMLtag.get('url_name')
+			else:
+				display_name = 'unknown ' + XMLtag.tag
+
+		# Need to treat filename="" and url_name="" links slightly differently.
+
+		if XMLtag.get('filename'):
+
+			# Get the filepath
+			filepath = XMLtag.get('filename')
+
+			# Correct the filename - add folder and .xml if needed.
+			if XMLtag.tag == 'problem':
+				if filepath.find("problems/") != 0:
+					filepath = 'problems/' + filepath   # Note the s.
+				filepath = filepath + '.xml'
+			else:
+				filepath = FixPath(filepath, XMLtag.tag)
+
+		elif XMLtag.get('url_name'):
+
+			# Get the filepath
+			filepath = XMLtag.get('url_name')
+
+			# Correct the filepath - swap out colons, add folder and .xml if needed.
+			filepath = filepath.replace(':','/')
+			if XMLtag.tag == 'problem':
+				if filepath.find("problem/") != 0:
+					filepath = 'problem/' + filepath   # Note the lack of s.
+				filepath = filepath + '.xml'
+			else:
+				filepath = FixPath(filepath, XMLtag.tag)
+
+		# Add the file we're headed towards to the list.
+		AddWithoutDuplicates(containers, display_name, XMLtag.tag)
+
+		# Recursion happens here, but we need to open the file first.
+		TheOpener(filepath, XMLtag.tag, display_name, containers, depth, cur, db)
+
+	# If this tag doesn't have a link...
+	else:
+		print 'False alarm - no link from ' + filepath + ' ' + XMLTag.tag
+
+####################################################
 # This takes in resources and adds them to the database.
 ####################################################
-def ResourceMuncher(xmltext, filepath, tag_type, display_name, containers, depth, cur, db):
+def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
 
 	# This page is a resource. Remove its name from the collection list.
 	containers.popitem()
