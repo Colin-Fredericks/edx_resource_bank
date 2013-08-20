@@ -175,8 +175,8 @@ def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers,
 				if len(x) > 0:
 
 					# Get the display_name or say that we don't know it.
-					if x.get('display_name'):
-						display_name = x.get('display_nme')
+					if x.get('display_name') is not None:
+						display_name = x.get('display_name')
 					else:
 						display_name = 'unknown ' + x.tag
 				
@@ -212,6 +212,7 @@ def FollowFilepath(filepath, tag_name, display_name, containers, depth, cur, db,
 
 		# Get the display_name from this line to pass lower.
 		if XMLtag.get('display_name'):
+			print display_name
 			display_name = XMLtag.get('display_name')
 		else:
 			if XMLtag.get('filename'):
@@ -221,8 +222,7 @@ def FollowFilepath(filepath, tag_name, display_name, containers, depth, cur, db,
 			else:
 				display_name = 'unknown ' + XMLtag.tag
 
-		# Need to treat filename="" and url_name="" links slightly differently.
-
+		# When creating the filepath, we need to treat filename="" and url_name="" links slightly differently.
 		if XMLtag.get('filename'):
 
 			# Get the filepath
@@ -255,10 +255,13 @@ def FollowFilepath(filepath, tag_name, display_name, containers, depth, cur, db,
 
 		# Recursion happens here, but we need to open the file first.
 		TheOpener(filepath, XMLtag.tag, display_name, containers, depth, cur, db)
+		
+		# Done with a level of recursion, pop off the last collection.
+		containers.popitem()
 
 	# If this tag doesn't have a link...
 	else:
-		print 'False alarm - no link from ' + filepath + ' ' + XMLTag.tag
+		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
 
 ####################################################
 # This takes in resources and adds them to the database.
@@ -266,7 +269,7 @@ def FollowFilepath(filepath, tag_name, display_name, containers, depth, cur, db,
 def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
 
 	# This page is a resource. Remove its name from the collection list.
-	containers.popitem()
+	# containers.popitem()
 
 	# We're going to INSERT a new resource into the database.
 
