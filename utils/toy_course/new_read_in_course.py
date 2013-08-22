@@ -99,26 +99,36 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 			xmltext = xmlfile.read()
 			
 			# If this file is a resource, send its text to the Resource Muncher.
-			# Otherwise, it's part of the course structure. Send its text to the XML processor. 
+			# Otherwise, it's part of the course structure. Send its XML structure to the XML processor. 
 			if tag_type == 'html' or tag_type == 'problem':
 				ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
 			else:
-				XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
+				# Turn the xml into an etree
+				try:
+					root = etree.fromstring(xmltext)
+				except:
+					print 'Cannot extract XML. Skipping.'
+					return
+		
+				XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
 
+				# Every time we come back from processing XML, pop the last collection.
+				try:
+					containers.popitem()
+				except:
+					print 'Done.'
+				
 		# Close file - done automatically via "with"
 	
 	# If no file...
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
-		# This is not a real item, so remove it from the collection list.
-		# containers.popitem()
-		print 'Popping ' + str(containers.popitem())
 		
 
 ####################################################
 # This does the work of examining the XML and traversing it.
 ####################################################
-def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
+def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
 
 	print 'Processing ' + tag_type + ': ' + display_name
 
@@ -127,13 +137,6 @@ def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers,
 	if depth > 10:
 		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
 
-	# Turn the xml we've been passed into an etree
-	try:
-		root = etree.fromstring(xmltext)
-	except:
-		print 'Cannot extract XML. Skipping.'
-		return
-		
 	# Use the root tag for this XML to double-check the current display_name. (But not for the first file.)
 	if depth > 0:
 
@@ -145,16 +148,14 @@ def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers,
 				if d_n != display_name:
 					display_name = d_n
 					# Remove the existing one if we're going to replace it.
-					# containers.popitem()
-					print 'Popping ' + str(containers.popitem())
+					containers.popitem()
 					AddWithoutDuplicates(containers, display_name, root.tag)
 
 		# If an "unknown" display name was passed, and we can't find one here, this file's name should be its actual filename.
 		elif 'unknown' in display_name:
 			display_name = os.path.basename(xmlfile.name)
 			# Remove the existing one if we're going to replace it.
-			# containers.popitem()
-			print 'Popping ' + str(containers.popitem())
+			containers.popitem()
 			AddWithoutDuplicates(containers, display_name, root.tag)
 
 	# If this is a self-closing tag file, go to the file it links to.
@@ -203,12 +204,11 @@ def XMLProcessor(xmltext, xmlfile, filepath, tag_type, display_name, containers,
 					AddWithoutDuplicates(containers, display_name, x.tag)
 					
 					# Run this routine on the text inside the tag as if it were a file.
-					XMLProcessor(GetAllText(x), xmlfile, filepath, x.tag, display_name, containers, depth, cur, db)
+					XMLProcessor(x, xmlfile, filepath, x.tag, display_name, containers, depth, cur, db)
+					
+					# Every time we come back from processing XML, pop the last collection.
+					print 'Popping ' + str(containers.popitem()) + ' at R.'
 				
-					# Once we're done with that, we'll need to strip off the last container.
-					# containers.popitem()
-					print 'Popping ' + str(containers.popitem())
-			
 				# If there are no other tags inside this one, attempt to follow the file it links to.
 				else:
 				
@@ -272,10 +272,6 @@ def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db,
 		# Open the file.
 		TheOpener(filepath, XMLtag.tag, display_name, containers, depth, cur, db)
 		
-		# Done with a level of recursion, pop off the last collection.
-		# containers.popitem()
-		print 'Popping ' + str(containers.popitem())
-
 	# If this tag doesn't have a link...
 	else:
 		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
@@ -288,9 +284,7 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 	print 'Munching ' + tag_type + ': ' + display_name
 
 	# This page is a resource. Remove its name from the collection list.
-	# containers.popitem()
-	# print 'Popping ' + str(containers.popitem())
-
+	containers.popitem()
 
 	# We're going to INSERT a new resource into the database.
 
@@ -436,24 +430,14 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 	print 'Adding ' + tag_type + ': ' + collection + ' to collection list.'
 
 	for x in containers:
+		# If the name of the collection matches, add the type of collection to the name.
 		if x.lower() == collection.lower():
 			collection += ' ' + tag_type
+		# If the type of this collection is the same as an existing one, remove the old one.
+		if containers[x] == tag_type:
+			containers.popitem()
 
 	containers[collection] = tag_type
-
-####################################################
-# Gets all the tags and text from inside an XML tag.
-# Returns a string.
-####################################################
-
-def GetAllText(node):
-    from lxml.etree import tostring
-    from itertools import chain
-    parts = ([node.text] +
-            list(chain(*([c.text, tostring(c), c.tail] for c in node.getchildren()))) +
-            [node.tail])
-    # filter removes possible Nones in texts and tails
-    return ''.join(filter(None, parts))
 
 ####################################################
 # Filepath fixer
