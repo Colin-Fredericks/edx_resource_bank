@@ -68,8 +68,6 @@ def main(argv):
 ####################################################
 def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 
-	print 'Opening ' + tag_type + ': ' + filepath
-
 	# edX is sloppy with filenames; html and xml may get mixed. 
 	# To double-check filepath, try to open the file. Try swapping and/or adding.
 	try:
@@ -129,8 +127,6 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 # This does the work of examining the XML and traversing it.
 ####################################################
 def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
-
-	print 'Processing ' + tag_type + ': ' + display_name
 
 	# Keep track of how deep we are so we can exit if we're stuck in a loop.
 	depth += 1
@@ -207,7 +203,7 @@ def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, de
 					XMLProcessor(x, xmlfile, filepath, x.tag, display_name, containers, depth, cur, db)
 					
 					# Every time we come back from processing XML, pop the last collection.
-					print 'Popping ' + str(containers.popitem()) + ' at R.'
+					containers.popitem()
 				
 				# If there are no other tags inside this one, attempt to follow the file it links to.
 				else:
@@ -221,8 +217,6 @@ def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, de
 # Fix up the filepath in this tag, and send it to The Opener.
 ####################################################
 def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db, XMLtag):
-
-	print 'Prepping link to follow ' + tag_type + ': ' + filepath
 
 	# If this tag has a filename or url_name attribute, use that and go there:
 	if XMLtag.get('filename') or XMLtag.get('url_name'):
@@ -280,8 +274,6 @@ def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db,
 # This takes in resources and adds them to the database.
 ####################################################
 def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
-
-	print 'Munching ' + tag_type + ': ' + display_name
 
 	# This page is a resource. Remove its name from the collection list.
 	containers.popitem()
@@ -427,17 +419,15 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 
 def AddWithoutDuplicates(containers, collection, tag_type):
 
-	print 'Adding ' + tag_type + ': ' + collection + ' to collection list.'
-
 	for x in containers:
 		# If the name of the collection matches, add the type of collection to the name.
-		if x.lower() == collection.lower():
+		if containers[x].lower() == collection.lower():
 			collection += ' ' + tag_type
 		# If the type of this collection is the same as an existing one, remove the old one.
-		if containers[x] == tag_type:
+		if x == tag_type:
 			containers.popitem()
 
-	containers[collection] = tag_type
+	containers[tag_type] = collection
 
 ####################################################
 # Filepath fixer
@@ -471,8 +461,6 @@ def FixPath(filepath, tag_type):
 ####################################################
 
 def Collection_Creator(containers, cur, resource_id):
-
-	print 'Adding collections: ' + str(containers)
 
 	added_collections = 0
 
@@ -515,8 +503,8 @@ def Collection_Creator(containers, cur, resource_id):
 
 			collection_query += "VALUES ('"
 
-			collection_query += re.escape(collection) + "', '" 
-			collection_query += containers[collection] + "', '" 
+			collection_query += re.escape(containers[collection]) + "', '" 
+			collection_query += collection + "', '" 
 			collection_query += "1"  + "', '" # is_sequential set to true
 			collection_query += "0"  + "', '" # is_deprecated set to false
 			collection_query += "2001-01-01" + "')" # creation_date
