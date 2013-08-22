@@ -467,7 +467,7 @@ def Collection_Creator(containers, cur, resource_id):
 	for collection in containers:
 
 		# Check to see if a collection with this name already exists. 
-		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(collection))
+		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(containers[collection]))
 
 		try:
 			# If it does exist, get the id for that collection.
@@ -480,7 +480,7 @@ def Collection_Creator(containers, cur, resource_id):
 		# I have no idea why this stage is necessary but it is.
 		if collection_id == False:
 		
-			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
+			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", containers[collection])
 
 			try:
 				# If it does exist, get the id for that collection.
