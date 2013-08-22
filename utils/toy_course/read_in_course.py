@@ -1,20 +1,19 @@
 #!/usr/bin/python
 
-#########
-# The goal here is to strip all the text out of an existing edX course and 
-#  use it to provide the "text" fields for the resource databse.
+######### The Goals: #########
+# Strip all the text out of an existing edX course and use it to 
+#  provide the "text" fields for the resource databse.
 # We're traversing the edXML file structure looking for filepaths that end in resources, 
 #  going as deep as we need to, and creating resources along the way.
 # The general approach is recursive.
-#########
+##############################
 
-#########
-# Various concerns:
+######### Various concerns: #########
 # What if the resource already exists in the database with minor differences?
 # How to find the appropriate resource? Display_name seems to be all we have.
 # May need to have existing resources include a "link to source" field and use those instead.
 # Probably need to do a this-to-that table by hand.
-#########
+#####################################
 
 
 import sys
@@ -60,7 +59,6 @@ def main(argv):
 	db.commit()
 	cur.close()
 	db.close()
-
 
 
 ####################################################
@@ -210,8 +208,6 @@ def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, de
 				
 					FollowFilepath(filepath, x.tag, display_name, containers, depth, cur, db, x)
 
-	# Move to next tag (done automatically by the for loop)
-
 
 ####################################################
 # Fix up the filepath in this tag, and send it to The Opener.
@@ -269,6 +265,7 @@ def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db,
 	# If this tag doesn't have a link...
 	else:
 		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
+
 
 ####################################################
 # This takes in resources and adds them to the database.
@@ -416,7 +413,6 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 # (Common with single-sequence chapters, e.g. quizzes.)
 # Uses lowercase to avoid database case issues.
 ####################################################
-
 def AddWithoutDuplicates(containers, collection, tag_type):
 
 	for x in containers:
@@ -429,10 +425,10 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 
 	containers[tag_type] = collection
 
+
 ####################################################
 # Filepath fixer
 ####################################################
-
 def FixPath(filepath, tag_type):
 
 	# Filepaths as given in edXML files are incorrect. This touches them up.
@@ -459,7 +455,6 @@ def FixPath(filepath, tag_type):
 # Automated Collection Creation!
 # Now with Multiple Collections!
 ####################################################
-
 def Collection_Creator(containers, cur, resource_id):
 
 	added_collections = 0
