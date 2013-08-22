@@ -10,7 +10,7 @@
 
 #########
 # Various concerns:
-# What if the resource already exists in the database? 
+# What if the resource already exists in the database with minor differences?
 # How to find the appropriate resource? Display_name seems to be all we have.
 # May need to have existing resources include a "link to source" field and use those instead.
 # Probably need to do a this-to-that table by hand.
@@ -21,21 +21,22 @@ import sys
 import os								# For getting file name
 import re								# regular expressions for searching and escaping
 import MySQLdb							# python-to-mySQL translator
-from collections import OrderedDict
-# May need to import some sort of XML parser? 
-# What I'm doing is fairly simple, so perhaps not.
+from collections import OrderedDict		# Ordered dictionary
+from lxml import etree					# XML parser
 
 
-# Main takes in arguments, connects to the database, and runs BigLoop.
+####################################################
+# Main takes in arguments, connects to the database, and runs TheOpener.
+####################################################
 def main(argv):
 
 	# Check for correct usage
 	if not argv:
-		sys.exit("Please specify an input file in csv format.")
+		sys.exit("Please specify an input course.xml file.")
 	if len(argv) == 1:
-		sys.exit("Usage: python read_in_file.py whatever.csv")
+		sys.exit("Usage: python read_in_course.py course.xml")
 	if argv[1] == "-h":
-		sys.exit("Usage: python read_in_file.py whatever.csv")
+		sys.exit("Usage: python read_in_course.py course.xml")
 
 	# Take in a filename from the command line
 	filename = str(sys.argv[1])
@@ -48,40 +49,32 @@ def main(argv):
 
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
-
-
+	
+	
 	containers = OrderedDict([])
 	depth = 0
-
-	BigLoop(filename, '', filename, containers, depth, cur, db)
+		
+	TheOpener(filename, '', filename, containers, depth, cur, db)
 
 	# Clean up the database stuff: Commit all changes, close cursor and database.
 	db.commit()
 	cur.close()
 	db.close()
 
-# This is the recursive function that does most of our work.
-def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 
-	# Note: The containers are being passed by REFERENCE, not by value.
-	# We need to manually remove entries.
 
-	if depth > 10:
-		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
+####################################################
+# Reads in files and sends them to the XML Processor or the Resource Muncher
+####################################################
+def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 
-	# Various trackers
-	# linked_objectives = 0 
-	added_resources = 0
-	added_collections = 0
-	filepaths_found = 0
-
-	# try to open the file, to double-check filepath
+	# edX is sloppy with filenames; html and xml may get mixed. 
+	# To double-check filepath, try to open the file. Try swapping and/or adding.
 	try:
 		# If it works, carry on.
 		with open(filepath, 'rbU') as trial:
 			pass
 	except IOError:
-		# edX is sloppy with filenames; html and xml may get mixed. Try swapping and/or adding.
 		if filepath.endswith('.html'):
 			newfilepath = filepath[:len(filepath)-5] + '.xml'
 		elif filepath.endswith('xml'):
@@ -93,325 +86,372 @@ def BigLoop(filepath, tag_type, display_name, containers, depth, cur, db):
 			with open(newfilepath, 'rbU') as trial:
 				filepath = newfilepath
 		except IOError:
-			# File likely doesn't exist. This error will get caught in a minute anyway.
+			# File likely doesn't exist. This error will get caught in the next "try" statement anyway.
 			pass
-
-	# open the file for real
+	
+	# Open the file for real
 	try:
 		with open(filepath, 'rbU') as xmlfile:
 
-			# Use the first line to double-check the display_name. (But not for the first file.)
-			if depth > 0:
-				firstline = xmlfile.readline()
+			# Get the text from this file.
+			xmltext = xmlfile.read()
+			
+			# If this file is a resource, send its text to the Resource Muncher.
+			# Otherwise, it's part of the course structure. Send its XML structure to the XML processor. 
+			if tag_type == 'html' or tag_type == 'problem':
+				ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
+			else:
+				# Turn the xml into an etree
+				try:
+					root = etree.fromstring(xmltext)
+				except:
+					print 'Cannot extract XML. Skipping.'
+					return
+		
+				XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db)
 
-				# If the file starts with whitespace, find the first non-blank line.
-				while firstline.strip() == '':
-					firstline = xmlfile.readline()
-
-				if 'display_name' in firstline:
-
-					# If the display name doesn't match the current display_name variable, update the variable.
-					d_n = re.search('display_name="(.*?)"', firstline)
-					if d_n:
-						if d_n != display_name:
-							display_name = d_n.group(1)
-							# Remove the existing one if we're going to replace it.
-							containers.popitem()
-							AddWithoutDuplicates(containers, display_name, tag_type)
-
-				# If all else fails, this file's name should be its actual filename.
-				elif 'unknown' in display_name:
-					display_name = os.path.basename(xmlfile.name)
-					# Remove the existing one if we're going to replace it.
+				# Every time we come back from processing XML, pop the last collection.
+				try:
 					containers.popitem()
-					AddWithoutDuplicates(containers, display_name, tag_type)
-
-				# Add the current page's name as if it were a collection.
-				# We need to remove it when...
-				# - returning from an inline container
-				# - discovering that this page is a resource
-				# We also need to add more collections when running into the appropriate kind of tag, 
-				# and remove them when the tag closes.
-				# AddWithoutDuplicates(containers, display_name, tag_type)
-
-
-			# For every line in this file:
-			for line in xmlfile:
-
-				# If this line starts an inline container:
-				if ('<course' in line or '<chapter' in line or '<sequential' in line or '<vertical' in line or '<conditional' in line) and ('/>' not in line):
-
-					# What kind of collection is this?
-					tag_type = re.search('<(\S+)[ >\/]',line).group(1)
-
-					# Get the display_name and add it to the collection list.
-					if 'display_name' in line:
-						tempname = re.search('display_name="(.*?)"', line).group(1)
-					else:
-						tempname = 'unknown ' + tag_type
-
-					# Avoids duplicating collections (common with exams and other single-sequence chapters)
-					AddWithoutDuplicates(containers, tempname, tag_type)
-
-				# If this line ends an inline container, remove the last item on the collection list.
-				if ('</course>' in line or '</chapter>' in line or '</sequential>' in line or '</vertical>' in line or '</conditional>' in line):
-					containers.popitem()
-					pass
-
-
-				# If the tag on this line closes on the same line, attempt to open the file it links to 
-				# and recursively traverse the file tree.
-				# If it's not self-closing, it doesn't actually link to a file. Move on.
-				if '<' in line and '/>' in line:
-
-					# If this line has a filename or url_name attribute, use that and go there:
-					if 'filename' in line or 'url_name' in line:
-
-						# Get info from the tag for this link.
-						tag_type = re.search('<(\S+?) ',line).group(1)
-
-						# Get the display_name from this line to pass lower.
-						if 'display_name' in line:
-							display_name = re.search('display_name="(.*?)"', line).group(1)
-						else:
-							if 'filename' in line:
-								display_name = re.search('filename="(.*?)"', line).group(1)
-							elif 'url_name' in line:
-								display_name = re.search('url_name="(.*?)"', line).group(1)
-							else:
-								display_name = 'unknown collection'
-
-						# Need to treat filename="" and url_name="" links slightly differently.
-
-						if 'filename' in line:
-
-							# Get the filepath
-							filepath = re.search('filename="(.*?)"', line).group(1)
-
-							# Correct the filename - add folder and .xml if needed.
-							if '<problem ' in line:
-								if filepath.find("problems/") != 0:
-									filepath = 'problems/' + filepath   # Note the s.
-								filepath = filepath + '.xml'
-							else:
-								filepath = FixPath(filepath, line)
-
-						if 'url_name' in line:
-
-							# Get the filepath
-							filepath = re.search('url_name="(.*?)"', line).group(1)
-
-							# Correct the filepath - swap out colons, add folder and .xml if needed.
-							filepath = filepath.replace(':','/')
-							if '<problem ' in line:
-								if filepath.find("problem/") != 0:
-									filepath = 'problem/' + filepath   # Note the lack of s.
-								filepath = filepath + '.xml'
-							else:
-								filepath = FixPath(filepath, line)
-
-						# Add the file we're headed towards to the list.
-						AddWithoutDuplicates(containers, display_name, tag_type)
-
-						# Recursion happens here.
-						BigLoop(filepath, tag_type, display_name, containers, depth+1, cur, db)
-						db.commit()
-
-						filepaths_found += 1
-
-
-				# Move to next line (done automatically by the for loop)
-
-			# If there are no self-closing tags with filepaths found in this whole file:
-			if filepaths_found == 0:
-
-				# This page is a resource. Remove its name from the collection list.
-				containers.popitem()
-
-				# We're going to INSERT a new resource into the database.
-
-				# Use the display_name that was passed (as ammended above) to name this resource.
-				# If that name is blank, use the filename.
-				if not display_name:
-					display_name = os.path.basename(xmlfile.name)
-				name = display_name
-
-				# Use the tag type to set the resource_type to html or problem.
-				if tag_type == 'html':
-					resource_type = 'html'
-				elif tag_type == 'problem':
-					resource_type = 'problem'
-				else:
-					resource_type = 'other'
-					# (What to do with videos?)
-
-				# Take the entire text of this file and dump it into the "text" field.
-				with open(filepath, 'rbU') as tempfile:
-					text = tempfile.read()
-
-				# If the resource type is problem:
-				if resource_type == 'problem':
-
-					# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
-					if re.search('<multiplechoice',text):
-						problem_type = "multiple_choice"
-					elif re.search('<numericalresponse',text):
-						problem_type = 'numerical'
-					elif re.search('<formularesponse', text):
-						problem_type = 'formula'
-					elif re.search('<symbolicresponse', text):
-						problem_type = 'formula'
-					elif re.search('<choiceresponse', text):
-						problem_type = 'select_all'
-					elif re.search('<custom', text):
-						problem_type = 'custom'
-					else:
-						# If none of these tags are found, go back and set the resource_type to "other"
-						problem_type = 'other'
-				else:
-					problem_type = 'not_a_problem'
-
-				# Placeholder values.
-				# Note that we'll need to link learning objectives later.
-				description = ''
-				is_deprecated = '0'		# 0 for false in SQL
-				hide_info = '0'			# 0 for false in SQL
-				resource_file = ''
-				grade_level = ''
-				intended_use = ''
-				license = ''
-				license_link = ''
-				license_other_notes = ''
-				source = ''
-				language = ''
-				author = ''
-				comments = ''
-				creation_date = '2001-01-01'
-				solutions_hints_etc = ''
-
-
-				# Assemble the MySQL INSERT command.
-				sql_start = "SELECT * FROM RDB_resource  WHERE"
-
-				sql_left = "(name, "
-				sql_left += "resource_type, "
-				sql_left += "description, "
-				sql_left += "is_deprecated, "
-				sql_left += "hide_info, "
-				sql_left += "text, "
-				sql_left += "resource_file, "
-				sql_left += "grade_level, "
-				sql_left += "intended_use, "
-				sql_left += "license, "
-				sql_left += "license_link, "
-				sql_left += "license_other_notes, "
-				sql_left += "source, "
-				sql_left += "language, "
-				sql_left += "author, "
-				sql_left += "comments, "
-				sql_left += "creation_date, "
-				sql_left += "problem_type, "
-				sql_left += "solutions_hints_etc) "
-
-				sql_middle = "= ('"
-
-				sql_right = re.escape(name) + "', '" 
-				sql_right += resource_type  + "', '" 
-				sql_right += re.escape(description)  + "', '" 
-				sql_right += is_deprecated  + "', '" 
-				sql_right += hide_info  + "', '" 
-				sql_right += re.escape(text)  + "', '"
-				sql_right += resource_file  + "', '"
-				sql_right += grade_level  + "', '"
-				sql_right += intended_use  + "', '"
-				sql_right += re.escape(license)  + "', '"
-				sql_right += re.escape(license_link)  + "', '"
-				sql_right += re.escape(license_other_notes)  + "', '"
-				sql_right += source  + "', '"
-				sql_right += language  + "', '"
-				sql_right += re.escape(author)  + "', '"
-				sql_right += re.escape(comments)  + "', '"
-				sql_right += creation_date  + "', '"
-				sql_right += problem_type  + "', '"
-				sql_right += re.escape(solutions_hints_etc)  + "')"
-
-				sql_query = sql_start + sql_left + sql_middle + sql_right
-
-				# If this exact resource already exists, skip it.
-				if cur.execute(sql_query):
-					print "Skipping duplicate entry " + name
-
-				# If it's not a duplicate entry:
-				else:
-
-					# Run an "INSERT" command to put in this resource
-					sql_start = "INSERT RDB_resource "
-					sql_middle = "VALUES ('" 
-
-					sql_query = sql_start + sql_left + sql_middle + sql_right
-
-					cur.execute(sql_query)
-					added_resources += 1
-
-					# Get the ID of the resource I just created
-					resource_id = cur.lastrowid
-
-					# Link this resource to the current_collection, creating the collection if necessary.
-
-					################
-					# Automated Collection Creation!
-					# The Collection_Creator function returns the number of new collections that were added. Add 'em up.
-					###############
-
-					added_collections += Collection_Creator(containers, cur, resource_id)
-					db.commit()
-
-
-		# Close the file -- done automatically via the "with" command
-
+				except:
+					print 'Done.'
+				
+		# Close file - done automatically via "with"
+	
+	# If no file...
 	except IOError:
 		print 'filepath ' + filepath + ' not associated with file.'
-		# This is not a real item, so remove it from the collection list.
-		containers.popitem()
+		
+
+####################################################
+# This does the work of examining the XML and traversing it.
+####################################################
+def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
+
+	# Keep track of how deep we are so we can exit if we're stuck in a loop.
+	depth += 1
+	if depth > 10:
+		sys.exit("Potential infinite loop detected. Exiting. Check for files that reference themselves?")
+
+	# Use the root tag for this XML to double-check the current display_name. (But not for the first file.)
+	if depth > 0:
+
+		if root.get('display_name'):
+
+			# If the display name doesn't match the current display_name variable, update the variable.
+			d_n = root.get('display_name')
+			if d_n:
+				if d_n != display_name:
+					display_name = d_n
+					# Remove the existing one if we're going to replace it.
+					containers.popitem()
+					AddWithoutDuplicates(containers, display_name, root.tag)
+
+		# If an "unknown" display name was passed, and we can't find one here, this file's name should be its actual filename.
+		elif 'unknown' in display_name:
+			display_name = os.path.basename(xmlfile.name)
+			# Remove the existing one if we're going to replace it.
+			containers.popitem()
+			AddWithoutDuplicates(containers, display_name, root.tag)
+
+	# If this is a self-closing tag file, go to the file it links to.
+	if len(root) == 0:
+		
+		# Get the display_name from the current tag, or say that we don't know it.
+		if root.get('display_name') is not None:
+			display_name = root.get('display_name')
+		else:
+			display_name = 'unknown ' + root.tag
+	
+		FollowFilepath(filepath, root.tag, display_name, containers, depth, cur, db, root)
+		
+	# For every tag in this XML tree:
+	for x in root:
+	
+		# Skip the comments.
+		if x.tag is not etree.Comment:
+		
+			# If this is the kind of tag you built edX courses from...
+			if 'course' in x.tag \
+				or 'chapter' in x.tag \
+				or 'sequential' in x.tag \
+				or 'vertical' in x.tag \
+				or 'conditional' in x.tag \
+				or 'problem' in x.tag \
+				or 'html' in x.tag:
+		
+				# Are there other tags inside this one? If so, it must be an inline definition rather than a link.
+				# Get this tag's info and add it to the container list.
+				# Then run this function again with the text inside the container.
+				if len(x) > 0:
+
+					# Get the display_name from the current tag, or say that we don't know it.
+					if x.get('display_name') is not None:
+						display_name = x.get('display_name')
+					else:
+						display_name = 'unknown ' + x.tag
+				
+					# If this is an HTML snippet or a problem defined inline, skip it.
+					# Eventually we might want to keep these, but right now I'm not sure how to name them.
+					if 'html' in x.tag or 'problem' in x.tag:
+						print 'Skipping inline ' + x.tag + ' item in file  ' + filepath + '.'
+				
+					# Add this tag to the container dictionary.
+					AddWithoutDuplicates(containers, display_name, x.tag)
+					
+					# Run this routine on the text inside the tag as if it were a file.
+					XMLProcessor(x, xmlfile, filepath, x.tag, display_name, containers, depth, cur, db)
+					
+					# Every time we come back from processing XML, pop the last collection.
+					containers.popitem()
+				
+				# If there are no other tags inside this one, attempt to follow the file it links to.
+				else:
+				
+					FollowFilepath(filepath, x.tag, display_name, containers, depth, cur, db, x)
+
+	# Move to next tag (done automatically by the for loop)
+
+
+####################################################
+# Fix up the filepath in this tag, and send it to The Opener.
+####################################################
+def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db, XMLtag):
+
+	# If this tag has a filename or url_name attribute, use that and go there:
+	if XMLtag.get('filename') or XMLtag.get('url_name'):
+
+		# Get the display_name from this tag to pass lower.
+		if XMLtag.get('display_name'):
+			display_name = XMLtag.get('display_name')
+		else:
+			if XMLtag.get('filename'):
+				display_name = XMLtag.get('filename')
+			elif XMLtag.get('url_name'):
+				display_name = XMLtag.get('url_name')
+			else:
+				display_name = 'unknown ' + XMLtag.tag
+
+		# When creating the filepath, we need to treat filename="" and url_name="" links slightly differently.
+		if XMLtag.get('filename'):
+
+			# Get the filepath
+			filepath = XMLtag.get('filename')
+
+			# Correct the filepath - add folder and .xml if needed.
+			if XMLtag.tag == 'problem':
+				if filepath.find("problems/") != 0:
+					filepath = 'problems/' + filepath   # Note the s.
+				filepath = filepath + '.xml'
+			else:
+				filepath = FixPath(filepath, XMLtag.tag)
+
+		elif XMLtag.get('url_name'):
+
+			# Get the filepath
+			filepath = XMLtag.get('url_name')
+
+			# Correct the filepath - swap out colons, add folder and .xml if needed.
+			filepath = filepath.replace(':','/')
+			if XMLtag.tag == 'problem':
+				if filepath.find("problem/") != 0:
+					filepath = 'problem/' + filepath   # Note the lack of s.
+				filepath = filepath + '.xml'
+			else:
+				filepath = FixPath(filepath, XMLtag.tag)
+
+		# Add the file we're headed towards to the list.
+		AddWithoutDuplicates(containers, display_name, XMLtag.tag)
+
+		# Open the file.
+		TheOpener(filepath, XMLtag.tag, display_name, containers, depth, cur, db)
+		
+	# If this tag doesn't have a link...
+	else:
+		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
+
+####################################################
+# This takes in resources and adds them to the database.
+####################################################
+def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
+
+	# This page is a resource. Remove its name from the collection list.
+	containers.popitem()
+
+	# We're going to INSERT a new resource into the database.
+
+	# Use the display_name that was passed (as ammended above) to name this resource.
+	# If that name is blank, use the filename.
+	if not display_name:
+		display_name = os.path.basename(xmlfile.name)
+	name = display_name
+
+	# Use the tag type to set the resource_type to html or problem.
+	if tag_type == 'html':
+		resource_type = 'html'
+	elif tag_type == 'problem':
+		resource_type = 'problem'
+	else:
+		resource_type = 'other'
+		# (What to do with videos?)
+
+	# Take the entire text of this file and dump it into the "text" field.
+	text = xmltext
+
+	# If the resource type is problem:
+	if resource_type == 'problem':
+	
+		# Use regex to set problem_type based on whether it's <multiplechoice>, <numericresponse>, <formularesponse>, etc.
+		if re.search('<multiplechoice', text):
+			problem_type = "multiple_choice"
+		elif re.search('<numericalresponse', text):
+			problem_type = 'numerical'
+		elif re.search('<formularesponse', text):
+			problem_type = 'formula'
+		elif re.search('<symbolicresponse', text):
+			problem_type = 'formula'
+		elif re.search('<choiceresponse', text):
+			problem_type = 'select_all'
+		elif re.search('<custom', text):
+			problem_type = 'custom'
+		else:
+			# If none of these tags are found, go back and set the resource_type to "other"
+			problem_type = 'other'
+	else:
+		problem_type = 'not_a_problem'
+
+	# Placeholder values.
+	# Note that we'll need to link learning objectives later.
+	description = ''
+	is_deprecated = '0'		# 0 for false in SQL
+	hide_info = '0'			# 0 for false in SQL
+	resource_file = ''
+	grade_level = ''
+	intended_use = ''
+	license = ''
+	license_link = ''
+	license_other_notes = ''
+	source = ''
+	language = ''
+	author = ''
+	comments = ''
+	creation_date = '2001-01-01'
+	solutions_hints_etc = ''
+
+
+	# Assemble the MySQL INSERT command.
+	sql_start = "SELECT * FROM RDB_resource  WHERE"
+
+	sql_left = "(name, "
+	sql_left += "resource_type, "
+	sql_left += "description, "
+	sql_left += "is_deprecated, "
+	sql_left += "hide_info, "
+	sql_left += "text, "
+	sql_left += "resource_file, "
+	sql_left += "grade_level, "
+	sql_left += "intended_use, "
+	sql_left += "license, "
+	sql_left += "license_link, "
+	sql_left += "license_other_notes, "
+	sql_left += "source, "
+	sql_left += "language, "
+	sql_left += "author, "
+	sql_left += "comments, "
+	sql_left += "creation_date, "
+	sql_left += "problem_type, "
+	sql_left += "solutions_hints_etc) "
+
+	sql_middle = "= ('"
+
+	sql_right = re.escape(name) + "', '" 
+	sql_right += resource_type  + "', '" 
+	sql_right += re.escape(description)  + "', '" 
+	sql_right += is_deprecated  + "', '" 
+	sql_right += hide_info  + "', '" 
+	sql_right += re.escape(text)  + "', '"
+	sql_right += resource_file  + "', '"
+	sql_right += grade_level  + "', '"
+	sql_right += intended_use  + "', '"
+	sql_right += re.escape(license)  + "', '"
+	sql_right += re.escape(license_link)  + "', '"
+	sql_right += re.escape(license_other_notes)  + "', '"
+	sql_right += source  + "', '"
+	sql_right += language  + "', '"
+	sql_right += re.escape(author)  + "', '"
+	sql_right += re.escape(comments)  + "', '"
+	sql_right += creation_date  + "', '"
+	sql_right += problem_type  + "', '"
+	sql_right += re.escape(solutions_hints_etc)  + "')"
+
+	sql_query = sql_start + sql_left + sql_middle + sql_right
+
+	# If this exact resource already exists, skip it.
+	if cur.execute(sql_query):
+		print "Skipping duplicate entry " + name
+
+	# If it's not a duplicate entry:
+	else:
+
+		# Run an "INSERT" command to put in this resource
+		sql_start = "INSERT RDB_resource "
+		sql_middle = "VALUES ('" 
+
+		sql_query = sql_start + sql_left + sql_middle + sql_right
+
+		cur.execute(sql_query)
+
+		# Get the ID of the resource I just created
+		resource_id = cur.lastrowid
+
+		# Link this resource to the current_collection, creating the collection if necessary.
+		Collection_Creator(containers, cur, resource_id)
+
+		# Commit the database changes.
+		db.commit()
 
 
 ####################################################
 # Add something to the collection list and avoid duplicates.
+# (Common with single-sequence chapters, e.g. quizzes.)
 # Uses lowercase to avoid database case issues.
 ####################################################
 
 def AddWithoutDuplicates(containers, collection, tag_type):
 
 	for x in containers:
-		if x.lower() == collection.lower():
+		# If the name of the collection matches, add the type of collection to the name.
+		if containers[x].lower() == collection.lower():
 			collection += ' ' + tag_type
+		# If the type of this collection is the same as an existing one, remove the old one.
+		if x == tag_type:
+			containers.popitem()
 
-	containers[collection] = tag_type
-
+	containers[tag_type] = collection
 
 ####################################################
 # Filepath fixer
 ####################################################
 
-def FixPath(filepath, line):
+def FixPath(filepath, tag_type):
 
 	# Filepaths as given in edXML files are incorrect. This touches them up.
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
-	if re.search('<html ', line):
+	if tag_type == 'html':
 		if "problems/" not in filepath and "html/" not in filepath:
 			filepath = 'html/' + filepath
 		if ".html" not in filepath:
 			filepath = filepath + ".html"
-	elif re.search('<vertical ', line):
+	elif tag_type == 'vertical':
 		filepath = 'vertical/' + filepath + '.xml'
-	elif re.search('<sequential ', line):
+	elif tag_type == 'sequential':
 		filepath = 'sequential/' + filepath + '.xml'
-	elif re.search('<chapter ', line):
+	elif tag_type == 'chapter':
 		filepath = 'chapter/' + filepath + '.xml'
-	elif re.search('<course ', line):
+	elif tag_type == 'course':
 		filepath = 'course/' + filepath + '.xml'
-
+	
 	return filepath
 
 
@@ -439,7 +479,7 @@ def Collection_Creator(containers, cur, resource_id):
 		# If we don't find it, we're doing to double-check with the unescaped name.
 		# I have no idea why this stage is necessary but it is.
 		if collection_id == False:
-
+		
 			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
 
 			try:
@@ -448,7 +488,7 @@ def Collection_Creator(containers, cur, resource_id):
 			except TypeError:
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
-
+		
 		# If the collection does not already exist, create it.
 		if not collection_id:
 
@@ -463,18 +503,18 @@ def Collection_Creator(containers, cur, resource_id):
 
 			collection_query += "VALUES ('"
 
-			collection_query += re.escape(collection) + "', '" 
-			collection_query += containers[collection] + "', '" 
-			collection_query += "0"  + "', '" # is_sequential set to false
+			collection_query += re.escape(containers[collection]) + "', '" 
+			collection_query += collection + "', '" 
+			collection_query += "1"  + "', '" # is_sequential set to true
 			collection_query += "0"  + "', '" # is_deprecated set to false
 			collection_query += "2001-01-01" + "')" # creation_date
 
 			cur.execute(collection_query)
 			added_collections += 1
-
+	
 			# Get the ID of the collection I just created.
 			collection_id = cur.lastrowid
-
+	
 		# Link this resource to the collection.
 		resource_insert_query = "INSERT INTO RDB_collection_included_resources "
 		resource_insert_query += "(collection_id, "
