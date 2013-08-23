@@ -22,6 +22,18 @@ def index(request):
 	return render(request,'RDB/index.html',context)
 
 
+def extensive(request):
+	resource_list = Resource.objects.all().order_by('id')
+	latest_resource_list = Resource.objects.all().order_by('-creation_date')[:5]
+	collections = Collection.objects.all()
+	context = {
+		'latest_resource_list': latest_resource_list, 
+		'resource_list': resource_list,	
+		'collections': collections,
+	}
+	return render(request,'RDB/extensive.html',context)
+
+
 def detail(request, resource_id):
 	try:
 		res = Resource.objects.get(pk=resource_id)
@@ -30,7 +42,13 @@ def detail(request, resource_id):
 	analytic_values = Analytic_Value.objects.filter(resource=res)
 	custom_text = Custom_Text.objects.filter(resource=res)
 	collections = Collection.objects.filter(included_resources=res)
-	return render(request, 'RDB/detail.html', {'resource': res, 'analytic_values': analytic_values, 'custom_text': custom_text, 'collections': collections})
+	context = {
+		'resource': res, 
+		'analytic_values': analytic_values, 
+		'custom_text': custom_text, 
+		'collections': collections,
+	}
+	return render(request, 'RDB/detail.html', context)
 
 
 def collection(request, collection_id):

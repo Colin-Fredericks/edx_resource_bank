@@ -12,6 +12,8 @@ urlpatterns = patterns('',
 	url(r'^(?P<resource_id>\d+)/$', views.detail, name='detail'),
 	# ex: /RDB/collection/5/
 	url(r'^collection/(?P<collection_id>\d+)/$', views.collection, name='collection'),
+	# ex: /RDB/extensive/
+	url(r'^extensive/$', views.extensive, name='extensive'),
 	
 #	# ex: /RDB/5/results/
 #	url(r'^(?P<resource_id>\d+)/results/$', views.results, name='results'),

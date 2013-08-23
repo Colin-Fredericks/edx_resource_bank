@@ -27,7 +27,7 @@ class Resource_Admin(admin.ModelAdmin):
 		('For Problems',			{'fields': ['problem_type','solutions_hints_etc'], 'classes': ['collapse']}),
 		('For Applications',		{'fields': ['code_dependencies'], 'classes': ['collapse']}),
 		('Custom Text',				{'fields': ['analytic'], 'classes': ['collapse']}),
-		('Automatically Generated',	{'fields': ['creation_date'], 'classes': ['collapse']}),        
+		('Automatically Generated',	{'fields': ['creation_date','filepath'], 'classes': ['collapse']}),        
 	]
 	inlines = [Custom_Text_Admin]
 	pass

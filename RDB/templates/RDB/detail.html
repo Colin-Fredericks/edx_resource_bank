@@ -25,6 +25,10 @@
 	<td>{{resource.name}}</td>
 </tr>
 <tr>
+	<td><b>Filepath</b></td>
+	<td>{{resource.filepath}}</td>
+</tr>
+<tr>
 	<td><b>Description</b></td>
 	<td>{{resource.description}}</td>
 </tr>
@@ -38,7 +42,7 @@
 </tr>
 <tr>
 	<td><b>Deprecated?</b></td>
-	<td>{{collection.is_deprecated}}</td>
+	<td>{{resource.is_deprecated}}</td>
 </tr>
 
 {% for LO in resource.learning_objective.all %}

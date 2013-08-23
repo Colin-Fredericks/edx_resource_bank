@@ -56,6 +56,7 @@ class Resource(models.Model):
 
 	# Required items
 	name = models.CharField(max_length=255)
+	filepath = models.CharField(max_length=255)
 
 	resource_type = models.CharField(max_length=16, choices=(
 		('problem', 'problem'), 
@@ -169,6 +170,7 @@ class Analytic_Value(models.Model):
 	analytic = models.ForeignKey(Analytic)
 	resource = models.ForeignKey(Resource)
 	value = models.FloatField(blank=True)
+	note = models.CharField(max_length=255, blank=True)
   
 	def __unicode__(self):
 		return unicode(self.analytic) + ' = ' + unicode(self.value)
@@ -184,6 +186,7 @@ class Custom_Text(models.Model):
 
 	class Meta:
 		ordering = ('name',)
+
 
 class Learning_Objective_Broad(models.Model):
 
