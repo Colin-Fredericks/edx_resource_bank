@@ -43,3 +43,9 @@ These different elements can be either separate files, or defined inline. If you
 **Handling Exceptions**
 
 The XML structure for edX is sometimes not strict enough. You can use a filename attribute, or a url\_name attribute. You can define display\_names in multiple different places. You can store an HTML file with a .xml extension. 50% or more of this script is for handling exceptions.
+
+**Other Scripts**
+
+read\_in\_course\JC.py is a slight variant on the script for one of my co-workers. 
+
+The older version that uses line-by-line parsing rather than XML parsing is still there. It chokes and dies on files with line breaks in the middle of their tags, as one might expect.

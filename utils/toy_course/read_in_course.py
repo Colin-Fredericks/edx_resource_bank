@@ -402,7 +402,7 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 		resource_id = cur.lastrowid
 
 		# Link this resource to the current_collection, creating the collection if necessary.
-		Collection_Creator(containers, cur, resource_id)
+		Collection_Creator(containers, cur, resource_id, display_name)
 
 		# Commit the database changes.
 		db.commit()
@@ -455,7 +455,7 @@ def FixPath(filepath, tag_type):
 # Automated Collection Creation!
 # Now with Multiple Collections!
 ####################################################
-def Collection_Creator(containers, cur, resource_id):
+def Collection_Creator(containers, cur, resource_id, display_name):
 
 	added_collections = 0
 
@@ -518,7 +518,13 @@ def Collection_Creator(containers, cur, resource_id):
 		resource_insert_query += str(collection_id) + "', '"
 		resource_insert_query += str(resource_id) + "')"
 
-		cur.execute(resource_insert_query)
+		try:
+			cur.execute(resource_insert_query)
+		except:
+			print 'Duplicate entry: "' + display_name + '" in collection "' + containers[collection] + '". Not added.'
+		added_collections += 1
+
+		
 
 	return added_collections
 
