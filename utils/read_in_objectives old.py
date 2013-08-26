@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import csv					# routines for for Comma Separated Value files
-import re					# regular expressions, so I can escape text that would go into SQL
-import mysql.connector		# python-to-mySQL translator
+import csv			# routines for for Comma Separated Value files
+import re			# regular expressions, so I can escape text that would go into SQL
+import MySQLdb		# python-to-mySQL translator
 
 
 ##################
@@ -32,11 +32,10 @@ def main(argv):
 	with open(filename, 'rb') as csvfile:
 
 		# Connect to the database
-		db = mysql.connector.connect(user="resource_mangler",
+		db = MySQLdb.connect(host="localhost",
+			user="resource_mangler",
 			passwd="1l0v3dat3r",
-			host="localhost",
-			database="edxresources",
-			buffered=True)
+			db="edxresources")
 
 		# Create a Cursor object with which to execute queries
 		cur = db.cursor() 
@@ -62,19 +61,19 @@ def main(argv):
 				# ignore any other columns.
 				
 				# If the learning objective already exists, skip to the next line.
-				cur.execute("SELECT id FROM RDB_learning_objective WHERE BINARY learning_objective = BINARY %s", (learning_objective,))
-
-				try:
-					# Set the collection id to that.
-					LO_id = cur.fetchone()
-				except TypeError:
-					# Unless it's null or something, in which case panic and run in circles.
-					sys.exit("Error getting Learning Objective ID.")
-
+				LO_id = cur.execute("SELECT id FROM RDB_learning_objective WHERE learning_objective = %s", learning_objective)
 				if not LO_id:
 
 					# Run an"INSERT" command add the learning objective
-					cur.execute("INSERT RDB_learning_objective (short_name, learning_objective) VALUES (%s, %s) ", (short_name.decode('latin'), learning_objective.decode('latin')))
+					sql_query = "INSERT RDB_learning_objective "
+			
+					sql_query += "(short_name, "
+					sql_query += "learning_objective) "
+					sql_query += "VALUES ('"
+					sql_query += re.escape(short_name) + "', '" 
+					sql_query += re.escape(learning_objective)  + "')"
+
+					cur.execute(sql_query)
 					added_objectives += 1
 			
 			# next line in file -- handled automatically by the "for row in spreadsheet" statement.
