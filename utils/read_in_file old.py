@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import csv					# routines for for Comma Separated Value files
-import re					# regular expressions, so I can escape text that would go into SQL
-import mysql.connector		# python-to-mySQL translator
+import csv			# routines for for Comma Separated Value files
+import re			# regular expressions, so I can escape text that would go into SQL
+import MySQLdb		# python-to-mySQL translator
 
 ##################
 # Important notes:
@@ -33,11 +33,10 @@ def main(argv):
 	with open(filename, 'rbU') as csvfile:
 
 		# Connect to the database
-		db = mysql.connector.connect(user="resource_mangler",
+		db = MySQLdb.connect(host="localhost",
+			user="resource_mangler",
 			passwd="1l0v3dat3r",
-			host="localhost",
-			database="edxresources",
-			buffered=True)
+			db="edxresources")
 
 		# Create a Cursor object with which to execute queries
 		cur = db.cursor() 
@@ -133,8 +132,6 @@ def main(argv):
 			solutions_hints_etc = row[21]
 
 			collection = row[22]
-			
-			filepath = row[23]
 
 			# custom text rows need some work.			
 
@@ -142,46 +139,54 @@ def main(argv):
 			# If so, check for new Learning Objectives and match them up if necesasry. 
 			# Then skip this row and go back to the top of the "for" loop.
 			# If there's no duplicate, insert this resource.
-			
-			
-			sql_query = ("SELECT * FROM RDB_resource "
-						" WHERE "
-						"(name, resource_type, filepath, description, is_deprecated, "
-						"hide_info, text, resource_file, grade_level, intended_use, "
-						"license, license_link, license_other_notes, source, language, author, "
-						"comments, creation_date, problem_type, solutions_hints_etc) "
-						" = "
-						"(%(name)s, %(resource_type)s, %(filepath)s, %(description)s, %(is_deprecated)s, "
-						" %(hide_info)s, %(text)s, %(resource_file)s, %(grade_level)s, %(intended_use)s, "
-						" %(license)s, %(license_link)s, %(license_other_notes)s, %(source)s, %(language)s, %(author)s, "
-						" %(comments)s, %(creation_date)s, %(problem_type)s, %(solutions_hints_etc)s) ")
-			
-			sql_data = {
-				'name': re.escape(name),
-				'resource_type': resource_type,
-				'filepath': filepath,
-				'description': re.escape(description),
-				'is_deprecated': is_deprecated,
-				'hide_info': hide_info,
-				'text': re.escape(text),
-				'resource_file': resource_file,
-				'grade_level': grade_level,
-				'intended_use': intended_use,
-				'license': re.escape(license),
-				'license_link': re.escape(license_link),
-				'license_other_notes': re.escape(license_other_notes),
-				'source': source,
-				'language': language,
-				'author': re.escape(author),
-				'comments': re.escape(comments),
-				'creation_date': creation_date, 
-				'problem_type': problem_type,
-				'solutions_hints_etc': re.escape(solutions_hints_etc),
-			}
 
-			cur.execute(sql_query, sql_data)
+			sql_start = "SELECT * FROM RDB_resource  WHERE"
+			
+			sql_left = "(name, "
+			sql_left += "resource_type, "
+			sql_left += "description, "
+			sql_left += "is_deprecated, "
+			sql_left += "hide_info, "
+			sql_left += "text, "
+			sql_left += "resource_file, "
+			sql_left += "grade_level, "
+			sql_left += "intended_use, "
+			sql_left += "license, "
+			sql_left += "license_link, "
+			sql_left += "license_other_notes, "
+			sql_left += "source, "
+			sql_left += "language, "
+			sql_left += "author, "
+			sql_left += "comments, "
+			sql_left += "creation_date, "
+			sql_left += "problem_type, "
+			sql_left += "solutions_hints_etc) "
+			
+			sql_middle = "= ('"
+			
+			sql_right = re.escape(name) + "', '" 
+			sql_right += resource_type  + "', '" 
+			sql_right += re.escape(description)  + "', '" 
+			sql_right += is_deprecated  + "', '" 
+			sql_right += hide_info  + "', '" 
+			sql_right += re.escape(text)  + "', '"
+			sql_right += resource_file  + "', '"
+			sql_right += grade_level  + "', '"
+			sql_right += intended_use  + "', '"
+			sql_right += re.escape(license)  + "', '"
+			sql_right += re.escape(license_link)  + "', '"
+			sql_right += re.escape(license_other_notes)  + "', '"
+			sql_right += source  + "', '"
+			sql_right += language  + "', '"
+			sql_right += re.escape(author)  + "', '"
+			sql_right += re.escape(comments)  + "', '"
+			sql_right += creation_date  + "', '"
+			sql_right += problem_type  + "', '"
+			sql_right += re.escape(solutions_hints_etc)  + "')"
 
-			if cur:
+			sql_query = sql_start + sql_left + sql_middle + sql_right
+
+			if cur.execute(sql_query):
 				print "Skipping duplicate entry " + name
 
 				"""
@@ -214,20 +219,11 @@ def main(argv):
 
 				# Since it's not a duplicate entry...
 				# Run an "INSERT" command to put in this resource
+				sql_start = "INSERT RDB_resource "
+				sql_middle = "VALUES ('" 
 
-
-				sql_insert = ("INSERT INTO RDB_resource "
-							"(name, resource_type, filepath, description, is_deprecated, "
-							"hide_info, text, resource_file, grade_level, intended_use, "
-							"license, license_link, license_other_notes, source, language, author, "
-							"comments, creation_date, problem_type, solutions_hints_etc) "
-							" VALUES "
-							"(%(name)s, %(resource_type)s, %(filepath)s, %(description)s, %(is_deprecated)s, "
-							" %(hide_info)s, %(text)s, %(resource_file)s, %(grade_level)s, %(intended_use)s, "
-							" %(license)s, %(license_link)s, %(license_other_notes)s, %(source)s, %(language)s, %(author)s, "
-							" %(comments)s, %(creation_date)s, %(problem_type)s, %(solutions_hints_etc)s) ")
-
-				cur.execute(sql_insert, sql_data)
+				sql_query = sql_start + sql_left + sql_middle + sql_right
+				cur.execute(sql_query)
 				added_resources += 1
 
 				# Get the ID of the resource I just created
@@ -278,7 +274,7 @@ def Associate_Learning_Objectives(learning_objectives, cur, resource_id):
 	for LO in learning_objectives:
 		if LO:
 			# Find the learning objective object with the correct short name
-			cur.execute("SELECT id FROM RDB_learning_objective WHERE short_name = %s", (LO,))
+			cur.execute("SELECT id FROM RDB_learning_objective WHERE short_name = %s", LO)
 
 			try:
 				# Set the LO id to that.
@@ -320,7 +316,7 @@ def Collection_Creator(collection, cur, resource_id):
 	added_collections = 0
 
 	# Check to see if a collection with this name already exists. 
-	cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (collection,))
+	cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
 
 	try:
 		# Set the collection id to that.
