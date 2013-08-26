@@ -181,7 +181,7 @@ def main(argv):
 
 			cur.execute(sql_query, sql_data)
 
-			if cur:
+			if cur.fetchone():
 				print "Skipping duplicate entry " + name
 
 				"""
