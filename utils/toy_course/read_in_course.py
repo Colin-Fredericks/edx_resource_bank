@@ -470,7 +470,7 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 
 		try:
 			# If it does exist, get the id for that collection.
-			collection_id = cur.fetchone()
+			collection_id = cur.fetchone()[0]
 		except TypeError:
 			# If it does not exist, say there's no collection with that ID.
 			collection_id = False
@@ -483,7 +483,7 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 
 			try:
 				# If it does exist, get the id for that collection.
-				collection_id = cur.fetchone()
+				collection_id = cur.fetchone()[0]
 			except TypeError:
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
@@ -502,7 +502,7 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 
 			collection_query += "VALUES ('"
 
-			collection_query += containers[collection] + "', '" 
+			collection_query += re.escape(containers[collection]) + "', '" 
 			collection_query += collection + "', '" 
 			collection_query += "1"  + "', '" # is_sequential set to true
 			collection_query += "0"  + "', '" # is_deprecated set to false
@@ -522,10 +522,13 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 		resource_insert_query += str(collection_id) + "', '"
 		resource_insert_query += str(resource_id) + "')"
 
+		cur.execute(resource_insert_query)
+		"""
 		try:
 			cur.execute(resource_insert_query)
 		except:
 			print 'Duplicate entry: "' + display_name + '" in collection "' + containers[collection] + '". Not added.'
+		"""
 		added_collections += 1
 
 		
