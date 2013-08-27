@@ -157,26 +157,26 @@ def main(argv):
 						" %(comments)s, %(creation_date)s, %(problem_type)s, %(solutions_hints_etc)s) ")
 			
 			sql_data = {
-				'name': re.escape(name),
+				'name': name,
 				'resource_type': resource_type,
 				'filepath': filepath,
-				'description': re.escape(description),
+				'description': description,
 				'is_deprecated': is_deprecated,
 				'hide_info': hide_info,
-				'text': re.escape(text),
+				'text': text,
 				'resource_file': resource_file,
 				'grade_level': grade_level,
 				'intended_use': intended_use,
-				'license': re.escape(license),
-				'license_link': re.escape(license_link),
-				'license_other_notes': re.escape(license_other_notes),
+				'license': license,
+				'license_link': license_link,
+				'license_other_notes': license_other_notes,
 				'source': source,
 				'language': language,
-				'author': re.escape(author),
-				'comments': re.escape(comments),
+				'author': author,
+				'comments': comments,
 				'creation_date': creation_date, 
 				'problem_type': problem_type,
-				'solutions_hints_etc': re.escape(solutions_hints_etc),
+				'solutions_hints_etc': solutions_hints_etc,
 			}
 
 			cur.execute(sql_query, sql_data)
@@ -262,8 +262,6 @@ def main(argv):
 	print " with " + str(linked_objectives) + " links to learning objectives."
 	print " Added " + str(added_collections) + " new collections."
 
-# Done with main
-
 
 ####################################################
 # Associate the resource with Learning Objectives
@@ -343,7 +341,7 @@ def Collection_Creator(collection, cur, resource_id):
 
 		collection_query += "VALUES ('"
 
-		collection_query += re.escape(collection) + "', '" 
+		collection_query += collection + "', '" 
 		collection_query += "other" + "', '" 
 		collection_query += "0"  + "', '" # is_sequential
 		collection_query += "0"  + "', '" # is_deprecated

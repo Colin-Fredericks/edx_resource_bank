@@ -19,7 +19,7 @@
 import sys
 import os								# For getting file name
 import re								# regular expressions for searching and escaping
-import MySQLdb							# python-to-mySQL translator
+import mysql.connector					# python-to-mySQL translator
 from collections import OrderedDict		# Ordered dictionary
 from lxml import etree					# XML parser
 
@@ -41,10 +41,11 @@ def main(argv):
 	filename = str(sys.argv[1])
 
 	# Connect to the database
-	db = MySQLdb.connect(host="localhost",
-		user="resource_mangler",
+	db = mysql.connector.connect(user="resource_mangler",
 		passwd="1l0v3dat3r",
-		db="edxresources")
+		host="localhost",
+		database="edxresources",
+		buffered=True)
 
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
@@ -337,66 +338,67 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 
 
 	# Assemble the MySQL INSERT command.
-	sql_start = "SELECT * FROM RDB_resource  WHERE"
+	sql_query = ("SELECT * FROM RDB_resource "
+				" WHERE "
+				"(name, resource_type, filepath, description, is_deprecated, "
+				"hide_info, text, resource_file, grade_level, intended_use, "
+				"license, license_link, license_other_notes, source, language, author, "
+				"comments, creation_date, problem_type, solutions_hints_etc) "
+				" = "
+				"(%(name)s, %(resource_type)s, %(filepath)s, %(description)s, %(is_deprecated)s, "
+				" %(hide_info)s, %(text)s, %(resource_file)s, %(grade_level)s, %(intended_use)s, "
+				" %(license)s, %(license_link)s, %(license_other_notes)s, %(source)s, %(language)s, %(author)s, "
+				" %(comments)s, %(creation_date)s, %(problem_type)s, %(solutions_hints_etc)s) ")
+	
+	sql_data = {
+		'name': name,
+		'resource_type': resource_type,
+		'filepath': filepath,
+		'description': description,
+		'is_deprecated': is_deprecated,
+		'hide_info': hide_info,
+		'text': text,
+		'resource_file': resource_file,
+		'grade_level': grade_level,
+		'intended_use': intended_use,
+		'license': license,
+		'license_link': license_link,
+		'license_other_notes': license_other_notes,
+		'source': source,
+		'language': language,
+		'author': author,
+		'comments': comments,
+		'creation_date': creation_date, 
+		'problem_type': problem_type,
+		'solutions_hints_etc': solutions_hints_etc,
+	}
+	
+	print sql_query
+	print sql_data
 
-	sql_left = "(name, "
-	sql_left += "resource_type, "
-	sql_left += "description, "
-	sql_left += "is_deprecated, "
-	sql_left += "hide_info, "
-	sql_left += "text, "
-	sql_left += "resource_file, "
-	sql_left += "grade_level, "
-	sql_left += "intended_use, "
-	sql_left += "license, "
-	sql_left += "license_link, "
-	sql_left += "license_other_notes, "
-	sql_left += "source, "
-	sql_left += "language, "
-	sql_left += "author, "
-	sql_left += "comments, "
-	sql_left += "creation_date, "
-	sql_left += "problem_type, "
-	sql_left += "solutions_hints_etc) "
-
-	sql_middle = "= ('"
-
-	sql_right = re.escape(name) + "', '" 
-	sql_right += resource_type  + "', '" 
-	sql_right += re.escape(description)  + "', '" 
-	sql_right += is_deprecated  + "', '" 
-	sql_right += hide_info  + "', '" 
-	sql_right += re.escape(text)  + "', '"
-	sql_right += resource_file  + "', '"
-	sql_right += grade_level  + "', '"
-	sql_right += intended_use  + "', '"
-	sql_right += re.escape(license)  + "', '"
-	sql_right += re.escape(license_link)  + "', '"
-	sql_right += re.escape(license_other_notes)  + "', '"
-	sql_right += source  + "', '"
-	sql_right += language  + "', '"
-	sql_right += re.escape(author)  + "', '"
-	sql_right += re.escape(comments)  + "', '"
-	sql_right += creation_date  + "', '"
-	sql_right += problem_type  + "', '"
-	sql_right += re.escape(solutions_hints_etc)  + "')"
-
-	sql_query = sql_start + sql_left + sql_middle + sql_right
+	cur.execute(sql_query, sql_data)
 
 	# If this exact resource already exists, skip it.
-	if cur.execute(sql_query):
+	if cur.fetchone():
 		print "Skipping duplicate entry " + name
+
 
 	# If it's not a duplicate entry:
 	else:
 
 		# Run an "INSERT" command to put in this resource
-		sql_start = "INSERT RDB_resource "
-		sql_middle = "VALUES ('" 
+		sql_insert = ("INSERT INTO RDB_resource "
+					"(name, resource_type, filepath, description, is_deprecated, "
+					"hide_info, text, resource_file, grade_level, intended_use, "
+					"license, license_link, license_other_notes, source, language, author, "
+					"comments, creation_date, problem_type, solutions_hints_etc) "
+					" VALUES "
+					"(%(name)s, %(resource_type)s, %(filepath)s, %(description)s, %(is_deprecated)s, "
+					" %(hide_info)s, %(text)s, %(resource_file)s, %(grade_level)s, %(intended_use)s, "
+					" %(license)s, %(license_link)s, %(license_other_notes)s, %(source)s, %(language)s, %(author)s, "
+					" %(comments)s, %(creation_date)s, %(problem_type)s, %(solutions_hints_etc)s) ")
 
-		sql_query = sql_start + sql_left + sql_middle + sql_right
-
-		cur.execute(sql_query)
+		cur.execute(sql_insert, sql_data)
 
 		# Get the ID of the resource I just created
 		resource_id = cur.lastrowid
@@ -462,24 +464,24 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 	for collection in containers:
 
 		# Check to see if a collection with this name already exists. 
-		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(containers[collection]))
+		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (containers[collection],))
 
 		try:
 			# If it does exist, get the id for that collection.
-			collection_id = cur.fetchone()[0]
+			collection_id = cur.fetchone()
 		except TypeError:
 			# If it does not exist, say there's no collection with that ID.
 			collection_id = False
-
-		# If we don't find it, we're doing to double-check with the unescaped name.
+		
+		# If we don't find it, we're doing to double-check with the escaped name.
 		# I have no idea why this stage is necessary but it is.
 		if collection_id == False:
 		
-			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", containers[collection])
+			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (re.escape(containers[collection]),))
 
 			try:
 				# If it does exist, get the id for that collection.
-				collection_id = cur.fetchone()[0]
+				collection_id = cur.fetchone()
 			except TypeError:
 				# If it does not exist, say there's no collection with that ID.
 				collection_id = False
@@ -498,7 +500,7 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 
 			collection_query += "VALUES ('"
 
-			collection_query += re.escape(containers[collection]) + "', '" 
+			collection_query += containers[collection] + "', '" 
 			collection_query += collection + "', '" 
 			collection_query += "1"  + "', '" # is_sequential set to true
 			collection_query += "0"  + "', '" # is_deprecated set to false
