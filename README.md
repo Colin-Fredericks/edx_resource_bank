@@ -20,9 +20,11 @@ Folders
 Dependencies
 --------------
 
+This code is written for Python 2.7.2. It should work in 2.7.5, but will [need some work](http://docs.python.org/2/library/2to3.html) before you use it with Python 3.
+
 You'll have to create the mySQL database yourself. Check out resource_bank/settings.py to see/change names and passwords for that database. The django code will take care of creating any tables within the database.
 
-You'll need the [python mySQL](http://sourceforge.net/projects/mysql-python/) package. You'll also need the python "CSV" and "re" packages, but they seem to be built into most distributions. The course-reader needs "lxml" and "collections" as well.
+You'll need the [Connector/Python](https://dev.mysql.com/downloads/connector/python/) package. We used to use the MySQLdb package, but it doesn't install with python 3 on Windows, and hasn't been updated in years, so we're going with this one. You'll also need the python "CSV" and "re" packages, but they seem to be built into most distributions. The course-reader needs "lxml" and "collections" as well.
 
 [Fieldmaker](https://django-fieldmaker.readthedocs.org/en/latest/index.html) has been removed for now, but may make its way back in at some point. I'd also like to get [South](http://south.aeracode.org/) working, but damned if I can figure it out right now.
 
@@ -38,4 +40,4 @@ Getting the interface working properly (i.e. usable with 1000 entries) is not as
 Oddities and details
 --------------------
 
-I'm doing this on MacOS 10.8.whateveritistoday. They use Python 2.7.2.
+I'm doing this on MacOS 10.8.whateveritistoday. It uses Python 2.7.2.
