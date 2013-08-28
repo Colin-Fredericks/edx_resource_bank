@@ -10,9 +10,14 @@
 
 ######### Various concerns: #########
 # What if the resource already exists in the database with minor differences?
-# How to find the appropriate resource? Display_name seems to be all we have.
-# May need to have existing resources include a "link to source" field and use those instead.
-# Probably need to do a this-to-that table by hand.
+#  How can we find the appropriate match? Display_name seems to be all we have.
+#  Probably need to do a this-course-to-that-course table by hand.
+#
+# This script does not handle videos at the moment. It shouldn't be too hard to add that,
+#  perhaps creating a resource that does nothing but point to the YouTube link.
+# 
+# It also doesn't store the images linked to by the various problems and HTML files,
+#  although the database is actually capable of handling them fine.
 #####################################
 
 
@@ -362,6 +367,8 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 	
 	sql_middle = "= ('"
 	
+	# Look, I know this is sort of a weird way to assemble to query,
+	# but it avoids collation bugs and other database issues, and it works.
 	sql_right = re.escape(name) + "', '" 
 	sql_right += resource_type  + "', '" 
 	sql_right += re.escape(description)  + "', '" 
@@ -476,7 +483,7 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 			collection_id = False
 		
 		# If we don't find it, we're doing to double-check with the escaped name.
-		# I have no idea why this stage is necessary but it is.
+		# I have no idea why this stage is necessary, but at last check it was.
 		if collection_id == False:
 		
 			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (re.escape(containers[collection]),))
@@ -522,13 +529,11 @@ def Collection_Creator(containers, cur, resource_id, display_name):
 		resource_insert_query += str(collection_id) + "', '"
 		resource_insert_query += str(resource_id) + "')"
 
-		cur.execute(resource_insert_query)
-		"""
 		try:
 			cur.execute(resource_insert_query)
 		except:
 			print 'Duplicate entry: "' + display_name + '" in collection "' + containers[collection] + '". Not added.'
-		"""
+
 		added_collections += 1
 
 		
