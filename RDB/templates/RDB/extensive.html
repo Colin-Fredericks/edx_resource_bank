@@ -19,14 +19,14 @@
 <td>{{resource.problem_type}}</td>
 <td>{{resource.intended_use}}</td>
 <td>{{resource.filepath}}</td>
-{% for COL in collections %}
-	{% for res in COL.included_resources.all %}
-		{% if res.id == resource.id %}
-			<td>{{COL.collection_type}}: <a href="../collection/{{COL.id}}">{{COL.name}}</a></td>
-		{% endif %}
+	{% for COL in collections %}
+		{% for res in COL.included_resources.all %}
+			{% if res.id == resource.id %}
+				<td>{{COL.collection_type}}: <a href="../collection/{{COL.id}}">{{COL.name}}</a></td>
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
-{% endfor %}
-</tr>
+	</tr>
 {% endfor %}
 </table>
 
