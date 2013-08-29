@@ -52,6 +52,9 @@ class Analytic(models.Model):
 		ordering = ('name',)
 
 
+################### Resource Class ##############################
+# This class is The Big Deal. Everything else is tied into this.
+#################################################################
 class Resource(models.Model):
 
 	# Required items
@@ -138,6 +141,8 @@ class Resource(models.Model):
 	
 	# Specifically for problems
 #	wrong_answer_responses = # I feel like I need to point to a table for this one.		Check out one-to-many
+
+#	This is too specific to edX's problem types at the moment.
 	problem_type = models.CharField(max_length=32, choices=(
 		('multiple_choice', 'multiple_choice'), 
 		('select_all', 'select_all'), 
