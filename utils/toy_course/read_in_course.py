@@ -29,8 +29,8 @@ from collections import OrderedDict		# Ordered dictionary
 from lxml import etree					# XML parser
 
 
-####################################################
-# Main takes in arguments, connects to the database, and runs TheOpener.
+############## Function: Main ######################
+# Takes in arguments, connects to the database, and runs TheOpener.
 ####################################################
 def main(argv):
 
@@ -67,7 +67,7 @@ def main(argv):
 	db.close()
 
 
-####################################################
+############# Function: TheOpener ##################
 # Reads in files and sends them to the XML Processor or the Resource Muncher
 ####################################################
 def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
@@ -127,7 +127,7 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 		print 'filepath ' + filepath + ' not associated with file.'
 		
 
-####################################################
+########## Function: XMLProcessor #################
 # This does the work of examining the XML and traversing it.
 ####################################################
 def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
@@ -215,7 +215,7 @@ def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, de
 					FollowFilepath(filepath, x.tag, display_name, containers, depth, cur, db, x)
 
 
-####################################################
+########### Function: FollowFilepath ###############
 # Fix up the filepath in this tag, and send it to The Opener.
 ####################################################
 def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db, XMLtag):
@@ -273,7 +273,7 @@ def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db,
 		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
 
 
-####################################################
+########## Function: ResourceMuncher ###############
 # This takes in resources and adds them to the database.
 ####################################################
 def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
@@ -419,7 +419,7 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 		db.commit()
 
 
-####################################################
+####### Function: AddWithoutDuplicates #############
 # Add something to the collection list and avoid duplicates.
 # (Common with single-sequence chapters, e.g. quizzes.)
 # Uses lowercase to avoid database case issues.
@@ -437,12 +437,11 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 	containers[tag_type] = collection
 
 
-####################################################
-# Filepath fixer
+############ Function: FixPath #####################
+# Filepaths as given in edXML files are incorrect. This touches them up.
 ####################################################
 def FixPath(filepath, tag_type):
 
-	# Filepaths as given in edXML files are incorrect. This touches them up.
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
 	if tag_type == 'html':
@@ -462,7 +461,7 @@ def FixPath(filepath, tag_type):
 	return filepath
 
 
-####################################################
+######### Function: Collection_Creator #############
 # Automated Collection Creation!
 # Now with Multiple Collections!
 ####################################################
