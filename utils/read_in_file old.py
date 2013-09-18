@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
 import sys
-import csv					# routines for for Comma Separated Value files
-import re					# regular expressions, so I can escape text that would go into SQL
-import mysql.connector		# python-to-mySQL translator
+import csv			# routines for for Comma Separated Value files
+import re			# regular expressions, so I can escape text that would go into SQL
+import MySQLdb		# python-to-mySQL translator
 
 ##################
 # Important notes:
@@ -33,11 +33,10 @@ def main(argv):
 	with open(filename, 'rbU') as csvfile:
 
 		# Connect to the database
-		db = mysql.connector.connect(user="resource_mangler",
+		db = MySQLdb.connect(host="localhost",
+			user="resource_mangler",
 			passwd="1l0v3dat3r",
-			host="localhost",
-			database="edxresources",
-			buffered=True)
+			db="edxresources")
 
 		# Create a Cursor object with which to execute queries
 		cur = db.cursor() 
@@ -133,8 +132,6 @@ def main(argv):
 			solutions_hints_etc = row[21]
 
 			collection = row[22]
-			
-			filepath = row[23]
 
 			# custom text rows need some work.			
 
@@ -142,14 +139,12 @@ def main(argv):
 			# If so, check for new Learning Objectives and match them up if necesasry. 
 			# Then skip this row and go back to the top of the "for" loop.
 			# If there's no duplicate, insert this resource.
-			
-			
+
 			sql_start = "SELECT * FROM RDB_resource  WHERE"
 			
 			sql_left = "(name, "
 			sql_left += "resource_type, "
 			sql_left += "description, "
-			sql_left += "filepath, "
 			sql_left += "is_deprecated, "
 			sql_left += "hide_info, "
 			sql_left += "text, "
@@ -172,7 +167,6 @@ def main(argv):
 			sql_right = re.escape(name) + "', '" 
 			sql_right += resource_type  + "', '" 
 			sql_right += re.escape(description)  + "', '" 
-			sql_right += re.escape(filepath)  + "', '" 
 			sql_right += is_deprecated  + "', '" 
 			sql_right += hide_info  + "', '" 
 			sql_right += re.escape(text)  + "', '"
@@ -192,9 +186,7 @@ def main(argv):
 
 			sql_query = sql_start + sql_left + sql_middle + sql_right
 
-			cur.execute(sql_query)
-
-			if cur.fetchone():
+			if cur.execute(sql_query):
 				print "Skipping duplicate entry " + name
 
 				"""
@@ -227,8 +219,6 @@ def main(argv):
 
 				# Since it's not a duplicate entry...
 				# Run an "INSERT" command to put in this resource
-
-
 				sql_start = "INSERT RDB_resource "
 				sql_middle = "VALUES ('" 
 
@@ -268,6 +258,8 @@ def main(argv):
 	print " with " + str(linked_objectives) + " links to learning objectives."
 	print " Added " + str(added_collections) + " new collections."
 
+# Done with main
+
 
 ####################################################
 # Associate the resource with Learning Objectives
@@ -282,7 +274,7 @@ def Associate_Learning_Objectives(learning_objectives, cur, resource_id):
 	for LO in learning_objectives:
 		if LO:
 			# Find the learning objective object with the correct short name
-			cur.execute("SELECT id FROM RDB_learning_objective WHERE short_name = %s", (LO,))
+			cur.execute("SELECT id FROM RDB_learning_objective WHERE short_name = %s", LO)
 
 			try:
 				# Set the LO id to that.
@@ -324,7 +316,7 @@ def Collection_Creator(collection, cur, resource_id):
 	added_collections = 0
 
 	# Check to see if a collection with this name already exists. 
-	cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (collection,))
+	cur.execute("SELECT id FROM RDB_collection WHERE name = %s", collection)
 
 	try:
 		# Set the collection id to that.
@@ -347,7 +339,7 @@ def Collection_Creator(collection, cur, resource_id):
 
 		collection_query += "VALUES ('"
 
-		collection_query += collection + "', '" 
+		collection_query += re.escape(collection) + "', '" 
 		collection_query += "other" + "', '" 
 		collection_query += "0"  + "', '" # is_sequential
 		collection_query += "0"  + "', '" # is_deprecated

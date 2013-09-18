@@ -24,6 +24,18 @@ def index(request):
 	return render(request,'RDB/index.html',context)
 
 
+def extensive(request):
+	resource_list = Resource.objects.all().order_by('id')
+	latest_resource_list = Resource.objects.all().order_by('-creation_date')[:5]
+	collections = Collection.objects.all()
+	context = {
+		'latest_resource_list': latest_resource_list, 
+		'resource_list': resource_list,	
+		'collections': collections,
+	}
+	return render(request,'RDB/extensive.html',context)
+
+
 def detail(request, resource_id):
 	try:
 		res = Resource.objects.get(pk=resource_id)

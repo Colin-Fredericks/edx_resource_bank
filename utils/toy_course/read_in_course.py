@@ -10,22 +10,27 @@
 
 ######### Various concerns: #########
 # What if the resource already exists in the database with minor differences?
-# How to find the appropriate resource? Display_name seems to be all we have.
-# May need to have existing resources include a "link to source" field and use those instead.
-# Probably need to do a this-to-that table by hand.
+#  How can we find the appropriate match? Display_name seems to be all we have.
+#  Probably need to do a this-course-to-that-course table by hand.
+#
+# This script does not handle videos at the moment. It shouldn't be too hard to add that,
+#  perhaps creating a resource that does nothing but point to the YouTube link.
+# 
+# It also doesn't store the images linked to by the various problems and HTML files,
+#  although the database is actually capable of handling them fine.
 #####################################
 
 
 import sys
 import os								# For getting file name
 import re								# regular expressions for searching and escaping
-import MySQLdb							# python-to-mySQL translator
+import mysql.connector					# python-to-mySQL translator
 from collections import OrderedDict		# Ordered dictionary
 from lxml import etree					# XML parser
 
 
-####################################################
-# Main takes in arguments, connects to the database, and runs TheOpener.
+############## Function: Main ######################
+# Takes in arguments, connects to the database, and runs TheOpener.
 ####################################################
 def main(argv):
 
@@ -41,10 +46,11 @@ def main(argv):
 	filename = str(sys.argv[1])
 
 	# Connect to the database
-	db = MySQLdb.connect(host="localhost",
-		user="resource_mangler",
+	db = mysql.connector.connect(user="resource_mangler",
 		passwd="1l0v3dat3r",
-		db="edxresources")
+		host="localhost",
+		database="edxresources",
+		buffered=True)
 
 	# Create a Cursor object with which to execute queries
 	cur = db.cursor() 
@@ -61,7 +67,7 @@ def main(argv):
 	db.close()
 
 
-####################################################
+############# Function: TheOpener ##################
 # Reads in files and sends them to the XML Processor or the Resource Muncher
 ####################################################
 def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
@@ -121,7 +127,7 @@ def TheOpener(filepath, tag_type, display_name, containers, depth, cur, db):
 		print 'filepath ' + filepath + ' not associated with file.'
 		
 
-####################################################
+########## Function: XMLProcessor #################
 # This does the work of examining the XML and traversing it.
 ####################################################
 def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
@@ -209,7 +215,7 @@ def XMLProcessor(root, xmlfile, filepath, tag_type, display_name, containers, de
 					FollowFilepath(filepath, x.tag, display_name, containers, depth, cur, db, x)
 
 
-####################################################
+########### Function: FollowFilepath ###############
 # Fix up the filepath in this tag, and send it to The Opener.
 ####################################################
 def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db, XMLtag):
@@ -267,7 +273,7 @@ def FollowFilepath(filepath, tag_type, display_name, containers, depth, cur, db,
 		print 'False alarm - no link from ' + filepath + ' ' + XMLtag.tag
 
 
-####################################################
+########## Function: ResourceMuncher ###############
 # This takes in resources and adds them to the database.
 ####################################################
 def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containers, depth, cur, db):
@@ -336,12 +342,12 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 	solutions_hints_etc = ''
 
 
-	# Assemble the MySQL INSERT command.
 	sql_start = "SELECT * FROM RDB_resource  WHERE"
-
+	
 	sql_left = "(name, "
 	sql_left += "resource_type, "
 	sql_left += "description, "
+	sql_left += "filepath, "
 	sql_left += "is_deprecated, "
 	sql_left += "hide_info, "
 	sql_left += "text, "
@@ -358,12 +364,15 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 	sql_left += "creation_date, "
 	sql_left += "problem_type, "
 	sql_left += "solutions_hints_etc) "
-
+	
 	sql_middle = "= ('"
-
+	
+	# Look, I know this is sort of a weird way to assemble to query,
+	# but it avoids collation bugs and other database issues, and it works.
 	sql_right = re.escape(name) + "', '" 
 	sql_right += resource_type  + "', '" 
 	sql_right += re.escape(description)  + "', '" 
+	sql_right += re.escape(filepath)  + "', '" 
 	sql_right += is_deprecated  + "', '" 
 	sql_right += hide_info  + "', '" 
 	sql_right += re.escape(text)  + "', '"
@@ -383,32 +392,34 @@ def ResourceMuncher(xmltext, xmlfile, filepath, tag_type, display_name, containe
 
 	sql_query = sql_start + sql_left + sql_middle + sql_right
 
+	cur.execute(sql_query)
+
+
 	# If this exact resource already exists, skip it.
-	if cur.execute(sql_query):
+	if cur.fetchone():
 		print "Skipping duplicate entry " + name
+
 
 	# If it's not a duplicate entry:
 	else:
 
-		# Run an "INSERT" command to put in this resource
 		sql_start = "INSERT RDB_resource "
 		sql_middle = "VALUES ('" 
 
 		sql_query = sql_start + sql_left + sql_middle + sql_right
-
 		cur.execute(sql_query)
 
 		# Get the ID of the resource I just created
 		resource_id = cur.lastrowid
 
 		# Link this resource to the current_collection, creating the collection if necessary.
-		Collection_Creator(containers, cur, resource_id)
+		Collection_Creator(containers, cur, resource_id, display_name)
 
 		# Commit the database changes.
 		db.commit()
 
 
-####################################################
+####### Function: AddWithoutDuplicates #############
 # Add something to the collection list and avoid duplicates.
 # (Common with single-sequence chapters, e.g. quizzes.)
 # Uses lowercase to avoid database case issues.
@@ -426,12 +437,11 @@ def AddWithoutDuplicates(containers, collection, tag_type):
 	containers[tag_type] = collection
 
 
-####################################################
-# Filepath fixer
+############ Function: FixPath #####################
+# Filepaths as given in edXML files are incorrect. This touches them up.
 ####################################################
 def FixPath(filepath, tag_type):
 
-	# Filepaths as given in edXML files are incorrect. This touches them up.
 	# Note that url_name= and filename= paths are treated slightly differently before being sent here.
 
 	if tag_type == 'html':
@@ -451,18 +461,18 @@ def FixPath(filepath, tag_type):
 	return filepath
 
 
-####################################################
+######### Function: Collection_Creator #############
 # Automated Collection Creation!
 # Now with Multiple Collections!
 ####################################################
-def Collection_Creator(containers, cur, resource_id):
+def Collection_Creator(containers, cur, resource_id, display_name):
 
 	added_collections = 0
 
 	for collection in containers:
 
 		# Check to see if a collection with this name already exists. 
-		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", re.escape(containers[collection]))
+		cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (containers[collection],))
 
 		try:
 			# If it does exist, get the id for that collection.
@@ -470,12 +480,12 @@ def Collection_Creator(containers, cur, resource_id):
 		except TypeError:
 			# If it does not exist, say there's no collection with that ID.
 			collection_id = False
-
-		# If we don't find it, we're doing to double-check with the unescaped name.
-		# I have no idea why this stage is necessary but it is.
+		
+		# If we don't find it, we're doing to double-check with the escaped name.
+		# I have no idea why this stage is necessary, but at last check it was.
 		if collection_id == False:
 		
-			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", containers[collection])
+			cur.execute("SELECT id FROM RDB_collection WHERE name = %s", (re.escape(containers[collection]),))
 
 			try:
 				# If it does exist, get the id for that collection.
@@ -518,7 +528,14 @@ def Collection_Creator(containers, cur, resource_id):
 		resource_insert_query += str(collection_id) + "', '"
 		resource_insert_query += str(resource_id) + "')"
 
-		cur.execute(resource_insert_query)
+		try:
+			cur.execute(resource_insert_query)
+		except:
+			print 'Duplicate entry: "' + display_name + '" in collection "' + containers[collection] + '". Not added.'
+
+		added_collections += 1
+
+		
 
 	return added_collections
 

@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static "RDB/style.css" %}" />
+</head>
+
+<body>
+
+<h1>Complete, Extensive List of Resources</h1>
+
+<table>
+{% for resource in resource_list %}
+<tr>
+<td class="number">{{resource.id}}</td>
+<td><a href="/RDB/{{ resource.id }}/">{{ resource.name }}</a></td>
+<td>{{resource.resource_type}}</td>
+<td>{{resource.description}}</td>
+<td>{{resource.problem_type}}</td>
+<td>{{resource.intended_use}}</td>
+<td>{{resource.filepath}}</td>
+	{% for COL in collections %}
+		{% for res in COL.included_resources.all %}
+			{% if res.id == resource.id %}
+				<td>{{COL.collection_type}}: <a href="../collection/{{COL.id}}">{{COL.name}}</a></td>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
