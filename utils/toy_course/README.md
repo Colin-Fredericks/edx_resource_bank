@@ -39,13 +39,7 @@ These different elements can be either separate files, or defined inline. If you
 * Notice `<description>` or `<video>` files yet. (though this could also be added)
 * Auto-detect older versions already in the database (though it does skip perfect duplicates)
 * Create collections based on anything else
-* Work perfectly as of 
 
 **Handling Exceptions**
 
 The XML structure for edX is sometimes not strict enough. You can use a filename attribute, or a url\_name attribute. You can define display\_names in multiple different places. You can store an HTML file with a .xml extension. 50% or more of this script is for handling exceptions.
-
-* The traversal is not recursive if a container (e.g. sequence, vertical) is defined inline.
-* The script uses filenames if it can't get a display\_name.
- * This can sometimes cause issues for inline definitions.
-* 

@@ -22,7 +22,7 @@ Dependencies
 
 You'll have to create the mySQL database yourself. Check out resource_bank/settings.py to see/change names and passwords for that database. The django code will take care of creating any tables within the database.
 
-You'll need the [python mySQL](http://sourceforge.net/projects/mysql-python/) package. You'll also need the python "CSV" and "re" packages, but they seem to be built into most distributions.
+You'll need the [python mySQL](http://sourceforge.net/projects/mysql-python/) package. You'll also need the python "CSV" and "re" packages, but they seem to be built into most distributions. The course-reader needs "lxml" and "collections" as well.
 
 [Fieldmaker](https://django-fieldmaker.readthedocs.org/en/latest/index.html) has been removed for now, but may make its way back in at some point. I'd also like to get [South](http://south.aeracode.org/) working, but damned if I can figure it out right now.
 
@@ -38,4 +38,4 @@ Getting the interface working properly (i.e. usable with 1000 entries) is not as
 Oddities and details
 --------------------
 
-I'm doing this on MacOS 10.8.whateveritistoday. Hopefully nothing in here depends on that, but I wanted to mention it just in case.
+I'm doing this on MacOS 10.8.whateveritistoday. They use Python 2.7.2.

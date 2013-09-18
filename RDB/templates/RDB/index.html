@@ -9,6 +9,7 @@
 
 <h1>Complete List of Resources</h1>
 
+<!--
 <table style="float:right" width="250">
 <tr><td>
 <h3>Recent Resources</h3>
@@ -25,6 +26,7 @@
 {% endif %}
 </td></tr>
 </table>
+-->
 
 <table>
 {% for resource in resource_list %}
@@ -33,6 +35,16 @@
 <td><a href="/RDB/{{ resource.id }}/">{{ resource.name }}</a></td>
 <td>{{resource.resource_type}}</td>
 <td>{{resource.description}}</td>
+<td>{{resource.problem_type}}</td>
+<td>{{resource.intended_use}}</td>
+<td>{{resource.filepath}}</td>
+{% for COL in collections %}
+	{% for res in COL.included_resources %}
+		{% if res == resource.id %}
+			<td>{{COL.collection_type}}: <a href="../collection/{{COL.id}}">{{COL.name}}</a></td>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
 </tr>
 {% endfor %}
 </table>
