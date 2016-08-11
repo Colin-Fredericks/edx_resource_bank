@@ -1,6 +1,13 @@
 Resource Bank
 ====================
 
+DEFUNCT
+-------
+
+This code should no longer be used to parse edX's XML documents. It's been over three years, and things have changed there. It is maintained here (for loose definitions of "maintain") solely as a historical curiosity.
+
+---
+
 This repository is a collection of Python code. It uses [Django](https://docs.djangoproject.com/en/1.5/) to set up a mySQL database for resources in an online course (in our case, edX).
 
 So far it's not connected to anything else. Don't look at this imagining that you'll figure out how edX works. We're still in the infant stages of development, and I'm learning django, python, and SQL as I go along.
